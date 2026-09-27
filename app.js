@@ -24377,53 +24377,35 @@
     return { ...next, screen: "bloggers" };
   }
   function planBatch(state, settings) {
-    if (!state.blogger) throw new Error("\u8BF7\u5148\u521B\u5EFA\u4E00\u4F4D\u535A\u4E3B");
-    if (!Number.isInteger(Number(settings.count)) || Number(settings.count) < 1 || Number(settings.count) > 9) throw new Error("\u6BCF\u4F4D\u535A\u4E3B\u672C\u6279\u751F\u4EA7\u6570\u91CF\u9700\u4E3A 1\u20139 \u6761");
-    if (!Number.isFinite(Number(settings.duration)) || Number(settings.duration) < 90 || Number(settings.duration) > 300) throw new Error("\u89C6\u9891\u65F6\u957F\u5FC5\u987B\u5728 90\u2013300 \u79D2\u4E4B\u95F4");
-    const p = normalizeProfile(state.blogger), topics = profileTopics(p), pool = allowedAssets(p);
+    if (!state.blogger) throw new Error("请先创建一位博主");
+    const selectedTopics = settings.selectedTopics || [];
+    const count = selectedTopics.length;
+    if (!Number.isInteger(count) || count < 1 || count > 9) throw new Error("请选择 1–9 个主题");
+    for (const topicSetting of selectedTopics) {
+      if (!Number.isFinite(Number(topicSetting.duration)) || Number(topicSetting.duration) < 90 || Number(topicSetting.duration) > 300) throw new Error("每个主题的视频时长必须在 90–300 秒之间");
+      if (!(topicSetting.relatedIds || []).length) throw new Error("每个主题至少选择一部节目作为选材范围");
+    }
+    const p = normalizeProfile(state.blogger), pool = allowedAssets(p);
     const used = new Set((state.items || []).map((item) => `${item.assetId}:${item.highlightId}`));
     const clips = pool.flatMap((asset) => (asset.highlights || []).filter((highlight) => !used.has(`${asset.id}:${highlight.id}`)).map((highlight) => ({ asset, highlight })));
-    if (Number(settings.count) > clips.length) throw new Error(`\u5F53\u524D\u5185\u5BB9\u6C60\u53EA\u6709 ${clips.length} \u5904\u72EC\u7ACB\u9AD8\u5149\uFF0C\u6700\u591A\u53EF\u751F\u4EA7 ${clips.length} \u6761\uFF1B\u8BF7\u6269\u5145\u5185\u5BB9\u6C60\u6216\u51CF\u5C11\u6570\u91CF`);
-    const usedThisBatch = /* @__PURE__ */ new Set();
-    return Array.from({ length: Number(settings.count) }, (_, i) => {
-      const topicsWithClips = [...new Set(topics.filter((topic2) => clips.some(({ asset: asset2, highlight }) => asset2.topic === topic2 && !usedThisBatch.has(`${asset2.id}:${highlight.id}`))))];
-      const topic = topicsWithClips[i % topicsWithClips.length];
-      const recipes = TOPIC_RECIPES[topic] || TOPIC_RECIPES[topic === "\u57CE\u5E02" ? "\u4EBA\u6587" : "\u5F71\u89C6"];
-      const picked = settings.selectedTopics?.[i];
-      const c = { ...recipes[(i + (state.items || []).length) % recipes.length], ...picked ? { hook: picked.title, theme: picked.thesis || picked.title, text: picked.script || picked.thesis || picked.title } : {}, topic };
-      const { asset, highlight: h } = clips.find(({ asset: asset2, highlight }) => asset2.topic === topic && !usedThisBatch.has(`${asset2.id}:${highlight.id}`));
+    if (count > clips.length) throw new Error(`当前内容池只有 ${clips.length} 处独立高光，最多可生产 ${clips.length} 条；请扩充内容池或减少主题`);
+    const usedThisBatch = new Set();
+    return selectedTopics.map((picked, i) => {
+      const relatedIds = (picked.relatedIds || []).filter((id) => pool.some((asset) => asset.id === id));
+      const available = clips.find(({ asset, highlight }) => relatedIds.includes(asset.id) && !usedThisBatch.has(`${asset.id}:${highlight.id}`));
+      if (!available) throw new Error(`“${picked.title}”的选材范围没有可用高光，请增加节目或调整主题`);
+      const { asset, highlight: h } = available;
       usedThisBatch.add(`${asset.id}:${h.id}`);
+      const recipes = TOPIC_RECIPES[asset.topic] || TOPIC_RECIPES["影视"];
+      const recipe = recipes[(i + (state.items || []).length) % recipes.length];
+      const c = { ...recipe, hook: picked.title, theme: picked.thesis || picked.title, text: picked.script || picked.thesis || picked.title, topic: asset.topic };
       return {
         id: `C${String((state.items || []).length + i + 1).padStart(3, "0")}`,
-        assetId: asset.id,
-        highlightId: h.id,
-        topic: c.topic || topic || asset.topic,
-        theme: c.theme,
-        title: c.hook,
-        hook: c.hook,
-        script: c.text,
-        search: c.search,
-        evidence: h.quote,
-        scene: h.scene,
-        start: h.start,
-        end: h.end,
-        score: h.score,
-        duration: settings.duration,
-        ratio: settings.ratio,
-        status: "pending",
-        revision: 1,
-        checks: [],
-        history: [],
-        caption: `${p.intro} \u4E00\u8D77\u8D70\u8FDB\u300A${asset.title}\u300B\u3002`,
-        narration: `${c.text} ${h.quote}`,
-        voice: p.voice,
-        bloggerId: p.id,
-        bloggerName: p.name,
-        tone: p.tone,
-        approvedAt: null,
-        feedback: "",
-        profileVersion: p.profileVersion || 1,
-        relatedIds: [asset.id, ...pool.filter((a) => a.id !== asset.id && a.topic === asset.topic).slice(0, 2).map((a) => a.id)]
+        assetId: asset.id, highlightId: h.id, topic: c.topic, theme: c.theme, title: c.hook, hook: c.hook,
+        script: c.text, search: c.search, evidence: h.quote, scene: h.scene, start: h.start, end: h.end, score: h.score,
+        duration: Number(picked.duration), ratio: "16:9", status: "pending", revision: 1, checks: [], history: [],
+        caption: `${p.intro} 一起走进《${asset.title}》。`, narration: `${c.text} ${h.quote}`, voice: p.voice,
+        bloggerId: p.id, bloggerName: p.name, tone: p.tone, approvedAt: null, feedback: "", profileVersion: p.profileVersion || 1, relatedIds
       };
     });
   }
@@ -24503,7 +24485,7 @@
       title: item.title,
       hook: item.hook,
       script: `${item.script}\n\n\u3010\u5173\u8054\u8282\u76EE\u3011${(item.relatedIds || []).map((id) => `\u300A${ASSETS.find((asset) => asset.id === id)?.title || "\u8282\u76EE"}\u300B`).join("\u3001")}`,
-      approved: true,
+      approved: false,
       duration: item.duration,
       ratio: item.ratio,
       assetId: item.assetId,
@@ -24862,20 +24844,8 @@
   var import_react3 = __toESM(require_react());
 
   // admin/bloggerStats.mjs
-  function getBloggerLibraryMetrics(assets, items = []) {
-    const keys2 = new Set(assets.flatMap((asset) => (asset.highlights || []).map((highlight) => `${asset.id}:${highlight.id}`)));
-    const used = /* @__PURE__ */ new Set(), outside = /* @__PURE__ */ new Set();
-    for (const item of items) {
-      const key = `${item.assetId}:${item.highlightId}`;
-      if (!keys2.has(key) || used.has(key)) outside.add(item.id || key);
-      used.add(key);
-    }
-    const usedAvailable = [...used].filter((key) => keys2.has(key)).length;
-    const seed = Math.max(1, assets.length);
-    const generated = items.length || seed * 4 + 2;
-    const approved = items.length ? items.filter((item) => item.status === "approved").length : Math.max(1, generated - 2);
-    const pending = items.length ? items.filter((item) => item.status === "pending").length : 2;
-    return { programs: assets.length, availableHighlights: Math.max(0, keys2.size - usedAvailable), generated, approved, pending, followers: seed * 12860 + 3860, views: seed * 186400 + 52800, likes: seed * 9600 + 2800, outsideCurrentPool: outside.size };
+  function getBloggerLibraryMetrics(assets, items = [], isManualNew = false) {
+    return DemoLogic.buildBloggerMetrics({ assets, items, isManualNew });
   }
   function genderMarkerFor(person) {
     return person?.avatarSubject === "\u4EBA\u7269" && ["\u7537", "\u5973"].includes(person.gender) ? person.gender : null;
@@ -24937,9 +24907,8 @@
     }, [list]);
     const sourceSummary = [["\u98DE\u4E66\u8D26\u53F7\u77E9\u9635", workspaces.filter((w) => isFeishu(w.blogger)).length], ["\u6F14\u793A\u5E93", workspaces.filter((w) => w.blogger.sourceKind === "\u6F14\u793A\u5E93").length]].filter(([, n]) => n > 0);
     return /* @__PURE__ */ import_react3.default.createElement(import_react3.default.Fragment, null, /* @__PURE__ */ import_react3.default.createElement(Heading, { eyebrow: "CREATOR LIBRARY", title: "\u535A\u4E3B\u5E93\u7BA1\u7406", description: "\u7BA1\u7406\u535A\u4E3B\u6863\u6848\u3001\u5185\u5BB9\u5206\u7C7B\u548C\u751F\u4EA7\u8FDB\u5EA6\u3002" }, /* @__PURE__ */ import_react3.default.createElement("button", { className: "button primary", onClick: () => onNew() }, "\uFF0B \u65B0\u5EFA\u535A\u4E3B")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "panel blogger-library-tools" }, /* @__PURE__ */ import_react3.default.createElement("input", { "aria-label": "\u641C\u7D22\u535A\u4E3B", placeholder: "\u641C\u7D22\u540D\u79F0\u6216\u6807\u7B7E", value: query, onChange: (e) => setQuery(e.target.value) }), /* @__PURE__ */ import_react3.default.createElement("select", { "aria-label": "\u535A\u4E3B\u5206\u7C7B", value: category, onChange: (e) => setCategory(e.target.value) }, categories.map((c) => /* @__PURE__ */ import_react3.default.createElement("option", { key: c, value: c }, c))), /* @__PURE__ */ import_react3.default.createElement("button", { className: "button", onClick: onImport }, "\u8F7D\u5165\u8D26\u53F7\u77E9\u9635\u5168\u90E8\u535A\u4E3B\uFF08", FEISHU_BLOGGERS.length, "\u4F4D\uFF09"), /* @__PURE__ */ import_react3.default.createElement("span", { className: "subtle" }, "\u663E\u793A ", sortedList.length, " \u4F4D / \u5171 ", workspaces.length, " \u4F4D")), /* @__PURE__ */ import_react3.default.createElement("p", { className: "field-help" }, sourceSummary.map(([label, n]) => `${label} ${n} \u4F4D`).join(" \xB7 "), "\u3002\u65E0\u6765\u6E90\u5934\u50CF\u7684\u8D26\u53F7\u663E\u793A\u59D3\u540D\u9996\u5B57\uFF0C\u907F\u514D\u56FE\u7247\u9519\u914D\u3002"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-library-grid" }, sortedList.map((w) => {
-      const p = w.blogger, category2 = categoryOf(p), locked = lockedIds.has(p.id) || !!w.job, metrics = getBloggerLibraryMetrics(allowedAssets(p), w.items), gender = genderMarkerFor(p);
-      const isNew = isManualNew(w);
-      return /* @__PURE__ */ import_react3.default.createElement("article", { className: `panel blogger-card ${isNew ? "is-new" : ""}`, key: p.id }, isNew && /* @__PURE__ */ import_react3.default.createElement("span", { className: "blogger-card-new-tag" }, "\u65B0\u589E"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "section-line" }, /* @__PURE__ */ import_react3.default.createElement("button", { className: "avatar-link", "aria-label": `\u5207\u6362\u5230${p.name}`, onClick: () => onChoose(p.id) }, /* @__PURE__ */ import_react3.default.createElement(Avatar, { person: p, large: true })), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-card-badges" }, /* @__PURE__ */ import_react3.default.createElement(Badge, { tone: "green" }, category2), /* @__PURE__ */ import_react3.default.createElement(Badge, { tone: currentId === p.id ? "green" : "" }, currentId === p.id ? "\u5F53\u524D\u535A\u4E3B" : p.sourceKind === "\u6F14\u793A\u5E93" ? "\u6F14\u793A\u5E93" : isFeishu(p) ? p.sourceType || "\u98DE\u4E66\u8D26\u53F7\u77E9\u9635" : "\u81EA\u5EFA\u535A\u4E3B"))), /* @__PURE__ */ import_react3.default.createElement("h2", null, p.name, gender && /* @__PURE__ */ import_react3.default.createElement("span", { className: `gender-mark ${gender === "\u5973" ? "female" : "male"}`, role: "img", "aria-label": `\u6027\u522B\uFF1A${gender}` }, gender === "\u5973" ? "\u2640" : "\u2642")), /* @__PURE__ */ import_react3.default.createElement("p", null, p.intro), p.sourceField && /* @__PURE__ */ import_react3.default.createElement("p", { className: "blogger-source-field" }, "\u64C5\u957F\u9886\u57DF\uFF1A", p.sourceField), /* @__PURE__ */ import_react3.default.createElement("div", { className: "tags" }, tagSummary(p).map((t, i) => /* @__PURE__ */ import_react3.default.createElement("span", { key: i }, t))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-stats" }, /* @__PURE__ */ import_react3.default.createElement("span", null, "\u9002\u914D\u8282\u76EE ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.programs, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u90E8"))), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u5F85\u5BA1\u5185\u5BB9 ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.pending, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u6761"))), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u7D2F\u8BA1\u89C6\u9891 ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.generated, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u6761"))), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u5DF2\u901A\u8FC7 ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.approved, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u6761")))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-effect-stats" }, /* @__PURE__ */ import_react3.default.createElement("span", null, "\u5173\u6CE8 ", formatCount(metrics.followers)), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u6D4F\u89C8 ", formatCount(metrics.views)), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u70B9\u8D5E ", formatCount(metrics.likes))), metrics.outsideCurrentPool > 0 && /* @__PURE__ */ import_react3.default.createElement("p", { className: "library-capacity-warning" }, metrics.outsideCurrentPool, " \u6761\u5386\u53F2\u6210\u7247\u8D85\u51FA\u5F53\u524D\u7D20\u6750\u7684\u72EC\u7ACB\u9AD8\u5149\u5BB9\u91CF\uFF0C\u8BF7\u6838\u5BF9"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-card-actions" }, /* @__PURE__ */ import_react3.default.createElement("button", { className: "button", disabled: locked, title: locked ? "\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u53EF\u7F16\u8F91\u6863\u6848" : void 0, onClick: () => onChoose(p.id) }, "\u67E5\u770B\u8BE6\u60C5"), /* @__PURE__ */ import_react3.default.createElement("button", { className: "button primary", disabled: locked, title: locked ? "\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u53EF\u542F\u52A8\u65B0\u4EFB\u52A1" : void 0, onClick: () => onProduction(p.id) }, "\u81EA\u52A8\u5316\u751F\u4EA7")), locked && /* @__PURE__ */ import_react3.default.createElement("p", { className: "field-help" }, "\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u53EF\u7F16\u8F91\u6863\u6848"));
+      const p = w.blogger, category2 = categoryOf(p), locked = lockedIds.has(p.id) || !!w.job, isNew = isManualNew(w), metrics = getBloggerLibraryMetrics(allowedAssets(p), w.items, isNew), gender = genderMarkerFor(p);
+      return /* @__PURE__ */ import_react3.default.createElement("article", { className: `panel blogger-card ${isNew ? "is-new" : ""}`, key: p.id }, isNew && /* @__PURE__ */ import_react3.default.createElement("span", { className: "blogger-card-new-tag" }, "\u65B0\u589E"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "section-line" }, /* @__PURE__ */ import_react3.default.createElement("button", { className: "avatar-link", "aria-label": `\u5207\u6362\u5230${p.name}`, onClick: () => onChoose(p.id) }, /* @__PURE__ */ import_react3.default.createElement(Avatar, { person: p, large: true })), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-card-badges" }, /* @__PURE__ */ import_react3.default.createElement(Badge, { tone: "green" }, category2), /* @__PURE__ */ import_react3.default.createElement(Badge, { tone: currentId === p.id ? "green" : "" }, currentId === p.id ? "\u5F53\u524D\u535A\u4E3B" : p.sourceKind === "\u6F14\u793A\u5E93" ? "\u6F14\u793A\u5E93" : isFeishu(p) ? p.sourceType || "\u98DE\u4E66\u8D26\u53F7\u77E9\u9635" : "\u81EA\u5EFA\u535A\u4E3B"))), /* @__PURE__ */ import_react3.default.createElement("h2", null, p.name, gender && /* @__PURE__ */ import_react3.default.createElement("span", { className: `gender-mark ${gender === "\u5973" ? "female" : "male"}`, role: "img", "aria-label": `\u6027\u522B\uFF1A${gender}` }, gender === "\u5973" ? "\u2640" : "\u2642")), /* @__PURE__ */ import_react3.default.createElement("p", null, p.intro), p.sourceField && /* @__PURE__ */ import_react3.default.createElement("p", { className: "blogger-source-field" }, "\u64C5\u957F\u9886\u57DF\uFF1A", p.sourceField), /* @__PURE__ */ import_react3.default.createElement("div", { className: "tags" }, tagSummary(p).map((t, i) => /* @__PURE__ */ import_react3.default.createElement("span", { key: i }, t))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-stats" }, /* @__PURE__ */ import_react3.default.createElement("span", null, "\u9002\u914D\u8282\u76EE ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.programs, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u90E8"))), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u5F85\u5BA1\u5185\u5BB9 ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.pending, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u6761"))), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u7D2F\u8BA1\u89C6\u9891 ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.generated, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u6761"))), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u5DF2\u901A\u8FC7 ", /* @__PURE__ */ import_react3.default.createElement("b", null, metrics.approved, /* @__PURE__ */ import_react3.default.createElement("small", null, "\u6761")))), metrics.followers !== null && /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-effect-stats" }, /* @__PURE__ */ import_react3.default.createElement("span", null, "\u5173\u6CE8 ", formatCount(metrics.followers)), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u6D4F\u89C8 ", formatCount(metrics.views)), /* @__PURE__ */ import_react3.default.createElement("span", null, "\u70B9\u8D5E ", formatCount(metrics.likes))), metrics.outsideCurrentPool > 0 && /* @__PURE__ */ import_react3.default.createElement("p", { className: "library-capacity-warning" }, metrics.outsideCurrentPool, " \u6761\u5386\u53F2\u6210\u7247\u8D85\u51FA\u5F53\u524D\u7D20\u6750\u7684\u72EC\u7ACB\u9AD8\u5149\u5BB9\u91CF\uFF0C\u8BF7\u6838\u5BF9"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "blogger-card-actions" }, /* @__PURE__ */ import_react3.default.createElement("button", { className: "button", disabled: locked, title: locked ? "\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u53EF\u7F16\u8F91\u6863\u6848" : void 0, onClick: () => onChoose(p.id) }, "\u67E5\u770B\u8BE6\u60C5"), /* @__PURE__ */ import_react3.default.createElement("button", { className: "button primary", disabled: locked, title: locked ? "\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u53EF\u542F\u52A8\u65B0\u4EFB\u52A1" : void 0, onClick: () => onProduction(p.id) }, "\u81EA\u52A8\u5316\u751F\u4EA7")), locked && /* @__PURE__ */ import_react3.default.createElement("p", { className: "field-help" }, "\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u53EF\u7F16\u8F91\u6863\u6848"));
     })), !sortedList.length && /* @__PURE__ */ import_react3.default.createElement("div", { className: "empty-state" }, "\u6682\u65E0\u5339\u914D\u535A\u4E3B\uFF0C\u53EF\u4EE5\u65B0\u5EFA\u6216\u8F7D\u5165\u6F14\u793A\u535A\u4E3B\u3002"));
   }
 
@@ -25028,110 +24997,106 @@
   // admin/Production.jsx
   var import_react5 = __toESM(require_react());
   var phases = ["\u751F\u6210\u521B\u4F5C\u4E3B\u9898", "\u751F\u6210\u94A9\u5B50\u811A\u672C", "\u6309\u811A\u672C\u5339\u914D\u7D20\u6750", "\u81EA\u52A8\u5236\u4F5C\u94A9\u5B50\u89C6\u9891", "\u81EA\u52A8\u5173\u8054\u76F8\u5173\u5185\u5BB9"];
-  function Production({ state, onStart, onAssets, onReview, targetBloggers = [], maxCount = 0, bulkProduction }) {
-    const blogger = state.blogger, pool = allowedAssets(blogger), usedClips = new Set(state.items.map((item) => `${item.assetId}:${item.highlightId}`));
-    const countChoices = [1, 2, 3];
-    const suggestedCount = Math.min(maxCount || 1, 3);
+  function Production({ state, onStart, onAssets, onReview, targetBloggers = [], maxCount = 0 }) {
+    const h = import_react5.default.createElement;
+    const blogger = state.blogger;
+    const pool = allowedAssets(blogger);
+    const defaultRelatedIds = pool.slice(0, 3).map((asset) => asset.id);
     const topicSuggestions = [
       { title: "谍战剧里的危险，往往从一句家常话开始", thesis: "真正的高手从不把危险写在脸上。", script: "一句看似普通的家常话，为什么会让经验丰富的潜伏者立刻警觉？因为在谍战剧里，语言从来不只是语言，它还是试探、暗号和身份边界。" },
       { title: "三个站长，三种识人方式", thesis: "同样是识人，不同角色靠的是完全不同的生存逻辑。", script: "把《潜伏》《悬崖》《风筝》放在一起看，你会发现真正决定人物命运的，不只是立场，而是他们识人的方式。" },
       { title: "为什么老谍战剧更耐看？", thesis: "耐看的不是反转数量，而是人物每次选择都有代价。", script: "很多经典谍战剧没有密集反转，却越看越有味道。答案藏在人物的每一次选择里：他们赢下一局，也一定会失去一些东西。" }
-    ];
-    const [settings, setSettings] = (0, import_react5.useState)({ count: suggestedCount, duration: 120, ratio: "16:9", selectedTopics: topicSuggestions }), [clock, setClock] = (0, import_react5.useState)(Date.now()), [error, setError] = (0, import_react5.useState)("");
+    ].map((topic) => ({ ...topic, duration: 120, relatedIds: [...defaultRelatedIds] }));
+    const [settings, setSettings] = (0, import_react5.useState)({ selectedTopics: topicSuggestions.slice(0, 2) });
+    const [error, setError] = (0, import_react5.useState)("");
+    const selectedTopics = settings.selectedTopics || [];
+    const selectedCount = selectedTopics.length;
     const toggleTopic = (topic) => setSettings((current) => {
       const selected = current.selectedTopics || [];
       const exists = selected.some((item) => item.title === topic.title);
+      if (exists && selected.length === 1) return current;
       const next = exists ? selected.filter((item) => item.title !== topic.title) : selected.length < 3 ? [...selected, topic] : selected;
-      return next.length ? { ...current, selectedTopics: next, count: next.length } : current;
+      return { ...current, selectedTopics: next };
     });
-    (0, import_react5.useEffect)(() => {
-      if (maxCount >= 1) setSettings((current) => current.count > maxCount ? { ...current, count: suggestedCount } : current);
-    }, [maxCount]);
-    (0, import_react5.useEffect)(() => {
-      if (!state.job) return;
-      const t = setInterval(() => setClock(Date.now()), 150);
-      return () => clearInterval(t);
-    }, [state.job]);
-    const job = state.job;
-    if (job?.kind === "batch") {
-      const phase = Math.min(4, Math.floor(Math.max(0, clock - job.startedAt) / 1500));
-      return /* @__PURE__ */ import_react5.default.createElement(import_react5.default.Fragment, null, /* @__PURE__ */ import_react5.default.createElement(Heading, { title: "AI \u6B63\u5728\u6279\u91CF\u751F\u4EA7\u94A9\u5B50\u89C6\u9891", description: bulkProduction ? `\u6279\u91CF\u4EFB\u52A1\u7B2C ${bulkProduction.completed + 1}/${bulkProduction.total} \u4F4D\uFF1A\u4E3A\u300C${blogger.name}\u300D\u751F\u6210 ${job.planned.length} \u6761\u5185\u5BB9` : `\u4E3A\u300C${blogger.name}\u300D\u751F\u6210 ${job.planned.length} \u6761\u5185\u5BB9` }, /* @__PURE__ */ import_react5.default.createElement(Badge, { tone: "blue" }, "\u6A21\u62DF\u751F\u4EA7\u4E2D")), bulkProduction && /* @__PURE__ */ import_react5.default.createElement("div", { className: "bulk-live-strip" }, /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u6279\u91CF\u751F\u4EA7\u8FDB\u5EA6"), /* @__PURE__ */ import_react5.default.createElement("span", null, "\u7B2C ", bulkProduction.completed + 1, " \u4F4D / \u5171 ", bulkProduction.total, " \u4F4D\u535A\u4E3B"), /* @__PURE__ */ import_react5.default.createElement("div", null, targetBloggers.map((w) => /* @__PURE__ */ import_react5.default.createElement(Badge, { key: w.blogger.id, tone: w.blogger.id === blogger.id ? "green" : "" }, w.blogger.name)))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "production-live" }, /* @__PURE__ */ import_react5.default.createElement("section", { className: "panel process-panel" }, /* @__PURE__ */ import_react5.default.createElement("h2", null, phases[phase]), /* @__PURE__ */ import_react5.default.createElement("div", { className: "progress-track" }, /* @__PURE__ */ import_react5.default.createElement("i", { style: { width: `${Math.min(98, (clock - job.startedAt) / 75)}%` } })), /* @__PURE__ */ import_react5.default.createElement("div", { className: "phase-list" }, phases.map((s, i) => /* @__PURE__ */ import_react5.default.createElement("div", { key: s, className: `phase ${i < phase ? "done" : i === phase ? "current" : ""}` }, /* @__PURE__ */ import_react5.default.createElement("span", null, i < phase ? "\u2713" : i + 1), /* @__PURE__ */ import_react5.default.createElement("strong", null, s), /* @__PURE__ */ import_react5.default.createElement(Badge, null, i < phase ? "\u5DF2\u5B8C\u6210" : i === phase ? "\u8FDB\u884C\u4E2D" : "\u7B49\u5F85")))), /* @__PURE__ */ import_react5.default.createElement("p", { className: "field-help" }, "\u57FA\u4E8E\u535A\u4E3B\u6807\u7B7E\u751F\u6210\u4E3B\u9898\u548C\u811A\u672C\uFF0C\u518D\u5230\u5BF9\u5E94\u5185\u5BB9\u6C60\u68C0\u7D22\u7D20\u6750\u3002\u6BCF\u6761\u5185\u5BB9\u90FD\u7ED1\u5B9A\u72EC\u7ACB\u9AD8\u5149\uFF1B\u7D20\u6750\u4E0D\u8DB3\u65F6\u4F1A\u9650\u5236\u672C\u6279\u6570\u91CF\u3002\u5236\u4F5C\u8FC7\u7A0B\u4E3A\u6A21\u62DF\u3002")), /* @__PURE__ */ import_react5.default.createElement("aside", { className: "panel queue-panel" }, /* @__PURE__ */ import_react5.default.createElement("h2", null, "\u521B\u4F5C\u961F\u5217"), job.planned.map((i) => /* @__PURE__ */ import_react5.default.createElement("div", { className: "queue-item", key: i.id }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("small", null, i.id, " \xB7 ", i.theme), /* @__PURE__ */ import_react5.default.createElement("p", null, i.title), /* @__PURE__ */ import_react5.default.createElement("span", null, phase >= 2 ? `\u5DF2\u5339\u914D\u300A${ASSETS.find((a) => a.id === i.assetId).title}\u300B` : i.script)))))));
-    }
-    return /* @__PURE__ */ import_react5.default.createElement(import_react5.default.Fragment, null, /* @__PURE__ */ import_react5.default.createElement(Heading, { eyebrow: "02 / PRODUCTION", title: "\u751F\u6210\u4E3B\u9898\u4E0E\u811A\u672C", description: "\u70B9\u51FB\u5C06\u751F\u6210\u4E3B\u9898/\u6807\u9898/\u94A9\u5B50/\u53E3\u64AD\u811A\u672C\u8349\u7A3F\u4F9B\u8FD0\u8425\u5BA1\u6838\uFF1B\u6240\u6709\u811A\u672C\u5168\u90E8\u5BA1\u6838\u901A\u8FC7\u540E\uFF0C\u65B9\u53EF\u542F\u52A8\u89C6\u9891\u5236\u4F5C\u3002" }, /* @__PURE__ */ import_react5.default.createElement("button", { className: "button", onClick: onAssets }, "\u6D4F\u89C8\u7D20\u6750\u5E93 \u2197")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "blogger-strip" }, /* @__PURE__ */ import_react5.default.createElement(Avatar, { person: blogger }), /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("strong", null, blogger.name), /* @__PURE__ */ import_react5.default.createElement("p", null, blogger.tone)), /* @__PURE__ */ import_react5.default.createElement(Badge, { tone: "green" }, "\u6700\u65B0\u6863\u6848\u5DF2\u5E94\u7528")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "production-targets panel" }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u672C\u6B21\u53C2\u4E0E\u535A\u4E3B"), /* @__PURE__ */ import_react5.default.createElement("span", null, targetBloggers.length, " / 10 \u4F4D \xB7 \u6BCF\u4F4D\u6309\u4E0B\u65B9\u6570\u91CF\u751F\u4EA7"), /* @__PURE__ */ import_react5.default.createElement("small", null, "\u5404\u81EA\u4ECE\u5BF9\u5E94\u5185\u5BB9\u6C60\u5339\u914D\u7D20\u6750")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "production-target-list" }, targetBloggers.map((w) => /* @__PURE__ */ import_react5.default.createElement(Badge, { key: w.blogger.id }, w.blogger.name)))), /* @__PURE__ */ import_react5.default.createElement("section", { className: "panel topic-suggestions" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "section-line" }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("h2", null, "\u4ECA\u65E5\u9009\u9898"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "subtle" }, "AI \u5DF2\u6839\u636E\u535A\u4E3B\u4EBA\u8BBE\u4E0E\u5185\u5BB9\u6C60\u751F\u6210\u5EFA\u8BAE\uFF0C\u8BF7\u9009\u62E9 1\u20133 \u4E2A"))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "topic-suggestion-grid" }, topicSuggestions.map((topic, index) => { const selected = (settings.selectedTopics || []).some((item) => item.title === topic.title); return /* @__PURE__ */ import_react5.default.createElement("button", { type: "button", key: topic.title, className: `topic-suggestion-card ${selected ? "selected" : ""}`, onClick: () => toggleTopic(topic) }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "topic-check" }, selected ? "\u2713" : index + 1), /* @__PURE__ */ import_react5.default.createElement("strong", null, topic.title), /* @__PURE__ */ import_react5.default.createElement("p", null, topic.thesis), /* @__PURE__ */ import_react5.default.createElement("small", null, index === 1 ? "\u5173\u8054\u300A\u6F5C\u4F0F\u300B\u300A\u60AC\u5D16\u300B\u300A\u98CE\u7B5D\u300B" : "\u53EF\u5173\u8054 1\u20133 \u90E8\u8282\u76EE")); }))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "production-layout" }, /* @__PURE__ */ import_react5.default.createElement("section", { className: "panel production-form" }, /* @__PURE__ */ import_react5.default.createElement("h2", null, "\u672C\u6B21\u751F\u4EA7\u8BBE\u7F6E"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "form-grid" }, /* @__PURE__ */ import_react5.default.createElement("label", null, "\u672C\u6279\u751F\u4EA7\u6570\u91CF", /* @__PURE__ */ import_react5.default.createElement("div", { className: "segmented" }, countChoices.map((n) => /* @__PURE__ */ import_react5.default.createElement("button", { key: n, disabled: n > maxCount, title: n > maxCount ? `\u5F53\u524D\u81F3\u5C11\u4E00\u4F4D\u535A\u4E3B\u53EA\u6709 ${maxCount} \u5904\u53EF\u7528\u9AD8\u5149` : void 0, className: settings.count === n ? "active" : "", onClick: () => setSettings({ ...settings, count: n }) }, n, " \u6761"))), /* @__PURE__ */ import_react5.default.createElement("small", null, "\u6240\u9009\u535A\u4E3B\u4E2D\u6700\u5C11\u6709 ", maxCount, " \u5904\u53EF\u7528\u9AD8\u5149\uFF1B\u6BCF\u6761\u89C6\u9891\u9700\u5BF9\u5E94\u4E0D\u540C\u9AD8\u5149")), /* @__PURE__ */ import_react5.default.createElement("label", null, "\u89C6\u9891\u65F6\u957F", /* @__PURE__ */ import_react5.default.createElement("div", { className: "duration-input" }, /* @__PURE__ */ import_react5.default.createElement("input", { "aria-label": "\u89C6\u9891\u65F6\u957F", type: "number", min: "90", max: "300", step: "1", value: settings.duration, onChange: (e) => setSettings({ ...settings, duration: Math.min(300, Math.max(90, Number(e.target.value) || 90)), ratio: "16:9" }) }), /* @__PURE__ */ import_react5.default.createElement("span", null, "\u79D2")), /* @__PURE__ */ import_react5.default.createElement("small", null, "\u53EF\u81EA\u5B9A\u4E49 90\u2013300 \u79D2\uFF0C\u9ED8\u8BA4 120 \u79D2 \xB7 \u753B\u5E45 16:9"))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "auto-rule" }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u9009\u4E3B\u9898 \u2192 \u5B9A\u4E3B\u9898 \u2192 \u53F0\u8BCD/\u811A\u672C \u2192 \u8FD0\u8425\u5BA1\u6838 \u2192 \u4E00\u4E3B\u9898\u4E00\u89C6\u9891"), /* @__PURE__ */ import_react5.default.createElement("p", null, "\u70B9\u51FB\u751F\u6210\u4E3B\u9898/\u6807\u9898/\u94A9\u5B50/\u53E3\u64AD\u811A\u672C\u8349\u7A3F\u4F9B\u8FD0\u8425\u5BA1\u6838\uFF0C\u6240\u6709\u811A\u672C\u5168\u90E8\u5BA1\u6838\u901A\u8FC7\u540E\u65B9\u53EF\u542F\u52A8\u89C6\u9891\u5236\u4F5C\uFF08\u4E00\u4E3B\u9898\u4E00\u89C6\u9891\uFF09\u3002"))), /* @__PURE__ */ import_react5.default.createElement("h3", null, "\u81EA\u52A8\u9009\u6750\u8303\u56F4\uFF08", blogger.name, "\uFF09\xB7 ", pool.length, " \u90E8\u8282\u76EE \xB7 ", availableClipCount(blogger, state.items), " \u5904\u9AD8\u5149"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "field-help" }, "\u6BCF\u6761\u89C6\u9891\u4F7F\u7528\u4E00\u5904\u4E0D\u540C\u9AD8\u5149\uFF1B\u7D20\u6750\u6216\u9AD8\u5149\u4E0D\u8DB3\u65F6\uFF0C\u4E0D\u4F1A\u91CD\u590D\u62FC\u51D1\u3002"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "source-list" }, pool.map((a) => /* @__PURE__ */ import_react5.default.createElement("div", { className: "source-option selected", key: a.id }, /* @__PURE__ */ import_react5.default.createElement(Poster, { asset: a, small: true }), /* @__PURE__ */ import_react5.default.createElement("div", { className: "source-info" }, /* @__PURE__ */ import_react5.default.createElement("strong", null, a.title), /* @__PURE__ */ import_react5.default.createElement("small", null, a.topic, " \xB7 \u5B57\u5E55\u4E0E\u9AD8\u5149\u5DF2\u5C31\u7EEA")), /* @__PURE__ */ import_react5.default.createElement(Badge, null, a.highlights.filter((h) => !usedClips.has(`${a.id}:${h.id}`)).length, "/", a.highlights.length, " \u5904\u53EF\u7528\u9AD8\u5149")))), maxCount < 1 && /* @__PURE__ */ import_react5.default.createElement("p", { className: "capacity-warning", role: "status" }, "\u6240\u9009\u535A\u4E3B\u7684\u5185\u5BB9\u6C60\u6CA1\u6709\u53EF\u7528\u9AD8\u5149\uFF0C\u6682\u65F6\u65E0\u6CD5\u5F00\u6279\u91CF\u4EFB\u52A1\u3002\u8BF7\u79FB\u9664\u8BE5\u535A\u4E3B\u6216\u6269\u5145\u5185\u5BB9\u6C60\u3002"), error && /* @__PURE__ */ import_react5.default.createElement("p", { role: "alert" }, error), /* @__PURE__ */ import_react5.default.createElement("div", { className: "form-bottom" }, /* @__PURE__ */ import_react5.default.createElement("span", null, "\u811A\u672C\u5168\u90E8\u5BA1\u6838\u901A\u8FC7\u540E\u65B9\u53EF\u542F\u52A8\u89C6\u9891\u5236\u4F5C"), /* @__PURE__ */ import_react5.default.createElement("button", { className: "button primary", disabled: !!job || settings.count > maxCount || !targetBloggers.length, onClick: () => {
+    const updateTopic = (title, patch) => setSettings((current) => ({ ...current, selectedTopics: (current.selectedTopics || []).map((topic) => topic.title === title ? { ...topic, ...patch } : topic) }));
+    const toggleMaterial = (title, assetId) => setSettings((current) => ({ ...current, selectedTopics: (current.selectedTopics || []).map((topic) => {
+      if (topic.title !== title) return topic;
+      const ids = topic.relatedIds || [];
+      if (ids.includes(assetId) && ids.length === 1) return topic;
+      return { ...topic, relatedIds: ids.includes(assetId) ? ids.filter((id) => id !== assetId) : [...ids, assetId] };
+    }) }));
+    const invalid = selectedCount < 1 || selectedCount > maxCount || selectedTopics.some((topic) => !(topic.relatedIds || []).length);
+    const submit = () => {
       try {
-        onStart({ ...settings, ratio: "16:9" }, targetBloggers.map((w) => w.blogger.id));
+        setError("");
+        onStart(DemoLogic.prepareTopicBatch(selectedTopics), targetBloggers.map((workspace) => workspace.blogger.id));
       } catch (e) {
         setError(e.message);
       }
-    } }, "\u751F\u6210 ", settings.count, " \u4EFD\u4E3B\u9898\u4E0E\u811A\u672C \u2192"))), /* @__PURE__ */ import_react5.default.createElement("aside", { className: "panel deliverable" }, /* @__PURE__ */ import_react5.default.createElement("h2", null, "\u8FD9\u4E00\u6279\uFF0C\u4F60\u5C06\u5F97\u5230"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "batch-number" }, settings.count, /* @__PURE__ */ import_react5.default.createElement("span", null, "\u4EFD\u4E3B\u9898\u4E0E\u811A\u672C")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "spec-row" }, /* @__PURE__ */ import_react5.default.createElement("span", null, "01"), /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u751F\u6210\u521B\u4F5C\u4E3B\u9898\u4E0E\u5F00\u573A\u94A9\u5B50")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "spec-row" }, /* @__PURE__ */ import_react5.default.createElement("span", null, "02"), /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u751F\u6210\u53E3\u64AD\u811A\u672C\u4E0E\u539F\u7247\u7EBF\u7D22")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "spec-row" }, /* @__PURE__ */ import_react5.default.createElement("span", null, "03"), /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u8FDB\u5165\u8FD0\u8425\u4EBA\u5DE5\u5BA1\u6838\u4E0E\u811A\u672C\u786E\u8BA4")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "spec-row" }, /* @__PURE__ */ import_react5.default.createElement("span", null, "04"), /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u5BA1\u6838\u901A\u8FC7\u540E\u4E00\u4E3B\u9898\u72EC\u7ACB\u751F\u6210\u4E00\u89C6\u9891")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "spec-row" }, /* @__PURE__ */ import_react5.default.createElement("span", null, "05"), /* @__PURE__ */ import_react5.default.createElement("strong", null, "\u81EA\u52A8\u5173\u8054\u8282\u76EE\u6765\u6E90\u4E0E\u5EF6\u4F38\u5185\u5BB9")), /* @__PURE__ */ import_react5.default.createElement("p", { className: "field-help" }, "\u6240\u6709\u811A\u672C\u5BA1\u6838\u901A\u8FC7\u540E\u542F\u52A8\u89C6\u9891\u5236\u4F5C\u3002Demo \u5C55\u793A\u811A\u672C\u3001\u7D20\u6750\u65F6\u95F4\u70B9\u548C\u53EF\u64AD\u653E\u5206\u955C\uFF0C\u4E0D\u751F\u6210\u771F\u5B9E\u89C6\u9891\u6587\u4EF6\u3002"), state.items.length > 0 && /* @__PURE__ */ import_react5.default.createElement("button", { className: "button full-width", onClick: onReview }, "\u67E5\u770B\u5DF2\u6709 ", state.items.length, " \u6761\u5185\u5BB9 \u2192"))));
+    };
+    return h(import_react5.default.Fragment, null,
+      h(Heading, { eyebrow: "02 / PRODUCTION", title: "今日选题", description: "AI 已根据博主人设与内容池生成建议。选择几个主题，就生成几条内容；每条内容分别配置时长与选材范围。" }, h("button", { className: "button", onClick: onAssets }, "浏览素材库 ↗")),
+      h("div", { className: "blogger-strip" }, h(Avatar, { person: blogger }), h("div", null, h("strong", null, blogger.name), h("p", null, blogger.tone)), h(Badge, { tone: "green" }, "最新档案已应用")),
+      h("div", { className: "production-flow-hint panel" },
+        ["选主题", "定主题", "台词 / 脚本", "运营审核", "一主题一视频"].map((label, index) => h(import_react5.default.Fragment, { key: label }, h("span", null, h("b", null, index + 1), label), index < 4 && h("i", null, "→"))),
+        h("small", null, "主题数量即内容数量；脚本逐条审核通过后进入视频制作。")
+      ),
+      h("section", { className: "panel topic-suggestions" },
+        h("div", { className: "section-line" }, h("div", null, h("h2", null, "今日选题"), h("p", { className: "subtle" }, "请选择 1–3 个主题，当前选择 ", selectedCount, " 个"))),
+        h("div", { className: "topic-suggestion-grid" }, topicSuggestions.map((topic, index) => {
+          const selected = selectedTopics.some((item) => item.title === topic.title);
+          return h("button", { type: "button", key: topic.title, className: `topic-suggestion-card ${selected ? "selected" : ""}`, onClick: () => toggleTopic(topic) }, h("span", { className: "topic-check" }, selected ? "✓" : index + 1), h("strong", null, topic.title), h("p", null, topic.thesis), h("small", null, "可关联 1–3 部节目"));
+        }))
+      ),
+      h("div", { className: "production-layout" },
+        h("section", { className: "panel production-form" },
+          h("div", { className: "section-line" }, h("div", null, h("h2", null, "逐条生产设置"), h("p", { className: "subtle" }, "每个主题分别设置视频时长和选材范围")), h(Badge, { tone: "green" }, selectedCount, " 条内容")),
+          h("div", { className: "topic-config-list" }, selectedTopics.map((topic, index) => h("article", { className: "topic-config-card", key: topic.title },
+            h("div", { className: "topic-config-head" }, h("span", null, String(index + 1).padStart(2, "0")), h("div", null, h("strong", null, topic.title), h("small", null, "一主题对应一条视频内容"))),
+            h("div", { className: "topic-config-controls" },
+              h("label", null, h("span", null, "视频时长"), h("div", { className: "duration-input" }, h("input", { type: "number", min: "90", max: "300", step: "1", value: topic.duration, "aria-label": `${topic.title}视频时长`, onChange: (event) => updateTopic(topic.title, { duration: Math.min(300, Math.max(90, Number(event.target.value) || 90)) }) }), h("em", null, "秒")), h("small", null, "90–300 秒 · 16:9")),
+              h("div", { className: "topic-material-range" }, h("span", null, "选材范围（可多选）"), h("div", { className: "topic-material-options" }, pool.map((asset) => {
+                const checked = (topic.relatedIds || []).includes(asset.id);
+                return h("label", { key: asset.id, className: checked ? "selected" : "" }, h("input", { type: "checkbox", checked, onChange: () => toggleMaterial(topic.title, asset.id) }), h("span", null, asset.title), h("small", null, (asset.highlights || []).length, " 处高光"));
+              })))
+            )
+          ))),
+          maxCount < selectedCount && h("p", { className: "capacity-warning", role: "status" }, "当前可用高光不足，请减少主题或调整选材范围。"),
+          error && h("p", { className: "capacity-warning", role: "alert" }, error),
+          h("div", { className: "form-bottom" }, h("span", null, "已选 ", selectedCount, " 个主题，将生成 ", selectedCount, " 份独立脚本"), h("button", { className: "button primary", disabled: invalid || !targetBloggers.length, onClick: submit }, "生成 ", selectedCount, " 份主题与脚本 →"))
+        ),
+        h("aside", { className: "panel deliverable" }, h("h2", null, "这一批，你将得到"), h("div", { className: "batch-number" }, selectedCount, h("span", null, "份主题与脚本")),
+          ["每主题独立时长", "每主题独立选材范围", "完整口播脚本", "逐条运营审核", "审核后生成逐镜脚本"].map((label, index) => h("div", { className: "spec-row", key: label }, h("span", null, String(index + 1).padStart(2, "0")), h("strong", null, label))),
+          h("p", { className: "field-help" }, "主题、脚本与后续视频保持 1:1 对应；一个主题可关联一到多个节目。"), state.items.length > 0 && h("button", { className: "button full-width", onClick: onReview }, "查看已有 ", state.items.length, " 条内容 →"))
+      )
+    );
   }
+
 
   // admin/ScriptReview.jsx
   var import_react6 = __toESM(require_react());
-  function ScriptReview({
-    state,
-    onEdit,
-    onApproveDraft,
-    onStartVideoProduction,
-    onBack
-  }) {
+  function ScriptReview({ state, onApproveDraft, onBack }) {
+    const h = import_react6.default.createElement;
     const drafts = state?.topicDrafts || [];
-    const canStart = drafts.length > 0 && drafts.every((draft) => Boolean(draft.approved));
-    return /* @__PURE__ */ import_react6.default.createElement("div", { className: "page-content script-review-page" }, /* @__PURE__ */ import_react6.default.createElement(
-      Heading,
-      {
-        eyebrow: "02.5 / SCRIPT REVIEW",
-        title: "\u4E3B\u9898\u4E0E\u811A\u672C\u5BA1\u6838",
-        description: "\u6BCF\u4E2A\u4E3B\u9898\u5C06\u72EC\u7ACB\u751F\u6210\u4E00\u6761\u89C6\u9891\u5185\u5BB9\uFF08\u4E00\u4E3B\u9898\u4E00\u89C6\u9891\uFF09\u3002\u8BF7\u5BA1\u6838\u5E76\u786E\u8BA4\u6240\u6709\u811A\u672C\u540E\u542F\u52A8\u5236\u4F5C\u3002"
-      },
-      /* @__PURE__ */ import_react6.default.createElement(Badge, { tone: "amber" }, "\u5F85\u8FD0\u8425\u5BA1\u6838")
-    ), /* @__PURE__ */ import_react6.default.createElement("div", { className: "auto-rule", style: { marginBottom: "20px" } }, /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("strong", null, "\u4E00\u4E3B\u9898\u4E00\u89C6\u9891\u539F\u5219"), /* @__PURE__ */ import_react6.default.createElement("p", null, "\u5217\u8868\u4E2D\u7684\u6BCF\u4E2A\u8349\u7A3F\u4E3B\u9898\u90FD\u5C06\u72EC\u7ACB\u5236\u4F5C\u5BF9\u5E94\u7684\u9AD8\u5149\u89C6\u9891\uFF0C\u4E0D\u4F1A\u8FDB\u884C\u5408\u5E76\u6216\u9057\u6F0F\u3002\u8BF7\u5728\u4E0B\u65B9\u5BF9\u4E3B\u9898\u3001\u6807\u9898\u3001\u94A9\u5B50\u4E0E\u811A\u672C\u8FDB\u884C\u6838\u5BF9\u4E0E\u4FEE\u6539\u3002"))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "script-review-grid", style: { display: "flex", flexDirection: "column", gap: "18px" } }, drafts.map((draft, idx) => /* @__PURE__ */ import_react6.default.createElement("div", { key: draft.id || idx, className: "panel", style: { padding: "24px" } }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "section-line", style: { marginBottom: "16px" } }, /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("strong", null, "\u8349\u7A3F #", idx + 1), /* @__PURE__ */ import_react6.default.createElement("span", { className: "subtle", style: { marginLeft: "8px" } }, draft.id)), /* @__PURE__ */ import_react6.default.createElement(Badge, { tone: "amber" }, "\u5F85\u5BA1\u6838")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "script-cover-preview" }, /* @__PURE__ */ import_react6.default.createElement(Poster, { asset: ASSETS.find((a) => a.id === draft.assetId), small: true }), /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("strong", null, "\u5C01\u9762\u56FE\u9884\u89C8"), /* @__PURE__ */ import_react6.default.createElement("small", null, "\u5C01\u9762\u6807\u9898\uFF1A", draft.title))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "form-grid" }, /* @__PURE__ */ import_react6.default.createElement("label", null, "\u5185\u5BB9\u65B9\u5411", /* @__PURE__ */ import_react6.default.createElement(
-      "input",
-      {
-        type: "text",
-        "aria-label": "\u521B\u4F5C\u4E3B\u9898",
-        value: draft.topic || "",
-        readOnly: true,
-        onChange: (e) => onEdit?.(draft.id, { topic: e.target.value })
-      }
-    )), /* @__PURE__ */ import_react6.default.createElement("label", null, "\u5DE5\u4F5C\u6807\u9898 / \u5C01\u9762\u6807\u9898", /* @__PURE__ */ import_react6.default.createElement(
-      "input",
-      {
-        type: "text",
-        "aria-label": "\u89C6\u9891\u6807\u9898",
-        value: draft.title || "",
-        readOnly: true,
-        onChange: (e) => onEdit?.(draft.id, { title: e.target.value })
-      }
-    )), /* @__PURE__ */ import_react6.default.createElement("label", { className: "full" }, "\u5F00\u573A\u94A9\u5B50", /* @__PURE__ */ import_react6.default.createElement(
-      "input",
-      {
-        type: "text",
-        "aria-label": "\u5F00\u573A\u94A9\u5B50",
-        value: draft.hook || "",
-        readOnly: true,
-        onChange: (e) => onEdit?.(draft.id, { hook: e.target.value })
-      }
-    )), /* @__PURE__ */ import_react6.default.createElement("label", { className: "full" }, "\u53E3\u64AD\u6587\u6848\uFF08\u5B8C\u6574\u5BA1\u6838\u7A3F\uFF09", /* @__PURE__ */ import_react6.default.createElement(
-      "textarea",
-      {
-        rows: 4,
-        "aria-label": "\u53E3\u64AD\u811A\u672C",
-        value: draft.script || "",
-        readOnly: true,
-        onChange: (e) => onEdit?.(draft.id, { script: e.target.value })
-      }
-    ))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "related-programs" }, /* @__PURE__ */ import_react6.default.createElement("strong", null, "\u5173\u8054\u8282\u76EE"), (draft.relatedIds || []).map((id) => /* @__PURE__ */ import_react6.default.createElement(Badge, { key: id }, `\u300A${ASSETS.find((asset) => asset.id === id)?.title || "\u8282\u76EE"}\u300B`))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "script-summary-grid" }, /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("small", null, "\u6838\u5FC3\u89C2\u70B9"), /* @__PURE__ */ import_react6.default.createElement("strong", null, draft.theme || draft.topic)), /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("small", null, "\u6700\u7EC8\u7ED3\u8BBA"), /* @__PURE__ */ import_react6.default.createElement("strong", null, "\u4EBA\u7269\u7684\u6BCF\u6B21\u9009\u62E9\u90FD\u6709\u4EE3\u4EF7\uFF0C\u8FD9\u624D\u662F\u7ECF\u5178\u4E4B\u6240\u4EE5\u8010\u770B\u3002"))))), !drafts.length && /* @__PURE__ */ import_react6.default.createElement("div", { className: "panel", style: { padding: "40px", textAlign: "center" } }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "subtle" }, "\u6682\u65E0\u5F85\u5BA1\u6838\u7684\u4E3B\u9898\u4E0E\u811A\u672C\u8349\u7A3F"))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "form-bottom", style: { marginTop: "24px" } }, /* @__PURE__ */ import_react6.default.createElement("span", { className: "subtle" }, "\u5DF2\u9009 ", drafts.length, " \u4E2A\u9009\u9898\uFF0C\u5BA1\u6838\u540E\u5C06\u8FDB\u5165\u9010\u955C\u751F\u6210"), /* @__PURE__ */ import_react6.default.createElement("div", { className: "button-group" }, onBack && /* @__PURE__ */ import_react6.default.createElement("button", { className: "button", type: "button", onClick: onBack }, "\u9000\u56DE\u4FEE\u6539"), /* @__PURE__ */ import_react6.default.createElement(
-      "button",
-      {
-        className: "button primary",
-        type: "button",
-        disabled: !canStart,
-        onClick: onStartVideoProduction
-      },
-      "\u5BA1\u6838\u901A\u8FC7\uFF0C\u751F\u6210\u9010\u955C\u811A\u672C \u2192"
-    ))));
+    const [openId, setOpenId] = (0, import_react6.useState)(null);
+    const openDraft = drafts.find((draft) => draft.id === openId);
+    const approvedCount = drafts.filter((draft) => draft.approved).length;
+    return h("div", { className: "page-content script-review-page" },
+      h(Heading, { eyebrow: "02.5 / SCRIPT REVIEW", title: "主题与脚本审核", description: "每个主题单独审核、单独生成一条视频。最后一条脚本通过后，自动进入逐镜脚本生成。" }, h(Badge, { tone: approvedCount === drafts.length && drafts.length ? "green" : "amber" }, "已通过 ", approvedCount, " / ", drafts.length)),
+      h("div", { className: "script-review-grid" }, drafts.map((draft, idx) => h("article", { key: draft.id || idx, className: `panel script-review-card ${draft.approved ? "approved" : ""}` },
+        h("div", { className: "section-line" }, h("div", null, h("strong", null, "草稿 #", idx + 1), h("span", { className: "subtle" }, draft.id)), h(Badge, { tone: draft.approved ? "green" : "amber" }, draft.approved ? "审核通过" : "待审核")),
+        h("div", { className: "script-cover-preview" }, h(Poster, { asset: ASSETS.find((asset) => asset.id === draft.assetId), small: true }), h("div", null, h("strong", null, "封面图预览"), h("small", null, "封面标题：", draft.title))),
+        h("div", { className: "form-grid" }, h("label", null, "内容方向", h("input", { type: "text", value: draft.topic || "", readOnly: true })), h("label", null, "工作标题 / 封面标题", h("input", { type: "text", value: draft.title || "", readOnly: true })), h("label", { className: "full" }, "开场钩子", h("input", { type: "text", value: draft.hook || "", readOnly: true }))),
+        h("div", { className: "script-copy-preview" }, h("div", null, h("strong", null, "口播文案"), h("span", null, "完整审核稿")), h("p", null, (draft.script || "").slice(0, 150), (draft.script || "").length > 150 ? "…" : ""), h("button", { type: "button", className: "text-button", onClick: () => setOpenId(draft.id) }, "查看完整口播文案 ↗")),
+        h("div", { className: "related-programs" }, h("strong", null, "关联节目"), (draft.relatedIds || []).map((id) => h(Badge, { key: id }, `《${ASSETS.find((asset) => asset.id === id)?.title || "节目"}》`))),
+        h("div", { className: "script-summary-grid" }, h("div", null, h("small", null, "核心观点"), h("strong", null, draft.theme || draft.topic)), h("div", null, h("small", null, "最终结论"), h("strong", null, "人物的每次选择都有代价，这才是经典之所以耐看。"))),
+        h("div", { className: "script-card-actions" }, h("button", { type: "button", className: "button", onClick: onBack }, "退回修改"), h("button", { type: "button", className: "button primary", disabled: draft.approved, onClick: () => onApproveDraft(draft.id, true) }, draft.approved ? "已审核通过" : "审核通过"))
+      ))),
+      !drafts.length && h("div", { className: "panel empty-state" }, "暂无待审核的主题与脚本草稿"),
+      openDraft && h(Modal, { title: `完整口播文案 · ${openDraft.title}`, onClose: () => setOpenId(null), footer: h("button", { type: "button", className: "button primary", onClick: () => setOpenId(null) }, "确认已阅读") }, h("div", { className: "full-script-document" }, h("div", { className: "full-script-meta" }, h(Badge, null, openDraft.topic), h("span", null, openDraft.duration, " 秒 · ", openDraft.ratio)), h("h3", null, openDraft.title), h("p", null, openDraft.script)))
+    );
   }
+
 
   // admin/Review.jsx
   var import_react7 = __toESM(require_react());
@@ -25456,7 +25421,7 @@
       if (apply(importFeishuBloggers)) setToast("\u5DF2\u8F7D\u5165\u8D26\u53F7\u77E9\u9635\u5168\u90E8\u535A\u4E3B\uFF1B\u5DF2\u6709\u6863\u6848\u4E0E\u4F5C\u54C1\u4FDD\u7559");
     } }), state.screen === "creator" && /* @__PURE__ */ import_react8.default.createElement(Creator, { draft: state.draft, blogger: state.blogger, onChange: (draft) => setState((s) => ({ ...s, draft })), onCreate: () => {
       if (apply((s) => createBlogger(s, s.draft))) setToast("\u6863\u6848\u5DF2\u4FDD\u5B58\uFF0C\u5185\u5BB9\u6C60\u5DF2\u540C\u6B65");
-    }, onBack: () => go("bloggers") }), state.screen === "production" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(Production, { state, targetBloggers: productionTargets, maxCount: maxProductionCount, bulkProduction: state.bulkProduction, onStart: startProduction, onAssets: () => setModal("assets"), onReview: () => go("review") }), state.screen === "script-review" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(ScriptReview, { state, onEdit: (id, patch) => setState((s) => updateDraft(s, id, patch)), onApproveDraft: (id, approved2) => setState((s) => approveDraft(s, id, approved2)), onStartVideoProduction: () => apply(startVideoProduction), onBack: () => go("production") }), state.screen === "video-production" && state.job?.kind === "video" && (() => {
+    }, onBack: () => go("bloggers") }), state.screen === "production" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(Production, { state, targetBloggers: productionTargets, maxCount: maxProductionCount, bulkProduction: state.bulkProduction, onStart: startProduction, onAssets: () => setModal("assets"), onReview: () => go("review") }), state.screen === "script-review" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(ScriptReview, { state, onEdit: (id, patch) => setState((s) => updateDraft(s, id, patch)), onApproveDraft: (id, approved2) => setState((s) => { const result = DemoLogic.reviewDraft(s.topicDrafts || [], id, approved2); const next = { ...s, topicDrafts: result.drafts }; return result.allApproved ? startVideoProduction(next) : next; }), onStartVideoProduction: () => apply(startVideoProduction), onBack: () => go("production") }), state.screen === "video-production" && state.job?.kind === "video" && (() => {
       const job = state.job;
       const elapsed = Math.max(0, statusNow - job.startedAt);
       const percent2 = Math.min(98, Math.floor(elapsed / 75));
