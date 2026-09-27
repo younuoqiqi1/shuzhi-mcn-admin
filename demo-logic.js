@@ -45,5 +45,41 @@
     return { drafts: next, allApproved: next.length > 0 && next.every((draft) => draft.approved) };
   }
 
-  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft };
+  function remapTopicBatchForPool(settings = {}, poolIds = []) {
+    const allowed = new Set(poolIds);
+    const fallback = poolIds.slice(0, 3);
+    const selectedTopics = (settings.selectedTopics || []).map((topic) => {
+      const retained = (topic.relatedIds || []).filter((id) => allowed.has(id));
+      return { ...topic, relatedIds: retained.length ? retained : [...fallback] };
+    });
+    return { ...settings, count: selectedTopics.length, selectedTopics };
+  }
+
+  function assignUniqueClips(selectedTopics = [], clips = []) {
+    const rows = selectedTopics.map((topic, index) => ({
+      index,
+      candidates: clips.map((clip, clipIndex) => ({ clip, clipIndex })).filter(({ clip }) => {
+        const assetId = clip.assetId || clip.asset?.id;
+        return (topic.relatedIds || []).includes(assetId);
+      }),
+    })).sort((a, b) => a.candidates.length - b.candidates.length || a.index - b.index);
+    const assigned = new Array(selectedTopics.length);
+    const used = new Set();
+    function visit(position) {
+      if (position >= rows.length) return true;
+      const row = rows[position];
+      for (const candidate of row.candidates) {
+        if (used.has(candidate.clipIndex)) continue;
+        used.add(candidate.clipIndex);
+        assigned[row.index] = candidate.clip;
+        if (visit(position + 1)) return true;
+        used.delete(candidate.clipIndex);
+        assigned[row.index] = undefined;
+      }
+      return false;
+    }
+    return visit(0) ? assigned : null;
+  }
+
+  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips };
 });

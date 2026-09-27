@@ -24389,13 +24389,12 @@
     const used = new Set((state.items || []).map((item) => `${item.assetId}:${item.highlightId}`));
     const clips = pool.flatMap((asset) => (asset.highlights || []).filter((highlight) => !used.has(`${asset.id}:${highlight.id}`)).map((highlight) => ({ asset, highlight })));
     if (count > clips.length) throw new Error(`当前内容池只有 ${clips.length} 处独立高光，最多可生产 ${clips.length} 条；请扩充内容池或减少主题`);
-    const usedThisBatch = new Set();
+    const assignedClips = DemoLogic.assignUniqueClips(selectedTopics, clips);
+    if (!assignedClips) throw new Error("所选主题的选材范围无法分配独立高光，请为部分主题增加节目范围");
     return selectedTopics.map((picked, i) => {
       const relatedIds = (picked.relatedIds || []).filter((id) => pool.some((asset) => asset.id === id));
-      const available = clips.find(({ asset, highlight }) => relatedIds.includes(asset.id) && !usedThisBatch.has(`${asset.id}:${highlight.id}`));
-      if (!available) throw new Error(`“${picked.title}”的选材范围没有可用高光，请增加节目或调整主题`);
+      const available = assignedClips[i];
       const { asset, highlight: h } = available;
-      usedThisBatch.add(`${asset.id}:${h.id}`);
       const recipes = TOPIC_RECIPES[asset.topic] || TOPIC_RECIPES["影视"];
       const recipe = recipes[(i + (state.items || []).length) % recipes.length];
       const c = { ...recipe, hook: picked.title, theme: picked.thesis || picked.title, text: picked.script || picked.thesis || picked.title, topic: asset.topic };
@@ -25007,7 +25006,14 @@
       { title: "三个站长，三种识人方式", thesis: "同样是识人，不同角色靠的是完全不同的生存逻辑。", script: "把《潜伏》《悬崖》《风筝》放在一起看，你会发现真正决定人物命运的，不只是立场，而是他们识人的方式。" },
       { title: "为什么老谍战剧更耐看？", thesis: "耐看的不是反转数量，而是人物每次选择都有代价。", script: "很多经典谍战剧没有密集反转，却越看越有味道。答案藏在人物的每一次选择里：他们赢下一局，也一定会失去一些东西。" }
     ].map((topic) => ({ ...topic, duration: 120, relatedIds: [...defaultRelatedIds] }));
-    const [settings, setSettings] = (0, import_react5.useState)({ selectedTopics: topicSuggestions.slice(0, 2) });
+    const restoredTopics = (state.topicDrafts || []).length ? state.topicDrafts.map((draft) => ({
+      title: draft.title,
+      thesis: draft.theme || draft.topic,
+      script: (draft.script || "").split("\n\n【关联节目】")[0],
+      duration: draft.duration || 120,
+      relatedIds: (draft.relatedIds || []).filter((id) => pool.some((asset) => asset.id === id))
+    })) : topicSuggestions.slice(0, 2);
+    const [settings, setSettings] = (0, import_react5.useState)({ selectedTopics: restoredTopics });
     const [error, setError] = (0, import_react5.useState)("");
     const selectedTopics = settings.selectedTopics || [];
     const selectedCount = selectedTopics.length;
@@ -25075,7 +25081,7 @@
 
   // admin/ScriptReview.jsx
   var import_react6 = __toESM(require_react());
-  function ScriptReview({ state, onApproveDraft, onBack }) {
+  function ScriptReview({ state, onApproveDraft, onReturnDraft }) {
     const h = import_react6.default.createElement;
     const drafts = state?.topicDrafts || [];
     const [openId, setOpenId] = (0, import_react6.useState)(null);
@@ -25090,7 +25096,7 @@
         h("div", { className: "script-copy-preview" }, h("div", null, h("strong", null, "口播文案"), h("span", null, "完整审核稿")), h("p", null, (draft.script || "").slice(0, 150), (draft.script || "").length > 150 ? "…" : ""), h("button", { type: "button", className: "text-button", onClick: () => setOpenId(draft.id) }, "查看完整口播文案 ↗")),
         h("div", { className: "related-programs" }, h("strong", null, "关联节目"), (draft.relatedIds || []).map((id) => h(Badge, { key: id }, `《${ASSETS.find((asset) => asset.id === id)?.title || "节目"}》`))),
         h("div", { className: "script-summary-grid" }, h("div", null, h("small", null, "核心观点"), h("strong", null, draft.theme || draft.topic)), h("div", null, h("small", null, "最终结论"), h("strong", null, "人物的每次选择都有代价，这才是经典之所以耐看。"))),
-        h("div", { className: "script-card-actions" }, h("button", { type: "button", className: "button", onClick: onBack }, "退回修改"), h("button", { type: "button", className: "button primary", disabled: draft.approved, onClick: () => onApproveDraft(draft.id, true) }, draft.approved ? "已审核通过" : "审核通过"))
+        h("div", { className: "script-card-actions" }, h("button", { type: "button", className: "button", onClick: () => onReturnDraft(draft.id) }, "退回修改"), h("button", { type: "button", className: "button primary", disabled: draft.approved, onClick: () => onApproveDraft(draft.id, true) }, draft.approved ? "已审核通过" : "审核通过"))
       ))),
       !drafts.length && h("div", { className: "panel empty-state" }, "暂无待审核的主题与脚本草稿"),
       openDraft && h(Modal, { title: `完整口播文案 · ${openDraft.title}`, onClose: () => setOpenId(null), footer: h("button", { type: "button", className: "button primary", onClick: () => setOpenId(null) }, "确认已阅读") }, h("div", { className: "full-script-document" }, h("div", { className: "full-script-meta" }, h(Badge, null, openDraft.topic), h("span", null, openDraft.duration, " 秒 · ", openDraft.ratio)), h("h3", null, openDraft.title), h("p", null, openDraft.script)))
@@ -25266,7 +25272,8 @@
           if (progress.nextIndex >= progress.total) return { ...next, bulkProduction: null };
           try {
             const switched = switchBlogger(next, progress.bloggerIds[progress.nextIndex]);
-            const started = startBatch(switched, progress.settings);
+            const poolIds = allowedAssets(switched.blogger).map((asset) => asset.id);
+            const started = startBatch(switched, DemoLogic.remapTopicBatchForPool(progress.settings, poolIds));
             return { ...started, bulkProduction: { ...progress, nextIndex: progress.nextIndex + 1 } };
           } catch (error) {
             return { ...next, bulkProduction: null, activity: [{ text: `\u6279\u91CF\u751F\u4EA7\u505C\u6B62\uFF1A${error.message}`, at: Date.now() }, ...next.activity] };
@@ -25380,7 +25387,8 @@
       const insufficient = selected2.find((w) => availableClipCount(w.blogger, w.items) < Number(settings.count));
       if (insufficient) throw new Error(`\u300C${insufficient.blogger.name}\u300D\u53EA\u6709 ${availableClipCount(insufficient.blogger, insufficient.items)} \u5904\u72EC\u7ACB\u9AD8\u5149\uFF0C\u4E0D\u8DB3\u4EE5\u751F\u4EA7 ${settings.count} \u6761`);
       let base = state.blogger?.id === unique[0] ? state : switchBlogger(state, unique[0]);
-      let next = startBatch(base, settings);
+      const firstPoolIds = allowedAssets(base.blogger).map((asset) => asset.id);
+      let next = startBatch(base, DemoLogic.remapTopicBatchForPool(settings, firstPoolIds));
       if (unique.length > 1) next = { ...next, bulkProduction: { bloggerIds: unique, settings: { ...settings }, completed: 0, nextIndex: 1, total: unique.length, startedAt: Date.now() } };
       setBatchTargets(unique);
       setState(next);
@@ -25421,7 +25429,7 @@
       if (apply(importFeishuBloggers)) setToast("\u5DF2\u8F7D\u5165\u8D26\u53F7\u77E9\u9635\u5168\u90E8\u535A\u4E3B\uFF1B\u5DF2\u6709\u6863\u6848\u4E0E\u4F5C\u54C1\u4FDD\u7559");
     } }), state.screen === "creator" && /* @__PURE__ */ import_react8.default.createElement(Creator, { draft: state.draft, blogger: state.blogger, onChange: (draft) => setState((s) => ({ ...s, draft })), onCreate: () => {
       if (apply((s) => createBlogger(s, s.draft))) setToast("\u6863\u6848\u5DF2\u4FDD\u5B58\uFF0C\u5185\u5BB9\u6C60\u5DF2\u540C\u6B65");
-    }, onBack: () => go("bloggers") }), state.screen === "production" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(Production, { state, targetBloggers: productionTargets, maxCount: maxProductionCount, bulkProduction: state.bulkProduction, onStart: startProduction, onAssets: () => setModal("assets"), onReview: () => go("review") }), state.screen === "script-review" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(ScriptReview, { state, onEdit: (id, patch) => setState((s) => updateDraft(s, id, patch)), onApproveDraft: (id, approved2) => setState((s) => { const result = DemoLogic.reviewDraft(s.topicDrafts || [], id, approved2); const next = { ...s, topicDrafts: result.drafts }; return result.allApproved ? startVideoProduction(next) : next; }), onStartVideoProduction: () => apply(startVideoProduction), onBack: () => go("production") }), state.screen === "video-production" && state.job?.kind === "video" && (() => {
+    }, onBack: () => go("bloggers") }), state.screen === "production" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(Production, { state, targetBloggers: productionTargets, maxCount: maxProductionCount, bulkProduction: state.bulkProduction, onStart: startProduction, onAssets: () => setModal("assets"), onReview: () => go("review") }), state.screen === "script-review" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(ScriptReview, { state, onEdit: (id, patch) => setState((s) => updateDraft(s, id, patch)), onApproveDraft: (id, approved2) => setState((s) => { const result = DemoLogic.reviewDraft(s.topicDrafts || [], id, approved2); const next = { ...s, topicDrafts: result.drafts }; return result.allApproved ? startVideoProduction(next) : next; }), onStartVideoProduction: () => apply(startVideoProduction), onReturnDraft: (id) => setState((s) => ({ ...s, topicDrafts: (s.topicDrafts || []).map((draft) => draft.id === id ? { ...draft, approved: false } : draft), bulkProduction: null, screen: "production" })) }), state.screen === "video-production" && state.job?.kind === "video" && (() => {
       const job = state.job;
       const elapsed = Math.max(0, statusNow - job.startedAt);
       const percent2 = Math.min(98, Math.floor(elapsed / 75));
