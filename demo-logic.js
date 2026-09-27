@@ -96,5 +96,12 @@
     return { waiting, producing, waitingCount: waiting.length, producingCount: producing.length };
   }
 
-  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips, buildProductionMonitorSummary };
+  function mergeBulkProductionRoster(run, selectedIds = [], max = 5) {
+    if (!run) return run;
+    const startedIds = (run.bloggerIds || []).slice(0, Math.max(0, run.nextIndex || 0));
+    const bloggerIds = [...new Set([...startedIds, ...selectedIds])].slice(0, max);
+    return { ...run, bloggerIds, total: bloggerIds.length };
+  }
+
+  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips, buildProductionMonitorSummary, mergeBulkProductionRoster };
 });

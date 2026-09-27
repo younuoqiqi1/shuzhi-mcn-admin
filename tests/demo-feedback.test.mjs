@@ -64,6 +64,23 @@ test("content operations keeps every blogger available in the monitor switcher",
   assert.ok(app.includes("monitorBlogger(w.blogger.id)"), "avatar click monitors that creator's workflow");
 });
 
+test("active production never disables adding creators, and active batch rosters can be extended to five", () => {
+  const app = readFileSync(`${root}/app.js`, "utf8");
+  assert.ok(!app.includes('disabled: !!state.job || !!state.bulkProduction, onClick: () => setModal("batch-bloggers")'), "the add button remains available while work is in progress");
+  assert.ok(app.includes("DemoLogic.mergeBulkProductionRoster"), "newly added creators join the active queue rather than disappearing behind it");
+  assert.ok(app.includes("workspaces.filter((w) => w.job).map((w) => w.blogger.id)"), "only creators with their own live job are locked in the picker");
+});
+
+test("bulk creator roster extension preserves the in-flight position and respects the five-person limit", () => {
+  const updated = logic.mergeBulkProductionRoster({ bloggerIds: ["A", "B"], nextIndex: 1, total: 2, completed: 0 }, ["A", "B", "C"]);
+  assert.deepEqual(updated.bloggerIds, ["A", "B", "C"]);
+  assert.equal(updated.nextIndex, 1);
+  assert.equal(updated.total, 3);
+  const capped = logic.mergeBulkProductionRoster({ bloggerIds: ["A", "B"], nextIndex: 1, total: 2, completed: 0 }, ["A", "B", "C", "D", "E", "F"]);
+  assert.deepEqual(capped.bloggerIds, ["A", "B", "C", "D", "E"]);
+  assert.equal(capped.total, 5);
+});
+
 test("content library is independent from the blogger monitor switcher", () => {
   const app = readFileSync(`${root}/app.js`, "utf8");
   assert.match(app, /!\["dashboard", "bloggers", "creator", "library"\]\.includes\(state\.screen\)/);
