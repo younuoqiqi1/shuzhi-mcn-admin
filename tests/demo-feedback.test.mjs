@@ -106,10 +106,14 @@ test("production monitor reports waiting scripts and per-item video progress", (
   assert.ok(app.includes("entry.progress, \"%\""));
 });
 
-test("fallback creator avatars use bundled atlas art when portrait files are unavailable", () => {
+test("known creators keep their name-matched portrait, using the source library only when local images are missing", () => {
   const app = readFileSync(`${root}/app.js`, "utf8");
-  assert.match(app, /person\.avatar \|\| \{\s*style: AVATAR_STYLES\[0\]/);
-  assert.doesNotMatch(app, /!\(\!a \|\| failed\) &&/);
+  assert.ok(app.includes('const photo = BLOGGER_PHOTOS[person.name];'));
+  assert.ok(app.includes('`./avatars/${encodeURIComponent(photo)}`'));
+  assert.ok(app.includes('`https://shuzhi-mcn-admin.pages.dev/avatars/${encodeURIComponent(photo)}`'));
+  assert.ok(app.includes('currentPhotoMode === "local" ? "remote" : "failed"'));
+  assert.ok(app.includes('const avatarStyle = a && !photo ?'));
+  assert.ok(!app.includes("const seed = [...String(person.id"), "mapped real portraits must never be replaced by a generated atlas face");
 });
 
 test("script generation creates narration drafts and moves directly to script review", () => {

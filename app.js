@@ -24228,13 +24228,16 @@
   }
   var BLOGGER_PHOTOS = { "\u7247\u513F\u59D0": "\u7247\u513F\u59D0.jpg", "\u963F\u6D77": "\u963F\u6D77.jpg", "\u6F2B\u6F2B": "\u6F2B\u6F2B.jpg", "\u65C5\u8005\u963F\u5C9A": "\u65C5\u8005\u963F\u5C9A.jpg", "\u5C0F\u661F\u59D0\u59D0": "\u5C0F\u661F\u59D0\u59D0.jpg", "\u674E\u535A\u58EB": "\u674E\u535A\u58EB.png", "\u6696\u6696": "\u6696\u6696.png", "\u4E70\u4E70\u83CC": "\u4E70\u4E70\u83CC.png", "\u7403\u573A\u8001\u70AE": "\u7403\u573A\u8001\u70AE.png", "\u592E\u89C6\u65B0\u95FB": "\u592E\u89C6\u65B0\u95FB.png", "\u4E0A\u6D77\u53D1\u5E03": "\u4E0A\u6D77\u53D1\u5E03.png", "\u767E\u89C6\u901A\u5F71\u89C6": "\u767E\u89C6\u901A\u5F71\u89C6.png", "\u4E94\u661F\u4F53\u80B2": "\u4E94\u661F\u4F53\u80B2.png", "\u54C8\u54C8\u5C11\u513F": "\u54C8\u54C8\u5C11\u513F.png", "bestv\u7EFC\u827A\u7206\u6599": "bestv\u7EFC\u827A\u7206\u6599.png", "bestv\u5927\u7247\u5B98\u5BA3": "bestv\u5927\u7247\u5B98\u5BA3.png", "\u591C\u8BFB\u541B": "\u591C\u8BFB\u541B.png", "\u97F3\u4E50\u65C5\u4EBA\u963FMay": "\u97F3\u4E50\u65C5\u4EBA\u963FMay.png", "\u4E0A\u6D77\u5473\u9053": "\u4E0A\u6D77\u5473\u9053.png", "\u94F6\u53D1\u517B\u751F\u5802": "\u94F6\u53D1\u517B\u751F\u5802.png", "\u68A8\u56ED\u96C5\u97F5": "\u68A8\u56ED\u96C5\u97F5.png", "\u718A\u732B\u56E2\u56E2": "\u718A\u732B\u56E2\u56E2.png", "\u5C0F\u72D0\u72F8\u8DF3\u8DF3": "\u5C0F\u72D0\u72F8\u8DF3\u8DF3.png", "\u6050\u9F99\u8FEA\u8FEA": "\u6050\u9F99\u8FEA\u8FEA.png" };
   function Avatar({ person, large = false }) {
-    const [failed, setFailed] = (0, import_react.useState)(false);
-    const seed = [...String(person.id || person.name || "creator")].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-    const a = person.avatar || { style: AVATAR_STYLES[0], subject: SUBJECTS[0], index: seed % 4 };
+    const [photoAttempt, setPhotoAttempt] = (0, import_react.useState)({ photo: null, mode: "local" });
+    const a = person.avatar;
     const photo = BLOGGER_PHOTOS[person.name];
-    const st = AVATAR_STYLES.indexOf(a.style);
-    const row = Math.max(0, SUBJECTS.indexOf(a.subject));
-    return /* @__PURE__ */ import_react.default.createElement("div", { className: `avatar ${person.color || "forest"} ${large ? "large" : ""} image-avatar`, style: { backgroundImage: `url(${ATLASES[Math.floor(Math.max(0, st) / 2)]})`, backgroundSize: "800% 600%", backgroundPosition: `${(st % 2 * 4 + a.index) / 7 * 100}% ${row / 5 * 100}%` } }, photo && !failed ? /* @__PURE__ */ import_react.default.createElement("img", { className: "avatar-photo", src: `./avatars/${encodeURIComponent(photo)}`, alt: "", onError: () => setFailed(true) }) : null);
+    const currentPhotoMode = photoAttempt.photo === photo ? photoAttempt.mode : "local";
+    const st = a ? AVATAR_STYLES.indexOf(a.style) : 0;
+    const row = a ? Math.max(0, SUBJECTS.indexOf(a.subject)) : 0;
+    const avatarStyle = a && !photo ? { backgroundImage: `url(${ATLASES[Math.floor(Math.max(0, st) / 2)]})`, backgroundSize: "800% 600%", backgroundPosition: `${(st % 2 * 4 + a.index) / 7 * 100}% ${row / 5 * 100}%` } : {};
+    const fallback = person.monogram || person.name?.[0] || "人";
+    const portraitSrc = currentPhotoMode === "remote" ? `https://shuzhi-mcn-admin.pages.dev/avatars/${encodeURIComponent(photo)}` : `./avatars/${encodeURIComponent(photo)}`;
+    return /* @__PURE__ */ import_react.default.createElement("div", { className: `avatar ${person.color || "forest"} ${large ? "large" : ""} ${a && !photo ? "image-avatar" : ""}`, style: avatarStyle }, photo && currentPhotoMode !== "failed" ? /* @__PURE__ */ import_react.default.createElement("img", { className: "avatar-photo", src: portraitSrc, alt: person.name || "博主头像", onError: () => setPhotoAttempt({ photo, mode: currentPhotoMode === "local" ? "remote" : "failed" }) }) : !a || photo || currentPhotoMode === "failed" ? /* @__PURE__ */ import_react.default.createElement("span", null, fallback) : null);
   }
   function Poster({ asset, small = false, children }) {
     return /* @__PURE__ */ import_react.default.createElement("div", { className: `poster ${asset.color} ${small ? "small" : ""}` }, /* @__PURE__ */ import_react.default.createElement("div", { className: "poster-lines" }), /* @__PURE__ */ import_react.default.createElement("span", { className: "poster-kicker" }, "\u7EAA\u5F55\u7247 / DEMO"), /* @__PURE__ */ import_react.default.createElement("strong", null, asset.word), /* @__PURE__ */ import_react.default.createElement("span", { className: "poster-note" }, "\u793A\u610F\u753B\u9762"), children);
