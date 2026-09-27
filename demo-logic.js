@@ -103,5 +103,20 @@
     return { ...run, bloggerIds, total: bloggerIds.length };
   }
 
-  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips, buildProductionMonitorSummary, mergeBulkProductionRoster };
+  function collectCreatorContent(workspaces = [], blogger = null, items = []) {
+    const saved = workspaces.flatMap((workspace) => (workspace.items || []).map((item) => ({ ...item, libraryOwnerId: workspace.blogger?.id || item.bloggerId || "" })));
+    const active = items.map((item) => ({ ...item, libraryOwnerId: blogger?.id || item.bloggerId || "" }));
+    return [...saved, ...active];
+  }
+
+  function listApprovedContentItems(items = []) {
+    const timestamp = (value) => Number(value) || Date.parse(value) || 0;
+    return items.filter((item) => item.status === "approved").sort((a, b) => timestamp(b.approvedAt) - timestamp(a.approvedAt));
+  }
+
+  function setContentOnline(items = [], id, online) {
+    return items.map((item) => item.id === id ? { ...item, online: Boolean(online) } : item);
+  }
+
+  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips, buildProductionMonitorSummary, mergeBulkProductionRoster, collectCreatorContent, listApprovedContentItems, setContentOnline };
 });

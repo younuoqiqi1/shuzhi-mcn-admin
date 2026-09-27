@@ -88,12 +88,42 @@ test("content library is independent from the blogger monitor switcher", () => {
 
 test("content library presents a time-ordered operational list", () => {
   const app = readFileSync(`${root}/app.js`, "utf8");
-  assert.match(app, /content-library-list/);
-  assert.match(app, /\u5BA1\u6838\u5B8C\u6210\u65F6\u95F4/);
-  assert.match(app, /\u5173\u8054\u8282\u76EE\u6570/);
-  assert.match(app, /\u4E0A\u7EBF/);
+  const activeLibrary = app.slice(app.lastIndexOf("function Library({ state, onOpen, onReview, onProduction, onExport"));
+  assert.match(activeLibrary, /listApprovedContentItems/);
+  assert.match(activeLibrary, /content-library-list/);
+  assert.match(activeLibrary, /\u751F\u4EA7\u5B8C\u6210/);
+  assert.match(activeLibrary, /\u5BA1\u6838\u5B8C\u6210\u65F6\u95F4/);
+  assert.match(activeLibrary, /\u5173\u8054\u8282\u76EE\u6570/);
+  assert.match(activeLibrary, /\u89C2\u770B/);
+  assert.match(activeLibrary, /onToggleOnline/);
+  assert.match(activeLibrary, /\u4E0A\u7EBF/);
+  assert.match(activeLibrary, /\u4E0B\u7EBF/);
+  assert.match(activeLibrary, /\u5173\u8054\u8282\u76EE\uFF1A/);
   const styles = readFileSync(`${root}/styles.css`, "utf8");
-  assert.ok(styles.includes(".content-library-main .poster{height:auto;aspect-ratio:16/9;min-height:0}"));
+  assert.ok(styles.includes(".content-library-main .content-library-poster .poster{width:100%;height:auto;aspect-ratio:16/9;min-height:0"));
+  assert.match(app, /completedAt: now/);
+});
+
+test("content library keeps only approved items in review-completion order and stores online status on each item", () => {
+  const items = [
+    { id: "later", status: "approved", approvedAt: 20, online: false },
+    { id: "pending", status: "pending", approvedAt: 100 },
+    { id: "earlier", status: "approved", approvedAt: 10 },
+  ];
+  assert.deepEqual(logic.listApprovedContentItems(items).map((item) => item.id), ["later", "earlier"]);
+  const toggled = logic.setContentOnline(items, "earlier", false);
+  assert.equal(toggled.find((item) => item.id === "earlier").online, false);
+  assert.equal(toggled.find((item) => item.id === "pending").online, undefined);
+  assert.equal(items.find((item) => item.id === "earlier").online, undefined, "toggle returns a persistent state update without mutating saved state");
+});
+
+test("content library gathers approved content across creators without collapsing duplicate local IDs", () => {
+  const all = logic.collectCreatorContent(
+    [{ blogger: { id: "creator-a" }, items: [{ id: "C001", status: "approved" }] }],
+    { id: "creator-b" },
+    [{ id: "C001", status: "approved" }],
+  );
+  assert.deepEqual(all.map((item) => [item.libraryOwnerId, item.id]), [["creator-a", "C001"], ["creator-b", "C001"]]);
 });
 
 test("review is approved one item at a time without a batch approve footer", () => {
