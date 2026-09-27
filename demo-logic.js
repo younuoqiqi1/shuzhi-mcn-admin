@@ -81,5 +81,20 @@
     return visit(0) ? assigned : null;
   }
 
-  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips };
+  function buildProductionMonitorSummary({ workspace = {}, bulkProduction = null, now = Date.now(), durationMs = 7500 } = {}) {
+    const job = workspace.job;
+    const drafts = job?.drafts || workspace.topicDrafts || [];
+    const progress = job?.startedAt ? Math.min(99, Math.max(0, Math.floor((now - job.startedAt) / durationMs * 100))) : 0;
+    const waiting = (workspace.topicDrafts || []).filter((draft) => !draft.approved).map((draft) => ({ id: draft.id, title: draft.title, status: "待生产 · 脚本待审核" }));
+    if (bulkProduction) {
+      const index = bulkProduction.bloggerIds?.indexOf(workspace.blogger?.id) ?? -1;
+      if (index >= bulkProduction.nextIndex && index >= 0) {
+        for (const [topicIndex, topic] of (bulkProduction.settings?.selectedTopics || []).entries()) waiting.push({ id: `queue-${index}-${topicIndex}`, title: topic.title, status: "排队待生产" });
+      }
+    }
+    const producing = ["video", "batch"].includes(job?.kind) ? drafts.map((draft) => ({ id: draft.id, title: draft.title, progress, status: "生产中" })) : [];
+    return { waiting, producing, waitingCount: waiting.length, producingCount: producing.length };
+  }
+
+  return { buildBloggerMetrics, prepareTopicBatch, reviewDraft, remapTopicBatchForPool, assignUniqueClips, buildProductionMonitorSummary };
 });

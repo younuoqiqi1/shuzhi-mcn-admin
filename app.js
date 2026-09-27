@@ -24229,11 +24229,12 @@
   var BLOGGER_PHOTOS = { "\u7247\u513F\u59D0": "\u7247\u513F\u59D0.jpg", "\u963F\u6D77": "\u963F\u6D77.jpg", "\u6F2B\u6F2B": "\u6F2B\u6F2B.jpg", "\u65C5\u8005\u963F\u5C9A": "\u65C5\u8005\u963F\u5C9A.jpg", "\u5C0F\u661F\u59D0\u59D0": "\u5C0F\u661F\u59D0\u59D0.jpg", "\u674E\u535A\u58EB": "\u674E\u535A\u58EB.png", "\u6696\u6696": "\u6696\u6696.png", "\u4E70\u4E70\u83CC": "\u4E70\u4E70\u83CC.png", "\u7403\u573A\u8001\u70AE": "\u7403\u573A\u8001\u70AE.png", "\u592E\u89C6\u65B0\u95FB": "\u592E\u89C6\u65B0\u95FB.png", "\u4E0A\u6D77\u53D1\u5E03": "\u4E0A\u6D77\u53D1\u5E03.png", "\u767E\u89C6\u901A\u5F71\u89C6": "\u767E\u89C6\u901A\u5F71\u89C6.png", "\u4E94\u661F\u4F53\u80B2": "\u4E94\u661F\u4F53\u80B2.png", "\u54C8\u54C8\u5C11\u513F": "\u54C8\u54C8\u5C11\u513F.png", "bestv\u7EFC\u827A\u7206\u6599": "bestv\u7EFC\u827A\u7206\u6599.png", "bestv\u5927\u7247\u5B98\u5BA3": "bestv\u5927\u7247\u5B98\u5BA3.png", "\u591C\u8BFB\u541B": "\u591C\u8BFB\u541B.png", "\u97F3\u4E50\u65C5\u4EBA\u963FMay": "\u97F3\u4E50\u65C5\u4EBA\u963FMay.png", "\u4E0A\u6D77\u5473\u9053": "\u4E0A\u6D77\u5473\u9053.png", "\u94F6\u53D1\u517B\u751F\u5802": "\u94F6\u53D1\u517B\u751F\u5802.png", "\u68A8\u56ED\u96C5\u97F5": "\u68A8\u56ED\u96C5\u97F5.png", "\u718A\u732B\u56E2\u56E2": "\u718A\u732B\u56E2\u56E2.png", "\u5C0F\u72D0\u72F8\u8DF3\u8DF3": "\u5C0F\u72D0\u72F8\u8DF3\u8DF3.png", "\u6050\u9F99\u8FEA\u8FEA": "\u6050\u9F99\u8FEA\u8FEA.png" };
   function Avatar({ person, large = false }) {
     const [failed, setFailed] = (0, import_react.useState)(false);
-    const a = person.avatar;
+    const seed = [...String(person.id || person.name || "creator")].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+    const a = person.avatar || { style: AVATAR_STYLES[0], subject: SUBJECTS[0], index: seed % 4 };
     const photo = BLOGGER_PHOTOS[person.name];
-    const st = a ? AVATAR_STYLES.indexOf(a.style) : 0;
-    const row = a ? Math.max(0, SUBJECTS.indexOf(a.subject)) : 0;
-    return /* @__PURE__ */ import_react.default.createElement("div", { className: `avatar ${person.color || "forest"} ${large ? "large" : ""} ${a ? "image-avatar" : ""}`, style: a ? { backgroundImage: `url(${ATLASES[Math.floor(Math.max(0, st) / 2)]})`, backgroundSize: "800% 600%", backgroundPosition: `${(st % 2 * 4 + a.index) / 7 * 100}% ${row / 5 * 100}%` } : {} }, photo && !failed ? /* @__PURE__ */ import_react.default.createElement("img", { className: "avatar-photo", src: `./avatars/${encodeURIComponent(photo)}`, alt: "", onError: () => setFailed(true) }) : (!a || failed) && /* @__PURE__ */ import_react.default.createElement("span", null, person.monogram || person.name?.[0] || "\u4EBA"));
+    const st = AVATAR_STYLES.indexOf(a.style);
+    const row = Math.max(0, SUBJECTS.indexOf(a.subject));
+    return /* @__PURE__ */ import_react.default.createElement("div", { className: `avatar ${person.color || "forest"} ${large ? "large" : ""} image-avatar`, style: { backgroundImage: `url(${ATLASES[Math.floor(Math.max(0, st) / 2)]})`, backgroundSize: "800% 600%", backgroundPosition: `${(st % 2 * 4 + a.index) / 7 * 100}% ${row / 5 * 100}%` } }, photo && !failed ? /* @__PURE__ */ import_react.default.createElement("img", { className: "avatar-photo", src: `./avatars/${encodeURIComponent(photo)}`, alt: "", onError: () => setFailed(true) }) : null);
   }
   function Poster({ asset, small = false, children }) {
     return /* @__PURE__ */ import_react.default.createElement("div", { className: `poster ${asset.color} ${small ? "small" : ""}` }, /* @__PURE__ */ import_react.default.createElement("div", { className: "poster-lines" }), /* @__PURE__ */ import_react.default.createElement("span", { className: "poster-kicker" }, "\u7EAA\u5F55\u7247 / DEMO"), /* @__PURE__ */ import_react.default.createElement("strong", null, asset.word), /* @__PURE__ */ import_react.default.createElement("span", { className: "poster-note" }, "\u793A\u610F\u753B\u9762"), children);
@@ -25019,7 +25020,7 @@
   // admin/Production.jsx
   var import_react5 = __toESM(require_react());
   var phases = ["\u751F\u6210\u521B\u4F5C\u4E3B\u9898", "\u751F\u6210\u94A9\u5B50\u811A\u672C", "\u6309\u811A\u672C\u5339\u914D\u7D20\u6750", "\u81EA\u52A8\u5236\u4F5C\u94A9\u5B50\u89C6\u9891", "\u81EA\u52A8\u5173\u8054\u76F8\u5173\u5185\u5BB9"];
-  function Production({ state, onStart, onAssets, onReview, targetBloggers = [], maxCount = 0 }) {
+  function Production({ state, onStart, onAssets, onReview, targetBloggers = [], maxCount = 0, bulkProduction = null, now = Date.now() }) {
     const h = import_react5.default.createElement;
     const blogger = state.blogger;
     const pool = allowedAssets(blogger);
@@ -25038,8 +25039,10 @@
     })) : topicSuggestions.slice(0, 2);
     const [settings, setSettings] = (0, import_react5.useState)({ selectedTopics: restoredTopics });
     const [error, setError] = (0, import_react5.useState)("");
+    const [openMonitorStatus, setOpenMonitorStatus] = (0, import_react5.useState)(null);
     const selectedTopics = settings.selectedTopics || [];
     const selectedCount = selectedTopics.length;
+    const monitor = DemoLogic.buildProductionMonitorSummary({ workspace: state, bulkProduction, now, durationMs: BATCH_SIMULATION_MS });
     const currentProductionSummary = state.topicDrafts?.length ? `已生成 ${state.topicDrafts.length} 个主题脚本，等待运营逐条审核` : state.items.length ? `已有 ${state.items.length} 条内容进入后续运营流程` : "尚未创建内容，等待确定今日选题";
     const toggleTopic = (topic) => setSettings((current) => {
       const selected = current.selectedTopics || [];
@@ -25065,10 +25068,10 @@
       }
     };
     return h(import_react5.default.Fragment, null,
-      h("div", { className: "blogger-strip production-blogger-summary" }, h(Avatar, { person: blogger }), h("div", null, h("strong", null, blogger.name, " · 当前内容生产"), h("p", null, currentProductionSummary)), h(Badge, { tone: state.topicDrafts?.length ? "amber" : "green" }, state.topicDrafts?.length ? `脚本审核 ${state.topicDrafts.filter((draft) => draft.approved).length}/${state.topicDrafts.length}` : "待选题")),
+      h("div", { className: "blogger-strip production-blogger-summary" }, h(Avatar, { person: blogger }), h("div", { className: "production-monitor-heading" }, h("strong", null, blogger.name, " · 当前内容生产"), h("p", null, currentProductionSummary)), h("div", { className: "production-monitor-counts" }, h("button", { type: "button", className: `monitor-count waiting ${openMonitorStatus === "waiting" ? "active" : ""}`, "aria-expanded": openMonitorStatus === "waiting", onClick: () => setOpenMonitorStatus(openMonitorStatus === "waiting" ? null : "waiting") }, "待生产 ", monitor.waitingCount, " 条"), h("button", { type: "button", className: `monitor-count producing ${openMonitorStatus === "producing" ? "active" : ""}`, "aria-expanded": openMonitorStatus === "producing", onClick: () => setOpenMonitorStatus(openMonitorStatus === "producing" ? null : "producing") }, "生产中 ", monitor.producingCount, " 条")), openMonitorStatus && h("div", { className: "production-monitor-popover", role: "dialog", "aria-label": openMonitorStatus === "waiting" ? "待生产内容列表" : "生产中内容列表" }, h("div", { className: "section-line" }, h("strong", null, openMonitorStatus === "waiting" ? "待生产内容" : "生产中内容"), h("button", { type: "button", className: "text-button", onClick: () => setOpenMonitorStatus(null), "aria-label": "关闭内容清单" }, "关闭 ×")), (openMonitorStatus === "waiting" ? monitor.waiting : monitor.producing).length ? (openMonitorStatus === "waiting" ? monitor.waiting : monitor.producing).map((entry) => h("div", { className: "monitor-popover-item", key: entry.id }, h("div", null, h("strong", null, entry.title || entry.id), h("small", null, entry.status)), openMonitorStatus === "producing" && h("span", { className: "monitor-percent" }, entry.progress, "%"), openMonitorStatus === "producing" && h("div", { className: "monitor-progress-track" }, h("i", { style: { width: `${entry.progress}%` } })))) : h("p", { className: "subtle monitor-empty" }, openMonitorStatus === "waiting" ? "暂无待生产内容" : "暂无生产中的内容"))),
       h(Heading, { eyebrow: "02 / PRODUCTION", title: "今日选题", description: "AI 已根据博主人设与内容池生成建议。选择几个主题，就生成几条内容；每条内容分别配置时长与选材范围。" }, h("button", { className: "button", onClick: onAssets }, "浏览素材库 ↗")),
       h("div", { className: "production-flow-hint panel" },
-        ["选主题", "定主题", "台词 / 脚本", "运营审核", "一主题一视频"].map((label, index) => h(import_react5.default.Fragment, { key: label }, h("span", null, h("b", null, index + 1), label), index < 4 && h("i", null, "→"))),
+        ["选主题", "定主题", "台词 / 脚本", "运营审核", "一个主题生成一条视频内容"].map((label, index) => h(import_react5.default.Fragment, { key: label }, h("span", null, h("b", null, index + 1), label), index < 4 && h("i", null, "→"))),
         h("small", null, "主题数量即内容数量；脚本逐条审核通过后进入视频制作。")
       ),
       h("section", { className: "panel topic-suggestions" },
@@ -25093,7 +25096,7 @@
           ))),
           maxCount < selectedCount && h("p", { className: "capacity-warning", role: "status" }, "当前可用高光不足，请减少主题或调整选材范围。"),
           error && h("p", { className: "capacity-warning", role: "alert" }, error),
-          h("div", { className: "form-bottom" }, h("span", null, "已选 ", selectedCount, " 个主题，将生成 ", selectedCount, " 份独立脚本"), h("button", { className: "button primary", disabled: invalid || !targetBloggers.length, onClick: submit }, "生成 ", selectedCount, " 份主题与脚本 →"))
+          h("div", { className: "form-bottom" }, h("span", null, "已选 ", selectedCount, " 个主题，将自动生成完整口播文案并进入逐条审核"), h("button", { className: "button primary", disabled: invalid || !targetBloggers.length, onClick: submit }, "生成脚本与口播台词 →"))
         ),
         h("aside", { className: "panel deliverable" }, h("h2", null, "这一批，你将得到"), h("div", { className: "batch-number" }, selectedCount, h("span", null, "份主题与脚本")),
           ["每主题独立时长", "每主题独立选材范围", "完整口播脚本", "逐条运营审核", "审核后生成逐镜脚本"].map((label, index) => h("div", { className: "spec-row", key: label }, h("span", null, String(index + 1).padStart(2, "0")), h("strong", null, label))),
@@ -25269,11 +25272,11 @@
     const [saved, setSaved] = (0, import_react8.useState)(true);
     const workspaces = listBloggerWorkspaces(state);
     const currentWorkspace = state.blogger ? workspaces.find((w) => w.blogger.id === state.blogger.id) : null;
-    const avatarWorkspaces = currentWorkspace ? [currentWorkspace, ...workspaces.filter((w) => w.blogger.id !== state.blogger.id)] : workspaces;
+    const avatarWorkspaces = workspaces;
     const effectiveBatchIds = state.bulkProduction?.bloggerIds || (batchTargets.length ? batchTargets : state.blogger ? [state.blogger.id] : []);
     const productionTargets = effectiveBatchIds.map((id) => workspaces.find((w) => w.blogger.id === id)).filter(Boolean);
     const reviewAvatarWorkspaces = workspaces.filter((w) => w.items.some((item) => item.status === "pending" || item.status === "rejected"));
-    const operationalAvatarWorkspaces = state.screen === "library" ? [] : avatarWorkspaces;
+    const operationalAvatarWorkspaces = state.screen === "library" ? [] : productionTargets.slice(0, 5);
     const visibleAvatarWorkspaces = state.screen === "review" ? reviewAvatarWorkspaces : operationalAvatarWorkspaces;
     const maxProductionCount = productionTargets.length ? Math.min(...productionTargets.map((w) => availableClipCount(w.blogger, w.items))) : 0;
     const lockedBloggerIds = new Set(state.job || state.bulkProduction ? workspaces.map((w) => w.blogger.id) : workspaces.filter((w) => w.job).map((w) => w.blogger.id));
@@ -25367,6 +25370,16 @@
       setToast("\u8BF7\u9009\u62E9\u65B0\u535A\u4E3B\u7684\u5B9A\u4F4D\uFF0C\u539F\u6709\u535A\u4E3B\u4E0E\u5185\u5BB9\u5DF2\u4FDD\u7559");
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
+    const monitorBlogger = (id) => {
+      if (state.blogger?.id === id) return;
+      const target = workspaces.find((workspace) => workspace.blogger.id === id);
+      if (!target) return;
+      const targetScreen = target.job?.kind === "video" ? "video-production" : target.topicDrafts?.length ? "script-review" : "production";
+      setState((current) => ({ ...switchBlogger(current, id), screen: targetScreen }));
+      setSelectedId(null);
+      setModal(null);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
     const chooseBlogger = (id) => {
       if (state.job || state.bulkProduction || lockedBloggerIds.has(id)) {
         setToast("\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u624D\u80FD\u5207\u6362\u6216\u7F16\u8F91\u535A\u4E3B");
@@ -25375,7 +25388,6 @@
       const target = workspaces.find((workspace) => workspace.blogger.id === id);
       const targetScreen = target?.job?.kind === "video" ? "video-production" : target?.topicDrafts?.length ? "script-review" : "production";
       if (apply((s) => ({ ...switchBlogger(s, id), screen: targetScreen }))) {
-        setBatchTargets([id]);
         setSelectedId(null);
         setModal(null);
         setToast("\u5DF2\u5207\u6362\u535A\u4E3B\uFF0C\u751F\u4EA7\u4E0E\u5BA1\u6838\u8FDB\u5EA6\u5206\u522B\u4FDD\u5B58");
@@ -25383,16 +25395,16 @@
       }
     };
     const openWorkspace = (id, screen) => {
-      if (state.job || state.bulkProduction) {
-        setToast("\u6279\u91CF\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u624D\u80FD\u5207\u6362\u535A\u4E3B");
-        return;
-      }
       if (lockedBloggerIds.has(id) && screen === "creator") {
         setToast("\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u624D\u80FD\u7F16\u8F91\u535A\u4E3B\u6863\u6848");
         return;
       }
+      if (screen === "production" && !effectiveBatchIds.includes(id) && effectiveBatchIds.length >= 5) {
+        setToast("\u540C\u65F6\u6700\u591A\u6DFB\u52A0 5 \u4F4D\u535A\u4E3B\u751F\u4EA7");
+        return;
+      }
       if (apply((s) => ({ ...switchBlogger(s, id), screen }))) {
-        setBatchTargets([id]);
+        if (screen === "production") setBatchTargets((targets) => targets.includes(id) ? targets : [...targets, id].slice(0, 5));
         setSelectedId(null);
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
@@ -25449,7 +25461,7 @@
       const isBloggers = state.screen === "bloggers";
       const reviewItem = w.items.find((item) => item.status === "pending" || item.status === "rejected");
       const isReview = state.screen === "review";
-      return /* @__PURE__ */ import_react8.default.createElement("button", { key: w.blogger.id, className: `avatar-switch ${state.blogger?.id === w.blogger.id ? "active" : ""}`, "aria-label": isReview ? `\u6253\u5F00${w.blogger.name}\u7684\u5F85\u5BA1\u6838\u5185\u5BB9` : isBloggers ? `\u5207\u6362\u5230${w.blogger.name}` : `\u5207\u6362\u5230${w.blogger.name}\uFF0C\u72B6\u6001\uFF1A${status.text}`, "aria-pressed": state.blogger?.id === w.blogger.id, disabled: false, onClick: () => isReview ? openWorkspaceItem(w.blogger.id, reviewItem?.id) : chooseBlogger(w.blogger.id) }, /* @__PURE__ */ import_react8.default.createElement(Avatar, { person: w.blogger }), /* @__PURE__ */ import_react8.default.createElement("span", null, w.blogger.name), !isBloggers && /* @__PURE__ */ import_react8.default.createElement("span", { className: `avatar-state ${status.kind} ${status.simulated ? "simulated" : ""}`, title: status.simulated ? "\u6F14\u793A\u72B6\u6001" : void 0 }, /* @__PURE__ */ import_react8.default.createElement("i", null), isReview ? `\u5F85\u5BA1\u6838 ${w.items.filter((item) => item.status === "pending" || item.status === "rejected").length}\u6761` : status.text, status.detail && /* @__PURE__ */ import_react8.default.createElement("small", { className: "avatar-progress-detail" }, status.detail), status.simulated && /* @__PURE__ */ import_react8.default.createElement("small", null, "\u6A21\u62DF")));
+      return /* @__PURE__ */ import_react8.default.createElement("button", { key: w.blogger.id, className: `avatar-switch ${state.blogger?.id === w.blogger.id ? "active" : ""}`, "aria-label": isReview ? `\u6253\u5F00${w.blogger.name}\u7684\u5F85\u5BA1\u6838\u5185\u5BB9` : isBloggers ? `\u5207\u6362\u5230${w.blogger.name}` : `\u5207\u6362\u5230${w.blogger.name}\uFF0C\u72B6\u6001\uFF1A${status.text}`, "aria-pressed": state.blogger?.id === w.blogger.id, disabled: false, onClick: () => isReview ? openWorkspaceItem(w.blogger.id, reviewItem?.id) : isBloggers ? chooseBlogger(w.blogger.id) : monitorBlogger(w.blogger.id) }, /* @__PURE__ */ import_react8.default.createElement(Avatar, { person: w.blogger }), /* @__PURE__ */ import_react8.default.createElement("span", null, w.blogger.name), !isBloggers && /* @__PURE__ */ import_react8.default.createElement("span", { className: `avatar-state ${status.kind} ${status.simulated ? "simulated" : ""}`, title: status.simulated ? "\u6F14\u793A\u72B6\u6001" : void 0 }, /* @__PURE__ */ import_react8.default.createElement("i", null), isReview ? `\u5F85\u5BA1\u6838 ${w.items.filter((item) => item.status === "pending" || item.status === "rejected").length}\u6761` : status.text, status.detail && /* @__PURE__ */ import_react8.default.createElement("small", { className: "avatar-progress-detail" }, status.detail), status.simulated && /* @__PURE__ */ import_react8.default.createElement("small", null, "\u6A21\u62DF")));
     }), !visibleAvatarWorkspaces.length && /* @__PURE__ */ import_react8.default.createElement("span", { className: "subtle" }, state.screen === "review" ? "\u6682\u65E0\u535A\u4E3B\u6709\u5F85\u5BA1\u6838\u5185\u5BB9" : "\u65B0\u5EFA\u535A\u4E3B\u6216\u4ECE\u535A\u4E3B\u5E93\u8F7D\u5165\u793A\u4F8B")), state.screen === "production" && /* @__PURE__ */ import_react8.default.createElement("div", { className: "button-group" }, /* @__PURE__ */ import_react8.default.createElement("button", { className: "button", disabled: !!state.job || !!state.bulkProduction, onClick: () => setModal("batch-bloggers") }, "\uFF0B \u6DFB\u52A0\u535A\u4E3B"))), state.resetBackup && /* @__PURE__ */ import_react8.default.createElement("div", { className: "reset-recovery" }, /* @__PURE__ */ import_react8.default.createElement("span", null, "\u6F14\u793A\u5DF2\u91CD\u7F6E\uFF0C\u4E4B\u524D\u7684\u535A\u4E3B\u548C\u5185\u5BB9\u4ECD\u53EF\u6062\u590D\u3002"), /* @__PURE__ */ import_react8.default.createElement("button", { className: "text-button", onClick: () => {
       if (apply(undoReset)) {
         setSelectedId(null);
@@ -25463,7 +25475,7 @@
       if (apply(importFeishuBloggers)) setToast("\u5DF2\u8F7D\u5165\u8D26\u53F7\u77E9\u9635\u5168\u90E8\u535A\u4E3B\uFF1B\u5DF2\u6709\u6863\u6848\u4E0E\u4F5C\u54C1\u4FDD\u7559");
     } }), state.screen === "creator" && /* @__PURE__ */ import_react8.default.createElement(Creator, { draft: state.draft, blogger: state.blogger, onChange: (draft) => setState((s) => ({ ...s, draft })), onCreate: () => {
       if (apply((s) => createBlogger(s, s.draft))) setToast("\u6863\u6848\u5DF2\u4FDD\u5B58\uFF0C\u5185\u5BB9\u6C60\u5DF2\u540C\u6B65");
-    }, onBack: () => go("bloggers") }), state.screen === "production" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(Production, { state, targetBloggers: productionTargets, maxCount: maxProductionCount, bulkProduction: state.bulkProduction, onStart: startProduction, onAssets: () => setModal("assets"), onReview: () => go("review") }), state.screen === "script-review" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(ScriptReview, { state, onEdit: (id, patch) => setState((s) => updateDraft(s, id, patch)), onApproveDraft: (id, approved2) => setState((s) => { const result = DemoLogic.reviewDraft(s.topicDrafts || [], id, approved2); const next = { ...s, topicDrafts: result.drafts }; return result.allApproved ? startVideoProduction(next) : next; }), onStartVideoProduction: () => apply(startVideoProduction), onReturnDraft: (id) => setState((s) => ({ ...s, topicDrafts: (s.topicDrafts || []).map((draft) => draft.id === id ? { ...draft, approved: false } : draft), bulkProduction: null, screen: "production" })) }), state.screen === "video-production" && state.job?.kind === "video" && (() => {
+    }, onBack: () => go("bloggers") }), state.screen === "production" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(Production, { state, targetBloggers: productionTargets, maxCount: maxProductionCount, bulkProduction: state.bulkProduction, now: statusNow, onStart: startProduction, onAssets: () => setModal("assets"), onReview: () => go("review") }), state.screen === "script-review" && state.blogger && /* @__PURE__ */ import_react8.default.createElement(ScriptReview, { state, onEdit: (id, patch) => setState((s) => updateDraft(s, id, patch)), onApproveDraft: (id, approved2) => setState((s) => { const result = DemoLogic.reviewDraft(s.topicDrafts || [], id, approved2); const next = { ...s, topicDrafts: result.drafts }; return result.allApproved ? startVideoProduction(next) : next; }), onStartVideoProduction: () => apply(startVideoProduction), onReturnDraft: (id) => setState((s) => ({ ...s, topicDrafts: (s.topicDrafts || []).map((draft) => draft.id === id ? { ...draft, approved: false } : draft), bulkProduction: null, screen: "production" })) }), state.screen === "video-production" && state.job?.kind === "video" && (() => {
       const job = state.job;
       const elapsed = Math.max(0, statusNow - job.startedAt);
       const percent2 = Math.min(98, Math.floor(elapsed / 75));

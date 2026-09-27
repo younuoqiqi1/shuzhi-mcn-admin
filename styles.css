@@ -183,3 +183,27 @@
 .library-card-body h3{grid-column:1/-1}.library-card-body>small{grid-column:span 1}.library-card-body p{margin:0}.library-card-body>div{grid-column:1/-1}
 @media(max-width:700px){.library-card{grid-template-columns:1fr}.library-card .poster{min-height:150px}.library-card-body{grid-template-columns:1fr;padding:16px}.library-card-body h3,.library-card-body>small,.library-card-body>div{grid-column:auto}}
 .content-library-list{display:flex;flex-direction:column;gap:10px}.content-library-row{display:flex;align-items:center;gap:18px;padding:14px 18px}.content-library-main{display:grid;grid-template-columns:64px minmax(180px,1fr) minmax(460px,2fr);align-items:center;gap:15px;flex:1;text-align:left}.content-library-main .poster{width:64px;height:44px;border-radius:4px}.content-library-title strong{display:block;font-size:13px;color:#394e3f}.content-library-title span{display:block;font-size:10px;color:#8d9a91;margin-top:5px}.content-library-meta{display:grid;grid-template-columns:repeat(4,minmax(92px,1fr));gap:12px}.content-library-meta span{font-size:9px;color:#929d95;line-height:1.6}.content-library-meta b{display:block;font-size:11px;color:#57685d;font-weight:500}.content-library-row>.button{flex-shrink:0;min-width:58px}@media(max-width:900px){.content-library-main{grid-template-columns:58px minmax(150px,1fr);row-gap:13px}.content-library-main .poster{width:58px;height:40px}.content-library-meta{grid-column:1/-1;grid-template-columns:repeat(4,1fr)}}@media(max-width:700px){.content-library-row{align-items:flex-start;padding:14px;gap:10px}.content-library-main{grid-template-columns:54px 1fr}.content-library-main .poster{width:54px;height:38px}.content-library-meta{grid-template-columns:repeat(2,1fr)}.content-library-row>.button{min-width:48px;padding:9px 10px}}
+
+/* Production status popovers */
+.production-blogger-summary{position:relative;display:flex;align-items:center;gap:14px;flex-wrap:nowrap;overflow:visible;z-index:2}
+.production-monitor-heading{min-width:0;flex:1}
+.production-monitor-heading p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.production-monitor-counts{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.monitor-count{border:1px solid #dfe7df;border-radius:999px;padding:7px 11px;font-size:11px;white-space:nowrap;background:#f8faf8;color:#637267}
+.monitor-count.waiting{color:#9a712e;background:#fbf6ea;border-color:#eee2c8}
+.monitor-count.producing{color:#286d50;background:#edf6ef;border-color:#d7e8dc}
+.monitor-count.active{box-shadow:0 0 0 2px #315a4520}
+.production-monitor-popover{position:absolute;z-index:30;right:14px;top:calc(100% - 4px);width:min(380px,calc(100vw - 48px));padding:15px;background:white;border:1px solid #dce5dd;border-radius:9px;box-shadow:0 14px 36px #20342a1c}
+.production-monitor-popover>.section-line{margin-bottom:10px}
+.production-monitor-popover>.section-line strong{font-size:12px}
+.monitor-popover-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px 12px;padding:10px 0;border-top:1px solid #eef1ed}
+.monitor-popover-item>div:first-child{min-width:0}
+.monitor-popover-item strong,.monitor-popover-item small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.monitor-popover-item strong{font-size:11px;font-weight:500;color:#425348}
+.monitor-popover-item small{font-size:10px;color:#89958c;margin-top:4px}
+.monitor-percent{font-size:11px;font-weight:600;color:#286d50}
+.monitor-progress-track{grid-column:1/-1;height:5px;border-radius:8px;background:#edf1ed;overflow:hidden}
+.monitor-progress-track i{display:block;height:100%;border-radius:inherit;background:#4f8a68;transition:width .3s ease}
+.monitor-empty{padding:12px 0 2px}
+.content-library-main .poster{height:auto;aspect-ratio:16/9;min-height:0}
+@media(max-width:700px){.production-blogger-summary{align-items:flex-start}.production-monitor-heading{flex-basis:calc(100% - 65px)}.production-monitor-counts{width:100%;padding-left:54px}.monitor-count{font-size:10px;padding:6px 9px}.production-monitor-popover{right:0;top:calc(100% + 2px)}}
