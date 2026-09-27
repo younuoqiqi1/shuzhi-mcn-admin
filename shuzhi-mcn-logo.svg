@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="340" height="72" viewBox="0 0 340 72" role="img" aria-labelledby="title desc">
-  <title id="title">数智 MCN</title>
-  <desc id="desc">数智 MCN 后台标识</desc>
-  <rect x="2" y="8" width="56" height="56" rx="16" fill="#236953"/>
-  <path d="M18 25.5 30 18l12 7.5v14L30 47l-12-7.5z" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M30 18v29M18 25.5l12 7 12-7M18 39.5l12-7 12 7" fill="none" stroke="#cbe8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="76" y="47" fill="#243b2e" font-family="PingFang SC, Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="1">数智 MCN</text>
-</svg>
