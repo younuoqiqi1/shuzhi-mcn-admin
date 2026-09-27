@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { readFileSync } from "node:fs";
 
 const require = createRequire(import.meta.url);
 const logic = require("../demo-logic.js");
@@ -54,4 +55,27 @@ test("unique highlights are allocated even when topic ranges overlap", () => {
 test("browser files are valid JavaScript", () => {
   assert.doesNotThrow(() => execFileSync(process.execPath, ["--check", `${root}/app.js`], { stdio: "pipe" }));
   assert.doesNotThrow(() => execFileSync(process.execPath, ["--check", `${root}/demo-logic.js`], { stdio: "pipe" }));
+});
+
+test("content operations keeps every blogger available in the monitor switcher", () => {
+  const app = readFileSync(`${root}/app.js`, "utf8");
+  assert.match(app, /const operationalAvatarWorkspaces = state\.screen === "library" \? \[\] : avatarWorkspaces;/);
+});
+
+test("content library is independent from the blogger monitor switcher", () => {
+  const app = readFileSync(`${root}/app.js`, "utf8");
+  assert.match(app, /!\["dashboard", "bloggers", "creator", "library"\]\.includes\(state\.screen\)/);
+});
+
+test("content library presents a time-ordered operational list", () => {
+  const app = readFileSync(`${root}/app.js`, "utf8");
+  assert.match(app, /content-library-list/);
+  assert.match(app, /\u5BA1\u6838\u5B8C\u6210\u65F6\u95F4/);
+  assert.match(app, /\u5173\u8054\u8282\u76EE\u6570/);
+  assert.match(app, /\u4E0A\u7EBF/);
+});
+
+test("review is approved one item at a time without a batch approve footer", () => {
+  const app = readFileSync(`${root}/app.js`, "utf8");
+  assert.doesNotMatch(app, /onBulk\(validSelected\)/);
 });
