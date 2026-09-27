@@ -91,6 +91,15 @@
 
 .review-guide-item{align-items:flex-start}.review-guide-item input{margin:3px 0 0 auto;flex:0 0 16px;width:16px;height:16px;accent-color:#236953;cursor:pointer}
 
+/* Workspace navigation: every creator stays visible and the review view is task-only. */
+.workspace-switcher{align-items:flex-start;flex-wrap:wrap}
+.avatar-switch-list{flex:1;max-width:none;width:100%;flex-wrap:wrap;overflow:visible;gap:10px 14px;padding:5px 2px}
+.avatar-switch{min-width:64px;max-width:116px}
+.avatar-switch .avatar-state{max-width:116px;justify-content:center;flex-wrap:wrap;text-align:center;line-height:1.25}
+.avatar-progress-detail{display:block;width:100%;font-size:8px;color:currentColor;opacity:.8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.production-blogger-summary{margin:0 0 10px}.production-blogger-summary>div{min-width:0;flex:1}.production-blogger-summary p{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(max-width:900px){.workspace-switcher{padding:13px 14px}.avatar-switch{min-width:58px;font-size:11px}.avatar-switch .avatar{width:40px;height:40px}.avatar-switch .avatar-state{max-width:96px;font-size:9px;padding:3px 5px}.production-blogger-summary p{white-space:normal}}
+
 /* Dashboard feedback: compact creator access, conversion analytics and drilldown. */
 .sidebar nav[aria-label="主导航"]{margin-top:25px}
 .dashboard-hero{gap:20px;padding-bottom:17px}
