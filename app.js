@@ -24364,7 +24364,7 @@
     })).sort((a, b) => a.blogger.id.localeCompare(b.blogger.id));
   }
   function beginNewBlogger(state, preset = defaultDraft()) {
-    return { ...initialState(), screen: "creator", draft: { ...preset }, workspaces: listBloggerWorkspaces(state), resetBackup: state.resetBackup || null };
+    return { ...initialState(), screen: "creator", draft: { ...preset }, workspaces: listBloggerWorkspaces(state), bulkProduction: state.bulkProduction || null, resetBackup: state.resetBackup || null };
   }
   function switchBlogger(state, id) {
     const workspaces = listBloggerWorkspaces(state);
@@ -24436,7 +24436,6 @@
     });
   }
   function createBlogger(state, draft) {
-    if (state.job) throw new Error("\u751F\u4EA7\u4EFB\u52A1\u8FDB\u884C\u4E2D\uFF0C\u4EFB\u52A1\u7ED3\u675F\u540E\u624D\u80FD\u7F16\u8F91\u535A\u4E3B\u6863\u6848");
     const d = normalizeProfile(draft);
     if (!d.name.trim() || !d.intro.trim() || !d.tags.audience.length || !d.tags.field.length || !(d.bloggerType?.trim() || d.type?.trim())) throw new Error("\u8BF7\u9009\u62E9\u535A\u4E3B\u7C7B\u578B\uFF0C\u586B\u5199\u540D\u79F0\u3001\u7B80\u4ECB\uFF0C\u5E76\u9009\u62E9\u53D7\u4F17\u4E0E\u5185\u5BB9\u9886\u57DF");
     const isUpdatingCurrent = Boolean(
@@ -24444,6 +24443,7 @@
     );
     const existingWorkspaces = listBloggerWorkspaces(state);
     const matchedWorkspace = existingWorkspaces.find((w) => w.blogger && (draft.id && w.blogger.id === draft.id || !draft.id && draft.name && w.blogger.name?.trim() === draft.name.trim()));
+    if (isUpdatingCurrent && state.job || matchedWorkspace?.job) throw new Error("\u751F\u4EA7\u4E2D\u7684\u535A\u4E3B\u6682\u65F6\u4E0D\u80FD\u4FEE\u6539\u4EBA\u8BBE");
     const isEditingExisting = isUpdatingCurrent || Boolean(matchedWorkspace);
     const nextNumber = Math.max(0, ...existingWorkspaces.map((w) => Number(w.blogger?.id?.slice(1)) || 0)) + 1;
     const id = draft.id || (isUpdatingCurrent ? state.blogger.id : matchedWorkspace ? matchedWorkspace.blogger.id : `B${String(nextNumber).padStart(3, "0")}`);
@@ -24644,6 +24644,37 @@
       const h = a.highlights.find((h2) => h2.id === i.highlightId);
       return { ...i, status: "pending", title: h.alternate, hook: h.alternate, narration: `${h.quote} \u8FD9\u4E9B\u539F\u7247\u91CC\u7684\u7EC6\u8282\uFF0C\u503C\u5F97\u6211\u4EEC\u505C\u4E0B\u6765\u591A\u770B\u4E00\u773C\u3002`, checks: [], revision: i.revision + 1, history: [...i.history, { type: "regenerate", text: `\u6309\u9000\u56DE\u610F\u89C1\u751F\u6210\u7B2C ${i.revision + 1} \u7248\uFF08\u6A21\u62DF\uFF09`, at: now }] };
     }), activity: [{ text: `${j.itemId} \xB7 \u4FEE\u6539\u5B8C\u6210\uFF0C\u91CD\u65B0\u5F85\u5BA1`, at: now }, ...state.activity] };
+  }
+  function finishBackgroundWorkspaceJob(state, bloggerId, now = Date.now()) {
+    const currentWorkspaces = listBloggerWorkspaces(state);
+    const target = currentWorkspaces.find((workspace) => workspace.blogger.id === bloggerId && workspace.job);
+    if (!target) return state;
+    const finished = finishJob({ ...state, ...target, bulkProduction: state.bulkProduction }, now);
+    let updatedWorkspaces = currentWorkspaces.filter((workspace) => workspace.blogger.id !== bloggerId);
+    updatedWorkspaces.push(activeWorkspace(finished));
+    let bulkProduction = state.bulkProduction;
+    if (bulkProduction && bulkProduction.bloggerIds[bulkProduction.nextIndex - 1] === bloggerId) {
+      const progress = { ...bulkProduction, completed: bulkProduction.completed + 1 };
+      if (progress.nextIndex >= progress.total) {
+        bulkProduction = null;
+      } else {
+        const nextId = progress.bloggerIds[progress.nextIndex];
+        const nextWorkspace = currentWorkspaces.find((workspace) => workspace.blogger.id === nextId);
+        try {
+          if (!nextWorkspace) throw new Error("\u627E\u4E0D\u5230\u6279\u6B21\u4E2D\u7684\u4E0B\u4E00\u4F4D\u535A\u4E3B");
+          const nextState = { ...state, ...nextWorkspace, bulkProduction: progress };
+          const poolIds = allowedAssets(nextState.blogger).map((asset) => asset.id);
+          const started = startBatch(nextState, DemoLogic.remapTopicBatchForPool(progress.settings, poolIds));
+          updatedWorkspaces = updatedWorkspaces.filter((workspace) => workspace.blogger.id !== nextId);
+          updatedWorkspaces.push(activeWorkspace({ ...started, screen: "production" }));
+          bulkProduction = { ...progress, nextIndex: progress.nextIndex + 1 };
+        } catch (error) {
+          bulkProduction = null;
+          updatedWorkspaces = updatedWorkspaces.map((workspace) => workspace.blogger.id === bloggerId ? { ...workspace, activity: [{ text: `\u6279\u91CF\u751F\u4EA7\u505C\u6B62\uFF1A${error.message}`, at: now }, ...workspace.activity] } : workspace);
+        }
+      }
+    }
+    return { ...state, workspaces: updatedWorkspaces.sort((a, b) => a.blogger.id.localeCompare(b.blogger.id)), bulkProduction };
   }
   function setChecks(state, id, checks) {
     return { ...state, items: state.items.map((i) => i.id === id && i.status === "pending" ? { ...i, checks: [...new Set(checks)].filter((n) => Number.isInteger(n) && n >= 0 && n < CHECKS.length) } : i) };
@@ -25315,6 +25346,7 @@
     const maxProductionCount = productionTargets.length ? Math.min(...productionTargets.map((w) => availableClipCount(w.blogger, w.items))) : 0;
     const lockedBloggerIds = new Set(workspaces.filter((w) => w.job).map((w) => w.blogger.id));
     const activeJobsKey = workspaces.filter((w) => w.job?.kind === "batch" || w.job?.kind === "video" || w.job?.kind === "revision").map((w) => `${w.blogger.id}:${w.job.kind}:${w.job.startedAt}`).join("|");
+    const backgroundJobsKey = workspaces.filter((w) => w.blogger.id !== state.blogger?.id && w.job).map((w) => `${w.blogger.id}:${w.job.kind}:${w.job.startedAt}`).join("|");
     (0, import_react8.useEffect)(() => {
       try {
         localStorage.setItem(STORAGE, JSON.stringify(state));
@@ -25349,6 +25381,14 @@
       }, Math.max(50, delay));
       return () => clearTimeout(timer);
     }, [state.job]);
+    (0, import_react8.useEffect)(() => {
+      const backgroundJob = workspaces.find((workspace) => workspace.blogger.id !== state.blogger?.id && workspace.job);
+      if (!backgroundJob) return;
+      const duration = backgroundJob.job.kind === "batch" || backgroundJob.job.kind === "video" ? BATCH_SIMULATION_MS : 4200;
+      const delay = duration - (Date.now() - backgroundJob.job.startedAt);
+      const timer = setTimeout(() => setState((current) => finishBackgroundWorkspaceJob(current, backgroundJob.blogger.id)), Math.max(50, delay));
+      return () => clearTimeout(timer);
+    }, [backgroundJobsKey, state.bulkProduction]);
     (0, import_react8.useEffect)(() => {
       if (!activeJobsKey) return;
       const timer = setInterval(() => setStatusNow(Date.now()), 600);
@@ -25394,10 +25434,6 @@
       }
     };
     const newBlogger = (preset) => {
-      if (state.job || state.bulkProduction) {
-        setToast("\u751F\u4EA7\u4EFB\u52A1\u7ED3\u675F\u540E\u624D\u80FD\u521B\u5EFA\u6216\u7F16\u8F91\u535A\u4E3B\u6863\u6848");
-        return;
-      }
       setState((s) => beginNewBlogger(s, preset));
       setSelectedId(null);
       setModal(null);

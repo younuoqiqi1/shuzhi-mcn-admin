@@ -71,6 +71,15 @@ test("active production never disables adding creators, and active batch rosters
   assert.ok(app.includes("workspaces.filter((w) => w.job).map((w) => w.blogger.id)"), "only creators with their own live job are locked in the picker");
 });
 
+test("creating a blogger is independent from active production while active creators stay locked for profile edits", () => {
+  const app = readFileSync(`${root}/app.js`, "utf8");
+  const newBlogger = app.slice(app.indexOf("const newBlogger = (preset) =>"), app.indexOf("const monitorBlogger = (id) =>"));
+  assert.doesNotMatch(newBlogger, /state\.job\s*\|\|\s*state\.bulkProduction/, "new creator flow should open during production");
+  assert.match(app, /if \(isUpdatingCurrent && state\.job \|\| matchedWorkspace\?\.job\)/, "only editing the creator whose own job is active should be blocked");
+  assert.match(app, /bulkProduction: state\.bulkProduction/, "starting a new profile must preserve the active batch queue");
+  assert.match(app, /background.*job|workspaces\.some\(\(w\) => w\.job\)/i, "production continues while the new profile is being created");
+});
+
 test("bulk creator roster extension preserves the in-flight position and respects the five-person limit", () => {
   const updated = logic.mergeBulkProductionRoster({ bloggerIds: ["A", "B"], nextIndex: 1, total: 2, completed: 0 }, ["A", "B", "C"]);
   assert.deepEqual(updated.bloggerIds, ["A", "B", "C"]);
