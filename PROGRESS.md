@@ -1,9 +1,10 @@
 # 数智博主生产工作台 (POC-AGENT) 进度看板
 
 更新时间：2026-10-05（Asia/Shanghai）  
-当前阶段：**POC-AGENT A0**  
-当前状态：`awaiting_review`（根据 A0 审查意见重构 Topic-First 架构与素材理解三层模型后，重新等待 Review）  
-执行责任：🏛️ 全栈架构师 & 🚀 DevOps/SRE  
+当前分支：`agent-poc/a1-contracts`  
+当前阶段：**POC-AGENT A1: 跨模块数据契约与状态机**  
+当前状态：`awaiting_review`（A1 契约、校验器、状态机、VMV 适配器与测试已就绪，等待 Review）  
+执行责任：🏛️ 全栈架构师 & 📐 API规范专家 & 🚀 DevOps/SRE  
 
 ---
 
@@ -11,17 +12,17 @@
 
 | 门禁名称 | 阶段点 | 当前状态 | 准入/通过标准 |
 |:---|:---:|:---:|:---|
-| **A0 Review Gate** | A0 结束点 | 🚪 **当前卡点** (`awaiting_review`) | 架构方案、Topic-First 数据链路、三层素材模型与隔离回流机制审查通过；**未通过前严禁进入 A1** |
-| **Retrieval Top3 实测 Gate** | A6 结束点 | 未到达 (待激活) | 真实影视素材（《潜伏》25分钟）镜头检索实测：**前 3 个候选中至少有 1 个可用镜头的脚本段落占比 ≥ 80%**；未达标严禁进入 A7/A8 大规模合成 |
+| **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
+| **Retrieval Top3 实测 Gate** | A6 结束点 | 未到达 (待激活) | 真实影视素材（《潜伏》25分钟）检索实测：**前 3 个候选中至少有 1 个可用镜头的脚本段落占比 ≥ 80%**；未达标严禁进入 A7/A8 大规模合成 |
 
 ---
 
-## A0–A10 分阶段实施路线图 (总体完成度：10%)
+## A0–A10 分阶段实施路线图 (总体完成度：18%)
 
 | 阶段 | 权重 | 状态 | 交付物 / 验收入口 | 核心说明 |
 |:---|---:|:---:|:---|:---|
-| **A0. 架构设计与 Topic-First 接线方案** | 10% | `awaiting_review` | [`docs/agent-poc/agent-poc-architecture.md`](docs/agent-poc/agent-poc-architecture.md) | **A0 Review Gate 卡点**：恢复 Topic-First 闭环与三层素材模型；不开发业务功能 |
-| **A1. 运营中枢后台交互与协议改造** | 8% | 待开始 | 运营Agent 交互窗口与异步 Job 订阅器 | 运营Agent 为唯一交互入口；剥离前端虚拟定时器 |
+| **A0. 架构设计与 Topic-First 接线方案** | 10% | ✅ **已完成** | [`docs/agent-poc/agent-poc-architecture.md`](docs/agent-poc/agent-poc-architecture.md) | A0 Review Gate 已通过；确立 Topic-First 与三层素材模型 |
+| **A1. 跨模块数据契约与 Job 状态机** | 8% | `awaiting_review` | [`src/contracts/`](src/contracts/)<br>[`tests/contracts.test.mjs`](tests/contracts.test.mjs) | **当前交付**：9 个核心 Schema、通用校验器、Job 状态机、VMV Stage 4/5 适配器与老周潜伏 fixture |
 | **A2. 稳定客观 Evidence 库 (L1) 摄取** | 8% | 待开始 | `evidence_store.py` / L1 数据校验套件 | 对接 VMV Stage 1 产物，绝对物理只读防污染 |
 | **A3. 共享 Generic Narrative Affordances (L2) 库** | 8% | 待开始 | `affordance_registry.json` / 增量接口 | 戏剧功能分类与跨博主共享通用叙事潜能 |
 | **A4. Topic-First 创意生成链路** | 10% | 待开始 | Topic / Story Beats / 画面诉求生成器 | 真人运营 ↔ 运营Agent 对话构思 |
@@ -34,13 +35,43 @@
 
 ---
 
-## 审查与状态流转历史 (Audit Log)
+## POC-AGENT A1 任务完成清单
 
-1. **2026-10-05 02:25**：A0 首次提交，标记为 `awaiting_review`。
-2. **2026-10-05 02:27**：A0 Review 未通过，状态变更为 `changes_requested`。审查反馈要求：
-   - 恢复正确的 Topic-first 架构（真人运营↔运营Agent→Persona/Topic/Core Viewpoint→Story Beats→Material Requirements→共享客观 Evidence Library 检索→Top候选→基于当前博主+选题的 Perspective Re-reading→Director 根据真实证据完成 Final Director Plan→最终 narration/original audio/IN-OUT→复用 VMV Stage4/5/6 Production→真实 MP4）；
-   - 素材理解明确三层：①稳定客观 Evidence、②共享可持续增量 Generic Narrative Affordances、③每条内容动态生成 Blogger/Topic Perspective Reading，并设计向 ② 回流、绝不污染 ① 的机制；
-   - 恢复 A0–A10 分阶段路线和两个 Gate（A0 Review Gate、Retrieval Top3 实测 Gate）；
-   - 保留双博主同素材 A/B 验证；
-   - 明确运营Agent 是唯一交互入口，Director/Retrieval 为纯后台能力，不搞全员 Agent 化。
-3. **2026-10-05 02:32**：完成架构与看板全面修订，状态重新变更为 **`awaiting_review`**，停止操作等待审查。
+- [x] **创建独立分支**：基于 `e65a8f5b3e967ca995ab714c1020fc7c81d80d76` 创建并检出 `agent-poc/a1-contracts`
+- [x] **定义 9 大核心 Schema** ([`src/contracts/schemas.mjs`](src/contracts/schemas.mjs))：
+  - `Persona`（博主人设）
+  - `Topic`（选题）
+  - `CoreViewpoint`（核心立意）
+  - `StoryBeat`（叙事节拍）
+  - `MaterialRequirement`（画面/情节/情绪素材诉求）
+  - `Candidate`（检索召回候选镜头，含 L1 客观事实与 L2 通用叙事潜能）
+  - `PerspectiveReading`（基于当前博主+选题的动态视角解读）
+  - `DirectorPlan`（基于真实证据的导演终稿方案，包含解说台词、原声留白与 IN-OUT）
+  - `ProductionJob`（端到端作业状态与生命周期记录）
+- [x] **实现通用纯逻辑校验器** ([`src/contracts/validators.mjs`](src/contracts/validators.mjs))：
+  - 支持字段级必填校验、类型检查、枚举匹配与数值区间限制；
+  - 精确时间码解析与出入点合法性校验（`out_timecode > in_timecode`，时长一致性匹配）；
+  - **严禁硬编码**：校验器不包含任何角色、剧名或时间码系统事实。
+- [x] **实现 Job 状态机流转引擎** ([`src/contracts/job-state-machine.mjs`](src/contracts/job-state-machine.mjs))：
+  - 支持 `drafting` $\rightarrow$ `scripting` $\rightarrow$ `awaiting_script_review` $\rightarrow$ `retrieving` $\rightarrow$ `perspective_reading` $\rightarrow$ `directing` $\rightarrow$ `awaiting_director_review` $\rightarrow$ `vmv_producing` $\rightarrow$ `completed` 完整生命周期；
+  - 支持审核打回循环与失败/取消终态管理；
+  - 严格拦截非法跃迁（如 `drafting` 直接到 `vmv_producing`）并抛出明确语义错误；
+  - 自动记录完整历史流转记录与阶段进度跟踪。
+- [x] **实现 VMV Stage 4/5 生产单适配器** ([`src/contracts/vmv-adapter.mjs`](src/contracts/vmv-adapter.mjs))：
+  - `mapDirectorPlanToVMVProductionOrder(directorPlan)` 确保终编计划无缝转换为现行 VMV Stage 4/5 `production-order.json` 标准格式；
+  - 自动处理画幅分辨率映射（16:9 $\rightarrow$ 1920x1080，9:16 $\rightarrow$ 1080x1920）、原声保留度及字幕配置；
+  - 杜绝重复自造不兼容协议。
+- [x] **构建最小真实测试 Fixture** ([`src/fixtures/laozhou-qianfu-fixture.mjs`](src/fixtures/laozhou-qianfu-fixture.mjs))：
+  - 以“老周追剧 + 潜伏”构建一条完整的端到端任务真实数据固件；
+  - 所有人物、情节、台词、时间码只作为测试固件，完全不渗透至系统基础代码。
+- [x] **补齐自动化测试套件** ([`tests/contracts.test.mjs`](tests/contracts.test.mjs))：
+  - 13/13 单元测试全部通过（覆盖校验器正反向用例、状态机完整与异常跃迁、VMV 适配器转换）；
+  - 原有测试套件 `tests/demo-feedback.test.mjs` 18/18 持续通过（总计 31/31 测试通过）。
+- [x] **严格守界**：未开发完整 Agent、未调用大模型、未引入 Retrieval 真实搜索、未生成视频、未修改前端 UI。
+
+---
+
+## 审查审计日志 (Audit Log)
+
+1. **2026-10-05 02:35**：A0 方案经审查正式通过（通过 Gate 1: A0 Review Gate），授权开启 A1。
+2. **2026-10-05 02:40**：在 `agent-poc/a1-contracts` 分支上完成 A1 契约规范、校验逻辑、状态机引擎、VMV 适配器、测试固件与测试套件实现，全套自动化测试通过，状态更新为 **`awaiting_review`**，原地停止等待审查，未进入 A2。
