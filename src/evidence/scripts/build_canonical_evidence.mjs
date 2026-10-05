@@ -391,6 +391,7 @@ export function buildCanonicalEvidenceDataset() {
             sample_frame_refs: [Math.round(subMid * 25)],
             confidence: subDur >= 3.5 ? 0.95 : 0.85,
             has_verified_ocr_dialogue: !!subDialogue,
+            text_type: subMatch.text_type || 'none',
           },
         };
 
@@ -425,6 +426,7 @@ export function buildCanonicalEvidenceDataset() {
           sample_frame_refs: [midFrame],
           confidence: confidence,
           has_verified_ocr_dialogue: !!matchedDialogue,
+          text_type: matchRes.text_type || 'none',
         },
       };
 

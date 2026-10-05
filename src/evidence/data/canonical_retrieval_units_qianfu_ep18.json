@@ -31,7 +31,8 @@
         13
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -66,7 +67,8 @@
         36
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -84,7 +86,7 @@
       "end_frame": 80,
       "fps": 25
     },
-    "dialogue": "畏 区 炉",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -101,7 +103,8 @@
         63
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -119,7 +122,7 @@
       "end_frame": 128,
       "fps": 25
     },
-    "dialogue": "畏 区 炉 张宏震 区念中 陈炜 张宏 区念中 陈炜",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -135,8 +138,9 @@
       "sample_frame_refs": [
         104
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -154,7 +158,7 @@
       "end_frame": 141,
       "fps": 25
     },
-    "dialogue": "张宏 区念中 陈炜",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -171,7 +175,8 @@
         135
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -189,7 +194,7 @@
       "end_frame": 161,
       "fps": 25
     },
-    "dialogue": "张宏 区念中 陈炜 张宏震 区念中 陈炜",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -206,7 +211,8 @@
         151
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -224,7 +230,7 @@
       "end_frame": 180,
       "fps": 25
     },
-    "dialogue": "张宏震 区念中 陈炜",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -240,8 +246,9 @@
       "sample_frame_refs": [
         171
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -259,7 +266,7 @@
       "end_frame": 255,
       "fps": 25
     },
-    "dialogue": "张靜 张静",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -276,7 +283,8 @@
         217
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -294,7 +302,7 @@
       "end_frame": 370,
       "fps": 25
     },
-    "dialogue": "尼血制 余瑞金 心區制 余瑞金",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -310,8 +318,9 @@
       "sample_frame_refs": [
         313
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -329,7 +338,7 @@
       "end_frame": 559,
       "fps": 25
     },
-    "dialogue": "心區制 余瑞金 心监制 余瑞金 陆群 华明 华明 何继昌 何继昌 卢锋 王海涛 宋 卢锋 王海涛",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -345,8 +354,9 @@
       "sample_frame_refs": [
         464
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -364,7 +374,7 @@
       "end_frame": 588,
       "fps": 25
     },
-    "dialogue": "宋 卢锋 王海涛",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -381,7 +391,8 @@
         574
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -399,7 +410,7 @@
       "end_frame": 650,
       "fps": 25
     },
-    "dialogue": "宋 卢锋 王海涛 ×J 卢锋 王",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -416,7 +427,8 @@
         619
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -451,7 +463,8 @@
         668
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -469,7 +482,7 @@
       "end_frame": 899,
       "fps": 25
     },
-    "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -485,8 +498,9 @@
       "sample_frame_refs": [
         793
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -521,7 +535,8 @@
         968
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -556,7 +571,8 @@
         1114
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -574,7 +590,7 @@
       "end_frame": 1235,
       "fps": 25
     },
-    "dialogue": "7100P 130 孙红雷 姚晨 干 孙红雷 姚晨",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -591,7 +607,8 @@
         1213
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -609,7 +626,7 @@
       "end_frame": 1270,
       "fps": 25
     },
-    "dialogue": "干 孙红雷 姚晨 孙红雷 姚晨",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -626,7 +643,8 @@
         1252
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -644,7 +662,7 @@
       "end_frame": 1292,
       "fps": 25
     },
-    "dialogue": "孙红雷 姚晨",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -660,8 +678,9 @@
       "sample_frame_refs": [
         1281
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -696,7 +715,8 @@
         1333
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -731,7 +751,8 @@
         1382
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -766,7 +787,8 @@
         1400
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -801,7 +823,8 @@
         1418
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -836,7 +859,8 @@
         1439
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -871,7 +895,8 @@
         1480
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -906,7 +931,8 @@
         1544
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -924,7 +950,7 @@
       "end_frame": 1646,
       "fps": 25
     },
-    "dialogue": "姜伟",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -941,7 +967,8 @@
         1612
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -959,7 +986,7 @@
       "end_frame": 1659,
       "fps": 25
     },
-    "dialogue": "姜伟",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -975,8 +1002,9 @@
       "sample_frame_refs": [
         1652
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -994,7 +1022,7 @@
       "end_frame": 1806,
       "fps": 25
     },
-    "dialogue": "姜伟 张译水 摄",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1010,8 +1038,9 @@
       "sample_frame_refs": [
         1733
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -1046,7 +1075,8 @@
         1820
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -1081,7 +1111,8 @@
         1840
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -1099,7 +1130,7 @@
       "end_frame": 1905,
       "fps": 25
     },
-    "dialogue": "水目 王然 冯震",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1116,7 +1147,8 @@
         1876
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -1134,7 +1166,7 @@
       "end_frame": 2297,
       "fps": 25
     },
-    "dialogue": "水目 王然 冯震 美不 李继麟 葆 韩 韩 葆 男辑 周新霞 寻凍 姜伟 付玮 亍凍 《姜伟 付玮",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1150,8 +1182,9 @@
       "sample_frame_refs": [
         2101
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -1169,7 +1202,7 @@
       "end_frame": 2345,
       "fps": 25
     },
-    "dialogue": "亍凍 《姜伟 付玮 姜伟 付玮 付玮",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1186,7 +1219,8 @@
         2321
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -1204,7 +1238,7 @@
       "end_frame": 2380,
       "fps": 25
     },
-    "dialogue": "付玮",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1221,7 +1255,8 @@
         2363
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -1256,7 +1291,8 @@
         2397
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -1274,7 +1310,7 @@
       "end_frame": 2500,
       "fps": 25
     },
-    "dialogue": "第18集 （粤）剧审字（2008）第038号",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1291,7 +1327,8 @@
         2457
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -1309,7 +1346,7 @@
       "end_frame": 3446,
       "fps": 25
     },
-    "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+    "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1326,7 +1363,8 @@
         2973
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1361,7 +1399,8 @@
         3596
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1379,7 +1418,7 @@
       "end_frame": 4060,
       "fps": 25
     },
-    "dialogue": "你跟站长太太说得上话 你也帮帮他呀 我们感恩戴德 别嫂子你别这样 你快起来 你快起来 不 陆太太 你 我来想办法 你先起来 你先起来",
+    "dialogue": "你跟站长太太说得上话 你也帮帮他呀 我们感恩戴德 别嫂子你别这样 你快起来 你快起来 陆太太 你 我来想办法 你先起来 你先起来",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1396,7 +1435,8 @@
         3903
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1431,7 +1471,8 @@
         4194
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1466,7 +1507,8 @@
         4571
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1501,7 +1543,8 @@
         4885
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1519,7 +1562,7 @@
       "end_frame": 5312,
       "fps": 25
     },
-    "dialogue": "没能抓住深海和北方一号 我们确实是失去了 立功的绝好机会 可是此事万万不可张扬啊 尤其不能让其他省站知道",
+    "dialogue": "没能抓住深海和北方 号 我们确实是失去了 立功的绝好机会 可是此事万万不可张扬啊 尤其不能让其他省站知道",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1536,7 +1579,8 @@
         5133
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1571,7 +1615,8 @@
         5391
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1606,7 +1651,8 @@
         5555
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1641,7 +1687,8 @@
         5714
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1659,7 +1706,7 @@
       "end_frame": 5996,
       "fps": 25
     },
-    "dialogue": "您要是处理 很难说郑局长会怎么想 到时候扔过一双小鞋来",
+    "dialogue": "您要是处理 很难说郑局长会怎么想 到时候扔过 双小鞋来",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1676,7 +1723,8 @@
         5891
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1694,7 +1742,7 @@
       "end_frame": 6218,
       "fps": 25
     },
-    "dialogue": "到时候扔过一双小鞋来 您说您穿是不穿 都别扭 以我现在的脾气 我就地正法了他",
+    "dialogue": "到时候扔过 双小鞋来 您说您穿是不穿 都别扭 以我现在的脾气 我就地正法了他",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1711,7 +1759,8 @@
         6107
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1746,7 +1795,8 @@
         6387
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1781,7 +1831,8 @@
         6608
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1799,7 +1850,7 @@
       "end_frame": 6974,
       "fps": 25
     },
-    "dialogue": "交给南京让他们处理算了 您要是实在咽不下这口恶气 把报告写得重一些 不就完了吗",
+    "dialogue": "交给南京让他们处理算了 您要是实在咽不下这口恶气 把报告写得重 些 不就完了吗",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1816,7 +1867,8 @@
         6817
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1834,7 +1886,7 @@
       "end_frame": 7243,
       "fps": 25
     },
-    "dialogue": "把报告写得重一些 不就完了吗 把报告写得重一些不就完了吗 马奎通共 陆桥山内讧 这",
+    "dialogue": "把报告写得重 些 不就完了吗 把报告写得重 些不就完了吗 马奎通共 陆桥山内讧",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1851,7 +1903,8 @@
         7109
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1869,7 +1922,7 @@
       "end_frame": 7300,
       "fps": 25
     },
-    "dialogue": "这",
+    "dialogue": "",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1886,7 +1939,8 @@
         7272
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -1904,7 +1958,7 @@
       "end_frame": 7499,
       "fps": 25
     },
-    "dialogue": "正好 你陆桥山自绝党国 你来当这个副站长",
+    "dialogue": "你陆桥山自绝党国 你来当这个副站长",
     "characters": [
       "余则成",
       "陆桥山"
@@ -1921,7 +1975,8 @@
         7400
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1956,7 +2011,8 @@
         7574
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -1991,7 +2047,8 @@
         7711
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2026,7 +2083,8 @@
         7825
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2061,7 +2119,8 @@
         7946
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2096,7 +2155,8 @@
         8060
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2131,7 +2191,8 @@
         8140
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2166,7 +2227,8 @@
         8255
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2201,7 +2263,8 @@
         8397
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2236,7 +2299,8 @@
         8517
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2254,7 +2318,7 @@
       "end_frame": 8765,
       "fps": 25
     },
-    "dialogue": "不会 站长一般是少将军衔 上面需要有人",
+    "dialogue": "不会 站长 般是少将军衔 上面需要有人",
     "characters": [
       "吴敬中",
       "余则成"
@@ -2271,7 +2335,8 @@
         8670
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2306,7 +2371,8 @@
         8857
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2341,7 +2407,8 @@
         8982
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2376,7 +2443,8 @@
         9053
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2411,7 +2479,8 @@
         9124
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2446,7 +2515,8 @@
         9204
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2464,7 +2534,7 @@
       "end_frame": 9794,
       "fps": 25
     },
-    "dialogue": "我腿都拧成麻花了也没学会 你会吗 会 你会呀 不早说 来来来 你教我 你教我 你干什么呀 你教教我呀 起来",
+    "dialogue": "我腿都拧成麻花了也没学会 你会吗 你会呀 不早说 来来来 你教我 你教我 你干什么呀 你教教我呀",
     "characters": [
       "吴敬中",
       "余则成"
@@ -2481,7 +2551,8 @@
         9522
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2499,7 +2570,7 @@
       "end_frame": 10036,
       "fps": 25
     },
-    "dialogue": "起来 这儿没音乐 比画几下就行了 快 起来 快点 手搁这儿吧",
+    "dialogue": "这儿没音乐 比画几下就行了 快 起来 手搁这儿吧",
     "characters": [
       "吴敬中",
       "余则成"
@@ -2516,7 +2587,8 @@
         9915
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2534,7 +2606,7 @@
       "end_frame": 10531,
       "fps": 25
     },
-    "dialogue": "来走 这样 你轻一点动作 这样对 放这儿对 把腰挺直 来 一",
+    "dialogue": "你轻 点动作 这样对 放这儿对 把腰挺直",
     "characters": [
       "吴敬中",
       "余则成"
@@ -2551,7 +2623,8 @@
         10284
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2569,7 +2642,7 @@
       "end_frame": 10675,
       "fps": 25
     },
-    "dialogue": "一 一 |I 你左脚跟上跟上",
+    "dialogue": "你左脚跟上跟上",
     "characters": [
       "吴敬中",
       "余则成"
@@ -2586,7 +2659,8 @@
         10603
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2621,7 +2695,8 @@
         10777
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -2656,7 +2731,8 @@
         11008
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2691,7 +2767,8 @@
         11167
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2726,7 +2803,8 @@
         11213
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2761,7 +2839,8 @@
         11397
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2796,7 +2875,8 @@
         11633
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2831,7 +2911,8 @@
         11747
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2866,7 +2947,8 @@
         11838
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2901,7 +2983,8 @@
         12074
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2919,7 +3002,7 @@
       "end_frame": 12904,
       "fps": 25
     },
-    "dialogue": "走吧 南京",
+    "dialogue": "",
     "characters": [
       "吴敬中",
       "余则成"
@@ -2936,7 +3019,8 @@
         12583
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -2971,7 +3055,8 @@
         13195
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3006,7 +3091,8 @@
         13558
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3041,7 +3127,8 @@
         13689
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3076,7 +3163,8 @@
         13804
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3111,7 +3199,8 @@
         13888
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3146,7 +3235,8 @@
         14122
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3181,7 +3271,8 @@
         14464
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3216,7 +3307,8 @@
         14628
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3234,7 +3326,7 @@
       "end_frame": 14761,
       "fps": 25
     },
-    "dialogue": "再见",
+    "dialogue": "",
     "characters": [
       "吴敬中",
       "余则成"
@@ -3250,8 +3342,9 @@
       "sample_frame_refs": [
         14710
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -3286,7 +3379,8 @@
         14864
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -3321,7 +3415,8 @@
         15119
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3339,7 +3434,7 @@
       "end_frame": 15588,
       "fps": 25
     },
-    "dialogue": "进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 胡长官占领延安了 真的 正在拉网式搜找共匪朱毛匪首",
+    "dialogue": "进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 胡长官占领延安了 正在拉网式搜找共匪朱毛匪首",
     "characters": [
       "吴敬中",
       "余则成"
@@ -3356,7 +3451,8 @@
         15430
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3391,7 +3487,8 @@
         15723
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3426,7 +3523,8 @@
         15926
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3461,7 +3559,8 @@
         16068
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3479,7 +3578,7 @@
       "end_frame": 16283,
       "fps": 25
     },
-    "dialogue": "我看 今天值得庆祝 一为收复延安",
+    "dialogue": "我看 今天值得庆祝 为收复延安",
     "characters": [
       "吴敬中",
       "余则成"
@@ -3496,7 +3595,8 @@
         16211
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3531,7 +3631,8 @@
         16305
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3566,7 +3667,8 @@
         16348
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3601,7 +3703,8 @@
         16388
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3636,7 +3739,8 @@
         16423
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -3671,7 +3775,8 @@
         16480
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -3706,7 +3811,8 @@
         16566
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3741,7 +3847,8 @@
         16709
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3776,7 +3883,8 @@
         17114
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3811,7 +3919,8 @@
         17643
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3846,7 +3955,8 @@
         18022
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3881,7 +3991,8 @@
         18547
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3916,7 +4027,8 @@
         18952
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3951,7 +4063,8 @@
         19009
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -3969,7 +4082,7 @@
       "end_frame": 19392,
       "fps": 25
     },
-    "dialogue": "我在延安住过半年 对那儿很有感情 那里有一种精神 一种乐观抗争的精神 你看着吧 胡宗南的命运会终结在延安的",
+    "dialogue": "我在延安住过半年 对那儿很有感情 那里有 种精神 种乐观抗争的精神 你看着吧 胡宗南的命运会终结在延安的",
     "characters": [
       "余则成",
       "秋掌柜"
@@ -3986,7 +4099,8 @@
         19211
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4021,7 +4135,8 @@
         19438
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4039,7 +4154,7 @@
       "end_frame": 19631,
       "fps": 25
     },
-    "dialogue": "仗有很多种打法 有一种胜利 叫撤退 有一种失败 叫占领",
+    "dialogue": "仗有很多种打法 有 种胜利 叫撤退 有 种失败 叫占领",
     "characters": [
       "余则成",
       "秋掌柜"
@@ -4056,7 +4171,8 @@
         19558
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4074,7 +4190,7 @@
       "end_frame": 20043,
       "fps": 25
     },
-    "dialogue": "我就是一时茫然 现在好了 我说吧 我们俩之间 还是你做领导比较合适",
+    "dialogue": "我就是 时茫然 现在好了 我说吧 我们俩之间 还是你做领导比较合适",
     "characters": [
       "余则成",
       "秋掌柜"
@@ -4091,7 +4207,8 @@
         19837
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4126,7 +4243,8 @@
         20070
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4161,7 +4279,8 @@
         20232
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4179,7 +4298,7 @@
       "end_frame": 20867,
       "fps": 25
     },
-    "dialogue": "嫂子 这是我写的诗 你写的 在报上 这儿",
+    "dialogue": "嫂子 这是我写的诗 你写的 在报上",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4197,7 +4316,8 @@
         20618
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4233,7 +4353,8 @@
         20917
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4269,7 +4390,8 @@
         20994
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -4305,7 +4427,8 @@
         21055
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4323,7 +4446,7 @@
       "end_frame": 21268,
       "fps": 25
     },
-    "dialogue": "那你怎么还不高兴 今天早上 我在他包里发现了一把手枪",
+    "dialogue": "那你怎么还不高兴 今天早上 我在他包里发现了 把手枪",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4341,7 +4464,8 @@
         21178
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4359,7 +4483,7 @@
       "end_frame": 21390,
       "fps": 25
     },
-    "dialogue": "我在他包里发现了一把手枪 什么型号 我哪懂啊 你懂",
+    "dialogue": "我在他包里发现了 把手枪 什么型号 我哪懂啊",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4377,7 +4501,8 @@
         21329
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4395,7 +4520,7 @@
       "end_frame": 21523,
       "fps": 25
     },
-    "dialogue": "你懂 我哪懂 我是说真枪还是假枪 **“我是说真枪还是假枪",
+    "dialogue": "我哪懂 我是说真枪还是假枪 **“我是说真枪还是假枪",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4413,7 +4538,8 @@
         21457
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4431,7 +4557,7 @@
       "end_frame": 21587,
       "fps": 25
     },
-    "dialogue": "**“我是说真枪还是假枪 真的",
+    "dialogue": "**“我是说真枪还是假枪",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4449,7 +4575,8 @@
         21555
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4467,7 +4594,7 @@
       "end_frame": 21773,
       "fps": 25
     },
-    "dialogue": "真的 他做秘密事的嘛 有枪就有枪呗 ～你余大哥也别着那玩意回来过呢 你余大哥也别着那玩意回来过呢",
+    "dialogue": "他做秘密事的嘛 有枪就有枪呗 ～你余大哥也别着那玩意回来过呢 你余大哥也别着那玩意回来过呢",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4485,7 +4612,8 @@
         21680
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4521,7 +4649,8 @@
         21841
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4557,7 +4686,8 @@
         21943
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4593,7 +4723,8 @@
         22049
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4629,7 +4760,8 @@
         22162
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4647,7 +4779,7 @@
       "end_frame": 22498,
       "fps": 25
     },
-    "dialogue": "差不多吧 4 早上我偷偷跟他出了门 早上我偷偷跟他出了门 他是说去看生意 结果拐了弯 就上了一辆车",
+    "dialogue": "差不多吧 4 早上我偷偷跟他出了门 早上我偷偷跟他出了门 他是说去看生意 结果拐了弯 就上了 辆车",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4665,7 +4797,8 @@
         22351
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4683,7 +4816,7 @@
       "end_frame": 22755,
       "fps": 25
     },
-    "dialogue": "结果拐了弯 就上了一辆车 妹子；你就不该跟他 你看到什么还不自己心里难受吗 眼不见心不烦呢",
+    "dialogue": "结果拐了弯 就上了 辆车 妹子；你就不该跟他 你看到什么还不自己心里难受吗 眼不见心不烦呢",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4701,7 +4834,8 @@
         22627
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4737,7 +4871,8 @@
         22790
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -4773,7 +4908,8 @@
         22855
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4809,7 +4945,8 @@
         23012
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4827,7 +4964,7 @@
       "end_frame": 23326,
       "fps": 25
     },
-    "dialogue": "忧伤被泪湿坏了翅膀 甲骨文说我太古老 一滴血落在粉嫩的腿上",
+    "dialogue": "忧伤被泪湿坏了翅膀 甲骨文说我太古老 滴血落在粉嫩的腿上",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4845,7 +4982,8 @@
         23233
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4881,7 +5019,8 @@
         23430
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -4917,7 +5056,8 @@
         23578
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -4953,7 +5093,8 @@
         23646
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -4971,7 +5112,7 @@
       "end_frame": 23874,
       "fps": 25
     },
-    "dialogue": "老天爷我死了算了 老天爷，我死了算了 我怎么一句都听不懂",
+    "dialogue": "老天爷我死了算了 老天爷，我死了算了 我怎么 句都听不懂",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -4989,7 +5130,8 @@
         23772
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5007,7 +5149,7 @@
       "end_frame": 24007,
       "fps": 25
     },
-    "dialogue": "我怎么一句都听不懂 就是忧伤",
+    "dialogue": "我怎么 句都听不懂 就是忧伤",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -5025,7 +5167,8 @@
         23941
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5061,7 +5204,8 @@
         24058
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5097,7 +5241,8 @@
         24174
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5133,7 +5278,8 @@
         24323
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -5169,7 +5315,8 @@
         24549
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -5205,7 +5352,8 @@
         24708
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -5223,7 +5371,7 @@
       "end_frame": 24851,
       "fps": 25
     },
-    "dialogue": "忙了一天累坏了吧",
+    "dialogue": "忙了 天累坏了吧",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -5241,7 +5389,8 @@
         24789
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5259,7 +5408,7 @@
       "end_frame": 24949,
       "fps": 25
     },
-    "dialogue": "忙了一天累坏了吧",
+    "dialogue": "忙了 天累坏了吧",
     "characters": [
       "穆晚秋",
       "翠平",
@@ -5277,7 +5426,8 @@
         24900
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5313,7 +5463,8 @@
         25014
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5349,7 +5500,8 @@
         25132
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5385,7 +5537,8 @@
         25229
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -5421,7 +5574,8 @@
         25317
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -5457,7 +5611,8 @@
         25423
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5493,7 +5648,8 @@
         25559
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5529,7 +5685,8 @@
         25666
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5565,7 +5722,8 @@
         25821
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5601,7 +5759,8 @@
         26027
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -5636,7 +5795,8 @@
         26301
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5671,7 +5831,8 @@
         26552
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5706,7 +5867,8 @@
         26638
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5741,7 +5903,8 @@
         26723
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5759,7 +5922,7 @@
       "end_frame": 26887,
       "fps": 25
     },
-    "dialogue": "我怎么了 忙一天了累了吧 忙一天不 累了吧",
+    "dialogue": "我怎么了 忙 天了累了吧 忙 天不 累了吧",
     "characters": [
       "余则成",
       "翠平"
@@ -5776,7 +5939,8 @@
         26835
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5794,7 +5958,7 @@
       "end_frame": 26945,
       "fps": 25
     },
-    "dialogue": "忙一天不 累了吧 茶泡好了我给你端过来",
+    "dialogue": "忙 天不 累了吧 茶泡好了我给你端过来",
     "characters": [
       "余则成",
       "翠平"
@@ -5811,7 +5975,8 @@
         26916
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5846,7 +6011,8 @@
         26966
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5881,7 +6047,8 @@
         27027
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5916,7 +6083,8 @@
         27098
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5951,7 +6119,8 @@
         27210
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -5969,7 +6138,7 @@
       "end_frame": 27438,
       "fps": 25
     },
-    "dialogue": "她给我念的这个 我一不就麻酥酥的了 我一下就麻酥酥的了",
+    "dialogue": "她给我念的这个 我 不就麻酥酥的了 我 下就麻酥酥的了",
     "characters": [
       "余则成",
       "翠平"
@@ -5986,7 +6155,8 @@
         27365
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6021,7 +6191,8 @@
         27500
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -6056,7 +6227,8 @@
         27606
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6091,7 +6263,8 @@
         27677
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -6126,7 +6299,8 @@
         27877
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6161,7 +6335,8 @@
         28102
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6196,7 +6371,8 @@
         28182
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6214,7 +6390,7 @@
       "end_frame": 28495,
       "fps": 25
     },
-    "dialogue": "有一种胜利四撤退 有一种失败叫占领 有一种失败門占领 别听他们瞎吹",
+    "dialogue": "有 种胜利四撤退 有 种失败叫占领 有 种失败門占领 别听他们瞎吹",
     "characters": [
       "余则成",
       "翠平"
@@ -6231,7 +6407,8 @@
         28351
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6266,7 +6443,8 @@
         28512
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6301,7 +6479,8 @@
         28568
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -6336,7 +6515,8 @@
         28643
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6371,7 +6551,8 @@
         28789
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6406,7 +6587,8 @@
         28951
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6424,7 +6606,7 @@
       "end_frame": 29666,
       "fps": 25
     },
-    "dialogue": "老尚 你需要什么情报啊 八路军改名了叫中国人民解放军 新建制和番号那我都有 胡宗南丢了一个团 三十一旅旅长被俘了 中央还都不知道呢",
+    "dialogue": "老尚 你需要什么情报啊 八路军改名了叫中国人民解放军 新建制和番号那我都有 胡宗南丢了 个团 三十 旅旅长被俘了 中央还都不知道呢",
     "characters": [
       "余则成",
       "翠平"
@@ -6441,7 +6623,8 @@
         29335
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6459,7 +6642,7 @@
       "end_frame": 30315,
       "fps": 25
     },
-    "dialogue": "中央还都不知道呢 还有什么 周佛海免予死刑 这算狗屁情报 这 这算狗屁情报这 免予死刑那是有内幕的 杨淑慧那一千五百两黄金 都打点给谁了你知道吗 我不想知道 我感兴趣的是 美金公债何时发行",
+    "dialogue": "中央还都不知道呢 还有什么 周佛海免予死刑 这算狗屁情报 这 这算狗屁情报这 免予死刑那是有内幕的 杨淑慧那 千五百两黄金 都打点给谁了你知道吗 我不想知道 我感兴趣的是 美金公债何时发行",
     "characters": [
       "余则成",
       "翠平"
@@ -6476,7 +6659,8 @@
         29990
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6511,7 +6695,8 @@
         30437
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6546,7 +6731,8 @@
         30571
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -6581,7 +6767,8 @@
         30631
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6616,7 +6803,8 @@
         30764
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6651,7 +6839,8 @@
         30916
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6686,7 +6875,8 @@
         31046
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6721,7 +6911,8 @@
         31146
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -6739,7 +6930,7 @@
       "end_frame": 31626,
       "fps": 25
     },
-    "dialogue": "来来来 请进 怎么样 我这儿还不错吧 喜欢这玩意 喜欢 再倒几年情报啊 挣够了钱 老子就开个刀剑工厂",
+    "dialogue": "来来来 怎么样 我这儿还不错吧 喜欢这玩意 再倒几年情报啊 挣够了钱 老子就开个刀剑工厂",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -6756,7 +6947,8 @@
         31403
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6774,7 +6966,7 @@
       "end_frame": 32349,
       "fps": 25
     },
-    "dialogue": "老子就开个刀剑工厂 这都是延安的 不是 哪能有那么多 这都是过期的 这是军调时代剩下的 这是美国的 共党的 还有俄国的 早就该作价甩卖了 全砸在手上了 现在一文钱不值 这是延安的",
+    "dialogue": "老子就开个刀剑工厂 这都是延安的 不是 哪能有那么多 这都是过期的 这是军调时代剩下的 这是美国的 共党的 还有俄国的 早就该作价甩卖了 全砸在手上了 现在 文钱不值 这是延安的",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -6791,7 +6983,8 @@
         31988
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6826,7 +7019,8 @@
         32419
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6844,7 +7038,7 @@
       "end_frame": 32592,
       "fps": 25
     },
-    "dialogue": "省从这党適局顯供密局 自从这党通局跟保密局 692 2071 16%6 129 （b 这高层一介入4 5861 2704 C-",
+    "dialogue": "省从这党適局顯供密局 自从这党通局跟保密局 692 2071 16%6 129 b 这高层 介入4 5861 2704 C",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -6861,7 +7055,8 @@
         32540
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6879,7 +7074,7 @@
       "end_frame": 32861,
       "fps": 25
     },
-    "dialogue": "692 2071 16%6 129 （b 这高层一介入4 5861 2704 C- 他们就是最权威的 他们发了 以前咱们靠造假 那还能混口饭吃 现在他们拿一个就是一个",
+    "dialogue": "692 2071 16%6 129 b 这高层 介入4 5861 2704 C 他们就是最权威的 他们发了 以前咱们靠造假 那还能混口饭吃 现在他们拿 个就是 个",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -6896,7 +7091,8 @@
         32727
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6914,7 +7110,7 @@
       "end_frame": 33090,
       "fps": 25
     },
-    "dialogue": "现在他们拿一个就是一个 买消息还得是人共党舍得花钱 可不是吗 ：北九前养 社 前不是吗 北多局壽",
+    "dialogue": "现在他们拿 个就是 个 买消息还得是人共党舍得花钱 可不是吗 北九前养 社 前不是吗 北多局壽",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -6931,7 +7127,8 @@
         32976
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6966,7 +7163,8 @@
         33139
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -6984,7 +7182,7 @@
       "end_frame": 33345,
       "fps": 25
     },
-    "dialogue": "伏 到 • 諸 二： 科 峨",
+    "dialogue": "諸 二",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -7001,7 +7199,8 @@
         33266
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7019,7 +7218,7 @@
       "end_frame": 33495,
       "fps": 25
     },
-    "dialogue": "峨 这跟天津有关 我要了 你想要什么就随便挑吧",
+    "dialogue": "这跟天津有关 我要了 你想要什么就随便挑吧",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -7036,7 +7235,8 @@
         33420
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7071,7 +7271,8 @@
         33589
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7106,7 +7307,8 @@
         33717
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7141,7 +7343,8 @@
         33869
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -7159,7 +7362,7 @@
       "end_frame": 34159,
       "fps": 25
     },
-    "dialogue": "一時 淋 有 許 牛",
+    "dialogue": "淋 有 許 牛",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -7176,7 +7379,8 @@
         34073
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7211,7 +7415,8 @@
         34226
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -7246,7 +7451,8 @@
         34368
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7264,7 +7470,7 @@
       "end_frame": 35617,
       "fps": 25
     },
-    "dialogue": "进来 就说两句 来嘛 来嘛 进来 到门口了 就说两甸 萆 说个屁 我跟他有什么好说的 说个屁 我跟他有什么好说的 人我给你带来了 已： 晚秋说你找我 是这样 这个晚上 你家先生回来就别做饭了 在我家吃吧 这当然好啊 怎么吃啊 家里只有半张烙饼 怎么吃啊；家里只有半张烙饼 怎么吃啊，家里只有半张烙饼 这你就别操心了 我一会儿让人送个锅子来 咱们吃涮羊肉 蒙古馆子的羊肉 叔伯在的时候倒是经常吃",
+    "dialogue": "进来 就说两句 来嘛 来嘛 进来 到门口了 就说两甸 萆 说个屁 我跟他有什么好说的 说个屁 我跟他有什么好说的 人我给你带来了 晚秋说你找我 是这样 这个晚上 你家先生回来就别做饭了 在我家吃吧 这当然好啊 怎么吃啊 家里只有半张烙饼 怎么吃啊；家里只有半张烙饼 怎么吃啊，家里只有半张烙饼 这你就别操心了 我 会儿让人送个锅子来 咱们吃涮羊肉 蒙古馆子的羊肉 叔伯在的时候倒是经常吃",
     "characters": [
       "谢若林",
       "穆晚秋"
@@ -7281,7 +7487,8 @@
         35030
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7299,7 +7506,7 @@
       "end_frame": 36468,
       "fps": 25
     },
-    "dialogue": "叔伯在的时候倒是经常吃 眼下吃顿羊肉啊 就像过年一样 羊肉还是包大包子好吃啊 余太太 什么时候来的天津啊 7 余太太 什么时候来的天津啊 胜利那年吧 几月呀 种麦子的时候 几月九吧 问这干吗",
+    "dialogue": "叔伯在的时候倒是经常吃 眼下吃顿羊肉啊 就像过年 样 羊肉还是包大包子好吃啊 余太太 什么时候来的天津啊 7 余太太 什么时候来的天津啊 胜利那年吧 几月呀 种麦子的时候 几月九吧 问这干吗",
     "characters": [
       "谢若林",
       "翠平",
@@ -7317,7 +7524,8 @@
         36043
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7353,7 +7561,8 @@
         36529
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7389,7 +7598,8 @@
         36630
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7407,7 +7617,7 @@
       "end_frame": 36828,
       "fps": 25
     },
-    "dialogue": "你要给压岁钱哪 我能猜猜吗 猜吧 你至少有个妹妹",
+    "dialogue": "你要给压岁钱哪 我能猜猜吗 你至少有个妹妹",
     "characters": [
       "谢若林",
       "翠平",
@@ -7425,7 +7635,8 @@
         36750
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7461,7 +7672,8 @@
         36854
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7479,7 +7691,7 @@
       "end_frame": 36977,
       "fps": 25
     },
-    "dialogue": "瞎说 没有 有 你叫翠平 你妹妹叫秋平",
+    "dialogue": "瞎说 没有 你叫翠平 你妹妹叫秋平",
     "characters": [
       "谢若林",
       "翠平",
@@ -7497,7 +7709,8 @@
         36929
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7533,7 +7746,8 @@
         37013
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7569,7 +7783,8 @@
         37072
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7605,7 +7820,8 @@
         37136
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7641,7 +7857,8 @@
         37210
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7677,7 +7894,8 @@
         37304
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7713,7 +7931,8 @@
         37379
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -7731,7 +7950,7 @@
       "end_frame": 37418,
       "fps": 25
     },
-    "dialogue": "草",
+    "dialogue": "",
     "characters": [
       "谢若林",
       "翠平",
@@ -7749,7 +7968,8 @@
         37406
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -7767,7 +7987,7 @@
       "end_frame": 37470,
       "fps": 25
     },
-    "dialogue": "草",
+    "dialogue": "",
     "characters": [
       "谢若林",
       "翠平",
@@ -7784,8 +8004,9 @@
       "sample_frame_refs": [
         37444
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -7821,7 +8042,8 @@
         37492
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -7839,7 +8061,7 @@
       "end_frame": 37939,
       "fps": 25
     },
-    "dialogue": "草 我画了图 他会过来的",
+    "dialogue": "我画了图 他会过来的",
     "characters": [
       "谢若林",
       "翠平",
@@ -7857,7 +8079,8 @@
         37727
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7875,7 +8098,7 @@
       "end_frame": 38347,
       "fps": 25
     },
-    "dialogue": "老余来 你看谢先生请咱们吃 吃什么 涮羊肉 真的",
+    "dialogue": "老余来 你看谢先生请咱们吃 吃什么 涮羊肉",
     "characters": [
       "谢若林",
       "翠平",
@@ -7893,7 +8116,8 @@
         38143
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7929,7 +8153,8 @@
         38434
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -7947,7 +8172,7 @@
       "end_frame": 38709,
       "fps": 25
     },
-    "dialogue": "实不相瞒 今天请余先生来 还真是想跟您深度地勾兑一下",
+    "dialogue": "实不相瞒 今天请余先生来 还真是想跟您深度地勾兑 下",
     "characters": [
       "谢若林",
       "翠平",
@@ -7965,7 +8190,8 @@
         38615
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8001,7 +8227,8 @@
         38766
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8019,7 +8246,7 @@
       "end_frame": 39116,
       "fps": 25
     },
-    "dialogue": "翠平你和晚秋带点切面 翠平 你和晚秋带点切面 去咱们家吃吧 行 余先生 您留点神",
+    "dialogue": "翠平你和晚秋带点切面 翠平 你和晚秋带点切面 去咱们家吃吧 余先生 您留点神",
     "characters": [
       "谢若林",
       "翠平",
@@ -8037,7 +8264,8 @@
         38969
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8073,7 +8301,8 @@
         39167
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8109,7 +8338,8 @@
         39375
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -8145,7 +8375,8 @@
         39589
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8163,7 +8394,7 @@
       "end_frame": 39819,
       "fps": 25
     },
-    "dialogue": "抓 你傻 怎么做不傻",
+    "dialogue": "怎么做不傻",
     "characters": [
       "谢若林",
       "翠平",
@@ -8181,7 +8412,8 @@
         39733
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8216,7 +8448,8 @@
         39884
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8251,7 +8484,8 @@
         40036
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8269,7 +8503,7 @@
       "end_frame": 40298,
       "fps": 25
     },
-    "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+    "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
     "characters": [
       "谢若林",
       "余则成"
@@ -8286,7 +8520,8 @@
         40211
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8304,7 +8539,7 @@
       "end_frame": 40470,
       "fps": 25
     },
-    "dialogue": "有钱大家一起赚嘛 不敢 这反过来 如果您是中共 您太太也是",
+    "dialogue": "有钱大家 起赚嘛 这反过来 如果您是中共 您太太也是",
     "characters": [
       "谢若林",
       "余则成"
@@ -8321,7 +8556,8 @@
         40384
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8356,7 +8592,8 @@
         40519
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8391,7 +8628,8 @@
         40604
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8426,7 +8664,8 @@
         40702
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8461,7 +8700,8 @@
         40899
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8496,7 +8736,8 @@
         41058
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8514,7 +8755,7 @@
       "end_frame": 41256,
       "fps": 25
     },
-    "dialogue": "我给你拿点东西你看看啊 00：",
+    "dialogue": "我给你拿点东西你看看啊",
     "characters": [
       "谢若林",
       "余则成"
@@ -8531,7 +8772,8 @@
         41169
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8566,7 +8808,8 @@
         41515
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8601,7 +8844,8 @@
         41839
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8636,7 +8880,8 @@
         42003
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8671,7 +8916,8 @@
         42239
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8689,7 +8935,7 @@
       "end_frame": 42486,
       "fps": 25
     },
-    "dialogue": "到达分局社会部报到 绝密",
+    "dialogue": "到达分局社会部报到",
     "characters": [
       "谢若林",
       "余则成"
@@ -8706,7 +8952,8 @@
         42431
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8741,7 +8988,8 @@
         42524
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8759,7 +9007,7 @@
       "end_frame": 42670,
       "fps": 25
     },
-    "dialogue": "还有吗 有还有一份讣告 讣告 边保六科陈秋平同志",
+    "dialogue": "还有吗 有还有 份讣告 讣告 边保六科陈秋平同志",
     "characters": [
       "谢若林",
       "余则成"
@@ -8776,7 +9024,8 @@
         42616
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8811,7 +9060,8 @@
         42743
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8846,7 +9096,8 @@
         42903
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8881,7 +9132,8 @@
         43107
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8916,7 +9168,8 @@
         43287
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8951,7 +9204,8 @@
         43369
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -8969,7 +9223,7 @@
       "end_frame": 43811,
       "fps": 25
     },
-    "dialogue": "还有吗 有 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平同志殉职始末 这太长了我就不念了吧 这谷有牛啊是给陈秋平牵马的",
+    "dialogue": "还有吗 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平同志殉职始末 这太长了我就不念了吧 这谷有牛啊是给陈秋平牵马的",
     "characters": [
       "谢若林",
       "余则成"
@@ -8986,7 +9240,8 @@
         43600
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9021,7 +9276,8 @@
         43878
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9056,7 +9312,8 @@
         44037
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9091,7 +9348,8 @@
         44163
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9109,7 +9367,7 @@
       "end_frame": 44226,
       "fps": 25
     },
-    "dialogue": "还有吗 没了",
+    "dialogue": "还有吗",
     "characters": [
       "谢若林",
       "余则成"
@@ -9126,7 +9384,8 @@
         44211
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9161,7 +9420,8 @@
         44283
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9179,7 +9439,7 @@
       "end_frame": 44471,
       "fps": 25
     },
-    "dialogue": "这陈秋平啊和你家翠平 只有一字之差",
+    "dialogue": "这陈秋平啊和你家翠平 只有 字之差",
     "characters": [
       "谢若林",
       "余则成"
@@ -9196,7 +9456,8 @@
         44405
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9214,7 +9475,7 @@
       "end_frame": 44745,
       "fps": 25
     },
-    "dialogue": "只有一字之差 而且在她意外死亡之后 你家太太 第三天就已经到了天津了 然后就跟我用这个假去妻的名义 然后就跟我用这个假夫妻的名义 一块生活了",
+    "dialogue": "只有 字之差 而且在她意外死亡之后 你家太太 第三天就已经到了天津了 然后就跟我用这个假去妻的名义 然后就跟我用这个假夫妻的名义 块生活了",
     "characters": [
       "谢若林",
       "余则成"
@@ -9231,7 +9492,8 @@
         44608
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9249,7 +9511,7 @@
       "end_frame": 44861,
       "fps": 25
     },
-    "dialogue": "一块生活了 陈秋平是你家太太的妹妹",
+    "dialogue": "块生活了 陈秋平是你家太太的妹妹",
     "characters": [
       "谢若林",
       "余则成"
@@ -9266,7 +9528,8 @@
         44803
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9301,7 +9564,8 @@
         44905
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9319,7 +9583,7 @@
       "end_frame": 45000,
       "fps": 25
     },
-    "dialogue": "就在她意外死亡之后 上面急需给你配备一个大太",
+    "dialogue": "就在她意外死亡之后 上面急需给你配备 个大太",
     "characters": [
       "谢若林",
       "余则成"
@@ -9336,7 +9600,8 @@
         44974
       ],
       "confidence": 0.85,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9354,7 +9619,7 @@
       "end_frame": 46270,
       "fps": 25
     },
-    "dialogue": "上面急需给你配备一个大太 也可能是时间来不及了 也可能是有人已经看过照片了 找一个特别像的 结果就拿她姐姐出来顶替 你就是峨眉峰 时间 去处 严丝合缝 时间 去处严丝合缝 亏你还是搞情报的 峨眉峰已经找着了 你不知道啊 确实是保密局的 抓了 去年的蒲扇胡同枪击案那么轰动 你是真不知道 你还是跟我装傻呀你",
+    "dialogue": "上面急需给你配备 个大太 也可能是时间来不及了 也可能是有人已经看过照片了 找 个特别像的 结果就拿她姐姐出来顶替 你就是峨眉峰 时间 去处 严丝合缝 时间 去处严丝合缝 亏你还是搞情报的 峨眉峰已经找着了 你不知道啊 确实是保密局的 去年的蒲扇胡同枪击案那么轰动 你是真不知道 你还是跟我装傻呀你",
     "characters": [
       "谢若林",
       "余则成"
@@ -9371,7 +9636,8 @@
         45635
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9389,7 +9655,7 @@
       "end_frame": 48190,
       "fps": 25
     },
-    "dialogue": "你还是跟我装傻呀你 我知道呀 共党分子内讧 共党分子内边 那女的不就是那个代表吗 男的不就是峨眉峰吗 我们保密局行动队的马队长马奎 不知道吗 坟墓就在那个什公什么 他们叫烈士陵园 我们去的人还拍了照 墓前都是鲜花 那会儿我去晚秋的老家 结婚去了呀 这马奎的老婆呢 那要真像你说的是 上面有人派下来的 那我估计现在已经是无影无踪了 老谢 你怎么会想到是我呢 你这种猜测让我非常非常害怕 保密局眼里不揉沙子 你要是真这么想 我现在马上上去 把我们俩的结婚帖子 拿给你看一看 有时间 有照片 有印花税 还有县太爷的章子 余先生 息怒 息怒 我怎么息怒啊",
+    "dialogue": "你还是跟我装傻呀你 我知道呀 共党分子内讧 共党分子内边 那女的不就是那个代表吗 男的不就是峨眉峰吗 我们保密局行动队的马队长马奎 不知道吗 坟墓就在那个什公什么 他们叫烈士陵园 我们去的人还拍了照 墓前都是鲜花 那会儿我去晚秋的老家 结婚去了呀 这马奎的老婆呢 那要真像你说的是 上面有人派下来的 那我估计现在已经是无影无踪了 老谢 你怎么会想到是我呢 你这种猜测让我非常非常害怕 保密局眼里不揉沙子 你要是真这么想 我现在马上上去 把我们俩的结婚帖子 拿给你看 看 有时间 有照片 有印花税 还有县太爷的章子 余先生 息怒 息怒 我怎么息怒啊",
     "characters": [
       "谢若林",
       "余则成"
@@ -9406,7 +9672,8 @@
         47230
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9441,7 +9708,8 @@
         48211
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9476,7 +9744,8 @@
         48381
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9511,7 +9780,8 @@
         48562
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9546,7 +9816,8 @@
         48624
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9581,7 +9852,8 @@
         48681
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9599,7 +9871,7 @@
       "end_frame": 48914,
       "fps": 25
     },
-    "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+    "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
     "characters": [
       "谢若林",
       "余则成"
@@ -9616,7 +9888,8 @@
         48811
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9634,7 +9907,7 @@
       "end_frame": 49244,
       "fps": 25
     },
-    "dialogue": "这第一呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
+    "dialogue": "这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
     "characters": [
       "谢若林",
       "余则成"
@@ -9651,7 +9924,8 @@
         49079
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9669,7 +9943,7 @@
       "end_frame": 49445,
       "fps": 25
     },
-    "dialogue": "这第三呢 行行 得得得 你别跟我在这儿一二三四五的 你别跟我在这儿六二三四五的 我不是共产党 你也别高兴 我不是共产觉 你也别高兴 愿意是你是",
+    "dialogue": "这第三呢 行行 得得得 你别跟我在这儿 二三四五的 你别跟我在这儿六二三四五的 我不是共产党 你也别高兴 我不是共产觉 你也别高兴 愿意是你是",
     "characters": [
       "谢若林",
       "余则成"
@@ -9686,7 +9960,8 @@
         49345
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9721,7 +9996,8 @@
         49477
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9756,7 +10032,8 @@
         49559
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9791,7 +10068,8 @@
         49702
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9826,7 +10104,8 @@
         49869
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9861,7 +10140,8 @@
         49984
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9896,7 +10176,8 @@
         50081
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9931,7 +10212,8 @@
         50256
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9949,7 +10231,7 @@
       "end_frame": 50444,
       "fps": 25
     },
-    "dialogue": "一个师呀才两根金条",
+    "dialogue": "个师呀才两根金条",
     "characters": [
       "谢若林",
       "余则成"
@@ -9966,7 +10248,8 @@
         50410
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -9984,7 +10267,7 @@
       "end_frame": 50580,
       "fps": 25
     },
-    "dialogue": "一个师呀才两根金条 人家这买卖多会做呀",
+    "dialogue": "个师呀才两根金条 人家这买卖多会做呀",
     "characters": [
       "谢若林",
       "余则成"
@@ -10001,7 +10284,8 @@
         50512
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10036,7 +10320,8 @@
         50694
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10071,7 +10356,8 @@
         50887
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10106,7 +10392,8 @@
         50999
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10141,7 +10428,8 @@
         51059
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10176,7 +10464,8 @@
         51151
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10211,7 +10500,8 @@
         51248
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10246,7 +10536,8 @@
         51404
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10264,7 +10555,7 @@
       "end_frame": 51582,
       "fps": 25
     },
-    "dialogue": "您要是共党 那我得像祖宗一样的",
+    "dialogue": "您要是共党 那我得像祖宗 样的",
     "characters": [
       "谢若林",
       "余则成"
@@ -10281,7 +10572,8 @@
         51556
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10299,7 +10591,7 @@
       "end_frame": 51797,
       "fps": 25
     },
-    "dialogue": "那我得像祖宗一样的 天天供着您呀 谁要是说出去 那他脑子那是缺斤短两",
+    "dialogue": "那我得像祖宗 样的 天天供着您呀 谁要是说出去 那他脑子那是缺斤短两",
     "characters": [
       "谢若林",
       "余则成"
@@ -10316,7 +10608,8 @@
         51690
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10334,7 +10627,7 @@
       "end_frame": 51999,
       "fps": 25
     },
-    "dialogue": "那他脑子那是缺斤短两 行了 老谢呀 咱们俩还是少接触吧",
+    "dialogue": "那他脑子那是缺斤短两 老谢呀 咱们俩还是少接触吧",
     "characters": [
       "谢若林",
       "余则成"
@@ -10351,7 +10644,8 @@
         51898
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10369,7 +10663,7 @@
       "end_frame": 52522,
       "fps": 25
     },
-    "dialogue": "咱们俩还是少接触吧 咱们俩不是一类人 •你再想一想 我也可以把党通局的机密告诉你 谢谢你的羊肉 我得回去了 硕果仅存的蠢货",
+    "dialogue": "咱们俩还是少接触吧 咱们俩不是 类人 你再想 想 我也可以把党通局的机密告诉你 谢谢你的羊肉 我得回去了 硕果仅存的蠢货",
     "characters": [
       "谢若林",
       "余则成"
@@ -10386,7 +10680,8 @@
         52261
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10404,7 +10699,7 @@
       "end_frame": 52890,
       "fps": 25
     },
-    "dialogue": "硕果仅存的蠢货 你妹妹什么样啊 我妹妹跟我长得一样 就是很像 但比我漂亮",
+    "dialogue": "硕果仅存的蠢货 你妹妹什么样啊 我妹妹跟我长得 样 就是很像 但比我漂亮",
     "characters": [
       "谢若林",
       "余则成"
@@ -10421,7 +10716,8 @@
         52706
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10456,7 +10752,8 @@
         52965
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10491,7 +10788,8 @@
         53087
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10526,7 +10824,8 @@
         53188
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10561,7 +10860,8 @@
         53630
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10596,7 +10896,8 @@
         54067
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10631,7 +10932,8 @@
         54344
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10666,7 +10968,8 @@
         54648
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10701,7 +11004,8 @@
         54791
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10719,7 +11023,7 @@
       "end_frame": 55149,
       "fps": 25
     },
-    "dialogue": "左蓝给过他一种信念 但这种信念的力量 却是翠平传递给他的",
+    "dialogue": "左蓝给过他 种信念 但这种信念的力量 却是翠平传递给他的",
     "characters": [
       "余则成",
       "翠平"
@@ -10736,7 +11040,8 @@
         55004
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10771,7 +11076,8 @@
         55181
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -10806,7 +11112,8 @@
         55257
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -10841,7 +11148,8 @@
         55346
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -10876,7 +11184,8 @@
         55418
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10911,7 +11220,8 @@
         55481
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10929,7 +11239,7 @@
       "end_frame": 56780,
       "fps": 25
     },
-    "dialogue": "买花布叫着晚秋一块去吧 她比你会买 是啊 人家是城市大小姐 你呀 你别说 我要是真娶了晚秋做二房 你们俩这日子能过得不错 你别忘了 她是二房 娶她之前你先得娶我 娶她之前你先娶我",
+    "dialogue": "买花布叫着晚秋 块去吧 她比你会买 是啊 人家是城市大小姐 你别说 我要是真娶了晚秋做二房 你们俩这日子能过得不错 你别忘了 她是二房 娶她之前你先得娶我 娶她之前你先娶我",
     "characters": [
       "余则成",
       "翠平"
@@ -10946,7 +11256,8 @@
         56148
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -10981,7 +11292,8 @@
         56820
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11016,7 +11328,8 @@
         56982
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11051,7 +11364,8 @@
         57317
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11086,7 +11400,8 @@
         57649
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11121,7 +11436,8 @@
         57808
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11156,7 +11472,8 @@
         57886
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11191,7 +11508,8 @@
         57960
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11226,7 +11544,8 @@
         58067
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11244,7 +11563,7 @@
       "end_frame": 59041,
       "fps": 25
     },
-    "dialogue": "秋",
+    "dialogue": "",
     "characters": [
       "余则成",
       "翠平"
@@ -11260,8 +11579,9 @@
       "sample_frame_refs": [
         58589
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11297,7 +11617,8 @@
         59494
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11333,7 +11654,8 @@
         60008
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11369,7 +11691,8 @@
         60153
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11405,7 +11728,8 @@
         60274
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11441,7 +11765,8 @@
         60466
       ],
       "confidence": 0.92,
-      "has_verified_ocr_dialogue": false
+      "has_verified_ocr_dialogue": false,
+      "text_type": "none"
     }
   },
   {
@@ -11459,7 +11784,7 @@
       "end_frame": 60982,
       "fps": 25
     },
-    "dialogue": "快点 1你看 你看 我得找到我上回骑的那四 我得找到我上回骑的那匹 在哪呢 大妹子 梅姐 中榮中路好候的间没来看我了前想死我",
+    "dialogue": "1你看 你看 我得找到我上回骑的那四 我得找到我上回骑的那匹 在哪呢 大妹子 中榮中路好候的间没来看我了前想死我",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11477,7 +11802,8 @@
         60803
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11513,7 +11839,8 @@
         61016
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11531,7 +11858,7 @@
       "end_frame": 61284,
       "fps": 25
     },
-    "dialogue": "梅姐我给你介绍一下 晚秋 这是我们街坊晚秋",
+    "dialogue": "梅姐我给你介绍 下 这是我们街坊晚秋",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11549,7 +11876,8 @@
         61167
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11585,7 +11913,8 @@
         61521
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11603,7 +11932,7 @@
       "end_frame": 61947,
       "fps": 25
     },
-    "dialogue": "［现在这种心慌的日子 你",
+    "dialogue": "［现在这种心慌的日子",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11621,7 +11950,8 @@
         61853
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11657,7 +11987,8 @@
         61978
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11675,7 +12006,7 @@
       "end_frame": 62786,
       "fps": 25
     },
-    "dialogue": "我就不该吃那个冰的东西 就不该吃那个冰的东西 你脞亍疼是吗 臊死了没脸见人了 臊死了 没脸见人了 医生怎么会是个老爷们儿呢 医生男女都一样 一样个屁 都脱光了 那妇科病是个什么病啊 好了 回家",
+    "dialogue": "我就不该吃那个冰的东西 就不该吃那个冰的东西 你脞亍疼是吗 臊死了没脸见人了 臊死了 没脸见人了 医生怎么会是个老爷们儿呢 医生男女都 样 样个屁 都脱光了 那妇科病是个什么病啊 好了 回家",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11693,7 +12024,8 @@
         62397
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11711,7 +12043,7 @@
       "end_frame": 63121,
       "fps": 25
     },
-    "dialogue": "来 喝点水 Cio 你要生个孩子 这种病准好",
+    "dialogue": "喝点水 Cio 你要生个孩子 这种病准好",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11729,7 +12061,8 @@
         62954
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11765,7 +12098,8 @@
         63151
       ],
       "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   },
   {
@@ -11783,7 +12117,7 @@
       "end_frame": 63406,
       "fps": 25
     },
-    "dialogue": "在黑夜里梦想着光 在黑夜里梦根着光",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11800,8 +12134,9 @@
       "sample_frame_refs": [
         63293
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -11819,7 +12154,7 @@
       "end_frame": 63431,
       "fps": 25
     },
-    "dialogue": "心中覆盖悲伤",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11837,7 +12172,8 @@
         63418
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -11855,7 +12191,7 @@
       "end_frame": 63529,
       "fps": 25
     },
-    "dialogue": "心中覆盖悲伤 在悲伤里忍受孤独",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11872,8 +12208,9 @@
       "sample_frame_refs": [
         63480
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -11891,7 +12228,7 @@
       "end_frame": 63667,
       "fps": 25
     },
-    "dialogue": "在悲伤里忍受孤独 空守一丝温暖",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11908,8 +12245,9 @@
       "sample_frame_refs": [
         63598
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -11927,7 +12265,7 @@
       "end_frame": 63737,
       "fps": 25
     },
-    "dialogue": "空守一丝温暖",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11945,7 +12283,8 @@
         63702
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -11963,7 +12302,7 @@
       "end_frame": 63751,
       "fps": 25
     },
-    "dialogue": "我的泪水是无底深海",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -11980,8 +12319,9 @@
       "sample_frame_refs": [
         63744
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -11999,7 +12339,7 @@
       "end_frame": 63782,
       "fps": 25
     },
-    "dialogue": "我的泪水是无底深海",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12017,7 +12357,8 @@
         63767
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12035,7 +12376,7 @@
       "end_frame": 63817,
       "fps": 25
     },
-    "dialogue": "我的泪水是无底深海",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12053,7 +12394,8 @@
         63800
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12071,7 +12413,7 @@
       "end_frame": 64100,
       "fps": 25
     },
-    "dialogue": "我的泪水是无底深海 我的涓水是无底深海 对你的爱已无言 相信无尽的力量 那是真爱永在",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12088,8 +12430,9 @@
       "sample_frame_refs": [
         63959
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12107,7 +12450,7 @@
       "end_frame": 64137,
       "fps": 25
     },
-    "dialogue": "那是真爱永在",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12125,7 +12468,8 @@
         64118
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12143,7 +12487,7 @@
       "end_frame": 64181,
       "fps": 25
     },
-    "dialogue": "那是真爱永在 是真爱永在",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12161,7 +12505,8 @@
         64159
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12179,7 +12524,7 @@
       "end_frame": 64280,
       "fps": 25
     },
-    "dialogue": "我的信仰是无底深海",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12196,8 +12541,9 @@
       "sample_frame_refs": [
         64230
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12215,7 +12561,7 @@
       "end_frame": 64559,
       "fps": 25
     },
-    "dialogue": "我的信仰是无底深海 澎湃着心中火焰 燃烧无尽的力量 那是忠诚永在",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12232,8 +12578,9 @@
       "sample_frame_refs": [
         64419
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "lyrics"
     }
   },
   {
@@ -12251,7 +12598,7 @@
       "end_frame": 64785,
       "fps": 25
     },
-    "dialogue": "那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷 温暖若停在你心里 翠平一一姚晨 李涯一一祖峰 温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤 温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨 温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林 愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰 愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12268,8 +12615,9 @@
       "sample_frame_refs": [
         64672
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12287,7 +12635,7 @@
       "end_frame": 64824,
       "fps": 25
     },
-    "dialogue": "愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒 愿用一生祝愿 吴太太一一马军勤 秋掌柜——刘昌伟",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12304,8 +12652,9 @@
       "sample_frame_refs": [
         64805
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12323,7 +12672,7 @@
       "end_frame": 64848,
       "fps": 25
     },
-    "dialogue": "愿用一生祝愿 吴太太一一马军勤 秋掌柜——刘昌伟 秋掌柜一一刘昌伟 罗掌柜一二陆羽 卧心包",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12341,7 +12690,8 @@
         64836
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12359,7 +12709,7 @@
       "end_frame": 64946,
       "fps": 25
     },
-    "dialogue": "秋掌柜一一刘昌伟 罗掌柜一二陆羽 卧心包 生命只为一个信仰 廖三民一一王 毅 李海丰——石文忠 生命只为一个信仰 李海丰——石文忠 徐宝凤一一孙 岚 生命只 一个信仰 使生风一一孙风 马太太一一徐婧灵 日宗方一一六 清 生命只为一个信仰 日宗方一一卞 涛 洪秘书—一刘言语",
+    "dialogue": "",
     "characters": [
       "穆晚秋",
       "余则成",
@@ -12376,8 +12726,9 @@
       "sample_frame_refs": [
         64897
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12395,7 +12746,7 @@
       "end_frame": 65227,
       "fps": 25
     },
-    "dialogue": "生命只为一个信仰 日宗方一一卞 涛 洪秘书—一刘言语 生命只为一个信仰 洪秘书一—刘言语 王占金一一崔 嵩 百電出 无论谁能听见 周亚夫一- 波 无论谁能听见 无论谁能听见 旁一白：徐涛 旁 白：徐涛 原二著：龙一 海 者：龙 剧：姜 油。於 伟 住 我的泪水是无底深海 导演：姜伟 付玮 摄一影：徐红兵 张译水 我的泪水是无底深海 摄影：徐红兵 美一术：李继麟 张译水 黄嘉超 我的泪水是无底深海 尚菲璇 录音：王 然 冯震 录 音 音：王然冯震 乐：王晓锋 对你的爱已无言 乐：王晓镡 词：韩葆 对你的爱已无言 剪辑：周新霞 执行制片人：张玮刘永梅",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12410,8 +12761,9 @@
       "sample_frame_refs": [
         65087
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12429,7 +12781,7 @@
       "end_frame": 65331,
       "fps": 25
     },
-    "dialogue": "对你的爱已无言 剪辑：周新霞 执行制片人：张玮刘永梅 对你的爱已无言 执行制片人：张 责任编辑：卢锋 刘永梅 对你的爱已无言 制片主任：李 统算：易 徐 峰 统筹：易 冰 副导演：李苏 张虹颖 相信无尽的力量 副导潢：李苏 李晓燕 张虹颖 娄亚江",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12444,8 +12796,9 @@
       "sample_frame_refs": [
         65279
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12463,7 +12816,7 @@
       "end_frame": 65419,
       "fps": 25
     },
-    "dialogue": "相信无尽的力量 副导潢：李苏 李晓燕 张虹颖 娄亚江 相信无尽的力量 场记：施维聪 服装：董清萍 薛迎娣 相信无尽的力量 服 化 裝：董清萍 妆：马树英 1双：当們失 灯光：胡庭鑫 浴口的汁，赵书平",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12478,8 +12831,9 @@
       "sample_frame_refs": [
         65375
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12497,7 +12851,7 @@
       "end_frame": 65717,
       "fps": 25
     },
-    "dialogue": "1双：当們失 灯光：胡庭鑫 浴口的汁，赵书平 那是真爱永在 道具设计：赵书平 置景：陈家余 孙书明 那是真爱永在 置景：陈家余 现场道具：薛耿亚 孙书明 张玉彬 那是真爱永在 现场制片：雷云华 制片：高琳杨焰 片：高 张 杨 焰 在黑夜里梦懇着光 张 生活制片：余 马司与效回足4 在黑夜里梦想着光 动画视效导演：汪 壮 动画视效制作：北京完美动力影像技术有限公司 动画视效制作：北京完美动力影像技术有限公司 在黑夜里梦想着光 在黑夜里梦想着光 心中覆盖悲伤 片头：刘昕 心中覆盖悲伤 头：刘昕 火：史炜 心中覆盖悲伤 烟公：史炜 主题歌：《深海》 心中覆盖悲伤 词：韩葆 作：阿•亚历山大罗夫",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12512,8 +12866,9 @@
       "sample_frame_refs": [
         65568
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12531,7 +12886,7 @@
       "end_frame": 65837,
       "fps": 25
     },
-    "dialogue": "心中覆盖悲伤 词：韩葆 作：阿•亚历山大罗夫 原 编 作：阿。亚历山大罗夫 曲：王晓锋 在悲伤里忍受孤独 1唱：亚洲爱乐合唱团 手风票：杨屹 在悲伤里忍受孤独 手风琴：杨屹 小提琴：赵坤宇 在悲伤里忍受孤独 小提芩：赵坤宇 大提琴：关正跃 口、牛身浆 在悲伤里忍受孤独 圆号：朱昆强 吉它：刘麟",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12546,8 +12901,9 @@
       "sample_frame_refs": [
         65777
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12565,7 +12921,7 @@
       "end_frame": 65901,
       "fps": 25
     },
-    "dialogue": "在悲伤里忍受孤独 圆号：朱昆强 吉它：刘麟 空守一丝温暖 吉 它：刘麟 演奏：中国交响乐团 空守一丝温暖 天：午国文門不四 中国爱乐乐团 指挥，王晓锋 空守一丝温暖 指挥：王晓锋 音乐录音：李岳松",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12581,7 +12937,8 @@
         65869
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12599,7 +12956,7 @@
       "end_frame": 65958,
       "fps": 25
     },
-    "dialogue": "空守一丝温暖 指挥：王晓锋 音乐录音：李岳松 音乐录音：李岳松 音乐制作人：王晓锋 摄影助理：赵海健 王飞 服装助理：董源平 严红",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12614,8 +12971,9 @@
       "sample_frame_refs": [
         65930
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12633,7 +12991,7 @@
       "end_frame": 66005,
       "fps": 25
     },
-    "dialogue": "摄影助理：赵海健 王飞 服装助理：董源平 严红 我的泪水是无底深海 。服装助理：董源平 徐桂花 严红 周晓燕 我的泪水是无底深海 你住化 马旭 打来助理，干业老 间唍燕 蔡传艳 周元庆",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12649,7 +13007,8 @@
         65982
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12667,7 +13026,7 @@
       "end_frame": 66165,
       "fps": 25
     },
-    "dialogue": "我的泪水是无底深海 你住化 马旭 打来助理，干业老 间唍燕 蔡传艳 周元庆 我的泪水是无底深海 灯光助理：王兴龙 钱林宏 周元庆 谢涛 我的泪水是无底深海 钱林宏 将永成 谢 涛 对你的爱已无言 化妆助理：孙 亮 蔺 丹 郑彦庆 对你的爱已无言 蔺丹 场务：边晓九 杨宏 对你的爱已无言 坳 分：辺院九 杜志军 司切，生建化 物宏 王俊壮 对你的爱已无言 司机：朱建华 陈君君 李辉 陆旭健",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12682,8 +13041,9 @@
       "sample_frame_refs": [
         66085
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12701,7 +13061,7 @@
       "end_frame": 66383,
       "fps": 25
     },
-    "dialogue": "对你的爱已无言 司机：朱建华 陈君君 李辉 陆旭健 对你的爱已无言 陈君君 孔伟 陆旭健 张进刚 申有恩 应新华 韦文洪 森 相信无尽的力量 应新华 任玉红 吴 森 曲 志 相信无尽的力量 任玉红 张小志 曲 志 韩红民 相信无尽的力量 羊妙龙 那是真爱永在 那是真爱永在 参加演出 可il 张子嫣 周志海 饶 刚 葛石柱",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12716,8 +13076,9 @@
       "sample_frame_refs": [
         66274
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12735,7 +13096,7 @@
       "end_frame": 66451,
       "fps": 25
     },
-    "dialogue": "张子嫣 周志海 饶 刚 葛石柱 尚菲璇 张国庆 周志海 李金蔚 葛石柱 于子宽 我的信仰是无底深海 冬 軍波 芋盅射 张家俊 王建亚 任学海 叶新字 我的信仰是无底深海 毛建平 韩振华 叶新宇 田 野",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12751,7 +13112,8 @@
         66417
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12769,7 +13131,7 @@
       "end_frame": 66629,
       "fps": 25
     },
-    "dialogue": "我的信仰是无底深海 毛建平 韩振华 叶新宇 田 野 我的信仰是无底深海 齐为 张国锋 韩振华 何志涛 田 野 杨军 我的信 是光底深海 刚 瀑 王 宏 童剑刚 白利卫 澎湃着心中火焰 冯瀑 陈培莉 王 宏 魏 斌 白利卫 金永明 澎湃着心中火焰 除培莉 尘歌 斌 崔蔓莉 本姓空 金永明 饶金杰 澎湃着心中火焰 1 高一清 吴利华 李铁军 王宏波 赵昌峰 李军 澎湃着心中火焰 吴利华 杨晓强 王宏波 宋纪成 李 军 焦建伟 杨念波 郝宗君 赵思全 窦莉莉",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12784,8 +13146,9 @@
       "sample_frame_refs": [
         66540
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12803,7 +13166,7 @@
       "end_frame": 66658,
       "fps": 25
     },
-    "dialogue": "杨念波 郝宗君 赵思全 窦莉莉 燃烧无尽的力量",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12818,8 +13181,9 @@
       "sample_frame_refs": [
         66644
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12837,7 +13201,7 @@
       "end_frame": 66842,
       "fps": 25
     },
-    "dialogue": "燃烧无尽的力量 燃烧无尽的力量 本剧音像由：广州诗咏文化传播有限公司独家发行 本剧音像由：广州诗咏文化传播有限公司独家发行 燃无尽味剧策划宣传：爱媒森（北京）影视文化传播有限公司 那是忠诚永在 ma新浪娖乐 那是忠诚永在 网络合作伙伴。新浪娱乐 Sina新淀娱乐 • •00m.on 那是忠诚永在",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12852,8 +13216,9 @@
       "sample_frame_refs": [
         66750
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12871,7 +13236,7 @@
       "end_frame": 66970,
       "fps": 25
     },
-    "dialogue": "我的信仰是无底深海 鸣谢单位 我的信仰是无底深海店影视城 中国好莱坞 我的信仰是无底深海 店！ 影悯嬪 BM留早大年品年4母子 我的信仰是无底深海东华通用航空有限公司 青岛永辦程式电子有限公司",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12886,8 +13251,9 @@
       "sample_frame_refs": [
         66906
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12905,7 +13271,7 @@
       "end_frame": 67114,
       "fps": 25
     },
-    "dialogue": "青岛永辦程式电子有限公司 澎湃着心中火焰 澎湃着心中火焰 崇阳青雨影视文化有限公司 澎湃着心中火焰 东阳青雨影视文化有限公司 广东南方电视台 东的汤电视合 南京启播电视集团 燃烧无尽的力量 联合拍摄",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12920,8 +13286,9 @@
       "sample_frame_refs": [
         67042
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12939,7 +13306,7 @@
       "end_frame": 67199,
       "fps": 25
     },
-    "dialogue": "燃烧无尽的力量 联合拍摄 燃烧无尽的力量",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12955,7 +13322,8 @@
         67157
       ],
       "confidence": 0.78,
-      "has_verified_ocr_dialogue": true
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -12973,7 +13341,7 @@
       "end_frame": 67293,
       "fps": 25
     },
-    "dialogue": "那是忠诚永在 那是感m來御青雨影视文化有限公司",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -12988,8 +13356,9 @@
       "sample_frame_refs": [
         67246
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   },
   {
@@ -13007,7 +13376,7 @@
       "end_frame": 67550,
       "fps": 25
     },
-    "dialogue": "那是感m來御青雨影视文化有限公司 那是忠诚永在 东阳青影视又化有限公司 广东南方电视台 那是忠诚永在 东南方电视台 联合出品 那是忠诚永在 联合出品 那是忠诚永在 许可证号：乙第17412号",
+    "dialogue": "",
     "characters": [
       "片尾演职员"
     ],
@@ -13022,8 +13391,9 @@
       "sample_frame_refs": [
         67422
       ],
-      "confidence": 0.95,
-      "has_verified_ocr_dialogue": true
+      "confidence": 0.92,
+      "has_verified_ocr_dialogue": false,
+      "text_type": "credits"
     }
   }
 ]

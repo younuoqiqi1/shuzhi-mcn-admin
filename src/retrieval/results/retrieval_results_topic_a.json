@@ -48,7 +48,8 @@
             14122
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.589,
@@ -110,7 +111,8 @@
             7711
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.508,
@@ -172,7 +174,8 @@
             8060
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.508,
@@ -202,7 +205,7 @@
           "out": "00:05:50.600",
           "duration_sec": 7.64
         },
-        "dialogue": "不会 站长一般是少将军衔 上面需要有人",
+        "dialogue": "不会 站长 般是少将军衔 上面需要有人",
         "characters": [
           "吴敬中",
           "余则成"
@@ -219,7 +222,7 @@
           "actions": [
             "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
           ],
-          "dialogue": "不会 站长一般是少将军衔 上面需要有人",
+          "dialogue": "不会 站长 般是少将军衔 上面需要有人",
           "scene_env": "保密局天津站站长办公室办公桌前",
           "camera": {}
         },
@@ -234,7 +237,8 @@
             8670
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.508,
@@ -296,7 +300,8 @@
             7825
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.499,
@@ -358,7 +363,8 @@
             8517
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.499,
@@ -420,7 +426,8 @@
             4571
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.433,
@@ -482,7 +489,8 @@
             5391
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.406,
@@ -512,7 +520,7 @@
           "out": "00:00:35.960",
           "duration_sec": 8.52
         },
-        "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -529,7 +537,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -543,10 +551,11 @@
           "sample_frame_refs": [
             793
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.403,
         "total_retrieval_score": 0.403,
         "score_breakdown": {
@@ -574,7 +583,7 @@
           "out": "00:01:12.240",
           "duration_sec": 5.88
         },
-        "dialogue": "姜伟 张译水 摄",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -591,7 +600,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "姜伟 张译水 摄",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -605,10 +614,11 @@
           "sample_frame_refs": [
             1733
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.403,
         "total_retrieval_score": 0.403,
         "score_breakdown": {
@@ -636,7 +646,7 @@
           "out": "00:02:17.840",
           "duration_sec": 37.84
         },
-        "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+        "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
         "characters": [
           "余则成",
           "陆桥山"
@@ -653,7 +663,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+          "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -668,7 +678,8 @@
             2973
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.403,
@@ -730,7 +741,8 @@
             5714
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.403,
@@ -760,7 +772,7 @@
           "out": "00:26:51.920",
           "duration_sec": 6.96
         },
-        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
         "characters": [
           "谢若林",
           "余则成"
@@ -777,7 +789,7 @@
           "actions": [
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
-          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
           "scene_env": "东来顺涮肉馆雅间餐桌",
           "camera": {}
         },
@@ -792,7 +804,8 @@
             40211
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.376,
@@ -854,7 +867,8 @@
             17114
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.374,
@@ -872,71 +886,7 @@
         "retrieval_reason": "画面中客观出现目标人物[吴敬中与余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_01_unit_scene_0213_01_15",
-        "beat_id": "beat_wu_01_hook",
-        "media_id": "qianfu_ep18_720p_25fps",
-        "evidence_id": "qianfu_ep18_720p_25fps:scene_0213:unit_scene_0213_01",
-        "scene_id": "scene_0213",
-        "parent_scene_id": "scene_0213",
-        "retrieval_unit_id": "unit_scene_0213_01",
-        "timecode": {
-          "in": "00:43:02.360",
-          "out": "00:43:11.400",
-          "duration_sec": 9.04
-        },
-        "dialogue": "那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷 温暖若停在你心里 翠平一一姚晨 李涯一一祖峰 温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤 温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨 温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林 愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰 愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
-        "characters": [
-          "穆晚秋",
-          "余则成",
-          "翠平"
-        ],
-        "physical_actions": [
-          "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
-        ],
-        "scene_env": "天津街头及火车站站台",
-        "evidence_l1": {
-          "characters": [
-            "穆晚秋",
-            "余则成",
-            "翠平"
-          ],
-          "actions": [
-            "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
-          ],
-          "dialogue": "那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷 温暖若停在你心里 翠平一一姚晨 李涯一一祖峰 温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤 温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨 温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林 愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰 愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
-          "scene_env": "天津街头及火车站站台",
-          "camera": {}
-        },
-        "affordance_l2": {
-          "tags": []
-        },
-        "relevant_affordances": [],
-        "provenance": {
-          "parent_scene_id": "scene_0213",
-          "analysis_granularity": "independent_keyframe",
-          "sample_frame_refs": [
-            64672
-          ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
-        },
-        "evidence_confidence": 0.95,
-        "total_score": 0.373,
-        "total_retrieval_score": 0.373,
-        "score_breakdown": {
-          "structured_score": 0.54,
-          "lexical_score": 0.503,
-          "semantic_score": 0.408,
-          "affordance_score": 0,
-          "quality_penalty": 0.1
-        },
-        "matched_requirements": [
-          "req_wu_01"
-        ],
-        "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
-      },
-      {
-        "candidate_id": "cand_req_wu_01_unit_scene_0064_02_16",
+        "candidate_id": "cand_req_wu_01_unit_scene_0064_02_15",
         "beat_id": "beat_wu_01_hook",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0064:unit_scene_0064_02",
@@ -948,7 +898,7 @@
           "out": "00:10:23.520",
           "duration_sec": 12.68
         },
-        "dialogue": "进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 胡长官占领延安了 真的 正在拉网式搜找共匪朱毛匪首",
+        "dialogue": "进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 胡长官占领延安了 正在拉网式搜找共匪朱毛匪首",
         "characters": [
           "吴敬中",
           "余则成"
@@ -965,7 +915,7 @@
           "actions": [
             "吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状"
           ],
-          "dialogue": "进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 胡长官占领延安了 真的 正在拉网式搜找共匪朱毛匪首",
+          "dialogue": "进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 胡长官占领延安了 正在拉网式搜找共匪朱毛匪首",
           "scene_env": "保密局天津站站长办公室办公桌前",
           "camera": {}
         },
@@ -980,7 +930,8 @@
             15430
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.372,
@@ -998,7 +949,7 @@
         "retrieval_reason": "画面中客观出现目标人物[吴敬中与余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_01_unit_scene_0070_01_17",
+        "candidate_id": "cand_req_wu_01_unit_scene_0070_01_16",
         "beat_id": "beat_wu_01_hook",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0070:unit_scene_0070_01",
@@ -1042,7 +993,8 @@
             16388
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.37,
@@ -1060,7 +1012,7 @@
         "retrieval_reason": "画面中客观出现目标人物[吴敬中与余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_01_unit_scene_0073_01_18",
+        "candidate_id": "cand_req_wu_01_unit_scene_0073_01_17",
         "beat_id": "beat_wu_01_hook",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0073:unit_scene_0073_01",
@@ -1104,7 +1056,8 @@
             16566
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.37,
@@ -1122,7 +1075,7 @@
         "retrieval_reason": "画面中客观出现目标人物[吴敬中与余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_01_unit_scene_0074_01_19",
+        "candidate_id": "cand_req_wu_01_unit_scene_0074_01_18",
         "beat_id": "beat_wu_01_hook",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0074:unit_scene_0074_01",
@@ -1166,7 +1119,8 @@
             16709
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.37,
@@ -1184,7 +1138,7 @@
         "retrieval_reason": "画面中客观出现目标人物[吴敬中与余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_01_unit_scene_0044_01_20",
+        "candidate_id": "cand_req_wu_01_unit_scene_0044_01_19",
         "beat_id": "beat_wu_01_hook",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0044:unit_scene_0044_01",
@@ -1228,7 +1182,71 @@
             7574
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
+        },
+        "evidence_confidence": 0.95,
+        "total_score": 0.368,
+        "total_retrieval_score": 0.368,
+        "score_breakdown": {
+          "structured_score": 1,
+          "lexical_score": 0.386,
+          "semantic_score": 0.516,
+          "affordance_score": 0,
+          "quality_penalty": 0.1
+        },
+        "matched_requirements": [
+          "req_wu_01"
+        ],
+        "retrieval_reason": "画面中客观出现目标人物[吴敬中与余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
+      },
+      {
+        "candidate_id": "cand_req_wu_01_unit_scene_0047_01_20",
+        "beat_id": "beat_wu_01_hook",
+        "media_id": "qianfu_ep18_720p_25fps",
+        "evidence_id": "qianfu_ep18_720p_25fps:scene_0047:unit_scene_0047_01",
+        "scene_id": "scene_0047",
+        "parent_scene_id": "scene_0047",
+        "retrieval_unit_id": "unit_scene_0047_01",
+        "timecode": {
+          "in": "00:05:15.000",
+          "out": "00:05:20.640",
+          "duration_sec": 5.64
+        },
+        "dialogue": "今天我跟站长太太去做旗袍",
+        "characters": [
+          "吴敬中",
+          "余则成"
+        ],
+        "physical_actions": [
+          "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+        ],
+        "scene_env": "保密局天津站站长办公室办公桌前",
+        "evidence_l1": {
+          "characters": [
+            "吴敬中",
+            "余则成"
+          ],
+          "actions": [
+            "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+          ],
+          "dialogue": "今天我跟站长太太去做旗袍",
+          "scene_env": "保密局天津站站长办公室办公桌前",
+          "camera": {}
+        },
+        "affordance_l2": {
+          "tags": []
+        },
+        "relevant_affordances": [],
+        "provenance": {
+          "parent_scene_id": "scene_0047",
+          "analysis_granularity": "independent_keyframe",
+          "sample_frame_refs": [
+            7946
+          ],
+          "confidence": 0.95,
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.368,
@@ -1292,7 +1310,8 @@
             14122
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.56,
@@ -1354,7 +1373,8 @@
             17114
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.553,
@@ -1416,7 +1436,8 @@
             16388
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.544,
@@ -1478,7 +1499,8 @@
             16566
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.544,
@@ -1540,7 +1562,8 @@
             16709
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.544,
@@ -1602,7 +1625,8 @@
             7574
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.527,
@@ -1632,7 +1656,7 @@
           "out": "00:26:51.920",
           "duration_sec": 6.96
         },
-        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
         "characters": [
           "谢若林",
           "余则成"
@@ -1649,7 +1673,7 @@
           "actions": [
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
-          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
           "scene_env": "东来顺涮肉馆雅间餐桌",
           "camera": {}
         },
@@ -1664,7 +1688,8 @@
             40211
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.438,
@@ -1694,7 +1719,7 @@
           "out": "00:00:35.960",
           "duration_sec": 8.52
         },
-        "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -1711,7 +1736,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -1725,10 +1750,11 @@
           "sample_frame_refs": [
             793
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.409,
         "total_retrieval_score": 0.409,
         "score_breakdown": {
@@ -1756,7 +1782,7 @@
           "out": "00:01:12.240",
           "duration_sec": 5.88
         },
-        "dialogue": "姜伟 张译水 摄",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -1773,7 +1799,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "姜伟 张译水 摄",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -1787,10 +1813,11 @@
           "sample_frame_refs": [
             1733
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.409,
         "total_retrieval_score": 0.409,
         "score_breakdown": {
@@ -1818,7 +1845,7 @@
           "out": "00:02:17.840",
           "duration_sec": 37.84
         },
-        "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+        "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
         "characters": [
           "余则成",
           "陆桥山"
@@ -1835,7 +1862,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+          "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -1850,7 +1877,8 @@
             2973
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.409,
@@ -1912,7 +1940,8 @@
             4571
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.409,
@@ -1974,7 +2003,8 @@
             5714
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.409,
@@ -2036,7 +2066,8 @@
             5391
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.398,
@@ -2098,7 +2129,8 @@
             7711
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.395,
@@ -2160,7 +2192,8 @@
             7825
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.395,
@@ -2222,7 +2255,8 @@
             20232
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.382,
@@ -2284,7 +2318,8 @@
             40036
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.382,
@@ -2346,7 +2381,8 @@
             15723
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.374,
@@ -2408,7 +2444,8 @@
             16068
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.374,
@@ -2470,7 +2507,8 @@
             7946
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.373,
@@ -2502,7 +2540,7 @@
           "out": "00:02:17.840",
           "duration_sec": 37.84
         },
-        "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+        "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
         "characters": [
           "余则成",
           "陆桥山"
@@ -2519,7 +2557,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+          "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -2534,7 +2572,8 @@
             2973
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.454,
@@ -2596,7 +2635,8 @@
             4571
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.427,
@@ -2658,7 +2698,8 @@
             5391
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.407,
@@ -2688,7 +2729,7 @@
           "out": "00:00:35.960",
           "duration_sec": 8.52
         },
-        "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -2705,7 +2746,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -2719,10 +2760,11 @@
           "sample_frame_refs": [
             793
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.4,
         "total_retrieval_score": 0.4,
         "score_breakdown": {
@@ -2750,7 +2792,7 @@
           "out": "00:01:12.240",
           "duration_sec": 5.88
         },
-        "dialogue": "姜伟 张译水 摄",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -2767,7 +2809,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "姜伟 张译水 摄",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -2781,10 +2823,11 @@
           "sample_frame_refs": [
             1733
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.4,
         "total_retrieval_score": 0.4,
         "score_breakdown": {
@@ -2844,7 +2887,8 @@
             5714
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.4,
@@ -2906,7 +2950,8 @@
             41515
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.392,
@@ -2924,69 +2969,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0125_15_8",
-        "beat_id": "beat_wu_03_crisis",
-        "media_id": "qianfu_ep18_720p_25fps",
-        "evidence_id": "qianfu_ep18_720p_25fps:scene_0125:unit_scene_0125_15",
-        "scene_id": "scene_0125",
-        "parent_scene_id": "scene_0125",
-        "retrieval_unit_id": "unit_scene_0125_15",
-        "timecode": {
-          "in": "00:28:15.040",
-          "out": "00:28:19.440",
-          "duration_sec": 4.4
-        },
-        "dialogue": "到达分局社会部报到 绝密",
-        "characters": [
-          "谢若林",
-          "余则成"
-        ],
-        "physical_actions": [
-          "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-        ],
-        "scene_env": "东来顺涮肉馆雅间餐桌",
-        "evidence_l1": {
-          "characters": [
-            "谢若林",
-            "余则成"
-          ],
-          "actions": [
-            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-          ],
-          "dialogue": "到达分局社会部报到 绝密",
-          "scene_env": "东来顺涮肉馆雅间餐桌",
-          "camera": {}
-        },
-        "affordance_l2": {
-          "tags": []
-        },
-        "relevant_affordances": [],
-        "provenance": {
-          "parent_scene_id": "scene_0125",
-          "analysis_granularity": "independent_keyframe",
-          "sample_frame_refs": [
-            42431
-          ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
-        },
-        "evidence_confidence": 0.95,
-        "total_score": 0.392,
-        "total_retrieval_score": 0.392,
-        "score_breakdown": {
-          "structured_score": 0.54,
-          "lexical_score": 0.203,
-          "semantic_score": 0.853,
-          "affordance_score": 0,
-          "quality_penalty": 0.1
-        },
-        "matched_requirements": [
-          "req_wu_03"
-        ],
-        "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
-      },
-      {
-        "candidate_id": "cand_req_wu_03_unit_scene_0059_01_9",
+        "candidate_id": "cand_req_wu_03_unit_scene_0059_01_8",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0059:unit_scene_0059_01",
@@ -3030,7 +3013,8 @@
             14122
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.347,
@@ -3048,7 +3032,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0144_01_10",
+        "candidate_id": "cand_req_wu_03_unit_scene_0144_01_9",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0144:unit_scene_0144_01",
@@ -3092,7 +3076,8 @@
             49869
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.345,
@@ -3110,7 +3095,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0138_01_11",
+        "candidate_id": "cand_req_wu_03_unit_scene_0138_01_10",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0138:unit_scene_0138_01",
@@ -3122,7 +3107,7 @@
           "out": "00:32:36.560",
           "duration_sec": 8.28
         },
-        "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+        "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
         "characters": [
           "谢若林",
           "余则成"
@@ -3139,7 +3124,7 @@
           "actions": [
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
-          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
           "scene_env": "东来顺涮肉馆雅间餐桌",
           "camera": {}
         },
@@ -3154,7 +3139,8 @@
             48811
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.341,
@@ -3163,6 +3149,69 @@
           "structured_score": 0.54,
           "lexical_score": 0.191,
           "semantic_score": 0.64,
+          "affordance_score": 0,
+          "quality_penalty": 0.1
+        },
+        "matched_requirements": [
+          "req_wu_03"
+        ],
+        "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
+      },
+      {
+        "candidate_id": "cand_req_wu_03_unit_scene_0131_01_11",
+        "beat_id": "beat_wu_03_crisis",
+        "media_id": "qianfu_ep18_720p_25fps",
+        "evidence_id": "qianfu_ep18_720p_25fps:scene_0131:unit_scene_0131_01",
+        "scene_id": "scene_0131",
+        "parent_scene_id": "scene_0131",
+        "retrieval_unit_id": "unit_scene_0131_01",
+        "timecode": {
+          "in": "00:30:00.000",
+          "out": "00:30:50.800",
+          "duration_sec": 50.8
+        },
+        "dialogue": "上面急需给你配备 个大太 也可能是时间来不及了 也可能是有人已经看过照片了 找 个特别像的 结果就拿她姐姐出来顶替 你就是峨眉峰 时间 去处 严丝合缝 时间 去处严丝合缝 亏你还是搞情报的 峨眉峰已经找着了 你不知道啊 确实是保密局的 去年的蒲扇胡同枪击案那么轰动 你是真不知道 你还是跟我装傻呀你",
+        "characters": [
+          "谢若林",
+          "余则成"
+        ],
+        "physical_actions": [
+          "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+        ],
+        "scene_env": "东来顺涮肉馆雅间餐桌",
+        "evidence_l1": {
+          "characters": [
+            "谢若林",
+            "余则成"
+          ],
+          "actions": [
+            "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+          ],
+          "dialogue": "上面急需给你配备 个大太 也可能是时间来不及了 也可能是有人已经看过照片了 找 个特别像的 结果就拿她姐姐出来顶替 你就是峨眉峰 时间 去处 严丝合缝 时间 去处严丝合缝 亏你还是搞情报的 峨眉峰已经找着了 你不知道啊 确实是保密局的 去年的蒲扇胡同枪击案那么轰动 你是真不知道 你还是跟我装傻呀你",
+          "scene_env": "东来顺涮肉馆雅间餐桌",
+          "camera": {}
+        },
+        "affordance_l2": {
+          "tags": []
+        },
+        "relevant_affordances": [],
+        "provenance": {
+          "parent_scene_id": "scene_0131",
+          "analysis_granularity": "independent_keyframe",
+          "sample_frame_refs": [
+            45635
+          ],
+          "confidence": 0.95,
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
+        },
+        "evidence_confidence": 0.95,
+        "total_score": 0.329,
+        "total_retrieval_score": 0.329,
+        "score_breakdown": {
+          "structured_score": 0.54,
+          "lexical_score": 0.426,
+          "semantic_score": 0.302,
           "affordance_score": 0,
           "quality_penalty": 0.1
         },
@@ -3216,7 +3265,8 @@
             41839
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.326,
@@ -3246,7 +3296,7 @@
           "out": "00:26:51.920",
           "duration_sec": 6.96
         },
-        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
         "characters": [
           "谢若林",
           "余则成"
@@ -3263,7 +3313,7 @@
           "actions": [
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
-          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
+          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
           "scene_env": "东来顺涮肉馆雅间餐桌",
           "camera": {}
         },
@@ -3278,7 +3328,8 @@
             40211
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.314,
@@ -3296,71 +3347,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0213_01_14",
-        "beat_id": "beat_wu_03_crisis",
-        "media_id": "qianfu_ep18_720p_25fps",
-        "evidence_id": "qianfu_ep18_720p_25fps:scene_0213:unit_scene_0213_01",
-        "scene_id": "scene_0213",
-        "parent_scene_id": "scene_0213",
-        "retrieval_unit_id": "unit_scene_0213_01",
-        "timecode": {
-          "in": "00:43:02.360",
-          "out": "00:43:11.400",
-          "duration_sec": 9.04
-        },
-        "dialogue": "那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷 温暖若停在你心里 翠平一一姚晨 李涯一一祖峰 温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤 温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨 温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林 愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰 愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
-        "characters": [
-          "穆晚秋",
-          "余则成",
-          "翠平"
-        ],
-        "physical_actions": [
-          "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
-        ],
-        "scene_env": "天津街头及火车站站台",
-        "evidence_l1": {
-          "characters": [
-            "穆晚秋",
-            "余则成",
-            "翠平"
-          ],
-          "actions": [
-            "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
-          ],
-          "dialogue": "那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷 温暖若停在你心里 翠平一一姚晨 李涯一一祖峰 温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤 温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨 温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林 愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰 愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
-          "scene_env": "天津街头及火车站站台",
-          "camera": {}
-        },
-        "affordance_l2": {
-          "tags": []
-        },
-        "relevant_affordances": [],
-        "provenance": {
-          "parent_scene_id": "scene_0213",
-          "analysis_granularity": "independent_keyframe",
-          "sample_frame_refs": [
-            64672
-          ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
-        },
-        "evidence_confidence": 0.95,
-        "total_score": 0.313,
-        "total_retrieval_score": 0.313,
-        "score_breakdown": {
-          "structured_score": 0.54,
-          "lexical_score": 0.303,
-          "semantic_score": 0.381,
-          "affordance_score": 0,
-          "quality_penalty": 0.1
-        },
-        "matched_requirements": [
-          "req_wu_03"
-        ],
-        "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
-      },
-      {
-        "candidate_id": "cand_req_wu_03_unit_scene_0049_08_15",
+        "candidate_id": "cand_req_wu_03_unit_scene_0049_08_14",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0049:unit_scene_0049_08",
@@ -3372,7 +3359,7 @@
           "out": "00:07:01.240",
           "duration_sec": 19.8
         },
-        "dialogue": "来走 这样 你轻一点动作 这样对 放这儿对 把腰挺直 来 一",
+        "dialogue": "你轻 点动作 这样对 放这儿对 把腰挺直",
         "characters": [
           "吴敬中",
           "余则成"
@@ -3389,7 +3376,7 @@
           "actions": [
             "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
           ],
-          "dialogue": "来走 这样 你轻一点动作 这样对 放这儿对 把腰挺直 来 一",
+          "dialogue": "你轻 点动作 这样对 放这儿对 把腰挺直",
           "scene_env": "保密局天津站站长办公室办公桌前",
           "camera": {}
         },
@@ -3404,7 +3391,8 @@
             10284
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.302,
@@ -3422,71 +3410,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0124_01_16",
-        "beat_id": "beat_wu_03_crisis",
-        "media_id": "qianfu_ep18_720p_25fps",
-        "evidence_id": "qianfu_ep18_720p_25fps:scene_0124:unit_scene_0124_01",
-        "scene_id": "scene_0124",
-        "parent_scene_id": "scene_0124",
-        "retrieval_unit_id": "unit_scene_0124_01",
-        "timecode": {
-          "in": "00:25:52.880",
-          "out": "00:26:04.640",
-          "duration_sec": 11.76
-        },
-        "dialogue": "翠平你和晚秋带点切面 翠平 你和晚秋带点切面 去咱们家吃吧 行 余先生 您留点神",
-        "characters": [
-          "谢若林",
-          "翠平",
-          "余则成"
-        ],
-        "physical_actions": [
-          "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
-        ],
-        "scene_env": "余则成家门厅与客厅",
-        "evidence_l1": {
-          "characters": [
-            "谢若林",
-            "翠平",
-            "余则成"
-          ],
-          "actions": [
-            "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
-          ],
-          "dialogue": "翠平你和晚秋带点切面 翠平 你和晚秋带点切面 去咱们家吃吧 行 余先生 您留点神",
-          "scene_env": "余则成家门厅与客厅",
-          "camera": {}
-        },
-        "affordance_l2": {
-          "tags": []
-        },
-        "relevant_affordances": [],
-        "provenance": {
-          "parent_scene_id": "scene_0124",
-          "analysis_granularity": "independent_keyframe",
-          "sample_frame_refs": [
-            38969
-          ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
-        },
-        "evidence_confidence": 0.95,
-        "total_score": 0.301,
-        "total_retrieval_score": 0.301,
-        "score_breakdown": {
-          "structured_score": 0.54,
-          "lexical_score": 0.123,
-          "semantic_score": 0.539,
-          "affordance_score": 0,
-          "quality_penalty": 0.1
-        },
-        "matched_requirements": [
-          "req_wu_03"
-        ],
-        "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
-      },
-      {
-        "candidate_id": "cand_req_wu_03_unit_scene_0045_01_17",
+        "candidate_id": "cand_req_wu_03_unit_scene_0045_01_15",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0045:unit_scene_0045_01",
@@ -3530,7 +3454,8 @@
             7711
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.296,
@@ -3548,7 +3473,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0110_01_18",
+        "candidate_id": "cand_req_wu_03_unit_scene_0110_01_16",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0110:unit_scene_0110_01",
@@ -3560,7 +3485,7 @@
           "out": "00:24:39.080",
           "duration_sec": 3.88
         },
-        "dialogue": "瞎说 没有 有 你叫翠平 你妹妹叫秋平",
+        "dialogue": "瞎说 没有 你叫翠平 你妹妹叫秋平",
         "characters": [
           "谢若林",
           "翠平",
@@ -3579,7 +3504,7 @@
           "actions": [
             "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
           ],
-          "dialogue": "瞎说 没有 有 你叫翠平 你妹妹叫秋平",
+          "dialogue": "瞎说 没有 你叫翠平 你妹妹叫秋平",
           "scene_env": "余则成家门厅与客厅",
           "camera": {}
         },
@@ -3594,7 +3519,8 @@
             36929
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.293,
@@ -3612,7 +3538,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0120_02_19",
+        "candidate_id": "cand_req_wu_03_unit_scene_0120_02_17",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0120:unit_scene_0120_02",
@@ -3624,7 +3550,7 @@
           "out": "00:25:33.880",
           "duration_sec": 16.32
         },
-        "dialogue": "老余来 你看谢先生请咱们吃 吃什么 涮羊肉 真的",
+        "dialogue": "老余来 你看谢先生请咱们吃 吃什么 涮羊肉",
         "characters": [
           "谢若林",
           "翠平",
@@ -3643,7 +3569,7 @@
           "actions": [
             "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
           ],
-          "dialogue": "老余来 你看谢先生请咱们吃 吃什么 涮羊肉 真的",
+          "dialogue": "老余来 你看谢先生请咱们吃 吃什么 涮羊肉",
           "scene_env": "余则成家门厅与客厅",
           "camera": {}
         },
@@ -3658,7 +3584,8 @@
             38143
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.293,
@@ -3676,7 +3603,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_03_unit_scene_0124_04_20",
+        "candidate_id": "cand_req_wu_03_unit_scene_0124_04_18",
         "beat_id": "beat_wu_03_crisis",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0124:unit_scene_0124_04",
@@ -3722,7 +3649,8 @@
             39589
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.293,
@@ -3738,6 +3666,132 @@
           "req_wu_03"
         ],
         "retrieval_reason": "画面中客观出现目标人物[余则成]，具备较高的相关性。"
+      },
+      {
+        "candidate_id": "cand_req_wu_03_unit_scene_0036_02_19",
+        "beat_id": "beat_wu_03_crisis",
+        "media_id": "qianfu_ep18_720p_25fps",
+        "evidence_id": "qianfu_ep18_720p_25fps:scene_0036:unit_scene_0036_02",
+        "scene_id": "scene_0036",
+        "parent_scene_id": "scene_0036",
+        "retrieval_unit_id": "unit_scene_0036_02",
+        "timecode": {
+          "in": "00:02:42.400",
+          "out": "00:02:53.080",
+          "duration_sec": 10.68
+        },
+        "dialogue": "您消消气 别生气了气坏了身子 我是这么想的 站长 陆桥山出现了这样的问题 只能算是不忠于保密局",
+        "characters": [
+          "余则成",
+          "陆桥山"
+        ],
+        "physical_actions": [
+          "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+        ],
+        "scene_env": "保密局天津站大门与办公区走廊",
+        "evidence_l1": {
+          "characters": [
+            "余则成",
+            "陆桥山"
+          ],
+          "actions": [
+            "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+          ],
+          "dialogue": "您消消气 别生气了气坏了身子 我是这么想的 站长 陆桥山出现了这样的问题 只能算是不忠于保密局",
+          "scene_env": "保密局天津站大门与办公区走廊",
+          "camera": {}
+        },
+        "affordance_l2": {
+          "tags": []
+        },
+        "relevant_affordances": [],
+        "provenance": {
+          "parent_scene_id": "scene_0036",
+          "analysis_granularity": "independent_keyframe",
+          "sample_frame_refs": [
+            4194
+          ],
+          "confidence": 0.95,
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
+        },
+        "evidence_confidence": 0.95,
+        "total_score": 0.283,
+        "total_retrieval_score": 0.283,
+        "score_breakdown": {
+          "structured_score": 0.74,
+          "lexical_score": 0.406,
+          "semantic_score": 0.302,
+          "affordance_score": 0,
+          "quality_penalty": 0.1
+        },
+        "matched_requirements": [
+          "req_wu_03"
+        ],
+        "retrieval_reason": "画面中客观出现目标人物[余则成]，处于[保密局天津站大门与办公区走廊]物理空间，台词直接命中关键剧情词项，具备较高的相关性。"
+      },
+      {
+        "candidate_id": "cand_req_wu_03_unit_scene_0039_01_20",
+        "beat_id": "beat_wu_03_crisis",
+        "media_id": "qianfu_ep18_720p_25fps",
+        "evidence_id": "qianfu_ep18_720p_25fps:scene_0039:unit_scene_0039_01",
+        "scene_id": "scene_0039",
+        "parent_scene_id": "scene_0039",
+        "retrieval_unit_id": "unit_scene_0039_01",
+        "timecode": {
+          "in": "00:04:22.240",
+          "out": "00:04:26.400",
+          "duration_sec": 4.16
+        },
+        "dialogue": "老师 从长计议为重 你的意思呢",
+        "characters": [
+          "余则成",
+          "陆桥山"
+        ],
+        "physical_actions": [
+          "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+        ],
+        "scene_env": "保密局天津站大门与办公区走廊",
+        "evidence_l1": {
+          "characters": [
+            "余则成",
+            "陆桥山"
+          ],
+          "actions": [
+            "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+          ],
+          "dialogue": "老师 从长计议为重 你的意思呢",
+          "scene_env": "保密局天津站大门与办公区走廊",
+          "camera": {}
+        },
+        "affordance_l2": {
+          "tags": []
+        },
+        "relevant_affordances": [],
+        "provenance": {
+          "parent_scene_id": "scene_0039",
+          "analysis_granularity": "independent_keyframe",
+          "sample_frame_refs": [
+            6608
+          ],
+          "confidence": 0.95,
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
+        },
+        "evidence_confidence": 0.95,
+        "total_score": 0.283,
+        "total_retrieval_score": 0.283,
+        "score_breakdown": {
+          "structured_score": 0.74,
+          "lexical_score": 0.206,
+          "semantic_score": 0.539,
+          "affordance_score": 0,
+          "quality_penalty": 0.1
+        },
+        "matched_requirements": [
+          "req_wu_03"
+        ],
+        "retrieval_reason": "画面中客观出现目标人物[余则成]，处于[保密局天津站大门与办公区走廊]物理空间，画面物理动作符合诉求动作特征，具备较高的相关性。"
       }
     ],
     "req_wu_04": [
@@ -3786,7 +3840,8 @@
             14122
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.541,
@@ -3848,7 +3903,8 @@
             7574
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.439,
@@ -3910,7 +3966,8 @@
             8255
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.43,
@@ -3972,7 +4029,8 @@
             7946
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.427,
@@ -4034,7 +4092,8 @@
             7711
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.422,
@@ -4096,7 +4155,8 @@
             7825
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.422,
@@ -4158,7 +4218,8 @@
             5391
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.398,
@@ -4188,7 +4249,7 @@
           "out": "00:32:36.560",
           "duration_sec": 8.28
         },
-        "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+        "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
         "characters": [
           "谢若林",
           "余则成"
@@ -4205,7 +4266,7 @@
           "actions": [
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
-          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
           "scene_env": "东来顺涮肉馆雅间餐桌",
           "camera": {}
         },
@@ -4220,7 +4281,8 @@
             48811
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.392,
@@ -4250,7 +4312,7 @@
           "out": "00:00:35.960",
           "duration_sec": 8.52
         },
-        "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -4267,7 +4329,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "同有小沈以細 根据公同省小玩以细 根据龙一同名小说改编",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -4281,10 +4343,11 @@
           "sample_frame_refs": [
             793
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.39,
         "total_retrieval_score": 0.39,
         "score_breakdown": {
@@ -4312,7 +4375,7 @@
           "out": "00:01:12.240",
           "duration_sec": 5.88
         },
-        "dialogue": "姜伟 张译水 摄",
+        "dialogue": "",
         "characters": [
           "余则成",
           "陆桥山"
@@ -4329,7 +4392,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "姜伟 张译水 摄",
+          "dialogue": "",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -4343,10 +4406,11 @@
           "sample_frame_refs": [
             1733
           ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "confidence": 0.92,
+          "has_verified_ocr_dialogue": false,
+          "text_type": "credits"
         },
-        "evidence_confidence": 0.95,
+        "evidence_confidence": 0.92,
         "total_score": 0.39,
         "total_retrieval_score": 0.39,
         "score_breakdown": {
@@ -4362,7 +4426,70 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_04_unit_scene_0034_05_11",
+        "candidate_id": "cand_req_wu_04_unit_scene_0125_03_11",
+        "beat_id": "beat_wu_04_conclusion",
+        "media_id": "qianfu_ep18_720p_25fps",
+        "evidence_id": "qianfu_ep18_720p_25fps:scene_0125:unit_scene_0125_03",
+        "scene_id": "scene_0125",
+        "parent_scene_id": "scene_0125",
+        "retrieval_unit_id": "unit_scene_0125_03",
+        "timecode": {
+          "in": "00:26:44.960",
+          "out": "00:26:51.920",
+          "duration_sec": 6.96
+        },
+        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
+        "characters": [
+          "谢若林",
+          "余则成"
+        ],
+        "physical_actions": [
+          "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+        ],
+        "scene_env": "东来顺涮肉馆雅间餐桌",
+        "evidence_l1": {
+          "characters": [
+            "谢若林",
+            "余则成"
+          ],
+          "actions": [
+            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+          ],
+          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛",
+          "scene_env": "东来顺涮肉馆雅间餐桌",
+          "camera": {}
+        },
+        "affordance_l2": {
+          "tags": []
+        },
+        "relevant_affordances": [],
+        "provenance": {
+          "parent_scene_id": "scene_0125",
+          "analysis_granularity": "independent_keyframe",
+          "sample_frame_refs": [
+            40211
+          ],
+          "confidence": 0.95,
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
+        },
+        "evidence_confidence": 0.95,
+        "total_score": 0.383,
+        "total_retrieval_score": 0.383,
+        "score_breakdown": {
+          "structured_score": 0.54,
+          "lexical_score": 0.201,
+          "semantic_score": 0.816,
+          "affordance_score": 0,
+          "quality_penalty": 0.1
+        },
+        "matched_requirements": [
+          "req_wu_04"
+        ],
+        "retrieval_reason": "画面中客观出现目标人物[余则成]，台词直接命中关键剧情词项，具备较高的相关性。"
+      },
+      {
+        "candidate_id": "cand_req_wu_04_unit_scene_0034_05_12",
         "beat_id": "beat_wu_04_conclusion",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0034:unit_scene_0034_05",
@@ -4374,7 +4501,7 @@
           "out": "00:02:17.840",
           "duration_sec": 37.84
         },
-        "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+        "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
         "characters": [
           "余则成",
           "陆桥山"
@@ -4391,7 +4518,7 @@
           "actions": [
             "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
           ],
-          "dialogue": "陆桥山这回可能够戗了 会杀他吗 难说 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
+          "dialogue": "陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯也鬼得很 你得防着他 是我 是我 陆太太 则成 我知道出事了 老陆打电话回来说 他回不来了",
           "scene_env": "保密局天津站大门与办公区走廊",
           "camera": {}
         },
@@ -4406,7 +4533,8 @@
             2973
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.378,
@@ -4424,7 +4552,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_04_unit_scene_0036_03_12",
+        "candidate_id": "cand_req_wu_04_unit_scene_0036_03_13",
         "beat_id": "beat_wu_04_conclusion",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0036:unit_scene_0036_03",
@@ -4468,7 +4596,8 @@
             4571
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.378,
@@ -4486,7 +4615,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_04_unit_scene_0037_02_13",
+        "candidate_id": "cand_req_wu_04_unit_scene_0037_02_14",
         "beat_id": "beat_wu_04_conclusion",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0037:unit_scene_0037_02",
@@ -4530,7 +4659,8 @@
             5714
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.378,
@@ -4548,7 +4678,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_04_unit_scene_0128_01_14",
+        "candidate_id": "cand_req_wu_04_unit_scene_0128_01_15",
         "beat_id": "beat_wu_04_conclusion",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0128:unit_scene_0128_01",
@@ -4560,7 +4690,7 @@
           "out": "00:29:12.440",
           "duration_sec": 16.88
         },
-        "dialogue": "还有吗 有 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平同志殉职始末 这太长了我就不念了吧 这谷有牛啊是给陈秋平牵马的",
+        "dialogue": "还有吗 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平同志殉职始末 这太长了我就不念了吧 这谷有牛啊是给陈秋平牵马的",
         "characters": [
           "谢若林",
           "余则成"
@@ -4577,7 +4707,7 @@
           "actions": [
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
-          "dialogue": "还有吗 有 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平同志殉职始末 这太长了我就不念了吧 这谷有牛啊是给陈秋平牵马的",
+          "dialogue": "还有吗 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平同志殉职始末 这太长了我就不念了吧 这谷有牛啊是给陈秋平牵马的",
           "scene_env": "东来顺涮肉馆雅间餐桌",
           "camera": {}
         },
@@ -4592,7 +4722,8 @@
             43600
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.376,
@@ -4610,7 +4741,70 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_04_unit_scene_0126_02_15",
+        "candidate_id": "cand_req_wu_04_unit_scene_0125_15_16",
+        "beat_id": "beat_wu_04_conclusion",
+        "media_id": "qianfu_ep18_720p_25fps",
+        "evidence_id": "qianfu_ep18_720p_25fps:scene_0125:unit_scene_0125_15",
+        "scene_id": "scene_0125",
+        "parent_scene_id": "scene_0125",
+        "retrieval_unit_id": "unit_scene_0125_15",
+        "timecode": {
+          "in": "00:28:15.040",
+          "out": "00:28:19.440",
+          "duration_sec": 4.4
+        },
+        "dialogue": "到达分局社会部报到",
+        "characters": [
+          "谢若林",
+          "余则成"
+        ],
+        "physical_actions": [
+          "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+        ],
+        "scene_env": "东来顺涮肉馆雅间餐桌",
+        "evidence_l1": {
+          "characters": [
+            "谢若林",
+            "余则成"
+          ],
+          "actions": [
+            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+          ],
+          "dialogue": "到达分局社会部报到",
+          "scene_env": "东来顺涮肉馆雅间餐桌",
+          "camera": {}
+        },
+        "affordance_l2": {
+          "tags": []
+        },
+        "relevant_affordances": [],
+        "provenance": {
+          "parent_scene_id": "scene_0125",
+          "analysis_granularity": "independent_keyframe",
+          "sample_frame_refs": [
+            42431
+          ],
+          "confidence": 0.95,
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
+        },
+        "evidence_confidence": 0.95,
+        "total_score": 0.365,
+        "total_retrieval_score": 0.365,
+        "score_breakdown": {
+          "structured_score": 0.54,
+          "lexical_score": 0.091,
+          "semantic_score": 0.866,
+          "affordance_score": 0,
+          "quality_penalty": 0.1
+        },
+        "matched_requirements": [
+          "req_wu_04"
+        ],
+        "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
+      },
+      {
+        "candidate_id": "cand_req_wu_04_unit_scene_0126_02_17",
         "beat_id": "beat_wu_04_conclusion",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0126:unit_scene_0126_02",
@@ -4654,7 +4848,8 @@
             43107
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.365,
@@ -4672,7 +4867,7 @@
         "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
       },
       {
-        "candidate_id": "cand_req_wu_04_unit_scene_0130_04_16",
+        "candidate_id": "cand_req_wu_04_unit_scene_0130_04_18",
         "beat_id": "beat_wu_04_conclusion",
         "media_id": "qianfu_ep18_720p_25fps",
         "evidence_id": "qianfu_ep18_720p_25fps:scene_0130:unit_scene_0130_04",
@@ -4716,7 +4911,8 @@
             44283
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.365,
@@ -4725,130 +4921,6 @@
           "structured_score": 0.54,
           "lexical_score": 0.091,
           "semantic_score": 0.866,
-          "affordance_score": 0,
-          "quality_penalty": 0.1
-        },
-        "matched_requirements": [
-          "req_wu_04"
-        ],
-        "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
-      },
-      {
-        "candidate_id": "cand_req_wu_04_unit_scene_0144_01_17",
-        "beat_id": "beat_wu_04_conclusion",
-        "media_id": "qianfu_ep18_720p_25fps",
-        "evidence_id": "qianfu_ep18_720p_25fps:scene_0144:unit_scene_0144_01",
-        "scene_id": "scene_0144",
-        "parent_scene_id": "scene_0144",
-        "retrieval_unit_id": "unit_scene_0144_01",
-        "timecode": {
-          "in": "00:33:11.760",
-          "out": "00:33:17.720",
-          "duration_sec": 5.96
-        },
-        "dialogue": "去年年底粟裕的部队偷袭宿迁 偷袭呀， 偷袭呀 头四天的情报就开始喊上价了",
-        "characters": [
-          "谢若林",
-          "余则成"
-        ],
-        "physical_actions": [
-          "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-        ],
-        "scene_env": "东来顺涮肉馆雅间餐桌",
-        "evidence_l1": {
-          "characters": [
-            "谢若林",
-            "余则成"
-          ],
-          "actions": [
-            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-          ],
-          "dialogue": "去年年底粟裕的部队偷袭宿迁 偷袭呀， 偷袭呀 头四天的情报就开始喊上价了",
-          "scene_env": "东来顺涮肉馆雅间餐桌",
-          "camera": {}
-        },
-        "affordance_l2": {
-          "tags": []
-        },
-        "relevant_affordances": [],
-        "provenance": {
-          "parent_scene_id": "scene_0144",
-          "analysis_granularity": "independent_keyframe",
-          "sample_frame_refs": [
-            49869
-          ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
-        },
-        "evidence_confidence": 0.95,
-        "total_score": 0.365,
-        "total_retrieval_score": 0.365,
-        "score_breakdown": {
-          "structured_score": 0.54,
-          "lexical_score": 0.133,
-          "semantic_score": 0.816,
-          "affordance_score": 0,
-          "quality_penalty": 0.1
-        },
-        "matched_requirements": [
-          "req_wu_04"
-        ],
-        "retrieval_reason": "画面中客观出现目标人物[余则成]，画面物理动作符合诉求动作特征，具备较高的相关性。"
-      },
-      {
-        "candidate_id": "cand_req_wu_04_unit_scene_0125_03_18",
-        "beat_id": "beat_wu_04_conclusion",
-        "media_id": "qianfu_ep18_720p_25fps",
-        "evidence_id": "qianfu_ep18_720p_25fps:scene_0125:unit_scene_0125_03",
-        "scene_id": "scene_0125",
-        "parent_scene_id": "scene_0125",
-        "retrieval_unit_id": "unit_scene_0125_03",
-        "timecode": {
-          "in": "00:26:44.960",
-          "out": "00:26:51.920",
-          "duration_sec": 6.96
-        },
-        "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
-        "characters": [
-          "谢若林",
-          "余则成"
-        ],
-        "physical_actions": [
-          "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-        ],
-        "scene_env": "东来顺涮肉馆雅间餐桌",
-        "evidence_l1": {
-          "characters": [
-            "谢若林",
-            "余则成"
-          ],
-          "actions": [
-            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-          ],
-          "dialogue": "这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家一起赚嘛",
-          "scene_env": "东来顺涮肉馆雅间餐桌",
-          "camera": {}
-        },
-        "affordance_l2": {
-          "tags": []
-        },
-        "relevant_affordances": [],
-        "provenance": {
-          "parent_scene_id": "scene_0125",
-          "analysis_granularity": "independent_keyframe",
-          "sample_frame_refs": [
-            40211
-          ],
-          "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
-        },
-        "evidence_confidence": 0.95,
-        "total_score": 0.354,
-        "total_retrieval_score": 0.354,
-        "score_breakdown": {
-          "structured_score": 0.54,
-          "lexical_score": 0.091,
-          "semantic_score": 0.816,
           "affordance_score": 0,
           "quality_penalty": 0.1
         },
@@ -4870,7 +4942,7 @@
           "out": "00:24:39.080",
           "duration_sec": 3.88
         },
-        "dialogue": "瞎说 没有 有 你叫翠平 你妹妹叫秋平",
+        "dialogue": "瞎说 没有 你叫翠平 你妹妹叫秋平",
         "characters": [
           "谢若林",
           "翠平",
@@ -4889,7 +4961,7 @@
           "actions": [
             "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
           ],
-          "dialogue": "瞎说 没有 有 你叫翠平 你妹妹叫秋平",
+          "dialogue": "瞎说 没有 你叫翠平 你妹妹叫秋平",
           "scene_env": "余则成家门厅与客厅",
           "camera": {}
         },
@@ -4904,7 +4976,8 @@
             36929
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.344,
@@ -4968,7 +5041,8 @@
             38434
           ],
           "confidence": 0.95,
-          "has_verified_ocr_dialogue": true
+          "has_verified_ocr_dialogue": true,
+          "text_type": "dialogue"
         },
         "evidence_confidence": 0.95,
         "total_score": 0.344,
@@ -4987,5 +5061,5 @@
       }
     ]
   },
-  "timestamp": "2026-10-05T04:00:44.407Z"
+  "timestamp": "2026-10-05T04:37:59.614Z"
 }

@@ -249,15 +249,15 @@ describe("POC-AGENT A6.2: 动态 Perspective Re-reading + Retrieval Top3 Gate �
     assert.strictEqual(taskResA.total_requirements, 4);
     assert.strictEqual(taskResB.total_requirements, 4);
 
-    assert.strictEqual(taskResA.system_candidate_coverage, 1.0);
-    assert.strictEqual(taskResB.system_candidate_coverage, 1.0);
+    assert.strictEqual(taskResA.system_candidate_coverage, 0.75, "选题A中req_wu_03正确识别为INSUFFICIENT_EVIDENCE，系统自评为3/4");
+    assert.strictEqual(taskResB.system_candidate_coverage, 1.0, "选题B全量4个需求证据充足，系统自评为4/4");
     assert.strictEqual(taskResA.human_gate_status, "awaiting_human_review");
     assert.strictEqual(taskResB.human_gate_status, "awaiting_human_review");
 
     const gateReport = service.evaluateOverallGate([taskResA, taskResB]);
     assert.strictEqual(gateReport.total_requirements, 8);
-    assert.strictEqual(gateReport.system_passed_requirements, 8);
-    assert.strictEqual(gateReport.system_candidate_coverage, 1.0);
+    assert.strictEqual(gateReport.system_passed_requirements, 7, "7个需求存在确凿证据，1个需求正确返回证据不足");
+    assert.strictEqual(gateReport.system_candidate_coverage, 0.875);
     assert.strictEqual(gateReport.human_usable_coverage, 0.0);
     assert.strictEqual(gateReport.gate_passed, false);
     assert.strictEqual(gateReport.gate_status, "awaiting_human_review");
@@ -490,6 +490,36 @@ describe("POC-AGENT A6.2: 动态 Perspective Re-reading + Retrieval Top3 Gate �
     for (const [reqId, reqRes] of Object.entries(taskResB.requirements_reread)) {
       assert.strictEqual(reqRes.top3.length, 3);
       assert.ok(reqRes.top3[0].retrieval_unit_id);
+    }
+  });
+
+  it("20. [A6.3 专项] req_wu_03 真实审计：正确判定为 INSUFFICIENT_EVIDENCE，杜绝假命中", () => {
+    const taskResA = service.processTopicTask(topicA, resA);
+    const req3Res = taskResA.requirements_reread.req_wu_03;
+
+    assert.ok(req3Res, "req_wu_03 重排结果必须存在");
+    assert.strictEqual(req3Res.status, "INSUFFICIENT_EVIDENCE", "第18集无机要档案室及李涯排查卷宗画面，必须返回 INSUFFICIENT_EVIDENCE");
+    assert.strictEqual(req3Res.usable_candidate_count_in_top3, 0, "Top3 中可用数量必须为 0");
+    assert.strictEqual(req3Res.gate_pass, false, "该需求系统 gate_pass 必须为 false");
+    assert.ok(req3Res.suggested_actions.includes("soften_claim"), "必须包含建议系统动作");
+    assert.ok(req3Res.reason.includes("缺乏直接物理事实支撑"), "必须明确记录原因");
+  });
+
+  it("21. [A6.3 专项] 片尾字幕与歌词污染彻底清除：req_probe_04 Top3 为真实火车站站台镜头", () => {
+    const taskResB = service.processTopicTask(topicB, resB);
+    const req4Res = taskResB.requirements_reread.req_probe_04;
+
+    assert.ok(req4Res, "req_probe_04 重排结果必须存在");
+    assert.strictEqual(req4Res.status, "SUFFICIENT");
+    assert.strictEqual(req4Res.top3.length, 3);
+
+    // 断言 Top3 绝非片尾演职员表字幕 (unit_scene_0213_01)
+    for (const cand of req4Res.top3) {
+      assert.notStrictEqual(cand.retrieval_unit_id, "unit_scene_0213_01", "Top3 严禁混入片尾演职员表 unit_scene_0213_01");
+      assert.strictEqual(cand.dialogue.includes("演员表"), false, "Top3 台词绝不可混入演员表");
+      assert.strictEqual(cand.dialogue.includes("孙红雷"), false, "Top3 台词绝不可混入演员名");
+      assert.strictEqual(cand.dialogue.includes("祖峰"), false, "Top3 台词绝不可混入演员名");
+      assert.ok(cand.scene_env.includes("火车站") || cand.scene_env.includes("站台"), "Top3 必须属于火车站台物理空间");
     }
   });
 });

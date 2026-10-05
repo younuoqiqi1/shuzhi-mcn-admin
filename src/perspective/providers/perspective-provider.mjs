@@ -183,7 +183,7 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
     }
 
     // 2. 动作/环境匹配
-    let actScore = 0.4;
+    let actScore = 0.25;
     const desiredAct = requirement.desired_action || "";
     const desiredEnv = requirement.desired_scene_env || "";
     if (desiredAct && actions) {
@@ -192,24 +192,40 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
         "走廊", "拍桌", "递交", "登车", "挥手", "护送", "开价", "涮肉", "摊牌"
       ];
       const actHits = keyVerbs.filter((v) => desiredAct.includes(v) && actions.includes(v)).length;
-      actScore = Math.min(1.0, 0.4 + actHits * 0.3);
+      actScore = Math.min(1.0, 0.25 + actHits * 0.3);
     }
-    if (desiredEnv && env && env.includes(desiredEnv.slice(0, 3))) {
-      actScore = Math.min(1.0, actScore + 0.2);
+
+    // 环境匹配：必须匹配具体物理空间特征词，严禁大范围机构名泛化（杜绝将“站长办公室”泛化匹配为“机要室”）
+    if (desiredEnv && env) {
+      const envSpecifics = ["机要室", "档案室", "办公室", "客厅", "餐厅", "密室", "站台", "列车", "走廊", "大门", "内室"];
+      const targetSpecifics = envSpecifics.filter((s) => desiredEnv.includes(s));
+      const actualSpecifics = envSpecifics.filter((s) => env.includes(s));
+
+      const hasSpecificMatch = targetSpecifics.some((ts) => actualSpecifics.includes(ts));
+      if (hasSpecificMatch) {
+        actScore = Math.min(1.0, actScore + 0.35);
+      } else if (targetSpecifics.length > 0 && actualSpecifics.length > 0) {
+        // 目标空间明确要求（如机要室/档案室），实际空间为其他（如办公室/餐厅），显著扣分
+        actScore = Math.max(0.1, actScore - 0.25);
+      }
     }
 
     // 3. 对白直接支撑
-    let dialScore = 0.4;
+    let dialScore = 0.2;
     const grounding = requirement.evidence_grounding_criteria || "";
     if (grounding && dialogue) {
       const gKeys = [
         "副站长", "站长", "贪官", "杀头", "两根金条", "金条", "情报", 
-        "共党", "陈秋平", "太太", "买卖", "汇报", "车票", "晚秋", "同甘共苦", "生意"
+        "共党", "陈秋平", "太太", "买卖", "汇报", "车票", "晚秋", "同甘共苦", "生意", "通缉", "卷宗", "档案"
       ];
       const dialHits = gKeys.filter((k) => grounding.includes(k) && dialogue.includes(k)).length;
-      dialScore = Math.min(1.0, 0.3 + dialHits * 0.25);
-    } else if (dialogue && dialogue.length > 15) {
-      dialScore = 0.65;
+      if (dialHits > 0) {
+        dialScore = Math.min(1.0, 0.4 + dialHits * 0.25);
+      } else {
+        dialScore = 0.2; // 明确要求 grounding 但对白无一命中的，得分保持低位
+      }
+    } else if (!grounding && dialogue && dialogue.length > 15) {
+      dialScore = 0.55;
     }
 
     const totalSupport = charScore * 0.40 + actScore * 0.35 + dialScore * 0.25;

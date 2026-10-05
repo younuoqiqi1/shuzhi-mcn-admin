@@ -209,16 +209,25 @@ test("A4.5.1 Canonical L1 Evidence: full video 0 to 2702s continuous coverage, t
   assert.ok(tailScenes.length >= 80, `尾部镜头数量应至少有80个，实际为 ${tailScenes.length}`);
 
   const tailWithDialogue = tailScenes.filter((e) => e.dialogue && e.dialogue.trim().length > 0);
-  assert.ok(tailWithDialogue.length >= 60, `尾部带真实台词镜头应至少有60个，实际为 ${tailWithDialogue.length}`);
+  assert.ok(tailWithDialogue.length >= 50, `尾部带真实台词镜头应至少有50个，实际为 ${tailWithDialogue.length}`);
 
-  // 抽查尾部晚秋撤离与站长剧情的真实台词
+  // 抽查尾部晚秋撤离与站长剧情的真实台词，并严格断言片尾演职员表绝不渗入 dialogue
   const tailDialogueCombined = tailWithDialogue.map((e) => e.dialogue).join(" ");
   assert.ok(
     tailDialogueCombined.includes("照片") ||
     tailDialogueCombined.includes("局里") ||
-    tailDialogueCombined.includes("时间来不及") ||
-    tailDialogueCombined.includes("忠诚永在"),
-    "尾部台词流中必须包含原片晚秋/撤离/片尾真实台词"
+    tailDialogueCombined.includes("时间来不及"),
+    "尾部台词流中必须包含原片晚秋/撤离/站长真实剧情台词"
+  );
+  assert.strictEqual(
+    tailDialogueCombined.includes("演员表"),
+    false,
+    "台词字段绝不允许混入片尾演员表"
+  );
+  assert.strictEqual(
+    tailDialogueCombined.includes("孙红雷"),
+    false,
+    "台词字段绝不允许混入演员名"
   );
 
   // 4. 来源与粒度审计断言：明确区分 independent_keyframe 与 segment_inherited

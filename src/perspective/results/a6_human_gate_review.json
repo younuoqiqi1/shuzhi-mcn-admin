@@ -1,6 +1,6 @@
 {
-  "package_version": "1.2.0",
-  "generated_at": "2026-10-05T04:04:48.660Z",
+  "package_version": "1.3.0",
+  "generated_at": "2026-10-05T04:38:06.297Z",
   "gate_status": "awaiting_human_review",
   "gate_passed": false,
   "all_reviewed": false,
@@ -8,7 +8,7 @@
   "reviewed_requirements": 0,
   "human_passed_requirements": 0,
   "human_usable_coverage": 0,
-  "system_candidate_coverage": 1,
+  "system_candidate_coverage": 0.875,
   "requirements": [
     {
       "topic": {
@@ -45,6 +45,9 @@
         ],
         "evidence_grounding_criteria": "必须包含吴敬中与余则成同框或正反打，且环境为站长室办公桌前"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
           "candidate_id": "cand_req_wu_01_unit_scene_0059_01_1",
@@ -70,8 +73,8 @@
           "a6_rank": 1,
           "rank_delta": 0,
           "retrieval_score": 0.589,
-          "perspective_score": 0.744,
-          "final_ranking_score": 0.682,
+          "perspective_score": 0.753,
+          "final_ranking_score": 0.687,
           "interpretation": "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就...]；【L3 叙事推论边界】：对于“表面平和而内部张力紧绷”与“寻找吴站长与余则成在站长办公室单独对坐、余则成神情恭顺而站长神色审视的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -84,7 +87,7 @@
             "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
           },
           "risk_flags": [],
-          "system_recommendation": "supporting",
+          "system_recommendation": "strong_support",
           "system_supports_claim": "true",
           "human_verdict": "pending",
           "human_reason": "",
@@ -115,8 +118,8 @@
           "a6_rank": 2,
           "rank_delta": 3,
           "retrieval_score": 0.499,
-          "perspective_score": 0.768,
-          "final_ranking_score": 0.66,
+          "perspective_score": 0.777,
+          "final_ranking_score": 0.666,
           "interpretation": "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[副站长就是你 谢谢老师栽培]；【L3 叙事推论边界】：对于“表面平和而内部张力紧绷”与“寻找吴站长与余则成在站长办公室单独对坐、余则成神情恭顺而站长神色审视的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -160,8 +163,8 @@
           "a6_rank": 3,
           "rank_delta": 3,
           "retrieval_score": 0.499,
-          "perspective_score": 0.768,
-          "final_ranking_score": 0.66,
+          "perspective_score": 0.777,
+          "final_ranking_score": 0.666,
           "interpretation": "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[那他要是走了 你会当站长吗]；【L3 叙事推论边界】：对于“表面平和而内部张力紧绷”与“寻找吴站长与余则成在站长办公室单独对坐、余则成神情恭顺而站长神色审视的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -220,6 +223,9 @@
         ],
         "evidence_grounding_criteria": "对白中包含站长、贪官、杀头、副站长等官场与试探词项"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
           "candidate_id": "cand_req_wu_02_unit_scene_0044_01_6",
@@ -245,8 +251,8 @@
           "a6_rank": 1,
           "rank_delta": 5,
           "retrieval_score": 0.527,
-          "perspective_score": 0.794,
-          "final_ranking_score": 0.687,
+          "perspective_score": 0.803,
+          "final_ranking_score": 0.693,
           "interpretation": "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫]，台词确证包含[你来当这个副站长 不合适吧 还是跟李队长商量商量]；【L3 叙事推论边界】：对于“威严压迫与试探性敲打”与“寻找站长提及官场贪腐、委任状或严厉盘查的对白段落，两人有言语敲打”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -290,8 +296,8 @@
           "a6_rank": 2,
           "rank_delta": 2,
           "retrieval_score": 0.544,
-          "perspective_score": 0.76,
-          "final_ranking_score": 0.674,
+          "perspective_score": 0.769,
+          "final_ranking_score": 0.679,
           "interpretation": "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜]，台词确证包含[余副站长 恭喜呀]；【L3 叙事推论边界】：对于“威严压迫与试探性敲打”与“寻找站长提及官场贪腐、委任状或严厉盘查的对白段落，两人有言语敲打”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -335,8 +341,8 @@
           "a6_rank": 3,
           "rank_delta": 2,
           "retrieval_score": 0.544,
-          "perspective_score": 0.76,
-          "final_ranking_score": 0.674,
+          "perspective_score": 0.769,
+          "final_ranking_score": 0.679,
           "interpretation": "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状]，台词确证包含[余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦]；【L3 叙事推论边界】：对于“威严压迫与试探性敲打”与“寻找站长提及官场贪腐、委任状或严厉盘查的对白段落，两人有言语敲打”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -395,9 +401,17 @@
         ],
         "evidence_grounding_criteria": "出现绝密卷宗、胶卷、照片或保密局走廊快速调阅动作"
       },
+      "status": "INSUFFICIENT_EVIDENCE",
+      "suggested_actions": [
+        "soften_claim",
+        "modify_viewpoint",
+        "modify_beat",
+        "retrieve_again"
+      ],
+      "sufficiency_reason": "A5 召回的 20 个候选镜头均缺乏直接物理事实支撑该节拍的核心观点，为防止模型幻觉，建议软化断言或调整素材诉求。",
       "top3": [
         {
-          "candidate_id": "cand_req_wu_03_unit_scene_0059_01_9",
+          "candidate_id": "cand_req_wu_03_unit_scene_0059_01_8",
           "scene_id": "scene_0059",
           "parent_scene_id": "scene_0059",
           "retrieval_unit_id": "unit_scene_0059_01",
@@ -416,12 +430,12 @@
             "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
           ],
           "scene_env": "保密局天津站站长办公室办公桌前",
-          "a5_rank": 9,
+          "a5_rank": 8,
           "a6_rank": 1,
-          "rank_delta": 8,
+          "rank_delta": 7,
           "retrieval_score": 0.347,
-          "perspective_score": 0.579,
-          "final_ranking_score": 0.486,
+          "perspective_score": 0.509,
+          "final_ranking_score": 0.444,
           "interpretation": "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就...]；【L3 叙事推论边界】：对于“危急紧迫与暗战窒息感”与“寻找机要档案室内李涯或余则成排查秘密卷宗、照片或通缉令的情节画面”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -433,16 +447,18 @@
             "invalid_characters": [],
             "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
           },
-          "risk_flags": [],
-          "system_recommendation": "supporting",
-          "system_supports_claim": "partial",
+          "risk_flags": [
+            "weak_grounding"
+          ],
+          "system_recommendation": "reject",
+          "system_supports_claim": "false",
           "human_verdict": "pending",
           "human_reason": "",
           "reviewer": null,
           "reviewed_at": null
         },
         {
-          "candidate_id": "cand_req_wu_03_unit_scene_0045_01_17",
+          "candidate_id": "cand_req_wu_03_unit_scene_0045_01_15",
           "scene_id": "scene_0045",
           "parent_scene_id": "scene_0045",
           "retrieval_unit_id": "unit_scene_0045_01",
@@ -461,12 +477,12 @@
             "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
           ],
           "scene_env": "保密局天津站站长办公室办公桌前",
-          "a5_rank": 17,
+          "a5_rank": 15,
           "a6_rank": 2,
-          "rank_delta": 15,
+          "rank_delta": 13,
           "retrieval_score": 0.296,
-          "perspective_score": 0.609,
-          "final_ranking_score": 0.484,
+          "perspective_score": 0.539,
+          "final_ranking_score": 0.442,
           "interpretation": "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听]，台词确证包含[还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你]；【L3 叙事推论边界】：对于“危急紧迫与暗战窒息感”与“寻找机要档案室内李涯或余则成排查秘密卷宗、照片或通缉令的情节画面”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -478,16 +494,18 @@
             "invalid_characters": [],
             "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
           },
-          "risk_flags": [],
-          "system_recommendation": "supporting",
-          "system_supports_claim": "partial",
+          "risk_flags": [
+            "weak_grounding"
+          ],
+          "system_recommendation": "reject",
+          "system_supports_claim": "false",
           "human_verdict": "pending",
           "human_reason": "",
           "reviewer": null,
           "reviewed_at": null
         },
         {
-          "candidate_id": "cand_req_wu_03_unit_scene_0049_08_15",
+          "candidate_id": "cand_req_wu_03_unit_scene_0049_08_14",
           "scene_id": "scene_0049",
           "parent_scene_id": "scene_0049",
           "retrieval_unit_id": "unit_scene_0049_08",
@@ -497,7 +515,7 @@
             "out": "00:07:01.240",
             "duration_sec": 19.8
           },
-          "dialogue": "来走 这样 你轻一点动作 这样对 放这儿对 把腰挺直 来 一",
+          "dialogue": "你轻 点动作 这样对 放这儿对 把腰挺直",
           "characters": [
             "吴敬中",
             "余则成"
@@ -506,14 +524,14 @@
             "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
           ],
           "scene_env": "保密局天津站站长办公室办公桌前",
-          "a5_rank": 15,
+          "a5_rank": 14,
           "a6_rank": 3,
-          "rank_delta": 12,
+          "rank_delta": 11,
           "retrieval_score": 0.302,
-          "perspective_score": 0.573,
-          "final_ranking_score": 0.465,
+          "perspective_score": 0.503,
+          "final_ranking_score": 0.423,
           "interpretation": "老周视角：在体制内，一把手点烟不说话、或者突然跟你聊贪官杀头的时候，往往是最危险的时刻。站长借题发挥敲山震虎，用世俗利益的假面来试探下属的真实底牌，老辣至极。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫]，台词确证包含[来走 这样 你轻一点动作 这样对 放这儿对 把腰挺直 来 一]；【L3 叙事推论边界】：对于“危急紧迫与暗战窒息感”与“寻找机要档案室内李涯或余则成排查秘密卷宗、照片或通缉令的情节画面”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫]，台词确证包含[你轻 点动作 这样对 放这儿对 把腰挺直]；【L3 叙事推论边界】：对于“危急紧迫与暗战窒息感”与“寻找机要档案室内李涯或余则成排查秘密卷宗、照片或通缉令的情节画面”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
             10284
           ],
@@ -523,9 +541,11 @@
             "invalid_characters": [],
             "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
           },
-          "risk_flags": [],
-          "system_recommendation": "supporting",
-          "system_supports_claim": "partial",
+          "risk_flags": [
+            "weak_grounding"
+          ],
+          "system_recommendation": "reject",
+          "system_supports_claim": "false",
           "human_verdict": "pending",
           "human_reason": "",
           "reviewer": null,
@@ -570,6 +590,9 @@
         ],
         "evidence_grounding_criteria": "镜头有明显静默或特写运镜，光线偏暗"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
           "candidate_id": "cand_req_wu_04_unit_scene_0044_01_2",
@@ -595,8 +618,8 @@
           "a6_rank": 1,
           "rank_delta": 1,
           "retrieval_score": 0.439,
-          "perspective_score": 0.75,
-          "final_ranking_score": 0.626,
+          "perspective_score": 0.741,
+          "final_ranking_score": 0.62,
           "interpretation": "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫]，台词确证包含[你来当这个副站长 不合适吧 还是跟李队长商量商量]；【L3 叙事推论边界】：对于“深沉克制与心照不宣”与“寻找站长特写镜头或两人意味深长的沉默收尾，烘托老谋深算氛围”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -609,7 +632,7 @@
             "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
           },
           "risk_flags": [],
-          "system_recommendation": "strong_support",
+          "system_recommendation": "supporting",
           "system_supports_claim": "true",
           "human_verdict": "pending",
           "human_reason": "",
@@ -640,8 +663,8 @@
           "a6_rank": 2,
           "rank_delta": -1,
           "retrieval_score": 0.541,
-          "perspective_score": 0.678,
-          "final_ranking_score": 0.623,
+          "perspective_score": 0.67,
+          "final_ranking_score": 0.618,
           "interpretation": "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就...]；【L3 叙事推论边界】：对于“深沉克制与心照不宣”与“寻找站长特写镜头或两人意味深长的沉默收尾，烘托老谋深算氛围”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -685,8 +708,8 @@
           "a6_rank": 3,
           "rank_delta": 0,
           "retrieval_score": 0.43,
-          "perspective_score": 0.748,
-          "final_ranking_score": 0.621,
+          "perspective_score": 0.739,
+          "final_ranking_score": 0.615,
           "interpretation": "老周视角：在体制内，一把手点烟不说话、或者突然跟你聊贪官杀头的时候，往往是最危险的时刻。站长借题发挥敲山震虎，用世俗利益的假面来试探下属的真实底牌，老辣至极。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫]，台词确证包含[她怕有人查她家 好像他们家有很多值钱的东西]；【L3 叙事推论边界】：对于“深沉克制与心照不宣”与“寻找站长特写镜头或两人意味深长的沉默收尾，烘托老谋深算氛围”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -745,6 +768,9 @@
         ],
         "evidence_grounding_criteria": "出现谢若林与余则成在客厅餐桌对坐，涉及涮羊肉、勾兑与情报生意"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
           "candidate_id": "cand_req_probe_01_unit_scene_0138_01_1",
@@ -757,7 +783,7 @@
             "out": "00:32:36.560",
             "duration_sec": 8.28
           },
-          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
           "characters": [
             "谢若林",
             "余则成"
@@ -770,8 +796,8 @@
           "a6_rank": 1,
           "rank_delta": 0,
           "retrieval_score": 0.454,
-          "perspective_score": 0.72,
-          "final_ranking_score": 0.614,
+          "perspective_score": 0.711,
+          "final_ranking_score": 0.608,
           "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易...]；【L3 叙事推论边界】：对于“表面客套勾兑暗藏杀机”与“寻找谢若林与余则成在客厅餐桌对坐、谢若林抽烟请客勾兑生意的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -792,7 +818,52 @@
           "reviewed_at": null
         },
         {
-          "candidate_id": "cand_req_probe_01_unit_scene_0144_01_12",
+          "candidate_id": "cand_req_probe_01_unit_scene_0139_01_12",
+          "scene_id": "scene_0139",
+          "parent_scene_id": "scene_0139",
+          "retrieval_unit_id": "unit_scene_0139_01",
+          "evidence_id": "qianfu_ep18_720p_25fps:scene_0139:unit_scene_0139_01",
+          "timecode": {
+            "in": "00:32:36.560",
+            "out": "00:32:49.760",
+            "duration_sec": 13.2
+          },
+          "dialogue": "这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
+          "characters": [
+            "谢若林",
+            "余则成"
+          ],
+          "physical_actions": [
+            "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+          ],
+          "scene_env": "东来顺涮肉馆雅间餐桌",
+          "a5_rank": 12,
+          "a6_rank": 2,
+          "rank_delta": 10,
+          "retrieval_score": 0.419,
+          "perspective_score": 0.725,
+          "final_ranking_score": 0.603,
+          "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了]，台词确证包含[这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很...]；【L3 叙事推论边界】：对于“表面客套勾兑暗藏杀机”与“寻找谢若林与余则成在客厅餐桌对坐、谢若林抽烟请客勾兑生意的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "sample_frame_refs": [
+            49079
+          ],
+          "analysis_granularity": "independent_keyframe",
+          "consistency_check": {
+            "is_consistent": true,
+            "invalid_characters": [],
+            "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
+          },
+          "risk_flags": [],
+          "system_recommendation": "supporting",
+          "system_supports_claim": "true",
+          "human_verdict": "pending",
+          "human_reason": "",
+          "reviewer": null,
+          "reviewed_at": null
+        },
+        {
+          "candidate_id": "cand_req_probe_01_unit_scene_0144_01_10",
           "scene_id": "scene_0144",
           "parent_scene_id": "scene_0144",
           "retrieval_unit_id": "unit_scene_0144_01",
@@ -811,61 +882,16 @@
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
           "scene_env": "东来顺涮肉馆雅间餐桌",
-          "a5_rank": 12,
-          "a6_rank": 2,
-          "rank_delta": 10,
+          "a5_rank": 10,
+          "a6_rank": 3,
+          "rank_delta": 7,
           "retrieval_score": 0.427,
-          "perspective_score": 0.716,
-          "final_ranking_score": 0.6,
+          "perspective_score": 0.707,
+          "final_ranking_score": 0.595,
           "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[去年年底粟裕的部队偷袭宿迁 偷袭呀， 偷袭呀 头四天的情报就...]；【L3 叙事推论边界】：对于“表面客套勾兑暗藏杀机”与“寻找谢若林与余则成在客厅餐桌对坐、谢若林抽烟请客勾兑生意的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
             49869
-          ],
-          "analysis_granularity": "independent_keyframe",
-          "consistency_check": {
-            "is_consistent": true,
-            "invalid_characters": [],
-            "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
-          },
-          "risk_flags": [],
-          "system_recommendation": "supporting",
-          "system_supports_claim": "true",
-          "human_verdict": "pending",
-          "human_reason": "",
-          "reviewer": null,
-          "reviewed_at": null
-        },
-        {
-          "candidate_id": "cand_req_probe_01_unit_scene_0125_15_9",
-          "scene_id": "scene_0125",
-          "parent_scene_id": "scene_0125",
-          "retrieval_unit_id": "unit_scene_0125_15",
-          "evidence_id": "qianfu_ep18_720p_25fps:scene_0125:unit_scene_0125_15",
-          "timecode": {
-            "in": "00:28:15.040",
-            "out": "00:28:19.440",
-            "duration_sec": 4.4
-          },
-          "dialogue": "到达分局社会部报到 绝密",
-          "characters": [
-            "谢若林",
-            "余则成"
-          ],
-          "physical_actions": [
-            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-          ],
-          "scene_env": "东来顺涮肉馆雅间餐桌",
-          "a5_rank": 9,
-          "a6_rank": 3,
-          "rank_delta": 6,
-          "retrieval_score": 0.439,
-          "perspective_score": 0.676,
-          "final_ranking_score": 0.581,
-          "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[到达分局社会部报到 绝密]；【L3 叙事推论边界】：对于“表面客套勾兑暗藏杀机”与“寻找谢若林与余则成在客厅餐桌对坐、谢若林抽烟请客勾兑生意的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-          "sample_frame_refs": [
-            42431
           ],
           "analysis_granularity": "independent_keyframe",
           "consistency_check": {
@@ -920,37 +946,40 @@
         ],
         "evidence_grounding_criteria": "涉及陈秋平、讣告、照片、太太或绝密卷宗"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
-          "candidate_id": "cand_req_probe_02_unit_scene_0125_15_1",
-          "scene_id": "scene_0125",
-          "parent_scene_id": "scene_0125",
-          "retrieval_unit_id": "unit_scene_0125_15",
-          "evidence_id": "qianfu_ep18_720p_25fps:scene_0125:unit_scene_0125_15",
+          "candidate_id": "cand_req_probe_02_unit_scene_0139_01_12",
+          "scene_id": "scene_0139",
+          "parent_scene_id": "scene_0139",
+          "retrieval_unit_id": "unit_scene_0139_01",
+          "evidence_id": "qianfu_ep18_720p_25fps:scene_0139:unit_scene_0139_01",
           "timecode": {
-            "in": "00:28:15.040",
-            "out": "00:28:19.440",
-            "duration_sec": 4.4
+            "in": "00:32:36.560",
+            "out": "00:32:49.760",
+            "duration_sec": 13.2
           },
-          "dialogue": "到达分局社会部报到 绝密",
+          "dialogue": "这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
           "characters": [
             "谢若林",
             "余则成"
           ],
           "physical_actions": [
-            "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+            "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
           ],
           "scene_env": "东来顺涮肉馆雅间餐桌",
-          "a5_rank": 1,
+          "a5_rank": 12,
           "a6_rank": 1,
-          "rank_delta": 0,
-          "retrieval_score": 0.466,
-          "perspective_score": 0.68,
-          "final_ranking_score": 0.594,
+          "rank_delta": 11,
+          "retrieval_score": 0.383,
+          "perspective_score": 0.681,
+          "final_ranking_score": 0.562,
           "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[到达分局社会部报到 绝密]；【L3 叙事推论边界】：对于“绝密暴露的剧烈冲击与冰冷危机”与“寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了]，台词确证包含[这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很...]；【L3 叙事推论边界】：对于“绝密暴露的剧烈冲击与冰冷危机”与“寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
-            42431
+            49079
           ],
           "analysis_granularity": "independent_keyframe",
           "consistency_check": {
@@ -960,14 +989,14 @@
           },
           "risk_flags": [],
           "system_recommendation": "supporting",
-          "system_supports_claim": "true",
+          "system_supports_claim": "partial",
           "human_verdict": "pending",
           "human_reason": "",
           "reviewer": null,
           "reviewed_at": null
         },
         {
-          "candidate_id": "cand_req_probe_02_unit_scene_0138_01_10",
+          "candidate_id": "cand_req_probe_02_unit_scene_0138_01_9",
           "scene_id": "scene_0138",
           "parent_scene_id": "scene_0138",
           "retrieval_unit_id": "unit_scene_0138_01",
@@ -977,7 +1006,7 @@
             "out": "00:32:36.560",
             "duration_sec": 8.28
           },
-          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+          "dialogue": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
           "characters": [
             "谢若林",
             "余则成"
@@ -986,12 +1015,12 @@
             "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
           ],
           "scene_env": "东来顺涮肉馆雅间餐桌",
-          "a5_rank": 10,
+          "a5_rank": 9,
           "a6_rank": 2,
-          "rank_delta": 8,
+          "rank_delta": 7,
           "retrieval_score": 0.398,
-          "perspective_score": 0.69,
-          "final_ranking_score": 0.573,
+          "perspective_score": 0.663,
+          "final_ranking_score": 0.557,
           "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易...]；【L3 叙事推论边界】：对于“绝密暴露的剧烈冲击与冰冷危机”与“寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -1005,42 +1034,43 @@
           },
           "risk_flags": [],
           "system_recommendation": "supporting",
-          "system_supports_claim": "true",
+          "system_supports_claim": "partial",
           "human_verdict": "pending",
           "human_reason": "",
           "reviewer": null,
           "reviewed_at": null
         },
         {
-          "candidate_id": "cand_req_probe_02_unit_scene_0131_01_12",
-          "scene_id": "scene_0131",
-          "parent_scene_id": "scene_0131",
-          "retrieval_unit_id": "unit_scene_0131_01",
-          "evidence_id": "qianfu_ep18_720p_25fps:scene_0131:unit_scene_0131_01",
+          "candidate_id": "cand_req_probe_02_unit_scene_0110_01_13",
+          "scene_id": "scene_0110",
+          "parent_scene_id": "scene_0110",
+          "retrieval_unit_id": "unit_scene_0110_01",
+          "evidence_id": "qianfu_ep18_720p_25fps:scene_0110:unit_scene_0110_01",
           "timecode": {
-            "in": "00:30:00.000",
-            "out": "00:30:50.800",
-            "duration_sec": 50.8
+            "in": "00:24:35.200",
+            "out": "00:24:39.080",
+            "duration_sec": 3.88
           },
-          "dialogue": "上面急需给你配备一个大太 也可能是时间来不及了 也可能是有人已经看过照片了 找一个特别像的 结果就拿她姐姐出来顶替 你就是峨眉峰 时间 去处 严丝合缝 时间 去处严丝合缝 亏你还是搞情报的 峨眉峰已经找着了 你不知道啊 确实是保密局的 抓了 去年的蒲扇胡同枪击案那么轰动 你是真不知道 你还是跟我装傻呀你",
+          "dialogue": "瞎说 没有 你叫翠平 你妹妹叫秋平",
           "characters": [
             "谢若林",
+            "翠平",
             "余则成"
           ],
           "physical_actions": [
-            "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+            "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
           ],
-          "scene_env": "东来顺涮肉馆雅间餐桌",
-          "a5_rank": 12,
+          "scene_env": "余则成家门厅与客厅",
+          "a5_rank": 13,
           "a6_rank": 3,
-          "rank_delta": 9,
-          "retrieval_score": 0.394,
-          "perspective_score": 0.614,
-          "final_ranking_score": 0.526,
-          "interpretation": "老周视角：面对没有信仰只有价码的谢若林，余则成面临的是整部剧最赤裸的试探。谢若林看似酒肉朋友拉人入伙，实则每一句话都在刺探虚实。余则成在铜锅烟气掩护下小心周旋，展现出顶级特工的心理素质。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人]，台词确证包含[上面急需给你配备一个大太 也可能是时间来不及了 也可能是有人...]；【L3 叙事推论边界】：对于“绝密暴露的剧烈冲击与冰冷危机”与“寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "rank_delta": 10,
+          "retrieval_score": 0.338,
+          "perspective_score": 0.657,
+          "final_ranking_score": 0.529,
+          "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、翠平、余则成]，处于[余则成家门厅与客厅]物理空间，人物动作确证为[谢若林登门试探翠平有无妹妹秋平，翠平机智反诘]，台词确证包含[瞎说 没有 你叫翠平 你妹妹叫秋平]；【L3 叙事推论边界】：对于“绝密暴露的剧烈冲击与冰冷危机”与“寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
-            45635
+            36929
           ],
           "analysis_granularity": "independent_keyframe",
           "consistency_check": {
@@ -1095,6 +1125,9 @@
         ],
         "evidence_grounding_criteria": "对白中包含两根金条、共党、生意、偷袭或向上汇报等词项"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
           "candidate_id": "cand_req_probe_03_unit_scene_0149_01_1",
@@ -1107,7 +1140,7 @@
             "out": "00:33:43.200",
             "duration_sec": 5.44
           },
-          "dialogue": "一个师呀才两根金条 人家这买卖多会做呀",
+          "dialogue": "个师呀才两根金条 人家这买卖多会做呀",
           "characters": [
             "谢若林",
             "余则成"
@@ -1120,10 +1153,10 @@
           "a6_rank": 1,
           "rank_delta": 0,
           "retrieval_score": 0.496,
-          "perspective_score": 0.678,
-          "final_ranking_score": 0.605,
+          "perspective_score": 0.669,
+          "final_ranking_score": 0.6,
           "interpretation": "老周视角：谢若林是全剧最通透也最致命的情报贩子。这一幕他把两根金条和戴之奇师的情报内幕抖出来，大谈主义与生意的辩证法；余则成义正言辞怒斥其误党误国成何体统，反客为主用党国官僚的逻辑死死压制住了对方的贪欲。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[一个师呀才两根金条 人家这买卖多会做呀]；【L3 叙事推论边界】：对于“绝地反击与冷酷对峙”与“寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细]，台词确证包含[个师呀才两根金条 人家这买卖多会做呀]；【L3 叙事推论边界】：对于“绝地反击与冷酷对峙”与“寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
             50512
           ],
@@ -1152,7 +1185,7 @@
             "out": "00:32:49.760",
             "duration_sec": 13.2
           },
-          "dialogue": "这第一呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
+          "dialogue": "这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
           "characters": [
             "谢若林",
             "余则成"
@@ -1165,10 +1198,10 @@
           "a6_rank": 2,
           "rank_delta": 1,
           "retrieval_score": 0.471,
-          "perspective_score": 0.695,
-          "final_ranking_score": 0.605,
+          "perspective_score": 0.685,
+          "final_ranking_score": 0.599,
           "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了]，台词确证包含[这第一呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很...]；【L3 叙事推论边界】：对于“绝地反击与冷酷对峙”与“寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了]，台词确证包含[这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很...]；【L3 叙事推论边界】：对于“绝地反击与冷酷对峙”与“寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
             49079
           ],
@@ -1210,8 +1243,8 @@
           "a6_rank": 3,
           "rank_delta": 1,
           "retrieval_score": 0.463,
-          "perspective_score": 0.651,
-          "final_ranking_score": 0.576,
+          "perspective_score": 0.642,
+          "final_ranking_score": 0.57,
           "interpretation": "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[谢若林、余则成]，处于[东来顺涮肉馆雅间餐桌]物理空间，人物动作确证为[余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人]，台词确证包含[这不明摆着呢吗 买走情报那是共党 就等于封锁消息了]；【L3 叙事推论边界】：对于“绝地反击与冷酷对峙”与“寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
@@ -1270,55 +1303,12 @@
         ],
         "evidence_grounding_criteria": "出现火车站台、绿皮车厢、蒸汽烟雾或车窗告别动作"
       },
+      "status": "SUFFICIENT",
+      "suggested_actions": [],
+      "sufficiency_reason": "候选镜头中存在确凿客观证据，能够有效支撑故事节拍与视角论点。",
       "top3": [
         {
-          "candidate_id": "cand_req_probe_04_unit_scene_0213_01_1",
-          "scene_id": "scene_0213",
-          "parent_scene_id": "scene_0213",
-          "retrieval_unit_id": "unit_scene_0213_01",
-          "evidence_id": "qianfu_ep18_720p_25fps:scene_0213:unit_scene_0213_01",
-          "timecode": {
-            "in": "00:43:02.360",
-            "out": "00:43:11.400",
-            "duration_sec": 9.04
-          },
-          "dialogue": "那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷 温暖若停在你心里 翠平一一姚晨 李涯一一祖峰 温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤 温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨 温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林 愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰 愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
-          "characters": [
-            "穆晚秋",
-            "余则成",
-            "翠平"
-          ],
-          "physical_actions": [
-            "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
-          ],
-          "scene_env": "天津街头及火车站站台",
-          "a5_rank": 1,
-          "a6_rank": 1,
-          "rank_delta": 0,
-          "retrieval_score": 0.581,
-          "perspective_score": 0.702,
-          "final_ranking_score": 0.654,
-          "interpretation": "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[穆晚秋、余则成、翠平]，处于[天津街头及火车站站台]物理空间，人物动作确证为[余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程]，台词确证包含[那是忠诚永在 那是忠诚永在 富品表 演员表 余则成一一孙红雷...]；【L3 叙事推论边界】：对于“临危托付与暗夜破局的深沉决绝”与“寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-          "sample_frame_refs": [
-            64672
-          ],
-          "analysis_granularity": "independent_keyframe",
-          "consistency_check": {
-            "is_consistent": true,
-            "invalid_characters": [],
-            "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
-          },
-          "risk_flags": [],
-          "system_recommendation": "supporting",
-          "system_supports_claim": "true",
-          "human_verdict": "pending",
-          "human_reason": "",
-          "reviewer": null,
-          "reviewed_at": null
-        },
-        {
-          "candidate_id": "cand_req_probe_04_unit_scene_0193_01_3",
+          "candidate_id": "cand_req_probe_04_unit_scene_0193_01_2",
           "scene_id": "scene_0193",
           "parent_scene_id": "scene_0193",
           "retrieval_unit_id": "unit_scene_0193_01",
@@ -1328,7 +1318,7 @@
             "out": "00:40:51.360",
             "duration_sec": 9.36
           },
-          "dialogue": "梅姐我给你介绍一下 晚秋 这是我们街坊晚秋",
+          "dialogue": "梅姐我给你介绍 下 这是我们街坊晚秋",
           "characters": [
             "穆晚秋",
             "余则成",
@@ -1338,14 +1328,14 @@
             "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
           ],
           "scene_env": "天津街头及火车站站台",
-          "a5_rank": 3,
-          "a6_rank": 2,
+          "a5_rank": 2,
+          "a6_rank": 1,
           "rank_delta": 1,
           "retrieval_score": 0.563,
-          "perspective_score": 0.699,
-          "final_ranking_score": 0.645,
+          "perspective_score": 0.69,
+          "final_ranking_score": 0.639,
           "interpretation": "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。",
-          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[穆晚秋、余则成、翠平]，处于[天津街头及火车站站台]物理空间，人物动作确证为[余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程]，台词确证包含[梅姐我给你介绍一下 晚秋 这是我们街坊晚秋]；【L3 叙事推论边界】：对于“临危托付与暗夜破局的深沉决绝”与“寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[穆晚秋、余则成、翠平]，处于[天津街头及火车站站台]物理空间，人物动作确证为[余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程]，台词确证包含[梅姐我给你介绍 下 这是我们街坊晚秋]；【L3 叙事推论边界】：对于“临危托付与暗夜破局的深沉决绝”与“寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
             61167
           ],
@@ -1364,7 +1354,7 @@
           "reviewed_at": null
         },
         {
-          "candidate_id": "cand_req_probe_04_unit_scene_0188_01_5",
+          "candidate_id": "cand_req_probe_04_unit_scene_0188_01_4",
           "scene_id": "scene_0188",
           "parent_scene_id": "scene_0188",
           "retrieval_unit_id": "unit_scene_0188_01",
@@ -1384,16 +1374,62 @@
             "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
           ],
           "scene_env": "天津街头及火车站站台",
-          "a5_rank": 5,
-          "a6_rank": 3,
+          "a5_rank": 4,
+          "a6_rank": 2,
           "rank_delta": 2,
           "retrieval_score": 0.55,
-          "perspective_score": 0.706,
-          "final_ranking_score": 0.644,
+          "perspective_score": 0.689,
+          "final_ranking_score": 0.633,
           "interpretation": "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。",
           "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[穆晚秋、余则成、翠平]，处于[天津街头及火车站站台]物理空间，人物动作确证为[晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口]；【L3 叙事推论边界】：对于“临危托付与暗夜破局的深沉决绝”与“寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
           "sample_frame_refs": [
             60153
+          ],
+          "analysis_granularity": "independent_keyframe",
+          "consistency_check": {
+            "is_consistent": true,
+            "invalid_characters": [],
+            "details": "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
+          },
+          "risk_flags": [],
+          "system_recommendation": "supporting",
+          "system_supports_claim": "true",
+          "human_verdict": "pending",
+          "human_reason": "",
+          "reviewer": null,
+          "reviewed_at": null
+        },
+        {
+          "candidate_id": "cand_req_probe_04_unit_scene_0191_01_5",
+          "scene_id": "scene_0191",
+          "parent_scene_id": "scene_0191",
+          "retrieval_unit_id": "unit_scene_0191_01",
+          "evidence_id": "qianfu_ep18_720p_25fps:scene_0191:unit_scene_0191_01",
+          "timecode": {
+            "in": "00:40:24.920",
+            "out": "00:40:39.280",
+            "duration_sec": 14.36
+          },
+          "dialogue": "1你看 你看 我得找到我上回骑的那四 我得找到我上回骑的那匹 在哪呢 大妹子 中榮中路好候的间没来看我了前想死我",
+          "characters": [
+            "穆晚秋",
+            "余则成",
+            "翠平"
+          ],
+          "physical_actions": [
+            "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+          ],
+          "scene_env": "天津街头及火车站站台",
+          "a5_rank": 5,
+          "a6_rank": 3,
+          "rank_delta": 2,
+          "retrieval_score": 0.55,
+          "perspective_score": 0.689,
+          "final_ranking_score": 0.633,
+          "interpretation": "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。",
+          "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[穆晚秋、余则成、翠平]，处于[天津街头及火车站站台]物理空间，人物动作确证为[晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口]，台词确证包含[1你看 你看 我得找到我上回骑的那四 我得找到我上回骑的那匹...]；【L3 叙事推论边界】：对于“临危托付与暗夜破局的深沉决绝”与“寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
+          "sample_frame_refs": [
+            60803
           ],
           "analysis_granularity": "independent_keyframe",
           "consistency_check": {

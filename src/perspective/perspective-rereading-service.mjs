@@ -147,7 +147,7 @@ export class PerspectiveReReadingService {
     const usableInTop3 = top3.filter(
       (c) => c.recommended_use !== "reject" && c.supports_claim !== "false"
     );
-    const gatePass = usableInTop3.length >= 1;
+    const gatePass = status === "SUFFICIENT" && usableInTop3.length >= 1;
 
     return {
       requirement_id: requirement.requirement_id,

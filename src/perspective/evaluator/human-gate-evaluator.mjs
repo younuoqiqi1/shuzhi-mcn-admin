@@ -35,8 +35,8 @@ export class HumanGateEvaluator {
         const reqRes = a6Result.requirements_reread[req.requirement_id] || {};
         const top3List = reqRes.top3 || [];
 
-        // 系统自评分判定
-        if (reqRes.usable_candidate_count_in_top3 >= 1) {
+        // 系统自评分判定 (必须既有可用候选，且系统评估证据充足)
+        if (reqRes.usable_candidate_count_in_top3 >= 1 && reqRes.status === "SUFFICIENT") {
           systemPassCount++;
         }
 
@@ -113,6 +113,9 @@ export class HumanGateEvaluator {
             target_affordances: req.target_affordances || [],
             evidence_grounding_criteria: req.evidence_grounding_criteria || "",
           },
+          status: reqRes.status || "SUFFICIENT",
+          suggested_actions: reqRes.suggested_actions || [],
+          sufficiency_reason: reqRes.reason || "",
           top3: formattedTop3,
           human_requirement_verdict: "pending", // 当且仅当 top3 中至少 1 个 human_verdict == 'usable' 时置 'PASS'
           human_review_notes: "",
@@ -123,7 +126,7 @@ export class HumanGateEvaluator {
     const systemCoverage = totalCount > 0 ? Number((systemPassCount / totalCount).toFixed(3)) : 0;
 
     return {
-      package_version: "1.2.0",
+      package_version: "1.3.0",
       generated_at: new Date().toISOString(),
       gate_status: "awaiting_human_review",
       gate_passed: false, // 真人未完成审核前，严禁为 true
@@ -239,11 +242,11 @@ export class HumanGateEvaluator {
   generateMarkdownReport(reviewPackage) {
     const lines = [];
 
-    lines.push("# POC-AGENT A6.2: Retrieval Top3 真实人工验收包 (Human Gate Review)");
+    lines.push("# POC-AGENT A6.3: Retrieval Top3 真实人工验收包 (Human Gate Review)");
     lines.push("");
     lines.push(`> **生成时间**: ${reviewPackage.generated_at}  `);
     lines.push(`> **当前 Gate 状态**: \`${reviewPackage.gate_status}\`  `);
-    lines.push(`> **系统自评覆盖率 (System Candidate Coverage)**: ${(reviewPackage.system_candidate_coverage * 100).toFixed(1)}% (仅代表算法自评，不等于人工验收)  `);
+    lines.push(`> **系统自评覆盖率 (System Candidate Coverage)**: ${(reviewPackage.system_candidate_coverage * 100).toFixed(1)}% (系统自评证据充足且存在可用候选的需求比例)  `);
     lines.push(`> **真实人工可用率 (Human Usable Coverage)**: ${(reviewPackage.human_usable_coverage * 100).toFixed(1)}% (${reviewPackage.human_passed_requirements}/${reviewPackage.total_requirements})  `);
     lines.push(`> **审核进度**: ${reviewPackage.reviewed_requirements}/${reviewPackage.total_requirements} 个 MaterialRequirements 已审  `);
     lines.push(`> **门禁准入标准**: 必须由真人审核完全部 8 个需求，且每个需求 Top3 中至少有 1 个镜头被标记为 \`usable\`，总通过率 $\\ge 80.0\\%$ 方可声明正式 Gate 通过。`);
@@ -258,7 +261,8 @@ export class HumanGateEvaluator {
     lines.push("   - `usable`：镜头真实画面与对白客观存在，能有效支撑当前节拍的叙事功能或博主解说，剪辑可用；");
     lines.push("   - `unusable`：镜头虽然被召回，但台词缺失、人物偏离或画面无法服务该节拍，不可使用；");
     lines.push("3. **通过判据**：一个 MaterialRequirement 对应的 Top3 候选中，**只要有 $\\ge 1$ 个镜头被人工核定为 `usable`**，该 Requirement 即判定为 `PASS`；");
-    lines.push("4. **Gate 结论**：8 个需求全部审核完毕，且通过率 $\\ge 80.0\\%$ 时，正式进入 `gate_human_pass`。");
+    lines.push("4. **Gate 结论**：8 个需求全部审核完毕，且通过率 $\\ge 80.0\\%$ 时，正式进入 `gate_human_pass`；");
+    lines.push("5. **证据不足认知**：系统能正确识别全片缺失对应事实并输出 `INSUFFICIENT_EVIDENCE` 属于正确保护机制，严禁为了强行凑数而召回无关镜头。");
     lines.push("");
     lines.push("---");
     lines.push("");
@@ -267,7 +271,7 @@ export class HumanGateEvaluator {
     lines.push("");
 
     reviewPackage.requirements.forEach((reqItem, reqIdx) => {
-      const { topic, viewpoint, beat, material_requirement, top3, human_requirement_verdict } = reqItem;
+      const { topic, viewpoint, beat, material_requirement, top3, human_requirement_verdict, status, sufficiency_reason, suggested_actions } = reqItem;
       lines.push(`### [需求 ${reqIdx + 1}/8] ${topic.title} —— ${beat.beat_title}`);
       lines.push("");
       lines.push(`* **选题 ID / 名称**: \`${topic.topic_id}\` (${topic.title})`);
@@ -276,6 +280,15 @@ export class HumanGateEvaluator {
       lines.push(`* **素材诉求**: \`${material_requirement.requirement_id}\` - ${material_requirement.description}`);
       lines.push(`* **期望人物**: [${material_requirement.desired_characters.join(", ")}]`);
       lines.push(`* **期望动作/环境**: ${material_requirement.desired_action} | ${material_requirement.desired_scene_env}`);
+      if (status === "INSUFFICIENT_EVIDENCE") {
+        lines.push(`* **系统证据充足度评估**: ⚠️ \`INSUFFICIENT_EVIDENCE\` (全片缺乏直接客观事实支撑)`);
+        lines.push(`* **系统分析原因**: ${sufficiency_reason}`);
+        if (suggested_actions && suggested_actions.length > 0) {
+          lines.push(`* **建议系统动作**: \`${suggested_actions.join(", ")}\``);
+        }
+      } else {
+        lines.push(`* **系统证据充足度评估**: ✅ \`SUFFICIENT\` (候选镜头中存在确凿客观证据)`);
+      }
       lines.push(`* **人工需求结论**: \`${human_requirement_verdict}\``);
       lines.push("");
 
