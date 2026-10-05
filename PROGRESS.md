@@ -13,7 +13,7 @@
 
 | 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
 |:---|:---:|:---:|:---|
-| **X0 Technology Spike Gate** | X0 结束点 | 🚪 **awaiting_review** | 完成开源项目源码/License/依赖审计；完成 EP18 中立短段（900-930s）真实物理切片、15 张代表帧提取、macOS 原生 Vision OCR 实测；完成单集与 30 集成本测算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md) |
+| **X0 Technology Spike Gate** | X0 结束点 | 🚪 **awaiting_review** | 完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md) |
 | **X1 L1 Understanding Benchmark** | X1 节点 | ⏳ **等待 X0 评审通过** | 在不知道剧情前提下全自动生成可追溯 Objective Evidence，通过 50 Shot 独立盲测 Gold 门禁 |
 | **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中** | 50 条多类别需求盲测检索与 INSUFFICIENT 拒识率验证 |
 | **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述、A5 人名依赖、A6 预写文本及伪造字幕事故，已冻结不继续投入 |
