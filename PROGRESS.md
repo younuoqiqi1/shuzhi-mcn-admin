@@ -2,8 +2,8 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A7: Director Final —— 基于真实证据完成最终内容编排**  
-当前状态：`A7 awaiting_review` (A6 Final Review APPROVED，Top3 Gate 87.5% 正式通过；95/95 测试全绿；双真实选题 Final Director Plan、VMV 生产单及真人视听预览生成就绪；已彻底停止，严禁进入 A8，严禁生成 MP4，严禁真实 TTS)  
+当前阶段：**POC-AGENT A7.1: Director Plan 成片可执行性与时长预算收口**  
+当前状态：`A7.1 awaiting_final_review` (A7 changes_requested 已全量收口：INSUFFICIENT_EVIDENCE 默认严禁创建生产分段，Topic A 缩编为 3 段且立意自然合并；落地 Narration Duration Budget 集中估算体系，双选题全分段 100% duration_fit = true；99/99 测试全绿；已彻底停机，严禁进入 A8)  
 执行责任：🏛️ 全栈架构师 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
 
 ---
@@ -14,7 +14,7 @@
 |:---|:---:|:---:|:---|
 | **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
 | **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已通过** (2026-10-05) | 真实影视素材（《潜伏》第18集全片约45:02，共 2702.013 秒）检索与视角重读：有效覆盖率 7/8 = 87.5% >= 80%；`req_wu_03` 查实为全集无机要室且李涯零出镜，判定为 `INSUFFICIENT_EVIDENCE` 属真实正确结果，门禁正式批准通过。 |
-| **Director Final Review Gate** | A7 结束点 | ⏳ **等待审核 (awaiting_review)** (2026-10-05) | Final Director Plan 必须 100% 消费 A6 Top3 真实候选；原声有力保留与旁白职责先行；严禁未支撑伪断言 (Unsupported Claims)；处理 `req_wu_03` 显式决议；VMV Consumer Contract 验证通过并声明 A8 Blocker。 |
+| **Director Final Review Gate** | A7 结束点 | ⏳ **等待终审 (awaiting_final_review)** (2026-10-05) | Final Director Plan 必须 100% 消费 A6 Top3 真实候选；INSUFFICIENT_EVIDENCE 需求默认严禁产生虚假生产分段 (merge/drop)；旁白时长预算系统证明全量说得完 (100% duration_fit = true)；原声完整性防截断；VMV Consumer Contract 验证通过并声明 A8 Blocker。 |
 
 ---
 
@@ -83,20 +83,20 @@
   - **自动化测试套件全量更新与通过**：
     - 工程总测试扩展至 **83/83 passed**（0 失败，新增 2 项 A6.3 专项测试）；
   - **专题修复报告**：[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)。
-- [x] **A7 (Awaiting Review)**：Final Director Plan 真实证据终编服务：
-  - **核心导演服务与校验器交付**：
-    - [`src/director/final-director-service.mjs`](src/director/final-director-service.mjs)：严格消费 A6 Top3 真实候选镜头；音频所有权先于旁白；Narration Job 职责先行；
-    - [`src/director/director-evidence-validator.mjs`](src/director/director-evidence-validator.mjs)：严格校验 Evidence Boundary；拦截未支撑客观伪断言（`unsupported_claim`）；杜绝旁白与关键原声硬切打架；
-    - [`src/director/vmv-production-adapter.mjs`](src/director/vmv-production-adapter.mjs)：完成 Final Director Plan 到 VMV Stage 4/5 标准生产单（`version: 1.0.0`）的适配转换，通过 Consumer Contract Test 校验；
-  - **双真实选题 Final Director Plan 生产**：
+- [x] **A7.1 (Awaiting Final Review)**：Director Plan 成片可执行性与时长预算收口：
+  - **INSUFFICIENT_EVIDENCE 需求生产拦截与自然合并**：
+    - `req_wu_03` 决议为 `merge`，将“站长不看卷宗看利益与人心”的心战立意自然合并入终章 `seg_wu_04`；
+    - 严格落实**不产生虚假生产分段**（`production_segment_created: false`），成片绝不向观众违和解释“没有这个镜头”；Topic A 精简为 3 个真实生产分段；
+  - **Narration Duration Budget 旁白时长预算系统交付**：
+    - [`src/director/duration-budget-config.mjs`](src/director/duration-budget-config.mjs)：集中配置 4.0 字/秒常态解说估算语速、0.5s 安全余量与 2.0s duck 引导时长，杜绝散落 magic number；
+    - 证明进入 A8 前每段旁白 100% 说得完，严禁单纯调高语速硬塞；
+    - 原声对白完整性保护（不得截断半句话）；
+    - 导出独立时长预算审计表：[`docs/agent-poc/a7.1-duration-budget-topic-b.md`](docs/agent-poc/a7.1-duration-budget-topic-b.md) 与 [`docs/agent-poc/a7.1-duration-budget-topic-a.md`](docs/agent-poc/a7.1-duration-budget-topic-a.md)，双选题全分段 **100% duration_fit = true**；
+  - **更新 Final Director Plan 与 VMV 生产单**：
     - 选题 B（优先成片）[`src/director/results/director_plan_topic_b.json`](src/director/results/director_plan_topic_b.json) 及生产单 [`src/director/results/vmv_order_topic_b.json`](src/director/results/vmv_order_topic_b.json)；
     - 选题 A [`src/director/results/director_plan_topic_a.json`](src/director/results/director_plan_topic_a.json) 及生产单 [`src/director/results/vmv_order_topic_a.json`](src/director/results/vmv_order_topic_a.json)；
-  - **`req_wu_03` 显式决议落地**：记录 `director_resolution: "insufficient_evidence"`，执行 `resolution_action: "soften"`，旁白诚实澄清事实缺失并升华至心战试探，拒绝制造假镜头；
-  - **真人审阅 Markdown 视听预览导出**：
-    - [`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)；
-    - [`docs/agent-poc/a7-director-preview-topic-a.md`](docs/agent-poc/a7-director-preview-topic-a.md)；
   - **自动化测试套件全量更新与通过**：
-    - 全工程测试扩展至 **95/95 passed**（新增 12 项 A7 导演视听与契约专项测试）；
+    - 全工程测试扩展至 **99/99 passed**（新增 4 项 A7.1 时长预算与假分段拦截专项测试）；
   - **交付技术报告**：[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)。
 - [x] **技术债与集成状态说明**：
   - **VMV 消费端真实跨语言执行标为 A8 Blocker**：当前适配器已通过真实 VMV Consumer Contract Schema 校验，但由于 `video-moment-validation` 仓库尚未部署 Stage 4/5 真实的 Python CLI (`python -m vmv render`) 与 ffmpeg / TTS 执行环境，真实的跨进程端到端集成测试标为 **A8 Blocker**，严禁虚假宣称“100%兼容”。
@@ -128,4 +128,11 @@
 20. **2026-10-05 12:40**：A6.2 人工审查核定 7/8 requirements usable（可用率 87.5% >= 80%），但指出两项收口问题（`req_wu_03` 检索偏离判定 unusable、`req_probe_04` 片尾 OCR 演职员表/歌词污染），要求执行 A6.3。
 21. **2026-10-05 12:45**：完成 POC-AGENT A6.3 全部收口修复：查实第18集无机要室且李涯零出镜，`req_wu_03` 正确返回 `INSUFFICIENT_EVIDENCE`；演职员表与歌词彻底清洗（污染率 0%）；测试 83/83 全绿；Commit `28accfb`。
 22. **2026-10-05 12:50**：A6 Final Review 审查正式批准通过（**APPROVED**），授权进入 POC-AGENT A7: Director Final 阶段。
-23. **2026-10-05 13:05**：完成 POC-AGENT A7 全部交付：实现 `FinalDirectorService`、`DirectorEvidenceValidator`、`VMVProductionAdapter`；输出双真实选题 Plan、VMV 生产单与 Markdown 视听预览；处理 `req_wu_03` 显式决议；全工程 95/95 测试全绿；当前状态正式设为 **`A7 awaiting_review`**，原地彻底停止，严禁进入 A8。
+23. **2026-10-05 13:05**：完成 POC-AGENT A7 初版交付，Commit `6a2ef5f`。
+24. **2026-10-05 13:10**：A7 Review 审查反馈：**`changes_requested`**。指出 `req_wu_03` 不应创建虚假生产分段且成片不应对观众解释缺失，以及必须建立 Narration Duration Budget 证明每段说得完。
+25. **2026-10-05 13:20**：完成 POC-AGENT A7.1 全部收口修复：
+    - `req_wu_03` 落实 merge 决议，不产生虚假生产分段，Topic A 精简为 3 段且立意自然合并；
+    - 落地 Narration Duration Budget 集中配置与估算体系，双选题全分段 **100% duration_fit = true**；
+    - 全工程 **99/99 自动化测试全绿**（新增 4 项 A7.1 专项测试）；
+    - 导出独立时长预算审计表与更新真人视听预览；
+    - 当前状态正式设为 **`A7.1 awaiting_final_review`**，原地彻底停止，严禁进入 A8。

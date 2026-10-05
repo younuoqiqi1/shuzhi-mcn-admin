@@ -4,7 +4,7 @@
   "plan_id": "plan_topic_qf18_dangerous_probe_v1",
   "topic_id": "topic_qf18_dangerous_probe",
   "blogger_id": "laozhou_zhuiju",
-  "created_at": "2026-10-05T05:00:45.594Z",
+  "created_at": "2026-10-05T05:13:16.288Z",
   "target_format": {
     "resolution": "1920x1080",
     "aspect_ratio": "16:9",
@@ -15,14 +15,14 @@
   "audio_track": {
     "provider": "aliyun_tts",
     "voice_id": "zh-CN-laozhou-deep",
-    "speech_rate": 1.05,
-    "pitch_rate": 0.98
+    "speech_rate": 1,
+    "pitch_rate": 1
   },
   "segments": [
     {
       "segment_index": 1,
       "beat_id": "beat_probe_01_hook",
-      "narration_text": "老周带大家重看第18集。许多人以为余则成最大的危机是被李涯盯上，但真正让他命悬一线的，其实是这顿看似寻常的东来顺涮羊肉。",
+      "narration_text": "老周重看第18集：余则成最大的危机，正是这顿东来顺涮肉。",
       "narration_delay_sec": 0,
       "clip": {
         "media_id": "qianfu_ep18_720p_25fps:scene_0138:unit_scene_0138_01",
@@ -44,7 +44,14 @@
         "audio_transition": "fade",
         "visual_reason": "东来顺包厢热气腾腾铜锅前，谢若林歪头打量，余则成冷笑警惕，张力拉满",
         "director_resolution": null,
-        "resolution_action": null
+        "resolution_action": null,
+        "duration_budget": {
+          "narration_char_count": 28,
+          "estimated_tts_duration_sec": 7,
+          "available_narration_duration_sec": 7.78,
+          "duration_fit": true,
+          "duration_overflow_sec": 0
+        }
       }
     },
     {
@@ -72,41 +79,55 @@
         "audio_transition": "hard_cut",
         "visual_reason": "谢若林冷笑开口吐烟圈，余则成眼神凝固，对白具有不可替代的压迫感",
         "director_resolution": null,
-        "resolution_action": null
+        "resolution_action": null,
+        "duration_budget": {
+          "narration_char_count": 0,
+          "estimated_tts_duration_sec": 0,
+          "available_narration_duration_sec": 0,
+          "duration_fit": true,
+          "duration_overflow_sec": 0
+        }
       }
     },
     {
       "segment_index": 3,
       "beat_id": "beat_probe_03_counterattack",
-      "narration_text": "在老周看来，面对致命指控，余则成没有拔枪，而是顺着谢若林的贪婪，把政治信仰降维成一门两根金条的生意。在利欲熏心的保密局，贪婪比任何表忠心都更能打消怀疑。",
+      "narration_text": "在老周看来，余则成顺着对方的贪婪，把政治信仰降维成一门两根金条的生意。",
       "narration_delay_sec": 0,
       "clip": {
-        "media_id": "qianfu_ep18_720p_25fps:scene_0149:unit_scene_0149_01",
-        "scene_id": "scene_0149",
-        "retrieval_unit_id": "unit_scene_0149_01",
-        "in_timecode": "00:33:37.760",
-        "out_timecode": "00:33:43.200",
-        "duration_sec": 5.44
+        "media_id": "qianfu_ep18_720p_25fps:scene_0147:unit_scene_0147_01",
+        "scene_id": "scene_0147",
+        "retrieval_unit_id": "unit_scene_0147_01",
+        "in_timecode": "00:33:25.440",
+        "out_timecode": "00:33:35.000",
+        "duration_sec": 9.56
       },
       "original_audio": {
-        "preserve": true,
-        "volume_percent": 25,
-        "time_range": "00:33:37.760-00:33:43.200"
+        "preserve": false,
+        "volume_percent": 0,
+        "time_range": null
       },
       "burn_subtitles": true,
       "metadata": {
-        "audio_owner": "original_dialogue",
+        "audio_owner": "narration",
         "narration_job": "interpretation",
         "audio_transition": "duck",
-        "visual_reason": "谈及金钱与情报买卖，谢若林算计神情与余则成的商人伪装形成共振",
+        "visual_reason": "谈及金钱与共党买情报，谢若林算计神情与余则成的商人伪装形成共振",
         "director_resolution": null,
-        "resolution_action": null
+        "resolution_action": null,
+        "duration_budget": {
+          "narration_char_count": 35,
+          "estimated_tts_duration_sec": 8.75,
+          "available_narration_duration_sec": 9.06,
+          "duration_fit": true,
+          "duration_overflow_sec": 0
+        }
       }
     },
     {
       "segment_index": 4,
       "beat_id": "beat_probe_04_evacuation",
-      "narration_text": "老周总结：两根金条解除了眼前的杀身之祸，也为暗夜中的撤离赢得了生机。真正的潜伏高手，从不在绝境中硬碰硬，而是在敌人最贪婪的裂缝里绝处逢生。",
+      "narration_text": "老周总结：两根金条化解了灭顶危机，更为暗夜撤离赢得了生机。",
       "narration_delay_sec": 0,
       "clip": {
         "media_id": "qianfu_ep18_720p_25fps:scene_0193:unit_scene_0193_01",
@@ -128,7 +149,14 @@
         "audio_transition": "L_cut",
         "visual_reason": "站台列车前夜色深沉，余则成翠平送别晚秋，暗夜破局意境深远",
         "director_resolution": null,
-        "resolution_action": null
+        "resolution_action": null,
+        "duration_budget": {
+          "narration_char_count": 29,
+          "estimated_tts_duration_sec": 7.25,
+          "available_narration_duration_sec": 8.86,
+          "duration_fit": true,
+          "duration_overflow_sec": 0
+        }
       }
     }
   ]

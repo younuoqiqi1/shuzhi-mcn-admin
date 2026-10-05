@@ -198,6 +198,13 @@ export class VMVProductionAdapter {
           visual_reason: seg.visual_reason || "",
           director_resolution: seg.director_resolution || null,
           resolution_action: seg.resolution_action || null,
+          duration_budget: {
+            narration_char_count: seg.narration_char_count ?? null,
+            estimated_tts_duration_sec: seg.estimated_tts_duration_sec ?? null,
+            available_narration_duration_sec: seg.available_narration_duration_sec ?? null,
+            duration_fit: seg.duration_fit ?? true,
+            duration_overflow_sec: seg.duration_overflow_sec ?? 0.0,
+          },
         },
       };
     });

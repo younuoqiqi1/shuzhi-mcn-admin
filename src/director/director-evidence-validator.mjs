@@ -147,9 +147,35 @@ export class DirectorEvidenceValidator {
       this.validateNarrationAgainstBoundary(segment, segment.evidence_boundary);
     }
 
-    // 8. INSUFFICIENT_EVIDENCE 决议合法性
+    // 8. 旁白时长预算校验 (Narration Duration Budget Fit)
+    if (segment.duration_fit === false || (typeof segment.duration_overflow_sec === "number" && segment.duration_overflow_sec > 0.05)) {
+      throw new DirectorValidationError(
+        `${segment_id}.duration_overflow`,
+        `旁白预估时长 (${segment.estimated_tts_duration_sec}s) 超出镜头可用旁白时长 (${segment.available_narration_duration_sec}s)，溢出 ${segment.duration_overflow_sec}s。禁止单纯拉高语速强塞，请精简文案或在合法边界内延长镜头！`
+      );
+    }
+
+    // 9. 原声对白完整性校验 (不能截断半句话)
+    if (segment.audio_owner === "original_dialogue" && segment.original_dialogue_text) {
+      const dialogueText = segment.original_dialogue_text.trim();
+      const minDialogueDuration = Math.round((dialogueText.length / 4.8) * 10) / 10;
+      if (segment.planned_duration < minDialogueDuration - 0.2) {
+        throw new DirectorValidationError(
+          `${segment_id}.dialogue_truncation`,
+          `镜头计划时长 (${segment.planned_duration}s) 不足支撑完整原声台词 "${dialogueText}" (需约 ${minDialogueDuration}s)，存在截断半句话风险！`
+        );
+      }
+    }
+
+    // 10. INSUFFICIENT_EVIDENCE 决议合法性：默认严禁创建虚假生产 Segment
     if (segment.director_resolution === "insufficient_evidence") {
-      const validActions = ["soften", "merge", "drop", "request_revision"];
+      if (segment.production_segment_created !== false) {
+        throw new DirectorValidationError(
+          `${segment_id}.fake_production_segment`,
+          `INSUFFICIENT_EVIDENCE 需求默认严禁创建对应生产 Segment！必须执行 merge/drop，且 production_segment_created 必须为 false。`
+        );
+      }
+      const validActions = ["merge", "drop", "soften_previous", "soften_next", "request_revision", "soften"];
       if (!validActions.includes(segment.resolution_action)) {
         throw new DirectorValidationError(
           `${segment_id}.resolution_action`,
@@ -252,6 +278,27 @@ export class DirectorEvidenceValidator {
     // 校验每个分段
     for (const seg of plan.segments) {
       this.validateSegment(seg);
+    }
+
+    // 校验 INSUFFICIENT_EVIDENCE 决议合法性：绝不允许存在对应的生产 segment
+    if (plan.director_resolution_summary && Array.isArray(plan.director_resolution_summary.resolutions)) {
+      for (const res of plan.director_resolution_summary.resolutions) {
+        if (res.status === "INSUFFICIENT_EVIDENCE") {
+          if (res.production_segment_created !== false) {
+            throw new DirectorValidationError(
+              `plan.resolution.${res.requirement_id}`,
+              `INSUFFICIENT_EVIDENCE 决议必须将 production_segment_created 设为 false`
+            );
+          }
+          const hasFakeSeg = plan.segments.some((s) => s.requirement_id === res.requirement_id);
+          if (hasFakeSeg) {
+            throw new DirectorValidationError(
+              `plan.segments.${res.requirement_id}`,
+              `INSUFFICIENT_EVIDENCE 需求 '${res.requirement_id}' 严禁生成生产 Segment！请执行 merge/drop 并移出 segments。`
+            );
+          }
+        }
+      }
     }
 
     // 校验分段之间的时间顺序与连贯性

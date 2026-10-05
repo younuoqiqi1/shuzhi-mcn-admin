@@ -6,3 +6,4 @@
 export * from "./director-evidence-validator.mjs";
 export * from "./final-director-service.mjs";
 export * from "./vmv-production-adapter.mjs";
+export * from "./duration-budget-config.mjs";
