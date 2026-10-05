@@ -2,21 +2,21 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A8.1: Production Grounding Remediation**  
-当前状态：`A8.1 awaiting_human_storyboard_review` (完成 L1 假 Evidence 清理、Dialogue Span 连续对白单元扩展、五维全息门禁、Director 镜头排重、VMV 假台词剔除与 21 张真实代表帧提取；生成独立交互式 Storyboard HTML 页面；113 项测试 100% 通过；严禁进入 A9，严禁提前生成 MP4，等待用户人眼视听验收)  
-执行责任：🏛️ 全栈架构师 & 💻 前端与交互专家 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
+当前阶段：**X0: Technology Selection & Reuse Spike**  
+当前状态：**`X0 awaiting_review`**  
+核心决议：**根据交接文档 (`poc-revalidation-handoff.md`) 与三份独立技术审计报告，原 A8/A9/A10 及旧 A5/A6/A7 规则全面冻结；全面进入 X0–X4 真实 AI 能力重验路线。**  
+执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家  
 
 ---
 
-## 阶段门禁状态 (Two-Gate System)
+## 阶段门禁状态 (Two-Gate System & Revalidation Path)
 
-| 门禁名称 | 阶段点 | 当前状态 | 准入/通过标准 |
+| 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
 |:---|:---:|:---:|:---|
-| **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
-| **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已重构并重新对齐** | 真实消费细颗粒度检索单元，双真实选题 8 个需求重新完成视角重读与证据边界锁定 |
-| **Director Final Review Gate** | A7 结束点 | ✅ **已重构并重新对齐** | 建立在真实纯净 L1 Evidence 上，全面引入镜头去重强拦截与时长预算系统 |
-| **Production Grounding Gate (五维门禁)** | A8.1 节点 | 🚪 **awaiting_human_review** | Temporal, Dialogue, Visual, Semantic >= L4, Editorial 全部通过自动化验证；正等待用户通过 Storyboard 进行人眼视听验收 |
-| **A8 Human Video Review Gate** | A8 结束点 | ⏳ **等待 A8.1 验收后解锁** | 用户亲自检视成片前，必须先在 Storyboard 阶段 100% 确认真实抽帧与台词对齐 |
+| **X0 Technology Spike Gate** | X0 结束点 | 🚪 **awaiting_review** | 完成开源项目源码/License/依赖审计；完成 EP18 中立短段（900-930s）真实物理切片、15 张代表帧提取、macOS 原生 Vision OCR 实测；完成单集与 30 集成本测算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md) |
+| **X1 L1 Understanding Benchmark** | X1 节点 | ⏳ **等待 X0 评审通过** | 在不知道剧情前提下全自动生成可追溯 Objective Evidence，通过 50 Shot 独立盲测 Gold 门禁 |
+| **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中** | 50 条多类别需求盲测检索与 INSUFFICIENT 拒识率验证 |
+| **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述、A5 人名依赖、A6 预写文本及伪造字幕事故，已冻结不继续投入 |
 
 ---
 
