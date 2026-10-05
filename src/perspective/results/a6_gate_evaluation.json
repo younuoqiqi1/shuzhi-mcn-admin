@@ -1,11 +1,13 @@
 {
   "total_requirements": 8,
-  "passed_requirements": 8,
+  "system_passed_requirements": 8,
   "failed_requirements": 0,
-  "usable_coverage": 1,
+  "system_candidate_coverage": 1,
+  "human_usable_coverage": 0,
   "gate_threshold": 0.8,
-  "gate_passed": true,
-  "gate_status": "gate_candidate_pass",
+  "gate_passed": false,
+  "gate_status": "awaiting_human_review",
+  "note": "此项仅为系统算法自评候选覆盖率 (100%)，未经过真人审核前正式 Retrieval Top3 Gate 不得判定为 PASS。",
   "samples": [
     {
       "topic_id": "topic_qf18_wu_suspicion",
@@ -22,7 +24,8 @@
       "rank_delta": 0,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[师生假面下的眼神交锋]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦 余副站...]；【L3 叙事推论边界】：对于“表面平和而内部张力紧绷”与“寻找吴站长与余则成在站长办公室单独对坐、余则成神情恭顺而站长神色审视的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "strong_support",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_wu_suspicion",
@@ -39,7 +42,8 @@
       "rank_delta": 0,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[借委任状与贪官言论敲山震虎]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前]，台词确证包含[余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦 余副站...]；【L3 叙事推论边界】：对于“威严压迫与试探性敲打”与“寻找站长提及官场贪腐、委任状或严厉盘查的对白段落，两人有言语敲打”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "strong_support",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_wu_suspicion",
@@ -56,7 +60,8 @@
       "rank_delta": 0,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[机要室叛徒照片与档案险情]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[余则成、李涯]，处于[保密局天津站机要档案室与走廊]物理空间，人物动作确证为[余则成在铁皮档案柜前检索绝密卷宗，手指在封皮间快速划过]，台词确证包含[现在共党的情报 那都卖到什么价了]；【L3 叙事推论边界】：对于“危急紧迫与暗战窒息感”与“寻找机要档案室内李涯或余则成排查秘密卷宗、照片或通缉令的情节画面”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "transition",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_wu_suspicion",
@@ -73,7 +78,8 @@
       "rank_delta": 1,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[默契维系与生存法则]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成]，处于[保密局天津站站长办公室办公桌前]物理空间，人物动作确证为[吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫]，台词确证包含[中国这么大你回这儿来干什么呀 嫂子在车站等你]；【L3 叙事推论边界】：对于“深沉克制与心照不宣”与“寻找站长特写镜头或两人意味深长的沉默收尾，烘托老谋深算氛围”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "transition",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_dangerous_probe",
@@ -90,7 +96,8 @@
       "rank_delta": 0,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[请客涮肉背后的致命邀约]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成、谢若林]，处于[谢若林穆晚秋寓所餐厅与客厅]物理空间，人物动作确证为[谢若林叼着卷烟靠在雕花沙发上，吐出淡蓝色烟圈]，台词确证包含[留着呀 我是中共 你是保密局的 咱俩有生意可以做呀 要是让我...]；【L3 叙事推论边界】：对于“表面客套勾兑暗藏杀机”与“寻找谢若林与余则成在客厅餐桌对坐、谢若林抽烟请客勾兑生意的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "strong_support",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_dangerous_probe",
@@ -107,7 +114,8 @@
       "rank_delta": 0,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[陈秋平档案与假夫妻危局]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[吴敬中、余则成、谢若林]，处于[谢若林穆晚秋寓所餐厅与客厅]物理空间，人物动作确证为[谢若林叼着卷烟靠在雕花沙发上，吐出淡蓝色烟圈]，台词确证包含[留着呀 我是中共 你是保密局的 咱俩有生意可以做呀 要是让我...]；【L3 叙事推论边界】：对于“绝密暴露的剧烈冲击与冰冷危机”与“寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "strong_support",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_dangerous_probe",
@@ -124,7 +132,8 @@
       "rank_delta": 1,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[两根金条与主义伪装的博弈]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[余则成、李涯]，处于[保密局天津站机要档案室与走廊]物理空间，人物动作确证为[李涯手持公文夹穿过昏暗走廊，皮鞋在水磨石地面发出清脆声响]，台词确证包含[这第一呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很...]；【L3 叙事推论边界】：对于“绝地反击与冷酷对峙”与“寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "strong_support",
+      "gate_verdict": "awaiting_human_review"
     },
     {
       "topic_id": "topic_qf18_dangerous_probe",
@@ -141,7 +150,8 @@
       "rank_delta": 2,
       "selection_reason": "在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[险境逢生与暗夜撤离]的叙事功能。",
       "evidence_boundary": "【L1 客观事实底线】：画面中客观出现人物[穆晚秋、余则成]，处于[天津火车站站台及夜行列车车厢]物理空间，人物动作确证为[余则成提着皮箱护送晚秋登上绿皮列车车厢踏板]；【L3 叙事推论边界】：对于“临危托付与暗夜破局的深沉决绝”与“寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头”的定性，属于博主视角下的视听叙事推论与观点赋能，绝对不可作为 L1 客观事实直接引用。",
-      "gate_verdict": "PASS"
+      "system_recommendation": "strong_support",
+      "gate_verdict": "awaiting_human_review"
     }
   ]
 }

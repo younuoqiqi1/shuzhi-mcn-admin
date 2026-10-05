@@ -3,8 +3,9 @@
   "blogger_id": "laozhou_zhuiju",
   "total_requirements": 4,
   "pass_requirements": 4,
-  "gate_pass_rate": 1,
-  "gate_verdict": "PASS",
+  "system_candidate_coverage": 1,
+  "system_gate_status": "system_candidate_pass",
+  "human_gate_status": "awaiting_human_review",
   "requirements_reread": {
     "req_probe_01": {
       "requirement_id": "req_probe_01",
@@ -13816,5 +13817,5 @@
       "gate_pass": true
     }
   },
-  "timestamp": "2026-10-05T03:22:05.472Z"
+  "timestamp": "2026-10-05T03:46:07.341Z"
 }

@@ -2,9 +2,9 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A6: 动态 Perspective Re-reading + Retrieval Top3 真实门禁验证**  
-当前状态：`A6 awaiting_review / gate_candidate_pass` (A1 approved, A2 approved, A3 approved, A4 approved, A4.5.1 approved, A5 approved, A6 awaiting_review / gate_candidate_pass; 已停止，严禁进入 A7)  
-执行责任：🏛️ 全栈架构师 & 🔍 测试与质量专家 & 📐 API规范专家  
+当前阶段：**POC-AGENT A6.1: 动态 Perspective Re-reading + Retrieval Top3 真实门禁隔离与人工验收包**  
+当前状态：`A6.1 awaiting_human_review` (A1 approved, A2 approved, A3 approved, A4 approved, A4.5.1 approved, A5 approved, A6.1 awaiting_human_review; 系统自评覆盖率 100%，独立人工验收包已就绪，已彻底停止，严禁进入 A7)  
+执行责任：🏛️ 全栈架构师 & 🧪 测试与质量专家 & 📐 API规范专家  
 
 ---
 
@@ -13,11 +13,11 @@
 | 门禁名称 | 阶段点 | 当前状态 | 准入/通过标准 |
 |:---|:---:|:---:|:---|
 | **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
-| **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已通过 (100.0% ≥ 80%)** (2026-10-05) | 真实影视素材（**《潜伏》第18集全片约45:02**，共 2702.013 秒）全自动检索与视角重读实测：**前 3 个候选中至少有 1 个可用镜头的脚本段落占比达 100.0% (8/8 ≥ 80%)**；成功突破合成前置核心门禁！ |
+| **Retrieval Top3 实测 Gate** | A6 结束点 | ⏳ **等待人工审核 (awaiting_human_review)** (2026-10-05) | 真实影视素材（**《潜伏》第18集全片约45:02**，共 2702.013 秒）全自动检索与视角重读：系统候选覆盖率自评为 **100.0% (8/8)**；已生成 8 需求独立人工验收包。**准入铁律：必须由真人完成全部 8 个需求审核，且每个需求 Top3 至少有 1 个镜头被人工核定为 `usable`，总可用率 $\ge 80.0\%$ 方可正式放行 A7！未审核前严禁系统自评冒充 Gate PASS**。 |
 
 ---
 
-## A0–A10 分阶段实施路线图 (总体完成度：74%)
+## A0–A10 分阶段实施路线图 (总体完成度：75%)
 
 | 阶段 | 权重 | 状态 | 交付物 / 验收入口 | 核心说明 |
 |:---|---:|:---:|:---|:---|
@@ -29,15 +29,15 @@
 | **A4.5. 真实 L1 Evidence 补齐与覆盖率深度核验** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5-evidence-enrichment-report.md`](docs/agent-poc/a4.5-evidence-enrichment-report.md) | 查清 130 vs 325 及 2702s 全片覆盖根因（VMV 1800s 截断）；Apple Vision OCR 提取 857 条真实台词；复用 caption-packet/importer；补齐 130/326 真实客观证据 |
 | **A4.5.1 尾部连续补齐与生成来源审计修复** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | A4.5.1 Review Approved。把 1800~2702.013s 真正补入 canonical 数据集（235 场景，0 到 2702.013s 连续无空洞）；审计视觉来源，落地 independent vs inherited 分级与置信度衰减；测试全绿 |
 | **A5. 候选镜头召回检索管道** | 10% | ✅ **completed** | [`src/retrieval/`](src/retrieval/)<br>[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)<br>[`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs) | A5 Review Approved。消费 MaterialRequirements，基于 Hybrid 检索（结构化+词法+语义Fallback+L2潜能）从真实 Canonical 数据集自动为每个诉求召回 Top20 客观候选；多场景多样性与 3s 时序去重；测试 62/62 全绿 |
-| **A6. 动态 Perspective Re-reading** | 12% | 🚪 **awaiting_review** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-perspective-rereading-report.md`](docs/agent-poc/a6-perspective-rereading-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | 消费 A5 Top20 候选，结合老周追剧 Persona 与选题节拍完成逐候选视角解读与 Top3/Top5 重排；建立防幻觉事实边界 (Evidence Boundary) 与不支持观点裁决；**Top3 实测可用率 100% (8/8) 达标通过 Gate 2 (≥80%)**；测试 73/73 全绿 |
-| **A7. Director 真实证据终编服务** | 10% | 待开始 | Final Director Plan 锁定生成器 | **严禁提前进入**；等待 A6 审查通过；依据真实证据敲定台词、原声、IN-OUT |
+| **A6. 动态 Perspective Re-reading** | 12% | 🚪 **awaiting_human_review** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)<br>[`docs/agent-poc/a6-perspective-rereading-report.md`](docs/agent-poc/a6-perspective-rereading-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | 完成 A6.1 门禁隔离与模型边界透明化：独立 Gate Evaluation 层，系统自评覆盖率 (100%) 与正式人工门禁严格分离；生成 8 需求独立人工验收包（默认 pending 严禁冒充）；测试 75/75 全绿 |
+| **A7. Director 真实证据终编服务** | 10% | 待开始 | Final Director Plan 锁定生成器 | **严禁提前进入**；等待真人完成 A6.1 门禁审核；依据真实证据敲定台词、原声、IN-OUT |
 | **A8. VMV Stage 4/5 真实生产对接** | 8% | 待开始 | 本地生产 Runner 与真实 MP4 输出 | 阿里云 TTS 真实配音与 FFmpeg 剪辑压制 |
 | **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
 | **A10. 双博主同素材 A/B 验证验收** | 4% | 待开始 | 两支不同风格的真实 1080p MP4 与指标报告 | 终极验收：同一部剧同素材池、双博主截然不同视听成品 |
 
 ---
 
-## 阶段产物与执行清单 (A1→A4.5.1)
+## 阶段产物与执行清单 (A1→A6.1)
 
 - [x] **A1 (Approved)**：正式数据契约、通用校验器、Job 状态机、VMV Stage 4/5 适配器与测试固件，测试 14/14 通过。
 - [x] **A2 (Approved)**：L1 客观 Evidence Schema 规范、VMV Stage 1 真实产物摄取（130 个场景）、防污染只读 EvidenceStore，测试 5/5 通过。
@@ -50,63 +50,34 @@
 - [x] **A4.5.1 (Approved)**：真实 Canonical Evidence 尾部补齐与来源审计修复：
   - **全片 0 ~ 2702.013s 连续覆盖 Canonical L1 数据集交付**：
     - 权威检索数据集：[`src/evidence/data/canonical_evidence_qianfu_ep18.json`](src/evidence/data/canonical_evidence_qianfu_ep18.json)；
-    - 同步刷新向后兼容：[`src/evidence/data/enriched_evidence_qianfu_ep18.json`](src/evidence/data/enriched_evidence_qianfu_ep18.json)；
-    - 235 个连续场景（首个场景从 0.0s 开始，末尾场景结束于 2702.013s，相邻最大时间缝隙 Max Gap = 0.0000s，无超过 0.05s 空洞）；
-    - 尾部（> 1800s）深度补齐 105 个镜头，包含 91 个带真实原片 OCR 对白的场景；
-  - **来源审计与段级继承衰减机制落地**：
-    - 在 `provenance` 中确立 `independent_keyframe`（独立中间帧分析，高置信度 0.90~0.95）与 `segment_inherited`（段级继承分析，显式绑定 `source_segment_id` 与 `sample_frame_refs`，置信度衰减至 ≤ 0.85）；
-    - 177 个独立帧分析镜头与 58 个段级继承分析镜头；
-  - **保留可复现脚本与配置清单**：
-    - 配置清单：[`src/evidence/config/canonical-manifest.json`](src/evidence/config/canonical-manifest.json)；
-    - 一键构建脚本：[`src/evidence/scripts/build_canonical_evidence.mjs`](src/evidence/scripts/build_canonical_evidence.mjs)；
-  - **完成 20 个分层抽样人工检查**（其中 8 个来自 > 1800s 尾段），固化于报告；
-  - **更正口径**：门禁卡点“《潜伏》25分钟”全部更正为“《潜伏》第18集全片约45:02”；
-  - **自动化测试套件 ([`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs))**：新增 A4.5.1 Canonical 连续性与来源审计深度测试，全套 50/50 全部通过；
-  - **专题修复报告**：[`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)。
+    - 235 个连续场景（0 到 2702.013s 连续无空洞，尾部补齐 105 个镜头）；
+  - **来源审计与段级继承衰减机制落地**（`independent_keyframe` vs `segment_inherited`）；
+  - **保留可复现脚本与配置清单**：[`src/evidence/config/canonical-manifest.json`](src/evidence/config/canonical-manifest.json)；
+  - **完成 20 个分层抽样人工检查**；更正口径为“《潜伏》第18集全片约45:02”；测试 50/50 全部通过。
 - [x] **A5 (Approved)**：真实候选镜头召回 Retrieval Pipeline：
-  - **交付 CandidateRetrievalService 服务核心与稳定程序接口**：
-    - 核心实现：[`src/retrieval/retrieval-service.mjs`](src/retrieval/retrieval-service.mjs)；
-    - 面向 MCN 后台的标准接口：`retrieveForRequirement` 与 `retrieveForTopicTask`，支持无缝自动化调用，无需人工脚本；
-  - **四路 Hybrid 匹配引擎与质量多样性重排**：
-    - 结构化匹配 ([`src/retrieval/matchers/structured-matcher.mjs`](src/retrieval/matchers/structured-matcher.mjs))：角色交集、物理场景空间、时间码提示；
-    - 词法多字段匹配 ([`src/retrieval/matchers/lexical-matcher.mjs`](src/retrieval/matchers/lexical-matcher.mjs))：专用中文影视词表切分与 2-gram，台词与动作命中强加权；
-    - 语义匹配与 Fallback 诚实声明 ([`src/retrieval/matchers/semantic-matcher.mjs`](src/retrieval/matchers/semantic-matcher.mjs))：定义 `ISemanticProvider` 规范，实现确定性概念网投影 `ConceptFallbackSemanticProvider`，透明标记 `provider_name: "concept_mesh_fallback_v1"` 与 `is_fallback: true`；
-    - L2 戏剧潜能协同 ([`src/retrieval/matchers/affordance-matcher.mjs`](src/retrieval/matchers/affordance-matcher.mjs))：与 `AffordanceStore` 联动，支持 suspicion_testing, power_dynamic, covert_transaction 等多标签匹配；
-    - 多样性与质量平衡 ([`src/retrieval/diversity-filter.mjs`](src/retrieval/diversity-filter.mjs))：落实现继承帧质量乘数 0.85 与置信度惩罚、3 秒时序近重复抑制（0.75 衰减）、场景空间软上限（最多 6 个同场景镜头）；
-  - **L2 通用叙事潜能种子库**：
-    - 数据集：[`src/retrieval/data/seed_l2_affordances.json`](src/retrieval/data/seed_l2_affordances.json)，472 条合规 L2 叙事潜能（100% 通过 `validateNarrativeAffordance`）；
-  - **双真实选题端到端检索与持久化产物**：
-    - 选题A：“吴站长什么时候开始怀疑余则成？”：Fixtures [`src/retrieval/fixtures/topic_a_suspicion.json`](src/retrieval/fixtures/topic_a_suspicion.json) $\rightarrow$ 结果 [`src/retrieval/results/retrieval_results_topic_a.json`](src/retrieval/results/retrieval_results_topic_a.json)；
-    - 选题B：“余则成最危险的一次试探”：Fixtures [`src/retrieval/fixtures/topic_b_dangerous_probe.json`](src/retrieval/fixtures/topic_b_dangerous_probe.json) $\rightarrow$ 结果 [`src/retrieval/results/retrieval_results_topic_b.json`](src/retrieval/results/retrieval_results_topic_b.json)；
-    - 每个选题 4 个 material requirements，每个 requirement 均产出 20 个合规候选镜头（共 160 个候选镜头，100% 通过 `validateCandidate`）；
-  - **客观检索理由铁律**：`retrieval_reason` 仅解释客观特征与剧情线索依据，严禁博主观点或主观定性；
-  - **人工分层抽样 Usability 审计**：24 个真实候选抽查，可用率达 91.7%（22 usable / 2 weak / 0 irrelevant）；
-  - **综合自动化测试套件 ([`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs))**：12 项专项覆盖测试，全工程 62/62 测试全绿；
-  - **专题验收报告**：[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)。
-- [x] **A6 (Awaiting Review / Gate Candidate Pass)**：动态 Perspective Re-reading + Retrieval Top3 Gate 实测：
-  - **交付 PerspectiveReReadingService 核心与稳定程序接口**：
-    - 核心实现：[`src/perspective/perspective-rereading-service.mjs`](src/perspective/perspective-rereading-service.mjs)；
-    - 面向 MCN 后台的标准接口：`rereadCandidate`、`rerankRequirement` 与 `processTopicTask`，支持无缝自动化链路调用；
-  - **交付 IPerspectiveProvider 规范与透明 Fallback Provider**：
-    - 实现：[`src/perspective/providers/perspective-provider.mjs`](src/perspective/providers/perspective-provider.mjs)，透明声明 `is_fallback: true` 与 `provider_name: "semantic_concept_perspective_provider_v1"`；
-  - **老周追剧 Persona 画像与透镜参数**：
-    - 实现：[`src/perspective/persona/laozhou-persona.mjs`](src/perspective/persona/laozhou-persona.mjs)，聚焦微权力运转、下属向上汇报与危机自保策略，通过 `validatePersona` 契约；
-  - **防幻觉机制与证据边界 (Evidence Boundary)**：
-    - 每个候选均严格生成 `evidence_boundary`（清晰切分 L1 客观事实底线与 L3 叙事推论边界）；
-    - 支持判定 `supports_claim: "true" | "partial" | "false"` 与 `does_not_support` 边界说明；
-    - 落地证据不足告警机制：当全候选无法支撑核心论点时自动触发 `INSUFFICIENT_EVIDENCE` 并返回 4 项行动建议（软化断言、修改观点、调整节拍、重新检索）；
-  - **Top20 $\rightarrow$ Top5 $\rightarrow$ Top3 视角重排与 Rank Delta 审计**：
-    - 完整保留 A5 召回分与 A6 视角分，记录 `a5_rank`、`a6_rank` 与 `rank_delta`；
-    - 审计雪茄静默微动作 (`scene_0057`, +1)、延安情报买卖 (`scene_0094`, +6)、火车站台登车动作 (`scene_0190`, +2) 等合理跃迁；
-  - **双真实选题端到端执行与 Gate 报告持久化**：
-    - 结果：[`src/perspective/results/a6_results_topic_a.json`](src/perspective/results/a6_results_topic_a.json)、[`src/perspective/results/a6_results_topic_b.json`](src/perspective/results/a6_results_topic_b.json)、[`src/perspective/results/a6_gate_evaluation.json`](src/perspective/results/a6_gate_evaluation.json)；
-  - **Retrieval Top3 Gate 真实门禁实测达标**：
-    - 8 个真实需求样本，Top3 中包含可用镜头的样本达 8 个，**Top3 Usable Coverage 达 100.0% (门禁阈值 ≥ 80.0%)**，状态标记 `gate_candidate_pass`；
-  - **综合自动化测试套件 ([`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs))**：11 项专项覆盖测试，全工程 73/73 测试全绿；
-  - **专题验收报告**：[`docs/agent-poc/a6-perspective-rereading-report.md`](docs/agent-poc/a6-perspective-rereading-report.md)。
+  - **交付 CandidateRetrievalService 服务核心与稳定程序接口** ([`src/retrieval/retrieval-service.mjs`](src/retrieval/retrieval-service.mjs))；
+  - **四路 Hybrid 匹配引擎与质量多样性重排**（结构化、词法、语义Fallback、L2潜能协同、多样性去重）；
+  - **L2 通用叙事潜能种子库** ([`src/retrieval/data/seed_l2_affordances.json`](src/retrieval/data/seed_l2_affordances.json)，472 条合规潜能）；
+  - **双真实选题端到端检索与持久化产物**（8 个需求，每个产出 20 个合规候选镜头，共 160 个候选）；
+  - **人工分层抽样 Usability 审计**：24 个候选抽查，可用率达 91.7%；测试 62/62 全绿。
+- [x] **A6.1 (Awaiting Human Review)**：动态 Perspective Re-reading + 人工门禁隔离：
+  - **交付 PerspectiveReReadingService 核心与稳定程序接口** ([`src/perspective/perspective-rereading-service.mjs`](src/perspective/perspective-rereading-service.mjs))；
+  - **交付独立 Gate Evaluation 层与 Evaluator** ([`src/perspective/evaluator/human-gate-evaluator.mjs`](src/perspective/evaluator/human-gate-evaluator.mjs))：
+    - 严格分离“系统推荐”与“真人门禁”，系统只提供 `system_recommendation` 与 `system_candidate_coverage` (自评 100%)；
+    - 在真人审核前，所有候选 `human_verdict` 强制为 `pending`，严禁程序冒充真人，门禁保持 `awaiting_human_review`，`gate_passed: false`；
+    - 判定规则：每个需求 Top3 至少有 1 个镜头被人工核定为 `usable` 即为该需求 PASS；全量 8 需求总可用率 $\ge 80.0\%$ 时正式通过 Gate；
+  - **生成 8 个真实需求独立人工验收包**：
+    - 审核文档：[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)；
+    - 机器可读：[`src/perspective/results/a6_human_gate_review.json`](src/perspective/results/a6_human_gate_review.json)；
+    - 包含真实时间码、台词、人物、动作、环境、帧引用、A5/A6 排名与打分、主观解读与事实边界、系统推荐与待填表格；
+  - **显式界定真实模型边界与透明 Fallback**：
+    - 明确 A6 当前验证的是 **Pipeline + deterministic fallback**，尚未验证真实 LLM/VLM 理解能力；已实现抽象规范 `IPerspectiveProvider`；
+  - **防幻觉机制与证据边界 (Evidence Boundary)**：强制切分 L1 客观事实底线与 L3 叙事推论边界；
+  - **综合自动化测试套件 ([`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs))**：13 项专项测试覆盖真实消费、防污染、系统与人工分离、防冒充断言与流转模拟，全工程 **75/75 测试全绿**；
+  - **专题报告**：[`docs/agent-poc/a6-perspective-rereading-report.md`](docs/agent-poc/a6-perspective-rereading-report.md)。
 - [x] **技术债登记**：
   - **VMV Stage 4/5 适配器消费者集成测试待补**：当前 [`src/contracts/vmv-adapter.mjs`](src/contracts/vmv-adapter.mjs) 仅完成 Schema-level 数据映射与静态校验，尚未经过底层真实 VMV 消费链路（`python -m vmv render`、TTS 与 FFmpeg）的 Consumer Integration Test。在 A7/A8 前必须验证，严禁再写“100%兼容”。
-- [x] **严格守界**：**严禁进入 A7 Director Final，严禁视频剪辑、TTS 与 MP4 合成，原地停止等待 Review**。
+- [x] **严格守界**：**严禁进入 A7 Director Final，严禁视频剪辑、TTS 与 MP4 合成，原地停止等待真人审核**。
 
 ---
 
@@ -121,9 +92,17 @@
 7. **2026-10-05 09:02**：完成 A4 所有要求修订，44/44 测试全绿，当前状态重新设为 **`awaiting_review`**。
 8. **2026-10-05 09:20**：A4.1 Review 审查通过，授权开启 A4.5 Evidence Enrichment。
 9. **2026-10-05 09:50**：完成 A4.5 真实客观素材补齐与覆盖率深度核验，交付报告，状态设为 `A4.5 awaiting_review`。
-10. **2026-10-05 10:16**：A4.5 Review 反馈：**`changes_requested`**。提出两个阻塞问题：① 最终 enriched Evidence 实际仍截止 1800s，必须把 1800~2702.013s 真正补入 canonical 数据集并连续覆盖；② 审计视觉来源，区分段级继承并衰减置信度，保留可复现 manifest/脚本，完成 20 个抽样检查（8个来自尾段），更正 25 分钟口径为 45:02。
+10. **2026-10-05 10:16**：A4.5 Review 反馈：**`changes_requested`**。
 11. **2026-10-05 10:30**：完成 A4.5.1 阻塞问题全量修复，交付 Canonical 数据集（235 场景，0~2702.013s 连续无空洞）、来源审计机制、Manifest 配置与构建脚本、20 个抽查表，全工程 50/50 测试全绿，状态设为 **`A4.5.1 awaiting_review`**。
 12. **2026-10-05 10:55**：A4.5.1 Review 审查正式通过（approved），授权进入 POC-AGENT A5 阶段。
 13. **2026-10-05 11:05**：完成 POC-AGENT A5 全部交付：实现 CandidateRetrievalService、四路 Hybrid 匹配器、概念网透明 Fallback、L2 潜能库、多样性重排与质量衰减、双真实选题（吴站长怀疑 / 危险试探）E2E 检索与 Top20 持久化产物、Usability 人工抽样审计、全套 62/62 测试通过，状态设为 **`A5 awaiting_review`**。
 14. **2026-10-05 11:15**：A5 Review 审查正式通过（approved），授权进入 POC-AGENT A6 阶段。
-15. **2026-10-05 11:25**：完成 POC-AGENT A6 全部交付：实现 PerspectiveReReadingService、防幻觉事实边界 (Evidence Boundary)、supports_claim 裁决与 INSUFFICIENT_EVIDENCE 机制、Top20 $\rightarrow$ Top3/Top5 重排与 Rank Delta、双真实选题实测、Retrieval Top3 Gate 真实门禁实测达 100% (8/8 ≥ 80%)，全套 73/73 测试全绿，状态设为 **`A6 awaiting_review / gate_candidate_pass`**，原地停止，严禁进入 A7。
+15. **2026-10-05 11:25**：完成 POC-AGENT A6 初版交付，提交报告，Commit `5d45f83`。
+16. **2026-10-05 11:35**：A6 Review 反馈：**`changes_requested`**。指出两点：① Top3 Gate 的 PASS 属于系统自评，不等于真实人工验收，必须建立独立 Gate Evaluation 层，输出 8 需求独立人工验收包，`human_verdict` 默认必须为 `pending`，严禁冒充人工审核；② 明确当前验证的是 Perspective Re-reading pipeline + deterministic fallback，尚未验证真实 LLM/VLM 理解能力。要求执行 A6.1 修复并保持阻断，严禁进入 A7。
+17. **2026-10-05 11:50**：完成 A6.1 全部审查修复：
+    - 实现独立 `HumanGateEvaluator` 与评估流转；
+    - 系统自评覆盖率 (100%) 与正式门禁严格分离，正式门禁状态置为 `awaiting_human_review`，`gate_passed: false`；
+    - 生成 8 需求独立人工验收包：`docs/agent-poc/a6-human-gate-review.md` 与 `src/perspective/results/a6_human_gate_review.json`；
+    - 报告中明确 Pipeline 验证 vs 真实模型理解边界；
+    - 全工程 **75/75 测试全绿**（含 A6.1 专项 13 项测试）；
+    - 状态设为 **`A6.1 awaiting_human_review`**，原地彻底停止，严禁进入 A7。

@@ -12,6 +12,7 @@
 
 import { LAOZHOU_PERSONA } from "./persona/laozhou-persona.mjs";
 import { SemanticAndConceptPerspectiveProvider } from "./providers/perspective-provider.mjs";
+import { HumanGateEvaluator } from "./evaluator/human-gate-evaluator.mjs";
 import { validatePerspectiveReading } from "../contracts/validators.mjs";
 
 export class PerspectiveReReadingService {
@@ -24,6 +25,7 @@ export class PerspectiveReReadingService {
   constructor(options = {}) {
     this.provider = options.provider || new SemanticAndConceptPerspectiveProvider();
     this.persona = options.persona || LAOZHOU_PERSONA;
+    this.humanGateEvaluator = new HumanGateEvaluator();
     this.weights = {
       a5_retrieval: 0.40,
       a6_perspective: 0.60,
@@ -190,8 +192,9 @@ export class PerspectiveReReadingService {
       blogger_id: this.persona.blogger_id,
       total_requirements: totalReqs,
       pass_requirements: passedReqs,
-      gate_pass_rate: passRate,
-      gate_verdict: passRate >= 0.8 ? "PASS" : "FAIL",
+      system_candidate_coverage: passRate,
+      system_gate_status: passRate >= 0.8 ? "system_candidate_pass" : "system_candidate_fail",
+      human_gate_status: "awaiting_human_review",
       requirements_reread: requirementsReread,
       timestamp: new Date().toISOString(),
     };
@@ -199,6 +202,7 @@ export class PerspectiveReReadingService {
 
   /**
    * 综合评估两个或多个选题的跨选题整体 Retrieval Top3 Gate
+   * 严守原则：自动 Perspective 结果只输出系统推荐与自评覆盖率，正式 Gate 判定在真人未审核前保持 awaiting_human_review。
    * @param {Array<Object>} topicTaskResults processTopicTask 的结果数组
    * @returns {Object} 跨选题综合 Gate 评估报告
    */
@@ -236,23 +240,58 @@ export class PerspectiveReReadingService {
           rank_delta: bestUsable ? bestUsable.rank_delta : 0,
           selection_reason: bestUsable ? bestUsable.selection_reason : "N/A",
           evidence_boundary: bestUsable ? bestUsable.evidence_boundary : "N/A",
-          gate_verdict: reqRes.gate_pass ? "PASS" : "FAIL",
+          system_recommendation: bestUsable ? bestUsable.recommended_use : "supporting",
+          gate_verdict: "awaiting_human_review",
         });
       }
     }
 
     const overallCoverage = totalReqCount > 0 ? Number((totalPassCount / totalReqCount).toFixed(3)) : 0;
-    const isGatePassed = overallCoverage >= 0.8;
 
     return {
       total_requirements: totalReqCount,
-      passed_requirements: totalPassCount,
+      system_passed_requirements: totalPassCount,
       failed_requirements: totalReqCount - totalPassCount,
-      usable_coverage: overallCoverage,
+      system_candidate_coverage: overallCoverage,
+      human_usable_coverage: 0.0,
       gate_threshold: 0.8,
-      gate_passed: isGatePassed,
-      gate_status: isGatePassed ? "gate_candidate_pass" : "gate_failed",
+      gate_passed: false, // 严格规定：真人未完成审核前，严禁为 true
+      gate_status: "awaiting_human_review",
+      note: "此项仅为系统算法自评候选覆盖率 (100%)，未经过真人审核前正式 Retrieval Top3 Gate 不得判定为 PASS。",
       samples,
     };
+  }
+
+  /**
+   * 构造独立的人工审核包
+   * @param {Array<{ topicTask: Object, a6Result: Object }>} taskPairs
+   */
+  buildHumanReviewPackage(taskPairs) {
+    return this.humanGateEvaluator.buildReviewPackage(taskPairs);
+  }
+
+  /**
+   * 评估人工审核包的 Gate 状态
+   * @param {Object} reviewPackage
+   */
+  evaluateHumanGate(reviewPackage) {
+    return this.humanGateEvaluator.evaluateHumanGate(reviewPackage);
+  }
+
+  /**
+   * 记录单项人工审核结果
+   * @param {Object} reviewPackage
+   * @param {Object} params
+   */
+  applyHumanVerdict(reviewPackage, params) {
+    return this.humanGateEvaluator.applyHumanVerdict(reviewPackage, params);
+  }
+
+  /**
+   * 渲染 Markdown 报告
+   * @param {Object} reviewPackage
+   */
+  generateHumanReviewMarkdown(reviewPackage) {
+    return this.humanGateEvaluator.generateMarkdownReport(reviewPackage);
   }
 }

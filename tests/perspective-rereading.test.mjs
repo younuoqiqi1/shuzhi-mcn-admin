@@ -1,9 +1,10 @@
 /**
  * @file perspective-rereading.test.mjs
- * @description POC-AGENT A6 动态 Perspective Re-reading 与 Retrieval Top3 Gate 综合测试套件。
+ * @description POC-AGENT A6.1 动态 Perspective Re-reading 与 Retrieval Top3 Gate 综合测试套件。
  * 覆盖：真实A5 Top20消费、Persona透镜解读、事实边界保护、supports_claim裁决、
  * 证据不足降级(INSUFFICIENT_EVIDENCE)、Top20->Top5->Top3重排与Rank Delta记录、
- * 溯源加权协同、L1/L2防污染、禁偷换镜头、双真实选题E2E与Top3 Gate实测计算。
+ * 溯源加权协同、L1/L2防污染、禁偷换镜头、系统自评与人工门禁分离、
+ * 人工验收包规范（默认pending与防冒充）、模拟人工审核流转与正式Gate通过判定。
  */
 
 import { describe, it } from "node:test";
@@ -20,7 +21,7 @@ import { validatePerspectiveReading } from "../src/contracts/validators.mjs";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-describe("POC-AGENT A6: 动态 Perspective Re-reading + Retrieval Top3 Gate 验证", () => {
+describe("POC-AGENT A6.1: 动态 Perspective Re-reading + Retrieval Top3 Gate 验证", () => {
   const service = new PerspectiveReReadingService();
 
   const topicAPath = path.resolve(__dirname, "../src/retrieval/fixtures/topic_a_suspicion.json");
@@ -226,27 +227,152 @@ describe("POC-AGENT A6: 动态 Perspective Re-reading + Retrieval Top3 Gate 验�
     assert.strictEqual(statL2Before.mtimeMs, statL2After.mtimeMs, "A6 严禁自动将 L3 写入 L2 潜能库");
   });
 
-  it("10. 选题A 与 选题B 端到端执行与 Gate 判定", () => {
+  it("10. 系统自评与正式门禁严格分离：未人工审核前 gate_passed 必须为 false 且状态为 awaiting_human_review", () => {
     const taskResA = service.processTopicTask(topicA, resA);
     const taskResB = service.processTopicTask(topicB, resB);
 
     assert.strictEqual(taskResA.total_requirements, 4);
     assert.strictEqual(taskResB.total_requirements, 4);
 
-    assert.ok(taskResA.gate_pass_rate >= 0.8, `选题A 门禁通过率应 >= 80%，实际: ${taskResA.gate_pass_rate}`);
-    assert.ok(taskResB.gate_pass_rate >= 0.8, `选题B 门禁通过率应 >= 80%，实际: ${taskResB.gate_pass_rate}`);
+    // 系统自评覆盖率
+    assert.strictEqual(taskResA.system_candidate_coverage, 1.0);
+    assert.strictEqual(taskResB.system_candidate_coverage, 1.0);
+    assert.strictEqual(taskResA.human_gate_status, "awaiting_human_review");
+    assert.strictEqual(taskResB.human_gate_status, "awaiting_human_review");
+
+    // 跨选题 Gate 评估
+    const gateReport = service.evaluateOverallGate([taskResA, taskResB]);
+    assert.strictEqual(gateReport.total_requirements, 8);
+    assert.strictEqual(gateReport.system_passed_requirements, 8);
+    assert.strictEqual(gateReport.system_candidate_coverage, 1.0, "系统自评覆盖率应为 100%");
+    assert.strictEqual(gateReport.human_usable_coverage, 0.0, "未审核前真实人工可用率必须为 0%");
+    assert.strictEqual(gateReport.gate_passed, false, "严禁系统自评冒充 Gate PASS，未审核前必须为 false");
+    assert.strictEqual(gateReport.gate_status, "awaiting_human_review");
   });
 
-  it("11. 跨选题综合 Retrieval Top3 Gate 评估 (门禁实测必须 >= 80%)", () => {
+  it("11. A6.1 独立人工验收包完整性与防冒充断言 (human_verdict 必须为 pending)", () => {
     const taskResA = service.processTopicTask(topicA, resA);
     const taskResB = service.processTopicTask(topicB, resB);
 
-    const gateReport = service.evaluateOverallGate([taskResA, taskResB]);
+    const reviewPkg = service.buildHumanReviewPackage([
+      { topicTask: topicA, a6Result: taskResA },
+      { topicTask: topicB, a6Result: taskResB },
+    ]);
 
-    assert.strictEqual(gateReport.total_requirements, 8, "总需求样本数应为 8 (2 topics × 4 reqs)");
-    assert.ok(gateReport.passed_requirements >= 7, `8个样本中至少通过 7 个，实际通过: ${gateReport.passed_requirements}`);
-    assert.ok(gateReport.usable_coverage >= 0.8, `Usable Coverage 必须 >= 80%，实际: ${gateReport.usable_coverage}`);
-    assert.strictEqual(gateReport.gate_passed, true);
-    assert.strictEqual(gateReport.gate_status, "gate_candidate_pass");
+    assert.strictEqual(reviewPkg.total_requirements, 8);
+    assert.strictEqual(reviewPkg.gate_passed, false);
+    assert.strictEqual(reviewPkg.gate_status, "awaiting_human_review");
+    assert.strictEqual(reviewPkg.all_reviewed, false);
+
+    // 遍历所有 8 个需求及其 Top3 候选
+    for (const reqItem of reviewPkg.requirements) {
+      assert.ok(reqItem.topic.topic_id);
+      assert.ok(reqItem.viewpoint.thesis);
+      assert.ok(reqItem.beat.narrative_function);
+      assert.ok(reqItem.material_requirement.requirement_id);
+      assert.strictEqual(reqItem.human_requirement_verdict, "pending");
+      assert.strictEqual(reqItem.top3.length, 3, "每个需求必须严格提供 Top3 候选");
+
+      for (const cand of reqItem.top3) {
+        // 核心防冒充铁律
+        assert.strictEqual(cand.human_verdict, "pending", "未有人工输入前 human_verdict 必须为 pending");
+        assert.strictEqual(cand.human_reason, "");
+        assert.strictEqual(cand.reviewer, null);
+        assert.strictEqual(cand.reviewed_at, null);
+
+        // 系统字段与人工字段分离
+        assert.ok(["strong_support", "supporting", "transition", "atmosphere", "reject"].includes(cand.system_recommendation));
+        assert.ok(["true", "partial", "false"].includes(cand.system_supports_claim));
+
+        // 真实客观信息
+        assert.ok(cand.timecode.in && cand.timecode.out);
+        assert.ok(typeof cand.timecode.duration_sec === "number");
+        assert.ok(Array.isArray(cand.characters));
+        assert.ok(typeof cand.scene_env === "string");
+        assert.ok(typeof cand.retrieval_score === "number");
+        assert.ok(typeof cand.perspective_score === "number");
+        assert.ok(typeof cand.final_ranking_score === "number");
+        assert.ok(cand.interpretation.length > 0);
+        assert.ok(cand.evidence_boundary.includes("【L1 客观事实底线】"));
+      }
+    }
+  });
+
+  it("12. 模拟人工审核流转：Top3 至少 1 个 usable 触发 PASS，全量达成触发 gate_human_pass", () => {
+    const taskResA = service.processTopicTask(topicA, resA);
+    const taskResB = service.processTopicTask(topicB, resB);
+
+    const reviewPkg = service.buildHumanReviewPackage([
+      { topicTask: topicA, a6Result: taskResA },
+      { topicTask: topicB, a6Result: taskResB },
+    ]);
+
+    // 1. 验证拒绝非法的 human_verdict
+    assert.throws(
+      () => service.applyHumanVerdict(reviewPkg, {
+        requirement_id: "req_wu_01",
+        candidate_id: reviewPkg.requirements[0].top3[0].candidate_id,
+        verdict: "invalid_verdict",
+      }),
+      /非法的 human_verdict/
+    );
+
+    // 2. 模拟人工将前 7 个需求的 Top1 标记为 usable
+    for (let i = 0; i < 7; i++) {
+      const reqItem = reviewPkg.requirements[i];
+      const top1 = reqItem.top3[0];
+      service.applyHumanVerdict(reviewPkg, {
+        requirement_id: reqItem.material_requirement.requirement_id,
+        candidate_id: top1.candidate_id,
+        verdict: "usable",
+        reason: "台词与人物神态符合节拍叙事",
+        reviewer: "auditor_zhang",
+      });
+      assert.strictEqual(reqItem.human_requirement_verdict, "PASS");
+      assert.strictEqual(top1.human_verdict, "usable");
+    }
+
+    // 此时第 8 个需求仍然是 pending，因此未全审完
+    assert.strictEqual(reviewPkg.all_reviewed, false);
+    assert.strictEqual(reviewPkg.gate_passed, false);
+    assert.strictEqual(reviewPkg.gate_status, "awaiting_human_review");
+
+    // 3. 模拟第 8 个需求：Top1、Top2、Top3 全部标记为 unusable
+    const req8 = reviewPkg.requirements[7];
+    req8.top3.forEach((cand) => {
+      service.applyHumanVerdict(reviewPkg, {
+        requirement_id: req8.material_requirement.requirement_id,
+        candidate_id: cand.candidate_id,
+        verdict: "unusable",
+        reason: "画面虽然有关，但对白无法支持论点",
+        reviewer: "auditor_zhang",
+      });
+    });
+
+    // 此时全量 8 个需求审核完毕，通过 7 个，通过率 7/8 = 87.5% >= 80%
+    assert.strictEqual(req8.human_requirement_verdict, "FAIL");
+    assert.strictEqual(reviewPkg.all_reviewed, true);
+    assert.strictEqual(reviewPkg.reviewed_requirements, 8);
+    assert.strictEqual(reviewPkg.human_passed_requirements, 7);
+    assert.strictEqual(reviewPkg.human_usable_coverage, 0.875);
+    assert.strictEqual(reviewPkg.gate_passed, true);
+    assert.strictEqual(reviewPkg.gate_status, "gate_human_pass");
+  });
+
+  it("13. 人工验收 Markdown 与 JSON 产物的一致性与存在性", () => {
+    const jsonPath = path.resolve(__dirname, "../src/perspective/results/a6_human_gate_review.json");
+    const mdPath = path.resolve(__dirname, "../docs/agent-poc/a6-human-gate-review.md");
+
+    assert.ok(fs.existsSync(jsonPath), "src/perspective/results/a6_human_gate_review.json 必须存在");
+    assert.ok(fs.existsSync(mdPath), "docs/agent-poc/a6-human-gate-review.md 必须存在");
+
+    const jsonContent = JSON.parse(fs.readFileSync(jsonPath, "utf8"));
+    const mdContent = fs.readFileSync(mdPath, "utf8");
+
+    assert.strictEqual(jsonContent.gate_status, "awaiting_human_review");
+    assert.strictEqual(jsonContent.gate_passed, false);
+    assert.ok(mdContent.includes("POC-AGENT A6.1: Retrieval Top3 真实人工验收包"));
+    assert.ok(mdContent.includes("`awaiting_human_review`"));
+    assert.ok(mdContent.includes("严禁进入 A7 Director Final 阶段"));
   });
 });
