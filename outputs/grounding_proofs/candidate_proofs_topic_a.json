@@ -1,0 +1,212 @@
+{
+  "plan_id": "plan_topic_qf18_wu_suspicion_v1",
+  "topic_id": "topic_qf18_wu_suspicion",
+  "target_duration": 36.76,
+  "generated_at": "2026-10-05T07:54:00.176Z",
+  "segments": [
+    {
+      "segment_id": "seg_wu_01",
+      "beat_id": "beat_wu_01_hook",
+      "requirement_id": "req_wu_01",
+      "purpose": "开场确立师生博弈基调，吴站长宣布延安大捷与晋升委任，看似满面春风，实则是老谋深算的驭人之术",
+      "retrieval_unit_id": "unit_dial_promotion_01",
+      "parent_scene_id": "scene_0068",
+      "source_in": 647.28,
+      "source_out": 661,
+      "planned_duration": 13.72,
+      "audio_owner": "narration",
+      "narration_job": "foreshadow",
+      "narration_text": "老周聊谍战。观众总问站长信不信余则成？看这场委座嘉奖，看似春风得意，实则是老狐狸的试探局。",
+      "original_dialogue_text": "今天值得庆祝 一为收复延安 二 则成晋升为中校副站长",
+      "actual_transcript_in_interval": "今天值得庆祝 一为收复延安 二 则成晋升为中校副站长",
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ],
+      "scene_env": "保密局天津站站长办公室办公桌前",
+      "representative_frames": [
+        {
+          "filename": "topic_a_seg1_frame1.jpg",
+          "timestamp": 648,
+          "desc": "吴站长手拿延安大捷嘉奖电文，满面春风",
+          "relative_path": "frames/topic_a_seg1_frame1.jpg"
+        },
+        {
+          "filename": "topic_a_seg1_frame2.jpg",
+          "timestamp": 650,
+          "desc": "吴站长宣告'今天值得庆祝，一为收复延安'",
+          "relative_path": "frames/topic_a_seg1_frame2.jpg"
+        },
+        {
+          "filename": "topic_a_seg1_frame3.jpg",
+          "timestamp": 652,
+          "desc": "余则成垂手立正聆听，神情谨慎恭顺",
+          "relative_path": "frames/topic_a_seg1_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    },
+    {
+      "segment_id": "seg_wu_02",
+      "beat_id": "beat_wu_02_testing",
+      "requirement_id": "req_wu_02",
+      "purpose": "吴站长当面敲定副站长人选，手指余则成说出‘副站长就是你’，余则成躬身道谢",
+      "retrieval_unit_id": "unit_dial_vice_director_01",
+      "parent_scene_id": "scene_0045",
+      "source_in": 305.96,
+      "source_out": 315,
+      "planned_duration": 9.04,
+      "audio_owner": "original_dialogue",
+      "narration_job": "none",
+      "narration_text": "",
+      "original_dialogue_text": "还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培",
+      "actual_transcript_in_interval": "还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培",
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ],
+      "scene_env": "保密局天津站站长办公室办公桌前",
+      "representative_frames": [
+        {
+          "filename": "topic_a_seg2_frame1.jpg",
+          "timestamp": 308,
+          "desc": "吴站长靠坐大班椅吞吐雪茄，敲打人选",
+          "relative_path": "frames/topic_a_seg2_frame1.jpg"
+        },
+        {
+          "filename": "topic_a_seg2_frame2.jpg",
+          "timestamp": 310.5,
+          "desc": "吴站长手指余则成，当面宣布'副站长就是你'高光瞬间",
+          "relative_path": "frames/topic_a_seg2_frame2.jpg"
+        },
+        {
+          "filename": "topic_a_seg2_frame3.jpg",
+          "timestamp": 313,
+          "desc": "余则成微微躬身拱手：'谢谢老师栽培'",
+          "relative_path": "frames/topic_a_seg2_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    },
+    {
+      "segment_id": "seg_wu_04",
+      "beat_id": "beat_wu_04_conclusion",
+      "requirement_id": "req_wu_04",
+      "purpose": "收束全片论点：吴站长拍肩‘同甘共苦’，只要能帮他敛财分红，看破不戳破才是保密局老狐狸的终极生存法则",
+      "retrieval_unit_id": "unit_dial_celebration_01",
+      "parent_scene_id": "scene_0070",
+      "source_in": 661,
+      "source_out": 675,
+      "planned_duration": 14,
+      "audio_owner": "narration",
+      "narration_job": "interpretation",
+      "narration_text": "在老周看来，吴敬中从不靠物理档案查余则成。只要能敛财分红，看破不戳破，这句“同甘共苦”才是老狐狸的终极驭人术。",
+      "original_dialogue_text": "余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦",
+      "actual_transcript_in_interval": "余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦",
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ],
+      "scene_env": "保密局天津站站长办公室办公桌前",
+      "representative_frames": [
+        {
+          "filename": "topic_a_seg3_frame1.jpg",
+          "timestamp": 670,
+          "desc": "吴站长起身走到余则成身旁亲切道喜",
+          "relative_path": "frames/topic_a_seg3_frame1.jpg"
+        },
+        {
+          "filename": "topic_a_seg3_frame2.jpg",
+          "timestamp": 674,
+          "desc": "吴站长拍打余则成肩膀：'余副站长恭喜呀，同甘共苦'",
+          "relative_path": "frames/topic_a_seg3_frame2.jpg"
+        },
+        {
+          "filename": "topic_a_seg3_frame3.jpg",
+          "timestamp": 678,
+          "desc": "师生两人相视而笑，展现利益捆绑的官场生存哲学",
+          "relative_path": "frames/topic_a_seg3_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    }
+  ]
+}

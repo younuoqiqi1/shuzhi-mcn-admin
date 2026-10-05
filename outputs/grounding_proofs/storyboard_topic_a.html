@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Topic A: 《吴站长什么时候开始怀疑余则成？》 - Grounding Storyboard</title>
+  <style>
+    :root {
+      --bg: #0b0d13;
+      --card-bg: #141721;
+      --card-border: #232838;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --green: #10b981;
+      --green-glow: rgba(16, 185, 129, 0.15);
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.5;
+      padding: 32px 48px;
+    }
+    header {
+      max-width: 1300px;
+      margin: 0 auto 36px auto;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-left h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .header-left p {
+      color: var(--text-muted);
+      font-size: 14px;
+      max-width: 780px;
+    }
+    .header-right {
+      text-align: right;
+    }
+    .overall-gate-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .segment-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .segment-header {
+      background: #191d2a;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .segment-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .seg-index {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--accent);
+      background: rgba(59, 130, 246, 0.12);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .segment-header h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .unit-id {
+      font-size: 13px;
+      color: var(--text-dim);
+      font-weight: 400;
+      font-family: monospace;
+    }
+    .timecode-badge {
+      font-family: monospace;
+      font-size: 13px;
+      color: #cbd5e1;
+      background: #11141c;
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid #2d3346;
+    }
+    .segment-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .meta-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      font-size: 13px;
+    }
+    .meta-col strong {
+      color: var(--text-dim);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meta-col p {
+      color: var(--text);
+    }
+    .audio-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .audio-box {
+      background: #10121a;
+      border: 1px solid #202432;
+      border-radius: 8px;
+      padding: 14px 18px;
+    }
+    .box-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .box-label .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4b5563;
+    }
+    .box-label .dot.active {
+      background: #10b981;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+    .box-text {
+      font-size: 14px;
+      color: #e2e8f0;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    .frames-container {
+      background: #0f1118;
+      border: 1px solid #1c202c;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .frames-header {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .frames-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .frame-card {
+      background: #161922;
+      border: 1px solid #252a38;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .frame-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+    .frame-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+      background: #000;
+    }
+    .frame-info {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .frame-time {
+      font-family: monospace;
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .frame-desc {
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+    .gate-verdict-box {
+      border-top: 1px solid #1e2230;
+      padding-top: 16px;
+    }
+    .gate-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .badge.pass {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+    .badge.fail {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>🎬 Topic A: 《吴站长什么时候开始怀疑余则成？》</h1>
+      <p>核心立意：吴站长对余则成的怀疑并非单点顿悟，而是在师生假面与官场利益权衡下的多次冷眼试探；看破不戳破才是老狐狸的终极驭人法则。</p>
+    </div>
+    <div class="header-right">
+      <div class="overall-gate-pill">● 5-DIMENSIONS GROUNDING: ALL PASS</div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#1</span>
+              <h3>seg_wu_01 <span class="unit-id">[unit_dial_promotion_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 647.28s - 661.00s (13.72s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>开场确立师生博弈基调，吴站长宣布延安大捷与晋升委任，看似满面春风，实则是老谋深算的驭人之术</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>保密局天津站站长办公室办公桌前 | 出镜人物: [吴敬中, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"今天值得庆祝 一为收复延安 二 则成晋升为中校副站长"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  老周旁白 (Narration - foreshadow):
+                </div>
+                <div class="box-text">"老周聊谍战。观众总问站长信不信余则成？看这场委座嘉奖，看似春风得意，实则是老狐狸的试探局。"</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_a_seg1_frame1.jpg" alt="吴站长手拿延安大捷嘉奖电文，满面春风" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">648.0s</span>
+                <span class="frame-desc">吴站长手拿延安大捷嘉奖电文，满面春风</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_a_seg1_frame2.jpg" alt="吴站长宣告'今天值得庆祝，一为收复延安'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">650.0s</span>
+                <span class="frame-desc">吴站长宣告'今天值得庆祝，一为收复延安'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_a_seg1_frame3.jpg" alt="余则成垂手立正聆听，神情谨慎恭顺" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">652.0s</span>
+                <span class="frame-desc">余则成垂手立正聆听，神情谨慎恭顺</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#2</span>
+              <h3>seg_wu_02 <span class="unit-id">[unit_dial_vice_director_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 305.96s - 315.00s (9.04s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>吴站长当面敲定副站长人选，手指余则成说出‘副站长就是你’，余则成躬身道谢</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>保密局天津站站长办公室办公桌前 | 出镜人物: [吴敬中, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  老周旁白 (Narration - none):
+                </div>
+                <div class="box-text">（本段原声独占，零旁白干扰）</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_a_seg2_frame1.jpg" alt="吴站长靠坐大班椅吞吐雪茄，敲打人选" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">308.0s</span>
+                <span class="frame-desc">吴站长靠坐大班椅吞吐雪茄，敲打人选</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_a_seg2_frame2.jpg" alt="吴站长手指余则成，当面宣布'副站长就是你'高光瞬间" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">310.5s</span>
+                <span class="frame-desc">吴站长手指余则成，当面宣布'副站长就是你'高光瞬间</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_a_seg2_frame3.jpg" alt="余则成微微躬身拱手：'谢谢老师栽培'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">313.0s</span>
+                <span class="frame-desc">余则成微微躬身拱手：'谢谢老师栽培'</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#3</span>
+              <h3>seg_wu_04 <span class="unit-id">[unit_dial_celebration_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 661.00s - 675.00s (14.00s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>收束全片论点：吴站长拍肩‘同甘共苦’，只要能帮他敛财分红，看破不戳破才是保密局老狐狸的终极生存法则</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>保密局天津站站长办公室办公桌前 | 出镜人物: [吴敬中, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  老周旁白 (Narration - interpretation):
+                </div>
+                <div class="box-text">"在老周看来，吴敬中从不靠物理档案查余则成。只要能敛财分红，看破不戳破，这句“同甘共苦”才是老狐狸的终极驭人术。"</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_a_seg3_frame1.jpg" alt="吴站长起身走到余则成身旁亲切道喜" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">670.0s</span>
+                <span class="frame-desc">吴站长起身走到余则成身旁亲切道喜</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_a_seg3_frame2.jpg" alt="吴站长拍打余则成肩膀：'余副站长恭喜呀，同甘共苦'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">674.0s</span>
+                <span class="frame-desc">吴站长拍打余则成肩膀：'余副站长恭喜呀，同甘共苦'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_a_seg3_frame3.jpg" alt="师生两人相视而笑，展现利益捆绑的官场生存哲学" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">678.0s</span>
+                <span class="frame-desc">师生两人相视而笑，展现利益捆绑的官场生存哲学</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+  </main>
+</body>
+</html>

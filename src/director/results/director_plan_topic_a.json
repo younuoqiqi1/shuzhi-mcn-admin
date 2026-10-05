@@ -2,7 +2,7 @@
   "director_plan_id": "plan_topic_qf18_wu_suspicion_v1",
   "topic_id": "topic_qf18_wu_suspicion",
   "blogger_id": "laozhou_zhuiju",
-  "target_duration": 39.44,
+  "target_duration": 36.76,
   "aspect_ratio": "16:9",
   "voice_config": {
     "provider": "aliyun_tts",
@@ -27,36 +27,37 @@
   },
   "duration_budget_summary": {
     "all_segments_fit": true,
-    "total_narration_chars": 122,
-    "total_estimated_tts_sec": 30.5,
-    "total_planned_sec": 39.44
+    "total_narration_chars": 99,
+    "total_estimated_tts_sec": 24.75,
+    "total_planned_sec": 36.76
   },
   "segments": [
     {
       "segment_id": "seg_wu_01",
       "beat_id": "beat_wu_01_hook",
       "requirement_id": "req_wu_01",
-      "purpose": "开场确立师生博弈基调，抛出吴站长究竟何时开始怀疑的核心悬念",
-      "selected_candidate_id": "cand_req_wu_01_unit_scene_0059_01_1",
-      "retrieval_unit_id": "unit_scene_0059_01",
-      "evidence_id": "qianfu_ep18_720p_25fps:scene_0059:unit_scene_0059_01",
-      "parent_scene_id": "scene_0059",
-      "source_in": 556.52,
-      "source_out": 573.24,
-      "planned_duration": 16.72,
-      "visual_reason": "站长办公室内两人近距离对坐，余则成垂手谨慎，吴站长目光深邃",
+      "purpose": "开场确立师生博弈基调，吴站长宣布延安大捷与晋升委任，看似满面春风，实则是老谋深算的驭人之术",
+      "selected_candidate_id": "cand_req_wu_01_unit_dial_promotion_01_1",
+      "retrieval_unit_id": "unit_dial_promotion_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0068:unit_dial_promotion_01",
+      "parent_scene_id": "scene_0068",
+      "source_in": 647.28,
+      "source_out": 661.0,
+      "planned_duration": 13.72,
+      "visual_reason": "站长办公室内吴敬中手拿嘉奖令春风得意，余则成垂手立正谨慎应对",
       "narration_job": "foreshadow",
       "audio_owner": "narration",
-      "narration_text": "老周聊谍战。许多观众问吴站长到底信不信余则成？第18集这句‘副站长就是你’，表面是提拔栽培，实则是站长布下的一场诛心大局。",
-      "original_dialogue_text": "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了",
+      "narration_text": "老周聊谍战。观众总问站长信不信余则成？看这场委座嘉奖，看似春风得意，实则是老狐狸的试探局。",
+      "original_dialogue_text": "今天值得庆祝 一为收复延安 二 则成晋升为中校副站长",
+      "actual_transcript_in_interval": "今天值得庆祝 一为收复延安 二 则成晋升为中校副站长",
       "audio_transition": "fade",
       "subtitle_mode": "bottom_standard",
       "evidence_boundary": {
         "visual_facts": [
-          "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+          "吴站长在站长办公室内神采飞扬，余则成恭敬立正聆听"
         ],
         "dialogue_facts": [
-          "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了"
+          "今天值得庆祝 一为收复延安 二 则成晋升为中校副站长"
         ],
         "characters": [
           "吴敬中",
@@ -64,8 +65,7 @@
         ],
         "scene_env": "保密局天津站站长办公室办公桌前",
         "allowed_l3_inferences": [
-          "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
-          "老周视角下的视听叙事推论与观点赋能"
+          "老周视角：师生名分是这两人的防弹衣。站长满面春风宣布提拔，实则是把官位当成试金石，冷眼旁观余则成的一举一动。"
         ],
         "strictly_forbidden_claims": [
           "站长确认余则成是共产党",
@@ -79,9 +79,9 @@
         "吴敬中",
         "余则成"
       ],
-      "narration_char_count": 61,
-      "estimated_tts_duration_sec": 15.25,
-      "available_narration_duration_sec": 16.22,
+      "narration_char_count": 46,
+      "estimated_tts_duration_sec": 11.5,
+      "available_narration_duration_sec": 13.22,
       "duration_fit": true,
       "duration_overflow_sec": 0
     },
@@ -89,27 +89,28 @@
       "segment_id": "seg_wu_02",
       "beat_id": "beat_wu_02_testing",
       "requirement_id": "req_wu_02",
-      "purpose": "展示吴站长抽雪茄敲山震虎的压迫感原声",
-      "selected_candidate_id": "cand_req_wu_02_unit_scene_0044_01_6",
-      "retrieval_unit_id": "unit_scene_0044_01",
-      "evidence_id": "qianfu_ep18_720p_25fps:scene_0044:unit_scene_0044_01",
-      "parent_scene_id": "scene_0044",
-      "source_in": 299.96,
-      "source_out": 305.96,
-      "planned_duration": 6,
-      "visual_reason": "吴站长靠坐大班椅吐烟圈，余则成立正聆听，气场完全碾压",
+      "purpose": "吴站长当面敲定副站长人选，手指余则成说出‘副站长就是你’，余则成躬身道谢",
+      "selected_candidate_id": "cand_req_wu_02_unit_dial_vice_director_01_2",
+      "retrieval_unit_id": "unit_dial_vice_director_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0045:unit_dial_vice_director_01",
+      "parent_scene_id": "scene_0045",
+      "source_in": 305.96,
+      "source_out": 315.0,
+      "planned_duration": 9.04,
+      "visual_reason": "吴站长手指余则成敲定人选，余则成垂手谨慎应答，视线交锋极具压迫感",
       "narration_job": "none",
       "audio_owner": "original_dialogue",
       "narration_text": "",
-      "original_dialogue_text": "你来当这个副站长 不合适吧 还是跟李队长商量商量",
+      "original_dialogue_text": "还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培",
+      "actual_transcript_in_interval": "还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培",
       "audio_transition": "hard_cut",
       "subtitle_mode": "dialogue_highlight",
       "evidence_boundary": {
         "visual_facts": [
-          "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+          "吴站长靠坐在办公椅上手指余则成，余则成微躬身致谢"
         ],
         "dialogue_facts": [
-          "你来当这个副站长 不合适吧 还是跟李队长商量商量"
+          "还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培"
         ],
         "characters": [
           "吴敬中",
@@ -117,8 +118,7 @@
         ],
         "scene_env": "保密局天津站站长办公室办公桌前",
         "allowed_l3_inferences": [
-          "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
-          "老周视角下的视听叙事推论与观点赋能"
+          "老周视角：这一幕是全剧职场试探的经典范本。吴站长当面敲定‘副站长就是你’，余则成表面恭顺，内心早已命悬一线。"
         ],
         "strictly_forbidden_claims": [
           "站长确认余则成是共产党",
@@ -142,27 +142,28 @@
       "segment_id": "seg_wu_04",
       "beat_id": "beat_wu_04_conclusion",
       "requirement_id": "req_wu_04",
-      "purpose": "收束全片论点：吴站长从不依赖物理卷宗，看穿不戳穿、留有余地才是老狐狸的真正驭人之道",
-      "selected_candidate_id": "cand_req_wu_04_unit_scene_0059_01_1",
-      "retrieval_unit_id": "unit_scene_0059_01",
-      "evidence_id": "qianfu_ep18_720p_25fps:scene_0059:unit_scene_0059_01",
-      "parent_scene_id": "scene_0059",
-      "source_in": 556.52,
-      "source_out": 573.24,
-      "planned_duration": 16.72,
-      "visual_reason": "站长室内两人机密谈话，谈及李涯与暗流，生动诠释保密局利益至上的潜规则",
+      "purpose": "收束全片论点：吴站长拍肩‘同甘共苦’，只要能帮他敛财分红，看破不戳破才是保密局老狐狸的终极生存法则",
+      "selected_candidate_id": "cand_req_wu_04_unit_dial_celebration_01_1",
+      "retrieval_unit_id": "unit_dial_celebration_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0070:unit_dial_celebration_01",
+      "parent_scene_id": "scene_0070",
+      "source_in": 661.0,
+      "source_out": 675.0,
+      "planned_duration": 14.0,
+      "visual_reason": "吴站长满面堆笑亲切拍打余则成肩膀，余则成微笑回应，演绎保密局师生利益共同体",
       "narration_job": "interpretation",
       "audio_owner": "narration",
-      "narration_text": "在老周看来，吴敬中从不依赖物理卷宗去查余则成。只要你能帮我搞金佛、捞美钞，看破不戳破，才是这位保密局老狐狸的终极生存法则。",
-      "original_dialogue_text": "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了",
+      "narration_text": "在老周看来，吴敬中从不靠物理档案查余则成。只要能敛财分红，看破不戳破，这句“同甘共苦”才是老狐狸的终极驭人术。",
+      "original_dialogue_text": "余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦",
+      "actual_transcript_in_interval": "余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦",
       "audio_transition": "duck",
       "subtitle_mode": "bottom_standard",
       "evidence_boundary": {
         "visual_facts": [
-          "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+          "吴站长手拍余则成肩膀相视而笑"
         ],
         "dialogue_facts": [
-          "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了"
+          "余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦"
         ],
         "characters": [
           "吴敬中",
@@ -170,8 +171,7 @@
         ],
         "scene_env": "保密局天津站站长办公室办公桌前",
         "allowed_l3_inferences": [
-          "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
-          "老周视角下的视听叙事推论与观点赋能"
+          "老周视角：师生名分是这两人的防弹衣。只要余则成能搞金佛、捞美钞，看破不戳破才是老狐狸的生存法则。"
         ],
         "strictly_forbidden_claims": [
           "站长确认余则成是共产党",
@@ -185,9 +185,9 @@
         "吴敬中",
         "余则成"
       ],
-      "narration_char_count": 61,
-      "estimated_tts_duration_sec": 15.25,
-      "available_narration_duration_sec": 16.22,
+      "narration_char_count": 53,
+      "estimated_tts_duration_sec": 13.25,
+      "available_narration_duration_sec": 13.5,
       "duration_fit": true,
       "duration_overflow_sec": 0
     }

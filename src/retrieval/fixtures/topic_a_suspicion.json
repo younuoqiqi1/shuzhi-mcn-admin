@@ -92,11 +92,11 @@
       "order_index": 4,
       "description": "寻找站长特写镜头或两人意味深长的沉默收尾，烘托老谋深算氛围",
       "desired_characters": ["吴敬中", "余则成"],
-      "desired_action": "点燃雪茄吐烟雾，静默沉思，或余则成深夜脱风衣归家",
+      "desired_action": "吴站长拍余则成肩膀意味深长道喜同甘共苦，或点燃雪茄静默沉思",
       "desired_emotion": "深沉克制与心照不宣",
       "desired_scene_env": "站长办公室或余则成寓所",
-      "target_affordances": ["audio_silence", "power_dynamic"],
-      "evidence_grounding_criteria": "镜头有明显静默或特写运镜，光线偏暗"
+      "target_affordances": ["power_dynamic", "suspicion_testing"],
+      "evidence_grounding_criteria": "镜头有明显拍肩或特写运镜，包含恭喜、多多关照或同甘共苦的意味深长收尾"
     }
   ]
 }

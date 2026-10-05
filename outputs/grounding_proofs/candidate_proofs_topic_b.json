@@ -1,0 +1,280 @@
+{
+  "plan_id": "plan_topic_qf18_dangerous_probe_v1",
+  "topic_id": "topic_qf18_dangerous_probe",
+  "target_duration": 35.6,
+  "generated_at": "2026-10-05T07:54:00.177Z",
+  "segments": [
+    {
+      "segment_id": "seg_probe_01",
+      "beat_id": "beat_probe_01_hook",
+      "requirement_id": "req_probe_01",
+      "purpose": "开场交代东来顺致命饭局，抛出余则成身份悬疑危局",
+      "retrieval_unit_id": "unit_scene_0138_01",
+      "parent_scene_id": "scene_0138",
+      "source_in": 1948.28,
+      "source_out": 1956.56,
+      "planned_duration": 8.28,
+      "audio_owner": "narration",
+      "narration_job": "context",
+      "narration_text": "老周重看第18集：余则成最大的危机，正是这顿东来顺涮肉。",
+      "original_dialogue_text": "我余则成辛辛苦苦熬到今天容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+      "actual_transcript_in_interval": "我余则成辛辛苦苦熬到今天容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+      "characters": [
+        "谢若林",
+        "余则成"
+      ],
+      "scene_env": "东来顺涮肉馆雅间餐桌",
+      "representative_frames": [
+        {
+          "filename": "topic_b_seg1_frame1.jpg",
+          "timestamp": 1950,
+          "desc": "东来顺雅间铜锅热气弥漫，余则成怒目相视",
+          "relative_path": "frames/topic_b_seg1_frame1.jpg"
+        },
+        {
+          "filename": "topic_b_seg1_frame2.jpg",
+          "timestamp": 1952.5,
+          "desc": "余则成激愤控诉：'我余则成辛辛苦苦熬到今天容易吗'",
+          "relative_path": "frames/topic_b_seg1_frame2.jpg"
+        },
+        {
+          "filename": "topic_b_seg1_frame3.jpg",
+          "timestamp": 1955,
+          "desc": "控诉谢若林：'就凭你几张垃圾情报，把我一辈子全毁了'",
+          "relative_path": "frames/topic_b_seg1_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    },
+    {
+      "segment_id": "seg_probe_02",
+      "beat_id": "beat_probe_02_revelation",
+      "requirement_id": "req_probe_02",
+      "purpose": "原声呈现谢若林开出两根金条绝密情报买卖，身份危机达到顶点",
+      "retrieval_unit_id": "unit_dial_gold_bars_01",
+      "parent_scene_id": "scene_0148",
+      "source_in": 2015,
+      "source_out": 2023.2,
+      "planned_duration": 8.2,
+      "audio_owner": "original_dialogue",
+      "narration_job": "none",
+      "narration_text": "",
+      "original_dialogue_text": "个师呀才两根金条 人家这买卖多会做呀",
+      "actual_transcript_in_interval": "个师呀才两根金条 人家这买卖多会做呀",
+      "characters": [
+        "谢若林",
+        "余则成"
+      ],
+      "scene_env": "东来顺涮肉馆雅间餐桌",
+      "representative_frames": [
+        {
+          "filename": "topic_b_seg2_frame1.jpg",
+          "timestamp": 2017,
+          "desc": "谢若林歪头冷笑，在热气腾腾铜锅前算计买卖",
+          "relative_path": "frames/topic_b_seg2_frame1.jpg"
+        },
+        {
+          "filename": "topic_b_seg2_frame2.jpg",
+          "timestamp": 2019.5,
+          "desc": "谢若林开口高光：'一个师呀才两根金条'",
+          "relative_path": "frames/topic_b_seg2_frame2.jpg"
+        },
+        {
+          "filename": "topic_b_seg2_frame3.jpg",
+          "timestamp": 2022,
+          "desc": "谢若林洋洋自得：'人家这买卖多会做呀'，余则成冷峻倾听",
+          "relative_path": "frames/topic_b_seg2_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    },
+    {
+      "segment_id": "seg_probe_03",
+      "beat_id": "beat_probe_03_counterattack",
+      "requirement_id": "req_probe_03",
+      "purpose": "展现余则成义正词严反客为主，化被动为主动",
+      "retrieval_unit_id": "unit_scene_0150_01",
+      "parent_scene_id": "scene_0150",
+      "source_in": 2023.2,
+      "source_out": 2032.28,
+      "planned_duration": 9.08,
+      "audio_owner": "narration",
+      "narration_job": "interpretation",
+      "narration_text": "在老周看来，余则成顺着对方贪婪，把政治信仰降维成一门两根金条的生意。",
+      "original_dialogue_text": "这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊 我建议你啊不要插手",
+      "actual_transcript_in_interval": "这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊 我建议你啊不要插手",
+      "characters": [
+        "谢若林",
+        "余则成"
+      ],
+      "scene_env": "东来顺涮肉馆雅间餐桌",
+      "representative_frames": [
+        {
+          "filename": "topic_b_seg3_frame1.jpg",
+          "timestamp": 2025,
+          "desc": "余则成正色反击：'这情况我必须得向上面汇报'",
+          "relative_path": "frames/topic_b_seg3_frame1.jpg"
+        },
+        {
+          "filename": "topic_b_seg3_frame2.jpg",
+          "timestamp": 2028,
+          "desc": "余则成义正词严斥责：'这种买卖误党误国成何体统'",
+          "relative_path": "frames/topic_b_seg3_frame2.jpg"
+        },
+        {
+          "filename": "topic_b_seg3_frame3.jpg",
+          "timestamp": 2031,
+          "desc": "余则成严肃警告谢若林莫要插手，摸底对方贪财底线",
+          "relative_path": "frames/topic_b_seg3_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    },
+    {
+      "segment_id": "seg_probe_04",
+      "beat_id": "beat_probe_04_evacuation",
+      "requirement_id": "req_probe_03",
+      "purpose": "破局收尾，余则成安然脱身告辞离去",
+      "retrieval_unit_id": "unit_scene_0160_01",
+      "parent_scene_id": "scene_0160",
+      "source_in": 2079.96,
+      "source_out": 2090,
+      "planned_duration": 10.04,
+      "audio_owner": "narration",
+      "narration_job": "transition",
+      "narration_text": "老周总结：两根金条不仅化解了灭顶危机，更让余则成在贪婪黑市中安然脱身。",
+      "original_dialogue_text": "老谢呀 咱们俩还是少接触吧 咱们俩不是一类人 谢谢你的羊肉 我得回去了",
+      "actual_transcript_in_interval": "老谢呀 咱们俩还是少接触吧 咱们俩不是一类人 谢谢你的羊肉 我得回去了",
+      "characters": [
+        "谢若林",
+        "余则成"
+      ],
+      "scene_env": "东来顺涮肉馆雅间餐桌",
+      "representative_frames": [
+        {
+          "filename": "topic_b_seg4_frame1.jpg",
+          "timestamp": 2082,
+          "desc": "余则成放下筷子：'老谢呀，咱们俩还是少接触吧'",
+          "relative_path": "frames/topic_b_seg4_frame1.jpg"
+        },
+        {
+          "filename": "topic_b_seg4_frame2.jpg",
+          "timestamp": 2085,
+          "desc": "余则成起身告辞：'谢谢你的羊肉，我得回去了'",
+          "relative_path": "frames/topic_b_seg4_frame2.jpg"
+        },
+        {
+          "filename": "topic_b_seg4_frame3.jpg",
+          "timestamp": 2088,
+          "desc": "余则成推门离去，谢若林在后算计冷笑，破局全身而退",
+          "relative_path": "frames/topic_b_seg4_frame3.jpg"
+        }
+      ],
+      "grounding_gate": {
+        "pass": true,
+        "dimensions": {
+          "temporal": {
+            "pass": true,
+            "reason": "时码区间合法且对齐"
+          },
+          "dialogue": {
+            "pass": true,
+            "reason": "对白对齐与原声完整性验证通过"
+          },
+          "visual": {
+            "pass": true,
+            "reason": "视觉人物与物理场景真实吻合"
+          },
+          "semantic": {
+            "pass": true,
+            "level": 5,
+            "reason": "Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意"
+          },
+          "editorial": {
+            "pass": true,
+            "reason": "叙事功能清晰且镜头无重复"
+          }
+        },
+        "failed_dimensions": []
+      }
+    }
+  ]
+}

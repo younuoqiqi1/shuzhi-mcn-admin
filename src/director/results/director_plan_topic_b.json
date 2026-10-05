@@ -2,7 +2,7 @@
   "director_plan_id": "plan_topic_qf18_dangerous_probe_v1",
   "topic_id": "topic_qf18_dangerous_probe",
   "blogger_id": "laozhou_zhuiju",
-  "target_duration": 40.4,
+  "target_duration": 35.6,
   "aspect_ratio": "16:9",
   "voice_config": {
     "provider": "aliyun_tts",
@@ -12,65 +12,58 @@
     "estimated_chars_per_second": 4
   },
   "director_resolution_summary": {
-    "insufficient_evidence_count": 0,
-    "resolutions": []
+    "insufficient_evidence_count": 1,
+    "resolutions": [
+      {
+        "requirement_id": "req_probe_04",
+        "beat_id": "beat_probe_04_evacuation",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "resolution_action": "merge",
+        "merged_into_beat_id": "beat_probe_03_counterattack",
+        "production_segment_created": false,
+        "rationale": "第18集全片无暗夜火车站台，将破局脱身立意自然合并入余则成东来顺反制退场（req_probe_03），不为req_probe_04创建虚假生产Segment。"
+      }
+    ]
   },
   "duration_budget_summary": {
     "all_segments_fit": true,
-    "total_narration_chars": 92,
-    "total_estimated_tts_sec": 23,
-    "total_planned_sec": 40.4
+    "total_narration_chars": 96,
+    "total_estimated_tts_sec": 24.0,
+    "total_planned_sec": 35.6
   },
   "segments": [
     {
       "segment_id": "seg_probe_01",
       "beat_id": "beat_probe_01_hook",
       "requirement_id": "req_probe_01",
-      "purpose": "开场交代涮肉馆致命饭局，老周旁白抛出全剧最凶险试探悬念",
-      "selected_candidate_id": "cand_req_probe_01_unit_scene_0138_01_1",
+      "purpose": "开场交代东来顺致命饭局，抛出余则成身份悬疑危局",
+      "selected_candidate_id": "cand_req_probe_01_unit_scene_0138_01",
       "retrieval_unit_id": "unit_scene_0138_01",
       "evidence_id": "qianfu_ep18_720p_25fps:scene_0138:unit_scene_0138_01",
       "parent_scene_id": "scene_0138",
       "source_in": 1948.28,
       "source_out": 1956.56,
       "planned_duration": 8.28,
-      "visual_reason": "东来顺包厢热气腾腾铜锅前，谢若林歪头打量，余则成冷笑警惕，张力拉满",
+      "visual_reason": "东来顺包厢热气腾腾铜锅前，余则成激愤控诉，张力拉满",
       "narration_job": "context",
       "audio_owner": "narration",
       "narration_text": "老周重看第18集：余则成最大的危机，正是这顿东来顺涮肉。",
-      "original_dialogue_text": "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了",
+      "original_dialogue_text": "我余则成辛辛苦苦熬到今天容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
+      "actual_transcript_in_interval": "我余则成辛辛苦苦熬到今天容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了",
       "audio_transition": "fade",
       "subtitle_mode": "bottom_standard",
       "evidence_boundary": {
-        "visual_facts": [
-          "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
-        ],
-        "dialogue_facts": [
-          "我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情报 就把我这 辈子全毁了"
-        ],
-        "characters": [
-          "谢若林",
-          "余则成"
-        ],
+        "visual_facts": ["东来顺雅间餐桌铜锅热气腾腾，余则成神情激愤"],
+        "dialogue_facts": ["我余则成辛辛苦苦熬到今天容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了"],
+        "characters": ["谢若林", "余则成"],
         "scene_env": "东来顺涮肉馆雅间餐桌",
-        "allowed_l3_inferences": [
-          "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
-          "老周视角下的视听叙事推论与观点赋能"
-        ],
-        "strictly_forbidden_claims": [
-          "站长确认余则成是共产党",
-          "余则成在档案室排查照片",
-          "余则成在机要档案室",
-          "李涯当面搜捕余则成"
-        ]
+        "allowed_l3_inferences": ["老周视角：饭局不是请客吃饭，而是不见硝烟的生死博弈。"],
+        "strictly_forbidden_claims": ["站长确认余则成是共产党", "暗夜火车站台送别"]
       },
       "risk_flags": [],
-      "characters": [
-        "谢若林",
-        "余则成"
-      ],
+      "characters": ["谢若林", "余则成"],
       "narration_char_count": 28,
-      "estimated_tts_duration_sec": 7,
+      "estimated_tts_duration_sec": 7.0,
       "available_narration_duration_sec": 7.78,
       "duration_fit": true,
       "duration_overflow_sec": 0
@@ -79,49 +72,32 @@
       "segment_id": "seg_probe_02",
       "beat_id": "beat_probe_02_revelation",
       "requirement_id": "req_probe_02",
-      "purpose": "呈现谢若林拿出底牌摊牌的巅峰原声，余则成身份面临灭顶危局",
-      "selected_candidate_id": "cand_req_probe_02_unit_scene_0139_01_12",
-      "retrieval_unit_id": "unit_scene_0139_01",
-      "evidence_id": "qianfu_ep18_720p_25fps:scene_0139:unit_scene_0139_01",
-      "parent_scene_id": "scene_0139",
-      "source_in": 1956.56,
-      "source_out": 1969.76,
-      "planned_duration": 13.2,
-      "visual_reason": "谢若林冷笑开口吐烟圈，余则成眼神凝固，对白具有不可替代的压迫感",
+      "purpose": "原声呈现谢若林开出两根金条绝密情报买卖，身份危机达到顶点",
+      "selected_candidate_id": "cand_req_probe_02_unit_dial_gold_bars_01",
+      "retrieval_unit_id": "unit_dial_gold_bars_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0148:unit_dial_gold_bars_01",
+      "parent_scene_id": "scene_0148",
+      "source_in": 2015.0,
+      "source_out": 2023.2,
+      "planned_duration": 8.2,
+      "visual_reason": "东来顺涮肉雅间内，谢若林晃头算计大谈一个师才两根金条，余则成冷峻倾听",
       "narration_job": "none",
       "audio_owner": "original_dialogue",
       "narration_text": "",
-      "original_dialogue_text": "这第一呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢",
+      "original_dialogue_text": "个师呀才两根金条 人家这买卖多会做呀",
+      "actual_transcript_in_interval": "个师呀才两根金条 人家这买卖多会做呀",
       "audio_transition": "hard_cut",
       "subtitle_mode": "dialogue_highlight",
       "evidence_boundary": {
-        "visual_facts": [
-          "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
-        ],
-        "dialogue_facts": [
-          "这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢"
-        ],
-        "characters": [
-          "谢若林",
-          "余则成"
-        ],
+        "visual_facts": ["谢若林大谈金条买卖，余则成冷眼旁观"],
+        "dialogue_facts": ["个师呀才两根金条 人家这买卖多会做呀"],
+        "characters": ["谢若林", "余则成"],
         "scene_env": "东来顺涮肉馆雅间餐桌",
-        "allowed_l3_inferences": [
-          "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
-          "老周视角下的视听叙事推论与观点赋能"
-        ],
-        "strictly_forbidden_claims": [
-          "站长确认余则成是共产党",
-          "余则成在档案室排查照片",
-          "余则成在机要档案室",
-          "李涯当面搜捕余则成"
-        ]
+        "allowed_l3_inferences": ["老周视角：谢若林将战争降维为买卖，彻底暴露贪婪本质。"],
+        "strictly_forbidden_claims": ["站长确认余则成是共产党"]
       },
       "risk_flags": [],
-      "characters": [
-        "谢若林",
-        "余则成"
-      ],
+      "characters": ["谢若林", "余则成"],
       "narration_char_count": 0,
       "estimated_tts_duration_sec": 0,
       "available_narration_duration_sec": 0,
@@ -132,107 +108,71 @@
       "segment_id": "seg_probe_03",
       "beat_id": "beat_probe_03_counterattack",
       "requirement_id": "req_probe_03",
-      "purpose": "解析余则成如何把灭顶之灾变成生意同盟，反客为主瓦解试探",
-      "selected_candidate_id": "cand_req_probe_03_unit_scene_0147_01_4",
-      "retrieval_unit_id": "unit_scene_0147_01",
-      "evidence_id": "qianfu_ep18_720p_25fps:scene_0147:unit_scene_0147_01",
-      "parent_scene_id": "scene_0147",
-      "source_in": 2005.44,
-      "source_out": 2015,
-      "planned_duration": 9.56,
-      "visual_reason": "谈及金钱与共党买情报，谢若林算计神情与余则成的商人伪装形成共振",
+      "purpose": "展现余则成义正词严反客为主，化被动为主动",
+      "selected_candidate_id": "cand_req_probe_03_unit_scene_0150_01",
+      "retrieval_unit_id": "unit_scene_0150_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0150:unit_scene_0150_01",
+      "parent_scene_id": "scene_0150",
+      "source_in": 2023.2,
+      "source_out": 2032.28,
+      "planned_duration": 9.08,
+      "visual_reason": "余则成严肃警告谢若林误党误国成何体统，义正词严反客为主",
       "narration_job": "interpretation",
       "audio_owner": "narration",
-      "narration_text": "在老周看来，余则成顺着对方的贪婪，把政治信仰降维成一门两根金条的生意。",
-      "original_dialogue_text": "这不明摆着呢吗 买走情报那是共党 就等于封锁消息了",
+      "narration_text": "在老周看来，余则成顺着对方贪婪，把政治信仰降维成一门两根金条的生意。",
+      "original_dialogue_text": "这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊 我建议你啊不要插手",
+      "actual_transcript_in_interval": "这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊 我建议你啊不要插手",
       "audio_transition": "duck",
       "subtitle_mode": "bottom_standard",
       "evidence_boundary": {
-        "visual_facts": [
-          "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
-        ],
-        "dialogue_facts": [
-          "这不明摆着呢吗 买走情报那是共党 就等于封锁消息了"
-        ],
-        "characters": [
-          "谢若林",
-          "余则成"
-        ],
+        "visual_facts": ["余则成义正词严警告谢若林，谢若林冷笑"],
+        "dialogue_facts": ["这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊"],
+        "characters": ["谢若林", "余则成"],
         "scene_env": "东来顺涮肉馆雅间餐桌",
-        "allowed_l3_inferences": [
-          "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。",
-          "老周视角下的视听叙事推论与观点赋能"
-        ],
-        "strictly_forbidden_claims": [
-          "站长确认余则成是共产党",
-          "余则成在档案室排查照片",
-          "余则成在机要档案室",
-          "李涯当面搜捕余则成"
-        ]
+        "allowed_l3_inferences": ["老周视角：义正词严反将一军，摸透了谢若林的贪财底线。"],
+        "strictly_forbidden_claims": ["站长确认余则成是共产党"]
       },
       "risk_flags": [],
-      "characters": [
-        "谢若林",
-        "余则成"
-      ],
-      "narration_char_count": 35,
-      "estimated_tts_duration_sec": 8.75,
-      "available_narration_duration_sec": 9.06,
+      "characters": ["谢若林", "余则成"],
+      "narration_char_count": 34,
+      "estimated_tts_duration_sec": 8.5,
+      "available_narration_duration_sec": 8.58,
       "duration_fit": true,
       "duration_overflow_sec": 0
     },
     {
       "segment_id": "seg_probe_04",
       "beat_id": "beat_probe_04_evacuation",
-      "requirement_id": "req_probe_04",
-      "purpose": "破局后安全送别晚秋登上列车，老周给出高维生存法则总结",
-      "selected_candidate_id": "cand_req_probe_04_unit_scene_0193_01_2",
-      "retrieval_unit_id": "unit_scene_0193_01",
-      "evidence_id": "qianfu_ep18_720p_25fps:scene_0193:unit_scene_0193_01",
-      "parent_scene_id": "scene_0193",
-      "source_in": 2442,
-      "source_out": 2451.36,
-      "planned_duration": 9.36,
-      "visual_reason": "站台列车前夜色深沉，余则成翠平送别晚秋，暗夜破局意境深远",
+      "requirement_id": "req_probe_03",
+      "purpose": "破局收尾，余则成安然脱身告辞离去",
+      "selected_candidate_id": "cand_req_probe_04_unit_scene_0160_01",
+      "retrieval_unit_id": "unit_scene_0160_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0160:unit_scene_0160_01",
+      "parent_scene_id": "scene_0160",
+      "source_in": 2079.96,
+      "source_out": 2090.0,
+      "planned_duration": 10.04,
+      "visual_reason": "铜锅热气腾腾雅间内，余则成起身告别少接触，谢若林在后算计冷笑",
       "narration_job": "transition",
       "audio_owner": "narration",
-      "narration_text": "老周总结：两根金条化解了灭顶危机，更为暗夜撤离赢得了生机。",
-      "original_dialogue_text": "梅姐我给你介绍 下 这是我们街坊晚秋",
+      "narration_text": "老周总结：两根金条不仅化解了灭顶危机，更让余则成在贪婪黑市中安然脱身。",
+      "original_dialogue_text": "老谢呀 咱们俩还是少接触吧 咱们俩不是一类人 谢谢你的羊肉 我得回去了",
+      "actual_transcript_in_interval": "老谢呀 咱们俩还是少接触吧 咱们俩不是一类人 谢谢你的羊肉 我得回去了",
       "audio_transition": "L_cut",
       "subtitle_mode": "bottom_standard",
       "evidence_boundary": {
-        "visual_facts": [
-          "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
-        ],
-        "dialogue_facts": [
-          "梅姐我给你介绍 下 这是我们街坊晚秋"
-        ],
-        "characters": [
-          "穆晚秋",
-          "余则成",
-          "翠平"
-        ],
-        "scene_env": "天津街头及火车站站台",
-        "allowed_l3_inferences": [
-          "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。",
-          "老周视角下的视听叙事推论与观点赋能"
-        ],
-        "strictly_forbidden_claims": [
-          "站长确认余则成是共产党",
-          "余则成在档案室排查照片",
-          "余则成在机要档案室",
-          "李涯当面搜捕余则成"
-        ]
+        "visual_facts": ["余则成起身告别离开东来顺，谢若林自顾吃肉"],
+        "dialogue_facts": ["老谢呀 咱们俩还是少接触吧 咱们俩不是一类人 谢谢你的羊肉 我得回去了"],
+        "characters": ["谢若林", "余则成"],
+        "scene_env": "东来顺涮肉馆雅间餐桌",
+        "allowed_l3_inferences": ["老周视角：利用贪婪瓦解死局，全身而退。"],
+        "strictly_forbidden_claims": ["站长确认余则成是共产党"]
       },
       "risk_flags": [],
-      "characters": [
-        "穆晚秋",
-        "余则成",
-        "翠平"
-      ],
-      "narration_char_count": 29,
-      "estimated_tts_duration_sec": 7.25,
-      "available_narration_duration_sec": 8.86,
+      "characters": ["谢若林", "余则成"],
+      "narration_char_count": 34,
+      "estimated_tts_duration_sec": 8.5,
+      "available_narration_duration_sec": 9.54,
       "duration_fit": true,
       "duration_overflow_sec": 0
     }

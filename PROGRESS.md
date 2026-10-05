@@ -2,8 +2,8 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A8: MCN 后台 → 真实生产链 → MP4**  
-当前状态：`A8 changes_requested_root_cause_audit` (用户亲自观看 topic_b_final.mp4 和 topic_a_final.mp4 后判定成片不通过；核心问题为 Content Grounding 失败：原声台词脱节、旁白与画面严重无关、出现重复镜头；严格停止 A9，不修改成片，不重新生产 MP4，全面完成全链路根因审计并交付《A8 成片失败根本原因深度审计报告》)  
+当前阶段：**POC-AGENT A8.1: Production Grounding Remediation**  
+当前状态：`A8.1 awaiting_human_storyboard_review` (完成 L1 假 Evidence 清理、Dialogue Span 连续对白单元扩展、五维全息门禁、Director 镜头排重、VMV 假台词剔除与 21 张真实代表帧提取；生成独立交互式 Storyboard HTML 页面；113 项测试 100% 通过；严禁进入 A9，严禁提前生成 MP4，等待用户人眼视听验收)  
 执行责任：🏛️ 全栈架构师 & 💻 前端与交互专家 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
 
 ---
@@ -13,9 +13,10 @@
 | 门禁名称 | 阶段点 | 当前状态 | 准入/通过标准 |
 |:---|:---:|:---:|:---|
 | **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
-| **Retrieval Top3 实测 Gate** | A6 结束点 | ⚠️ **需重新审定 (Defective Baseline)** | 历史 87.5% Gate 被证明因仅阅读被污染的文本元数据而虚假通过，已重新定义五维 Production-Grade Grounding Gate。 |
-| **Director Final Review Gate** | A7 结束点 | ⚠️ **需重新审定 (Defective Baseline)** | A7 决策建立在被污染的 L1 Evidence 上，且缺乏镜头去重与台词覆盖率校验。 |
-| **A8 Human Video Review Gate** | A8 结束点 | ❌ **FAIL / changes_requested** (2026-10-05) | 用户亲自播放检视两条真实生成的成片 MP4，判定 Content Grounding 失败，执行 Root Cause Audit。 |
+| **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已重构并重新对齐** | 真实消费细颗粒度检索单元，双真实选题 8 个需求重新完成视角重读与证据边界锁定 |
+| **Director Final Review Gate** | A7 结束点 | ✅ **已重构并重新对齐** | 建立在真实纯净 L1 Evidence 上，全面引入镜头去重强拦截与时长预算系统 |
+| **Production Grounding Gate (五维门禁)** | A8.1 节点 | 🚪 **awaiting_human_review** | Temporal, Dialogue, Visual, Semantic >= L4, Editorial 全部通过自动化验证；正等待用户通过 Storyboard 进行人眼视听验收 |
+| **A8 Human Video Review Gate** | A8 结束点 | ⏳ **等待 A8.1 验收后解锁** | 用户亲自检视成片前，必须先在 Storyboard 阶段 100% 确认真实抽帧与台词对齐 |
 
 ---
 

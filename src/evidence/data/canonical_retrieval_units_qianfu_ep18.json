@@ -21,16 +21,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0001",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         13
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -57,9 +57,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0002",
       "analysis_granularity": "segment_inherited",
@@ -93,9 +93,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0003",
       "analysis_granularity": "segment_inherited",
@@ -129,16 +129,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0004",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         104
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -165,9 +165,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0005",
       "analysis_granularity": "segment_inherited",
@@ -201,9 +201,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0006",
       "analysis_granularity": "segment_inherited",
@@ -237,16 +237,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0007",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         171
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -273,9 +273,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0008",
       "analysis_granularity": "segment_inherited",
@@ -309,16 +309,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0009",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         313
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -345,16 +345,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0010",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         464
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -381,9 +381,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0011",
       "analysis_granularity": "segment_inherited",
@@ -417,9 +417,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0012",
       "analysis_granularity": "segment_inherited",
@@ -453,16 +453,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0013",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         668
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -489,16 +489,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0014",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         793
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -525,16 +525,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0015",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         968
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -561,16 +561,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0016",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1114
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -597,9 +597,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0017",
       "analysis_granularity": "segment_inherited",
@@ -633,9 +633,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0018",
       "analysis_granularity": "segment_inherited",
@@ -669,16 +669,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0019",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1281
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -705,9 +705,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0020",
       "analysis_granularity": "segment_inherited",
@@ -741,9 +741,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0021",
       "analysis_granularity": "segment_inherited",
@@ -777,16 +777,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0022",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1400
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -813,9 +813,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0023",
       "analysis_granularity": "segment_inherited",
@@ -849,9 +849,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0024",
       "analysis_granularity": "segment_inherited",
@@ -885,16 +885,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0025",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1480
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -921,9 +921,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0026",
       "analysis_granularity": "segment_inherited",
@@ -957,9 +957,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0027",
       "analysis_granularity": "segment_inherited",
@@ -993,16 +993,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0028",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1652
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -1029,16 +1029,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0029",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1733
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -1065,9 +1065,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为over_shoulder，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0030",
       "analysis_granularity": "segment_inherited",
@@ -1101,16 +1101,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0031",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         1840
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -1137,9 +1137,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0032",
       "analysis_granularity": "segment_inherited",
@@ -1173,16 +1173,16 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0033",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         2101
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -1209,9 +1209,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0034",
       "analysis_granularity": "segment_inherited",
@@ -1245,9 +1245,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0034",
       "analysis_granularity": "segment_inherited",
@@ -1281,9 +1281,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0034",
       "analysis_granularity": "segment_inherited",
@@ -1317,9 +1317,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0034",
       "analysis_granularity": "segment_inherited",
@@ -1353,9 +1353,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“陆桥山这回可能够戗了 会杀他吗 保密局家规很严 特别是对这种吃里爬外的人 那李涯”",
     "provenance": {
       "parent_scene_id": "scene_0034",
       "analysis_granularity": "independent_keyframe",
@@ -1389,9 +1389,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“老陆打电话回来说 他回不来了 他让我来找你 你帮帮他 嫂子 你别着急 你慢慢说 ”",
     "provenance": {
       "parent_scene_id": "scene_0035",
       "analysis_granularity": "independent_keyframe",
@@ -1425,9 +1425,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“你跟站长太太说得上话 你也帮帮他呀 我们感恩戴德 别嫂子你别这样 你快起来 你快”",
     "provenance": {
       "parent_scene_id": "scene_0036",
       "analysis_granularity": "independent_keyframe",
@@ -1461,9 +1461,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“您消消气 别生气了气坏了身子 我是这么想的 站长 陆桥山出现了这样的问题 只能算”",
     "provenance": {
       "parent_scene_id": "scene_0036",
       "analysis_granularity": "independent_keyframe",
@@ -1497,9 +1497,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“只能算是不忠于保密局 但他对党国还是很忠诚的 毕竟他没有把消息泄露给中共嘛 警备”",
     "provenance": {
       "parent_scene_id": "scene_0036",
       "analysis_granularity": "independent_keyframe",
@@ -1533,9 +1533,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“陆桥山只是间接责任 这就是私欲膨胀 拿着党国的利益官报私仇”",
     "provenance": {
       "parent_scene_id": "scene_0036",
       "analysis_granularity": "independent_keyframe",
@@ -1569,9 +1569,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“没能抓住深海和北方 号 我们确实是失去了 立功的绝好机会 可是此事万万不可张扬啊”",
     "provenance": {
       "parent_scene_id": "scene_0036",
       "analysis_granularity": "independent_keyframe",
@@ -1605,9 +1605,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“我怀疑袁佩林的案子 也坏在陆桥山的身上”",
     "provenance": {
       "parent_scene_id": "scene_0036",
       "analysis_granularity": "independent_keyframe",
@@ -1641,9 +1641,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“也坏在陆桥山的身上 让这些事快点过去吧 最好是密件上报总部”",
     "provenance": {
       "parent_scene_id": "scene_0037",
       "analysis_granularity": "independent_keyframe",
@@ -1677,9 +1677,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“怎么处理陆桥山 推给郑介民 他们关系好 看他怎么处理”",
     "provenance": {
       "parent_scene_id": "scene_0037",
       "analysis_granularity": "independent_keyframe",
@@ -1713,9 +1713,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“您要是处理 很难说郑局长会怎么想 到时候扔过 双小鞋来”",
     "provenance": {
       "parent_scene_id": "scene_0037",
       "analysis_granularity": "independent_keyframe",
@@ -1749,9 +1749,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“到时候扔过 双小鞋来 您说您穿是不穿 都别扭 以我现在的脾气 我就地正法了他”",
     "provenance": {
       "parent_scene_id": "scene_0037",
       "analysis_granularity": "independent_keyframe",
@@ -1785,9 +1785,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“我就地正法了他 郑介民能奈我何 您消消气 就是就地正法也得上报总部啊 你说以后 ”",
     "provenance": {
       "parent_scene_id": "scene_0038",
       "analysis_granularity": "independent_keyframe",
@@ -1821,9 +1821,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为medium_close_up，出镜人物：余则成、陆桥山。现场台词：“老师 从长计议为重 你的意思呢”",
     "provenance": {
       "parent_scene_id": "scene_0039",
       "analysis_granularity": "independent_keyframe",
@@ -1857,9 +1857,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“交给南京让他们处理算了 您要是实在咽不下这口恶气 把报告写得重 些 不就完了吗”",
     "provenance": {
       "parent_scene_id": "scene_0040",
       "analysis_granularity": "independent_keyframe",
@@ -1893,9 +1893,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送"
+      "余则成与陆桥山在保密局天津站大门与办公区走廊对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，陆桥山手提公文箱离开天津站，余则成在走廊与石阶相送",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“把报告写得重 些 不就完了吗 把报告写得重 些不就完了吗 马奎通共 陆桥山内讧”",
     "provenance": {
       "parent_scene_id": "scene_0041",
       "analysis_granularity": "independent_keyframe",
@@ -1929,9 +1929,9 @@
     ],
     "scene_env": "保密局天津站大门与办公区走廊",
     "physical_actions": [
-      "陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，光线偏暗，陆桥山在车旁低声叮嘱余则成提防李涯与站长不可靠",
+    "visual_description": "保密局天津站大门与办公区走廊，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0042",
       "analysis_granularity": "segment_inherited",
@@ -1960,14 +1960,14 @@
     },
     "dialogue": "你陆桥山自绝党国 你来当这个副站长",
     "characters": [
-      "余则成",
-      "陆桥山"
+      "吴敬中",
+      "余则成"
     ],
-    "scene_env": "保密局天津站大门与办公区走廊",
+    "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "黑色轿车缓缓驶离天津站大门，余则成目送其远去"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站大门与办公区走廊，景别为wide_shot，光线偏暗，黑色轿车缓缓驶离天津站大门，余则成目送其远去",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“你陆桥山自绝党国 你来当这个副站长”",
     "provenance": {
       "parent_scene_id": "scene_0043",
       "analysis_granularity": "independent_keyframe",
@@ -2001,9 +2001,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_close_up，光线偏暗，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_close_up，出镜人物：吴敬中、余则成。现场台词：“你来当这个副站长 不合适吧 还是跟李队长商量商量”",
     "provenance": {
       "parent_scene_id": "scene_0044",
       "analysis_granularity": "independent_keyframe",
@@ -2037,9 +2037,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "吴站长与余则成面对面谈及副站长任命，余则成敬谢栽培"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，出镜人物：吴敬中、余则成。现场台词：“还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你”",
     "provenance": {
       "parent_scene_id": "scene_0045",
       "analysis_granularity": "independent_keyframe",
@@ -2073,9 +2073,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "吴站长与余则成面对面谈及副站长任命，余则成敬谢栽培"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，光线偏暗，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，出镜人物：吴敬中、余则成。现场台词：“副站长就是你 谢谢老师栽培”",
     "provenance": {
       "parent_scene_id": "scene_0046",
       "analysis_granularity": "independent_keyframe",
@@ -2109,9 +2109,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“今天我跟站长太太去做旗袍”",
     "provenance": {
       "parent_scene_id": "scene_0047",
       "analysis_granularity": "independent_keyframe",
@@ -2140,14 +2140,14 @@
     },
     "dialogue": "站长太太说 站长好像不想干了 想走",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“站长太太说 站长好像不想干了 想走”",
     "provenance": {
       "parent_scene_id": "scene_0047",
       "analysis_granularity": "independent_keyframe",
@@ -2176,14 +2176,14 @@
     },
     "dialogue": "走去哪儿",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“走去哪儿”",
     "provenance": {
       "parent_scene_id": "scene_0047",
       "analysis_granularity": "segment_inherited",
@@ -2212,14 +2212,14 @@
     },
     "dialogue": "她怕有人查她家 好像他们家有很多值钱的东西",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“她怕有人查她家 好像他们家有很多值钱的东西”",
     "provenance": {
       "parent_scene_id": "scene_0047",
       "analysis_granularity": "independent_keyframe",
@@ -2248,14 +2248,14 @@
     },
     "dialogue": "贪够了想溜呗 都是这样",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“贪够了想溜呗 都是这样”",
     "provenance": {
       "parent_scene_id": "scene_0047",
       "analysis_granularity": "independent_keyframe",
@@ -2284,14 +2284,14 @@
     },
     "dialogue": "那他要是走了 你会当站长吗",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“那他要是走了 你会当站长吗”",
     "provenance": {
       "parent_scene_id": "scene_0047",
       "analysis_granularity": "independent_keyframe",
@@ -2320,14 +2320,14 @@
     },
     "dialogue": "不会 站长 般是少将军衔 上面需要有人",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“不会 站长 般是少将军衔 上面需要有人”",
     "provenance": {
       "parent_scene_id": "scene_0048",
       "analysis_granularity": "independent_keyframe",
@@ -2356,14 +2356,14 @@
     },
     "dialogue": "少将有什么难的 今天我去军属会 那儿有好几个少将太太呢",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“少将有什么难的 今天我去军属会 那儿有好几个少将太太呢”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "independent_keyframe",
@@ -2392,14 +2392,14 @@
     },
     "dialogue": "那儿有好几个少将太太呢 去那儿干吗 乱哄哄的",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“那儿有好几个少将太太呢 去那儿干吗 乱哄哄的”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "segment_inherited",
@@ -2428,14 +2428,14 @@
     },
     "dialogue": "我学跳舞去了 她们拖我去的",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“我学跳舞去了 她们拖我去的”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "segment_inherited",
@@ -2464,14 +2464,14 @@
     },
     "dialogue": "她们拖我去的 学会了吗",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“她们拖我去的 学会了吗”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "segment_inherited",
@@ -2500,14 +2500,14 @@
     },
     "dialogue": "没学会 太难了",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“没学会 太难了”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "independent_keyframe",
@@ -2536,14 +2536,14 @@
     },
     "dialogue": "我腿都拧成麻花了也没学会 你会吗 你会呀 不早说 来来来 你教我 你教我 你干什么呀 你教教我呀",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“我腿都拧成麻花了也没学会 你会吗 你会呀 不早说 来来来 你教我 你教我 你干什”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "independent_keyframe",
@@ -2572,14 +2572,14 @@
     },
     "dialogue": "这儿没音乐 比画几下就行了 快 起来 手搁这儿吧",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“这儿没音乐 比画几下就行了 快 起来 手搁这儿吧”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "independent_keyframe",
@@ -2608,14 +2608,14 @@
     },
     "dialogue": "你轻 点动作 这样对 放这儿对 把腰挺直",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“你轻 点动作 这样对 放这儿对 把腰挺直”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "independent_keyframe",
@@ -2644,14 +2644,14 @@
     },
     "dialogue": "你左脚跟上跟上",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“你左脚跟上跟上”",
     "provenance": {
       "parent_scene_id": "scene_0049",
       "analysis_granularity": "independent_keyframe",
@@ -2680,14 +2680,14 @@
     },
     "dialogue": "左右左",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与翠平在余则成家中客厅与内室对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为over_shoulder，出镜人物：余则成、翠平。现场台词：“左右左”",
     "provenance": {
       "parent_scene_id": "scene_0050",
       "analysis_granularity": "independent_keyframe",
@@ -2716,21 +2716,21 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0051",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         11008
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -2752,14 +2752,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0052",
       "analysis_granularity": "segment_inherited",
@@ -2788,14 +2788,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0052",
       "analysis_granularity": "segment_inherited",
@@ -2824,14 +2824,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0052",
       "analysis_granularity": "independent_keyframe",
@@ -2860,14 +2860,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0052",
       "analysis_granularity": "independent_keyframe",
@@ -2896,14 +2896,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0052",
       "analysis_granularity": "segment_inherited",
@@ -2932,21 +2932,21 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "余则成家中客厅与内室",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "余则成家中客厅与内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0053",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         11838
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -2968,14 +2968,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0054",
       "analysis_granularity": "independent_keyframe",
@@ -3004,14 +3004,14 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0054",
       "analysis_granularity": "independent_keyframe",
@@ -3040,14 +3040,14 @@
     },
     "dialogue": "你摇头什么意思呀 损人不利已 我难以理解 损人不利己 我难以理解 盖过你 取代我 有什么难以理解的",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“你摇头什么意思呀 损人不利已 我难以理解 损人不利己 我难以理解 盖过你 取代我”",
     "provenance": {
       "parent_scene_id": "scene_0054",
       "analysis_granularity": "independent_keyframe",
@@ -3076,14 +3076,14 @@
     },
     "dialogue": "件蠢事啊 老陆",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为over_shoulder，出镜人物：余则成、陆桥山。现场台词：“件蠢事啊 老陆”",
     "provenance": {
       "parent_scene_id": "scene_0055",
       "analysis_granularity": "independent_keyframe",
@@ -3112,14 +3112,14 @@
     },
     "dialogue": "我还会回来的 中国这么大你回这儿来干什么呀",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，光线偏暗，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为medium_shot，出镜人物：余则成、陆桥山。现场台词：“我还会回来的 中国这么大你回这儿来干什么呀”",
     "provenance": {
       "parent_scene_id": "scene_0056",
       "analysis_granularity": "independent_keyframe",
@@ -3148,14 +3148,14 @@
     },
     "dialogue": "中国这么大你回这儿来干什么呀 嫂子在车站等你",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为close_up，光线偏暗，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为close_up，出镜人物：余则成、陆桥山。现场台词：“中国这么大你回这儿来干什么呀 嫂子在车站等你”",
     "provenance": {
       "parent_scene_id": "scene_0057",
       "analysis_granularity": "independent_keyframe",
@@ -3184,14 +3184,14 @@
     },
     "dialogue": "车在门口",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“车在门口”",
     "provenance": {
       "parent_scene_id": "scene_0058",
       "analysis_granularity": "independent_keyframe",
@@ -3220,14 +3220,14 @@
     },
     "dialogue": "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "陆桥山整理衣着向余则成低语叮嘱告别，余则成石阶相送"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了”",
     "provenance": {
       "parent_scene_id": "scene_0059",
       "analysis_granularity": "independent_keyframe",
@@ -3256,14 +3256,14 @@
     },
     "dialogue": "你说你这么就走了 我心里真有点难过 你教会了我很多东西",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山。现场台词：“你说你这么就走了 我心里真有点难过 你教会了我很多东西”",
     "provenance": {
       "parent_scene_id": "scene_0060",
       "analysis_granularity": "independent_keyframe",
@@ -3292,14 +3292,14 @@
     },
     "dialogue": "我们是朋友",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听"
+      "余则成与陆桥山在保密局天津站走廊与大门石阶轿车旁对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，光线偏暗，吴站长与余则成复盘陆桥山离去后的局势，余则成神情恭顺专注倾听",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为medium_shot，出镜人物：余则成、陆桥山。现场台词：“我们是朋友”",
     "provenance": {
       "parent_scene_id": "scene_0061",
       "analysis_granularity": "independent_keyframe",
@@ -3328,21 +3328,21 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为close_up，光线偏暗，吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为close_up，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0062",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         14710
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -3364,21 +3364,21 @@
     },
     "dialogue": "",
     "characters": [
-      "吴敬中",
-      "余则成"
+      "余则成",
+      "陆桥山"
     ],
-    "scene_env": "保密局天津站站长办公室办公桌前",
+    "scene_env": "保密局天津站走廊与大门石阶轿车旁",
     "physical_actions": [
-      "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫",
+    "visual_description": "保密局天津站走廊与大门石阶轿车旁，景别为wide_shot，出镜人物：余则成、陆桥山，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0063",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         14864
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -3405,9 +3405,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“胡宗南长官今日光荣占领共匪老巢延安 丟盔弃甲的共匪分多路逃窜 丟盔弃用的共匪分多”",
     "provenance": {
       "parent_scene_id": "scene_0064",
       "analysis_granularity": "independent_keyframe",
@@ -3441,9 +3441,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“进来 国军正以英勇无惧的气魄 进来国军正以英勇无惧的气魄 追溯残敌 则成 你听 ”",
     "provenance": {
       "parent_scene_id": "scene_0064",
       "analysis_granularity": "independent_keyframe",
@@ -3477,9 +3477,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长提及官场贪腐与副站长位置，目光深邃审视余则成"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长提及官场贪腐与副站长位置，目光深邃审视余则成",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“正在拉网式搜找共匪朱毛匪首 正在拉网式搜找共匪朱 毛匪首 相信不日就会将这群 盘”",
     "provenance": {
       "parent_scene_id": "scene_0064",
       "analysis_granularity": "independent_keyframe",
@@ -3513,9 +3513,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，光线偏暗，吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，出镜人物：吴敬中、余则成。现场台词：“委座发话了 三个月 三个月解决问题 三个月三个月解决问题”",
     "provenance": {
       "parent_scene_id": "scene_0065",
       "analysis_granularity": "independent_keyframe",
@@ -3549,9 +3549,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长提及官场贪腐与副站长位置，目光深邃审视余则成"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，光线偏暗，吴站长提及官场贪腐与副站长位置，目光深邃审视余则成",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，出镜人物：吴敬中、余则成。现场台词：“三个月 三个月解决问题 太好了 三个月以后天下太平 我看 今天值得庆祝”",
     "provenance": {
       "parent_scene_id": "scene_0066",
       "analysis_granularity": "independent_keyframe",
@@ -3585,9 +3585,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜"
+      "广播播报战局，吴站长向余则成道喜中校副站长"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为close_up，光线偏暗，广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为close_up，出镜人物：吴敬中、余则成。现场台词：“我看 今天值得庆祝 为收复延安”",
     "provenance": {
       "parent_scene_id": "scene_0067",
       "analysis_granularity": "independent_keyframe",
@@ -3621,9 +3621,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“二 则成晋升为中校副站长 二则成晋升为中校副站长”",
     "provenance": {
       "parent_scene_id": "scene_0068",
       "analysis_granularity": "segment_inherited",
@@ -3657,9 +3657,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长提及官场贪腐与副站长位置，目光深邃审视余则成"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_close_up，光线偏暗，吴站长提及官场贪腐与副站长位置，目光深邃审视余则成",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_close_up，出镜人物：吴敬中、余则成。现场台词：“二则成晋升为中校副站长”",
     "provenance": {
       "parent_scene_id": "scene_0069",
       "analysis_granularity": "segment_inherited",
@@ -3693,9 +3693,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，光线偏暗，广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为over_shoulder，出镜人物：吴敬中、余则成。现场台词：“二则成晋升为中校副站长”",
     "provenance": {
       "parent_scene_id": "scene_0070",
       "analysis_granularity": "independent_keyframe",
@@ -3729,9 +3729,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，光线偏暗，吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为medium_shot，出镜人物：吴敬中、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0071",
       "analysis_granularity": "segment_inherited",
@@ -3765,9 +3765,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长提及官场贪腐与副站长位置，目光深邃审视余则成"
+      "observable_action_unverified"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为close_up，光线偏暗，吴站长提及官场贪腐与副站长位置，目光深邃审视余则成",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为close_up，出镜人物：吴敬中、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0072",
       "analysis_granularity": "segment_inherited",
@@ -3801,9 +3801,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，光线偏暗，广播胡宗南攻占延安，吴站长手持副站长委任状向余则成道喜",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“余副站长 恭喜呀”",
     "provenance": {
       "parent_scene_id": "scene_0073",
       "analysis_granularity": "independent_keyframe",
@@ -3837,9 +3837,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长拍拍余则成肩膀说多多关照同甘共苦，余则成强作镇定双手接过委任状",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦”",
     "provenance": {
       "parent_scene_id": "scene_0074",
       "analysis_granularity": "independent_keyframe",
@@ -3873,9 +3873,9 @@
     ],
     "scene_env": "保密局天津站站长办公室办公桌前",
     "physical_actions": [
-      "吴站长提及官场贪腐与副站长位置，目光深邃审视余则成"
+      "吴敬中与余则成在保密局天津站站长办公室办公桌前对话交谈"
     ],
-    "visual_description": "保密局天津站站长办公室办公桌前，吴站长提及官场贪腐与副站长位置，目光深邃审视余则成",
+    "visual_description": "保密局天津站站长办公室办公桌前，景别为wide_shot，出镜人物：吴敬中、余则成。现场台词：“余副站长”",
     "provenance": {
       "parent_scene_id": "scene_0074",
       "analysis_granularity": "independent_keyframe",
@@ -3909,9 +3909,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“余则成在听到延安失守的瞬间 突然觉得两腿站不住 身体在飘 他不知道将来怎么工作 ”",
     "provenance": {
       "parent_scene_id": "scene_0074",
       "analysis_granularity": "independent_keyframe",
@@ -3945,9 +3945,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "秋掌柜坚定安慰余则成延安是主动放弃而非丢失，战斗仍将残酷继续"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，秋掌柜坚定安慰余则成延安是主动放弃而非丢失，战斗仍将残酷继续",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“不知道他们在哪里 不知道明天的广播里 会不会传来更可怕的消息 他心中顿时被阴霾填”",
     "provenance": {
       "parent_scene_id": "scene_0074",
       "analysis_granularity": "independent_keyframe",
@@ -3981,9 +3981,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在微弱光线下倾听指示，强压内心悲痛重新振作"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，余则成在微弱光线下倾听指示，强压内心悲痛重新振作",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“你今天不该来 我知道 可是我这心里实在是太难受了 延安不是丢失 而是放弃 整个中”",
     "provenance": {
       "parent_scene_id": "scene_0074",
       "analysis_granularity": "independent_keyframe",
@@ -4017,9 +4017,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，景别为over_shoulder，光线偏暗，余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头",
+    "visual_description": "地下党秘密联络点密室，景别为over_shoulder，出镜人物：余则成、秋掌柜。现场台词：“怕失败”",
     "provenance": {
       "parent_scene_id": "scene_0075",
       "analysis_granularity": "segment_inherited",
@@ -4053,9 +4053,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "秋掌柜坚定安慰余则成延安是主动放弃而非丢失，战斗仍将残酷继续"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，景别为medium_shot，光线偏暗，秋掌柜坚定安慰余则成延安是主动放弃而非丢失，战斗仍将残酷继续",
+    "visual_description": "地下党秘密联络点密室，景别为medium_shot，出镜人物：余则成、秋掌柜。现场台词：“我在延安住过半年”",
     "provenance": {
       "parent_scene_id": "scene_0076",
       "analysis_granularity": "independent_keyframe",
@@ -4089,9 +4089,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在微弱光线下倾听指示，强压内心悲痛重新振作"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，景别为wide_shot，光线偏暗，余则成在微弱光线下倾听指示，强压内心悲痛重新振作",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“我在延安住过半年 对那儿很有感情 那里有 种精神 种乐观抗争的精神 你看着吧 胡”",
     "provenance": {
       "parent_scene_id": "scene_0077",
       "analysis_granularity": "independent_keyframe",
@@ -4125,9 +4125,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，景别为wide_shot，光线偏暗，余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“胡宗南的命运会终结在延安的 万万不要悲观 仗有很多种打法”",
     "provenance": {
       "parent_scene_id": "scene_0078",
       "analysis_granularity": "independent_keyframe",
@@ -4161,9 +4161,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "秋掌柜坚定安慰余则成延安是主动放弃而非丢失，战斗仍将残酷继续"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，景别为medium_close_up，光线偏暗，秋掌柜坚定安慰余则成延安是主动放弃而非丢失，战斗仍将残酷继续",
+    "visual_description": "地下党秘密联络点密室，景别为medium_close_up，出镜人物：余则成、秋掌柜。现场台词：“仗有很多种打法 有 种胜利 叫撤退 有 种失败 叫占领”",
     "provenance": {
       "parent_scene_id": "scene_0079",
       "analysis_granularity": "independent_keyframe",
@@ -4197,9 +4197,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在微弱光线下倾听指示，强压内心悲痛重新振作"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，景别为wide_shot，光线偏暗，余则成在微弱光线下倾听指示，强压内心悲痛重新振作",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“我就是 时茫然 现在好了 我说吧 我们俩之间 还是你做领导比较合适”",
     "provenance": {
       "parent_scene_id": "scene_0080",
       "analysis_granularity": "independent_keyframe",
@@ -4233,9 +4233,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在微弱光线下倾听指示，强压内心悲痛重新振作"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，余则成在微弱光线下倾听指示，强压内心悲痛重新振作",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“还是你做领导比较合适”",
     "provenance": {
       "parent_scene_id": "scene_0081",
       "analysis_granularity": "segment_inherited",
@@ -4269,9 +4269,9 @@
     ],
     "scene_env": "地下党秘密联络点密室",
     "physical_actions": [
-      "余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头"
+      "余则成与秋掌柜在地下党秘密联络点密室对话交谈"
     ],
-    "visual_description": "地下党秘密联络点密室，余则成在得知延安失守后心神震荡，在密室中与秋掌柜接头",
+    "visual_description": "地下党秘密联络点密室，景别为wide_shot，出镜人物：余则成、秋掌柜。现场台词：“几句话就让我精神振奋 还有 我已经晋升副站长了 好啊 这值得庆贺”",
     "provenance": {
       "parent_scene_id": "scene_0081",
       "analysis_granularity": "independent_keyframe",
@@ -4306,9 +4306,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“嫂子 这是我写的诗 你写的 在报上”",
     "provenance": {
       "parent_scene_id": "scene_0081",
       "analysis_granularity": "independent_keyframe",
@@ -4343,9 +4343,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“妹子，你去了不起了 妹子 你太了不起了”",
     "provenance": {
       "parent_scene_id": "scene_0082",
       "analysis_granularity": "independent_keyframe",
@@ -4380,9 +4380,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0082",
       "analysis_granularity": "segment_inherited",
@@ -4417,9 +4417,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“那你怎么还不高兴”",
     "provenance": {
       "parent_scene_id": "scene_0082",
       "analysis_granularity": "segment_inherited",
@@ -4454,9 +4454,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“那你怎么还不高兴 今天早上 我在他包里发现了 把手枪”",
     "provenance": {
       "parent_scene_id": "scene_0082",
       "analysis_granularity": "independent_keyframe",
@@ -4491,9 +4491,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“我在他包里发现了 把手枪 什么型号 我哪懂啊”",
     "provenance": {
       "parent_scene_id": "scene_0082",
       "analysis_granularity": "independent_keyframe",
@@ -4528,9 +4528,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“我哪懂 我是说真枪还是假枪 **“我是说真枪还是假枪”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4565,9 +4565,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“**“我是说真枪还是假枪”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -4602,9 +4602,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“他做秘密事的嘛 有枪就有枪呗 ～你余大哥也别着那玩意回来过呢 你余大哥也别着那玩”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4639,9 +4639,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“你余大哥也别着那玩意回来过呢 除了枪 还有两张戏园子的票根”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4676,9 +4676,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“还有两张戏园子的票根”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -4713,9 +4713,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“也不知道跟哪路女流逍遥去的”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4750,9 +4750,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“他在外面有女人 差不多吧”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -4787,9 +4787,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“差不多吧 4 早上我偷偷跟他出了门 早上我偷偷跟他出了门 他是说去看生意 结果拐”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4824,9 +4824,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“结果拐了弯 就上了 辆车 妹子；你就不该跟他 你看到什么还不自己心里难受吗 眼不”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4861,9 +4861,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -4898,9 +4898,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“不烦 不烦了 你给我念念这个”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -4935,9 +4935,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“忧伤被泪湿坏了翅膀”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -4972,9 +4972,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“忧伤被泪湿坏了翅膀 甲骨文说我太古老 滴血落在粉嫩的腿上”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5009,9 +5009,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“油纸伞说浪漫已经死掉”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5046,9 +5046,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5083,9 +5083,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -5120,9 +5120,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“老天爷我死了算了 老天爷，我死了算了 我怎么 句都听不懂”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5157,9 +5157,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“我怎么 句都听不懂 就是忧伤”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5194,9 +5194,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“忧伤是什么”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5231,9 +5231,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“可能就是我这样吧”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5268,9 +5268,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5305,9 +5305,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5342,9 +5342,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -5379,9 +5379,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“忙了 天累坏了吧”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5416,9 +5416,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“忙了 天累坏了吧”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5453,9 +5453,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“茶泡好丁 我给你端去”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5490,9 +5490,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“茶泡好丁 我给你端去 茶泡好了 我给你端去 茶泡好了我给你端去”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5527,9 +5527,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -5564,9 +5564,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5601,9 +5601,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“你又跟她说什么了 她怎么变成这样了”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5638,9 +5638,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“没什么 就是忧伤”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5675,9 +5675,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，翠平与余则成在客厅低语，余则成提醒翠平注意言行防范谢家",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“没什么 就是忧伤 我走了”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -5712,9 +5712,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义"
+      "穆晚秋与翠平与余则成在余则成家中客厅对话交谈"
     ],
-    "visual_description": "余则成家中客厅，晚秋身着旗袍坐在茶几旁向翠平解释忧伤的含义",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成。现场台词：“我走了”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5749,9 +5749,9 @@
     ],
     "scene_env": "余则成家中客厅",
     "physical_actions": [
-      "晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家中客厅，晚秋走后余则成回家，翠平机警为余则成端茶并询问晚秋来历",
+    "visual_description": "余则成家中客厅，景别为wide_shot，出镜人物：穆晚秋、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5785,9 +5785,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“你怎么还站着呀 快坐下 歇会儿”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5821,9 +5821,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“你怎么了”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "independent_keyframe",
@@ -5857,9 +5857,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“你怎么了”",
     "provenance": {
       "parent_scene_id": "scene_0083",
       "analysis_granularity": "segment_inherited",
@@ -5893,9 +5893,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，光线偏暗，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，出镜人物：余则成、翠平。现场台词：“弄得我浑身鸡皮疙瘩都起来了 像以前那样挺好的”",
     "provenance": {
       "parent_scene_id": "scene_0084",
       "analysis_granularity": "independent_keyframe",
@@ -5929,9 +5929,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，景别为over_shoulder，光线偏暗，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为over_shoulder，出镜人物：余则成、翠平。现场台词：“我怎么了 忙 天了累了吧 忙 天不 累了吧”",
     "provenance": {
       "parent_scene_id": "scene_0085",
       "analysis_granularity": "independent_keyframe",
@@ -5965,9 +5965,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，景别为medium_shot，光线偏暗，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为medium_shot，出镜人物：余则成、翠平。现场台词：“忙 天不 累了吧 茶泡好了我给你端过来”",
     "provenance": {
       "parent_scene_id": "scene_0086",
       "analysis_granularity": "segment_inherited",
@@ -6001,9 +6001,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，景别为close_up，光线偏暗，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为close_up，出镜人物：余则成、翠平。现场台词：“茶泡好了我给你端过来 跟谁学的你”",
     "provenance": {
       "parent_scene_id": "scene_0087",
       "analysis_granularity": "segment_inherited",
@@ -6037,9 +6037,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，景别为wide_shot，光线偏暗，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“胡说八道 我是那样说的吗”",
     "provenance": {
       "parent_scene_id": "scene_0088",
       "analysis_granularity": "independent_keyframe",
@@ -6073,9 +6073,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，光线偏暗，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，出镜人物：余则成、翠平。现场台词：“我是那样说的吗 就是这样说的”",
     "provenance": {
       "parent_scene_id": "scene_0089",
       "analysis_granularity": "segment_inherited",
@@ -6109,9 +6109,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“我让那小妖精给拿了魂了”",
     "provenance": {
       "parent_scene_id": "scene_0090",
       "analysis_granularity": "independent_keyframe",
@@ -6145,9 +6145,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“她给我念的这个 我 不就麻酥酥的了 我 下就麻酥酥的了”",
     "provenance": {
       "parent_scene_id": "scene_0090",
       "analysis_granularity": "independent_keyframe",
@@ -6181,9 +6181,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0090",
       "analysis_granularity": "independent_keyframe",
@@ -6217,9 +6217,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“延安被敌人占领了”",
     "provenance": {
       "parent_scene_id": "scene_0090",
       "analysis_granularity": "independent_keyframe",
@@ -6253,9 +6253,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成与翠平家中内室，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0090",
       "analysis_granularity": "segment_inherited",
@@ -6289,9 +6289,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“蒋委员长及国民政府 向攻取延安的铁军雄狮发出了 问攻取延安的铁军雄狮发出了 特别”",
     "provenance": {
       "parent_scene_id": "scene_0090",
       "analysis_granularity": "independent_keyframe",
@@ -6325,9 +6325,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“在这儿睡软床吃白米有什么用啊 错了 翠平 现在是最需要我们的时候”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "independent_keyframe",
@@ -6361,9 +6361,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“可你听只有三个的时间了”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "segment_inherited",
@@ -6397,9 +6397,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“有 种胜利四撤退 有 种失败叫占领 有 种失败門占领 别听他们瞎吹”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "independent_keyframe",
@@ -6433,9 +6433,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“别听他们瞎吹”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "segment_inherited",
@@ -6469,9 +6469,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "segment_inherited",
@@ -6505,9 +6505,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“我妹妹在延安也不知道怎么样了”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "segment_inherited",
@@ -6541,9 +6541,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，翠平听闻延安消息义愤填膺要求拿枪上前线，余则成严厉制止",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“上面指示 让我们继续潜伏下去”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "independent_keyframe",
@@ -6577,9 +6577,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“让我们继续潜伏下去 等待最后的胜利 等待最 的胜利”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "independent_keyframe",
@@ -6613,9 +6613,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，两人伏在八仙桌上低声交谈，余则成熄灭油灯提醒保持隐蔽",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“老尚 你需要什么情报啊 八路军改名了叫中国人民解放军 新建制和番号那我都有 胡宗”",
     "provenance": {
       "parent_scene_id": "scene_0091",
       "analysis_granularity": "independent_keyframe",
@@ -6649,9 +6649,9 @@
     ],
     "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成与翠平家中内室，余则成向翠平严肃强调当前潜伏敌后的极端重要性与残酷性",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“中央还都不知道呢 还有什么 周佛海免予死刑 这算狗屁情报 这 这算狗屁情报这 免”",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "independent_keyframe",
@@ -6685,9 +6685,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“这我明天就可以给你消息 我有个朋友在销募委员会 你那儿有什么值钱的货”",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "independent_keyframe",
@@ -6721,9 +6721,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "observable_action_unverified"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "segment_inherited",
@@ -6757,9 +6757,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“延安都占领了 能有什么屁值钱的货”",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "independent_keyframe",
@@ -6793,9 +6793,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“延安也有叛徒的 这个人带着国军 在安塞挖出了宝贝”",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "independent_keyframe",
@@ -6829,9 +6829,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“什么宝贝”",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "independent_keyframe",
@@ -6865,9 +6865,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“共党逃跑来不及带走的文件 全埋在那里了”",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "independent_keyframe",
@@ -6901,9 +6901,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "observable_action_unverified"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0092",
       "analysis_granularity": "segment_inherited",
@@ -6937,9 +6937,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，光线偏暗，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“来来来 怎么样 我这儿还不错吧 喜欢这玩意 再倒几年情报啊 挣够了钱 老子就开个”",
     "provenance": {
       "parent_scene_id": "scene_0093",
       "analysis_granularity": "independent_keyframe",
@@ -6973,9 +6973,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“老子就开个刀剑工厂 这都是延安的 不是 哪能有那么多 这都是过期的 这是军调时代”",
     "provenance": {
       "parent_scene_id": "scene_0094",
       "analysis_granularity": "independent_keyframe",
@@ -7009,9 +7009,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“现在这生意它没法做”",
     "provenance": {
       "parent_scene_id": "scene_0094",
       "analysis_granularity": "independent_keyframe",
@@ -7045,9 +7045,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为over_shoulder，光线偏暗，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为over_shoulder，出镜人物：谢若林、穆晚秋。现场台词：“省从这党適局顯供密局 自从这党通局跟保密局 692 2071 16%6 129 ”",
     "provenance": {
       "parent_scene_id": "scene_0095",
       "analysis_granularity": "independent_keyframe",
@@ -7081,9 +7081,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，光线偏暗，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“692 2071 16%6 129 b 这高层 介入4 5861 2704 C ”",
     "provenance": {
       "parent_scene_id": "scene_0096",
       "analysis_granularity": "independent_keyframe",
@@ -7117,9 +7117,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为close_up，光线偏暗，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为close_up，出镜人物：谢若林、穆晚秋。现场台词：“现在他们拿 个就是 个 买消息还得是人共党舍得花钱 可不是吗 北九前养 社 前不”",
     "provenance": {
       "parent_scene_id": "scene_0097",
       "analysis_granularity": "independent_keyframe",
@@ -7153,9 +7153,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，光线偏暗，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“北多局壽”",
     "provenance": {
       "parent_scene_id": "scene_0098",
       "analysis_granularity": "independent_keyframe",
@@ -7189,9 +7189,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为medium_close_up，光线偏暗，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为medium_close_up，出镜人物：谢若林、穆晚秋。现场台词：“諸 二”",
     "provenance": {
       "parent_scene_id": "scene_0099",
       "analysis_granularity": "independent_keyframe",
@@ -7225,9 +7225,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为over_shoulder，光线偏暗，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为over_shoulder，出镜人物：谢若林、穆晚秋。现场台词：“这跟天津有关 我要了 你想要什么就随便挑吧”",
     "provenance": {
       "parent_scene_id": "scene_0100",
       "analysis_granularity": "independent_keyframe",
@@ -7261,9 +7261,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为medium_shot，光线偏暗，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为medium_shot，出镜人物：谢若林、穆晚秋。现场台词：“你想要什么就随便挑吧 始志1”",
     "provenance": {
       "parent_scene_id": "scene_0101",
       "analysis_granularity": "independent_keyframe",
@@ -7297,9 +7297,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为close_up，光线偏暗，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为close_up，出镜人物：谢若林、穆晚秋。现场台词：“始志1”",
     "provenance": {
       "parent_scene_id": "scene_0102",
       "analysis_granularity": "segment_inherited",
@@ -7333,16 +7333,16 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "observable_action_unverified"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，光线偏暗，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0103",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         33869
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -7369,9 +7369,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，景别为medium_close_up，光线偏暗，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为medium_close_up，出镜人物：谢若林、穆晚秋。现场台词：“淋 有 許 牛”",
     "provenance": {
       "parent_scene_id": "scene_0104",
       "analysis_granularity": "independent_keyframe",
@@ -7405,9 +7405,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔"
+      "observable_action_unverified"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林叼着卷烟冷笑，将牛皮纸袋往茶几上一摔",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0105",
       "analysis_granularity": "independent_keyframe",
@@ -7441,9 +7441,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林在沙发上得意翻看从延安挖出来的绝密卷宗，向同伙炫耀行情",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“都到门口了 进来就说两句 进来 就说两句”",
     "provenance": {
       "parent_scene_id": "scene_0105",
       "analysis_granularity": "independent_keyframe",
@@ -7477,9 +7477,9 @@
     ],
     "scene_env": "谢若林寓所客厅与餐厅",
     "physical_actions": [
-      "谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对"
+      "谢若林与穆晚秋在谢若林寓所客厅与餐厅对话交谈"
     ],
-    "visual_description": "谢若林寓所客厅与餐厅，谢若林回家后与晚秋发生口角争执，晚秋满面哀怨冷眼相对",
+    "visual_description": "谢若林寓所客厅与餐厅，景别为wide_shot，出镜人物：谢若林、穆晚秋。现场台词：“进来 就说两句 来嘛 来嘛 进来 到门口了 就说两甸 萆 说个屁 我跟他有什么好”",
     "provenance": {
       "parent_scene_id": "scene_0105",
       "analysis_granularity": "independent_keyframe",
@@ -7514,9 +7514,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“叔伯在的时候倒是经常吃 眼下吃顿羊肉啊 就像过年 样 羊肉还是包大包子好吃啊 余”",
     "provenance": {
       "parent_scene_id": "scene_0105",
       "analysis_granularity": "independent_keyframe",
@@ -7551,9 +7551,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_shot，光线偏暗，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为medium_shot，出镜人物：谢若林、翠平、余则成。现场台词：“问这干吗 瞎问 家里还有兄弟姐妹吗”",
     "provenance": {
       "parent_scene_id": "scene_0106",
       "analysis_granularity": "independent_keyframe",
@@ -7588,9 +7588,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为close_up，光线偏暗，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为close_up，出镜人物：谢若林、翠平、余则成。现场台词：“你要给压岁钱哪”",
     "provenance": {
       "parent_scene_id": "scene_0107",
       "analysis_granularity": "segment_inherited",
@@ -7625,9 +7625,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为wide_shot，光线偏暗，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“你要给压岁钱哪 我能猜猜吗 你至少有个妹妹”",
     "provenance": {
       "parent_scene_id": "scene_0108",
       "analysis_granularity": "independent_keyframe",
@@ -7662,9 +7662,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_close_up，光线偏暗，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为medium_close_up，出镜人物：谢若林、翠平、余则成。现场台词：“你至少有个妹妹”",
     "provenance": {
       "parent_scene_id": "scene_0109",
       "analysis_granularity": "independent_keyframe",
@@ -7699,9 +7699,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为over_shoulder，光线偏暗，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为over_shoulder，出镜人物：谢若林、翠平、余则成。现场台词：“瞎说 没有 你叫翠平 你妹妹叫秋平”",
     "provenance": {
       "parent_scene_id": "scene_0110",
       "analysis_granularity": "independent_keyframe",
@@ -7736,9 +7736,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_shot，光线偏暗，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为medium_shot，出镜人物：谢若林、翠平、余则成。现场台词：“你叫翠平 你妹妹叫秋平”",
     "provenance": {
       "parent_scene_id": "scene_0111",
       "analysis_granularity": "segment_inherited",
@@ -7773,9 +7773,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为close_up，光线偏暗，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为close_up，出镜人物：谢若林、翠平、余则成。现场台词：“你叫翠平 你妹妹叫秋平”",
     "provenance": {
       "parent_scene_id": "scene_0112",
       "analysis_granularity": "independent_keyframe",
@@ -7810,9 +7810,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为wide_shot，光线偏暗，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“这来天津以后 就很久没有见到你妹妹了”",
     "provenance": {
       "parent_scene_id": "scene_0113",
       "analysis_granularity": "segment_inherited",
@@ -7847,9 +7847,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_close_up，光线偏暗，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为medium_close_up，出镜人物：谢若林、翠平、余则成。现场台词：“说书呢”",
     "provenance": {
       "parent_scene_id": "scene_0114",
       "analysis_granularity": "segment_inherited",
@@ -7884,9 +7884,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为over_shoulder，光线偏暗，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为over_shoulder，出镜人物：谢若林、翠平、余则成。现场台词：“余先生回来了”",
     "provenance": {
       "parent_scene_id": "scene_0115",
       "analysis_granularity": "independent_keyframe",
@@ -7921,9 +7921,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_shot，光线偏暗，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为medium_shot，出镜人物：谢若林、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0116",
       "analysis_granularity": "segment_inherited",
@@ -7958,9 +7958,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为close_up，光线偏暗，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为close_up，出镜人物：谢若林、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0117",
       "analysis_granularity": "segment_inherited",
@@ -7995,16 +7995,16 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为wide_shot，光线偏暗，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0118",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         37444
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -8032,9 +8032,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_close_up，光线偏暗，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为medium_close_up，出镜人物：谢若林、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0119",
       "analysis_granularity": "segment_inherited",
@@ -8069,9 +8069,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“我画了图 他会过来的”",
     "provenance": {
       "parent_scene_id": "scene_0120",
       "analysis_granularity": "independent_keyframe",
@@ -8106,9 +8106,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“老余来 你看谢先生请咱们吃 吃什么 涮羊肉”",
     "provenance": {
       "parent_scene_id": "scene_0120",
       "analysis_granularity": "independent_keyframe",
@@ -8143,9 +8143,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为medium_shot，光线偏暗，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为medium_shot，出镜人物：谢若林、翠平、余则成。现场台词：“谢先生又发财了 还是党通局又发外快了 你说来听听啊”",
     "provenance": {
       "parent_scene_id": "scene_0121",
       "analysis_granularity": "independent_keyframe",
@@ -8180,9 +8180,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为close_up，光线偏暗，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为close_up，出镜人物：谢若林、翠平、余则成。现场台词：“实不相瞒 今天请余先生来 还真是想跟您深度地勾兑 下”",
     "provenance": {
       "parent_scene_id": "scene_0122",
       "analysis_granularity": "independent_keyframe",
@@ -8217,9 +8217,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，景别为wide_shot，光线偏暗，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“这芝麻做的酱 真香”",
     "provenance": {
       "parent_scene_id": "scene_0123",
       "analysis_granularity": "independent_keyframe",
@@ -8254,9 +8254,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“翠平你和晚秋带点切面 翠平 你和晚秋带点切面 去咱们家吃吧 余先生 您留点神”",
     "provenance": {
       "parent_scene_id": "scene_0124",
       "analysis_granularity": "independent_keyframe",
@@ -8291,9 +8291,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“余先生 您留点神”",
     "provenance": {
       "parent_scene_id": "scene_0124",
       "analysis_granularity": "independent_keyframe",
@@ -8328,9 +8328,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成神色警惕换鞋，答应谢若林的饭局邀约"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家门厅与客厅，余则成神色警惕换鞋，答应谢若林的饭局邀约",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0124",
       "analysis_granularity": "independent_keyframe",
@@ -8365,9 +8365,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "谢若林登门试探翠平有无妹妹秋平，翠平机智反诘"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，谢若林登门试探翠平有无妹妹秋平，翠平机智反诘",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“如果你知道我是共党分子”",
     "provenance": {
       "parent_scene_id": "scene_0124",
       "analysis_granularity": "independent_keyframe",
@@ -8402,9 +8402,9 @@
     ],
     "scene_env": "余则成家门厅与客厅",
     "physical_actions": [
-      "余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉"
+      "谢若林与翠平与余则成在余则成家门厅与客厅对话交谈"
     ],
-    "visual_description": "余则成家门厅与客厅，余则成推门回家，谢若林热情寒暄并邀余则成出门吃涮羊肉",
+    "visual_description": "余则成家门厅与客厅，景别为wide_shot，出镜人物：谢若林、翠平、余则成。现场台词：“怎么做不傻”",
     "provenance": {
       "parent_scene_id": "scene_0124",
       "analysis_granularity": "independent_keyframe",
@@ -8438,9 +8438,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“留着呀 我是中共 你是保密局的”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8474,9 +8474,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“我是中共 你是保密局的 咱俩有生意可以做呀 要是让我们站长知道了 这是要杀头的”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8510,9 +8510,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“这是要杀头的 简单了 他要是知道就把他拉进来 有钱大家 起赚嘛”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8546,9 +8546,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“有钱大家 起赚嘛 这反过来 如果您是中共 您太太也是”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8582,9 +8582,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“如果您是中共 您太太也是 我就不会说出去”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8618,9 +8618,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“我就不会说出去”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "segment_inherited",
@@ -8654,9 +8654,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“其实您和您太太都是”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8690,9 +8690,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“你想钱是想疯了你 别跟我开这种玩笑 你害我呀你”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8726,9 +8726,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“别跟我开这种玩笑 你害我呀你 我给你拿点东西你看看啊”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "segment_inherited",
@@ -8762,9 +8762,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“我给你拿点东西你看看啊”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8798,9 +8798,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“不会是我的入党申请书吧 会是我的入党申请书吧 我哪有那么大本事 我哪有那么天本事”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8834,9 +8834,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“都是秘密档案 上面找着余则成的大名了”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8870,9 +8870,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“陈秋平的通告 急调陈秋平同志的任务是 赶赴天津”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8906,9 +8906,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“赶赴天津 与峨眉峰以夫妻之名义工作 掩护其实施潜伏任务 请务必于9月28日前 到”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8942,9 +8942,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“到达分局社会部报到”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -8978,9 +8978,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“还有吗”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "segment_inherited",
@@ -9014,9 +9014,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“还有吗 有还有 份讣告 讣告 边保六科陈秋平同志”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -9050,9 +9050,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“讣告 边保六科陈秋平同志 于民国24年9月26日”",
     "provenance": {
       "parent_scene_id": "scene_0125",
       "analysis_granularity": "independent_keyframe",
@@ -9086,9 +9086,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“在前赴北方分局执行任务途中 在前赴北方分局执行住务途中 不幸以身殉职”",
     "provenance": {
       "parent_scene_id": "scene_0126",
       "analysis_granularity": "independent_keyframe",
@@ -9122,9 +9122,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“终岁二十五 10月3日上午8点 陈秋平同志的追悼会 将在王范岭村村委会举行”",
     "provenance": {
       "parent_scene_id": "scene_0126",
       "analysis_granularity": "independent_keyframe",
@@ -9158,9 +9158,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“望接到讣告之支部派会员到场”",
     "provenance": {
       "parent_scene_id": "scene_0126",
       "analysis_granularity": "independent_keyframe",
@@ -9194,9 +9194,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“望接到讣告之支部派会员到场 还有吗”",
     "provenance": {
       "parent_scene_id": "scene_0127",
       "analysis_granularity": "independent_keyframe",
@@ -9230,9 +9230,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“还有吗 还有就是王范岭村那个村民 还有就是玉范岭村那个村民 谷有牛口述的 陈秋平”",
     "provenance": {
       "parent_scene_id": "scene_0128",
       "analysis_granularity": "independent_keyframe",
@@ -9266,9 +9266,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，出镜人物：谢若林、余则成。现场台词：“这谷有牛啊是给陈秋平牵马的 据他所说”",
     "provenance": {
       "parent_scene_id": "scene_0129",
       "analysis_granularity": "independent_keyframe",
@@ -9302,9 +9302,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“据他所说 这陈秋平是在来的路上 因为雨天路滑 连人带马那是掉进山沟里摔死了”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "independent_keyframe",
@@ -9338,9 +9338,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“还有吗”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "segment_inherited",
@@ -9374,9 +9374,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“还有吗”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "segment_inherited",
@@ -9410,9 +9410,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“那跟我有什么关系呀”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "independent_keyframe",
@@ -9446,9 +9446,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“这陈秋平啊和你家翠平 只有 字之差”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "independent_keyframe",
@@ -9482,9 +9482,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“只有 字之差 而且在她意外死亡之后 你家太太 第三天就已经到了天津了 然后就跟我”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "independent_keyframe",
@@ -9518,9 +9518,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“块生活了 陈秋平是你家太太的妹妹”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "independent_keyframe",
@@ -9554,9 +9554,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“陈秋平是你家太太的妹妹 就在她意外死亡之后”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "segment_inherited",
@@ -9590,9 +9590,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“就在她意外死亡之后 上面急需给你配备 个大太”",
     "provenance": {
       "parent_scene_id": "scene_0130",
       "analysis_granularity": "segment_inherited",
@@ -9626,9 +9626,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“上面急需给你配备 个大太 也可能是时间来不及了 也可能是有人已经看过照片了 找 ”",
     "provenance": {
       "parent_scene_id": "scene_0131",
       "analysis_granularity": "independent_keyframe",
@@ -9662,9 +9662,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“你还是跟我装傻呀你 我知道呀 共党分子内讧 共党分子内边 那女的不就是那个代表吗”",
     "provenance": {
       "parent_scene_id": "scene_0132",
       "analysis_granularity": "independent_keyframe",
@@ -9698,9 +9698,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“老谢 你是党通局的人”",
     "provenance": {
       "parent_scene_id": "scene_0133",
       "analysis_granularity": "independent_keyframe",
@@ -9734,9 +9734,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“老谢 你是党通局的人 你该知道里面的利害关系呀 你今天也就是跟我说说 你要是跟你”",
     "provenance": {
       "parent_scene_id": "scene_0134",
       "analysis_granularity": "independent_keyframe",
@@ -9770,9 +9770,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，光线偏暗，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，出镜人物：谢若林、余则成。现场台词：“保密局跟你们的关系是怎么样的”",
     "provenance": {
       "parent_scene_id": "scene_0135",
       "analysis_granularity": "segment_inherited",
@@ -9806,9 +9806,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，出镜人物：谢若林、余则成。现场台词：“保密局跟你们的关系是怎么样的 你应该清楚啊 水火不容啊”",
     "provenance": {
       "parent_scene_id": "scene_0136",
       "analysis_granularity": "independent_keyframe",
@@ -9842,9 +9842,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“水火不容啊”",
     "provenance": {
       "parent_scene_id": "scene_0137",
       "analysis_granularity": "segment_inherited",
@@ -9878,9 +9878,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“我余则成辛辛苦菁地熬到今天 我余则成辛辛菁苦地熬到今天 容易吗 就凭你几张垃圾情”",
     "provenance": {
       "parent_scene_id": "scene_0138",
       "analysis_granularity": "independent_keyframe",
@@ -9914,9 +9914,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“这第 呀 重要的情报没人向上汇报 这第二啊 你是共党 那我很高兴 这第三呢”",
     "provenance": {
       "parent_scene_id": "scene_0139",
       "analysis_granularity": "independent_keyframe",
@@ -9950,9 +9950,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，光线偏暗，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，出镜人物：谢若林、余则成。现场台词：“这第三呢 行行 得得得 你别跟我在这儿 二三四五的 你别跟我在这儿六二三四五的 ”",
     "provenance": {
       "parent_scene_id": "scene_0140",
       "analysis_granularity": "independent_keyframe",
@@ -9986,9 +9986,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，光线偏暗，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，出镜人物：谢若林、余则成。现场台词：“愿意是你是 我巴不得是呢”",
     "provenance": {
       "parent_scene_id": "scene_0141",
       "analysis_granularity": "segment_inherited",
@@ -10022,9 +10022,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“现在共党的情报 那都卖到什么价了”",
     "provenance": {
       "parent_scene_id": "scene_0142",
       "analysis_granularity": "independent_keyframe",
@@ -10058,9 +10058,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“去年年底粟裕的部队偷袭宿迁”",
     "provenance": {
       "parent_scene_id": "scene_0143",
       "analysis_granularity": "independent_keyframe",
@@ -10094,9 +10094,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，光线偏暗，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，出镜人物：谢若林、余则成。现场台词：“去年年底粟裕的部队偷袭宿迁 偷袭呀， 偷袭呀 头四天的情报就开始喊上价了”",
     "provenance": {
       "parent_scene_id": "scene_0144",
       "analysis_granularity": "independent_keyframe",
@@ -10130,9 +10130,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，出镜人物：谢若林、余则成。现场台词：“头四天的情报就开始喊上价了 最后成交才这个数”",
     "provenance": {
       "parent_scene_id": "scene_0145",
       "analysis_granularity": "independent_keyframe",
@@ -10166,9 +10166,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，光线偏暗，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，出镜人物：谢若林、余则成。现场台词：“那戴之奇师怎么还被干掉了”",
     "provenance": {
       "parent_scene_id": "scene_0146",
       "analysis_granularity": "independent_keyframe",
@@ -10202,9 +10202,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“这不明摆着呢吗 买走情报那是共党 就等于封锁消息了”",
     "provenance": {
       "parent_scene_id": "scene_0147",
       "analysis_granularity": "independent_keyframe",
@@ -10238,9 +10238,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在雅间餐桌前谈论情报交易与金条"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“个师呀才两根金条”",
     "provenance": {
       "parent_scene_id": "scene_0148",
       "analysis_granularity": "independent_keyframe",
@@ -10274,9 +10274,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在雅间餐桌前谈论情报交易与金条"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，光线偏暗，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，出镜人物：谢若林、余则成。现场台词：“个师呀才两根金条 人家这买卖多会做呀”",
     "provenance": {
       "parent_scene_id": "scene_0149",
       "analysis_granularity": "independent_keyframe",
@@ -10310,9 +10310,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，出镜人物：谢若林、余则成。现场台词：“这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊 我建议你啊不要插手”",
     "provenance": {
       "parent_scene_id": "scene_0150",
       "analysis_granularity": "independent_keyframe",
@@ -10346,9 +10346,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，光线偏暗，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，出镜人物：谢若林、余则成。现场台词：“我建议你啊不要插手 现在这个局里 南京 武汉的人都有”",
     "provenance": {
       "parent_scene_id": "scene_0151",
       "analysis_granularity": "independent_keyframe",
@@ -10382,9 +10382,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“南京 武汉的人都有 你断人家财路 人家会断你生路的”",
     "provenance": {
       "parent_scene_id": "scene_0152",
       "analysis_granularity": "segment_inherited",
@@ -10418,9 +10418,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“人家会断你生路的”",
     "provenance": {
       "parent_scene_id": "scene_0153",
       "analysis_granularity": "segment_inherited",
@@ -10454,9 +10454,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，出镜人物：谢若林、余则成。现场台词：“你就为了钱 说我是共产党”",
     "provenance": {
       "parent_scene_id": "scene_0154",
       "analysis_granularity": "independent_keyframe",
@@ -10490,9 +10490,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，光线偏暗，铜锅涮肉热气腾腾，谢若林借调侃共党身份试探余则成底细",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为over_shoulder，出镜人物：谢若林、余则成。现场台词：“你就为了钱 说我是共产党 我太太是从延安派来的”",
     "provenance": {
       "parent_scene_id": "scene_0155",
       "analysis_granularity": "segment_inherited",
@@ -10526,9 +10526,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_shot，出镜人物：谢若林、余则成。现场台词：“我太太是从延安派来的 不是说你们是 那我是太希望你们是了”",
     "provenance": {
       "parent_scene_id": "scene_0156",
       "analysis_granularity": "independent_keyframe",
@@ -10562,9 +10562,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“您要是共党 那我得像祖宗 样的”",
     "provenance": {
       "parent_scene_id": "scene_0157",
       "analysis_granularity": "independent_keyframe",
@@ -10598,9 +10598,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“那我得像祖宗 样的 天天供着您呀 谁要是说出去 那他脑子那是缺斤短两”",
     "provenance": {
       "parent_scene_id": "scene_0158",
       "analysis_granularity": "independent_keyframe",
@@ -10634,9 +10634,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，出镜人物：谢若林、余则成。现场台词：“那他脑子那是缺斤短两 老谢呀 咱们俩还是少接触吧”",
     "provenance": {
       "parent_scene_id": "scene_0159",
       "analysis_granularity": "independent_keyframe",
@@ -10670,9 +10670,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“咱们俩还是少接触吧 咱们俩不是 类人 你再想 想 我也可以把党通局的机密告诉你 ”",
     "provenance": {
       "parent_scene_id": "scene_0160",
       "analysis_granularity": "independent_keyframe",
@@ -10706,9 +10706,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林将陈秋平调令与讣告档案拍在桌上，余则成冷笑反讽其想钱想疯了",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，出镜人物：谢若林、余则成。现场台词：“硕果仅存的蠢货 你妹妹什么样啊 我妹妹跟我长得 样 就是很像 但比我漂亮”",
     "provenance": {
       "parent_scene_id": "scene_0161",
       "analysis_granularity": "independent_keyframe",
@@ -10742,9 +10742,9 @@
     ],
     "scene_env": "东来顺涮肉馆雅间餐桌",
     "physical_actions": [
-      "余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问"
+      "谢若林与余则成在东来顺涮肉馆雅间餐桌对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，光线偏暗，余则成怒斥谢若林胡乱栽赃破坏保密局与党通局关系，拍桌质问",
+    "visual_description": "东来顺涮肉馆雅间餐桌，景别为close_up，出镜人物：谢若林、余则成。现场台词：“念过书 有文化很进步 念过书 有文化 很进步”",
     "provenance": {
       "parent_scene_id": "scene_0162",
       "analysis_granularity": "independent_keyframe",
@@ -10773,14 +10773,14 @@
     },
     "dialogue": "念过书 有文化很进步 在延安呢",
     "characters": [
-      "谢若林",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "东来顺涮肉馆雅间餐桌",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林眉飞色舞大谈倒卖军事情报两根金条的大买卖，劝余则成入伙",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“念过书 有文化很进步 在延安呢”",
     "provenance": {
       "parent_scene_id": "scene_0163",
       "analysis_granularity": "independent_keyframe",
@@ -10809,14 +10809,14 @@
     },
     "dialogue": "现在延安丢了 也不知道她在哪儿呢",
     "characters": [
-      "谢若林",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "东来顺涮肉馆雅间餐桌",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为medium_close_up，光线偏暗，余则成严肃警告谢若林误党误国成何体统，谢若林冷笑称军统中统都有人",
+    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，出镜人物：余则成、翠平。现场台词：“现在延安丢了 也不知道她在哪儿呢”",
     "provenance": {
       "parent_scene_id": "scene_0164",
       "analysis_granularity": "independent_keyframe",
@@ -10845,14 +10845,14 @@
     },
     "dialogue": "根她吗 想 能不想吗 她可有见识了 你以后要能见着她就好了 对她挺像左蓝的 短头发 说话也快还老带文词 短头发 说话也快 还老带文词 你不喜欢我 说不定能喜欢她",
     "characters": [
-      "谢若林",
-      "余则成"
+      "余则成",
+      "翠平"
     ],
-    "scene_env": "东来顺涮肉馆雅间餐桌",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "东来顺涮肉馆雅间餐桌，景别为wide_shot，光线偏暗，谢若林给余则成夹肉赔笑，余则成面色阴沉冷眼旁观",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“根她吗 想 能不想吗 她可有见识了 你以后要能见着她就好了 对她挺像左蓝的 短头”",
     "provenance": {
       "parent_scene_id": "scene_0165",
       "analysis_granularity": "independent_keyframe",
@@ -10884,11 +10884,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为medium_shot，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为medium_shot，出镜人物：余则成、翠平。现场台词：“你不喜欢我 说不定能喜欢她 谁说我不喜欢你”",
     "provenance": {
       "parent_scene_id": "scene_0166",
       "analysis_granularity": "independent_keyframe",
@@ -10920,11 +10920,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“谁说我不喜欢你 我傻呀 翠平至今还不知道妹妹牺牲的消息 翠业至 今还不知道妹妹牺”",
     "provenance": {
       "parent_scene_id": "scene_0167",
       "analysis_granularity": "independent_keyframe",
@@ -10956,11 +10956,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“心头忽然感到阵阵凄凉 他觉得有些对不起翠平 怎么对不起 他也说不清楚”",
     "provenance": {
       "parent_scene_id": "scene_0168",
       "analysis_granularity": "independent_keyframe",
@@ -10992,11 +10992,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为medium_close_up，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，出镜人物：余则成、翠平。现场台词：“他也说不清楚 在这样的环境里生存 翠平比他还不容易”",
     "provenance": {
       "parent_scene_id": "scene_0169",
       "analysis_granularity": "independent_keyframe",
@@ -11028,11 +11028,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“左蓝给过他 种信念 但这种信念的力量 却是翠平传递给他的”",
     "provenance": {
       "parent_scene_id": "scene_0170",
       "analysis_granularity": "independent_keyframe",
@@ -11064,11 +11064,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为medium_shot，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为medium_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0171",
       "analysis_granularity": "segment_inherited",
@@ -11100,18 +11100,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为close_up，光线偏暗，微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思",
+    "visual_description": "余则成与翠平家中内室，景别为close_up，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0172",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         55257
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11136,18 +11136,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0173",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         55346
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11172,11 +11172,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为medium_close_up，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，出镜人物：余则成、翠平。现场台词：“这是要去哪儿啊”",
     "provenance": {
       "parent_scene_id": "scene_0174",
       "analysis_granularity": "segment_inherited",
@@ -11208,11 +11208,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为over_shoulder，光线偏暗，微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思",
+    "visual_description": "余则成与翠平家中内室，景别为over_shoulder，出镜人物：余则成、翠平。现场台词：“买花布”",
     "provenance": {
       "parent_scene_id": "scene_0175",
       "analysis_granularity": "independent_keyframe",
@@ -11244,11 +11244,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "余则成与翠平在余则成与翠平家中内室对话交谈"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平。现场台词：“买花布叫着晚秋 块去吧 她比你会买 是啊 人家是城市大小姐 你别说 我要是真娶了”",
     "provenance": {
       "parent_scene_id": "scene_0176",
       "analysis_granularity": "independent_keyframe",
@@ -11280,11 +11280,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为close_up，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为close_up，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0177",
       "analysis_granularity": "segment_inherited",
@@ -11316,18 +11316,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0178",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         56982
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11352,18 +11352,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0179",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         57317
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11388,18 +11388,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为over_shoulder，光线偏暗，微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思",
+    "visual_description": "余则成与翠平家中内室，景别为over_shoulder，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0180",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         57649
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11424,18 +11424,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为medium_shot，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为medium_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0181",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         57808
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11460,11 +11460,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为close_up，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为close_up，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0182",
       "analysis_granularity": "segment_inherited",
@@ -11496,11 +11496,11 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，微弱灯光下余则成替翠平掖好被角，独自凝视窗外沉思",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0183",
       "analysis_granularity": "segment_inherited",
@@ -11532,18 +11532,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为medium_close_up，光线偏暗，余则成坐于桌前整理思绪，暗下决心保护好眼前的革命伴侣",
+    "visual_description": "余则成与翠平家中内室，景别为medium_close_up，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0184",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         58067
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11568,18 +11568,18 @@
       "余则成",
       "翠平"
     ],
-    "scene_env": "余则成家内室床前",
+    "scene_env": "余则成与翠平家中内室",
     "physical_actions": [
-      "余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬"
+      "observable_action_unverified"
     ],
-    "visual_description": "余则成家内室床前，景别为wide_shot，光线偏暗，余则成深夜归家看着熟睡不知妹妹牺牲的翠平，心头涌起悲凉与崇敬",
+    "visual_description": "余则成与翠平家中内室，景别为wide_shot，出镜人物：余则成、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0185",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         58589
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11602,14 +11602,13 @@
     "dialogue": "雪察橫",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平。现场台词：“雪察橫”",
     "provenance": {
       "parent_scene_id": "scene_0186",
       "analysis_granularity": "independent_keyframe",
@@ -11639,14 +11638,13 @@
     "dialogue": "雪察橫",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为close_up，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为close_up，出镜人物：穆晚秋、翠平。现场台词：“雪察橫”",
     "provenance": {
       "parent_scene_id": "scene_0187",
       "analysis_granularity": "independent_keyframe",
@@ -11676,21 +11674,20 @@
     "dialogue": "",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0188",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         60153
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11713,14 +11710,13 @@
     "dialogue": "",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_close_up，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为medium_close_up，出镜人物：穆晚秋、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0189",
       "analysis_granularity": "segment_inherited",
@@ -11750,21 +11746,20 @@
     "dialogue": "",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0190",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         60466
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "none"
     }
@@ -11787,14 +11782,13 @@
     "dialogue": "1你看 你看 我得找到我上回骑的那四 我得找到我上回骑的那匹 在哪呢 大妹子 中榮中路好候的间没来看我了前想死我",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平。现场台词：“1你看 你看 我得找到我上回骑的那四 我得找到我上回骑的那匹 在哪呢 大妹子 中”",
     "provenance": {
       "parent_scene_id": "scene_0191",
       "analysis_granularity": "independent_keyframe",
@@ -11824,14 +11818,13 @@
     "dialogue": "中榮中路好候的间没来看我了前想死我 长时间没来看我了可想死我了 间没来看我了可想死我了",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为close_up，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为close_up，出镜人物：穆晚秋、翠平。现场台词：“中榮中路好候的间没来看我了前想死我 长时间没来看我了可想死我了 间没来看我了可想”",
     "provenance": {
       "parent_scene_id": "scene_0192",
       "analysis_granularity": "segment_inherited",
@@ -11861,14 +11854,13 @@
     "dialogue": "梅姐我给你介绍 下 这是我们街坊晚秋",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "郊外田野间翠平向梅姐引见晚秋，晚秋微笑回应"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平。现场台词：“梅姐我给你介绍 下 这是我们街坊晚秋”",
     "provenance": {
       "parent_scene_id": "scene_0193",
       "analysis_granularity": "independent_keyframe",
@@ -11898,14 +11890,13 @@
     "dialogue": "晚秋 你跑什么呀 你怎么了 要不是她男人敲诈我叔伯 要不是她男人敲谁我叔伯 我叔伯也不会逃到日本去 我也不至于 过现在这种心慌的日子 ［现在这种心慌的日子",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平。现场台词：“晚秋 你跑什么呀 你怎么了 要不是她男人敲诈我叔伯 要不是她男人敲谁我叔伯 我叔”",
     "provenance": {
       "parent_scene_id": "scene_0194",
       "analysis_granularity": "independent_keyframe",
@@ -11935,14 +11926,13 @@
     "dialogue": "［现在这种心慌的日子",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为over_shoulder，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为over_shoulder，出镜人物：穆晚秋、翠平。现场台词：“［现在这种心慌的日子”",
     "provenance": {
       "parent_scene_id": "scene_0195",
       "analysis_granularity": "independent_keyframe",
@@ -11972,14 +11962,13 @@
     "dialogue": "嫂子 你怎么了",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为medium_shot，出镜人物：穆晚秋、翠平。现场台词：“嫂子 你怎么了”",
     "provenance": {
       "parent_scene_id": "scene_0196",
       "analysis_granularity": "independent_keyframe",
@@ -12009,14 +11998,13 @@
     "dialogue": "我就不该吃那个冰的东西 就不该吃那个冰的东西 你脞亍疼是吗 臊死了没脸见人了 臊死了 没脸见人了 医生怎么会是个老爷们儿呢 医生男女都 样 样个屁 都脱光了 那妇科病是个什么病啊 好了 回家",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平。现场台词：“我就不该吃那个冰的东西 就不该吃那个冰的东西 你脞亍疼是吗 臊死了没脸见人了 臊”",
     "provenance": {
       "parent_scene_id": "scene_0197",
       "analysis_granularity": "independent_keyframe",
@@ -12046,14 +12034,13 @@
     "dialogue": "喝点水 Cio 你要生个孩子 这种病准好",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为wide_shot，出镜人物：穆晚秋、翠平。现场台词：“喝点水 Cio 你要生个孩子 这种病准好”",
     "provenance": {
       "parent_scene_id": "scene_0198",
       "analysis_granularity": "independent_keyframe",
@@ -12083,14 +12070,13 @@
     "dialogue": "你要生个孩子 这种病准好 生不了了",
     "characters": [
       "穆晚秋",
-      "余则成",
       "翠平"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "郊外乡村田野小路与送别站台",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "穆晚秋与翠平在郊外乡村田野小路与送别站台对话交谈"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_close_up，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "郊外乡村田野小路与送别站台，景别为medium_close_up，出镜人物：穆晚秋、翠平。现场台词：“你要生个孩子 这种病准好 生不了了”",
     "provenance": {
       "parent_scene_id": "scene_0199",
       "analysis_granularity": "independent_keyframe",
@@ -12119,22 +12105,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为over_shoulder，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "片尾演职员字幕，景别为over_shoulder，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0200",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         63293
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12156,15 +12140,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0201",
       "analysis_granularity": "segment_inherited",
@@ -12193,22 +12175,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为close_up，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "片尾演职员字幕，景别为close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0202",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         63480
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12230,22 +12210,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0203",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         63598
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12267,15 +12245,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_close_up，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0204",
       "analysis_granularity": "segment_inherited",
@@ -12304,22 +12280,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为over_shoulder，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "片尾演职员字幕，景别为over_shoulder，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0205",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         63744
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12341,15 +12315,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_shot，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0206",
       "analysis_granularity": "segment_inherited",
@@ -12378,15 +12350,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为close_up，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "片尾演职员字幕，景别为close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0207",
       "analysis_granularity": "segment_inherited",
@@ -12415,22 +12385,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0208",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         63959
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12452,15 +12420,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_close_up，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0209",
       "analysis_granularity": "segment_inherited",
@@ -12489,15 +12455,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为over_shoulder，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "片尾演职员字幕，景别为over_shoulder，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0210",
       "analysis_granularity": "segment_inherited",
@@ -12526,22 +12490,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_shot，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0211",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         64230
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12563,22 +12525,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0212",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         64419
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "lyrics"
     }
@@ -12600,22 +12560,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为wide_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0213",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         64672
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12637,22 +12595,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_close_up，光线偏暗，晚秋含泪登上列车车厢踏板，余则成伫立清冷站台拉紧风衣领口",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0214",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         64805
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12674,15 +12630,13 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为over_shoulder，光线偏暗，蒸汽机车喷吐浓烟缓缓开动，晚秋倚在车窗向余则成挥泪告别",
+    "visual_description": "片尾演职员字幕，景别为over_shoulder，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0215",
       "analysis_granularity": "segment_inherited",
@@ -12711,22 +12665,20 @@
     },
     "dialogue": "",
     "characters": [
-      "穆晚秋",
-      "余则成",
-      "翠平"
+      "片尾演职员"
     ],
-    "scene_env": "天津街头及火车站站台",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程"
+      "observable_action_unverified"
     ],
-    "visual_description": "天津街头及火车站站台，景别为medium_shot，光线偏暗，余则成与翠平安排晚秋离开天津，在站台白汽弥漫中目送列车启程",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0216",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         64897
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12750,18 +12702,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为wide_shot，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0217",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         65087
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12785,18 +12737,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为wide_shot，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0218",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         65279
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12820,18 +12772,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为medium_close_up，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0219",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         65375
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12855,18 +12807,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为wide_shot，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0220",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         65568
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12890,18 +12842,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为medium_shot，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0221",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         65777
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12925,11 +12877,11 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为close_up，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0222",
       "analysis_granularity": "segment_inherited",
@@ -12960,18 +12912,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为wide_shot，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0223",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         65930
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -12995,11 +12947,11 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为medium_close_up，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0224",
       "analysis_granularity": "segment_inherited",
@@ -13030,18 +12982,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为over_shoulder，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为over_shoulder，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0225",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         66085
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13065,18 +13017,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为medium_shot，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0226",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         66274
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13100,11 +13052,11 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为close_up，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0227",
       "analysis_granularity": "segment_inherited",
@@ -13135,18 +13087,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为wide_shot，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0228",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         66540
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13170,18 +13122,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为medium_close_up，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0229",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         66644
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13205,18 +13157,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "定格于电视剧发行许可证标识，音乐逐渐淡出"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为over_shoulder，光线偏暗，定格于电视剧发行许可证标识，音乐逐渐淡出",
+    "visual_description": "片尾演职员字幕，景别为over_shoulder，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0230",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         66750
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13240,18 +13192,18 @@
     "characters": [
       "片尾演职员"
     ],
-    "scene_env": "片尾字幕滚动与暗场",
+    "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》"
+      "observable_action_unverified"
     ],
-    "visual_description": "片尾字幕滚动与暗场，景别为medium_shot，光线偏暗，黑底白字片尾演职员名单自下而上缓缓滚动，伴随片尾曲《深海》",
+    "visual_description": "片尾演职员字幕，景别为medium_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0231",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         66906
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13277,16 +13229,16 @@
     ],
     "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "片尾演职员字幕滚动展示"
+      "observable_action_unverified"
     ],
-    "visual_description": "黑底白字片尾字幕自下而上缓缓滚动，最后定格于电视剧发行许可证标识",
+    "visual_description": "片尾演职员字幕，景别为close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0232",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         67042
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13312,9 +13264,9 @@
     ],
     "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "片尾演职员字幕滚动展示"
+      "observable_action_unverified"
     ],
-    "visual_description": "黑底白字片尾字幕自下而上缓缓滚动，最后定格于电视剧发行许可证标识",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0233",
       "analysis_granularity": "segment_inherited",
@@ -13347,16 +13299,16 @@
     ],
     "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "片尾演职员字幕滚动展示"
+      "observable_action_unverified"
     ],
-    "visual_description": "黑底白字片尾字幕自下而上缓缓滚动，最后定格于电视剧发行许可证标识",
+    "visual_description": "片尾演职员字幕，景别为medium_close_up，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0234",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         67246
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
     }
@@ -13382,18 +13334,168 @@
     ],
     "scene_env": "片尾演职员字幕",
     "physical_actions": [
-      "片尾演职员字幕滚动展示"
+      "observable_action_unverified"
     ],
-    "visual_description": "黑底白字片尾字幕自下而上缓缓滚动，最后定格于电视剧发行许可证标识",
+    "visual_description": "片尾演职员字幕，景别为wide_shot，出镜人物：片尾演职员，当前镜头无对白",
     "provenance": {
       "parent_scene_id": "scene_0235",
       "analysis_granularity": "independent_keyframe",
       "sample_frame_refs": [
         67422
       ],
-      "confidence": 0.92,
+      "confidence": 0.9,
       "has_verified_ocr_dialogue": false,
       "text_type": "credits"
+    }
+  },
+  {
+    "unit_id": "unit_dial_vice_director_01",
+    "parent_scene_id": "scene_0045",
+    "media_id": "qianfu_ep18_720p_25fps",
+    "evidence_id": "qianfu_ep18_720p_25fps:scene_0045:unit_dial_vice_director_01",
+    "timecode": {
+      "in": "00:05:05.960",
+      "out": "00:05:15.000",
+      "start_sec": 305.96,
+      "end_sec": 315,
+      "duration_sec": 9.04,
+      "start_frame": 7649,
+      "end_frame": 7875,
+      "fps": 25
+    },
+    "dialogue": "还是跟李队长商量商量 李涯也不是个省油的灯 副站长就是你 谢谢老师栽培",
+    "characters": [
+      "吴敬中",
+      "余则成"
+    ],
+    "scene_env": "保密局天津站站长办公室办公桌前",
+    "physical_actions": [
+      "吴站长靠坐在皮椅上，手指余则成敲定副站长任命，余则成敬谢栽培"
+    ],
+    "visual_description": "保密局天津站站长办公室办公桌前，吴站长手指余则成告知副站长就是你，余则成立正敬谢栽培",
+    "provenance": {
+      "parent_scene_id": "scene_0045",
+      "analysis_granularity": "dialogue_aligned_unit",
+      "sample_frame_refs": [
+        7711,
+        7774,
+        7825
+      ],
+      "confidence": 0.99,
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
+    }
+  },
+  {
+    "unit_id": "unit_dial_gold_bars_01",
+    "parent_scene_id": "scene_0148",
+    "media_id": "qianfu_ep18_720p_25fps",
+    "evidence_id": "qianfu_ep18_720p_25fps:scene_0148:unit_dial_gold_bars_01",
+    "timecode": {
+      "in": "00:33:35.000",
+      "out": "00:33:43.200",
+      "start_sec": 2015,
+      "end_sec": 2023.2,
+      "duration_sec": 8.2,
+      "start_frame": 50375,
+      "end_frame": 50580,
+      "fps": 25
+    },
+    "dialogue": "个师呀才两根金条 人家这买卖多会做呀",
+    "characters": [
+      "谢若林",
+      "余则成"
+    ],
+    "scene_env": "东来顺涮肉馆雅间餐桌",
+    "physical_actions": [
+      "谢若林边吃涮肉边给余则成大谈一个师才两根金条的买卖，余则成冷眼观察"
+    ],
+    "visual_description": "东来顺涮肉馆雅间餐桌，谢若林晃头算计大谈一个师才两根金条，余则成冷峻倾听",
+    "provenance": {
+      "parent_scene_id": "scene_0148",
+      "analysis_granularity": "dialogue_aligned_unit",
+      "sample_frame_refs": [
+        50410,
+        50512
+      ],
+      "confidence": 0.99,
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
+    }
+  },
+  {
+    "unit_id": "unit_dial_promotion_01",
+    "parent_scene_id": "scene_0068",
+    "media_id": "qianfu_ep18_720p_25fps",
+    "evidence_id": "qianfu_ep18_720p_25fps:scene_0068:unit_dial_promotion_01",
+    "timecode": {
+      "in": "00:10:47.280",
+      "out": "00:11:01.000",
+      "start_sec": 647.28,
+      "end_sec": 661,
+      "duration_sec": 13.72,
+      "start_frame": 16182,
+      "end_frame": 16525,
+      "fps": 25
+    },
+    "dialogue": "今天值得庆祝 一为收复延安 二 则成晋升为中校副站长",
+    "characters": [
+      "吴敬中",
+      "余则成"
+    ],
+    "scene_env": "保密局天津站站长办公室办公桌前",
+    "physical_actions": [
+      "吴站长在站长办公室内手拿文件春风得意，余则成垂手立正谨慎应对"
+    ],
+    "visual_description": "保密局天津站站长办公室办公桌前，吴站长宣布延安大捷与晋升委任，余则成垂手谨慎应答",
+    "provenance": {
+      "parent_scene_id": "scene_0068",
+      "analysis_granularity": "dialogue_aligned_unit",
+      "sample_frame_refs": [
+        16200,
+        16250,
+        16300
+      ],
+      "confidence": 0.99,
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
+    }
+  },
+  {
+    "unit_id": "unit_dial_celebration_01",
+    "parent_scene_id": "scene_0070",
+    "media_id": "qianfu_ep18_720p_25fps",
+    "evidence_id": "qianfu_ep18_720p_25fps:scene_0070:unit_dial_celebration_01",
+    "timecode": {
+      "in": "00:11:01.000",
+      "out": "00:11:15.000",
+      "start_sec": 661,
+      "end_sec": 675,
+      "duration_sec": 14,
+      "start_frame": 16525,
+      "end_frame": 16875,
+      "fps": 25
+    },
+    "dialogue": "余副站长 恭喜呀 以后多多关照啊 同甘共苦 同甘共苦",
+    "characters": [
+      "吴敬中",
+      "余则成"
+    ],
+    "scene_env": "保密局天津站站长办公室办公桌前",
+    "physical_actions": [
+      "吴站长满面堆笑亲切拍打余则成肩膀，余则成微笑回应"
+    ],
+    "visual_description": "保密局天津站站长办公室办公桌前，吴站长拍余则成肩膀道喜同甘共苦，余则成微笑致意",
+    "provenance": {
+      "parent_scene_id": "scene_0070",
+      "analysis_granularity": "dialogue_aligned_unit",
+      "sample_frame_refs": [
+        16750,
+        16850
+      ],
+      "confidence": 0.99,
+      "has_verified_ocr_dialogue": true,
+      "text_type": "dialogue"
     }
   }
 ]

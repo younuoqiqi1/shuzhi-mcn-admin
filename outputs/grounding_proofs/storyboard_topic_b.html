@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Topic B: 《余则成最危险的一次试探》 - Grounding Storyboard</title>
+  <style>
+    :root {
+      --bg: #0b0d13;
+      --card-bg: #141721;
+      --card-border: #232838;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.15);
+      --green: #10b981;
+      --green-glow: rgba(16, 185, 129, 0.15);
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.5;
+      padding: 32px 48px;
+    }
+    header {
+      max-width: 1300px;
+      margin: 0 auto 36px auto;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header-left h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .header-left p {
+      color: var(--text-muted);
+      font-size: 14px;
+      max-width: 780px;
+    }
+    .header-right {
+      text-align: right;
+    }
+    .overall-gate-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #34d399;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .segment-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+    .segment-header {
+      background: #191d2a;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .segment-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .seg-index {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--accent);
+      background: rgba(59, 130, 246, 0.12);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .segment-header h3 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .unit-id {
+      font-size: 13px;
+      color: var(--text-dim);
+      font-weight: 400;
+      font-family: monospace;
+    }
+    .timecode-badge {
+      font-family: monospace;
+      font-size: 13px;
+      color: #cbd5e1;
+      background: #11141c;
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid #2d3346;
+    }
+    .segment-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .meta-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      font-size: 13px;
+    }
+    .meta-col strong {
+      color: var(--text-dim);
+      display: block;
+      margin-bottom: 4px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .meta-col p {
+      color: var(--text);
+    }
+    .audio-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .audio-box {
+      background: #10121a;
+      border: 1px solid #202432;
+      border-radius: 8px;
+      padding: 14px 18px;
+    }
+    .box-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .box-label .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4b5563;
+    }
+    .box-label .dot.active {
+      background: #10b981;
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+    }
+    .box-text {
+      font-size: 14px;
+      color: #e2e8f0;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+    .frames-container {
+      background: #0f1118;
+      border: 1px solid #1c202c;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .frames-header {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .frames-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .frame-card {
+      background: #161922;
+      border: 1px solid #252a38;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .frame-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+    .frame-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+      background: #000;
+    }
+    .frame-info {
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .frame-time {
+      font-family: monospace;
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .frame-desc {
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+    .gate-verdict-box {
+      border-top: 1px solid #1e2230;
+      padding-top: 16px;
+    }
+    .gate-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .badge.pass {
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+    .badge.fail {
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #f87171;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>🎬 Topic B: 《余则成最危险的一次试探》</h1>
+      <p>核心立意：真正的间谍死斗从不是拔枪互射，而是两根金条放在桌上时，余则成顺着谢若林的贪婪将灭顶之灾降维成利益同盟，完成整部剧最凶险的反制与全身而退。</p>
+    </div>
+    <div class="header-right">
+      <div class="overall-gate-pill">● 5-DIMENSIONS GROUNDING: ALL PASS</div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#1</span>
+              <h3>seg_probe_01 <span class="unit-id">[unit_scene_0138_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 1948.28s - 1956.56s (8.28s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>开场交代东来顺致命饭局，抛出余则成身份悬疑危局</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>东来顺涮肉馆雅间餐桌 | 出镜人物: [谢若林, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"我余则成辛辛苦苦熬到今天容易吗 就凭你几张垃圾情报 就把我这一辈子全毁了"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  老周旁白 (Narration - context):
+                </div>
+                <div class="box-text">"老周重看第18集：余则成最大的危机，正是这顿东来顺涮肉。"</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_b_seg1_frame1.jpg" alt="东来顺雅间铜锅热气弥漫，余则成怒目相视" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">1950.0s</span>
+                <span class="frame-desc">东来顺雅间铜锅热气弥漫，余则成怒目相视</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg1_frame2.jpg" alt="余则成激愤控诉：'我余则成辛辛苦苦熬到今天容易吗'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">1952.5s</span>
+                <span class="frame-desc">余则成激愤控诉：'我余则成辛辛苦苦熬到今天容易吗'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg1_frame3.jpg" alt="控诉谢若林：'就凭你几张垃圾情报，把我一辈子全毁了'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">1955.0s</span>
+                <span class="frame-desc">控诉谢若林：'就凭你几张垃圾情报，把我一辈子全毁了'</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#2</span>
+              <h3>seg_probe_02 <span class="unit-id">[unit_dial_gold_bars_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 2015.00s - 2023.20s (8.20s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>原声呈现谢若林开出两根金条绝密情报买卖，身份危机达到顶点</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>东来顺涮肉馆雅间餐桌 | 出镜人物: [谢若林, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"个师呀才两根金条 人家这买卖多会做呀"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  老周旁白 (Narration - none):
+                </div>
+                <div class="box-text">（本段原声独占，零旁白干扰）</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_b_seg2_frame1.jpg" alt="谢若林歪头冷笑，在热气腾腾铜锅前算计买卖" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2017.0s</span>
+                <span class="frame-desc">谢若林歪头冷笑，在热气腾腾铜锅前算计买卖</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg2_frame2.jpg" alt="谢若林开口高光：'一个师呀才两根金条'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2019.5s</span>
+                <span class="frame-desc">谢若林开口高光：'一个师呀才两根金条'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg2_frame3.jpg" alt="谢若林洋洋自得：'人家这买卖多会做呀'，余则成冷峻倾听" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2022.0s</span>
+                <span class="frame-desc">谢若林洋洋自得：'人家这买卖多会做呀'，余则成冷峻倾听</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#3</span>
+              <h3>seg_probe_03 <span class="unit-id">[unit_scene_0150_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 2023.20s - 2032.28s (9.08s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>展现余则成义正词严反客为主，化被动为主动</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>东来顺涮肉馆雅间餐桌 | 出镜人物: [谢若林, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"这情况我必须得向上面汇报 这种买卖误党误国呀 成何体统啊 我建议你啊不要插手"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  老周旁白 (Narration - interpretation):
+                </div>
+                <div class="box-text">"在老周看来，余则成顺着对方贪婪，把政治信仰降维成一门两根金条的生意。"</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_b_seg3_frame1.jpg" alt="余则成正色反击：'这情况我必须得向上面汇报'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2025.0s</span>
+                <span class="frame-desc">余则成正色反击：'这情况我必须得向上面汇报'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg3_frame2.jpg" alt="余则成义正词严斥责：'这种买卖误党误国成何体统'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2028.0s</span>
+                <span class="frame-desc">余则成义正词严斥责：'这种买卖误党误国成何体统'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg3_frame3.jpg" alt="余则成严肃警告谢若林莫要插手，摸底对方贪财底线" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2031.0s</span>
+                <span class="frame-desc">余则成严肃警告谢若林莫要插手，摸底对方贪财底线</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="segment-card">
+          <div class="segment-header">
+            <div class="segment-title-group">
+              <span class="seg-index">#4</span>
+              <h3>seg_probe_04 <span class="unit-id">[unit_scene_0160_01]</span></h3>
+            </div>
+            <div class="timecode-badge">
+              ⏱ 2079.96s - 2090.00s (10.04s)
+            </div>
+          </div>
+
+          <div class="segment-body">
+            <div class="meta-row">
+              <div class="meta-col">
+                <strong>叙事功能 (Purpose):</strong>
+                <p>破局收尾，余则成安然脱身告辞离去</p>
+              </div>
+              <div class="meta-col">
+                <strong>物理场景与出镜人物:</strong>
+                <p>东来顺涮肉馆雅间餐桌 | 出镜人物: [谢若林, 余则成]</p>
+              </div>
+            </div>
+
+            <div class="audio-row">
+              <div class="audio-box dialogue-box">
+                <div class="box-label">
+                  <span class="dot "></span>
+                  真实原声台词 (Original Dialogue):
+                </div>
+                <div class="box-text">"老谢呀 咱们俩还是少接触吧 咱们俩不是一类人 谢谢你的羊肉 我得回去了"</div>
+              </div>
+              <div class="audio-box narration-box">
+                <div class="box-label">
+                  <span class="dot active"></span>
+                  老周旁白 (Narration - transition):
+                </div>
+                <div class="box-text">"老周总结：两根金条不仅化解了灭顶危机，更让余则成在贪婪黑市中安然脱身。"</div>
+              </div>
+            </div>
+
+            <div class="frames-container">
+              <div class="frames-header">真实源片抽帧验证 (Representative Frames Proof):</div>
+              <div class="frames-grid">
+                
+            <div class="frame-card">
+              <img src="frames/topic_b_seg4_frame1.jpg" alt="余则成放下筷子：'老谢呀，咱们俩还是少接触吧'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2082.0s</span>
+                <span class="frame-desc">余则成放下筷子：'老谢呀，咱们俩还是少接触吧'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg4_frame2.jpg" alt="余则成起身告辞：'谢谢你的羊肉，我得回去了'" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2085.0s</span>
+                <span class="frame-desc">余则成起身告辞：'谢谢你的羊肉，我得回去了'</span>
+              </div>
+            </div>
+          
+            <div class="frame-card">
+              <img src="frames/topic_b_seg4_frame3.jpg" alt="余则成推门离去，谢若林在后算计冷笑，破局全身而退" loading="lazy"/>
+              <div class="frame-info">
+                <span class="frame-time">2088.0s</span>
+                <span class="frame-desc">余则成推门离去，谢若林在后算计冷笑，破局全身而退</span>
+              </div>
+            </div>
+          
+              </div>
+            </div>
+
+            <div class="gate-verdict-box">
+              <div class="gate-title">五维全息门禁判定 (5-Dimensional Grounding Gate):</div>
+              <div class="badges-row">
+                <span class="badge pass">✓ TEMPORAL: 时码区间合法且对齐</span><span class="badge pass">✓ DIALOGUE: 对白对齐与原声完整性验证通过</span><span class="badge pass">✓ VISUAL: 视觉人物与物理场景真实吻合</span><span class="badge pass">✓ SEMANTIC: Level 5 Narrative/Editorial Match: 视听画面与台词精准支撑叙事立意</span><span class="badge pass">✓ EDITORIAL: 叙事功能清晰且镜头无重复</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+  </main>
+</body>
+</html>

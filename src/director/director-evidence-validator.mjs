@@ -301,18 +301,37 @@ export class DirectorEvidenceValidator {
       }
     }
 
-    // 校验分段之间的时间顺序与连贯性
+    // 校验分段之间的时间顺序与连贯性、以及镜头排重校验 (七、Director 防重复)
     let totalPlannedDuration = 0;
     const seenSegIds = new Set();
+    const seenUnitIds = new Map();
 
     plan.segments.forEach((seg, idx) => {
       if (seenSegIds.has(seg.segment_id)) {
         throw new DirectorValidationError(`plan.segments[${idx}]`, `重复的 segment_id '${seg.segment_id}'`);
       }
       seenSegIds.add(seg.segment_id);
+
+      // 镜头排重校验：同一成片默认禁止重复 retrieval_unit_id
+      const unitId = seg.retrieval_unit_id;
+      if (unitId) {
+        if (seenUnitIds.has(unitId)) {
+          const prevIdx = seenUnitIds.get(unitId);
+          if (!seg.allow_repeat || !seg.editorial_reason) {
+            throw new DirectorValidationError(
+              `plan.segments[${idx}].retrieval_unit_id`,
+              `镜头重复错误：分段 [${idx}] (${seg.segment_id}) 重复使用了分段 [${prevIdx}] 的镜头 '${unitId}'。成片默认严禁重复 retrieval_unit_id！如确有特殊需要，必须显式声明 allow_repeat=true 且提供非空 editorial_reason。`
+            );
+          }
+        } else {
+          seenUnitIds.set(unitId, idx);
+        }
+      }
+
       totalPlannedDuration += seg.planned_duration;
     });
 
     return true;
   }
 }
+
