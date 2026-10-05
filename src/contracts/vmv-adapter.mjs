@@ -1,7 +1,12 @@
 /**
- * @file vmv-adapter.js
+ * @file vmv-adapter.mjs
  * @description POC-AGENT A1: DirectorPlan -> VMV Stage 4/5 Production Order 映射适配器。
- * 确保数智博主后台与底层 VMV 引擎输入协议 100% 兼容对齐。
+ * 
+ * [技术债记录 / Technical Debt]:
+ * 当前 VMV adapter 仅完成了 schema-level mapping（数据结构字段映射与静态校验），
+ * 尚未经过真实 VMV Stage 4/5 消费端消费链路（Python CLI `python -m vmv render`、真实 TTS 与 ffmpeg 合成）
+ * 的 Consumer Integration Test。在进入 A7/A8 正式生产接入前必须通过端到端集成验证。
+ * 严禁声称“100%兼容”。
  */
 
 import { validateDirectorPlan, parseTimecodeToSeconds, ValidationError } from "./validators.mjs";

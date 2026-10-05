@@ -81,17 +81,17 @@ export const MaterialRequirementSchema = {
   $id: "https://schema.shuzhi.ai/contracts/material-requirement.json",
   title: "MaterialRequirement",
   type: "object",
-  required: ["beat_id", "action_cue", "emotional_tone"],
+  required: ["beat_id", "desired_action", "desired_emotion"],
   properties: {
     beat_id: { type: "string", minLength: 1 },
-    characters: {
+    desired_characters: {
       type: "array",
       items: { type: "string" },
     },
-    scene_env: { type: "string" },
-    action_cue: { type: "string", minLength: 1 },
-    emotional_tone: { type: "string", minLength: 1 },
-    preferred_affordances: {
+    desired_scene_env: { type: "string" },
+    desired_action: { type: "string", minLength: 1 },
+    desired_emotion: { type: "string", minLength: 1 },
+    target_affordances: {
       type: "array",
       items: { type: "string" },
     },
@@ -99,6 +99,7 @@ export const MaterialRequirementSchema = {
       type: "array",
       items: { type: "string" },
     },
+    evidence_grounding_criteria: { type: "string" },
   },
 };
 
@@ -252,13 +253,12 @@ export const ProductionJobSchema = {
     status: {
       type: "string",
       enum: [
-        "drafting",
-        "scripting",
-        "awaiting_script_review",
+        "ideating",
+        "awaiting_direction_review",
         "retrieving",
         "perspective_reading",
         "directing",
-        "awaiting_director_review",
+        "awaiting_final_plan_review",
         "vmv_producing",
         "completed",
         "failed",

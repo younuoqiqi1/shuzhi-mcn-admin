@@ -10,7 +10,7 @@ import {
   OperationsOrchestrator,
   OrchestratorError,
 } from "../src/operations/operations-orchestrator.mjs";
-import { JOB_STATES } from "../src/contracts/job-state-machine.mjs";
+import { JOB_STATES, transitionJob } from "../src/contracts/job-state-machine.mjs";
 import { laozhouPersonaFixture } from "../src/fixtures/laozhou-qianfu-fixture.mjs";
 
 test("OperationsOrchestrator: initiates structured topic and viewpoint from operator intent", () => {
@@ -21,7 +21,7 @@ test("OperationsOrchestrator: initiates structured topic and viewpoint from oper
     sourceMediaId: "qianfu_ep18_720p_25fps",
   });
 
-  assert.equal(job.status, JOB_STATES.DRAFTING);
+  assert.equal(job.status, JOB_STATES.IDEATING);
   assert.equal(job.blogger_id, laozhouPersonaFixture.id);
   assert.ok(job.payload.topic.id);
   assert.equal(job.payload.core_viewpoint.version, 1);
@@ -104,7 +104,7 @@ test("OperationsOrchestrator: Story Beats expresses narrative intent without loc
   ];
 
   job = OperationsOrchestrator.generateStoryBeats(job, beats);
-  assert.equal(job.status, JOB_STATES.SCRIPTING);
+  assert.equal(job.status, JOB_STATES.IDEATING);
   assert.equal(job.payload.beats.length, 2);
 
   // 2. 守界红线：如果试图在 Story Beat 中写死具体时间码或物理片段，必须被拦截抛错！
@@ -127,7 +127,7 @@ test("OperationsOrchestrator: Story Beats expresses narrative intent without loc
   );
 });
 
-test("OperationsOrchestrator: derives Material Requirements and advances to human review gate", () => {
+test("OperationsOrchestrator: derives Material Requirements and advances to direction review gate", () => {
   let job = OperationsOrchestrator.initiateJobFromIntent({
     persona: laozhouPersonaFixture,
     operatorIntent: "从余则成两次倒水看汇报",
@@ -145,24 +145,44 @@ test("OperationsOrchestrator: derives Material Requirements and advances to huma
   ];
   job = OperationsOrchestrator.generateStoryBeats(job, beats);
 
+  // 需求必须以 desired / evidence_need 语义表达期望寻找的证据，绝不伪装为已确认素材事实
   const requirements = [
     {
       beat_id: "beat-01",
-      characters: ["余则成", "吴敬中"],
-      scene_env: "站长办公室",
-      action_cue: "双手递茶，低头动作克制",
-      emotional_tone: "平静下的暗流试探",
-      preferred_affordances: ["试探", "权力压迫"],
+      desired_characters: ["余则成", "吴敬中"],
+      desired_scene_env: "站长办公室",
+      desired_action: "双手递茶，低头动作克制",
+      desired_emotion: "平静下的暗流试探",
+      target_affordances: ["试探", "权力压迫"],
+      evidence_grounding_criteria: "寻找上级低头审阅、下级双手递送茶杯且动作克制的室内镜头",
     },
   ];
 
-  // 提交至审核卡点
+  // 提交至真人方向审核卡点 (Topic-first: 审核选题方向与证据诉求，非最终脚本)
   job = OperationsOrchestrator.deriveMaterialRequirementsAndSubmit(job, requirements);
 
-  assert.equal(job.status, JOB_STATES.AWAITING_SCRIPT_REVIEW);
+  assert.equal(job.status, JOB_STATES.AWAITING_DIRECTION_REVIEW);
   assert.equal(job.progress_percent, 30);
   assert.equal(job.payload.material_requirements.length, 1);
-  assert.equal(job.payload.material_requirements[0].action_cue, "双手递茶，低头动作克制");
+  assert.equal(job.payload.material_requirements[0].desired_action, "双手递茶，低头动作克制");
+  assert.equal(job.payload.material_requirements[0].desired_emotion, "平静下的暗流试探");
+  assert.equal(job.payload.material_requirements[0].evidence_grounding_criteria, "寻找上级低头审阅、下级双手递送茶杯且动作克制的室内镜头");
+
+  // 1. 模拟真人审核打回修改需求
+  const rejectedJob = transitionJob(job, JOB_STATES.IDEATING, {
+    reason: "真人运营认为茶杯动作需要更强的情绪张力，打回修改素材诉求",
+  });
+  assert.equal(rejectedJob.status, JOB_STATES.IDEATING);
+
+  // 2. 模拟再次提审并审核通过，正式推进至客观证据检索 (retrieving)
+  const resubmittedJob = OperationsOrchestrator.deriveMaterialRequirementsAndSubmit(rejectedJob, requirements);
+  assert.equal(resubmittedJob.status, JOB_STATES.AWAITING_DIRECTION_REVIEW);
+
+  const approvedJob = transitionJob(resubmittedJob, JOB_STATES.RETRIEVING, {
+    reason: "真人运营审核通过选题方向与素材诉求，正式授权后台检索",
+  });
+  assert.equal(approvedJob.status, JOB_STATES.RETRIEVING);
+  assert.equal(approvedJob.progress_percent, 45);
 
   // 守界红线：如果在 Material Requirement 中泄露时间码，必须拦截
   assert.throws(
@@ -170,8 +190,8 @@ test("OperationsOrchestrator: derives Material Requirements and advances to huma
       OperationsOrchestrator.deriveMaterialRequirementsAndSubmit(job, [
         {
           beat_id: "beat-01",
-          action_cue: "违规动作",
-          emotional_tone: "平静",
+          desired_action: "违规动作",
+          desired_emotion: "平静",
           out_timecode: "00:08:18.700",
         },
       ]),

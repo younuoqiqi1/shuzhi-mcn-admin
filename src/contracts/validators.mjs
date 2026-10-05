@@ -136,10 +136,16 @@ export function validateStoryBeat(data) {
 export function validateMaterialRequirement(data) {
   assertObject(data, "MaterialRequirement");
   assertNonEmptyString(data.beat_id, "MaterialRequirement", "beat_id");
-  assertNonEmptyString(data.action_cue, "MaterialRequirement", "action_cue");
-  assertNonEmptyString(data.emotional_tone, "MaterialRequirement", "emotional_tone");
-  if (data.characters && !Array.isArray(data.characters)) {
-    throw new ValidationError("MaterialRequirement", "characters", "必须是字符串数组");
+  assertNonEmptyString(data.desired_action, "MaterialRequirement", "desired_action");
+  assertNonEmptyString(data.desired_emotion, "MaterialRequirement", "desired_emotion");
+  if (data.desired_characters && !Array.isArray(data.desired_characters)) {
+    throw new ValidationError("MaterialRequirement", "desired_characters", "必须是字符串数组");
+  }
+  if (data.target_affordances && !Array.isArray(data.target_affordances)) {
+    throw new ValidationError("MaterialRequirement", "target_affordances", "必须是字符串数组");
+  }
+  if (data.forbidden_elements && !Array.isArray(data.forbidden_elements)) {
+    throw new ValidationError("MaterialRequirement", "forbidden_elements", "必须是字符串数组");
   }
   return true;
 }

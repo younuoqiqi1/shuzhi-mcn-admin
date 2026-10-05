@@ -190,29 +190,22 @@ export class OperationsOrchestrator {
       return Object.freeze(beat);
     });
 
-    let activeJob = job;
-    if (activeJob.status === JOB_STATES.DRAFTING) {
-      activeJob = transitionJob(activeJob, JOB_STATES.SCRIPTING, {
-        reason: "推进至分镜节拍构思阶段",
-        currentStage: "2. 节拍编排与诉求推导 (Story Beats & Requirements)",
-      });
-    }
-
     return {
-      ...activeJob,
+      ...job,
+      current_stage: "1. 选题立意与需求策划 (Topic/Viewpoint/Beats/Requirements)",
       payload: {
-        ...activeJob.payload,
+        ...job.payload,
         beats,
       },
     };
   }
 
   /**
-   * 4. 导出 Material Requirements (画面/情节/情绪诉求)，并提交至真人审核卡点
+   * 4. 导出 Material Requirements (明确表达“想寻找的证据”，绝不伪装成确认事实)，并提交至真人方向审核卡点
    * 严格守界：只声明画面动作诉求与期望戏剧功能，不涉及具体镜头
    * @param {Object} job
    * @param {Array<Object>} requirementsConfig
-   * @returns {Object} 跃迁至 AWAITING_SCRIPT_REVIEW 状态的 Job 副本
+   * @returns {Object} 跃迁至 AWAITING_DIRECTION_REVIEW 状态的 Job 副本
    */
   static deriveMaterialRequirementsAndSubmit(job, requirementsConfig) {
     if (!job.payload.beats || job.payload.beats.length === 0) {
@@ -236,23 +229,38 @@ export class OperationsOrchestrator {
         );
       }
 
+      const desiredAction = req.desired_action || req.action_cue;
+      const desiredEmotion = req.desired_emotion || req.emotional_tone;
+      const desiredCharacters = Array.isArray(req.desired_characters)
+        ? req.desired_characters
+        : Array.isArray(req.characters)
+        ? req.characters
+        : [];
+      const desiredSceneEnv = req.desired_scene_env || req.scene_env || "";
+      const targetAffordances = Array.isArray(req.target_affordances)
+        ? req.target_affordances
+        : Array.isArray(req.preferred_affordances)
+        ? req.preferred_affordances
+        : [];
+
       const requirement = {
         beat_id: req.beat_id,
-        characters: Array.isArray(req.characters) ? req.characters : [],
-        scene_env: req.scene_env || "",
-        action_cue: req.action_cue,
-        emotional_tone: req.emotional_tone,
-        preferred_affordances: Array.isArray(req.preferred_affordances) ? req.preferred_affordances : [],
+        desired_characters: desiredCharacters,
+        desired_scene_env: desiredSceneEnv,
+        desired_action: desiredAction,
+        desired_emotion: desiredEmotion,
+        target_affordances: targetAffordances,
         forbidden_elements: Array.isArray(req.forbidden_elements) ? req.forbidden_elements : [],
+        evidence_grounding_criteria: req.evidence_grounding_criteria || "",
       };
       validateMaterialRequirement(requirement);
       return Object.freeze(requirement);
     });
 
-    // 跃迁至等待审核状态
-    const submittedJob = transitionJob(job, JOB_STATES.AWAITING_SCRIPT_REVIEW, {
-      reason: "Story Beats 与画面需求已生成，挂起等待真人运营审核",
-      currentStage: "3. 脚本与诉求真人审核卡点 (Awaiting Script Review)",
+    // 跃迁至等待审核状态 (符合 Topic-first 架构的选题与方向审核，非脚本审核)
+    const submittedJob = transitionJob(job, JOB_STATES.AWAITING_DIRECTION_REVIEW, {
+      reason: "Story Beats 与证据诉求已生成，挂起等待真人运营方向审核",
+      currentStage: "2. 选题方向与证据诉求真人审核卡点 (Awaiting Direction Review)",
       payloadUpdate: {
         material_requirements: requirements,
       },

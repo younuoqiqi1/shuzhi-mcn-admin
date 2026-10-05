@@ -20,6 +20,7 @@ import {
   ValidationError,
   validate,
 } from "../src/contracts/validators.mjs";
+import { validateObjectiveEvidence } from "../src/evidence/objective-evidence.mjs";
 
 import {
   JOB_STATES,
@@ -113,19 +114,33 @@ test("StoryBeat validator: ensures positive order index and duration", () => {
   );
 });
 
-test("MaterialRequirement validator: checks action cue and emotional tone", () => {
+test("MaterialRequirement validator: checks desired action and desired emotion semantics", () => {
   qianfuMaterialRequirementsFixture.forEach((req) => {
     assert.ok(validateMaterialRequirement(req));
     assert.ok(validate("MaterialRequirement", req));
   });
 
   assert.throws(
-    () => validateMaterialRequirement({ ...qianfuMaterialRequirementsFixture[0], action_cue: "" }),
+    () => validateMaterialRequirement({ ...qianfuMaterialRequirementsFixture[0], desired_action: "" }),
     ValidationError
   );
   assert.throws(
-    () => validateMaterialRequirement({ ...qianfuMaterialRequirementsFixture[0], emotional_tone: "" }),
+    () => validateMaterialRequirement({ ...qianfuMaterialRequirementsFixture[0], desired_emotion: "" }),
     ValidationError
+  );
+});
+
+test("MaterialRequirement anti-masquerade: strictly cannot be ingested as L1 Objective Evidence", () => {
+  const req = qianfuMaterialRequirementsFixture[0];
+  // MaterialRequirement 表达的是期望证据诉求 (desired/evidence_need)，绝不能伪装为客观素材事实 (L1 Evidence)
+  assert.throws(
+    () => validateObjectiveEvidence(req),
+    (err) => {
+      // 必须明确被 L1 校验器拦截拒绝（缺少证据事实物理字段，或包含主观诉求关键词）
+      assert.ok(err instanceof Error);
+      assert.match(err.message, /(ObjectiveEvidence 缺失必填字段|L1 只允许存放客观事实)/);
+      return true;
+    }
   );
 });
 
@@ -205,35 +220,30 @@ test("JobStateMachine: creates initial job and advances through complete Topic-f
     initialPayload: { topic: qianfuTopicFixture },
   });
 
-  assert.equal(job.status, JOB_STATES.DRAFTING);
-  assert.equal(job.progress_percent, 5);
+  assert.equal(job.status, JOB_STATES.IDEATING);
+  assert.equal(job.progress_percent, 15);
   assert.equal(job.history.length, 1);
   assert.ok(validateProductionJob(job));
 
-  // 1. drafting -> scripting
-  job = transitionJob(job, JOB_STATES.SCRIPTING, {
-    reason: "Completed topic & viewpoint ideation",
-    payloadUpdate: { beats: qianfuStoryBeatsFixture },
+  // 1. ideating -> awaiting_direction_review (完成 Topic/Viewpoint/Beats/Material Requirements，提交真人方向审核)
+  job = transitionJob(job, JOB_STATES.AWAITING_DIRECTION_REVIEW, {
+    reason: "Submitted topic direction, beats and material requirements for human review",
+    payloadUpdate: {
+      beats: qianfuStoryBeatsFixture,
+      requirements: qianfuMaterialRequirementsFixture,
+    },
   });
-  assert.equal(job.status, JOB_STATES.SCRIPTING);
-  assert.equal(job.progress_percent, 15);
-
-  // 2. scripting -> awaiting_script_review
-  job = transitionJob(job, JOB_STATES.AWAITING_SCRIPT_REVIEW, {
-    reason: "Submitted beats and material requirements for human review",
-    payloadUpdate: { requirements: qianfuMaterialRequirementsFixture },
-  });
-  assert.equal(job.status, JOB_STATES.AWAITING_SCRIPT_REVIEW);
+  assert.equal(job.status, JOB_STATES.AWAITING_DIRECTION_REVIEW);
   assert.equal(job.progress_percent, 30);
 
-  // 3. awaiting_script_review -> retrieving
+  // 2. awaiting_direction_review -> retrieving (真人审核通过选题方向与素材诉求，正式进入客观证据库检索)
   job = transitionJob(job, JOB_STATES.RETRIEVING, {
-    reason: "Human operator approved script beats",
+    reason: "Human operator approved direction and material requirements",
   });
   assert.equal(job.status, JOB_STATES.RETRIEVING);
   assert.equal(job.progress_percent, 45);
 
-  // 4. retrieving -> perspective_reading
+  // 3. retrieving -> perspective_reading
   job = transitionJob(job, JOB_STATES.PERSPECTIVE_READING, {
     reason: "Retrieved top-3 candidates for all beats",
     payloadUpdate: { candidates: qianfuCandidatesFixture },
@@ -241,7 +251,7 @@ test("JobStateMachine: creates initial job and advances through complete Topic-f
   assert.equal(job.status, JOB_STATES.PERSPECTIVE_READING);
   assert.equal(job.progress_percent, 60);
 
-  // 5. perspective_reading -> directing
+  // 4. perspective_reading -> directing
   job = transitionJob(job, JOB_STATES.DIRECTING, {
     reason: "Finished perspective re-reading",
     payloadUpdate: { perspective_readings: qianfuPerspectiveReadingsFixture },
@@ -249,29 +259,29 @@ test("JobStateMachine: creates initial job and advances through complete Topic-f
   assert.equal(job.status, JOB_STATES.DIRECTING);
   assert.equal(job.progress_percent, 75);
 
-  // 6. directing -> awaiting_director_review
-  job = transitionJob(job, JOB_STATES.AWAITING_DIRECTOR_REVIEW, {
+  // 5. directing -> awaiting_final_plan_review (导演基于真实证据完成最终分镜与生产计划，挂起等待最终生产审核)
+  job = transitionJob(job, JOB_STATES.AWAITING_FINAL_PLAN_REVIEW, {
     reason: "Director Plan synthesized from real evidence",
     payloadUpdate: { director_plan: qianfuDirectorPlanFixture },
   });
-  assert.equal(job.status, JOB_STATES.AWAITING_DIRECTOR_REVIEW);
+  assert.equal(job.status, JOB_STATES.AWAITING_FINAL_PLAN_REVIEW);
   assert.equal(job.progress_percent, 85);
 
-  // 7. awaiting_director_review -> vmv_producing
+  // 6. awaiting_final_plan_review -> vmv_producing
   job = transitionJob(job, JOB_STATES.VMV_PRODUCING, {
     reason: "Director Plan approved for render",
   });
   assert.equal(job.status, JOB_STATES.VMV_PRODUCING);
   assert.equal(job.progress_percent, 95);
 
-  // 8. vmv_producing -> completed
+  // 7. vmv_producing -> completed
   job = transitionJob(job, JOB_STATES.COMPLETED, {
     reason: "Rendered 1080p MP4 successfully and registered into library",
     payloadUpdate: { output_mp4: "outputs/stage5/final_video.mp4" },
   });
   assert.equal(job.status, JOB_STATES.COMPLETED);
   assert.equal(job.progress_percent, 100);
-  assert.equal(job.history.length, 9);
+  assert.equal(job.history.length, 8);
 });
 
 test("JobStateMachine: supports review rejection and loops back gracefully", () => {
@@ -281,15 +291,14 @@ test("JobStateMachine: supports review rejection and loops back gracefully", () 
     bloggerId: "b1",
   });
 
-  job = transitionJob(job, JOB_STATES.SCRIPTING);
-  job = transitionJob(job, JOB_STATES.AWAITING_SCRIPT_REVIEW);
+  job = transitionJob(job, JOB_STATES.AWAITING_DIRECTION_REVIEW);
 
-  // 人工打回要求重修 beats
-  job = transitionJob(job, JOB_STATES.SCRIPTING, { reason: "Script rejected for rewrite" });
-  assert.equal(job.status, JOB_STATES.SCRIPTING);
+  // 人工打回要求重修选题方向与需求
+  job = transitionJob(job, JOB_STATES.IDEATING, { reason: "Direction rejected for revision" });
+  assert.equal(job.status, JOB_STATES.IDEATING);
 
   // 再次提审并通过
-  job = transitionJob(job, JOB_STATES.AWAITING_SCRIPT_REVIEW);
+  job = transitionJob(job, JOB_STATES.AWAITING_DIRECTION_REVIEW);
   job = transitionJob(job, JOB_STATES.RETRIEVING);
   assert.equal(job.status, JOB_STATES.RETRIEVING);
 });
@@ -301,13 +310,13 @@ test("JobStateMachine: rejects illegal state transitions strictly", () => {
     bloggerId: "b1",
   });
 
-  // 企图从 drafting 直接跳到 vmv_producing
+  // 企图从 ideating 直接跳到 vmv_producing
   assert.throws(
     () => transitionJob(job, JOB_STATES.VMV_PRODUCING),
     (err) => {
       assert.ok(err instanceof InvalidStateTransitionError);
-      assert.match(err.message, /无法从 'drafting' 跃迁至 'vmv_producing'/);
-      assert.deepEqual(err.allowedStates, [JOB_STATES.SCRIPTING, JOB_STATES.CANCELLED]);
+      assert.match(err.message, /无法从 'ideating' 跃迁至 'vmv_producing'/);
+      assert.deepEqual(err.allowedStates, [JOB_STATES.AWAITING_DIRECTION_REVIEW, JOB_STATES.FAILED, JOB_STATES.CANCELLED]);
       return true;
     }
   );
@@ -319,8 +328,8 @@ test("JobStateMachine: rejects illegal state transitions strictly", () => {
     progress_percent: 100,
   };
   assert.throws(
-    () => transitionJob(completedJob, JOB_STATES.SCRIPTING),
-    /无法从 'completed' 跃迁至 'scripting'/
+    () => transitionJob(completedJob, JOB_STATES.IDEATING),
+    /无法从 'completed' 跃迁至 'ideating'/
   );
 });
 
