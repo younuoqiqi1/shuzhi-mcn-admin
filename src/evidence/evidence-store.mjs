@@ -73,6 +73,36 @@ export class EvidenceStore {
   }
 
   /**
+   * 按出现角色查询客观证据
+   * @param {string} characterName
+   * @returns {Array<Object>}
+   */
+  findByCharacter(characterName) {
+    const results = [];
+    for (const ev of this._records.values()) {
+      if (Array.isArray(ev.characters) && ev.characters.includes(characterName)) {
+        results.push(ev);
+      }
+    }
+    return results;
+  }
+
+  /**
+   * 按场景 ID 查询客观证据
+   * @param {string} sceneId
+   * @returns {Array<Object>}
+   */
+  findByScene(sceneId) {
+    const results = [];
+    for (const ev of this._records.values()) {
+      if (ev.scene_id === sceneId) {
+        results.push(ev);
+      }
+    }
+    return results;
+  }
+
+  /**
    * 获取所有登记的证据总数
    * @returns {number}
    */

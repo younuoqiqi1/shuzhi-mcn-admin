@@ -115,3 +115,28 @@ export function loadVMVStage1Artifacts(manifestInput, scenesInput) {
 
   return evidenceList;
 }
+
+/**
+ * 载入经过 A4.5 真实对齐富集后的 L1 Evidence 集合
+ * 包含从真实视频 OCR 提取的对白台词、人物角色识别、客观动作、场景环境、视觉描述与 provenance
+ * @param {string|Array<Object>} [input] 文件路径或已解析的 JSON 数组 (默认读取内置 enriched_evidence_qianfu_ep18.json)
+ * @returns {Array<Object>} 经过 validateObjectiveEvidence 严格校验的 ObjectiveEvidence 数组
+ */
+export function loadEnrichedEvidenceArtifacts(input) {
+  let list;
+  if (!input) {
+    const defaultPath = new URL("./data/enriched_evidence_qianfu_ep18.json", import.meta.url).pathname;
+    list = JSON.parse(readFileSync(defaultPath, "utf8"));
+  } else if (typeof input === "string") {
+    list = JSON.parse(readFileSync(input, "utf8"));
+  } else if (Array.isArray(input)) {
+    list = input;
+  } else {
+    throw new Error("无效的富集 Evidence 输入");
+  }
+
+  return list.map((item) => {
+    validateObjectiveEvidence(item);
+    return Object.freeze(item);
+  });
+}

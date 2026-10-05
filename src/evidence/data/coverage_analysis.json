@@ -1,0 +1,39 @@
+{
+  "media_id": "qianfu_ep18_720p_25fps",
+  "total_video_duration_sec": 2702.013,
+  "total_frames": 67550,
+  "fps": 25.0,
+  "historical_stage1_130": {
+    "analyzed_duration_sec": 1800.0,
+    "uncovered_duration_sec": 902.013,
+    "scene_count": 130,
+    "cut_count": 129,
+    "avg_duration_sec": 13.85,
+    "max_duration_sec": 210.96,
+    "coverage_percent": 66.62
+  },
+  "recheck_stage1_325": {
+    "analyzed_duration_sec": 1800.0,
+    "uncovered_duration_sec": 902.013,
+    "scene_count": 326,
+    "cut_count": 325,
+    "avg_duration_sec": 5.52,
+    "max_duration_sec": 26.8,
+    "coverage_percent": 66.62
+  },
+  "tail_segment_1800_to_2702": {
+    "duration_sec": 902.013,
+    "cut_count": 105,
+    "scene_count": 106
+  },
+  "full_2702s_coverage_baseline": {
+    "duration_sec": 2702.013,
+    "scene_count": 236,
+    "coverage_percent": 100.0
+  },
+  "full_2702s_coverage_adaptive": {
+    "duration_sec": 2702.013,
+    "scene_count": 432,
+    "coverage_percent": 100.0
+  }
+}
