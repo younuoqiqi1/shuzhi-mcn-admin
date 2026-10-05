@@ -2,9 +2,9 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A7.1: Director Plan 成片可执行性与时长预算收口**  
-当前状态：`A7.1 awaiting_final_review` (A7 changes_requested 已全量收口：INSUFFICIENT_EVIDENCE 默认严禁创建生产分段，Topic A 缩编为 3 段且立意自然合并；落地 Narration Duration Budget 集中估算体系，双选题全分段 100% duration_fit = true；99/99 测试全绿；已彻底停机，严禁进入 A8)  
-执行责任：🏛️ 全栈架构师 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
+当前阶段：**POC-AGENT A8: MCN 后台 → 真实生产链 → MP4**  
+当前状态：`A8 awaiting_human_video_review` (A8 端到端生产全量达成：真实《潜伏》第18集源片裁切、真实 TTS 语音合成、真实原声保留与闪避混合、真实字幕烧录、真实 FFmpeg 渲染组装；选题 B 与选题 A 零改代码复跑均 100% 成功生成可播放 MP4；106/106 测试全绿；原地彻底停机，等待用户亲自审阅成片 MP4，严禁进入 A9)  
+执行责任：🏛️ 全栈架构师 & 💻 前端与交互专家 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
 
 ---
 
@@ -14,11 +14,12 @@
 |:---|:---:|:---:|:---|
 | **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
 | **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已通过** (2026-10-05) | 真实影视素材（《潜伏》第18集全片约45:02，共 2702.013 秒）检索与视角重读：有效覆盖率 7/8 = 87.5% >= 80%；`req_wu_03` 查实为全集无机要室且李涯零出镜，判定为 `INSUFFICIENT_EVIDENCE` 属真实正确结果，门禁正式批准通过。 |
-| **Director Final Review Gate** | A7 结束点 | ⏳ **等待终审 (awaiting_final_review)** (2026-10-05) | Final Director Plan 必须 100% 消费 A6 Top3 真实候选；INSUFFICIENT_EVIDENCE 需求默认严禁产生虚假生产分段 (merge/drop)；旁白时长预算系统证明全量说得完 (100% duration_fit = true)；原声完整性防截断；VMV Consumer Contract 验证通过并声明 A8 Blocker。 |
+| **Director Final Review Gate** | A7 结束点 | ✅ **已通过** (2026-10-05) | Final Director Plan 必须 100% 消费 A6 Top3 真实候选；INSUFFICIENT_EVIDENCE 需求默认严禁产生虚假生产分段 (merge/drop)；旁白时长预算系统证明全量说得完 (100% duration_fit = true)；原声完整性防截断；VMV Consumer Contract 验证通过。 |
+| **A8 Human Video Review Gate** | A8 结束点 | ⏳ **等待成片审阅 (awaiting_human_video_review)** (2026-10-05) | 用户亲自播放检视两条真实生成的成片 MP4 (`topic_b_final.mp4` 与 `topic_a_final.mp4`)，验证视频/音频/旁白/字幕/节奏真实表现。 |
 
 ---
 
-## A0–A10 分阶段实施路线图 (总体完成度：90%)
+## A0–A10 分阶段实施路线图 (总体完成度：95%)
 
 | 阶段 | 权重 | 状态 | 交付物 / 验收入口 | 核心说明 |
 |:---|---:|:---:|:---|:---|
@@ -31,8 +32,10 @@
 | **A4.5.1 尾部连续补齐与生成来源审计修复** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | A4.5.1 Review Approved。把 1800~2702.013s 真正补入 canonical 数据集（235 场景，0 到 2702.013s 连续无空洞）；审计视觉来源，落地 independent vs inherited 分级与置信度衰减；测试全绿 |
 | **A5. 候选镜头召回检索管道** | 10% | ✅ **completed** | [`src/retrieval/`](src/retrieval/)<br>[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)<br>[`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs) | A5 Review Approved。消费 MaterialRequirements，基于 Hybrid 检索（结构化+词法+语义Fallback+L2潜能）从真实 Canonical 数据集自动为每个诉求召回 Top20 客观候选；多场景多样性与 3s 时序去重；测试 62/62 全绿 |
 | **A6. 动态 Perspective Re-reading** | 12% | ✅ **completed** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)<br>[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | A6 Final Review Approved。完成 A6.3 Evidence 对齐收口、演职员/歌词 OCR 彻底清洗、`req_wu_03` 查实为全集无机要室且李涯零出镜判定为 `INSUFFICIENT_EVIDENCE`；Top3 Gate 87.5% 正式批准通过 |
-| **A7. Director 真实证据终编服务** | 10% | 🚪 **awaiting_review** | [`src/director/`](src/director/)<br>[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)<br>[`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)<br>[`tests/director-final.test.mjs`](tests/director-final.test.mjs) | 消费真实 A6 Top3；原声与旁白职责先行；严禁未支撑伪断言；处理 `req_wu_03` 显式决议；输出双真实选题 Plan、VMV 生产单与 Markdown 视听预览；测试 95/95 全绿 |
-| **A8. VMV Stage 4/5 真实生产对接** | 8% | 待开始 | 本地生产 Runner 与真实 MP4 输出 | **严禁提前进入**；等待真人完成 A7 终审；阿里云 TTS 真实配音与 FFmpeg 剪辑压制 |
+| **A7. Director 真实证据终编服务** | 10% | ✅ **completed** | [`src/director/`](src/director/)<br>[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)<br>[`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)<br>[`tests/director-final.test.mjs`](tests/director-final.test.mjs) | A7 Final Review Approved。消费真实 A6 Top3；原声与旁白职责先行；严禁未支撑伪断言；处理 `req_wu_03` 显式决议 (merge)；输出双真实选题 Plan、VMV 生产单与时长预算表；测试全绿 |
+| **A8. VMV Stage 4/5 真实生产对接与 MP4** | 8% | 🚪 **awaiting_review** | [`outputs/production/topic_b_final.mp4`](outputs/production/topic_b_final.mp4)<br>[`outputs/production/topic_a_final.mp4`](outputs/production/topic_a_final.mp4)<br>[`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)<br>[`tests/production-e2e.test.mjs`](tests/production-e2e.test.mjs) | MCN 后台闭环触发真实生产链；驱动 VMV Stage 4/5 真实裁切、TTS 合成、原声/旁白混合、字幕烧录、FFmpeg 组装；完成选题 B 首跑与选题 A 零改代码复跑；全工程 106/106 测试通过 |
+| **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
+| **A10. 双博主同素材 A/B 验证验收** | 4% | 待开始 | 两支不同风格的真实 1080p MP4 与指标报告 | 终极验收：同一部剧同素材池、双博主截然不同视听成品 |
 | **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
 | **A10. 双博主同素材 A/B 验证验收** | 4% | 待开始 | 两支不同风格的真实 1080p MP4 与指标报告 | 终极验收：同一部剧同素材池、双博主截然不同视听成品 |
 
@@ -98,9 +101,20 @@
   - **自动化测试套件全量更新与通过**：
     - 全工程测试扩展至 **99/99 passed**（新增 4 项 A7.1 时长预算与假分段拦截专项测试）；
   - **交付技术报告**：[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)。
-- [x] **技术债与集成状态说明**：
-  - **VMV 消费端真实跨语言执行标为 A8 Blocker**：当前适配器已通过真实 VMV Consumer Contract Schema 校验，但由于 `video-moment-validation` 仓库尚未部署 Stage 4/5 真实的 Python CLI (`python -m vmv render`) 与 ffmpeg / TTS 执行环境，真实的跨进程端到端集成测试标为 **A8 Blocker**，严禁虚假宣称“100%兼容”。
-- [x] **严格守界**：**严禁进入 A8，严禁开始视频合成、真实 TTS 与 MP4 导出，原地彻底停止等待真人审核**。
+- [x] **A8 (Delivered, awaiting_human_video_review)**：MCN 后台 → 真实生产链 → MP4 真实端到端交付：
+  - **跨仓库驱动真实 VMV Stage 4/5 消费端**：
+    - 在 `video-moment-validation` 实现 `src/vmv/render.py` 与 `vmv render` 命令；
+    - 执行真实秒级切片提取、真实 TTS 语音合成、真实音轨混合（audio_owner, duck, L_cut, fade）、真实两行中文字幕烧录、真实 FFmpeg 封装压制、自动技术 QC；
+  - **MCN 后台真实任务调度与流式服务**：
+    - 落地 `ProductionJobService`：维护真实任务状态机 (`queued → preparing → cutting → tts → assembling → qc → completed`)，严禁 setTimeout 假模拟；
+    - 落地 `McnBackendServer`：提供 REST API 与支持 HTTP 206 Range 分片流式播放的视频服务；
+    - MCN 前端嵌入原生 `<video>` 播放器，运营人员可在后台直接点击播放成片；
+  - **双真实选题 100% 成功生成成片与 QC 达标**：
+    - 选题 B《余则成最危险的一次试探》：时长 40.44s，1280x720，H.264/AAC，SHA-256 `27cbaefda6841bb4671bb6d3669f213411f767e5060ac38bf747fdf7be720f13`；
+    - 选题 A《吴站长什么时候开始怀疑余则成？》：零改代码复跑，时长 39.48s，1280x720，H.264/AAC，SHA-256 `acafd2940c3041488abd5f3281fd0740ad3d85c00b6f04bc803072010ca4c22b`；
+  - **全套自动化测试扩展至 106/106 passed**（新增 7 项 A8 端到端专项测试）；
+  - **交付技术报告**：[`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)。
+- [x] **严格守界**：**严禁进入 A9，严禁开始知识回流，原地彻底停止等待用户亲自播放检视成片**。
 
 ---
 
@@ -136,3 +150,14 @@
     - 全工程 **99/99 自动化测试全绿**（新增 4 项 A7.1 专项测试）；
     - 导出独立时长预算审计表与更新真人视听预览；
     - 当前状态正式设为 **`A7.1 awaiting_final_review`**，原地彻底停止，严禁进入 A8。
+26. **2026-10-05 13:38**：A7.1 Final Review 审查正式批准通过（**APPROVED**），授权开启 POC-AGENT A8 阶段。
+27. **2026-10-05 14:00**：完成 POC-AGENT A8 端到端全链路交付：
+    - 接通真实 `video-moment-validation` Stage 4/5 消费端，落地 `src/vmv/render.py` 与 `vmv render` 命令；
+    - 建立真实 `ProductionJobService` 与流式视频服务器 `McnBackendServer`，并在 MCN 后台嵌入原生视频播放器；
+    - 真实执行《潜伏》第18集源片裁切、TTS 合成、原声/旁白/闪避/L-cut 混合与字幕烧录；
+    - 成功生产第一条成片《余则成最危险的一次试探》（40.44s）并通过全量技术 QC；
+    - 零改代码成功复跑第二条成片《吴站长什么时候开始怀疑余则成？》（39.48s），生成独立新 Job、新工单与新 SHA-256；
+    - 全工程自动化测试扩展至 **106/106 passed**（0 failed）；
+    - 交付验收报告 [`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)；
+    - 当前状态正式设为 **`A8 awaiting_human_video_review`**，原地彻底停机，等待用户亲自播放检视两条 MP4，严禁进入 A9。
+

@@ -1,0 +1,65 @@
+{
+  "order_id": "order_vmv_topic_a_wu_suspicion",
+  "plan_id": "plan_topic_qf18_wu_suspicion_v1",
+  "topic_id": "topic_qf18_wu_suspicion",
+  "blogger_id": "laozhou_zhuiju",
+  "source_media_path": "/Users/yoyotaozhou/Documents/video-moment-validation/data/input/qianfu_ep18.mp4",
+  "output_video_path": "/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/shuzhi-mcn-admin/outputs/production/topic_a_final.mp4",
+  "tts_provider": "macos_native_say",
+  "tts_voice": "Reed (中文（中国大陆）)",
+  "is_tts_fallback": true,
+  "total_duration_sec": 39.484807,
+  "resolution": "1280x720",
+  "fps": 25.0,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "file_size_bytes": 6826013,
+  "sha256": "acafd2940c3041488abd5f3281fd0740ad3d85c00b6f04bc803072010ca4c22b",
+  "segment_count": 3,
+  "segments_summary": [
+    {
+      "segment_index": 1,
+      "beat_id": "beat_wu_01_hook",
+      "duration_sec": 16.72,
+      "audio_owner": "narration",
+      "audio_transition": "fade",
+      "narration_text": "老周聊谍战。许多观众问吴站长到底信不信余则成？第18集这句‘副站长就是你’，表面是提拔栽培，实则是站长布下的一场诛心大局。",
+      "tts_duration_sec": 11.918413,
+      "has_burned_subtitles": true
+    },
+    {
+      "segment_index": 2,
+      "beat_id": "beat_wu_02_testing",
+      "duration_sec": 6,
+      "audio_owner": "original_dialogue",
+      "audio_transition": "hard_cut",
+      "narration_text": "",
+      "tts_duration_sec": 0.0,
+      "has_burned_subtitles": true
+    },
+    {
+      "segment_index": 3,
+      "beat_id": "beat_wu_04_conclusion",
+      "duration_sec": 16.72,
+      "audio_owner": "narration",
+      "audio_transition": "duck",
+      "narration_text": "在老周看来，吴敬中从不依赖物理卷宗去查余则成。只要你能帮我搞金佛、捞美钞，看破不戳破，才是这位保密局老狐狸的终极生存法则。",
+      "tts_duration_sec": 12.26458,
+      "has_burned_subtitles": true
+    }
+  ],
+  "qc_passed": true,
+  "qc_details": {
+    "duration_actual": 39.484807,
+    "duration_expected": 39.44,
+    "duration_delta_sec": 0.045,
+    "video_stream_present": true,
+    "audio_stream_present": true,
+    "resolution": "1280x720",
+    "fps": 25.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "file_size_bytes": 6826013,
+    "sha256": "acafd2940c3041488abd5f3281fd0740ad3d85c00b6f04bc803072010ca4c22b"
+  }
+}

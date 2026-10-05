@@ -1,0 +1,75 @@
+{
+  "order_id": "order_vmv_topic_b_dangerous_probe",
+  "plan_id": "plan_topic_qf18_dangerous_probe_v1",
+  "topic_id": "topic_qf18_dangerous_probe",
+  "blogger_id": "laozhou_zhuiju",
+  "source_media_path": "/Users/yoyotaozhou/Documents/video-moment-validation/data/input/qianfu_ep18.mp4",
+  "output_video_path": "/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/shuzhi-mcn-admin/outputs/production/topic_b_final.mp4",
+  "tts_provider": "macos_native_say",
+  "tts_voice": "Reed (中文（中国大陆）)",
+  "is_tts_fallback": true,
+  "total_duration_sec": 40.444082,
+  "resolution": "1280x720",
+  "fps": 25.0,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "file_size_bytes": 5351788,
+  "sha256": "27cbaefda6841bb4671bb6d3669f213411f767e5060ac38bf747fdf7be720f13",
+  "segment_count": 4,
+  "segments_summary": [
+    {
+      "segment_index": 1,
+      "beat_id": "beat_probe_01_hook",
+      "duration_sec": 8.28,
+      "audio_owner": "narration",
+      "audio_transition": "fade",
+      "narration_text": "老周重看第18集：余则成最大的危机，正是这顿东来顺涮肉。",
+      "tts_duration_sec": 6.046395,
+      "has_burned_subtitles": true
+    },
+    {
+      "segment_index": 2,
+      "beat_id": "beat_probe_02_revelation",
+      "duration_sec": 13.2,
+      "audio_owner": "original_dialogue",
+      "audio_transition": "hard_cut",
+      "narration_text": "",
+      "tts_duration_sec": 0.0,
+      "has_burned_subtitles": true
+    },
+    {
+      "segment_index": 3,
+      "beat_id": "beat_probe_03_counterattack",
+      "duration_sec": 9.56,
+      "audio_owner": "narration",
+      "audio_transition": "duck",
+      "narration_text": "在老周看来，余则成顺着对方的贪婪，把政治信仰降维成一门两根金条的生意。",
+      "tts_duration_sec": 7.208617,
+      "has_burned_subtitles": true
+    },
+    {
+      "segment_index": 4,
+      "beat_id": "beat_probe_04_evacuation",
+      "duration_sec": 9.36,
+      "audio_owner": "narration",
+      "audio_transition": "L_cut",
+      "narration_text": "老周总结：两根金条化解了灭顶危机，更为暗夜撤离赢得了生机。",
+      "tts_duration_sec": 6.078413,
+      "has_burned_subtitles": true
+    }
+  ],
+  "qc_passed": true,
+  "qc_details": {
+    "duration_actual": 40.444082,
+    "duration_expected": 40.4,
+    "duration_delta_sec": 0.044,
+    "video_stream_present": true,
+    "audio_stream_present": true,
+    "resolution": "1280x720",
+    "fps": 25.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "file_size_bytes": 5351788,
+    "sha256": "27cbaefda6841bb4671bb6d3669f213411f767e5060ac38bf747fdf7be720f13"
+  }
+}
