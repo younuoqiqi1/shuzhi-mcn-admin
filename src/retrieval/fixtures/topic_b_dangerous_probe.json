@@ -1,0 +1,102 @@
+{
+  "topic": {
+    "id": "topic_qf18_dangerous_probe",
+    "topic_id": "topic_qf18_dangerous_probe",
+    "blogger_id": "laozhou_zhuiju",
+    "title": "余则成最危险的一次试探",
+    "source_media_id": "qianfu_ep18_720p_25fps",
+    "angle": "情报贩子谢若林与余则成的生死牌局",
+    "core_thesis": "谢若林抛出陈秋平档案与假夫妻真相，余则成在杀意与交易之间极度克制，完成了整部剧最凶险的心理试探与反制",
+    "target_duration_sec": 180.0,
+    "aspect_ratio": "16:9",
+    "target_aspect_ratio": "16:9"
+  },
+  "viewpoint": {
+    "viewpoint_id": "vp_qf18_dangerous_probe_v1",
+    "topic_id": "topic_qf18_dangerous_probe",
+    "thesis": "真正的间谍死斗从不是拔枪互射，而是两根金条放在桌上时，余则成如何把灭顶之灾变成利益同盟",
+    "hook": "当谢若林笑眯眯说出'上面急需给你配备一个太太'时，余则成离万劫不复只差0.01毫米",
+    "takeaway": "在贪婪者的世界里，比信仰更有说服力的是价码；余则成不仅战胜了试探，更看透了国民党崩溃的根源",
+    "tone_keywords": ["惊心动魄", "心理交锋", "暗流涌动"]
+  },
+  "story_beats": [
+    {
+      "beat_id": "beat_probe_01_hook",
+      "order": 1,
+      "beat_title": "请客涮肉背后的致命邀约",
+      "narrative_function": "谢若林设局请客声称深度勾兑，抛出绝密交易诱饵",
+      "target_duration_sec": 40.0
+    },
+    {
+      "beat_id": "beat_probe_02_revelation",
+      "order": 2,
+      "beat_title": "陈秋平档案与假夫妻危局",
+      "narrative_function": "翻看档案披露陈秋平死因与通缉令，余则成身份悬于一线",
+      "target_duration_sec": 45.0
+    },
+    {
+      "beat_id": "beat_probe_03_counterattack",
+      "order": 3,
+      "beat_title": "两根金条与主义伪装的博弈",
+      "narrative_function": "余则成暴怒反客为主，用金钱交易逻辑彻底瓦解谢若林的怀疑",
+      "target_duration_sec": 50.0
+    },
+    {
+      "beat_id": "beat_probe_04_evacuation",
+      "order": 4,
+      "beat_title": "险境逢生与暗夜撤离",
+      "narrative_function": "密谋解除危机后护送晚秋登上列车，在汽笛声中完成破局收尾",
+      "target_duration_sec": 45.0
+    }
+  ],
+  "material_requirements": [
+    {
+      "requirement_id": "req_probe_01",
+      "beat_id": "beat_probe_01_hook",
+      "order_index": 1,
+      "description": "寻找谢若林与余则成在客厅餐桌对坐、谢若林抽烟请客勾兑生意的镜头",
+      "desired_characters": ["谢若林", "余则成"],
+      "desired_action": "谢若林叼着卷烟靠在沙发或餐桌前举杯，余则成神情警惕应答",
+      "desired_emotion": "表面客套勾兑暗藏杀机",
+      "desired_scene_env": "谢家客厅与餐桌",
+      "target_affordances": ["covert_transaction", "suspicion_testing"],
+      "evidence_grounding_criteria": "出现谢若林与余则成在客厅餐桌对坐，涉及涮羊肉、勾兑与情报生意"
+    },
+    {
+      "requirement_id": "req_probe_02",
+      "beat_id": "beat_probe_02_revelation",
+      "order_index": 2,
+      "description": "寻找翻看绝密牛皮纸袋、提及陈秋平坠崖与配备太太对白的镜头",
+      "desired_characters": ["谢若林", "余则成"],
+      "desired_action": "将牛皮纸袋拍在桌上翻看卷宗，或余则成眼神凝固",
+      "desired_emotion": "绝密暴露的剧烈冲击与冰冷危机",
+      "desired_scene_env": "谢家客厅餐桌",
+      "target_affordances": ["information_asymmetry", "suspicion_testing"],
+      "evidence_grounding_criteria": "涉及陈秋平、讣告、照片、太太或绝密卷宗"
+    },
+    {
+      "requirement_id": "req_probe_03",
+      "beat_id": "beat_probe_03_counterattack",
+      "order_index": 3,
+      "description": "寻找余则成怒斥敲诈、谈及两根金条与共产党情报交锋的激烈镜头",
+      "desired_characters": ["余则成", "李涯"],
+      "desired_action": "两人在昏暗空间严词对峙，神情激愤，涉及情报卖价与汇报上面",
+      "desired_emotion": "绝地反击与冷酷对峙",
+      "desired_scene_env": "保密局走廊或密谈空间",
+      "target_affordances": ["power_dynamic", "covert_transaction"],
+      "evidence_grounding_criteria": "对白中包含两根金条、共党、生意、偷袭或向上汇报等词项"
+    },
+    {
+      "requirement_id": "req_probe_04",
+      "beat_id": "beat_probe_04_evacuation",
+      "order_index": 4,
+      "description": "寻找余则成护送晚秋前往火车站、站台汽笛烟雾弥漫与列车告别的镜头",
+      "desired_characters": ["余则成", "穆晚秋"],
+      "desired_action": "提着皮箱护送登上列车踏板，列车启动含泪挥手告别",
+      "desired_emotion": "临危托付与暗夜破局的深沉决绝",
+      "desired_scene_env": "火车站站台与绿皮列车",
+      "target_affordances": ["farewell_parting", "covert_transaction"],
+      "evidence_grounding_criteria": "出现火车站台、绿皮车厢、蒸汽烟雾或车窗告别动作"
+    }
+  ]
+}

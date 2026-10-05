@@ -1,0 +1,102 @@
+{
+  "topic": {
+    "id": "topic_qf18_wu_suspicion",
+    "topic_id": "topic_qf18_wu_suspicion",
+    "blogger_id": "laozhou_zhuiju",
+    "title": "吴站长什么时候开始怀疑余则成？",
+    "source_media_id": "qianfu_ep18_720p_25fps",
+    "angle": "老谋深算站长的心理博弈与试探切入",
+    "core_thesis": "吴站长对余则成的怀疑并非单点顿悟，而是在师生假面与官场利益权衡下的多次冷眼试探",
+    "target_duration_sec": 180.0,
+    "aspect_ratio": "16:9",
+    "target_aspect_ratio": "16:9"
+  },
+  "viewpoint": {
+    "viewpoint_id": "vp_qf18_wu_suspicion_v1",
+    "topic_id": "topic_qf18_wu_suspicion",
+    "thesis": "吴站长早已看透局势，其怀疑的本质不在于确认信仰，而在于试探余则成是否触犯自身核心利益与官位安全",
+    "hook": "所有人都以为吴站长被余则成骗得团团转，但第18集这几个细节早已暴露出站长内心的冰冷试探",
+    "takeaway": "在保密局的生存法则里，看穿不戳穿、留有余地才是老站长真正的驭人之道",
+    "tone_keywords": ["冷峻", "抽丝剥茧", "官场洞察"]
+  },
+  "story_beats": [
+    {
+      "beat_id": "beat_wu_01_hook",
+      "order": 1,
+      "beat_title": "师生假面下的眼神交锋",
+      "narrative_function": "展示站长与余则成在办公室看似恭顺实则暗流涌动的对话",
+      "target_duration_sec": 35.0
+    },
+    {
+      "beat_id": "beat_wu_02_testing",
+      "order": 2,
+      "beat_title": "借委任状与贪官言论敲山震虎",
+      "narrative_function": "站长直白提及贪官与杀头，言语试探余则成的心理防线",
+      "target_duration_sec": 45.0
+    },
+    {
+      "beat_id": "beat_wu_03_crisis",
+      "order": 3,
+      "beat_title": "机要室叛徒照片与档案险情",
+      "narrative_function": "保密局内部排查通缉令与照片，暗战气氛推向高潮",
+      "target_duration_sec": 50.0
+    },
+    {
+      "beat_id": "beat_wu_04_conclusion",
+      "order": 4,
+      "beat_title": "默契维系与生存法则",
+      "narrative_function": "深夜复盘，站长点燃雪茄的冷眼旁观与余则成的谨慎应对",
+      "target_duration_sec": 50.0
+    }
+  ],
+  "material_requirements": [
+    {
+      "requirement_id": "req_wu_01",
+      "beat_id": "beat_wu_01_hook",
+      "order_index": 1,
+      "description": "寻找吴站长与余则成在站长办公室单独对坐、余则成神情恭顺而站长神色审视的镜头",
+      "desired_characters": ["吴敬中", "余则成"],
+      "desired_action": "余则成立正聆听，吴站长翻看文件或目光冷峻",
+      "desired_emotion": "表面平和而内部张力紧绷",
+      "desired_scene_env": "保密局天津站站长办公室",
+      "target_affordances": ["suspicion_testing", "power_dynamic"],
+      "evidence_grounding_criteria": "必须包含吴敬中与余则成同框或正反打，且环境为站长室办公桌前"
+    },
+    {
+      "requirement_id": "req_wu_02",
+      "beat_id": "beat_wu_02_testing",
+      "order_index": 2,
+      "description": "寻找站长提及官场贪腐、委任状或严厉盘查的对白段落，两人有言语敲打",
+      "desired_characters": ["吴敬中", "余则成"],
+      "desired_action": "站长边抽雪茄边发表警示言论，余则成低头应答",
+      "desired_emotion": "威严压迫与试探性敲打",
+      "desired_scene_env": "站长办公室办公桌前",
+      "target_affordances": ["suspicion_testing", "power_dynamic"],
+      "evidence_grounding_criteria": "对白中包含站长、贪官、杀头、副站长等官场与试探词项"
+    },
+    {
+      "requirement_id": "req_wu_03",
+      "beat_id": "beat_wu_03_crisis",
+      "order_index": 3,
+      "description": "寻找机要档案室内李涯或余则成排查秘密卷宗、照片或通缉令的情节画面",
+      "desired_characters": ["余则成", "李涯"],
+      "desired_action": "在铁皮档案柜前翻查卷宗或走廊快步穿行，神情戒备",
+      "desired_emotion": "危急紧迫与暗战窒息感",
+      "desired_scene_env": "保密局机要室与昏暗走廊",
+      "target_affordances": ["information_asymmetry", "suspicion_testing"],
+      "evidence_grounding_criteria": "出现绝密卷宗、胶卷、照片或保密局走廊快速调阅动作"
+    },
+    {
+      "requirement_id": "req_wu_04",
+      "beat_id": "beat_wu_04_conclusion",
+      "order_index": 4,
+      "description": "寻找站长特写镜头或两人意味深长的沉默收尾，烘托老谋深算氛围",
+      "desired_characters": ["吴敬中", "余则成"],
+      "desired_action": "点燃雪茄吐烟雾，静默沉思，或余则成深夜脱风衣归家",
+      "desired_emotion": "深沉克制与心照不宣",
+      "desired_scene_env": "站长办公室或余则成寓所",
+      "target_affordances": ["audio_silence", "power_dynamic"],
+      "evidence_grounding_criteria": "镜头有明显静默或特写运镜，光线偏暗"
+    }
+  ]
+}

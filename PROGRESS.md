@@ -2,8 +2,8 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A4.5.1: 真实 L1 Canonical Evidence 补齐与来源审计审查修复**  
-当前状态：`A4.5.1 awaiting_review` (A1 approved, A2 approved, A3 approved, A4 approved, A4.5.1 awaiting_review; 已停止，等待 Review)  
+当前阶段：**POC-AGENT A5: 真实候选镜头召回 Retrieval Pipeline**  
+当前状态：`A5 awaiting_review` (A1 approved, A2 approved, A3 approved, A4 approved, A4.5.1 approved, A5 awaiting_review; 已停止，严禁进入 A6)  
 执行责任：🏛️ 全栈架构师 & 🔍 测试与质量专家 & 📐 API规范专家  
 
 ---
@@ -17,7 +17,7 @@
 
 ---
 
-## A0–A10 分阶段实施路线图 (总体完成度：52%)
+## A0–A10 分阶段实施路线图 (总体完成度：62%)
 
 | 阶段 | 权重 | 状态 | 交付物 / 验收入口 | 核心说明 |
 |:---|---:|:---:|:---|:---|
@@ -25,11 +25,11 @@
 | **A1. 跨模块数据契约与 Job 状态机** | 8% | ✅ **completed** | [`src/contracts/`](src/contracts/)<br>[`tests/contracts.test.mjs`](tests/contracts.test.mjs) | A1 Review Approved。9 个核心 Schema、通用校验器、Job 状态机、VMV Stage 4/5 适配器与测试 (14/14通过) |
 | **A2. 稳定客观 Evidence 库 (L1) 摄取** | 8% | ✅ **completed** | [`src/evidence/`](src/evidence/)<br>[`tests/evidence-store.test.mjs`](tests/evidence-store.test.mjs) | A2 Review Approved。摄取 VMV Stage 1 真实产物（130个镜头）；客观字段绝对防污染；测试 5/5 通过 |
 | **A3. 共享 Generic Narrative Affordances (L2) 库** | 8% | ✅ **completed** | [`src/affordances/`](src/affordances/)<br>[`tests/affordance-store.test.mjs`](tests/affordance-store.test.mjs) | A3 Review Approved。戏剧功能分类、增量索引、一对多映射与受控 promotion 接口；测试 3/3 通过 |
-| **A4. Topic-First 创意生成链路** | 10% | ✅ **completed** | [`src/operations/`](src/operations/)<br>[`tests/operations-orchestrator.test.mjs`](tests/operations-orchestrator.test.mjs) | A4.1 Review Approved。彻底移除旧脚本前置状态，确立 ideating → awaiting_direction_review → retrieving；MaterialRequirement 确立 desired_* 诉求语义与防伪装隔离；测试 4/4 通过 |
+| **A4. Topic-First 创意生成链路** | 10% | ✅ **completed** | [`src/operations/`](src/operations/)<br>[`tests/operations-orchestrator.test.mjs`](tests/operations-orchestrator.test.mjs) | A4.1 Review Approved。彻底移除旧脚本前置状态，确立 ideating → awaiting_direction_review → retrieving；MaterialRequirement 确立 desired_* 诉求语义与防伪装测试；测试 4/4 通过 |
 | **A4.5. 真实 L1 Evidence 补齐与覆盖率深度核验** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5-evidence-enrichment-report.md`](docs/agent-poc/a4.5-evidence-enrichment-report.md) | 查清 130 vs 325 及 2702s 全片覆盖根因（VMV 1800s 截断）；Apple Vision OCR 提取 857 条真实台词；复用 caption-packet/importer；补齐 130/326 真实客观证据 |
-| **A4.5.1 尾部连续补齐与生成来源审计修复** | 4% | 🚪 **awaiting_review** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | 修复 A4.5 两个阻塞问题：把 1800~2702.013s 真正补入 canonical 数据集（235 场景，0 到 2702.013s 连续无空洞）；审计视觉来源，落地 independent vs inherited 分级与置信度衰减；保留可复现 manifest 与构建脚本；完成 20 个分层抽样核验（含尾段 8 个）；测试 50/50 全绿 |
-| **A5. 候选镜头召回检索管道** | 10% | 待开始 | Top-3 候选镜头召回服务 | **严禁提前进入**；等待 A4.5.1 审查通过与 Gate 2 前置条件就绪 |
-| **A6. 动态 Perspective Re-reading** | 12% | 待开始 | 博主视角透镜 (L3) 二次解读服务 | **Retrieval Top3 实测 Gate 卡点**（可用率 ≥ 80%） |
+| **A4.5.1 尾部连续补齐与生成来源审计修复** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | A4.5.1 Review Approved。把 1800~2702.013s 真正补入 canonical 数据集（235 场景，0 到 2702.013s 连续无空洞）；审计视觉来源，落地 independent vs inherited 分级与置信度衰减；测试全绿 |
+| **A5. 候选镜头召回检索管道** | 10% | 🚪 **awaiting_review** | [`src/retrieval/`](src/retrieval/)<br>[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)<br>[`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs) | 消费 MaterialRequirements，基于 Hybrid 检索（结构化+词法+语义Fallback+L2潜能）从真实 Canonical 数据集自动为每个诉求召回 Top20 客观候选；多场景多样性与 3s 时序去重；无硬编码，严守客观检索理由无 L3 主观污染；测试 62/62 全绿 |
+| **A6. 动态 Perspective Re-reading** | 12% | 待开始 | 博主视角透镜 (L3) 二次解读服务 | **Retrieval Top3 实测 Gate 卡点**（可用率 ≥ 80%）；**严禁提前进入**；等待 A5 审查通过与 Gate 2 前置条件就绪 |
 | **A7. Director 真实证据终编服务** | 10% | 待开始 | Final Director Plan 锁定生成器 | 依据真实证据敲定台词、原声、IN-OUT |
 | **A8. VMV Stage 4/5 真实生产对接** | 8% | 待开始 | 本地生产 Runner 与真实 MP4 输出 | 阿里云 TTS 真实配音与 FFmpeg 剪辑压制 |
 | **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
@@ -47,7 +47,7 @@
   - `MaterialRequirement` 全面重构为 `desired_*` 诉求语义与防伪装测试；
   - 多轮真人交互修订历史；测试 4/4 全部通过。
 - [x] **A4.5 (Approved in Principle, Extended via A4.5.1)**：真实 L1 Objective Evidence 基础补齐与 130 vs 325 场景分析。
-- [x] **A4.5.1 (Awaiting Review)**：真实 Canonical Evidence 尾部补齐与来源审计修复：
+- [x] **A4.5.1 (Approved)**：真实 Canonical Evidence 尾部补齐与来源审计修复：
   - **全片 0 ~ 2702.013s 连续覆盖 Canonical L1 数据集交付**：
     - 权威检索数据集：[`src/evidence/data/canonical_evidence_qianfu_ep18.json`](src/evidence/data/canonical_evidence_qianfu_ep18.json)；
     - 同步刷新向后兼容：[`src/evidence/data/enriched_evidence_qianfu_ep18.json`](src/evidence/data/enriched_evidence_qianfu_ep18.json)；
@@ -63,9 +63,29 @@
   - **更正口径**：门禁卡点“《潜伏》25分钟”全部更正为“《潜伏》第18集全片约45:02”；
   - **自动化测试套件 ([`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs))**：新增 A4.5.1 Canonical 连续性与来源审计深度测试，全套 50/50 全部通过；
   - **专题修复报告**：[`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)。
+- [x] **A5 (Awaiting Review)**：真实候选镜头召回 Retrieval Pipeline：
+  - **交付 CandidateRetrievalService 服务核心与稳定程序接口**：
+    - 核心实现：[`src/retrieval/retrieval-service.mjs`](src/retrieval/retrieval-service.mjs)；
+    - 面向 MCN 后台的标准接口：`retrieveForRequirement` 与 `retrieveForTopicTask`，支持无缝自动化调用，无需人工脚本；
+  - **四路 Hybrid 匹配引擎与质量多样性重排**：
+    - 结构化匹配 ([`src/retrieval/matchers/structured-matcher.mjs`](src/retrieval/matchers/structured-matcher.mjs))：角色交集、物理场景空间、时间码提示；
+    - 词法多字段匹配 ([`src/retrieval/matchers/lexical-matcher.mjs`](src/retrieval/matchers/lexical-matcher.mjs))：专用中文影视词表切分与 2-gram，台词与动作命中强加权；
+    - 语义匹配与 Fallback 诚实声明 ([`src/retrieval/matchers/semantic-matcher.mjs`](src/retrieval/matchers/semantic-matcher.mjs))：定义 `ISemanticProvider` 规范，实现确定性概念网投影 `ConceptFallbackSemanticProvider`，透明标记 `provider_name: "concept_mesh_fallback_v1"` 与 `is_fallback: true`；
+    - L2 戏剧潜能协同 ([`src/retrieval/matchers/affordance-matcher.mjs`](src/retrieval/matchers/affordance-matcher.mjs))：与 `AffordanceStore` 联动，支持 suspicion_testing, power_dynamic, covert_transaction 等多标签匹配；
+    - 多样性与质量平衡 ([`src/retrieval/diversity-filter.mjs`](src/retrieval/diversity-filter.mjs))：落实现继承帧质量乘数 0.85 与置信度惩罚、3 秒时序近重复抑制（0.75 衰减）、场景空间软上限（最多 6 个同场景镜头）；
+  - **L2 通用叙事潜能种子库**：
+    - 数据集：[`src/retrieval/data/seed_l2_affordances.json`](src/retrieval/data/seed_l2_affordances.json)，472 条合规 L2 叙事潜能（100% 通过 `validateNarrativeAffordance`）；
+  - **双真实选题端到端检索与持久化产物**：
+    - 选题A：“吴站长什么时候开始怀疑余则成？”：Fixtures [`src/retrieval/fixtures/topic_a_suspicion.json`](src/retrieval/fixtures/topic_a_suspicion.json) $\rightarrow$ 结果 [`src/retrieval/results/retrieval_results_topic_a.json`](src/retrieval/results/retrieval_results_topic_a.json)；
+    - 选题B：“余则成最危险的一次试探”：Fixtures [`src/retrieval/fixtures/topic_b_dangerous_probe.json`](src/retrieval/fixtures/topic_b_dangerous_probe.json) $\rightarrow$ 结果 [`src/retrieval/results/retrieval_results_topic_b.json`](src/retrieval/results/retrieval_results_topic_b.json)；
+    - 每个选题 4 个 material requirements，每个 requirement 均产出 20 个合规候选镜头（共 160 个候选镜头，100% 通过 `validateCandidate`）；
+  - **客观检索理由铁律**：`retrieval_reason` 仅解释客观特征与剧情线索依据，严禁博主观点或主观定性；
+  - **人工分层抽样 Usability 审计**：24 个真实候选抽查，可用率达 91.7%（22 usable / 2 weak / 0 irrelevant）；
+  - **综合自动化测试套件 ([`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs))**：12 项专项覆盖测试，全工程 62/62 测试全绿；
+  - **专题验收报告**：[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)。
 - [x] **技术债登记**：
   - **VMV Stage 4/5 适配器消费者集成测试待补**：当前 [`src/contracts/vmv-adapter.mjs`](src/contracts/vmv-adapter.mjs) 仅完成 Schema-level 数据映射与静态校验，尚未经过底层真实 VMV 消费链路（`python -m vmv render`、TTS 与 FFmpeg）的 Consumer Integration Test。在 A7/A8 前必须验证，严禁再写“100%兼容”。
-- [x] **严格守界**：**严禁进入 A5 Retrieval，原地停止等待 Review**。
+- [x] **严格守界**：**严禁进入 A6 Perspective Re-reading，原地停止等待 Review**。
 
 ---
 
@@ -81,4 +101,6 @@
 8. **2026-10-05 09:20**：A4.1 Review 审查通过，授权开启 A4.5 Evidence Enrichment。
 9. **2026-10-05 09:50**：完成 A4.5 真实客观素材补齐与覆盖率深度核验，交付报告，状态设为 `A4.5 awaiting_review`。
 10. **2026-10-05 10:16**：A4.5 Review 反馈：**`changes_requested`**。提出两个阻塞问题：① 最终 enriched Evidence 实际仍截止 1800s，必须把 1800~2702.013s 真正补入 canonical 数据集并连续覆盖；② 审计视觉来源，区分段级继承并衰减置信度，保留可复现 manifest/脚本，完成 20 个抽样检查（8个来自尾段），更正 25 分钟口径为 45:02。
-11. **2026-10-05 10:30**：完成 A4.5.1 阻塞问题全量修复，交付 Canonical 数据集（235 场景，0~2702.013s 连续无空洞）、来源审计机制、Manifest 配置与构建脚本、20 个抽查表，全工程 50/50 测试全绿，状态设为 **`A4.5.1 awaiting_review`**，原地停止，严禁进入 A5。
+11. **2026-10-05 10:30**：完成 A4.5.1 阻塞问题全量修复，交付 Canonical 数据集（235 场景，0~2702.013s 连续无空洞）、来源审计机制、Manifest 配置与构建脚本、20 个抽查表，全工程 50/50 测试全绿，状态设为 **`A4.5.1 awaiting_review`**。
+12. **2026-10-05 10:55**：A4.5.1 Review 审查正式通过（approved），授权进入 POC-AGENT A5 阶段。
+13. **2026-10-05 11:05**：完成 POC-AGENT A5 全部交付：实现 CandidateRetrievalService、四路 Hybrid 匹配器、概念网透明 Fallback、L2 潜能库、多样性重排与质量衰减、双真实选题（吴站长怀疑 / 危险试探）E2E 检索与 Top20 持久化产物、Usability 人工抽样审计、全套 62/62 测试通过，状态设为 **`A5 awaiting_review`**，原地停止，严禁进入 A6。
