@@ -1,0 +1,410 @@
+{
+  "timestamp": "2026-10-05T15:39:32.089Z",
+  "provenance": "human_review",
+  "reviewer": "anonymous_reviewer",
+  "face_pairs": {
+    "pair_001": "same",
+    "pair_002": "same",
+    "pair_003": "same",
+    "pair_004": null,
+    "pair_005": null,
+    "pair_006": "same",
+    "pair_007": "same",
+    "pair_008": "different",
+    "pair_009": "different",
+    "pair_010": "different",
+    "pair_011": null,
+    "pair_012": "different",
+    "pair_013": "different",
+    "pair_014": "different",
+    "pair_015": "different",
+    "pair_016": "same",
+    "pair_017": "different",
+    "pair_018": "different",
+    "pair_019": "different",
+    "pair_020": "different",
+    "pair_021": "different",
+    "pair_022": "different",
+    "pair_023": "different",
+    "pair_024": "same",
+    "pair_025": "same",
+    "pair_026": "same",
+    "pair_027": "different",
+    "pair_028": "same",
+    "pair_029": "different",
+    "pair_030": "different",
+    "pair_031": "same",
+    "pair_032": "same",
+    "pair_033": "different",
+    "pair_034": "different",
+    "pair_035": "same",
+    "pair_036": "same",
+    "pair_037": "uncertain",
+    "pair_038": "uncertain",
+    "pair_039": "different",
+    "pair_040": "different"
+  },
+  "vlm_gemini_audits": {
+    "shot_0010_frame_25": {
+      "factual_count": 3,
+      "hallucinated_count": 2,
+      "scene_audit": "rejected",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "rejected"
+    },
+    "shot_0010_frame_50": {
+      "factual_count": 14,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0010_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0018_frame_25": {
+      "factual_count": 11,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "rejected",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0018_frame_50": {
+      "factual_count": 11,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0018_frame_75": {
+      "factual_count": 9,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0019_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0019_frame_50": {
+      "factual_count": 6,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0019_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0026_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0026_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0026_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0035_frame_25": {
+      "factual_count": 10,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0035_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0035_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0053_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0053_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0053_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0055_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0055_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0055_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0056_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0056_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0056_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0069_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0069_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0069_frame_75": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0070_frame_25": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0070_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0070_frame_75": {
+      "factual_count": 19,
+      "hallucinated_count": null,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0095_frame_25": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0095_frame_50": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0095_frame_75": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0117_frame_25": {
+      "factual_count": 11,
+      "hallucinated_count": null,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0117_frame_50": {
+      "factual_count": null,
+      "hallucinated_count": null,
+      "scene_audit": null,
+      "action_audit": null,
+      "notes": "",
+      "label": null
+    },
+    "shot_0117_frame_75": {
+      "factual_count": 17,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0133_frame_25": {
+      "factual_count": 14,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0133_frame_50": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0133_frame_75": {
+      "factual_count": 9,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0137_frame_25": {
+      "factual_count": 10,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0137_frame_50": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0137_frame_75": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0149_frame_25": {
+      "factual_count": 8,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0149_frame_50": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    },
+    "shot_0149_frame_75": {
+      "factual_count": 7,
+      "hallucinated_count": 0,
+      "scene_audit": "accepted",
+      "action_audit": "accepted",
+      "notes": "",
+      "label": "accepted"
+    }
+  },
+  "vlm_mlx_audits": {}
+}

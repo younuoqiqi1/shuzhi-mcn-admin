@@ -748,6 +748,8 @@ def aggregate_face_pairs(face_pairs_path: str, calib_report_path: str) -> Dict[s
     annotated_count = 0
     same_count = 0
     diff_count = 0
+    uncertain_count = 0
+    unannotated_count = 0
     status = "pending_human_annotation"
     current_pairs_sha = compute_file_sha256(face_pairs_path)
 
@@ -765,6 +767,10 @@ def aggregate_face_pairs(face_pairs_path: str, calib_report_path: str) -> Dict[s
                             same_count += 1
                         else:
                             diff_count += 1
+                    elif hl == "uncertain":
+                        uncertain_count += 1
+                    elif hl is None:
+                        unannotated_count += 1
         except Exception:
             pass
 
@@ -799,14 +805,38 @@ def aggregate_face_pairs(face_pairs_path: str, calib_report_path: str) -> Dict[s
                 calib_threshold = cdata.get("recommended_threshold", cdata.get("chosen_threshold", "pending"))
                 if "annotated_count" in cdata:
                     annotated_count = cdata["annotated_count"]
+                if "uncertain_count" in cdata:
+                    uncertain_count = cdata["uncertain_count"]
+                if "unannotated_count" in cdata:
+                    unannotated_count = cdata["unannotated_count"]
                 status = "calibrated"
 
                 holdout = cdata.get("holdout_metrics", {})
+                calib_metrics = cdata.get("calibration_metrics", {})
                 bal_acc = cdata.get("holdout_balanced_acc", holdout.get("balanced_accuracy", "pending"))
                 f1_score = cdata.get("holdout_f1", holdout.get("f1", "pending"))
+
+                # 从校准报告中提取或补充 same/different 计数
+                if same_count == 0 and diff_count == 0:
+                    cal_conf = calib_metrics.get("confusion", {})
+                    hold_conf = holdout.get("confusion", {})
+                    cal_same = cal_conf.get("tp", 0) + cal_conf.get("fn", 0)
+                    hold_same = hold_conf.get("tp", 0) + hold_conf.get("fn", 0)
+                    cal_diff = cal_conf.get("fp", 0) + cal_conf.get("tn", 0)
+                    hold_diff = hold_conf.get("fp", 0) + hold_conf.get("tn", 0)
+                    if (cal_same + hold_same) > 0:
+                        same_count = cal_same + hold_same
+                        diff_count = cal_diff + hold_diff
+
                 objective_metrics = {
                     "accuracy": bal_acc,
                     "f1": f1_score,
+                    "calibration_sample_count": cdata.get("calibration_sample_count", calib_metrics.get("sample_count")),
+                    "calibration_balanced_accuracy": calib_metrics.get("balanced_accuracy", cdata.get("calibration_balanced_acc")),
+                    "calibration_f1": calib_metrics.get("f1", cdata.get("calibration_f1")),
+                    "calibration_precision": calib_metrics.get("precision", cdata.get("calibration_precision")),
+                    "calibration_recall": calib_metrics.get("recall", cdata.get("calibration_recall")),
+                    "calibration_confusion": cdata.get("calibration_confusion", calib_metrics.get("confusion")),
                     "holdout_sample_count": cdata.get("holdout_sample_count", holdout.get("sample_count")),
                     "holdout_balanced_accuracy": bal_acc,
                     "holdout_f1": f1_score,
@@ -815,6 +845,7 @@ def aggregate_face_pairs(face_pairs_path: str, calib_report_path: str) -> Dict[s
                     "holdout_confusion": cdata.get("holdout_confusion", holdout.get("confusion")),
                     "holdout_false_positives": cdata.get("holdout_false_positives", holdout.get("fp_pair_ids", [])),
                     "holdout_false_negatives": cdata.get("holdout_false_negatives", holdout.get("fn_pair_ids", [])),
+                    "shared_face_ids_count": cdata.get("shared_face_ids_count", len(cdata.get("shared_face_ids", []))),
                     "notes": cdata.get("disclaimer", cdata.get("notes", "基于独立 holdout 集合客观评测所得指标"))
                 }
             else:
@@ -833,6 +864,8 @@ def aggregate_face_pairs(face_pairs_path: str, calib_report_path: str) -> Dict[s
         "annotated_pairs": annotated_count,
         "same_count": same_count,
         "different_count": diff_count,
+        "uncertain_count": uncertain_count,
+        "unannotated_count": unannotated_count,
         "status": status if annotated_count >= 10 and calib_status == "calibrated_successfully" else ("annotated" if annotated_count >= 10 else "pending_human_annotation"),
         "recommended_threshold": calib_threshold,
         "calibration_status": calib_status,
@@ -882,25 +915,34 @@ def evaluate_human_labels(labels_file: Optional[str], anchor_tuples: List[Tuple[
     total_factual = 0
     total_hallucinated = 0
     valid_audits_count = 0
+    null_audits_count = 0
     scene_accepted_count = 0
     action_accepted_count = 0
     scene_evaluated_count = 0
     action_evaluated_count = 0
 
+    num_anchors = len(anchor_tuples) if anchor_tuples else 45
+
     for _, _, fid in anchor_tuples:
         audit = vlm_audits.get(fid)
-        if not audit:
+        if not audit or not isinstance(audit, dict):
+            null_audits_count += 1
             continue
 
         f_cnt = audit.get("factual_count")
         h_cnt = audit.get("hallucinated_count")
 
+        # 核心约束: null 计数不可视为 0！
+        # 仅当 factual_count 与 hallucinated_count 均显式为非负整数时才计入已审核事实分母
         if f_cnt is not None and h_cnt is not None:
             if not isinstance(f_cnt, int) or not isinstance(h_cnt, int) or f_cnt < 0 or h_cnt < 0:
                 raise HumanLabelsValidationError(f"帧 {fid} 的事实计数必须为非负整数 (factual: {f_cnt}, hallucinated: {h_cnt})")
             total_factual += f_cnt
             total_hallucinated += h_cnt
             valid_audits_count += 1
+        else:
+            # f_cnt 或 h_cnt 为 null，不可当作 0 参与统计，视为空值/未完成标注
+            null_audits_count += 1
 
         s_aud = audit.get("scene_audit")
         if s_aud in ("accepted", "rejected", "uncertain"):
@@ -914,13 +956,15 @@ def evaluate_human_labels(labels_file: Optional[str], anchor_tuples: List[Tuple[
             if a_aud == "accepted":
                 action_accepted_count += 1
 
-    coverage_ratio_str = f"{valid_audits_count}/45"
+    coverage_ratio_str = f"{valid_audits_count}/{num_anchors}"
     total_statements = total_factual + total_hallucinated
 
-    scene_acc = round(scene_accepted_count / 45.0, 4)
-    action_acc = round(action_accepted_count / 45.0, 4)
+    scene_acc = round(scene_accepted_count / float(num_anchors), 4) if num_anchors > 0 else 0.0
+    action_acc = round(action_accepted_count / float(num_anchors), 4) if num_anchors > 0 else 0.0
+    scene_evaluated_acc = round(scene_accepted_count / float(scene_evaluated_count), 4) if scene_evaluated_count > 0 else "pending"
+    action_evaluated_acc = round(action_accepted_count / float(action_evaluated_count), 4) if action_evaluated_count > 0 else "pending"
 
-    if valid_audits_count < 45:
+    if valid_audits_count < num_anchors:
         hallucination_rate = round(total_hallucinated / float(total_statements), 4) if total_statements > 0 else "pending"
         factual_acc = round(total_factual / float(total_statements), 4) if total_statements > 0 else "pending"
         return {
@@ -928,7 +972,8 @@ def evaluate_human_labels(labels_file: Optional[str], anchor_tuples: List[Tuple[
             "provenance": prov,
             "reviewer": reviewer,
             "annotated_frames_count": valid_audits_count,
-            "expected_frames_count": 45,
+            "null_or_unannotated_frames_count": null_audits_count,
+            "expected_frames_count": num_anchors,
             "coverage_ratio": coverage_ratio_str,
             "total_factual_statements": total_factual,
             "total_hallucinated_statements": total_hallucinated,
@@ -941,11 +986,21 @@ def evaluate_human_labels(labels_file: Optional[str], anchor_tuples: List[Tuple[
             "action_accepted_count": action_accepted_count,
             "scene_evaluated_count": scene_evaluated_count,
             "action_evaluated_count": action_evaluated_count,
-            "notes": f"人工标注覆盖率不足 45 帧 ({coverage_ratio_str})，未标注与 uncertain 均未算入正确，结论不 PASS"
+            "scene_evaluated_accuracy": scene_evaluated_acc,
+            "action_evaluated_accuracy": action_evaluated_acc,
+            "wer_cer": "pending",
+            "notes": (
+                f"人工标注覆盖率不足 {num_anchors} 帧 ({coverage_ratio_str}，含 {null_audits_count} 帧空值/未标注)。"
+                "null 计数不可视为 0；未标注与 uncertain 均未算入正确；属于 partial 审核（不宣称完整 Gold），结论不 PASS。"
+                f"已审事实 {total_factual} 条、真实幻觉 {total_hallucinated} 条 (分母 {total_statements})，"
+                f"幻觉率仅代表已审子集 ({hallucination_rate if hallucination_rate == 'pending' else f'{hallucination_rate*100:.2f}%'})，不可声称全体。"
+                f"场景与动作正确覆盖率为 {scene_accepted_count}/{num_anchors} (已验证正确覆盖率，非未审错误率)，"
+                f"在已审帧中准确率为 {scene_accepted_count}/{scene_evaluated_count}。"
+            )
         }
 
     if total_statements == 0:
-        raise HumanLabelsValidationError("所有 45 帧事实陈述总分母为 0，无法计算事实率")
+        raise HumanLabelsValidationError(f"所有 {num_anchors} 帧事实陈述总分母为 0，无法计算事实率")
 
     hallucination_rate = round(total_hallucinated / float(total_statements), 4)
     factual_acc = round(total_factual / float(total_statements), 4)
@@ -955,7 +1010,8 @@ def evaluate_human_labels(labels_file: Optional[str], anchor_tuples: List[Tuple[
         "provenance": prov,
         "reviewer": reviewer,
         "annotated_frames_count": valid_audits_count,
-        "expected_frames_count": 45,
+        "null_or_unannotated_frames_count": null_audits_count,
+        "expected_frames_count": num_anchors,
         "coverage_ratio": coverage_ratio_str,
         "total_factual_statements": total_factual,
         "total_hallucinated_statements": total_hallucinated,
@@ -968,8 +1024,10 @@ def evaluate_human_labels(labels_file: Optional[str], anchor_tuples: List[Tuple[
         "action_accepted_count": action_accepted_count,
         "scene_evaluated_count": scene_evaluated_count,
         "action_evaluated_count": action_evaluated_count,
+        "scene_evaluated_accuracy": scene_evaluated_acc,
+        "action_evaluated_accuracy": action_evaluated_acc,
         "wer_cer": "pending",
-        "notes": "45 帧全量真人事实审核 (hallucination_rate = total_hallucinated / total_statements; scene/action_accuracy = accepted / 45)"
+        "notes": f"{num_anchors} 帧全量真人事实审核 (hallucination_rate = total_hallucinated / total_statements; scene/action_accuracy = accepted / {num_anchors})"
     }
 
 def estimate_pipeline_projection(median_latency_ms: Optional[float]) -> Dict[str, Any]:
@@ -1103,6 +1161,77 @@ def generate_markdown_report(metrics: Dict[str, Any], out_path: str):
     s30_ser_str = f"{proj['series_30_time_estimate']['serial_hours']} 小时" if proj['series_30_time_estimate']['serial_hours'] != "pending" else "pending (待实测)"
     s30_con_str = f"{proj['series_30_time_estimate']['concurrent_2_hours']} 小时" if proj['series_30_time_estimate']['concurrent_2_hours'] != "pending" else "pending (待实测)"
 
+    is_face_calibrated = (faces.get("calibration_status") == "calibrated_successfully")
+    face_obj = faces.get("objective_metrics", {})
+    shared_face_cnt = face_obj.get("shared_face_ids_count", "unknown")
+
+    if is_face_calibrated:
+        face_section_md = f"""## 7. 人脸 40 匿名 Pairs 与独立校准门禁
+
+- **人脸 Pairs 生成**: 40 对跨镜头匿名对，相似度内部隐藏；
+- **人工标注状态**: `{faces["status"]}` (有效标注: **{faces.get("annotated_pairs", "pending")}** 对；分布: {faces.get("same_count", "unknown")} same, {faces.get("different_count", "unknown")} different, {faces.get("uncertain_count", "unknown")} uncertain, {faces.get("unannotated_count", "unknown")} null/未标注)；
+- **推荐阈值 (Chosen/Recommended Threshold)**: **`{faces.get("recommended_threshold", "pending")}`** (以校准集 Balanced Accuracy 为主优化目标，遇 Tie 选较高保守阈值)；
+- **校准集客观指标 (Calibration Set, N={face_obj.get("calibration_sample_count", "unknown")})**:
+  - Balanced Accuracy: **{face_obj.get("calibration_balanced_accuracy", "pending")}**
+  - F1 Score: **{face_obj.get("calibration_f1", "pending")}**
+  - Precision: **{face_obj.get("calibration_precision", "pending")}** | Recall: **{face_obj.get("calibration_recall", "pending")}**
+  - 混淆矩阵 (Confusion): `{face_obj.get("calibration_confusion", {})}`
+- **独立测试集泛化指标 (Holdout Set, N={face_obj.get("holdout_sample_count", "unknown")})**:
+  - Balanced Accuracy: **{face_obj.get("holdout_balanced_accuracy", "pending")}**
+  - F1 Score: **{face_obj.get("holdout_f1", "pending")}**
+  - Precision: **{face_obj.get("holdout_precision", "pending")}** | Recall: **{face_obj.get("holdout_recall", "pending")}**
+  - 混淆矩阵 (Confusion): `{face_obj.get("holdout_confusion", {})}` (FP: `{face_obj.get("holdout_false_positives", [])}`, FN: `{face_obj.get("holdout_false_negatives", [])}`)
+- **重要泛化限制与免责声明**:
+  - 限制共享 {shared_face_cnt} face 非 person-disjoint：{face_obj.get("notes", "注意: 划分仅保证 pair-disjoint，而非 person-disjoint；cal 与 eval 共享 face_id，不足以证明全 PersonConsistency，仅作为跨镜头成对特征校准与泛化测试参考。切勿将小样指标夸大为全集 Gate。")}"""
+    else:
+        face_section_md = f"""## 7. 人脸 40 匿名 Pairs 与独立校准门禁
+
+- **人脸 Pairs 生成**: 40 对跨镜头匿名对，相似度内部隐藏；
+- **人工标注状态**: `{faces["status"]}` (有效标注数: {faces.get("annotated_pairs", "pending")})；
+- **推荐阈值**: `{faces.get("recommended_threshold", "pending")}`；
+- **门禁约束 (未校准说明)**: 当前处于未校准状态。未获得真人真值前，严禁私自拍定阈值或编造 F1 / Accuracy 指标。"""
+
+    scene_eval_acc_str = f"{human.get('scene_evaluated_accuracy')}" if human.get('scene_evaluated_accuracy') is not None else "pending"
+    action_eval_acc_str = f"{human.get('action_evaluated_accuracy')}" if human.get('action_evaluated_accuracy') is not None else "pending"
+    total_halluc_str = f"{human.get('total_hallucinated_statements', 'pending')}"
+
+    human_section_md = f"""## 8. 人工审核真值评估 (Human Labels Evaluation)
+
+- **评估状态**: `{human["status"]}` (标注覆盖: `{human.get("coverage_ratio", "0/45")}`)
+- **审核员 / 溯源**: `{human.get("reviewer") or 'None'}` / `{human.get("provenance") or 'None'}`
+- **标注范围与性质声明**:
+  - **Partial 审核覆盖**: 当前视觉标注数量仅为 **partial 审核覆盖** ({human.get("annotated_frames_count", 0)}/45 帧完成事实核验，含未标注/null)，**绝不宣称完整 Gold 数据集**；
+  - **坐标系方向约定**: 用户口头抽查反馈基本正确，但视觉方位明确**以画面左右坐标为准**（镜像左右用画面坐标，判定时不确定不用人物解剖学左右）；
+  - **客观事实与定性意见隔离**: 用户的口头整体定性意见**绝不覆盖 JSON 中已真实记录的 {total_halluc_str} 条幻觉标注**（如 `shot_0010_frame_25` 等记录的真实幻觉），保留真实错误记录。
+- **客观事实逐项统计 (基于陈述数而非帧数)**:
+  - 客观符合陈述 (factual): `{human.get("total_factual_statements", "pending")}`
+  - 幻觉陈述 (hallucinated): `{human.get("total_hallucinated_statements", "pending")}`
+  - 幻觉率 (Hallucination Rate): `{human.get("hallucination_rate", "pending")}` (基于真人陈述数分母；null 计数不视为 0；仅代表已审子集，不能声称全体)
+  - 事实准确率 (Factual Accuracy): `{human.get("factual_accuracy", "pending")}`
+- **场景与物理动作可信度 (以全 45 帧为基准分母)**:
+  - 场景覆盖率 (Scene Coverage Accuracy): `{human.get("scene_accuracy", "pending")}` (属于已验证正确覆盖率，不是未审帧错误率；另已审准确率为 {human.get("scene_accepted_count", 0)}/{human.get("scene_evaluated_count", 0)} = {scene_eval_acc_str})
+  - 动作覆盖率 (Action Coverage Accuracy): `{human.get("action_accuracy", "pending")}` (属于已验证正确覆盖率，不是未审帧错误率；另已审准确率为 {human.get("action_accepted_count", 0)}/{human.get("action_evaluated_count", 0)} = {action_eval_acc_str})
+- **语音识别错误率**: WER / CER 保持 `{human.get("wer_cer", "pending")}` (待人工校对，不可捏造)。"""
+
+    if is_face_calibrated:
+        awaiting_face_item = f"1. **人脸 40 对校准与泛化局限**: 人脸已基于 {faces.get('annotated_pairs', 'unknown')} 对真实真人标注完成校准 (推荐阈值 {faces.get('recommended_threshold')})，但受限于 pair-disjoint（非 person-disjoint，共享 {shared_face_cnt} face_id），不足以证明全 PersonConsistency；"
+        stop_banner_msg = "人脸已校准但 X1.1 待 Review STOP 无 50 Gold，维持冻结"
+    else:
+        awaiting_face_item = "1. **40 对人脸判定与阈值校准**: 等待审核员在 `review.html` 完成判定并运行 `calibrate_face.py`；"
+        stop_banner_msg = "请审核员在 review.html 标注后继续流转"
+
+    awaiting_human_md = f"""### 10.2 待真人项与 Review 边界 (Awaiting Human Review)
+{awaiting_face_item}
+2. **视觉事实与幻觉全量核验**: 当前仅为 partial 审核覆盖 (未达 45 帧全量，无 50-shot Gold)；用户口头抽查基本正确（采用画面坐标系），但真实 {total_halluc_str} 条幻觉记录保留，待后续完整闭环；
+3. **场景与动作可信度判定**: 部分未标注/null 与 uncertain 保持非通过，待全量审核；
+4. **语音识别真实错误率**: WER / CER 待人工比对，保持 pending。
+
+```
+=====================================================
+STOP 等待 Review: {stop_banner_msg}
+=====================================================
+```"""
+
     md_content = f"""# X1.1 真实工程基准复核与聚合报告 (Revalidation Report)
 
 > **生成时间**: {ts_str}  
@@ -1213,28 +1342,11 @@ def generate_markdown_report(metrics: Dict[str, Any], out_path: str):
 
 ---
 
-## 7. 人脸 40 匿名 Pairs 与独立校准门禁
-
-- **人脸 Pairs 生成**: 40 对跨镜头匿名对，相似度内部隐藏；
-- **人工标注状态**: `{faces["status"]}` (有效标注数: {faces["annotated_pairs"]})；
-- **推荐阈值**: `{faces["recommended_threshold"]}`；
-- **门禁约束**: 未获得真人真值前，严禁私自拍定阈值或编造 F1 / Accuracy 指标。
+{face_section_md}
 
 ---
 
-## 8. 人工审核真值评估 (Human Labels Evaluation)
-
-- **评估状态**: `{human["status"]}` (标注覆盖: `{human.get("coverage_ratio", "0/45")}`)
-- **审核员 / 溯源**: `{human["reviewer"] or 'None'}` / `{human["provenance"] or 'None'}`
-- **客观事实逐项统计 (基于陈述数而非帧数)**:
-  - 客观符合陈述 (factual): `{human.get("total_factual_statements", "pending")}`
-  - 幻觉陈述 (hallucinated): `{human.get("total_hallucinated_statements", "pending")}`
-  - 幻觉率 (Hallucination Rate): `{human["hallucination_rate"]}` (基于真人陈述数分母)
-  - 事实准确率 (Factual Accuracy): `{human["factual_accuracy"]}`
-- **场景与物理动作可信度 (以全 45 帧为基准分母)**:
-  - 场景准确率 (Scene Accuracy): `{human["scene_accuracy"]}` (仅 accepted 计为正确，uncertain 与未标注非正确)
-  - 动作准确率 (Action Accuracy): `{human["action_accuracy"]}` (仅 accepted 计为正确)
-- **语音识别错误率**: WER / CER 保持 `{human["wer_cer"]}` (待人工校对，不可捏造)。
+{human_section_md}
 
 ---
 
@@ -1260,17 +1372,7 @@ def generate_markdown_report(metrics: Dict[str, Any], out_path: str):
 6. **OCR 与 ASR 动态重算**: 真实重算 15 融合统计，快照 857 条原图 Hash 为 unknown；
 7. **全实验开销与配置错误归档**: 归档 4 次配置错误，汇总 45+16+4 全实验 Token 与耗时。
 
-### 10.2 待真人项 (Awaiting Human Review)
-1. **40 对人脸判定与阈值校准**: 等待审核员在 `review.html` 完成判定并运行 `calibrate_face.py`；
-2. **45 帧客观事实逐项核验**: 等待审核员填写 `factual_count` 与 `hallucinated_count`，获取真实幻觉率；
-3. **场景与动作可信度判定**: 等待审核员完成 scene 与 action 独立选择；
-4. **语音识别真实错误率**: WER / CER 待人工比对。
-
-```
-=====================================================
-STOP 等待 Review: 请审核员在 review.html 标注后继续流转
-=====================================================
-```
+{awaiting_human_md}
 """
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:

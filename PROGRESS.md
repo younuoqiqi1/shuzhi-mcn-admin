@@ -3,8 +3,8 @@
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
 当前阶段：**X1.1: L1 自动素材理解重验与结构化基线 (Revalidation Baseline)**
-当前状态：**`X1.1 awaiting_human_review`（工程批次已完成，40 人脸标签和 45 帧事实/幻觉审核待用户）**
-核心决议：**2026-10-05 完成 X1.1 自动化工程批次推理与独立核验（45 次 Gemini low 尝试：44 成功、1 遭遇服务 503 无重试，native schema/trace/原图与推理 hash 逐帧独立核验通过 44/45=97.8%；15 母区间 47 children max 26.52s；OCR/ASR fusion 15 完成）；报告 [`docs/agent-poc/x1.1-revalidation-report.md`](docs/agent-poc/x1.1-revalidation-report.md) 已由真实汇总器重新生成（不采用 AGY 自写统计）；人工 threshold/accuracy/hallucination/WER/CER 仍 pending；完整 X1.1 尚有人工指标待闭环，不宣称科学 PASS，不说全部 X1.1 已通过；X1 整体未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold；提交后严格 STOP 等待真人审核与 Review。**
+当前状态：**`X1.1 awaiting_human_review`（人脸 35/40 真实标注已校准阈值 0.4067；视觉仅 partial 20/45 完成，含 2 条真实幻觉，无 50-shot Gold，维持 STOP 等待 Review）**
+核心决议：**2026-10-05 完成人脸 40 匿名对真实人工审核与校准（真实 35/40 有效标注已 calibrated，推荐阈值 0.4067，Holdout 18 混淆 7/0/0/11，但受限于共享 11 face_id 仅 pair-disjoint，不可夸大为全集 Gate）；视觉事实审核确认仅为 partial 20/45 覆盖（已审 178 事实 / 真实 2 条幻觉，分母 180，幻觉率 1.11% 仅代表已审子集；用户口头抽查基本正确但采用画面左右坐标系，定性意见不覆盖真实 2 条幻觉标注）；无 50-shot Gold，语音 WER/CER 保持 pending；完整 X1.1 尚待闭环，不宣称科学 PASS；X1 整体维持未通过，X2/A8/A9/A10 维持冻结；严格 STOP 等待真人审核与 Review。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
@@ -14,7 +14,7 @@
 | 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
 |:---|:---:|:---:|:---|
 | **X0 Technology Spike Gate** | X0 结束点 | ✅ **approved** | **2026-10-05 用户明确批准**。完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)；正式授权开启 X1.0 |
-| **X1 L1 Understanding Benchmark** | X1.1 节点 | 🚪 **awaiting_human_review (X1.1 工程批次完成待真人审核 / X1 整体未通过)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，native schema/trace/原图与推理 hash 逐帧独立核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；报告已由真实汇总器重新生成（不采用 AGY 自写统计）；40 人脸标签与 45 帧事实/幻觉审核等待用户，人工 threshold/accuracy/hallucination/WER/CER 仍 pending；完整 X1.1 尚有人工指标待闭环，不宣称科学 PASS，不说全部 X1.1 已通过；X1 整体未通过，不进入 50-shot Gold / X2 / A8/A9/A10，严格 STOP 等待真人审核与 Review |
+| **X1 L1 Understanding Benchmark** | X1.1 节点 | 🚪 **awaiting_human_review (人脸 35/40 已校准阈值 0.4067，视觉 partial 20/45 含 2 条真实幻觉，无 50 Gold 待 Review STOP / X1 整体未通过)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，逐帧独立核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；人脸 35/40 真实人工标注已 calibrated 阈值 0.4067（Holdout 18 混淆 7/0/0/11，共享 11 face 非 person-disjoint）；视觉仅 partial 20/45 事实审核（178 事实 / 真实 2 条幻觉，分母 180，1.11% 仅代表已审子集；用户口头抽查采用画面坐标系，定性意见不覆盖 2 条真实幻觉）；无 50-shot Gold，语音 WER/CER 保持 pending；完整 X1.1 未闭环，不宣称科学 PASS，不说全部 X1.1 已通过；X1 整体未通过，不进入 50-shot Gold / X2 / A8/A9/A10，严格 STOP 等待真人审核与 Review |
 | **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中 (需等待 X1 真正通过)** | 50 条多类别需求（显式/抽象/改写/对抗负例/荒谬输入）盲测检索与 INSUFFICIENT 拒识率验证；X1 未通过前严格冻结 |
 | **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述/时间表依赖、A5 人名关键词依赖、A6 预写模板及成片伪造字幕/画面不符事故，已全面冻结，不修改其实现，不继续投入 |
 
@@ -23,11 +23,11 @@
 ## X1.1 重验基线与执行状态 (Revalidation awaiting_human_review)
 
 - **授权与执行说明**：
-  - 当前阶段状态变更为 **`X1.1 awaiting_human_review`（工程批次已完成，40 人脸标签和 45 帧事实/幻觉审核待用户）**；
+  - 当前阶段状态变更为 **`X1.1 awaiting_human_review`（人脸 35/40 真实标注已校准阈值 0.4067；视觉仅 partial 20/45 完成，含 2 条真实幻觉，无 50-shot Gold，维持 STOP 等待 Review）**；
   - 报告 [`docs/agent-poc/x1.1-revalidation-report.md`](docs/agent-poc/x1.1-revalidation-report.md) 已由真实汇总器重新生成，不采用 AGY 自写统计；
-  - **真人审核材料入口**：[`review.html`](/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html)（真实本地地址：`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html`，含 40 pairs 45 帧，待真人）；
+  - **真人审核材料入口**：[`review.html`](/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html)（真实本地地址：`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html`，含 40 pairs 45 帧）；
   - 保留历史 X1.0 `awaiting_review` 记录为当时阶段终点，不改旧 A5–A8 Legacy 能力口径、不宣称用户批准 X1.0 科学通过；
-  - 人工 threshold / accuracy / hallucination / WER / CER 仍 pending；完整 X1.1 尚有人工指标待闭环，**不说全部 X1.1 已通过，不宣称科学 PASS**；
+  - 人脸 35/40 真实人工标注已完成校准（阈值 0.4067，Holdout 18 混淆 7/0/0/11，共享 11 face 局限）；视觉事实核验当前仅为 partial 20/45 覆盖（已审 178 事实 / 2 真实幻觉，分母 180，幻觉率 1.11% 仅代表已审子集；用户口头抽查基本正确采用画面坐标系，定性意见不覆盖 2 条真实幻觉）；语音 WER / CER 仍 pending；无 50-shot Gold，**不说全部 X1.1 已通过，不宣称科学 PASS**；
   - **X1 整体未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold**；
   - 本轮提交后严格 **STOP 等待真人审核与 Review**；所有“完成率/通过”指标严禁从自评推断。
 - **X1.1 四项核心工作基线与实测执行事实**：
@@ -44,11 +44,11 @@
      - 15 个母区间 OCR/ASR timeline fusion 全部完成；涵盖 90 段 existing OCR 台词数据与 90 段 existing real X1.0 ASR（mlx-whisper tiny）音频识别结果；
      - 对齐分布情况：产生 **34 条共识 (consensus)、43 条冲突 (conflict)、13 条仅 OCR 检测到 (ocr-only)、27 条仅 ASR 检测到 (asr-only)**；
      - 原文完整保留冲突与独立检出；**因缺乏独立真实语音/字幕真值标注（Ground Truth），缺 CER/WER 真值，绝不自宣科学 PASS**。
-  4. **人脸算法特征簇与人类审核待评 (Face Clustering & Human Review)**：
-     - 构建包含 40 组人脸相似度对比对（40 人脸 pairs），**当前处于人工标注等待用户状态**；
-     - 审核材料真实本地地址：[`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html`](/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html)（含 40 pairs 45 帧，待真人）；
-     - 余弦相似度阈值（Threshold）与聚类 F1 分数待用户真人标注后校准；
-     - 45 帧客观视觉事实判定与大模型幻觉率审核（Objective 事实与幻觉审核）严格等待人类真实标签输入，系统不进行自评推断。
+  4. **人脸特征校准与视觉部分审核事实 (Face Calibration & Partial Human Review)**：
+     - 人脸 40 匿名对基于 35 真实真人标注（14 same, 21 different, 2 uncertain, 3 null）完成校准，推荐阈值 **0.4067**；Holdout 18 对混淆矩阵为 7/0/0/11（F1=1.0），明确限制声明：两集共享 11 face_id 仅保证 pair-disjoint 而非 person-disjoint，不可夸大为全集 Gate；
+     - 45 帧客观视觉事实判定当前仅为 **partial 20/45 审核覆盖**（已审 178 事实陈述，包含真实 2 条幻觉标注，总分母 180，幻觉率 1.11% 仅代表已审子集，不可声称全体）；
+     - 用户口头抽查基本正确（采用画面左右坐标系，不确定不用人物解剖学左右），但定性意见绝不覆盖 JSON 中真实标注的 2 条幻觉记录；
+     - 无 50-shot Gold，语音 WER / CER 待人工校对；严格维持 STOP 等待 Review。
 
 ---
 
@@ -210,6 +210,11 @@
     - 报告 [`docs/agent-poc/x1.1-revalidation-report.md`](docs/agent-poc/x1.1-revalidation-report.md) 已由真实汇总器重新生成，不采用 AGY 自写统计；
     - 40 人脸 pairs 标签与 45 帧事实/幻觉审核待用户人工标注，人工 threshold/accuracy/hallucination/WER/CER 仍 pending；完整 X1.1 尚有人工指标待闭环，不说全部 X1.1 已通过；
     - X1 整体仍未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold；当前原地严格 STOP 等待真人审核与 Review。
+35. **2026-10-05**：**完成人脸 35/40 真实标注校准与 partial 视觉事实审核复核，维持 `X1.1 awaiting_human_review`，严格 STOP**：
+    - 人脸 40 匿名对基于 35 真实真人标注（14 same, 21 different, 2 uncertain, 3 null）完成校准，推荐阈值 **0.4067**（校准集 N=17 Balanced Acc=80.71%、F1=76.92%；独立 Holdout 集 N=18 Balanced Acc=100.0%、F1=100.0%）；声明两集共享 11 face_id 仅 pair-disjoint 而非 person-disjoint，不可夸大为全集 Gate；
+    - 视觉事实确认 partial 20/45 审核覆盖（已审 178 事实 / 真实 2 条幻觉，分母 180，幻觉率 1.11% 仅代表已审子集；用户口头抽查基本正确采用画面坐标系，定性意见不覆盖 2 条真实幻觉记录）；场景/动作覆盖率为 22/45（已审准确率为 22/23）；
+    - 汇总器修复 `coverage_insufficient` 分支缺 `wer_cer` KeyError 缺陷，严格保证 null 计数不可视为 0；
+    - 无 50-shot Gold，语音 WER / CER 保持 pending；X1 整体维持未通过，X2/A8/A9/A10 维持冻结；当前原地严格 STOP 等待真人审核与 Review。
 
 
 
