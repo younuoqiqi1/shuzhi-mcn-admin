@@ -1,0 +1,88 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "e028a40773b56e28e32501155f5176de63f20776158fdeca3a3f8082821850ca",
+    "frame_50.jpg": "5543d1f9592fa98cf32aafe4d2630d32dfc40a8a5884c2b1d56d508e541c379e",
+    "frame_75.jpg": "194bfdf3bd9cf9ab0fa3312f85dc9833b02fb2e8499d9e36634c0c2af3094349"
+  },
+  "elapsed_sec": 27.592,
+  "status": "success",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "e028a40773b56e28e32501155f5176de63f20776158fdeca3a3f8082821850ca",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing a dark coat",
+          "a person wearing a light blue dress",
+          "a person wearing a purple dress"
+        ],
+        "environment": "a rural setting with a dirt road and greenery, possibly a village or countryside",
+        "physical_actions": [
+          "standing",
+          "smiling",
+          "looking at each other"
+        ],
+        "objects": [
+          "no visible objects",
+          "no visible objects",
+          "no visible objects"
+        ],
+        "camera": "close-up",
+        "uncertainty": "any blur, low light, or occlusions",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"a person wearing a dark coat\",\n    \"a person wearing a light blue dress\",\n    \"a person wearing a purple dress\"\n  ],\n  \"environment\": \"a rural setting with a dirt road and greenery, possibly a village or countryside\",\n  \"physical_actions\": [\n    \"standing\",\n    \"smiling\",\n    \"looking at each other\"\n  ],\n  \"objects\": [\n    \"no visible objects\",\n    \"no visible objects\",\n    \"no visible objects\"\n  ],\n  \"camera\": \"close-up\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 7.925
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "5543d1f9592fa98cf32aafe4d2630d32dfc40a8a5884c2b1d56d508e541c379e",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "two women walking on a grassy bank near a river, one wearing a dark coat and the other in a patterned dress"
+        ],
+        "environment": "a grassy bank near a river, with trees in the background, and a cloudy sky",
+        "physical_actions": [
+          "walking on a grassy bank near a river, with one woman in a dark coat and the other in a patterned dress"
+        ],
+        "objects": [
+          "grass, river, trees, and a cloudy sky"
+        ],
+        "camera": "medium shot, capturing the women from the side, with a focus on their lower bodies and the river in the background",
+        "uncertainty": "some parts of the image may be obscured by trees or clouds, but overall, the scene is clear and well-defined",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"two women walking on a grassy bank near a river, one wearing a dark coat and the other in a patterned dress\"\n  ],\n  \"environment\": \"a grassy bank near a river, with trees in the background, and a cloudy sky\",\n  \"physical_actions\": [\n    \"walking on a grassy bank near a river, with one woman in a dark coat and the other in a patterned dress\"\n  ],\n  \"objects\": [\n    \"grass, river, trees, and a cloudy sky\"\n  ],\n  \"camera\": \"medium shot, capturing the women from the side, with a focus on their lower bodies and the river in the background\",\n  \"uncertainty\": \"some parts of the image may be obscured by trees or clouds, but overall, the scene is clear and well-defined\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 10.25
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "194bfdf3bd9cf9ab0fa3312f85dc9833b02fb2e8499d9e36634c0c2af3094349",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a woman with short hair, wearing a light-colored dress with a blue patterned collar"
+        ],
+        "environment": "an outdoor setting with a grassy field and trees, possibly in a park or garden",
+        "physical_actions": [
+          "standing"
+        ],
+        "objects": [
+          "no visible objects"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "some parts of the image may be blurred due to motion or low light conditions",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a woman with short hair, wearing a light-colored dress with a blue patterned collar\"],\n  \"environment\": \"an outdoor setting with a grassy field and trees, possibly in a park or garden\",\n  \"physical_actions\": [\"standing\"],\n  \"objects\": [\"no visible objects\"],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some parts of the image may be blurred due to motion or low light conditions\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 8.041
+    }
+  }
+}

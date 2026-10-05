@@ -1,0 +1,82 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "15ea31d586371d027b52fb480c9853258f338264364de39c28a9882a4d62b3ed",
+    "frame_50.jpg": "e1306cfb8d56201e86523c1a6dcdbf4230ffacf84a0ff5ec160b63d42f958d3a",
+    "frame_75.jpg": "18cca3e8e718e711532bc07840a56ee738b4c4f08a136bd6a04c54e22eb130be"
+  },
+  "elapsed_sec": 22.907,
+  "status": "success",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "15ea31d586371d027b52fb480c9853258f338264364de39c28a9882a4d62b3ed",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person with dark hair, wearing a light green dress with a dark pattern"
+        ],
+        "environment": "an indoor setting, possibly a room with a wooden floor and a light-colored wall",
+        "physical_actions": [
+          "standing and looking at another person"
+        ],
+        "objects": [
+          "no significant objects detected in the frame"
+        ],
+        "camera": "medium shot, focusing on the person's face and upper body",
+        "uncertainty": "no significant blur or low light, but the frame is not clear enough to confidently identify the person's identity",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a person with dark hair, wearing a light green dress with a dark pattern\"],\n  \"environment\": \"an indoor setting, possibly a room with a wooden floor and a light-colored wall\",\n  \"physical_actions\": [\"standing and looking at another person\"],\n  \"objects\": [\"no significant objects detected in the frame\"],\n  \"camera\": \"medium shot, focusing on the person's face and upper body\",\n  \"uncertainty\": \"no significant blur or low light, but the frame is not clear enough to confidently identify the person's identity\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 6.33
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "e1306cfb8d56201e86523c1a6dcdbf4230ffacf84a0ff5ec160b63d42f958d3a",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "two men standing in a dimly lit room, possibly in a museum or historical setting"
+        ],
+        "environment": "a dimly lit room with a large window or glass panel, possibly a museum or historical exhibit",
+        "physical_actions": [
+          "standing and looking at the window"
+        ],
+        "objects": [
+          "window or glass panel, possibly a large window or glass panel in a museum or historical exhibit"
+        ],
+        "camera": "medium shot, focusing on the men and the window",
+        "uncertainty": "some parts of the image are in shadow, making it difficult to see details",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"two men standing in a dimly lit room, possibly in a museum or historical setting\"\n  ],\n  \"environment\": \"a dimly lit room with a large window or glass panel, possibly a museum or historical exhibit\",\n  \"physical_actions\": [\n    \"standing and looking at the window\"\n  ],\n  \"objects\": [\n    \"window or glass panel, possibly a large window or glass panel in a museum or historical exhibit\"\n  ],\n  \"camera\": \"medium shot, focusing on the men and the window\",\n  \"uncertainty\": \"some parts of the image are in shadow, making it difficult to see details\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 7.996
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "18cca3e8e718e711532bc07840a56ee738b4c4f08a136bd6a04c54e22eb130be",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing a dark coat"
+        ],
+        "environment": "a dimly lit room with a window, possibly a bedroom or living room",
+        "physical_actions": [
+          "standing"
+        ],
+        "objects": [
+          "window frame"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "some objects may be partially obscured by the window frame",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"a person wearing a dark coat\"\n  ],\n  \"environment\": \"a dimly lit room with a window, possibly a bedroom or living room\",\n  \"physical_actions\": [\n    \"standing\"\n  ],\n  \"objects\": [\n    \"window frame\"\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some objects may be partially obscured by the window frame\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 6.842
+    }
+  }
+}

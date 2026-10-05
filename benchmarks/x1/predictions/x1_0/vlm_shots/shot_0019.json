@@ -1,0 +1,54 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "aca60f385d16e8bc0fb3cc9747b55640fe01b837be70e74b3c86a80796ebb6fa",
+    "frame_50.jpg": "6912c17a9685dfbc9befb6da510dc4bd20d459fb10452d36266fb5ac1f842911",
+    "frame_75.jpg": "497e5ab492243697f4201a894a2b07bda788f278f57131fcc025eb27834484f0"
+  },
+  "elapsed_sec": 23.35,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "aca60f385d16e8bc0fb3cc9747b55640fe01b837be70e74b3c86a80796ebb6fa",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing a dark coat"
+        ],
+        "environment": "a dimly lit room with a piano and a microphone",
+        "physical_actions": [
+          "playing the piano"
+        ],
+        "objects": [
+          "a piano"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "some blur due to movement",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"a person wearing a dark coat\"\n  ],\n  \"environment\": \"a dimly lit room with a piano and a microphone\",\n  \"physical_actions\": [\n    \"playing the piano\"\n  ],\n  \"objects\": [\n    \"a piano\"\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to movement\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 5.705
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "6912c17a9685dfbc9befb6da510dc4bd20d459fb10452d36266fb5ac1f842911",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a gray shirt\",\n  \"environment\": \"an indoor setting with a desk and a stack of books\",\n  \"physical_actions\": \"standing and looking at the stack of books\",\n  \"objects\": \"a gray shirt, a stack of books, a desk\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 6.322
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "497e5ab492243697f4201a894a2b07bda788f278f57131fcc025eb27834484f0",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"a person wearing a dark coat\"\n    },\n    {\n      \"description\": \"a person wearing a light-colored shirt\"\n    }\n  ],\n  \"environment\": \"a dimly lit room with wooden furniture, possibly a study or office, and a table with a book and a pen on it, with a person sitting at the table and another person standing behind them, possibly a mentor or teacher, with a microphone and a screen in the background, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or colleague, and a person in the background with a microphone and a screen, possibly a student or",
+      "reason": "非法 JSON 格式: Expecting value: line 1 column 1 (char 0)",
+      "elapsed_sec": 10.412
+    }
+  }
+}

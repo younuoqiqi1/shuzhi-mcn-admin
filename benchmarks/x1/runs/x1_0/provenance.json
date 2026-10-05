@@ -1,0 +1,379 @@
+{
+  "input_video": {
+    "media_id": "source_media_001",
+    "path": "/Users/yoyotaozhou/Documents/video-moment-validation/data/input/qianfu_ep18.mp4",
+    "sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c"
+  },
+  "manifests": {
+    "candidate_manifest_sha256": "6338a0de4290bc0774376ff5252533543edbeda1347388e718e55df94fa1fd0f",
+    "selected_15_shots_sha256": "9b8a78d666a1f38b174e4e4066e50bd3451b8ca226abc0761621e19ae98d1938",
+    "seed": 20261005
+  },
+  "models": {
+    "asr": {
+      "repo": "mlx-community/whisper-tiny",
+      "revision": "unknown",
+      "weights_file": "weights.npz",
+      "weights_sha256": "d5a3b8671ac7aab11a2c9d0f16e7da94bad5500d785856f438c6bd44c3723944",
+      "local_path": "/private/tmp/x1_0/models/whisper-tiny"
+    },
+    "vlm": {
+      "repo": "mlx-community/Qwen2-VL-2B-Instruct-4bit",
+      "revision": "unknown",
+      "weights_file": "model.safetensors",
+      "weights_sha256": "3534d3dcfaacd0cd00e935469bc34b6d692b2ba0749c5d9ee422f3f2175cf992",
+      "local_path": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit"
+    },
+    "face_detection": {
+      "model": "YuNet (face_detection_yunet_2023mar.onnx)",
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4"
+    },
+    "face_recognition": {
+      "model": "SFace (face_recognition_sface_2021dec.onnx)",
+      "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79"
+    }
+  },
+  "parameters": {
+    "vlm": {
+      "max_tokens": 256,
+      "temperature": 0.0,
+      "resize_shape": [
+        384,
+        384
+      ],
+      "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+      "prompt_text": "You are an objective computer vision observer.\nAnalyze the provided video frame strictly based on visible physical facts.\nRules:\n1. Do NOT guess names, identities, emotions, intentions, character roles, or story plot.\n2. Focus ONLY on visible physical characteristics: clothing, environment, physical actions, detected objects, camera framing, and uncertainties.\n3. Respond ONLY with a valid JSON object matching the following structure:\n{\n  \"characters\": [\"description of visible person appearances, e.g., 'a person wearing a dark coat'\"],\n  \"environment\": \"description of physical setting, lighting, indoor/outdoor\",\n  \"physical_actions\": [\"concrete physical movements, e.g., 'sitting at desk', 'walking'\"],\n  \"objects\": [\"visible objects, e.g., 'wooden chair', 'telephone', 'lamp'\"],\n  \"camera\": \"shot scale, e.g., 'close-up', 'medium shot', 'wide shot'\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n"
+    },
+    "face_matching": {
+      "metric": "cosine_similarity",
+      "threshold": 0.55
+    }
+  },
+  "dependencies": {
+    "mlx": "0.32.3",
+    "mlx_whisper": "0.4.3",
+    "mlx_vlm": "0.7.4",
+    "opencv_python_headless": "4.10.0.84",
+    "transformers": "5.18.0",
+    "torch": "2.14.1"
+  },
+  "frames_provenance": {
+    "shot_0010/frame_25.jpg": {
+      "sha256": "ef7b28c4a8d57811f635e1bf96d9c6b42564cbb06954feff3bb558270a989150",
+      "abs_time_sec": 43.43,
+      "pct": "25"
+    },
+    "shot_0010/frame_50.jpg": {
+      "sha256": "5a452f9f830dd187cb5abff07a9c63af3071c24dd67c5ff8947e9ac6c3b4678f",
+      "abs_time_sec": 45.42,
+      "pct": "50"
+    },
+    "shot_0010/frame_75.jpg": {
+      "sha256": "21fe22266ee2b42e14aec6115c42037b5edaa66e48f9e5cf72d829dd94c9b375",
+      "abs_time_sec": 47.41,
+      "pct": "75"
+    },
+    "shot_0018/frame_25.jpg": {
+      "sha256": "1e243aaa3becca6375ced8c1928d89ce357b2a22c9d76f6ae94240ea951ca6c6",
+      "abs_time_sec": 72.64,
+      "pct": "25"
+    },
+    "shot_0018/frame_50.jpg": {
+      "sha256": "f19124dae3d1c46ec7cd328d19b5ece705895c243b23a5951f2bff99f309759a",
+      "abs_time_sec": 73.04,
+      "pct": "50"
+    },
+    "shot_0018/frame_75.jpg": {
+      "sha256": "0811f31bd9c7dab1ca6f092411ec557c59471b30f8a04655787d708c0812f2ba",
+      "abs_time_sec": 73.44,
+      "pct": "75"
+    },
+    "shot_0019/frame_25.jpg": {
+      "sha256": "aca60f385d16e8bc0fb3cc9747b55640fe01b837be70e74b3c86a80796ebb6fa",
+      "abs_time_sec": 74.43,
+      "pct": "25"
+    },
+    "shot_0019/frame_50.jpg": {
+      "sha256": "6912c17a9685dfbc9befb6da510dc4bd20d459fb10452d36266fb5ac1f842911",
+      "abs_time_sec": 75.02,
+      "pct": "50"
+    },
+    "shot_0019/frame_75.jpg": {
+      "sha256": "497e5ab492243697f4201a894a2b07bda788f278f57131fcc025eb27834484f0",
+      "abs_time_sec": 75.61,
+      "pct": "75"
+    },
+    "shot_0026/frame_25.jpg": {
+      "sha256": "f13df2e919c510abb28bc99c704a8d1a626eb732f6a9b97493c4be48e0b710a5",
+      "abs_time_sec": 290.29,
+      "pct": "25"
+    },
+    "shot_0026/frame_50.jpg": {
+      "sha256": "72353169881c9c4391737064d1e19b9fd7e934774248f98cf9a2fa2665bf920b",
+      "abs_time_sec": 290.86,
+      "pct": "50"
+    },
+    "shot_0026/frame_75.jpg": {
+      "sha256": "7fe7f97c10e8b778287a9e08e715cc125c39d46cc175c18ee3d766601b917af0",
+      "abs_time_sec": 291.43,
+      "pct": "75"
+    },
+    "shot_0035/frame_25.jpg": {
+      "sha256": "3048065c78f91ca6f439500c1c45400154a44a0079297f2cec0fdb7cc11a832a",
+      "abs_time_sec": 560.7,
+      "pct": "25"
+    },
+    "shot_0035/frame_50.jpg": {
+      "sha256": "226f48d9550d59acfe8ab9dfb21e224e2ff714683fdcbd7fe582c5195fba0105",
+      "abs_time_sec": 564.88,
+      "pct": "50"
+    },
+    "shot_0035/frame_75.jpg": {
+      "sha256": "4ce04af66953d0f1ef5e18c929f25f87aa9f6319a06c9f22c70997d981672316",
+      "abs_time_sec": 569.06,
+      "pct": "75"
+    },
+    "shot_0053/frame_25.jpg": {
+      "sha256": "1a2dbbd0c30a3b93424604827fcef09d1d425b7bbe5217ed042c723da9e3c789",
+      "abs_time_sec": 1083.29,
+      "pct": "25"
+    },
+    "shot_0053/frame_50.jpg": {
+      "sha256": "5953e970838fcef4f3b9dd15af1b186eb5f13bf0daaac5711367d6cc8a08c84a",
+      "abs_time_sec": 1083.9,
+      "pct": "50"
+    },
+    "shot_0053/frame_75.jpg": {
+      "sha256": "36561bad7ca08463aa125d5163ab775ce353adc8ff750f11fb6f3a97ca471221",
+      "abs_time_sec": 1084.51,
+      "pct": "75"
+    },
+    "shot_0055/frame_25.jpg": {
+      "sha256": "7691fab611f02bd4f6325cd1f44951e5e2206268a8533c797cb94258cca5f0e6",
+      "abs_time_sec": 1138.1,
+      "pct": "25"
+    },
+    "shot_0055/frame_50.jpg": {
+      "sha256": "8cc5cc73df19ed25346ca45f5e9adb0066ceb9ffd322097d4cf8df31cdf4c93b",
+      "abs_time_sec": 1154.28,
+      "pct": "50"
+    },
+    "shot_0055/frame_75.jpg": {
+      "sha256": "c1bff123106a941dbecec1151fd4a24b5eeda42a555363a4fd752c441afbf578",
+      "abs_time_sec": 1170.46,
+      "pct": "75"
+    },
+    "shot_0056/frame_25.jpg": {
+      "sha256": "a7a1beb8caf1718a40bc7738642bc0e6da65418bc59b49b8bf9beadffca3f96b",
+      "abs_time_sec": 1201.79,
+      "pct": "25"
+    },
+    "shot_0056/frame_50.jpg": {
+      "sha256": "80aa1d0bcf52b314c2457661fc0d98db68aad0a2d1e06c7725413dbb0b8c9613",
+      "abs_time_sec": 1216.94,
+      "pct": "50"
+    },
+    "shot_0056/frame_75.jpg": {
+      "sha256": "e4fee62cc39feb1662547b43c267b902a13d5f392f48878cc2dc1cf0de4e483b",
+      "abs_time_sec": 1232.09,
+      "pct": "75"
+    },
+    "shot_0069/frame_25.jpg": {
+      "sha256": "52b09696bfc2cb523b5142aa952241e00d1b8dc28dfe9abc7ea6f99b795ed95b",
+      "abs_time_sec": 1464.38,
+      "pct": "25"
+    },
+    "shot_0069/frame_50.jpg": {
+      "sha256": "638e1ac1b3c1a032628ee9dca1824d914114abc420fb569dabb1707a120278bb",
+      "abs_time_sec": 1465.2,
+      "pct": "50"
+    },
+    "shot_0069/frame_75.jpg": {
+      "sha256": "fbec17f7824bfc002755ea2257ee030653111b556faaa5f8ce3e220f8579f06d",
+      "abs_time_sec": 1466.02,
+      "pct": "75"
+    },
+    "shot_0070/frame_25.jpg": {
+      "sha256": "0ca59f03f02cd3cfcca2a39a7b77b290745338c01455e4a1bc1d58010ada70fb",
+      "abs_time_sec": 1468.41,
+      "pct": "25"
+    },
+    "shot_0070/frame_50.jpg": {
+      "sha256": "d5af04993a9982c2c4f8d095b20283990a79b4610e49df57740848529f8dce9f",
+      "abs_time_sec": 1469.98,
+      "pct": "50"
+    },
+    "shot_0070/frame_75.jpg": {
+      "sha256": "19cf59df323613c7b851e59b7b8b3628c77f8c94553588e1209a7824bb6525f4",
+      "abs_time_sec": 1471.55,
+      "pct": "75"
+    },
+    "shot_0095/frame_25.jpg": {
+      "sha256": "3590b011cfd769311d2a2cbba2b2f50783e273e55d005b78a8fd2eb72263a4a1",
+      "abs_time_sec": 2019.12,
+      "pct": "25"
+    },
+    "shot_0095/frame_50.jpg": {
+      "sha256": "4facec7c6b823e327f6f7d2c4dadd292cd941d99a453a03abf753792257a2827",
+      "abs_time_sec": 2020.48,
+      "pct": "50"
+    },
+    "shot_0095/frame_75.jpg": {
+      "sha256": "eac26a26a0417f7996f9e489e32cd229442c7c6c90fdb6ad4bdeedd10b63a178",
+      "abs_time_sec": 2021.84,
+      "pct": "75"
+    },
+    "shot_0117/frame_25.jpg": {
+      "sha256": "522f23eb14bec3301d3c4e636ff03bcec19de4cf8d570b1487dfccb981ea98bb",
+      "abs_time_sec": 2233.28,
+      "pct": "25"
+    },
+    "shot_0117/frame_50.jpg": {
+      "sha256": "0ff99d660d4bf9f776542a36cec25a18b09383f658c58f6e23b82c92710a511f",
+      "abs_time_sec": 2245.92,
+      "pct": "50"
+    },
+    "shot_0117/frame_75.jpg": {
+      "sha256": "cd73efbce2bfa37de23b5dc7f9a887f12049a2b720bbfd95bd9379223fe1bcf4",
+      "abs_time_sec": 2258.56,
+      "pct": "75"
+    },
+    "shot_0133/frame_25.jpg": {
+      "sha256": "e028a40773b56e28e32501155f5176de63f20776158fdeca3a3f8082821850ca",
+      "abs_time_sec": 2449.08,
+      "pct": "25"
+    },
+    "shot_0133/frame_50.jpg": {
+      "sha256": "5543d1f9592fa98cf32aafe4d2630d32dfc40a8a5884c2b1d56d508e541c379e",
+      "abs_time_sec": 2456.16,
+      "pct": "50"
+    },
+    "shot_0133/frame_75.jpg": {
+      "sha256": "194bfdf3bd9cf9ab0fa3312f85dc9833b02fb2e8499d9e36634c0c2af3094349",
+      "abs_time_sec": 2463.24,
+      "pct": "75"
+    },
+    "shot_0137/frame_25.jpg": {
+      "sha256": "15ea31d586371d027b52fb480c9853258f338264364de39c28a9882a4d62b3ed",
+      "abs_time_sec": 2527.69,
+      "pct": "25"
+    },
+    "shot_0137/frame_50.jpg": {
+      "sha256": "e1306cfb8d56201e86523c1a6dcdbf4230ffacf84a0ff5ec160b63d42f958d3a",
+      "abs_time_sec": 2530.54,
+      "pct": "50"
+    },
+    "shot_0137/frame_75.jpg": {
+      "sha256": "18cca3e8e718e711532bc07840a56ee738b4c4f08a136bd6a04c54e22eb130be",
+      "abs_time_sec": 2533.39,
+      "pct": "75"
+    },
+    "shot_0149/frame_25.jpg": {
+      "sha256": "8841a9694cea650e17da6738d4d9dda94bbe3787fb18233556b1ffe282dee32e",
+      "abs_time_sec": 2610.12,
+      "pct": "25"
+    },
+    "shot_0149/frame_50.jpg": {
+      "sha256": "5a4ca0657c467092a0becb3e4028c1daf4ca6c164a09659c3b32d97d1f94f312",
+      "abs_time_sec": 2611.16,
+      "pct": "50"
+    },
+    "shot_0149/frame_75.jpg": {
+      "sha256": "16b44142e35b7138c38d62060116e1ed58facac7e3d15640cfe8ae72508c0fb2",
+      "abs_time_sec": 2612.2,
+      "pct": "75"
+    }
+  },
+  "audio_provenance": {
+    "shot_0010": {
+      "path": "/private/tmp/x1_0/audio/shot_0010.wav",
+      "sha256": "3032e6438d31fb59c2330891b69932beda51506e7dff02ef74c4fc4d49d4240e",
+      "start_sec": 41.44,
+      "duration": 7.96
+    },
+    "shot_0018": {
+      "path": "/private/tmp/x1_0/audio/shot_0018.wav",
+      "sha256": "44264971415d10550fd3db12cfa0f5058254ef709f2e1e1114beb12d98a4fdcb",
+      "start_sec": 72.24,
+      "duration": 1.6
+    },
+    "shot_0019": {
+      "path": "/private/tmp/x1_0/audio/shot_0019.wav",
+      "sha256": "97320a95b1c6b5237cb83d94b775456c6e6fd013873341ee69d5244f896aa54b",
+      "start_sec": 73.84,
+      "duration": 2.36
+    },
+    "shot_0026": {
+      "path": "/private/tmp/x1_0/audio/shot_0026.wav",
+      "sha256": "07498b8f3e0ccd9d740a89e36eddaa0bbfc584f85af9c0136d3e53443d12eb80",
+      "start_sec": 289.72,
+      "duration": 2.28
+    },
+    "shot_0035": {
+      "path": "/private/tmp/x1_0/audio/shot_0035.wav",
+      "sha256": "3965c8a0d82feebaa33e880e091655e5b321863be30e7554e8f7192a7c6b3350",
+      "start_sec": 556.52,
+      "duration": 16.72
+    },
+    "shot_0053": {
+      "path": "/private/tmp/x1_0/audio/shot_0053.wav",
+      "sha256": "9cac574009aaddb6ecb23dd4b8c6b5661201567ec177f45dfe49da6a3c4229c8",
+      "start_sec": 1082.68,
+      "duration": 2.44
+    },
+    "shot_0055": {
+      "path": "/private/tmp/x1_0/audio/shot_0055.wav",
+      "sha256": "bc9e1c2cd9b7a54c87f367b1ce1385d3677c61005e8aa079b034527bc025b51c",
+      "start_sec": 1121.92,
+      "duration": 64.72
+    },
+    "shot_0056": {
+      "path": "/private/tmp/x1_0/audio/shot_0056.wav",
+      "sha256": "378788917816d689cd8ae5e91f5c1227b4cfc07de0944934a69c33a82ba66d08",
+      "start_sec": 1186.64,
+      "duration": 60.6
+    },
+    "shot_0069": {
+      "path": "/private/tmp/x1_0/audio/shot_0069.wav",
+      "sha256": "5bc7be96155424756952dc420adb5b7d9cb04fcf8f11666752f8f10aee04582a",
+      "start_sec": 1463.56,
+      "duration": 3.28
+    },
+    "shot_0070": {
+      "path": "/private/tmp/x1_0/audio/shot_0070.wav",
+      "sha256": "7bcb25552c0fb7b15c73b8b9a4ea47af7b8e457cd18c99d32d1dfc868d325aa2",
+      "start_sec": 1466.84,
+      "duration": 6.28
+    },
+    "shot_0095": {
+      "path": "/private/tmp/x1_0/audio/shot_0095.wav",
+      "sha256": "33fb5aa45e638a2feb73896bf420b4b0b8050f8e2732ae8959e525fd9d8607d3",
+      "start_sec": 2017.76,
+      "duration": 5.44
+    },
+    "shot_0117": {
+      "path": "/private/tmp/x1_0/audio/shot_0117.wav",
+      "sha256": "6fcb4f19ac45b79a02ffef47c155ab9bc55fdb2b4a0d9324c5a3f8feccfa9a9e",
+      "start_sec": 2220.64,
+      "duration": 50.56
+    },
+    "shot_0133": {
+      "path": "/private/tmp/x1_0/audio/shot_0133.wav",
+      "sha256": "739f05f0458bf7ac02709e303fdfb950a2a9dc092e67c4485b76ad127c14e849",
+      "start_sec": 2442.0,
+      "duration": 28.32
+    },
+    "shot_0137": {
+      "path": "/private/tmp/x1_0/audio/shot_0137.wav",
+      "sha256": "6cb93cded27f4ecc52a0d24542b932270b10f0bb9cb612a85116f7bca3a07dc3",
+      "start_sec": 2524.84,
+      "duration": 11.4
+    },
+    "shot_0149": {
+      "path": "/private/tmp/x1_0/audio/shot_0149.wav",
+      "sha256": "66b8a764f5df3185a7cd40b7c524317a79870e27ec1098f8bf262ce8b6a10c1c",
+      "start_sec": 2609.08,
+      "duration": 4.16
+    }
+  }
+}

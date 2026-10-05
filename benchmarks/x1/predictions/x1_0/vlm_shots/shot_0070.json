@@ -1,0 +1,40 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "0ca59f03f02cd3cfcca2a39a7b77b290745338c01455e4a1bc1d58010ada70fb",
+    "frame_50.jpg": "d5af04993a9982c2c4f8d095b20283990a79b4610e49df57740848529f8dce9f",
+    "frame_75.jpg": "19cf59df323613c7b851e59b7b8b3628c77f8c94553588e1209a7824bb6525f4"
+  },
+  "elapsed_sec": 14.708,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "0ca59f03f02cd3cfcca2a39a7b77b290745338c01455e4a1bc1d58010ada70fb",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a white shirt\",\n  \"environment\": \"a well-lit indoor setting with a wooden chair and a painting on the wall\",\n  \"physical_actions\": \"standing and looking down\",\n  \"objects\": \"a wooden chair, a painting on the wall\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to movement\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 4.069
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "d5af04993a9982c2c4f8d095b20283990a79b4610e49df57740848529f8dce9f",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a white dress with a floral pattern\",\n  \"environment\": \"a traditional Chinese setting, possibly a living room or dining room, with wooden furniture and a framed picture on the wall\",\n  \"physical_actions\": \"standing and looking down\",\n  \"objects\": \"no specific objects detected\",\n  \"camera\": \"medium shot, focused on the person's face and upper body\",\n  \"uncertainty\": \"some blur due to lighting conditions, but the main subject is clearly visible\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 5.573
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "19cf59df323613c7b851e59b7b8b3628c77f8c94553588e1209a7824bb6525f4",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a dark coat\",\n  \"environment\": \"a dimly lit room with wooden furniture and a decorative vase\",\n  \"physical_actions\": \"standing\",\n  \"objects\": \"no specific objects detected\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to low lighting\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 3.985
+    }
+  }
+}

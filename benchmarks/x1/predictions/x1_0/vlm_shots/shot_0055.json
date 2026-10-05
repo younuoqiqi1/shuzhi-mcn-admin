@@ -1,0 +1,68 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "7691fab611f02bd4f6325cd1f44951e5e2206268a8533c797cb94258cca5f0e6",
+    "frame_50.jpg": "8cc5cc73df19ed25346ca45f5e9adb0066ceb9ffd322097d4cf8df31cdf4c93b",
+    "frame_75.jpg": "c1bff123106a941dbecec1151fd4a24b5eeda42a555363a4fd752c441afbf578"
+  },
+  "elapsed_sec": 17.63,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "7691fab611f02bd4f6325cd1f44951e5e2206268a8533c797cb94258cca5f0e6",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing a white shirt"
+        ],
+        "environment": "a formal indoor setting, possibly a office or meeting room",
+        "physical_actions": [
+          "sitting"
+        ],
+        "objects": [
+          "a wooden chair"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "no significant blur or low light, all objects and characters are clearly visible",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"a person wearing a white shirt\"\n  ],\n  \"environment\": \"a formal indoor setting, possibly a office or meeting room\",\n  \"physical_actions\": [\n    \"sitting\"\n  ],\n  \"objects\": [\n    \"a wooden chair\"\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"no significant blur or low light, all objects and characters are clearly visible\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 4.961
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "8cc5cc73df19ed25346ca45f5e9adb0066ceb9ffd322097d4cf8df31cdf4c93b",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a white shirt and glasses\",\n  \"environment\": \"a dimly lit indoor setting with a wooden desk and a lamp on it\",\n  \"physical_actions\": \"standing and talking\",\n  \"objects\": \"a wooden desk, a lamp, and a chair\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to low lighting\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 5.8
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "c1bff123106a941dbecec1151fd4a24b5eeda42a555363a4fd752c441afbf578",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "two men sitting at a bar counter, one wearing a dark coat, the other in a light-colored shirt"
+        ],
+        "environment": "a bar with a counter, chairs, and a tiled wall with decorative tiles",
+        "physical_actions": [
+          "sitting"
+        ],
+        "objects": [
+          "bar counter, chairs, decorative tiles on the wall"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "some parts of the image may be obscured by the men's clothing",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"two men sitting at a bar counter, one wearing a dark coat, the other in a light-colored shirt\"\n  ],\n  \"environment\": \"a bar with a counter, chairs, and a tiled wall with decorative tiles\",\n  \"physical_actions\": [\n    \"sitting\"\n  ],\n  \"objects\": [\n    \"bar counter, chairs, decorative tiles on the wall\"\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some parts of the image may be obscured by the men's clothing\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 6.017
+    }
+  }
+}

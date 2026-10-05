@@ -2,124 +2,108 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**X0: Technology Selection & Reuse Spike**  
-当前状态：**`X0 awaiting_review`**  
-核心决议：**根据交接文档 (`poc-revalidation-handoff.md`) 与三份独立技术审计报告，原 A8/A9/A10 及旧 A5/A6/A7 规则全面冻结；全面进入 X0–X4 真实 AI 能力重验路线。**  
+当前阶段：**X1.0: L1 自动素材理解 Benchmark (Smoke Validation / 小样摸底)**  
+当前状态：**`X1.0 awaiting_review`**  
+核心决议：**2026-10-05 完成 X1.0 真实模型小样摸底实验，交付评估报告与数据目录，状态置为 `awaiting_review`；X1 整体未通过，不进入 X1.1/X2；结果提交后严格 STOP 等待用户 Review，停止后续开发。原 A8/A9/A10 维持冻结；旧 A2–A8 保持 Legacy 工程实现口径。**  
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家  
 
 ---
 
-## 阶段门禁状态 (Two-Gate System & Revalidation Path)
+## 阶段门禁状态 (Revalidation Path & Gate System)
 
 | 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
 |:---|:---:|:---:|:---|
-| **X0 Technology Spike Gate** | X0 结束点 | 🚪 **awaiting_review** | 完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md) |
-| **X1 L1 Understanding Benchmark** | X1 节点 | ⏳ **等待 X0 评审通过** | 在不知道剧情前提下全自动生成可追溯 Objective Evidence，通过 50 Shot 独立盲测 Gold 门禁 |
-| **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中** | 50 条多类别需求盲测检索与 INSUFFICIENT 拒识率验证 |
-| **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述、A5 人名依赖、A6 预写文本及伪造字幕事故，已冻结不继续投入 |
+| **X0 Technology Spike Gate** | X0 结束点 | ✅ **approved** | **2026-10-05 用户明确批准**。完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)；正式授权开启 X1.0 |
+| **X1 L1 Understanding Benchmark** | X1 节点 | 🚪 **awaiting_review (X1.0 摸底待审 / X1 整体未通过)** | 完成 15 Shot 盲抽小样摸底；真实调用本地开源模型（mlx-whisper tiny ASR、Qwen2-VL-2B 4bit、YuNet+SFace）；**因无 Gold 标注不自宣科学 PASS，缺 OCR/Fusion 等完整范围明确不是本次交付**；X1 整体未通过，严格 STOP 不进入 X1.1/X2，等待用户审核裁定 |
+| **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中 (需等待 X1 真正通过)** | 50 条多类别需求（显式/抽象/改写/对抗负例/荒谬输入）盲测检索与 INSUFFICIENT 拒识率验证 |
+| **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述/时间表依赖、A5 人名关键词依赖、A6 预写模板及成片伪造字幕/画面不符事故，已全面冻结，不修改其实现，不继续投入 |
 
 ---
 
-## A0–A10 分阶段实施路线图 (总体完成度：95%)
+## X1.0 真实模型小样摸底交付记录 (Smoke Validation Baseline)
 
-| 阶段 | 权重 | 状态 | 交付物 / 验收入口 | 核心说明 |
+- **范围与科学性声明**：
+  - 本次交付为 **X1.0 真实模型小样摸底（Smoke Validation）**，仅验证本地开源模型推理管道的可执行性与真实输出表现；
+  - **因无独立 Gold 标注文档，绝不自宣科学 PASS**；
+  - **缺少 macOS Vision OCR 与 OCR/ASR Timeline Fusion 等完整 X1 范围，明确声明不属于完整 X1 交付**；
+  - **X1 整体未通过，不进入 X1.1 与 X2；用户要求结果提交后严格 STOP review，全面停止后续开发，等待人工审核裁决**。
+- **报告与产物索引**：
+  - 摸底评估报告：[`docs/agent-poc/x1.0-smoke-validation.md`](docs/agent-poc/x1.0-smoke-validation.md)
+  - 实验产物与数据目录：[`benchmarks/x1/`](benchmarks/x1/)
+- **真实小样实测事实记录**：
+  1. **盲抽采样与代表帧**：从 EP18 全片按视频前、中、后时段各 5 个 Shot 进行盲抽，共 15 个 Shot；每 Shot 按 25%、50%、75% 提取真实代表帧，共提取 45 张代表帧。
+  2. **语音转写 (ASR)**：真实调用本地 `mlx-whisper tiny`，15 次调用全部成功，产出 10 条有文本输出与 5 条空文本；5 条空文本原因未核验，可能无语音或 tiny 漏识别，10 条有输出不可称识别真实正确对白；WER/CER 未评定。
+  3. **视觉多模态大模型 (VLM)**：真实调用本地 `Qwen2-VL-2B 4bit` 对 45 张代表帧进行结构化推理；45 帧中 **20 帧 Schema 输出成功，25 帧 rejected**（模型输出格式/结构未合规被拒）；15 个 Shot 中 **3 个 Shot 实现三帧全结构成功，12 个 Shot 包含拒识**；**所有生成的视觉语义观察待人工审核**。
+  4. **人脸检测与匿名特征聚类**：采用 `YuNet + SFace`，共产生 50 次人脸检测记录，聚类生成 **31 个匿名算法特征簇**（余弦相似度阈值 0.55 尚未校准，跨镜头一致性 F1 未评定，**明确记为算法特征簇，不称 31 人**）。
+  5. **后续流程控制**：旧 A8/A9/A10 维持冻结；当前原地 STOP，不进入 X1.1，不进入 X2。
+
+---
+
+## 旧 A0–A10 历史实施状态表（Legacy Baseline，AI 能力未经独立科学验证）
+
+> [!WARNING]
+> **口径重置与免责声明**：下表记录的是项目历史工程实施与阶段验收产物。**所有历史“Approved”和自动化测试全绿仅证明当时的代码工程结构、接口契约与手工固件测试通过，绝对不代表 AI 核心能力已验证、不代表通过科学 Benchmark、亦不代表真实人工内容验收通过。** 原“总体完成度 95%”系指代码工程搭建进度，存在严重能力误导，现已彻底废除。根据 2026-10-05 独立技术审计（`poc-independent-audit.md`），旧实现未调用任何 LLM/VLM，检索与视角解读基于硬编码词表与模板。A8/A9/A10 维持冻结状态，不修改其实现。
+
+| 阶段 | 历史权重 | 当前定位与状态 | 历史交付物 / 产物链接 | 状态说明与审计口径重置 |
 |:---|---:|:---:|:---|:---|
-| **A0. 架构设计与 Topic-First 接线方案** | 10% | ✅ **completed** | [`docs/agent-poc/agent-poc-architecture.md`](docs/agent-poc/agent-poc-architecture.md) | A0 Review Gate 已通过；确立 Topic-First 与三层素材模型 |
-| **A1. 跨模块数据契约与 Job 状态机** | 8% | ✅ **completed** | [`src/contracts/`](src/contracts/)<br>[`tests/contracts.test.mjs`](tests/contracts.test.mjs) | A1 Review Approved。9 个核心 Schema、通用校验器、Job 状态机、VMV Stage 4/5 适配器与测试 (14/14通过) |
-| **A2. 稳定客观 Evidence 库 (L1) 摄取** | 8% | ✅ **completed** | [`src/evidence/`](src/evidence/)<br>[`tests/evidence-store.test.mjs`](tests/evidence-store.test.mjs) | A2 Review Approved。摄取 VMV Stage 1 真实产物（130个镜头）；客观字段绝对防污染；测试 5/5 通过 |
-| **A3. 共享 Generic Narrative Affordances (L2) 库** | 8% | ✅ **completed** | [`src/affordances/`](src/affordances/)<br>[`tests/affordance-store.test.mjs`](tests/affordance-store.test.mjs) | A3 Review Approved。戏剧功能分类、增量索引、一对多映射与受控 promotion 接口；测试 3/3 通过 |
-| **A4. Topic-First 创意生成链路** | 10% | ✅ **completed** | [`src/operations/`](src/operations/)<br>[`tests/operations-orchestrator.test.mjs`](tests/operations-orchestrator.test.mjs) | A4.1 Review Approved。彻底移除旧脚本前置状态，确立 ideating → awaiting_direction_review → retrieving；MaterialRequirement 确立 desired_* 诉求语义与防伪装测试；测试 4/4 通过 |
-| **A4.5. 真实 L1 Evidence 补齐与覆盖率深度核验** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5-evidence-enrichment-report.md`](docs/agent-poc/a4.5-evidence-enrichment-report.md) | 查清 130 vs 325 及 2702s 全片覆盖根因（VMV 1800s 截断）；Apple Vision OCR 提取 857 条真实台词；复用 caption-packet/importer；补齐 130/326 真实客观证据 |
-| **A4.5.1 尾部连续补齐与生成来源审计修复** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | A4.5.1 Review Approved。把 1800~2702.013s 真正补入 canonical 数据集（235 场景，0 到 2702.013s 连续无空洞）；审计视觉来源，落地 independent vs inherited 分级与置信度衰减；测试全绿 |
-| **A5. 候选镜头召回检索管道** | 10% | ✅ **completed** | [`src/retrieval/`](src/retrieval/)<br>[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)<br>[`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs) | A5 Review Approved。消费 MaterialRequirements，基于 Hybrid 检索（结构化+词法+语义Fallback+L2潜能）从真实 Canonical 数据集自动为每个诉求召回 Top20 客观候选；多场景多样性与 3s 时序去重；测试 62/62 全绿 |
-| **A6. 动态 Perspective Re-reading** | 12% | ✅ **completed** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)<br>[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | A6 Final Review Approved。完成 A6.3 Evidence 对齐收口、演职员/歌词 OCR 彻底清洗、`req_wu_03` 查实为全集无机要室且李涯零出镜判定为 `INSUFFICIENT_EVIDENCE`；Top3 Gate 87.5% 正式批准通过 |
-| **A7. Director 真实证据终编服务** | 10% | ✅ **completed** | [`src/director/`](src/director/)<br>[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)<br>[`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)<br>[`tests/director-final.test.mjs`](tests/director-final.test.mjs) | A7 Final Review Approved。消费真实 A6 Top3；原声与旁白职责先行；严禁未支撑伪断言；处理 `req_wu_03` 显式决议 (merge)；输出双真实选题 Plan、VMV 生产单与时长预算表；测试全绿 |
-| **A8. VMV Stage 4/5 真实生产对接与 MP4** | 8% | 🚪 **awaiting_review** | [`outputs/production/topic_b_final.mp4`](outputs/production/topic_b_final.mp4)<br>[`outputs/production/topic_a_final.mp4`](outputs/production/topic_a_final.mp4)<br>[`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)<br>[`tests/production-e2e.test.mjs`](tests/production-e2e.test.mjs) | MCN 后台闭环触发真实生产链；驱动 VMV Stage 4/5 真实裁切、TTS 合成、原声/旁白混合、字幕烧录、FFmpeg 组装；完成选题 B 首跑与选题 A 零改代码复跑；全工程 106/106 测试通过 |
-| **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
-| **A10. 双博主同素材 A/B 验证验收** | 4% | 待开始 | 两支不同风格的真实 1080p MP4 与指标报告 | 终极验收：同一部剧同素材池、双博主截然不同视听成品 |
-| **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
-| **A10. 双博主同素材 A/B 验证验收** | 4% | 待开始 | 两支不同风格的真实 1080p MP4 与指标报告 | 终极验收：同一部剧同素材池、双博主截然不同视听成品 |
+| **A0. 架构设计与 Topic-First 接线方案** | 10% | ⚠️ **Legacy 架构设计** | [`docs/agent-poc/agent-poc-architecture.md`](docs/agent-poc/agent-poc-architecture.md) | 确立 Topic-First 与 L1/L3 分离思想（保留）；但原 A0–A10 阶段拆分过度，实现层绑死特定剧集与硬编码规则 |
+| **A1. 跨模块数据契约与 Job 状态机** | 8% | ⚠️ **Legacy 工程契约** | [`src/contracts/`](src/contracts/)<br>[`tests/contracts.test.mjs`](tests/contracts.test.mjs) | 核心 Schema 与状态机在工程代码层面可用（测试 14/14）；作为软件结构保留，但业务模型能力未经独立验证 |
+| **A2. 稳定客观 Evidence 库 (L1) 摄取** | 8% | ⚠️ **Legacy (自动客观理解未验证)** | [`src/evidence/`](src/evidence/)<br>[`tests/evidence-store.test.mjs`](tests/evidence-store.test.mjs) | 仅实现数据存储与 VMV Stage 1 解析结构；经审计核查当时仅覆盖前 1800s 且依赖规则，**自动客观素材理解完全未经验证** |
+| **A3. 共享 Generic Narrative Affordances (L2) 库** | 8% | ⚠️ **Legacy (能力未验证)** | [`src/affordances/`](src/affordances/)<br>[`tests/affordance-store.test.mjs`](tests/affordance-store.test.mjs) | 仅建立静态标签匹配框架（`aff.tag.includes`），对 POC 核心 AI 假设无实质贡献，推迟至多集阶段验证 |
+| **A4. Topic-First 创意生成链路** | 10% | ⚠️ **Legacy (未接主链路/未验证)** | [`src/operations/`](src/operations/)<br>[`tests/operations-orchestrator.test.mjs`](tests/operations-orchestrator.test.mjs) | 确立 Topic-first 状态机；但实际上未被 A5 或主生成脚本调用，未真实接入主生产链路，业务泛化能力未经验证 |
+| **A4.5. 真实 L1 Evidence 补齐与覆盖率核验** | 4% | ⚠️ **Legacy (自动客观理解未验证)** | [`docs/agent-poc/a4.5-evidence-enrichment-report.md`](docs/agent-poc/a4.5-evidence-enrichment-report.md) | 提取 857 条真实 OCR 台词；但场景切分与视觉信息仍包含人工规则与模板，自动客观理解未验证 |
+| **A4.5.1 尾部连续补齐与生成来源审计** | 4% | ⚠️ **Legacy (自动客观理解未验证)** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | 补齐 235 个连续场景；但核心场景划分依赖人工手写 `EP18_REAL_SCENE_MAP`，动作描述含人工模板与取模生成，自动客观理解未经验证 |
+| **A5. 候选镜头召回检索管道** | 10% | 🛑 **Legacy (能力未经独立验证 / 被审计否决)** | [`src/retrieval/`](src/retrieval/)<br>[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)<br>[`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs) | 历史测试 62/62 仅证明代码流转。经审计对抗实验证实：所谓语义匹配实为专有人名与剧情关键词 fallback，分词词典写死人名与台词，不是真 semantic；去掉人名后无法召回意图需求，荒谬需求同样能通过，能力未经独立验证 |
+| **A6. 动态 Perspective Re-reading** | 12% | 🛑 **Legacy (能力未经独立验证 / 被审计否决)** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)<br>[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | 历史解读文本为根据 topic_id 分支的手写模板，换 Persona 产生逐字相同文本，非 persona-conditioned 模型推理；87.5% 仅为系统自评（human pending，gate_passed: false），未经真实人工通过；修正原关于“零出镜”等未验证剧情断言；已被审计否决 |
+| **A7. Director 真实证据终编服务** | 10% | 🛑 **Legacy (能力未经独立验证 / 被审计否决)** | [`src/director/`](src/director/)<br>[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)<br>[`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)<br>[`tests/director-final.test.mjs`](tests/director-final.test.mjs) | Plan 基于人工预写并原样写回，非自主 AI Director；Topic B 违反 A6 Top3 约束；门禁实为针对已知事故写死的特定规则；能力未经独立验证 |
+| **A8. VMV Stage 4/5 真实生产对接与 MP4** | 8% | 🛑 **Legacy (人工视听 FAIL / 全面冻结)** | [`outputs/production/topic_b_final.mp4`](outputs/production/topic_b_final.mp4)<br>[`outputs/production/topic_a_final.mp4`](outputs/production/topic_a_final.mp4)<br>[`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)<br>[`tests/production-e2e.test.mjs`](tests/production-e2e.test.mjs) | 仅证明结构化剪辑单到真实 MP4 的底层工程渲染管道可运行；内容层面成片含伪造台词字幕与严重音画不符，人工视听审查判 FAIL 并冻结，不能叫泛化 E2E 成功；不修改其实现 |
+| **A9. 动态解释向通用 Affordance 受控回流** | 4% | 🛑 **全面冻结** | 知识回流流水线设计 | 全面冻结，在 X1/X2 核心假设验证通过前严禁启动 |
+| **A10. 双博主同素材 A/B 验证验收** | 4% | 🛑 **全面冻结** | 双博主视听成品设计 | 全面冻结，在 X1/X2 核心假设验证通过前严禁启动 |
 
 ---
 
-## 阶段产物与执行清单 (A1→A7)
+## 阶段产物与历史执行清单 (A1→A8 Legacy Baseline，保留历史链接)
 
-- [x] **A1 (Approved)**：正式数据契约、通用校验器、Job 状态机、VMV Stage 4/5 适配器与测试固件，测试 14/14 通过。
-- [x] **A2 (Approved)**：L1 客观 Evidence Schema 规范、VMV Stage 1 真实产物解析（130 个场景）、防污染只读 EvidenceStore，测试 5/5 通过。
-- [x] **A3 (Approved)**：L2 Generic Narrative Affordance 数据模型、一对多增量 AffordanceStore、受控晋升 (Selective Promotion) 接口骨架，测试 3/3 通过。
-- [x] **A4 (Approved)**：Topic-First 运营任务编排服务 ([`src/operations/operations-orchestrator.mjs`](src/operations/operations-orchestrator.mjs))：
-  - 彻底移除 `drafting`/`scripting`/`awaiting_script_review` 旧状态，改为 Topic-first 状态机：`ideating` $\rightarrow$ `awaiting_direction_review` $\rightarrow$ `retrieving`；
-  - `MaterialRequirement` 全面重构为 `desired_*` 诉求语义与防伪装测试；
-  - 多轮真人交互修订历史；测试 4/4 全部通过。
-- [x] **A4.5 (Approved in Principle, Extended via A4.5.1)**：真实 L1 Objective Evidence 基础补齐与 130 vs 325 场景分析。
-- [x] **A4.5.1 (Approved)**：真实 Canonical Evidence 尾部补齐与来源审计修复：
-  - **全片 0 ~ 2702.013s 连续覆盖 Canonical L1 数据集交付**：
-    - 权威检索数据集：[`src/evidence/data/canonical_evidence_qianfu_ep18.json`](src/evidence/data/canonical_evidence_qianfu_ep18.json)；
-    - 235 个连续场景（0 到 2702.013s 连续无空洞，尾部补齐 105 个镜头）；
-  - **来源审计与段级继承衰减机制落地**（`independent_keyframe` vs `segment_inherited`）；
-  - **保留可复现脚本与配置清单**：[`src/evidence/config/canonical-manifest.json`](src/evidence/config/canonical-manifest.json)；
-  - **完成 20 个分层抽样人工检查**；更正口径为“《潜伏》第18集全片约45:02”；测试 50/50 全部通过。
-- [x] **A5 (Approved)**：真实候选镜头召回 Retrieval Pipeline：
-  - **交付 CandidateRetrievalService 服务核心与稳定程序接口** ([`src/retrieval/retrieval-service.mjs`](src/retrieval/retrieval-service.mjs))；
-  - **四路 Hybrid 匹配引擎与质量多样性重排**（结构化、词法、语义Fallback、L2潜能协同、多样性去重）；
-  - **L2 通用叙事潜能种子库** ([`src/retrieval/data/seed_l2_affordances.json`](src/retrieval/data/seed_l2_affordances.json)，472 条合规潜能）；
-  - **双真实选题端到端检索与持久化产物**（8 个需求，每个产出 20 个合规候选镜头，共 160 个候选）；
-  - **人工分层抽样 Usability 审计**：24 个候选抽查，可用率达 91.7%；测试 62/62 全绿。
-- [x] **A6.1 (Changes Requested)**：动态 Perspective Re-reading + 人工门禁隔离：
-  - 实现独立 `HumanGateEvaluator`，确立系统自评与人工门禁隔离，输出 8 需求独立人工验收包。
-- [x] **A6.2 (Review Approved in Principle, Closing via A6.3)**：Evidence 对齐修复、细粒度 Retrieval Unit 引入、视角解读质量与一致性验证：
-  - 重构生成链，校准东来顺涮肉馆（1590~2160s）为谢若林/余则成，剔除李涯/机要档案室；
-  - 剔除 `scene_0125` 中吴敬中错误标注；
-  - 引入 370 个 3~15s 细粒度 `Retrieval Units` 数据集；
-  - 视角重读与动态模板隔离，落地 `validatePerspectiveConsistency` 一致性校验器。
-- [x] **A6.3 (Awaiting Final Review)**：Evidence 对齐收口、检索缺失审计与 OCR 污染清洗：
-  - **`req_wu_03` 客观审计与真实收口**：
-    - 查实《潜伏》第18集全片根本无机要档案室场景，且李涯全片零出镜，该诉求属历史错设；
-    - 算法严格收紧物理空间特征与 Grounding 约束，绝不为凑数制造假命中，全候选评定为 `reject`，系统正确返回 **`INSUFFICIENT_EVIDENCE`** 并输出修改建议；
-  - **片尾与片头 OCR 演员表/歌词双引擎彻底过滤**：
-    - 建立 `CREDITS_PATTERNS` 与 `LYRICS_PATTERNS` 过滤清洗管道（[`src/evidence/caption-importer.mjs`](src/evidence/caption-importer.mjs)）；
-    - 全库 235 个 Canonical Scenes 与 370 个 Retrieval Units 的对白字段污染率降至 **0.0%**；
-    - `unit_scene_0213_01` 对白置空并退出 `req_probe_04` 垄断，Top3 100% 回归真实火车站台蒸汽告别镜头（`scene_0193` / `scene_0188` / `scene_0191`）；
-  - **端到端流水线重新执行与产物全量更新**：
-    - 重新运行 A5 Hybrid 检索与 A6 视角重读，更新结果 JSON；
-    - 重新生成 8 需求独立人工验收包：[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md) 与 [`src/perspective/results/a6_human_gate_review.json`](src/perspective/results/a6_human_gate_review.json)；
-    - 保持所有 24 个候选 `human_verdict` 为 `pending`，系统自评覆盖率更正为客观的 **87.5% (7/8)**，门禁状态置为 `awaiting_human_review`，`gate_passed: false`；
-  - **自动化测试套件全量更新与通过**：
-    - 工程总测试扩展至 **83/83 passed**（0 失败，新增 2 项 A6.3 专项测试）；
-  - **专题修复报告**：[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)。
-- [x] **A7.1 (Awaiting Final Review)**：Director Plan 成片可执行性与时长预算收口：
-  - **INSUFFICIENT_EVIDENCE 需求生产拦截与自然合并**：
-    - `req_wu_03` 决议为 `merge`，将“站长不看卷宗看利益与人心”的心战立意自然合并入终章 `seg_wu_04`；
-    - 严格落实**不产生虚假生产分段**（`production_segment_created: false`），成片绝不向观众违和解释“没有这个镜头”；Topic A 精简为 3 个真实生产分段；
-  - **Narration Duration Budget 旁白时长预算系统交付**：
-    - [`src/director/duration-budget-config.mjs`](src/director/duration-budget-config.mjs)：集中配置 4.0 字/秒常态解说估算语速、0.5s 安全余量与 2.0s duck 引导时长，杜绝散落 magic number；
-    - 证明进入 A8 前每段旁白 100% 说得完，严禁单纯调高语速硬塞；
-    - 原声对白完整性保护（不得截断半句话）；
-    - 导出独立时长预算审计表：[`docs/agent-poc/a7.1-duration-budget-topic-b.md`](docs/agent-poc/a7.1-duration-budget-topic-b.md) 与 [`docs/agent-poc/a7.1-duration-budget-topic-a.md`](docs/agent-poc/a7.1-duration-budget-topic-a.md)，双选题全分段 **100% duration_fit = true**；
-  - **更新 Final Director Plan 与 VMV 生产单**：
-    - 选题 B（优先成片）[`src/director/results/director_plan_topic_b.json`](src/director/results/director_plan_topic_b.json) 及生产单 [`src/director/results/vmv_order_topic_b.json`](src/director/results/vmv_order_topic_b.json)；
-    - 选题 A [`src/director/results/director_plan_topic_a.json`](src/director/results/director_plan_topic_a.json) 及生产单 [`src/director/results/vmv_order_topic_a.json`](src/director/results/vmv_order_topic_a.json)；
-  - **自动化测试套件全量更新与通过**：
-    - 全工程测试扩展至 **99/99 passed**（新增 4 项 A7.1 时长预算与假分段拦截专项测试）；
-  - **交付技术报告**：[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)。
-- [x] **A8 (Delivered, awaiting_human_video_review)**：MCN 后台 → 真实生产链 → MP4 真实端到端交付：
-  - **跨仓库驱动真实 VMV Stage 4/5 消费端**：
-    - 在 `video-moment-validation` 实现 `src/vmv/render.py` 与 `vmv render` 命令；
-    - 执行真实秒级切片提取、真实 TTS 语音合成、真实音轨混合（audio_owner, duck, L_cut, fade）、真实两行中文字幕烧录、真实 FFmpeg 封装压制、自动技术 QC；
-  - **MCN 后台真实任务调度与流式服务**：
-    - 落地 `ProductionJobService`：维护真实任务状态机 (`queued → preparing → cutting → tts → assembling → qc → completed`)，严禁 setTimeout 假模拟；
-    - 落地 `McnBackendServer`：提供 REST API 与支持 HTTP 206 Range 分片流式播放的视频服务；
-    - MCN 前端嵌入原生 `<video>` 播放器，运营人员可在后台直接点击播放成片；
-  - **双真实选题 100% 成功生成成片与 QC 达标**：
-    - 选题 B《余则成最危险的一次试探》：时长 40.44s，1280x720，H.264/AAC，SHA-256 `27cbaefda6841bb4671bb6d3669f213411f767e5060ac38bf747fdf7be720f13`；
-    - 选题 A《吴站长什么时候开始怀疑余则成？》：零改代码复跑，时长 39.48s，1280x720，H.264/AAC，SHA-256 `acafd2940c3041488abd5f3281fd0740ad3d85c00b6f04bc803072010ca4c22b`；
-  - **全套自动化测试扩展至 106/106 passed**（新增 7 项 A8 端到端专项测试）；
-  - **交付技术报告**：[`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)。
-- [x] **严格守界**：**严禁进入 A9，严禁开始知识回流，原地彻底停止等待用户亲自播放检视成片**。
+> [!NOTE]
+> **历史存根说明**：以下保留历史工程实施过程中沉淀的各阶段交付物、代码及测试链接。**所有历史标记为“(Approved)”的条目仅代表当时特定的代码工程结构与测试固件通过，绝不能代表 AI 核心能力已通过科学 Benchmark 或真实人工内容验收。** 根据独立技术审计结论，旧实现未调用任何 LLM/VLM，旧 A5–A8 核心逻辑已被审计否决，旧 A2–A4 自动客观理解均未经验证。A8/A9/A10 维持冻结状态，不修改其实现。
+
+- [x] **A1 (Legacy 工程实现)**：正式数据契约、通用校验器、Job 状态机、VMV Stage 4/5 适配器与测试固件，测试 14/14 通过。仅验证了工程数据结构，业务模型能力未经验证。产物：[`src/contracts/`](src/contracts/)、[`tests/contracts.test.mjs`](tests/contracts.test.mjs)。
+- [x] **A2 (Legacy 工程实现 - 自动客观理解未验证)**：L1 客观 Evidence Schema 规范、VMV Stage 1 产物解析、防污染只读 EvidenceStore，测试 5/5 通过。仅摄取了前 1800s 数据结构，场景区间依赖人工时间表与规则，**全片自动客观素材理解完全未经验证**。产物：[`src/evidence/`](src/evidence/)、[`tests/evidence-store.test.mjs`](tests/evidence-store.test.mjs)。
+- [x] **A3 (Legacy 工程实现 - 能力未验证)**：L2 Generic Narrative Affordance 数据模型、一对多增量 AffordanceStore、受控晋升接口骨架，测试 3/3 通过。仅建立标签匹配框架（`aff.tag.includes`），对 POC 核心 AI 假设无实质贡献，能力未经验证，推迟至多集阶段。产物：[`src/affordances/`](src/affordances/)、[`tests/affordance-store.test.mjs`](tests/affordance-store.test.mjs)。
+- [x] **A4 (Legacy 工程实现 - 未接主链路/未验证)**：Topic-First 运营任务编排服务 ([`src/operations/operations-orchestrator.mjs`](src/operations/operations-orchestrator.mjs))：
+  - 确立 Topic-first 状态机：`ideating` $\rightarrow$ `awaiting_direction_review` $\rightarrow$ `retrieving`；
+  - `MaterialRequirement` 重构为 `desired_*` 诉求语义与防伪装测试（测试 4/4 通过）；
+  - **审计核实**：该模块实际未被 A5 或主生成脚本调用，未真实接入主生产链路，业务泛化能力未经验证。
+- [x] **A4.5 (Legacy 工程实现 - 自动客观理解未验证)**：真实 L1 Objective Evidence 基础补齐与 130 vs 325 场景分析报告：[`docs/agent-poc/a4.5-evidence-enrichment-report.md`](docs/agent-poc/a4.5-evidence-enrichment-report.md)。提取了 857 条真实 OCR 台词，但场景划分仍基于人工规则，自动客观理解未验证。
+- [x] **A4.5.1 (Legacy 工程实现 - 自动客观理解未验证)**：Canonical Evidence 尾部补齐与来源审计（测试 50/50 通过）：
+  - 权威检索数据集：[`src/evidence/data/canonical_evidence_qianfu_ep18.json`](src/evidence/data/canonical_evidence_qianfu_ep18.json)；
+  - 来源审计与段级继承衰减机制落地（`independent_keyframe` vs `segment_inherited`）；
+  - 保留复现配置：[`src/evidence/config/canonical-manifest.json`](src/evidence/config/canonical-manifest.json)；
+  - **审计核实**：全片场景切分基于人工手写 `EP18_REAL_SCENE_MAP`，动作描述含人工模板与序号取模生成（`actions_pool`），**全片自动客观理解完全未经验证**。
+- [x] **A5 (Legacy 工程实现 - 能力未经独立验证 / 后被审计否决)**：候选镜头召回检索管道（测试 62/62 仅代表代码流转）：
+  - 交付接口服务 [`src/retrieval/retrieval-service.mjs`](src/retrieval/retrieval-service.mjs)、L2 种子库 [`src/retrieval/data/seed_l2_affordances.json`](src/retrieval/data/seed_l2_affordances.json) 与技术报告 [`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)；
+  - **审计结论与对抗实验否决**：所谓语义检索实为 5 组固定专有词（晚秋/翠平/站长/南京/金条等）命中次数的关键词 fallback，代码内自标 `is_fallback: true` 但下游报告误称为 semantic；分词词典写死角色名与特定台词；去人名后意图召回失效，荒谬输入（如“橘猫追鸽子”）与真实需求得分无法区分；**能力未经独立验证，已被技术审计否决**。
+- [x] **A6.1 / A6.2 / A6.3 (Legacy 工程实现 - 能力未经独立验证 / 后被审计否决)**：动态 Perspective Re-reading 与门禁（测试 83/83 仅代表代码流转）：
+  - 交付产物：[`src/perspective/`](src/perspective/)、[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)、[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md) 与评测记录 [`src/perspective/results/a6_human_gate_review.json`](src/perspective/results/a6_human_gate_review.json)；
+  - **审计结论与模板问题否决**：A6 视角解读文本系按 `topicId` 分支（`isWuTopic` / `isProbeTopic`）调用的手写预置段落，非 persona-conditioned 模型推理；换 Persona 生成逐字相同文本；
+  - **自评冒充通过否决**：历史上宣称的“Top3 Gate 87.5% 正式批准通过”实为系统自评（实际记录为 `reviewed_requirements: 0`，24 个 candidate 的 `human_verdict` 全部为 `pending`，`gate_passed: false`），未经真实人工审核，已被审计否决；
+  - **修正错误剧情断言**：修正历史记录中将角色未记录作为事实宣称的断言（原依据 L1 记录判退，不应断言为客观全片事实）；修正“Top3 100% 回归真实火车站台蒸汽告别镜头”等错误剧情断言（真实抽帧已证实该段画面并非车站告别），不新增任何剧情推测。
+- [x] **A7 / A7.1 (Legacy 工程实现 - 能力未经独立验证 / 后被审计否决)**：Director 证据终编与时长预算（测试 99/99 仅代表代码流转）：
+  - 交付时长预算工具 [`src/director/duration-budget-config.mjs`](src/director/duration-budget-config.mjs)、技术报告 [`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)、双选题预算表 [`docs/agent-poc/a7.1-duration-budget-topic-b.md`](docs/agent-poc/a7.1-duration-budget-topic-b.md) / [`docs/agent-poc/a7.1-duration-budget-topic-a.md`](docs/agent-poc/a7.1-duration-budget-topic-a.md) 及预写 Plan/工单产物；
+  - **审计结论与决策能力否决**：Plan 基于人工预写 JSON 并原样写回，非自主 AI Director；Topic B 甚至违反自身的 A6 Top3 约束；所谓五维门禁为已知事故写死的特定规则；能力未经独立验证。时长预算与工程框架可供后续参考。
+- [x] **A8 (Legacy 工程实现 - 内容人工视听 FAIL / 全面冻结)**：MCN 后台 → 真实生产链 → MP4 真实端到端交付（测试 106/106 仅代表工程测试通过）：
+  - 交付产物：[`outputs/production/topic_b_final.mp4`](outputs/production/topic_b_final.mp4)、[`outputs/production/topic_a_final.mp4`](outputs/production/topic_a_final.mp4) 与报告 [`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)；
+  - **工程管道可运行性**：验证了 MCN 后台任务调度与 VMV Stage 4/5 剪辑单驱动真实裁切、TTS 合成、混音降噪、字幕烧录与 FFmpeg 封装的底层工程渲染管道可跑通；
+  - **内容人工视听 FAIL 与冻结决议**：两支 MP4 在人工视听审查中严重失真，画面出现伪造台词字幕重叠（叠在原片硬字幕上）与严重音画脱节事故（如“暗夜撤离”配白天田野、台词与出镜人物不符），人工审查已判 FAIL 并冻结，绝不能称为泛化 E2E 成功；
+  - **当前状态**：全面冻结，不修改其代码实现；不生成新正式成片，核心能力全面交由 X0–X4 重新验证。
+- [x] **A9 / A10 (全面冻结)**：严格禁止进入 A9 知识回流与 A10 双博主验收；在 X1/X2 核心假设验证通过前全面冻结。
 
 ---
 
 ## 审查审计日志 (Audit Log)
+
+> [!NOTE]
+> **历史存根说明**：本日志完整保留历史开发流转过程记录。**其中所有历史记录的“Approved”仅代表当时特定的软件工程阶段性代码交付状态，并不代表 AI 核心能力得到验证或内容通过验收。** 历史实现已被 2026-10-05 独立技术审计（`poc-independent-audit.md`）全面否决与重置。
 
 1. **2026-10-05 02:35**：A0 方案经审查正式通过（通过 Gate 1: A0 Review Gate），授权开启 A1。
 2. **2026-10-05 02:40**：完成 A1 契约规范与状态机，Commit `a2f91ef`，推送 GitHub。
@@ -141,7 +125,7 @@
 18. **2026-10-05 12:00**：A6.1 人工审查反馈：**`FAIL / changes_requested`**。指出 4 大核心内容质量阻塞，要求执行 A6.2 修复生成链。
 19. **2026-10-05 12:10**：完成 A6.2 修复：重构 `build_canonical_evidence.mjs`，校准东来顺涮肉馆（谢若林/余则成），剔除 `scene_0125` 吴敬中，引入 370 个 Retrieval Units，落地一致性校验器，全工程 81/81 测试全绿，状态设为 `A6.2 awaiting_human_review`，Commit `2842165`。
 20. **2026-10-05 12:40**：A6.2 人工审查核定 7/8 requirements usable（可用率 87.5% >= 80%），但指出两项收口问题（`req_wu_03` 检索偏离判定 unusable、`req_probe_04` 片尾 OCR 演职员表/歌词污染），要求执行 A6.3。
-21. **2026-10-05 12:45**：完成 POC-AGENT A6.3 全部收口修复：查实第18集无机要室且李涯零出镜，`req_wu_03` 正确返回 `INSUFFICIENT_EVIDENCE`；演职员表与歌词彻底清洗（污染率 0%）；测试 83/83 全绿；Commit `28accfb`。
+21. **2026-10-05 12:45**：完成 POC-AGENT A6.3 全部收口修复：基于当时 L1 缺少机要室与特定人物记录，`req_wu_03` 判为 `INSUFFICIENT_EVIDENCE`（注：原“李涯零出镜”属历史未验断言，不可作为事实宣称）；演职员表与歌词过滤清洗（污染率 0%）；测试 83/83 全绿；Commit `28accfb`。
 22. **2026-10-05 12:50**：A6 Final Review 审查正式批准通过（**APPROVED**），授权进入 POC-AGENT A7: Director Final 阶段。
 23. **2026-10-05 13:05**：完成 POC-AGENT A7 初版交付，Commit `6a2ef5f`。
 24. **2026-10-05 13:10**：A7 Review 审查反馈：**`changes_requested`**。指出 `req_wu_03` 不应创建虚假生产分段且成片不应对观众解释缺失，以及必须建立 Narration Duration Budget 证明每段说得完。
@@ -162,5 +146,27 @@
     - 交付验收报告 [`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)；
     - 当前状态正式设为 **`A8 awaiting_human_video_review`**，原地彻底停机，等待用户亲自播放检视两条 MP4，严禁进入 A9。
 28. **2026-10-05 14:35**：A8 人工视听审查反馈：**`FAIL / changes_requested`**。用户指出 Topic B 没看到金条台词不成立、Topic A 出现重复镜头且没有“副站长就是你”台词；核心为 Content Grounding 失败；执行全面 Root Cause Audit，完成逐 Segment 真实源片反查，交付 [`docs/agent-poc/a8-failure-root-cause-audit.md`](docs/agent-poc/a8-failure-root-cause-audit.md)，确立五维生产级门禁与可视化 Storyboard Proof 机制；状态设为 **`A8 changes_requested_root_cause_audit`**；严格停止，不修改成片，不进入 A9。
+29. **2026-10-05 16:00**：**第三方独立技术审计报告交付与口径全面重置**（[`docs/agent-poc/poc-independent-audit.md`](docs/agent-poc/poc-independent-audit.md)）：
+    - 审计判定：旧 POC 仅证明了“结构化剪辑单 → 真实 MP4”的底层工程渲染管道可运行；全链路核心大模型调用次数为 0，八个核心 AI 假设均未验证或已被证伪；
+    - 揭露关键问题：L1 包含手写时间表与序号取模、A8.1 手工注入单元形成答案泄露、A5 语义为硬编码专有词表、A6 视角解读为硬编码模板且 87.5% 仅为系统自评（human pending, gate_passed: false）、A7 Plan 为人工预写、成片包含伪造字幕及音画脱节事故；
+    - 正式决议：全面冻结原 A8/A9/A10 及旧 A5/A6/A7 规则，不修改其代码实现；废除总体 95% 能力完成度宣称；历史 Approved 和测试全绿仅证明当时代码工程状态，不代表 AI 能力、科学 benchmark 或人工验收；确立以 X0–X4 为核心的重验路线。
+30. **2026-10-05 17:30**：**X0 技术选型与复用 Spike 交付**：
+    - 完成开源项目源码、License、认证机制审计（`video-recap-skills` / `PySceneDetect` / `marlin-cli` / `VMV Stage 1`）；
+    - 在 EP18 中立短段（900-930s）完成切点、代表帧、macOS 原生 Vision OCR 真实横向实测与多集架构推演；
+    - 交付报告 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)，状态设为 `X0 awaiting_review`。
+31. **2026-10-05**：**用户明确批准 X0 评审，授权开启 X1.0**：
+    - 用户正式批准 X0 Spike 审查并授权开启 X1.0（L1 自动素材理解 Benchmark）；
+    - 阶段推进为 `X1.0 in_progress`；
+    - 修正进度看板口径：旧 A5–A8 明确标记为 legacy 工程实现且未经独立验证，旧 A2–A4 备注自动客观理解未验证；修正仍作为事实宣称的历史错误剧情断言；A8/A9/A10 维持冻结不修改实现。
+32. **2026-10-05**：**完成 X1.0 真实模型小样摸底，状态变更为 `awaiting_review`，严格 STOP**：
+    - 完成 15 Shot（视频前中后各 5 盲抽）、45 张代表帧的本地全自动开源模型推理小样摸底；
+    - 真实调用 `mlx-whisper tiny` ASR 15 次成功（产出 10 条有输出与 5 条空文本，5 条空文本原因未核验，可能无语音或 tiny 漏识别，10 条有输出不可称识别真实正确对白，WER/CER 未评）；
+    - 真实调用 `Qwen2-VL-2B 4bit` 对 45 帧推理（20 帧 Schema 成功，25 帧 rejected；3 Shot 全结构成功，12 Shot 含拒识；所有语义观察待人工审核）；
+    - 真实调用 `YuNet + SFace` 产生 50 次检测记录，聚类生成 31 个匿名算法特征簇（余弦阈值 0.55 未校准，跨镜头一致性 F1 未评，不称 31 人）；
+    - 明确因无独立 Gold 标注不自宣科学 PASS；缺少 macOS Vision OCR 与 OCR/ASR Fusion 等完整 X1 范围明确不是本次交付；
+    - **X1 整体未通过，不进入 X1.1 与 X2**；交付报告 [`docs/agent-poc/x1.0-smoke-validation.md`](docs/agent-poc/x1.0-smoke-validation.md) 与数据目录 [`benchmarks/x1/`](benchmarks/x1/)；
+    - 当前阶段状态变更为 **`X1.0 awaiting_review`**；响应用户明确要求结果提交后严格 STOP review，全面停止后续开发，等待用户审核。
+
+
 
 

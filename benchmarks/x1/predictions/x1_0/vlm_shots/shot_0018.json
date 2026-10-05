@@ -1,0 +1,71 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "1e243aaa3becca6375ced8c1928d89ce357b2a22c9d76f6ae94240ea951ca6c6",
+    "frame_50.jpg": "f19124dae3d1c46ec7cd328d19b5ece705895c243b23a5951f2bff99f309759a",
+    "frame_75.jpg": "0811f31bd9c7dab1ca6f092411ec557c59471b30f8a04655787d708c0812f2ba"
+  },
+  "elapsed_sec": 18.2,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "1e243aaa3becca6375ced8c1928d89ce357b2a22c9d76f6ae94240ea951ca6c6",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing a dark coat"
+        ],
+        "environment": "a room with a blue light, possibly a studio or a dark room",
+        "physical_actions": [
+          "standing"
+        ],
+        "objects": [
+          "no visible objects"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "no significant blur or low light, but the lighting is dim, suggesting it might be indoors",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"a person wearing a dark coat\"\n  ],\n  \"environment\": \"a room with a blue light, possibly a studio or a dark room\",\n  \"physical_actions\": [\n    \"standing\"\n  ],\n  \"objects\": [\n    \"no visible objects\"\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"no significant blur or low light, but the lighting is dim, suggesting it might be indoors\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 5.73
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "f19124dae3d1c46ec7cd328d19b5ece705895c243b23a5951f2bff99f309759a",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a dark coat\",\n  \"environment\": \"a black and white photo\",\n  \"physical_actions\": \"standing\",\n  \"objects\": \"no objects detected\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"blurry due to low lighting\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 4.889
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "0811f31bd9c7dab1ca6f092411ec557c59471b30f8a04655787d708c0812f2ba",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing a dark suit and patterned tie"
+        ],
+        "environment": "a dimly lit, possibly office-like setting with a wooden desk and chair, and a lamp on the desk",
+        "physical_actions": [
+          "bending over a desk",
+          "looking down"
+        ],
+        "objects": [
+          "a wooden desk",
+          "a lamp on the desk",
+          "a patterned tie"
+        ],
+        "camera": "medium shot, focusing on the person's lower body and head",
+        "uncertainty": "some blur due to the dim lighting",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a person wearing a dark suit and patterned tie\"],\n  \"environment\": \"a dimly lit, possibly office-like setting with a wooden desk and chair, and a lamp on the desk\",\n  \"physical_actions\": [\"bending over a desk\", \"looking down\"],\n  \"objects\": [\"a wooden desk\", \"a lamp on the desk\", \"a patterned tie\"],\n  \"camera\": \"medium shot, focusing on the person's lower body and head\",\n  \"uncertainty\": \"some blur due to the dim lighting\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 6.629
+    }
+  }
+}

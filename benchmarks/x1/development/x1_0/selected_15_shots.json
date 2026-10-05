@@ -1,0 +1,92 @@
+[
+  {
+    "shot_id": "shot_0010",
+    "start_sec": 41.44,
+    "end_sec": 49.4,
+    "duration": 7.96
+  },
+  {
+    "shot_id": "shot_0018",
+    "start_sec": 72.24,
+    "end_sec": 73.84,
+    "duration": 1.6
+  },
+  {
+    "shot_id": "shot_0019",
+    "start_sec": 73.84,
+    "end_sec": 76.2,
+    "duration": 2.36
+  },
+  {
+    "shot_id": "shot_0026",
+    "start_sec": 289.72,
+    "end_sec": 292.0,
+    "duration": 2.28
+  },
+  {
+    "shot_id": "shot_0035",
+    "start_sec": 556.52,
+    "end_sec": 573.24,
+    "duration": 16.72
+  },
+  {
+    "shot_id": "shot_0053",
+    "start_sec": 1082.68,
+    "end_sec": 1085.12,
+    "duration": 2.44
+  },
+  {
+    "shot_id": "shot_0055",
+    "start_sec": 1121.92,
+    "end_sec": 1186.64,
+    "duration": 64.72
+  },
+  {
+    "shot_id": "shot_0056",
+    "start_sec": 1186.64,
+    "end_sec": 1247.24,
+    "duration": 60.6
+  },
+  {
+    "shot_id": "shot_0069",
+    "start_sec": 1463.56,
+    "end_sec": 1466.84,
+    "duration": 3.28
+  },
+  {
+    "shot_id": "shot_0070",
+    "start_sec": 1466.84,
+    "end_sec": 1473.12,
+    "duration": 6.28
+  },
+  {
+    "shot_id": "shot_0095",
+    "start_sec": 2017.76,
+    "end_sec": 2023.2,
+    "duration": 5.44
+  },
+  {
+    "shot_id": "shot_0117",
+    "start_sec": 2220.64,
+    "end_sec": 2271.2,
+    "duration": 50.56
+  },
+  {
+    "shot_id": "shot_0133",
+    "start_sec": 2442.0,
+    "end_sec": 2470.32,
+    "duration": 28.32
+  },
+  {
+    "shot_id": "shot_0137",
+    "start_sec": 2524.84,
+    "end_sec": 2536.24,
+    "duration": 11.4
+  },
+  {
+    "shot_id": "shot_0149",
+    "start_sec": 2609.08,
+    "end_sec": 2613.24,
+    "duration": 4.16
+  }
+]

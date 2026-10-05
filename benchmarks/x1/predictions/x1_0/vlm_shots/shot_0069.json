@@ -1,0 +1,69 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "52b09696bfc2cb523b5142aa952241e00d1b8dc28dfe9abc7ea6f99b795ed95b",
+    "frame_50.jpg": "638e1ac1b3c1a032628ee9dca1824d914114abc420fb569dabb1707a120278bb",
+    "frame_75.jpg": "fbec17f7824bfc002755ea2257ee030653111b556faaa5f8ce3e220f8579f06d"
+  },
+  "elapsed_sec": 18.917,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "52b09696bfc2cb523b5142aa952241e00d1b8dc28dfe9abc7ea6f99b795ed95b",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person with dark hair, wearing a striped shirt"
+        ],
+        "environment": "a indoor setting, possibly a living room or office, with a wooden chair and a lamp on a table",
+        "physical_actions": [
+          "smiling and looking down"
+        ],
+        "objects": [
+          "a wooden chair",
+          "a lamp on a table"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "some blur due to lighting conditions",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a person with dark hair, wearing a striped shirt\"],\n  \"environment\": \"a indoor setting, possibly a living room or office, with a wooden chair and a lamp on a table\",\n  \"physical_actions\": [\"smiling and looking down\"],\n  \"objects\": [\"a wooden chair\", \"a lamp on a table\"],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to lighting conditions\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 5.239
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "638e1ac1b3c1a032628ee9dca1824d914114abc420fb569dabb1707a120278bb",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person with dark hair, wearing a checkered shirt, seated in a room with a wooden chair and a lamp on a table\",\n  \"environment\": \"a room with a wooden chair, a lamp on a table, and a person with dark hair\",\n  \"physical_actions\": \"sitting\",\n  \"objects\": \"a wooden chair, a lamp on a table\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 5.377
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "fbec17f7824bfc002755ea2257ee030653111b556faaa5f8ce3e220f8579f06d",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person with dark hair, wearing a dark coat, and a light-colored shirt"
+        ],
+        "environment": "a living room with a couch, a table, and a lamp, with a wooden floor and a white wall",
+        "physical_actions": [
+          "smiling and looking at the camera"
+        ],
+        "objects": [
+          "a wooden couch, a table with a lamp on it, and a lamp with a white shade"
+        ],
+        "camera": "medium shot, capturing the person from the chest up",
+        "uncertainty": "some parts of the image are slightly blurred due to movement",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\n    \"a person with dark hair, wearing a dark coat, and a light-colored shirt\"\n  ],\n  \"environment\": \"a living room with a couch, a table, and a lamp, with a wooden floor and a white wall\",\n  \"physical_actions\": [\n    \"smiling and looking at the camera\"\n  ],\n  \"objects\": [\n    \"a wooden couch, a table with a lamp on it, and a lamp with a white shade\"\n  ],\n  \"camera\": \"medium shot, capturing the person from the chest up\",\n  \"uncertainty\": \"some parts of the image are slightly blurred due to movement\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 7.175
+    }
+  }
+}

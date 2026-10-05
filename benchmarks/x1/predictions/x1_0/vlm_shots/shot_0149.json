@@ -1,0 +1,55 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "8841a9694cea650e17da6738d4d9dda94bbe3787fb18233556b1ffe282dee32e",
+    "frame_50.jpg": "5a4ca0657c467092a0becb3e4028c1daf4ca6c164a09659c3b32d97d1f94f312",
+    "frame_75.jpg": "16b44142e35b7138c38d62060116e1ed58facac7e3d15640cfe8ae72508c0fb2"
+  },
+  "elapsed_sec": 22.25,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "8841a9694cea650e17da6738d4d9dda94bbe3787fb18233556b1ffe282dee32e",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"a person wearing a dark coat\"\n    }\n  ],\n  \"environment\": \"a movie scene\",\n  \"physical_actions\": [\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    }\n  ],\n  \"objects\": [\n    {\n      \"description\": \"visible objects, e.g., 'wooden chair', 'telephone', 'lamp'\"\n    }\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings, elements of 'physical_actions' must be strings, elements of 'objects' must be strings",
+      "elapsed_sec": 6.486
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "5a4ca0657c467092a0becb3e4028c1daf4ca6c164a09659c3b32d97d1f94f312",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person with short hair, wearing a dark coat, and a person with short hair, wearing a white shirt"
+        ],
+        "environment": "a dimly lit indoor setting with a whiteboard and text on it, possibly a classroom or office",
+        "physical_actions": [
+          "standing",
+          "looking down"
+        ],
+        "objects": [
+          "whiteboard with text on it"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "any blur, low light, or occlusions",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a person with short hair, wearing a dark coat, and a person with short hair, wearing a white shirt\"],\n  \"environment\": \"a dimly lit indoor setting with a whiteboard and text on it, possibly a classroom or office\",\n  \"physical_actions\": [\"standing\", \"looking down\"],\n  \"objects\": [\"whiteboard with text on it\"],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 6.809
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "16b44142e35b7138c38d62060116e1ed58facac7e3d15640cfe8ae72508c0fb2",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"a person wearing a dark coat\"\n    }\n  ],\n  \"environment\": \"indoor\",\n  \"physical_actions\": [\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    }\n  ],\n  \"objects\": [\n    {\n      \"description\": \"visible objects, e.g., 'wooden chair', 'telephone', 'lamp'\"\n    }\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings, elements of 'physical_actions' must be strings, elements of 'objects' must be strings",
+      "elapsed_sec": 7.811
+    }
+  }
+}

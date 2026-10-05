@@ -1,0 +1,57 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "1a2dbbd0c30a3b93424604827fcef09d1d425b7bbe5217ed042c723da9e3c789",
+    "frame_50.jpg": "5953e970838fcef4f3b9dd15af1b186eb5f13bf0daaac5711367d6cc8a08c84a",
+    "frame_75.jpg": "36561bad7ca08463aa125d5163ab775ce353adc8ff750f11fb6f3a97ca471221"
+  },
+  "elapsed_sec": 14.792,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "1a2dbbd0c30a3b93424604827fcef09d1d425b7bbe5217ed042c723da9e3c789",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person wearing glasses and a dark coat"
+        ],
+        "environment": "a dimly lit indoor setting with a floral-patterned curtain",
+        "physical_actions": [
+          "standing",
+          "looking down"
+        ],
+        "objects": [
+          "a curtain",
+          "a person's head",
+          "a wall"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "some blur due to lighting conditions",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a person wearing glasses and a dark coat\"],\n  \"environment\": \"a dimly lit indoor setting with a floral-patterned curtain\",\n  \"physical_actions\": [\"standing\", \"looking down\"],\n  \"objects\": [\"a curtain\", \"a person's head\", \"a wall\"],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to lighting conditions\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 4.177
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "5953e970838fcef4f3b9dd15af1b186eb5f13bf0daaac5711367d6cc8a08c84a",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing glasses, standing in a room\",\n  \"environment\": \"a well-lit room with wooden furniture, possibly a living room\",\n  \"physical_actions\": \"standing\",\n  \"objects\": \"no specific objects detected\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to lighting conditions\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 4.608
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "36561bad7ca08463aa125d5163ab775ce353adc8ff750f11fb6f3a97ca471221",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": \"a person wearing a dark coat\",\n  \"environment\": \"a room with a wooden table and a chair, possibly a living room\",\n  \"physical_actions\": \"standing\",\n  \"objects\": \"a wooden table, a chair, a lamp\",\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some blur due to movement\"\n}\n```",
+      "reason": "Schema validation failed: field 'characters' type str != expected list, field 'physical_actions' type str != expected list, field 'objects' type str != expected list",
+      "elapsed_sec": 5.123
+    }
+  }
+}

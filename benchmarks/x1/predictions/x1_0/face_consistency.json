@@ -1,0 +1,872 @@
+{
+  "shot_0010": {
+    "shot_id": "shot_0010",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_001",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": null,
+        "threshold": 0.55,
+        "bbox": [
+          589,
+          137,
+          40,
+          54
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "64435881881d0d0a"
+      }
+    ],
+    "error": null
+  },
+  "shot_0018": {
+    "shot_id": "shot_0018",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_002",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.0674,
+        "threshold": 0.55,
+        "bbox": [
+          555,
+          173,
+          135,
+          174
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "716783449bbe7d7a"
+      },
+      {
+        "person_id": "person_002",
+        "match_status": "matched_existing",
+        "similarity": 0.8932,
+        "best_existing_similarity": 0.8932,
+        "threshold": 0.55,
+        "bbox": [
+          549,
+          167,
+          144,
+          192
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "3f939970ca99de84"
+      },
+      {
+        "person_id": "person_003",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2224,
+        "threshold": 0.55,
+        "bbox": [
+          548,
+          109,
+          123,
+          178
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "b2bad511037a651f"
+      }
+    ],
+    "error": null
+  },
+  "shot_0019": {
+    "shot_id": "shot_0019",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_004",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.1972,
+        "threshold": 0.55,
+        "bbox": [
+          618,
+          47,
+          153,
+          219
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "e6dd91c7b3e34ceb"
+      },
+      {
+        "person_id": "person_005",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.0847,
+        "threshold": 0.55,
+        "bbox": [
+          877,
+          105,
+          44,
+          64
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "0eb658f265ab1540"
+      },
+      {
+        "person_id": "person_006",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2533,
+        "threshold": 0.55,
+        "bbox": [
+          628,
+          111,
+          60,
+          66
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "8b44377b78d0c60e"
+      }
+    ],
+    "error": null
+  },
+  "shot_0026": {
+    "shot_id": "shot_0026",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_007",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.0336,
+        "threshold": 0.55,
+        "bbox": [
+          551,
+          157,
+          314,
+          401
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "1f91b4675ed5c845"
+      },
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.8378,
+        "best_existing_similarity": 0.8378,
+        "threshold": 0.55,
+        "bbox": [
+          583,
+          151,
+          315,
+          431
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "30e1a161f90138f6"
+      },
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.8113,
+        "best_existing_similarity": 0.8113,
+        "threshold": 0.55,
+        "bbox": [
+          585,
+          172,
+          308,
+          414
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "e75bd394846a3b2b"
+      }
+    ],
+    "error": null
+  },
+  "shot_0035": {
+    "shot_id": "shot_0035",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.5596,
+        "best_existing_similarity": 0.5596,
+        "threshold": 0.55,
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "ddafe5a32290bae9"
+      },
+      {
+        "person_id": "person_008",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.1252,
+        "threshold": 0.55,
+        "bbox": [
+          310,
+          113,
+          172,
+          278
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "bbaf46f1fa5579a9"
+      },
+      {
+        "person_id": "person_009",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.4503,
+        "threshold": 0.55,
+        "bbox": [
+          793,
+          179,
+          194,
+          241
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "134bb1712644020f"
+      },
+      {
+        "person_id": "person_010",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2077,
+        "threshold": 0.55,
+        "bbox": [
+          261,
+          134,
+          208,
+          275
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "5bfad87c654c508a"
+      },
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.6363,
+        "best_existing_similarity": 0.6363,
+        "threshold": 0.55,
+        "bbox": [
+          757,
+          145,
+          198,
+          267
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "0648f7b17e851bb1"
+      },
+      {
+        "person_id": "person_008",
+        "match_status": "matched_existing",
+        "similarity": 0.8175,
+        "best_existing_similarity": 0.8175,
+        "threshold": 0.55,
+        "bbox": [
+          312,
+          113,
+          171,
+          289
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "ddc75c88d3af85b8"
+      }
+    ],
+    "error": null
+  },
+  "shot_0053": {
+    "shot_id": "shot_0053",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.5994,
+        "best_existing_similarity": 0.5994,
+        "threshold": 0.55,
+        "bbox": [
+          550,
+          103,
+          333,
+          454
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "bb4d0aa3f950270a"
+      },
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.6488,
+        "best_existing_similarity": 0.6488,
+        "threshold": 0.55,
+        "bbox": [
+          549,
+          82,
+          329,
+          493
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "18cea2c749c9bd8b"
+      },
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.6363,
+        "best_existing_similarity": 0.6363,
+        "threshold": 0.55,
+        "bbox": [
+          549,
+          88,
+          327,
+          461
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "cc7334c79b1ad6c1"
+      }
+    ],
+    "error": null
+  },
+  "shot_0055": {
+    "shot_id": "shot_0055",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.6754,
+        "best_existing_similarity": 0.6754,
+        "threshold": 0.55,
+        "bbox": [
+          465,
+          166,
+          327,
+          384
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "cf1069e6340f2d6c"
+      },
+      {
+        "person_id": "person_007",
+        "match_status": "matched_existing",
+        "similarity": 0.6404,
+        "best_existing_similarity": 0.6404,
+        "threshold": 0.55,
+        "bbox": [
+          447,
+          159,
+          353,
+          495
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "85869deda74779f1"
+      },
+      {
+        "person_id": "person_011",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2796,
+        "threshold": 0.55,
+        "bbox": [
+          307,
+          105,
+          57,
+          68
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "421fe1e4b1320c7a"
+      },
+      {
+        "person_id": "person_012",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.3151,
+        "threshold": 0.55,
+        "bbox": [
+          479,
+          207,
+          50,
+          79
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "48b96c79af9fcb35"
+      },
+      {
+        "person_id": "person_013",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2045,
+        "threshold": 0.55,
+        "bbox": [
+          36,
+          220,
+          13,
+          17
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "23358966055628f3"
+      }
+    ],
+    "error": null
+  },
+  "shot_0056": {
+    "shot_id": "shot_0056",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_014",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2593,
+        "threshold": 0.55,
+        "bbox": [
+          263,
+          205,
+          194,
+          295
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "20ac3472f7509c38"
+      },
+      {
+        "person_id": "person_015",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2458,
+        "threshold": 0.55,
+        "bbox": [
+          703,
+          118,
+          186,
+          269
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "8f2b7ff55b1dd4a9"
+      },
+      {
+        "person_id": "person_016",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.482,
+        "threshold": 0.55,
+        "bbox": [
+          382,
+          239,
+          331,
+          427
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "fc9c52d0617e4113"
+      },
+      {
+        "person_id": "person_017",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.38,
+        "threshold": 0.55,
+        "bbox": [
+          548,
+          224,
+          300,
+          368
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "a93161fc333496fa"
+      },
+      {
+        "person_id": "person_018",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2926,
+        "threshold": 0.55,
+        "bbox": [
+          359,
+          242,
+          150,
+          311
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "fa0e6228138a9984"
+      }
+    ],
+    "error": null
+  },
+  "shot_0069": {
+    "shot_id": "shot_0069",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_019",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2597,
+        "threshold": 0.55,
+        "bbox": [
+          637,
+          232,
+          378,
+          440
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "8dc0fe27febfb35f"
+      },
+      {
+        "person_id": "person_020",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.477,
+        "threshold": 0.55,
+        "bbox": [
+          621,
+          230,
+          370,
+          400
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "3b0127cffed5974f"
+      },
+      {
+        "person_id": "person_020",
+        "match_status": "matched_existing",
+        "similarity": 0.8148,
+        "best_existing_similarity": 0.8148,
+        "threshold": 0.55,
+        "bbox": [
+          606,
+          223,
+          330,
+          391
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "ce1d0f3d416c3f3b"
+      }
+    ],
+    "error": null
+  },
+  "shot_0070": {
+    "shot_id": "shot_0070",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_021",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.5383,
+        "threshold": 0.55,
+        "bbox": [
+          504,
+          138,
+          291,
+          381
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "34ff686262ba8c05"
+      },
+      {
+        "person_id": "person_022",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.1998,
+        "threshold": 0.55,
+        "bbox": [
+          697,
+          53,
+          317,
+          339
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "2f06bb3e4e57c293"
+      },
+      {
+        "person_id": "person_020",
+        "match_status": "matched_existing",
+        "similarity": 0.6783,
+        "best_existing_similarity": 0.6783,
+        "threshold": 0.55,
+        "bbox": [
+          349,
+          146,
+          349,
+          459
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "bbd39cd628b5680c"
+      }
+    ],
+    "error": null
+  },
+  "shot_0095": {
+    "shot_id": "shot_0095",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_021",
+        "match_status": "matched_existing",
+        "similarity": 0.5992,
+        "best_existing_similarity": 0.5992,
+        "threshold": 0.55,
+        "bbox": [
+          519,
+          182,
+          343,
+          438
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "a42c1fcec0c623d1"
+      },
+      {
+        "person_id": "person_021",
+        "match_status": "matched_existing",
+        "similarity": 0.6395,
+        "best_existing_similarity": 0.6395,
+        "threshold": 0.55,
+        "bbox": [
+          513,
+          196,
+          341,
+          464
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "1d37a84f4566a09e"
+      },
+      {
+        "person_id": "person_021",
+        "match_status": "matched_existing",
+        "similarity": 0.6193,
+        "best_existing_similarity": 0.6193,
+        "threshold": 0.55,
+        "bbox": [
+          513,
+          195,
+          341,
+          462
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "69267b91e92cd41a"
+      }
+    ],
+    "error": null
+  },
+  "shot_0117": {
+    "shot_id": "shot_0117",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_023",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.3824,
+        "threshold": 0.55,
+        "bbox": [
+          403,
+          363,
+          94,
+          136
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "31d9b19c57ce68c6"
+      },
+      {
+        "person_id": "person_024",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.3567,
+        "threshold": 0.55,
+        "bbox": [
+          681,
+          88,
+          95,
+          117
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "46bc8480ef5216c6"
+      },
+      {
+        "person_id": "person_025",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.4171,
+        "threshold": 0.55,
+        "bbox": [
+          365,
+          82,
+          13,
+          16
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "cbd7ff6ce10ac0e1"
+      },
+      {
+        "person_id": "person_026",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.497,
+        "threshold": 0.55,
+        "bbox": [
+          293,
+          158,
+          297,
+          403
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "00aaa66b2664e234"
+      },
+      {
+        "person_id": "person_027",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.4547,
+        "threshold": 0.55,
+        "bbox": [
+          410,
+          350,
+          102,
+          161
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "852f60a8b78a96f4"
+      }
+    ],
+    "error": null
+  },
+  "shot_0133": {
+    "shot_id": "shot_0133",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_028",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.4346,
+        "threshold": 0.55,
+        "bbox": [
+          513,
+          195,
+          136,
+          168
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "187165dd4c8e3be3"
+      },
+      {
+        "person_id": "person_029",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.5127,
+        "threshold": 0.55,
+        "bbox": [
+          586,
+          212,
+          35,
+          52
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "5ca18fe4fe7e6dd9"
+      },
+      {
+        "person_id": "person_028",
+        "match_status": "matched_existing",
+        "similarity": 0.7471,
+        "best_existing_similarity": 0.7471,
+        "threshold": 0.55,
+        "bbox": [
+          636,
+          157,
+          312,
+          389
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "8b380e86bf085b3c"
+      }
+    ],
+    "error": null
+  },
+  "shot_0137": {
+    "shot_id": "shot_0137",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_030",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.5253,
+        "threshold": 0.55,
+        "bbox": [
+          660,
+          215,
+          280,
+          340
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "3b24ee4e091e70bb"
+      }
+    ],
+    "error": null
+  },
+  "shot_0149": {
+    "shot_id": "shot_0149",
+    "status": "detected",
+    "has_face": true,
+    "persons": [
+      {
+        "person_id": "person_031",
+        "match_status": "new_identity",
+        "similarity": null,
+        "best_existing_similarity": 0.2578,
+        "threshold": 0.55,
+        "bbox": [
+          342,
+          170,
+          279,
+          342
+        ],
+        "frame_ref": "frame_25.jpg",
+        "embedding_hash": "a3cef976b46f50ed"
+      },
+      {
+        "person_id": "person_031",
+        "match_status": "matched_existing",
+        "similarity": 0.9316,
+        "best_existing_similarity": 0.9316,
+        "threshold": 0.55,
+        "bbox": [
+          349,
+          164,
+          259,
+          352
+        ],
+        "frame_ref": "frame_50.jpg",
+        "embedding_hash": "0c42946b4c5a97f3"
+      },
+      {
+        "person_id": "person_031",
+        "match_status": "matched_existing",
+        "similarity": 0.8244,
+        "best_existing_similarity": 0.8244,
+        "threshold": 0.55,
+        "bbox": [
+          341,
+          154,
+          280,
+          358
+        ],
+        "frame_ref": "frame_75.jpg",
+        "embedding_hash": "df4ee171f549e713"
+      }
+    ],
+    "error": null
+  }
+}

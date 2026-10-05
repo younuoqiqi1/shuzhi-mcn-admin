@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-05T19:28:15+0800",
+  "total_shots": 15,
+  "total_frames": 45,
+  "asr_statistics": {
+    "total_calls": 15,
+    "with_speech_text": 10,
+    "empty_speech_text": 5,
+    "status": "15成功调用，5条为空文本（可能静音也可能为漏识别，未经听音标注），10条有输出不等于对白正确，质量未标注"
+  },
+  "vlm_statistics": {
+    "total_frames_evaluated": 45,
+    "schema_success_frames": 20,
+    "schema_rejected_frames": 25,
+    "error_frames": 0,
+    "shots_full_schema_success": 3,
+    "shots_with_rejected_frames": 12,
+    "shots_with_errors": 0,
+    "semantic_status": "unverified",
+    "requires_human_review": true
+  },
+  "face_statistics": {
+    "total_detections": 50,
+    "anonymous_clusters": 31,
+    "note": "31个算法匿名聚类簇，未标注准确性，阈值0.55未校准"
+  },
+  "provenance_file": "benchmarks/x1/runs/x1_0/provenance.json",
+  "manifest_file": "benchmarks/x1/development/x1_0/selected_15_shots.json"
+}

@@ -1,0 +1,58 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "a7a1beb8caf1718a40bc7738642bc0e6da65418bc59b49b8bf9beadffca3f96b",
+    "frame_50.jpg": "80aa1d0bcf52b314c2457661fc0d98db68aad0a2d1e06c7725413dbb0b8c9613",
+    "frame_75.jpg": "e4fee62cc39feb1662547b43c267b902a13d5f392f48878cc2dc1cf0de4e483b"
+  },
+  "elapsed_sec": 24.972,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "a7a1beb8caf1718a40bc7738642bc0e6da65418bc59b49b8bf9beadffca3f96b",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"a person wearing a dark coat\"\n    },\n    {\n      \"description\": \"a person wearing a light-colored suit\"\n    }\n  ],\n  \"environment\": \"a formal indoor setting with wooden furniture and a large window\",\n  \"physical_actions\": [\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    }\n  ],\n  \"objects\": [\n    {\n      \"description\": \"a wooden chair\"\n    },\n    {\n      \"description\": \"a telephone\"\n    },\n    {\n      \"description\": \"a lamp\"\n    }\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings, elements of 'physical_actions' must be strings, elements of 'objects' must be strings",
+      "elapsed_sec": 9.104
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "80aa1d0bcf52b314c2457661fc0d98db68aad0a2d1e06c7725413dbb0b8c9613",
+      "status": "success",
+      "observation": {
+        "characters": [
+          "a person with short hair and a beard, wearing a dark coat",
+          "a person with glasses and a suit",
+          "a person with short hair and a beard, wearing a dark coat"
+        ],
+        "environment": "a formal indoor setting, possibly a conference room or office",
+        "physical_actions": [
+          "looking at each other",
+          "smiling",
+          "talking"
+        ],
+        "objects": [
+          "no visible objects"
+        ],
+        "camera": "medium shot",
+        "uncertainty": "no significant blur or low light, but the focus is slightly off, possibly due to the depth of field",
+        "requires_human_review": false
+      },
+      "raw_output": "```json\n{\n  \"characters\": [\"a person with short hair and a beard, wearing a dark coat\", \"a person with glasses and a suit\", \"a person with short hair and a beard, wearing a dark coat\"],\n  \"environment\": \"a formal indoor setting, possibly a conference room or office\",\n  \"physical_actions\": [\"looking at each other\", \"smiling\", \"talking\"],\n  \"objects\": [\"no visible objects\"],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"no significant blur or low light, but the focus is slightly off, possibly due to the depth of field\"\n}\n```",
+      "reason": null,
+      "elapsed_sec": 7.192
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "e4fee62cc39feb1662547b43c267b902a13d5f392f48878cc2dc1cf0de4e483b",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"A person wearing a dark coat\"\n    },\n    {\n      \"description\": \"A person wearing a purple shirt and glasses\"\n    }\n  ],\n  \"environment\": \"a formal indoor setting with wooden furniture and a large painting in the background\",\n  \"physical_actions\": [\n    {\n      \"description\": \"Talking\"\n    }\n  ],\n  \"objects\": [\n    {\n      \"description\": \"A wooden chair\"\n    },\n    {\n      \"description\": \"A telephone\"\n    },\n    {\n      \"description\": \"A lamp\"\n    }\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"some parts of the image are slightly blurred due to movement\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings, elements of 'physical_actions' must be strings, elements of 'objects' must be strings",
+      "elapsed_sec": 7.67
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "/private/tmp/x1_0/models/Qwen2-VL-2B-Instruct-4bit",
+  "prompt_hash": "cd19be2ddba10f95ba0a84cda87181e19a16f9fa92866780c970a9d9567febb8",
+  "frame_hashes": {
+    "frame_25.jpg": "3048065c78f91ca6f439500c1c45400154a44a0079297f2cec0fdb7cc11a832a",
+    "frame_50.jpg": "226f48d9550d59acfe8ab9dfb21e224e2ff714683fdcbd7fe582c5195fba0105",
+    "frame_75.jpg": "4ce04af66953d0f1ef5e18c929f25f87aa9f6319a06c9f22c70997d981672316"
+  },
+  "elapsed_sec": 22.455,
+  "status": "has_rejected_frames",
+  "frames_observation": {
+    "frame_25.jpg": {
+      "frame_ref": "frame_25.jpg",
+      "frame_hash": "3048065c78f91ca6f439500c1c45400154a44a0079297f2cec0fdb7cc11a832a",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"A person wearing a dark coat\"\n    },\n    {\n      \"description\": \"A person wearing a dark coat\"\n    }\n  ],\n  \"environment\": \"a brick wall, possibly an office or hallway\",\n  \"physical_actions\": [\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    },\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    }\n  ],\n  \"objects\": [\n    {\n      \"description\": \"a wooden chair\"\n    },\n    {\n      \"description\": \"a wooden chair\"\n    }\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"any blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings, elements of 'physical_actions' must be strings, elements of 'objects' must be strings",
+      "elapsed_sec": 7.678
+    },
+    "frame_50.jpg": {
+      "frame_ref": "frame_50.jpg",
+      "frame_hash": "226f48d9550d59acfe8ab9dfb21e224e2ff714683fdcbd7fe582c5195fba0105",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"Two men in formal attire, one wearing glasses, standing in a dimly lit indoor setting with a brick wall in the background.\"\n    }\n  ],\n  \"environment\": \"indoor, brick wall, dim lighting\",\n  \"physical_actions\": [\n    \"standing, looking down\"\n  ],\n  \"objects\": [\n    \"brick wall\"\n  ],\n  \"camera\": \"medium shot, slightly angled\",\n  \"uncertainty\": \"some light sources are not clearly visible, suggesting low light conditions.\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings",
+      "elapsed_sec": 6.226
+    },
+    "frame_75.jpg": {
+      "frame_ref": "frame_75.jpg",
+      "frame_hash": "4ce04af66953d0f1ef5e18c929f25f87aa9f6319a06c9f22c70997d981672316",
+      "status": "rejected",
+      "observation": null,
+      "raw_output": "```json\n{\n  \"characters\": [\n    {\n      \"description\": \"a person wearing a dark coat\"\n    },\n    {\n      \"description\": \"a person wearing a dark coat\"\n    }\n  ],\n  \"environment\": \"brick wall, indoor\",\n  \"physical_actions\": [\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    },\n    {\n      \"description\": \"concrete physical movements, e.g., 'sitting at desk', 'walking'\"\n    }\n  ],\n  \"objects\": [\n    {\n      \"description\": \"brick wall\"\n    },\n    {\n      \"description\": \"brick wall\"\n    }\n  ],\n  \"camera\": \"medium shot\",\n  \"uncertainty\": \"no significant blur, low light, or occlusions\"\n}\n```",
+      "reason": "Schema validation failed: elements of 'characters' must be strings, elements of 'physical_actions' must be strings, elements of 'objects' must be strings",
+      "elapsed_sec": 7.644
+    }
+  }
+}
