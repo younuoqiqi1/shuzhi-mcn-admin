@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0055_frame_25",
+  "shot_id": "shot_0055",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0055/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"一名成年男性，面朝右侧，留着黑色短发，戴着金属细框眼镜，穿着白色带领衬衫。\", \"画面右侧边缘可见另一人的深色波浪状背影，肩部穿着带有碎花图案的浅色上衣。\"], \"environment\": \"室内场景，光线略暗。背景左侧可见深色格子图案的窗帘，右侧有带水平板条的百叶窗或类似遮挡物。\", \"objects\": [\"金属细框眼镜\", \"白色带领衬衫\", \"浅色碎花上衣（局部）\", \"深色格子窗帘\", \"百叶窗\", \"位于男性右后方部分被遮挡的深色家具，表面带有金色/金属色的圆形表盘或装饰部件\"], \"physical_actions\": [\"男性注视着画面右侧的人，嘴部微张。\"], \"uncertainty\": \"右侧人物面部与躯干被完全遮挡，仅可见后脑勺和少许肩膀。背景中的深色家具部分被人物身体遮挡，焦外略显模糊。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "一名成年男性，面朝右侧，留着黑色短发，戴着金属细框眼镜，穿着白色带领衬衫。",
+        "画面右侧边缘可见另一人的深色波浪状背影，肩部穿着带有碎花图案的浅色上衣。"
+      ],
+      "environment": "室内场景，光线略暗。背景左侧可见深色格子图案的窗帘，右侧有带水平板条的百叶窗或类似遮挡物。",
+      "objects": [
+        "金属细框眼镜",
+        "白色带领衬衫",
+        "浅色碎花上衣（局部）",
+        "深色格子窗帘",
+        "百叶窗",
+        "位于男性右后方部分被遮挡的深色家具，表面带有金色/金属色的圆形表盘或装饰部件"
+      ],
+      "physical_actions": [
+        "男性注视着画面右侧的人，嘴部微张。"
+      ],
+      "uncertainty": "右侧人物面部与躯干被完全遮挡，仅可见后脑勺和少许肩膀。背景中的深色家具部分被人物身体遮挡，焦外略显模糊。"
+    },
+    "error": null,
+    "latency_ms": 39267.86,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18446,
+      "output_tokens": 2297,
+      "thinking_tokens": 1641,
+      "cache_read_tokens": 48951,
+      "total_tokens": 20743
+    },
+    "source_image_hash": "7691fab611f02bd4f6325cd1f44951e5e2206268a8533c797cb94258cca5f0e6",
+    "inference_image_hash": "7639403cd9ffab5a9d7d1eb930889f299941461928e3c18de6433d379adcd532",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209696.3099751
+}

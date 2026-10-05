@@ -1,0 +1,47 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0056_frame_25",
+  "shot_id": "shot_0056",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0056/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Man on left with short black hair, wearing a light blazer and collared shirt.\", \"Man on right with glasses, dark suit, vest, light shirt, and purple striped tie.\"], \"environment\": \"Indoor setting with dark background and a reddish-brown vase between the figures.\", \"objects\": [\"Glasses\", \"Light blazer\", \"Dark suit\", \"Purple striped tie\", \"Reddish-brown vase\", \"Two cups\", \"Subtitles\"], \"physical_actions\": [\"Man on left leans forward, looking down with mouth open.\", \"Man on right looks towards the man on the left.\"], \"uncertainty\": \"Lower bodies and cups are cut off by bottom frame. Subtitles overlay the bottom.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Man on left with short black hair, wearing a light blazer and collared shirt.",
+        "Man on right with glasses, dark suit, vest, light shirt, and purple striped tie."
+      ],
+      "environment": "Indoor setting with dark background and a reddish-brown vase between the figures.",
+      "objects": [
+        "Glasses",
+        "Light blazer",
+        "Dark suit",
+        "Purple striped tie",
+        "Reddish-brown vase",
+        "Two cups",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Man on left leans forward, looking down with mouth open.",
+        "Man on right looks towards the man on the left."
+      ],
+      "uncertainty": "Lower bodies and cups are cut off by bottom frame. Subtitles overlay the bottom."
+    },
+    "error": null,
+    "latency_ms": 32653.67,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17711,
+      "output_tokens": 1679,
+      "thinking_tokens": 1157,
+      "cache_read_tokens": 48725,
+      "total_tokens": 19390
+    },
+    "source_image_hash": "a7a1beb8caf1718a40bc7738642bc0e6da65418bc59b49b8bf9beadffca3f96b",
+    "inference_image_hash": "3ee02a591fef05c33855da89f69debb429b3ed643368a7439cb91ded97f4e83f",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209742.823242
+}

@@ -1,0 +1,215 @@
+{
+  "parent_shot_id": "shot_0137",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 734,
+      "start_sec": 2522.0,
+      "end_sec": 2525.0,
+      "start_timecode": "00:42:02.000",
+      "end_timecode": "00:42:05.000",
+      "text": "你要生个孩子 这种病准好",
+      "confidence": 0.433,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 735,
+      "start_sec": 2526.0,
+      "end_sec": 2527.0,
+      "start_timecode": "00:42:06.000",
+      "end_timecode": "00:42:07.000",
+      "text": "生不了了",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 736,
+      "start_sec": 2533.0,
+      "end_sec": 2534.0,
+      "start_timecode": "00:42:13.000",
+      "end_timecode": "00:42:14.000",
+      "text": "在黑夜里梦想着光",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 737,
+      "start_sec": 2534.0,
+      "end_sec": 2535.0,
+      "start_timecode": "00:42:14.000",
+      "end_timecode": "00:42:15.000",
+      "text": "在黑夜里梦根着光",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 738,
+      "start_sec": 2535.0,
+      "end_sec": 2536.0,
+      "start_timecode": "00:42:15.000",
+      "end_timecode": "00:42:16.000",
+      "text": "在黑夜里梦想着光",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 2.42,
+      "abs_start": 2524.84,
+      "abs_end": 2527.26,
+      "text": "生不了了",
+      "no_speech_prob": 0.0119,
+      "words": [
+        {
+          "word": "生",
+          "rel_start": 0.0,
+          "rel_end": 1.68,
+          "abs_start": 2524.84,
+          "abs_end": 2526.52,
+          "probability": 0.6768
+        },
+        {
+          "word": "不了",
+          "rel_start": 1.68,
+          "rel_end": 1.9,
+          "abs_start": 2526.52,
+          "abs_end": 2526.74,
+          "probability": 0.9956
+        },
+        {
+          "word": "了",
+          "rel_start": 1.9,
+          "rel_end": 2.42,
+          "abs_start": 2526.74,
+          "abs_end": 2527.26,
+          "probability": 0.9658
+        }
+      ]
+    },
+    {
+      "rel_start": 2.42,
+      "rel_end": 3.28,
+      "abs_start": 2527.26,
+      "abs_end": 2528.12,
+      "text": "为什么",
+      "no_speech_prob": 0.0119,
+      "words": [
+        {
+          "word": "为什么",
+          "rel_start": 2.42,
+          "rel_end": 3.28,
+          "abs_start": 2527.26,
+          "abs_end": 2528.12,
+          "probability": 0.7021
+        }
+      ]
+    }
+  ],
+  "ocr_event_count": 5,
+  "asr_segment_count": 2,
+  "fused_results": [
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 734,
+      "start_sec": 2522.0,
+      "end_sec": 2525.0,
+      "image_hash": "unknown",
+      "ocr_text": "你要生个孩子 这种病准好",
+      "asr_text": "生不了了",
+      "resolved_text": null,
+      "similarity": 0.133,
+      "confidence": 0.433,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 735,
+      "start_sec": 2526.0,
+      "end_sec": 2527.0,
+      "image_hash": "unknown",
+      "ocr_text": "生不了了",
+      "asr_text": "生不了了",
+      "resolved_text": "生不了了",
+      "final_text": "生不了了",
+      "similarity": 0.95,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2527.26,
+      "end_sec": 2528.12,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "为什么",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "ocr_only",
+      "ocr_index": 736,
+      "start_sec": 2533.0,
+      "end_sec": 2534.0,
+      "image_hash": "unknown",
+      "ocr_text": "在黑夜里梦想着光",
+      "asr_text": null,
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr_only"
+    },
+    {
+      "fusion_type": "ocr_only",
+      "ocr_index": 737,
+      "start_sec": 2534.0,
+      "end_sec": 2535.0,
+      "image_hash": "unknown",
+      "ocr_text": "在黑夜里梦根着光",
+      "asr_text": null,
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr_only"
+    },
+    {
+      "fusion_type": "ocr_only",
+      "ocr_index": 738,
+      "start_sec": 2535.0,
+      "end_sec": 2536.0,
+      "image_hash": "unknown",
+      "ocr_text": "在黑夜里梦想着光",
+      "asr_text": null,
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr_only"
+    }
+  ]
+}

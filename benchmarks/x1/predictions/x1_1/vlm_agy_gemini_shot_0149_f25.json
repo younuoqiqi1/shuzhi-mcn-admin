@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0149_frame_25",
+  "shot_id": "shot_0149",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0149/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"左侧仅露出背影局部的短发男子，身着深色西装和白色衬衫衣领\", \"画面中央面朝前方、视线偏向左下的平头男子，身着黑色皮衣，内搭白色衬衣\"], \"environment\": \"背景隐约可见带有垂直黑色书法字迹的浅色墙面或挂轴，右侧背景呈现较暗的紫色/红色模糊光影。画面表面覆盖有多行白色中文字幕。\", \"objects\": [\"黑色皮夹克\", \"白色内搭衣物\", \"深色外套\", \"中文字幕\"], \"physical_actions\": [\"低头\", \"视线向下侧方看\", \"站立\"], \"uncertainty\": \"画面右侧被大片演职员表文字严重遮挡，背景虚化且右侧光线偏暗，左侧人物面部不可见且身体仅局部入画。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "左侧仅露出背影局部的短发男子，身着深色西装和白色衬衫衣领",
+        "画面中央面朝前方、视线偏向左下的平头男子，身着黑色皮衣，内搭白色衬衣"
+      ],
+      "environment": "背景隐约可见带有垂直黑色书法字迹的浅色墙面或挂轴，右侧背景呈现较暗的紫色/红色模糊光影。画面表面覆盖有多行白色中文字幕。",
+      "objects": [
+        "黑色皮夹克",
+        "白色内搭衣物",
+        "深色外套",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "低头",
+        "视线向下侧方看",
+        "站立"
+      ],
+      "uncertainty": "画面右侧被大片演职员表文字严重遮挡，背景虚化且右侧光线偏暗，左侧人物面部不可见且身体仅局部入画。"
+    },
+    "error": null,
+    "latency_ms": 31329.21,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18517,
+      "output_tokens": 1111,
+      "thinking_tokens": 787,
+      "cache_read_tokens": 24361,
+      "total_tokens": 19628
+    },
+    "source_image_hash": "8841a9694cea650e17da6738d4d9dda94bbe3787fb18233556b1ffe282dee32e",
+    "inference_image_hash": "d1f132efd5d713a42b846accc6fa02bfb7aaad614c461fc1b3c91ce91a8e53bd",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210683.737696
+}

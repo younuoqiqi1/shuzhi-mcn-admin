@@ -1,0 +1,53 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0010_frame_75",
+  "shot_id": "shot_0010",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0010/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"左侧人物深色短卷发，穿着浅色印花上衣\", \"右侧人物深色短发，穿着深色西装外套与白色立领/带领衬衫\"], \"environment\": \"昏暗的室内空间，铺有深色木地板。前景为摆放祭品的供桌，后侧背景可见布艺扶手椅、铺有白色桌布的小桌以及深色柜子。\", \"objects\": [\"供桌\", \"点燃的大红蜡烛\", \"金属烛台\", \"点燃的小红蜡烛\", \"插着线香的香炉\", \"盛放圆形糕点的盘子\", \"盛放方形糕点的盘子\", \"多个小透明杯子\", \"成捆的未点燃线香\", \"白色带花纹茶壶\", \"布艺扶手椅\", \"铺着白色桌布的圆桌\", \"深色木柜\"], \"physical_actions\": [\"两人并排双膝跪在地面/垫子上\", \"两人上半身前倾，头部低垂面向供桌呈现叩拜姿态\"], \"uncertainty\": \"画面左右两侧存在大面积的蓝色/紫色半透明视觉叠加层或反光，导致两侧画面模糊并产生遮挡；整体环境光线昏暗，背景细节不易辨认。\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "左侧人物深色短卷发，穿着浅色印花上衣",
+        "右侧人物深色短发，穿着深色西装外套与白色立领/带领衬衫"
+      ],
+      "environment": "昏暗的室内空间，铺有深色木地板。前景为摆放祭品的供桌，后侧背景可见布艺扶手椅、铺有白色桌布的小桌以及深色柜子。",
+      "objects": [
+        "供桌",
+        "点燃的大红蜡烛",
+        "金属烛台",
+        "点燃的小红蜡烛",
+        "插着线香的香炉",
+        "盛放圆形糕点的盘子",
+        "盛放方形糕点的盘子",
+        "多个小透明杯子",
+        "成捆的未点燃线香",
+        "白色带花纹茶壶",
+        "布艺扶手椅",
+        "铺着白色桌布的圆桌",
+        "深色木柜"
+      ],
+      "physical_actions": [
+        "两人并排双膝跪在地面/垫子上",
+        "两人上半身前倾，头部低垂面向供桌呈现叩拜姿态"
+      ],
+      "uncertainty": "画面左右两侧存在大面积的蓝色/紫色半透明视觉叠加层或反光，导致两侧画面模糊并产生遮挡；整体环境光线昏暗，背景细节不易辨认。"
+    },
+    "error": null,
+    "latency_ms": 37240.05,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 18686,
+      "output_tokens": 2220,
+      "thinking_tokens": 1805,
+      "cache_read_tokens": 24374,
+      "total_tokens": 20906
+    },
+    "source_image_hash": "21fe22266ee2b42e14aec6115c42037b5edaa66e48f9e5cf72d829dd94c9b375",
+    "inference_image_hash": "e37faeb630e7da2415e51a1551ee4ccce2cdd6511651ba6907e654105f2f6811",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208155.404029
+}

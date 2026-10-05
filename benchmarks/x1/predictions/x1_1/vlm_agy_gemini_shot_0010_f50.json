@@ -1,0 +1,49 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0010_frame_50",
+  "shot_id": "shot_0010",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0010/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"一人黑色中长发，身穿浅色长袖上衣，胸前佩戴红色花饰\", \"一人短发，身穿深色背心内搭浅色长袖衬衫，胸前佩戴红色花饰\"], \"environment\": \"室内空间，光线昏暗，背景可见沙发等家具轮廓，整体被蓝紫色烟雾状半透明光影层叠覆盖\", \"objects\": [\"点燃的红色蜡烛\", \"金属烛台\", \"带蓝色花纹的白色瓷壶\", \"香炉\", \"线香\", \"小酒杯\", \"装有块状食物的盘子\", \"红色花饰\"], \"physical_actions\": [\"两人并排站立\", \"头部微垂面向前方桌面\", \"右侧人物双臂自然下垂，手部触及桌面\"], \"uncertainty\": \"画面存在明显的蓝紫色半透明烟雾或重叠光影遮挡，且整体光线偏暗，导致人物面部特征与背景细节模糊不清\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "一人黑色中长发，身穿浅色长袖上衣，胸前佩戴红色花饰",
+        "一人短发，身穿深色背心内搭浅色长袖衬衫，胸前佩戴红色花饰"
+      ],
+      "environment": "室内空间，光线昏暗，背景可见沙发等家具轮廓，整体被蓝紫色烟雾状半透明光影层叠覆盖",
+      "objects": [
+        "点燃的红色蜡烛",
+        "金属烛台",
+        "带蓝色花纹的白色瓷壶",
+        "香炉",
+        "线香",
+        "小酒杯",
+        "装有块状食物的盘子",
+        "红色花饰"
+      ],
+      "physical_actions": [
+        "两人并排站立",
+        "头部微垂面向前方桌面",
+        "右侧人物双臂自然下垂，手部触及桌面"
+      ],
+      "uncertainty": "画面存在明显的蓝紫色半透明烟雾或重叠光影遮挡，且整体光线偏暗，导致人物面部特征与背景细节模糊不清"
+    },
+    "error": null,
+    "latency_ms": 37131.64,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14670,
+      "output_tokens": 2243,
+      "thinking_tokens": 1894,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16913
+    },
+    "source_image_hash": "5a452f9f830dd187cb5abff07a9c63af3071c24dd67c5ff8947e9ac6c3b4678f",
+    "inference_image_hash": "7392fe95b8b60129a609da66bf3e310ff1cd770a509ee7452a45870cd223f8fc",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209078.095398
+}

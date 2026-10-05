@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0026_frame_75",
+  "shot_id": "shot_0026",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0026/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Man with short black hair, round glasses, and dark blue collared jacket.\"], \"environment\": \"Dimly lit indoor room with dark wooden furniture and a patterned fabric sofa.\", \"objects\": [\"Round wire-rimmed glasses\", \"Patterned sofa cushion\", \"Dark wooden furniture\", \"Ceramic vase\"], \"physical_actions\": [\"Sitting\", \"Looking downwards\"], \"uncertainty\": \"Dim lighting and shadow obscure background details.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Man with short black hair, round glasses, and dark blue collared jacket."
+      ],
+      "environment": "Dimly lit indoor room with dark wooden furniture and a patterned fabric sofa.",
+      "objects": [
+        "Round wire-rimmed glasses",
+        "Patterned sofa cushion",
+        "Dark wooden furniture",
+        "Ceramic vase"
+      ],
+      "physical_actions": [
+        "Sitting",
+        "Looking downwards"
+      ],
+      "uncertainty": "Dim lighting and shadow obscure background details."
+    },
+    "error": null,
+    "latency_ms": 36736.68,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18058,
+      "output_tokens": 1721,
+      "thinking_tokens": 1309,
+      "cache_read_tokens": 48729,
+      "total_tokens": 19779
+    },
+    "source_image_hash": "7fe7f97c10e8b778287a9e08e715cc125c39d46cc175c18ee3d766601b917af0",
+    "inference_image_hash": "dbe7c23c98b7cc7d9ab37046a1ef27b6b15ec93b0d9a199e513875ed408e1e21",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209418.790431
+}

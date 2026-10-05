@@ -1,0 +1,1116 @@
+{
+  "parent_shot_id": "shot_0133",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 707,
+      "start_sec": 2442.0,
+      "end_sec": 2443.0,
+      "start_timecode": "00:40:42.000",
+      "end_timecode": "00:40:43.000",
+      "text": "梅姐我给你介绍一下",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 708,
+      "start_sec": 2443.0,
+      "end_sec": 2444.0,
+      "start_timecode": "00:40:43.000",
+      "end_timecode": "00:40:44.000",
+      "text": "晚秋",
+      "confidence": 0.3,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 709,
+      "start_sec": 2446.0,
+      "end_sec": 2447.0,
+      "start_timecode": "00:40:46.000",
+      "end_timecode": "00:40:47.000",
+      "text": "这是我们街坊晚秋",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 710,
+      "start_sec": 2453.0,
+      "end_sec": 2455.0,
+      "start_timecode": "00:40:53.000",
+      "end_timecode": "00:40:55.000",
+      "text": "晚秋 你跑什么呀",
+      "confidence": 0.75,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 711,
+      "start_sec": 2456.0,
+      "end_sec": 2457.0,
+      "start_timecode": "00:40:56.000",
+      "end_timecode": "00:40:57.000",
+      "text": "你怎么了",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 712,
+      "start_sec": 2460.0,
+      "end_sec": 2461.0,
+      "start_timecode": "00:41:00.000",
+      "end_timecode": "00:41:01.000",
+      "text": "要不是她男人敲诈我叔伯",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 713,
+      "start_sec": 2461.0,
+      "end_sec": 2462.0,
+      "start_timecode": "00:41:01.000",
+      "end_timecode": "00:41:02.000",
+      "text": "要不是她男人敲谁我叔伯",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 714,
+      "start_sec": 2463.0,
+      "end_sec": 2465.0,
+      "start_timecode": "00:41:03.000",
+      "end_timecode": "00:41:05.000",
+      "text": "我叔伯也不会逃到日本去",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 715,
+      "start_sec": 2468.0,
+      "end_sec": 2469.0,
+      "start_timecode": "00:41:08.000",
+      "end_timecode": "00:41:09.000",
+      "text": "我也不至于",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 716,
+      "start_sec": 2469.0,
+      "end_sec": 2470.0,
+      "start_timecode": "00:41:09.000",
+      "end_timecode": "00:41:10.000",
+      "text": "过现在这种心慌的日子",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 717,
+      "start_sec": 2470.0,
+      "end_sec": 2471.0,
+      "start_timecode": "00:41:10.000",
+      "end_timecode": "00:41:11.000",
+      "text": "［现在这种心慌的日子",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 1.6,
+      "abs_start": 2442.0,
+      "abs_end": 2443.6,
+      "text": "没了给你介绍一下",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "没",
+          "rel_start": 0.0,
+          "rel_end": 0.34,
+          "abs_start": 2442.0,
+          "abs_end": 2442.34,
+          "probability": 0.4873
+        },
+        {
+          "word": "了",
+          "rel_start": 0.34,
+          "rel_end": 0.5,
+          "abs_start": 2442.34,
+          "abs_end": 2442.5,
+          "probability": 0.2051
+        },
+        {
+          "word": "给",
+          "rel_start": 0.5,
+          "rel_end": 0.64,
+          "abs_start": 2442.5,
+          "abs_end": 2442.64,
+          "probability": 0.752
+        },
+        {
+          "word": "你",
+          "rel_start": 0.64,
+          "rel_end": 0.72,
+          "abs_start": 2442.64,
+          "abs_end": 2442.72,
+          "probability": 0.9595
+        },
+        {
+          "word": "介",
+          "rel_start": 0.72,
+          "rel_end": 0.88,
+          "abs_start": 2442.72,
+          "abs_end": 2442.88,
+          "probability": 0.9727
+        },
+        {
+          "word": "绍",
+          "rel_start": 0.88,
+          "rel_end": 1.02,
+          "abs_start": 2442.88,
+          "abs_end": 2443.02,
+          "probability": 0.9907
+        },
+        {
+          "word": "一下",
+          "rel_start": 1.02,
+          "rel_end": 1.6,
+          "abs_start": 2443.02,
+          "abs_end": 2443.6,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "rel_start": 1.6,
+      "rel_end": 2.22,
+      "abs_start": 2443.6,
+      "abs_end": 2444.22,
+      "text": "文青",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "文",
+          "rel_start": 1.6,
+          "rel_end": 2.16,
+          "abs_start": 2443.6,
+          "abs_end": 2444.16,
+          "probability": 0.2157
+        },
+        {
+          "word": "青",
+          "rel_start": 2.16,
+          "rel_end": 2.22,
+          "abs_start": 2444.16,
+          "abs_end": 2444.22,
+          "probability": 0.2239
+        }
+      ]
+    },
+    {
+      "rel_start": 2.22,
+      "rel_end": 3.76,
+      "abs_start": 2444.22,
+      "abs_end": 2445.76,
+      "text": "这无态的",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "这",
+          "rel_start": 2.22,
+          "rel_end": 2.88,
+          "abs_start": 2444.22,
+          "abs_end": 2444.88,
+          "probability": 0.6714
+        },
+        {
+          "word": "无",
+          "rel_start": 2.88,
+          "rel_end": 3.04,
+          "abs_start": 2444.88,
+          "abs_end": 2445.04,
+          "probability": 0.5132
+        },
+        {
+          "word": "态",
+          "rel_start": 3.04,
+          "rel_end": 3.26,
+          "abs_start": 2445.04,
+          "abs_end": 2445.26,
+          "probability": 0.6924
+        },
+        {
+          "word": "的",
+          "rel_start": 3.26,
+          "rel_end": 3.76,
+          "abs_start": 2445.26,
+          "abs_end": 2445.76,
+          "probability": 0.7817
+        }
+      ]
+    },
+    {
+      "rel_start": 3.76,
+      "rel_end": 5.16,
+      "abs_start": 2445.76,
+      "abs_end": 2447.16,
+      "text": "这我们接防我玩车",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "这",
+          "rel_start": 3.76,
+          "rel_end": 3.92,
+          "abs_start": 2445.76,
+          "abs_end": 2445.92,
+          "probability": 0.4653
+        },
+        {
+          "word": "我们",
+          "rel_start": 3.92,
+          "rel_end": 4.12,
+          "abs_start": 2445.92,
+          "abs_end": 2446.12,
+          "probability": 0.7046
+        },
+        {
+          "word": "接",
+          "rel_start": 4.12,
+          "rel_end": 4.34,
+          "abs_start": 2446.12,
+          "abs_end": 2446.34,
+          "probability": 0.7266
+        },
+        {
+          "word": "防",
+          "rel_start": 4.34,
+          "rel_end": 4.52,
+          "abs_start": 2446.34,
+          "abs_end": 2446.52,
+          "probability": 0.3218
+        },
+        {
+          "word": "我",
+          "rel_start": 4.52,
+          "rel_end": 4.66,
+          "abs_start": 2446.52,
+          "abs_end": 2446.66,
+          "probability": 0.6387
+        },
+        {
+          "word": "玩",
+          "rel_start": 4.66,
+          "rel_end": 4.8,
+          "abs_start": 2446.66,
+          "abs_end": 2446.8,
+          "probability": 0.5513
+        },
+        {
+          "word": "车",
+          "rel_start": 4.8,
+          "rel_end": 5.16,
+          "abs_start": 2446.8,
+          "abs_end": 2447.16,
+          "probability": 0.582
+        }
+      ]
+    },
+    {
+      "rel_start": 5.16,
+      "rel_end": 5.68,
+      "abs_start": 2447.16,
+      "abs_end": 2447.68,
+      "text": "好",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "好",
+          "rel_start": 5.16,
+          "rel_end": 5.68,
+          "abs_start": 2447.16,
+          "abs_end": 2447.68,
+          "probability": 0.0089
+        }
+      ]
+    },
+    {
+      "rel_start": 9.58,
+      "rel_end": 10.18,
+      "abs_start": 2451.58,
+      "abs_end": 2452.18,
+      "text": "文青",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "文",
+          "rel_start": 9.58,
+          "rel_end": 9.98,
+          "abs_start": 2451.58,
+          "abs_end": 2451.98,
+          "probability": 0.0534
+        },
+        {
+          "word": "青",
+          "rel_start": 9.98,
+          "rel_end": 10.18,
+          "abs_start": 2451.98,
+          "abs_end": 2452.18,
+          "probability": 0.8398
+        }
+      ]
+    },
+    {
+      "rel_start": 10.92,
+      "rel_end": 11.76,
+      "abs_start": 2452.92,
+      "abs_end": 2453.76,
+      "text": "你玩车",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "你",
+          "rel_start": 10.92,
+          "rel_end": 11.32,
+          "abs_start": 2452.92,
+          "abs_end": 2453.32,
+          "probability": 0.2206
+        },
+        {
+          "word": "玩",
+          "rel_start": 11.32,
+          "rel_end": 11.5,
+          "abs_start": 2453.32,
+          "abs_end": 2453.5,
+          "probability": 0.7139
+        },
+        {
+          "word": "车",
+          "rel_start": 11.5,
+          "rel_end": 11.76,
+          "abs_start": 2453.5,
+          "abs_end": 2453.76,
+          "probability": 0.9976
+        }
+      ]
+    },
+    {
+      "rel_start": 11.76,
+      "rel_end": 13.52,
+      "abs_start": 2453.76,
+      "abs_end": 2455.52,
+      "text": "你怕我什么呀",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "你",
+          "rel_start": 11.76,
+          "rel_end": 12.04,
+          "abs_start": 2453.76,
+          "abs_end": 2454.04,
+          "probability": 0.3342
+        },
+        {
+          "word": "怕",
+          "rel_start": 12.04,
+          "rel_end": 12.3,
+          "abs_start": 2454.04,
+          "abs_end": 2454.3,
+          "probability": 0.3506
+        },
+        {
+          "word": "我",
+          "rel_start": 12.3,
+          "rel_end": 12.44,
+          "abs_start": 2454.3,
+          "abs_end": 2454.44,
+          "probability": 0.6997
+        },
+        {
+          "word": "什么",
+          "rel_start": 12.44,
+          "rel_end": 12.62,
+          "abs_start": 2454.44,
+          "abs_end": 2454.62,
+          "probability": 0.8384
+        },
+        {
+          "word": "呀",
+          "rel_start": 12.62,
+          "rel_end": 13.52,
+          "abs_start": 2454.62,
+          "abs_end": 2455.52,
+          "probability": 0.8232
+        }
+      ]
+    },
+    {
+      "rel_start": 14.12,
+      "rel_end": 14.9,
+      "abs_start": 2456.12,
+      "abs_end": 2456.9,
+      "text": "你怎么了",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "你",
+          "rel_start": 14.12,
+          "rel_end": 14.52,
+          "abs_start": 2456.12,
+          "abs_end": 2456.52,
+          "probability": 0.9561
+        },
+        {
+          "word": "怎么了",
+          "rel_start": 14.52,
+          "rel_end": 14.9,
+          "abs_start": 2456.52,
+          "abs_end": 2456.9,
+          "probability": 0.9751
+        }
+      ]
+    },
+    {
+      "rel_start": 15.5,
+      "rel_end": 16.8,
+      "abs_start": 2457.5,
+      "abs_end": 2458.8,
+      "text": "我认识的女人",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 15.5,
+          "rel_end": 15.9,
+          "abs_start": 2457.5,
+          "abs_end": 2457.9,
+          "probability": 0.9399
+        },
+        {
+          "word": "认",
+          "rel_start": 15.9,
+          "rel_end": 16.1,
+          "abs_start": 2457.9,
+          "abs_end": 2458.1,
+          "probability": 0.9463
+        },
+        {
+          "word": "识",
+          "rel_start": 16.1,
+          "rel_end": 16.2,
+          "abs_start": 2458.1,
+          "abs_end": 2458.2,
+          "probability": 0.9072
+        },
+        {
+          "word": "的",
+          "rel_start": 16.2,
+          "rel_end": 16.34,
+          "abs_start": 2458.2,
+          "abs_end": 2458.34,
+          "probability": 0.7778
+        },
+        {
+          "word": "女",
+          "rel_start": 16.34,
+          "rel_end": 16.52,
+          "abs_start": 2458.34,
+          "abs_end": 2458.52,
+          "probability": 0.9883
+        },
+        {
+          "word": "人",
+          "rel_start": 16.52,
+          "rel_end": 16.8,
+          "abs_start": 2458.52,
+          "abs_end": 2458.8,
+          "probability": 0.9976
+        }
+      ]
+    },
+    {
+      "rel_start": 18.34,
+      "rel_end": 19.36,
+      "abs_start": 2460.34,
+      "abs_end": 2461.36,
+      "text": "要不是他男人",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "要",
+          "rel_start": 18.34,
+          "rel_end": 18.74,
+          "abs_start": 2460.34,
+          "abs_end": 2460.74,
+          "probability": 0.9897
+        },
+        {
+          "word": "不是",
+          "rel_start": 18.74,
+          "rel_end": 18.92,
+          "abs_start": 2460.74,
+          "abs_end": 2460.92,
+          "probability": 0.9868
+        },
+        {
+          "word": "他",
+          "rel_start": 18.92,
+          "rel_end": 19.12,
+          "abs_start": 2460.92,
+          "abs_end": 2461.12,
+          "probability": 0.6968
+        },
+        {
+          "word": "男",
+          "rel_start": 19.12,
+          "rel_end": 19.22,
+          "abs_start": 2461.12,
+          "abs_end": 2461.22,
+          "probability": 0.9897
+        },
+        {
+          "word": "人",
+          "rel_start": 19.22,
+          "rel_end": 19.36,
+          "abs_start": 2461.22,
+          "abs_end": 2461.36,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "rel_start": 19.36,
+      "rel_end": 20.2,
+      "abs_start": 2461.36,
+      "abs_end": 2462.2,
+      "text": "瞧瞧我书博",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "瞧",
+          "rel_start": 19.36,
+          "rel_end": 19.52,
+          "abs_start": 2461.36,
+          "abs_end": 2461.52,
+          "probability": 0.4756
+        },
+        {
+          "word": "瞧",
+          "rel_start": 19.52,
+          "rel_end": 19.64,
+          "abs_start": 2461.52,
+          "abs_end": 2461.64,
+          "probability": 0.6787
+        },
+        {
+          "word": "我",
+          "rel_start": 19.64,
+          "rel_end": 19.86,
+          "abs_start": 2461.64,
+          "abs_end": 2461.86,
+          "probability": 0.9443
+        },
+        {
+          "word": "书",
+          "rel_start": 19.86,
+          "rel_end": 20.04,
+          "abs_start": 2461.86,
+          "abs_end": 2462.04,
+          "probability": 0.6108
+        },
+        {
+          "word": "博",
+          "rel_start": 20.04,
+          "rel_end": 20.2,
+          "abs_start": 2462.04,
+          "abs_end": 2462.2,
+          "probability": 0.5469
+        }
+      ]
+    },
+    {
+      "rel_start": 20.8,
+      "rel_end": 21.78,
+      "abs_start": 2462.8,
+      "abs_end": 2463.78,
+      "text": "我书博也不会",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 20.8,
+          "rel_end": 21.2,
+          "abs_start": 2462.8,
+          "abs_end": 2463.2,
+          "probability": 0.3914
+        },
+        {
+          "word": "书",
+          "rel_start": 21.2,
+          "rel_end": 21.32,
+          "abs_start": 2463.2,
+          "abs_end": 2463.32,
+          "probability": 0.9902
+        },
+        {
+          "word": "博",
+          "rel_start": 21.32,
+          "rel_end": 21.42,
+          "abs_start": 2463.32,
+          "abs_end": 2463.42,
+          "probability": 0.998
+        },
+        {
+          "word": "也",
+          "rel_start": 21.42,
+          "rel_end": 21.58,
+          "abs_start": 2463.42,
+          "abs_end": 2463.58,
+          "probability": 0.9907
+        },
+        {
+          "word": "不会",
+          "rel_start": 21.58,
+          "rel_end": 21.78,
+          "abs_start": 2463.58,
+          "abs_end": 2463.78,
+          "probability": 0.9951
+        }
+      ]
+    },
+    {
+      "rel_start": 21.78,
+      "rel_end": 23.08,
+      "abs_start": 2463.78,
+      "abs_end": 2465.08,
+      "text": "逃到日本去",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "逃",
+          "rel_start": 21.78,
+          "rel_end": 22.0,
+          "abs_start": 2463.78,
+          "abs_end": 2464.0,
+          "probability": 0.6699
+        },
+        {
+          "word": "到",
+          "rel_start": 22.0,
+          "rel_end": 22.14,
+          "abs_start": 2464.0,
+          "abs_end": 2464.14,
+          "probability": 0.5459
+        },
+        {
+          "word": "日本",
+          "rel_start": 22.14,
+          "rel_end": 22.4,
+          "abs_start": 2464.14,
+          "abs_end": 2464.4,
+          "probability": 0.979
+        },
+        {
+          "word": "去",
+          "rel_start": 22.4,
+          "rel_end": 23.08,
+          "abs_start": 2464.4,
+          "abs_end": 2465.08,
+          "probability": 0.8262
+        }
+      ]
+    },
+    {
+      "rel_start": 26.02,
+      "rel_end": 26.86,
+      "abs_start": 2468.02,
+      "abs_end": 2468.86,
+      "text": "我也不至于",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "我也",
+          "rel_start": 26.02,
+          "rel_end": 26.42,
+          "abs_start": 2468.02,
+          "abs_end": 2468.42,
+          "probability": 0.7266
+        },
+        {
+          "word": "不",
+          "rel_start": 26.42,
+          "rel_end": 26.64,
+          "abs_start": 2468.42,
+          "abs_end": 2468.64,
+          "probability": 0.9287
+        },
+        {
+          "word": "至",
+          "rel_start": 26.64,
+          "rel_end": 26.78,
+          "abs_start": 2468.64,
+          "abs_end": 2468.78,
+          "probability": 0.3213
+        },
+        {
+          "word": "于",
+          "rel_start": 26.78,
+          "rel_end": 26.86,
+          "abs_start": 2468.78,
+          "abs_end": 2468.86,
+          "probability": 0.957
+        }
+      ]
+    },
+    {
+      "rel_start": 26.86,
+      "rel_end": 28.24,
+      "abs_start": 2468.86,
+      "abs_end": 2470.24,
+      "text": "过现在只有心荒的人",
+      "no_speech_prob": 0.0128,
+      "words": [
+        {
+          "word": "过",
+          "rel_start": 26.86,
+          "rel_end": 27.02,
+          "abs_start": 2468.86,
+          "abs_end": 2469.02,
+          "probability": 0.98
+        },
+        {
+          "word": "现在",
+          "rel_start": 27.02,
+          "rel_end": 27.28,
+          "abs_start": 2469.02,
+          "abs_end": 2469.28,
+          "probability": 0.978
+        },
+        {
+          "word": "只有",
+          "rel_start": 27.28,
+          "rel_end": 27.54,
+          "abs_start": 2469.28,
+          "abs_end": 2469.54,
+          "probability": 0.9829
+        },
+        {
+          "word": "心",
+          "rel_start": 27.54,
+          "rel_end": 27.78,
+          "abs_start": 2469.54,
+          "abs_end": 2469.78,
+          "probability": 0.4229
+        },
+        {
+          "word": "荒",
+          "rel_start": 27.78,
+          "rel_end": 28.0,
+          "abs_start": 2469.78,
+          "abs_end": 2470.0,
+          "probability": 0.626
+        },
+        {
+          "word": "的人",
+          "rel_start": 28.0,
+          "rel_end": 28.24,
+          "abs_start": 2470.0,
+          "abs_end": 2470.24,
+          "probability": 0.9058
+        }
+      ]
+    }
+  ],
+  "ocr_event_count": 11,
+  "asr_segment_count": 16,
+  "fused_results": [
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 707,
+      "start_sec": 2442.0,
+      "end_sec": 2443.0,
+      "image_hash": "unknown",
+      "ocr_text": "梅姐我给你介绍一下",
+      "asr_text": "没了给你介绍一下",
+      "resolved_text": "梅姐我给你介绍一下",
+      "final_text": "梅姐我给你介绍一下",
+      "similarity": 0.706,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 708,
+      "start_sec": 2443.0,
+      "end_sec": 2444.0,
+      "image_hash": "unknown",
+      "ocr_text": "晚秋",
+      "asr_text": "没了给你介绍一下",
+      "resolved_text": null,
+      "similarity": 0.0,
+      "confidence": 0.3,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2443.6,
+      "end_sec": 2444.22,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "文青",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2444.22,
+      "end_sec": 2445.76,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "这无态的",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 709,
+      "start_sec": 2446.0,
+      "end_sec": 2447.0,
+      "image_hash": "unknown",
+      "ocr_text": "这是我们街坊晚秋",
+      "asr_text": "这我们接防我玩车",
+      "resolved_text": null,
+      "similarity": 0.375,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2447.16,
+      "end_sec": 2447.68,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "好",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2451.58,
+      "end_sec": 2452.18,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "文青",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2452.92,
+      "end_sec": 2453.76,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "你玩车",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 710,
+      "start_sec": 2453.0,
+      "end_sec": 2455.0,
+      "image_hash": "unknown",
+      "ocr_text": "晚秋 你跑什么呀",
+      "asr_text": "你怕我什么呀",
+      "resolved_text": null,
+      "similarity": 0.615,
+      "confidence": 0.75,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 711,
+      "start_sec": 2456.0,
+      "end_sec": 2457.0,
+      "image_hash": "unknown",
+      "ocr_text": "你怎么了",
+      "asr_text": "你怎么了",
+      "resolved_text": "你怎么了",
+      "final_text": "你怎么了",
+      "similarity": 0.95,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2457.5,
+      "end_sec": 2458.8,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "我认识的女人",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 712,
+      "start_sec": 2460.0,
+      "end_sec": 2461.0,
+      "image_hash": "unknown",
+      "ocr_text": "要不是她男人敲诈我叔伯",
+      "asr_text": "要不是他男人",
+      "resolved_text": null,
+      "similarity": 0.588,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 713,
+      "start_sec": 2461.0,
+      "end_sec": 2462.0,
+      "image_hash": "unknown",
+      "ocr_text": "要不是她男人敲谁我叔伯",
+      "asr_text": "要不是他男人",
+      "resolved_text": null,
+      "similarity": 0.588,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2461.36,
+      "end_sec": 2462.2,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "瞧瞧我书博",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 2462.8,
+      "end_sec": 2463.78,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "我书博也不会",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 714,
+      "start_sec": 2463.0,
+      "end_sec": 2465.0,
+      "image_hash": "unknown",
+      "ocr_text": "我叔伯也不会逃到日本去",
+      "asr_text": "逃到日本去",
+      "resolved_text": "我叔伯也不会逃到日本去",
+      "final_text": "我叔伯也不会逃到日本去",
+      "similarity": 0.95,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 715,
+      "start_sec": 2468.0,
+      "end_sec": 2469.0,
+      "image_hash": "unknown",
+      "ocr_text": "我也不至于",
+      "asr_text": "我也不至于",
+      "resolved_text": "我也不至于",
+      "final_text": "我也不至于",
+      "similarity": 0.95,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 716,
+      "start_sec": 2469.0,
+      "end_sec": 2470.0,
+      "image_hash": "unknown",
+      "ocr_text": "过现在这种心慌的日子",
+      "asr_text": "过现在只有心荒的人",
+      "resolved_text": null,
+      "similarity": 0.526,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 717,
+      "start_sec": 2470.0,
+      "end_sec": 2471.0,
+      "image_hash": "unknown",
+      "ocr_text": "［现在这种心慌的日子",
+      "asr_text": "过现在只有心荒的人",
+      "resolved_text": null,
+      "similarity": 0.444,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    }
+  ]
+}

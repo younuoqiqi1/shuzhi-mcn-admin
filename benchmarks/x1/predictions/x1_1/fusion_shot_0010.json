@@ -1,0 +1,70 @@
+{
+  "parent_shot_id": "shot_0010",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 20,
+      "start_sec": 48.0,
+      "end_sec": 49.0,
+      "start_timecode": "00:00:48.000",
+      "end_timecode": "00:00:49.000",
+      "text": "7100P 130 孙红雷 姚晨",
+      "confidence": 0.767,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 21,
+      "start_sec": 49.0,
+      "end_sec": 50.0,
+      "start_timecode": "00:00:49.000",
+      "end_timecode": "00:00:50.000",
+      "text": "干 孙红雷 姚晨",
+      "confidence": 0.767,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [],
+  "ocr_event_count": 2,
+  "asr_segment_count": 0,
+  "fused_results": [
+    {
+      "fusion_type": "ocr_only",
+      "ocr_index": 20,
+      "start_sec": 48.0,
+      "end_sec": 49.0,
+      "image_hash": "unknown",
+      "ocr_text": "7100P 130 孙红雷 姚晨",
+      "asr_text": null,
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "confidence": 0.767,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr_only"
+    },
+    {
+      "fusion_type": "ocr_only",
+      "ocr_index": 21,
+      "start_sec": 49.0,
+      "end_sec": 50.0,
+      "image_hash": "unknown",
+      "ocr_text": "干 孙红雷 姚晨",
+      "asr_text": null,
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "confidence": 0.767,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr_only"
+    }
+  ]
+}

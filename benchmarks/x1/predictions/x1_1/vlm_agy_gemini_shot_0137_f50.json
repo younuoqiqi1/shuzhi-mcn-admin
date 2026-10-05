@@ -1,0 +1,42 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0137_frame_50",
+  "shot_id": "shot_0137",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0137/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"左侧背对镜头的短发人影剪影\", \"右侧背对镜头的短发人影剪影\", \"窗外隐约可见的模糊行人轮廓\"], \"environment\": \"极其昏暗、带有绿色调的室内空间，前景有一扇带有方格网格图案的窗户或屏风，透过窗户可见室外场景\", \"objects\": [\"带方格图案的窗框\"], \"physical_actions\": [\"站立\", \"面朝窗外\"], \"uncertainty\": \"画面整体曝光极暗，前景人物完全背光形成剪影，无法辨认面部及衣着细节；窗户方格对背景造成明显遮挡，且窗外景象模糊不清\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "左侧背对镜头的短发人影剪影",
+        "右侧背对镜头的短发人影剪影",
+        "窗外隐约可见的模糊行人轮廓"
+      ],
+      "environment": "极其昏暗、带有绿色调的室内空间，前景有一扇带有方格网格图案的窗户或屏风，透过窗户可见室外场景",
+      "objects": [
+        "带方格图案的窗框"
+      ],
+      "physical_actions": [
+        "站立",
+        "面朝窗外"
+      ],
+      "uncertainty": "画面整体曝光极暗，前景人物完全背光形成剪影，无法辨认面部及衣着细节；窗户方格对背景造成明显遮挡，且窗外景象模糊不清"
+    },
+    "error": null,
+    "latency_ms": 34679.77,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14782,
+      "output_tokens": 1780,
+      "thinking_tokens": 1500,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16562
+    },
+    "source_image_hash": "e1306cfb8d56201e86523c1a6dcdbf4230ffacf84a0ff5ec160b63d42f958d3a",
+    "inference_image_hash": "73f571e87dd643ef616dfbd3119376cc9951f28c7294434c085186f2e868ed50",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210645.936809
+}

@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0056_frame_75",
+  "shot_id": "shot_0056",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0056/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"侧脸背对镜头的男子，深色短发向后梳，穿着浅色上衣\", \"正对镜头的男子，深色短发，戴圆形金属边框眼镜，穿深色西装外套、浅色衬衫和条纹领带\"], \"environment\": \"室内空间，背景墙面有竖条纹壁纸，墙上挂着一幅带框的画作，光线较为昏暗，主要照亮人物面部\", \"objects\": [\"圆形眼镜\", \"西装外套\", \"条纹领带\", \"带框的画作\", \"中文字幕\"], \"physical_actions\": [\"右侧男子身体微倾，张嘴注视左侧男子\", \"左侧男子头部转向右侧男子方向\"], \"uncertainty\": \"画面整体分辨率较低，略带模糊，底部有白色字幕遮挡部分画面\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "侧脸背对镜头的男子，深色短发向后梳，穿着浅色上衣",
+        "正对镜头的男子，深色短发，戴圆形金属边框眼镜，穿深色西装外套、浅色衬衫和条纹领带"
+      ],
+      "environment": "室内空间，背景墙面有竖条纹壁纸，墙上挂着一幅带框的画作，光线较为昏暗，主要照亮人物面部",
+      "objects": [
+        "圆形眼镜",
+        "西装外套",
+        "条纹领带",
+        "带框的画作",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "右侧男子身体微倾，张嘴注视左侧男子",
+        "左侧男子头部转向右侧男子方向"
+      ],
+      "uncertainty": "画面整体分辨率较低，略带模糊，底部有白色字幕遮挡部分画面"
+    },
+    "error": null,
+    "latency_ms": 23112.69,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22840,
+      "output_tokens": 956,
+      "thinking_tokens": 638,
+      "cache_read_tokens": 20303,
+      "total_tokens": 23796
+    },
+    "source_image_hash": "e4fee62cc39feb1662547b43c267b902a13d5f392f48878cc2dc1cf0de4e483b",
+    "inference_image_hash": "e8690b2d5e9802c6c2e5e9a2d2848b59aa77c7aaa2a82c6eebfd7e4bd6a41d6a",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209950.771654
+}

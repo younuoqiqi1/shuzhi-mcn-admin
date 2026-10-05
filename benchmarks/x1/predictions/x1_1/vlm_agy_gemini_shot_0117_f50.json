@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0117_frame_50",
+  "shot_id": "shot_0117",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0117/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Woman with pale skin, dark wavy hair, patterned garment, pearl-like earrings.\"], \"environment\": \"Dimly lit indoor space with a dark wooden staircase and balusters in the background.\", \"objects\": [\"Wooden staircase\", \"Balusters\", \"Pearl-like earrings\", \"Patterned garment\"], \"physical_actions\": [\"Looking slightly upward and to the left\", \"Mouth slightly open\"], \"uncertainty\": \"Background is dark and out of focus. Slight softness or blur in the image.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Woman with pale skin, dark wavy hair, patterned garment, pearl-like earrings."
+      ],
+      "environment": "Dimly lit indoor space with a dark wooden staircase and balusters in the background.",
+      "objects": [
+        "Wooden staircase",
+        "Balusters",
+        "Pearl-like earrings",
+        "Patterned garment"
+      ],
+      "physical_actions": [
+        "Looking slightly upward and to the left",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Background is dark and out of focus. Slight softness or blur in the image."
+    },
+    "error": null,
+    "latency_ms": 41418.25,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 25766,
+      "output_tokens": 2221,
+      "thinking_tokens": 1640,
+      "cache_read_tokens": 65553,
+      "total_tokens": 27987
+    },
+    "source_image_hash": "0ff99d660d4bf9f776542a36cec25a18b09383f658c58f6e23b82c92710a511f",
+    "inference_image_hash": "978cd043b92e973920d88316a9d1ca5d69ae2c537b547b94ccc9228f7844f028",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210525.3024251
+}

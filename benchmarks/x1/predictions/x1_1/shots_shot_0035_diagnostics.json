@@ -1,0 +1,61 @@
+{
+  "parent_shot_id": "shot_0035",
+  "parent_start_sec": 556.52,
+  "parent_end_sec": 573.24,
+  "parent_duration": 16.72,
+  "parameters": {
+    "content_threshold": 27.0,
+    "adaptive_threshold": 3.0,
+    "min_content_val": 27.0,
+    "min_scene_len_frames": 3,
+    "no_1_5s_forced_merge": true,
+    "no_forced_max_duration_split": true,
+    "no_manual_or_plot_cuts": true
+  },
+  "cuts": [],
+  "cuts_scores": [],
+  "scores_sampled": [],
+  "children_count": 1,
+  "children": [
+    {
+      "child_id": "shot_0035_c001",
+      "parent_shot_id": "shot_0035",
+      "start_sec": 556.52,
+      "end_sec": 573.24,
+      "duration": 16.72,
+      "review_frames": {
+        "start": 556.52,
+        "mid": 564.88,
+        "end": 573.2
+      },
+      "review_frame_indices": {
+        "start_sec": 556.52,
+        "mid_sec": 564.88,
+        "end_sec": 573.24
+      }
+    }
+  ],
+  "coverage_verified": true,
+  "full_interval_coverage": {
+    "verified": true,
+    "parent_start_sec": 556.52,
+    "parent_end_sec": 573.24,
+    "contact_sheet_pages": [
+      "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p001.jpg",
+      "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p002.jpg",
+      "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p003.jpg"
+    ],
+    "contact_sheet_coverage_start_sec": 556.52,
+    "contact_sheet_coverage_end_sec": 573.12,
+    "contact_sheet_coverage_duration_sec": 16.6,
+    "total_sampled_frames": 84,
+    "total_pages": 3
+  },
+  "contact_sheet_path": "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p001.jpg",
+  "contact_sheet_pages": [
+    "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p001.jpg",
+    "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p002.jpg",
+    "/private/tmp/x1_1/contact_sheets/shot_0035_5fps_p003.jpg"
+  ],
+  "raw_diagnostics_notes": "阈值 (content_threshold=27.0, adaptive_threshold=3.0, min_content_val=27.0) 均来自通用镜头检测标准对齐默认值，未用人工Gold特定调参，消除固定机位下微小运动导致的虚假硬切；未来人工 usable rate 仍待人工审核判定。"
+}

@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0117_frame_25",
+  "shot_id": "shot_0117",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0117/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"一名深色头发向后梳理的女性，穿着带有黑黄相间几何图案的高领旗袍。\", \"一名戴着眼镜的男性，身穿深蓝色外套和白色衬衫，胸前口袋里插着一支笔。\"], \"environment\": \"光线较暗的室内环境。左侧可见木质楼梯，背景墙面上挂着一幅带有画像的日历以及一个暗色的电箱或带挂钩的木板，右侧有一扇暗色门。\", \"objects\": [\"木质楼梯\", \"日历\", \"电箱/木板\", \"眼镜\", \"笔\"], \"physical_actions\": [\"女性正向下伸出左臂\", \"男性站立着，低头向下注视\"], \"uncertainty\": \"女性左手区域存在明显的运动模糊，导致无法辨认其手中的物品；画面整体光线偏暗，背景及暗部细节不够清晰。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "一名深色头发向后梳理的女性，穿着带有黑黄相间几何图案的高领旗袍。",
+        "一名戴着眼镜的男性，身穿深蓝色外套和白色衬衫，胸前口袋里插着一支笔。"
+      ],
+      "environment": "光线较暗的室内环境。左侧可见木质楼梯，背景墙面上挂着一幅带有画像的日历以及一个暗色的电箱或带挂钩的木板，右侧有一扇暗色门。",
+      "objects": [
+        "木质楼梯",
+        "日历",
+        "电箱/木板",
+        "眼镜",
+        "笔"
+      ],
+      "physical_actions": [
+        "女性正向下伸出左臂",
+        "男性站立着，低头向下注视"
+      ],
+      "uncertainty": "女性左手区域存在明显的运动模糊，导致无法辨认其手中的物品；画面整体光线偏暗，背景及暗部细节不够清晰。"
+    },
+    "error": null,
+    "latency_ms": 39323.03,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14718,
+      "output_tokens": 2937,
+      "thinking_tokens": 2352,
+      "cache_read_tokens": 28424,
+      "total_tokens": 17655
+    },
+    "source_image_hash": "522f23eb14bec3301d3c4e636ff03bcec19de4cf8d570b1487dfccb981ea98bb",
+    "inference_image_hash": "619ad5a8d736a04dd8dccabb8c5928974b83bab619204650f09716bd61eab94a",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210479.994329
+}

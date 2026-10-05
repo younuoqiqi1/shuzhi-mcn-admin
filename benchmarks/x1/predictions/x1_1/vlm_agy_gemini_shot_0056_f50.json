@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0056_frame_50",
+  "shot_id": "shot_0056",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0056/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名留着黑色短发、向后梳理的男子，身穿浅色西装外套和白色衬衫\", \"一名留着黑色短发、戴着金属细框眼镜的男子，身穿深色西装外套、白色衬衫和紫白条纹领带\"], \"environment\": \"室内环境，背景有一面带有垂直木条纹理或百叶窗的墙壁\", \"objects\": [\"眼镜\", \"浅色西装外套\", \"深色西装外套\", \"衬衫\", \"条纹领带\"], \"physical_actions\": [\"左侧男子转头看向右侧\", \"右侧男子看向左侧\"], \"uncertainty\": \"画面底部有中文字幕遮挡；右侧男子身体和面部右侧在画面外；整体画质略微模糊且光线偏暗\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名留着黑色短发、向后梳理的男子，身穿浅色西装外套和白色衬衫",
+        "一名留着黑色短发、戴着金属细框眼镜的男子，身穿深色西装外套、白色衬衫和紫白条纹领带"
+      ],
+      "environment": "室内环境，背景有一面带有垂直木条纹理或百叶窗的墙壁",
+      "objects": [
+        "眼镜",
+        "浅色西装外套",
+        "深色西装外套",
+        "衬衫",
+        "条纹领带"
+      ],
+      "physical_actions": [
+        "左侧男子转头看向右侧",
+        "右侧男子看向左侧"
+      ],
+      "uncertainty": "画面底部有中文字幕遮挡；右侧男子身体和面部右侧在画面外；整体画质略微模糊且光线偏暗"
+    },
+    "error": null,
+    "latency_ms": 29905.81,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18675,
+      "output_tokens": 1256,
+      "thinking_tokens": 946,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19931
+    },
+    "source_image_hash": "80aa1d0bcf52b314c2457661fc0d98db68aad0a2d1e06c7725413dbb0b8c9613",
+    "inference_image_hash": "def8abba668959f1f9216dcb05c55d885b4cf2e3f8f85fb950d718ee3cd602fc",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209954.472259
+}

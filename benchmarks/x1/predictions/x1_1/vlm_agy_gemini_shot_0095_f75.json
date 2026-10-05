@@ -1,0 +1,41 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0095_frame_75",
+  "shot_id": "shot_0095",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0095/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名成年男性，黑色短发，身穿白色带领衬衫和浅褐色带纹理的外套\"], \"environment\": \"室内环境，光线偏暗，背景为一个带有雕花细节的深色木质柜子\", \"objects\": [\"深色木质雕花柜\", \"玻璃瓶\", \"白色字幕文字\"], \"physical_actions\": [\"嘴部微张呈圆形\"], \"uncertainty\": \"画面整体光线偏暗，无明显视觉遮挡\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名成年男性，黑色短发，身穿白色带领衬衫和浅褐色带纹理的外套"
+      ],
+      "environment": "室内环境，光线偏暗，背景为一个带有雕花细节的深色木质柜子",
+      "objects": [
+        "深色木质雕花柜",
+        "玻璃瓶",
+        "白色字幕文字"
+      ],
+      "physical_actions": [
+        "嘴部微张呈圆形"
+      ],
+      "uncertainty": "画面整体光线偏暗，无明显视觉遮挡"
+    },
+    "error": null,
+    "latency_ms": 35099.8,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 26119,
+      "output_tokens": 1728,
+      "thinking_tokens": 1344,
+      "cache_read_tokens": 40805,
+      "total_tokens": 27847
+    },
+    "source_image_hash": "eac26a26a0417f7996f9e489e32cd229442c7c6c90fdb6ad4bdeedd10b63a178",
+    "inference_image_hash": "bc39d4f4b19b3b21b96c31702511860b5e698571b0e84b798ed472e3a6be09f5",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210473.700458
+}

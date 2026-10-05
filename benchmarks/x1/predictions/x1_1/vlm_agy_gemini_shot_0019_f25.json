@@ -1,0 +1,40 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0019_frame_25",
+  "shot_id": "shot_0019",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0019/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"一名身穿黑色西装的人物，上半身可见，头部完全被遮挡\"], \"environment\": \"光线暗淡的室内空间，带有蓝紫色调，左侧背景有网格状图案或纹理。\", \"objects\": [\"巨大的白色弧形发光特效\", \"右下角的黄色中文字幕\"], \"physical_actions\": [\"身体向前弯曲或前倾\"], \"uncertainty\": \"人物面部及前方身体部位被明亮的发光特效严重遮挡，画面整体偏暗且背景细节模糊。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "一名身穿黑色西装的人物，上半身可见，头部完全被遮挡"
+      ],
+      "environment": "光线暗淡的室内空间，带有蓝紫色调，左侧背景有网格状图案或纹理。",
+      "objects": [
+        "巨大的白色弧形发光特效",
+        "右下角的黄色中文字幕"
+      ],
+      "physical_actions": [
+        "身体向前弯曲或前倾"
+      ],
+      "uncertainty": "人物面部及前方身体部位被明亮的发光特效严重遮挡，画面整体偏暗且背景细节模糊。"
+    },
+    "error": null,
+    "latency_ms": 25169.14,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18586,
+      "output_tokens": 800,
+      "thinking_tokens": 559,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19386
+    },
+    "source_image_hash": "aca60f385d16e8bc0fb3cc9747b55640fe01b837be70e74b3c86a80796ebb6fa",
+    "inference_image_hash": "6440dff2e937f7b684e644202eec31c467c6f3b32ea0487e7205a510f74f1f09",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209318.493765
+}

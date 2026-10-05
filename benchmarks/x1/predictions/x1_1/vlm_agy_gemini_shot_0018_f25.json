@@ -1,0 +1,46 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0018_frame_25",
+  "shot_id": "shot_0018",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0018/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"中心位置有一位齐肩黑发的人物，身穿带有领章和胸前徽章的制服，头戴同款制服帽\", \"画面左侧有一个半透明的人物轮廓，身穿深色外套和浅色内搭\"], \"environment\": \"整体呈现带有蓝色调的数字合成空间，背景包含多层叠加的边框、右侧带有类似电影胶片孔洞的垂直图形以及垂直排列的中文字符，并伴随放射状的横向光晕线条\", \"objects\": [\"制服帽子\", \"制服外套\", \"领章\", \"胸前徽章\", \"中文字符\", \"胶片孔状图形\"], \"physical_actions\": [\"中心人物正视前方站立\", \"左侧人物面朝右侧站立\"], \"uncertainty\": \"画面存在强烈的多图层叠加、半透明重影、发光射线遮挡以及整体画质模糊，导致人物边缘及背景细节无法清晰辨认\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "中心位置有一位齐肩黑发的人物，身穿带有领章和胸前徽章的制服，头戴同款制服帽",
+        "画面左侧有一个半透明的人物轮廓，身穿深色外套和浅色内搭"
+      ],
+      "environment": "整体呈现带有蓝色调的数字合成空间，背景包含多层叠加的边框、右侧带有类似电影胶片孔洞的垂直图形以及垂直排列的中文字符，并伴随放射状的横向光晕线条",
+      "objects": [
+        "制服帽子",
+        "制服外套",
+        "领章",
+        "胸前徽章",
+        "中文字符",
+        "胶片孔状图形"
+      ],
+      "physical_actions": [
+        "中心人物正视前方站立",
+        "左侧人物面朝右侧站立"
+      ],
+      "uncertainty": "画面存在强烈的多图层叠加、半透明重影、发光射线遮挡以及整体画质模糊，导致人物边缘及背景细节无法清晰辨认"
+    },
+    "error": null,
+    "latency_ms": 35455.51,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18648,
+      "output_tokens": 1852,
+      "thinking_tokens": 1235,
+      "cache_read_tokens": 24363,
+      "total_tokens": 20500
+    },
+    "source_image_hash": "1e243aaa3becca6375ced8c1928d89ce357b2a22c9d76f6ae94240ea951ca6c6",
+    "inference_image_hash": "2cbbdf54a9997897cd22a91255af407157ae10e4e7c7464a6e56c79006668e14",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209172.795437
+}

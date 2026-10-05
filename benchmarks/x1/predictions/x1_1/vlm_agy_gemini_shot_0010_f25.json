@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0010_frame_25",
+  "shot_id": "shot_0010",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0010/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名短发男性，侧脸朝下\", \"一名齐刘海女性，仰面躺着\"], \"environment\": \"光线昏暗的室内，整体呈现冷蓝色调，背景为具有横向条纹纹理的表面（如卷帘或墙面）。\", \"objects\": [\"浅色上衣\", \"深色衣物\"], \"physical_actions\": [\"男性人物俯身向下靠近下方人物\", \"女性人物仰面平躺\", \"两人面部距离极近，互相对视\"], \"uncertainty\": \"画面整体照明较暗，左侧边缘有较重的阴影遮挡，部分人物身体轮廓在暗部无法清晰辨认。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名短发男性，侧脸朝下",
+        "一名齐刘海女性，仰面躺着"
+      ],
+      "environment": "光线昏暗的室内，整体呈现冷蓝色调，背景为具有横向条纹纹理的表面（如卷帘或墙面）。",
+      "objects": [
+        "浅色上衣",
+        "深色衣物"
+      ],
+      "physical_actions": [
+        "男性人物俯身向下靠近下方人物",
+        "女性人物仰面平躺",
+        "两人面部距离极近，互相对视"
+      ],
+      "uncertainty": "画面整体照明较暗，左侧边缘有较重的阴影遮挡，部分人物身体轮廓在暗部无法清晰辨认。"
+    },
+    "error": null,
+    "latency_ms": 35838.65,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22885,
+      "output_tokens": 1209,
+      "thinking_tokens": 936,
+      "cache_read_tokens": 20304,
+      "total_tokens": 24094
+    },
+    "source_image_hash": "ef7b28c4a8d57811f635e1bf96d9c6b42564cbb06954feff3bb558270a989150",
+    "inference_image_hash": "c3fb6a804b58e48ab2b5a6b8a297d59c6dad5adc6bd4e6b710eda5450b4f1383",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209070.817889
+}

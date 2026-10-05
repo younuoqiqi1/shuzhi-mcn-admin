@@ -1,0 +1,399 @@
+{
+  "parent_shot_id": "shot_0035",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 167,
+      "start_sec": 557.0,
+      "end_sec": 558.0,
+      "start_timecode": "00:09:17.000",
+      "end_timecode": "00:09:18.000",
+      "text": "提防李涯",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 168,
+      "start_sec": 559.0,
+      "end_sec": 561.0,
+      "start_timecode": "00:09:19.000",
+      "end_timecode": "00:09:21.000",
+      "text": "站长也不可靠",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 169,
+      "start_sec": 562.0,
+      "end_sec": 563.0,
+      "start_timecode": "00:09:22.000",
+      "end_timecode": "00:09:23.000",
+      "text": "你自己保重吧",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 170,
+      "start_sec": 567.0,
+      "end_sec": 568.0,
+      "start_timecode": "00:09:27.000",
+      "end_timecode": "00:09:28.000",
+      "text": "金身而退",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 171,
+      "start_sec": 573.0,
+      "end_sec": 575.0,
+      "start_timecode": "00:09:33.000",
+      "end_timecode": "00:09:35.000",
+      "text": "你说你这么就走了",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [
+    {
+      "rel_start": 0.58,
+      "rel_end": 1.54,
+      "abs_start": 557.1,
+      "abs_end": 558.06,
+      "text": "替方的一行",
+      "no_speech_prob": 0.006,
+      "words": [
+        {
+          "word": "替",
+          "rel_start": 0.58,
+          "rel_end": 0.94,
+          "abs_start": 557.1,
+          "abs_end": 557.46,
+          "probability": 0.7539
+        },
+        {
+          "word": "方",
+          "rel_start": 0.94,
+          "rel_end": 1.12,
+          "abs_start": 557.46,
+          "abs_end": 557.64,
+          "probability": 0.3137
+        },
+        {
+          "word": "的",
+          "rel_start": 1.12,
+          "rel_end": 1.2,
+          "abs_start": 557.64,
+          "abs_end": 557.72,
+          "probability": 0.3408
+        },
+        {
+          "word": "一",
+          "rel_start": 1.2,
+          "rel_end": 1.36,
+          "abs_start": 557.72,
+          "abs_end": 557.88,
+          "probability": 0.2404
+        },
+        {
+          "word": "行",
+          "rel_start": 1.36,
+          "rel_end": 1.54,
+          "abs_start": 557.88,
+          "abs_end": 558.06,
+          "probability": 0.3213
+        }
+      ]
+    },
+    {
+      "rel_start": 2.84,
+      "rel_end": 4.12,
+      "abs_start": 559.36,
+      "abs_end": 560.64,
+      "text": "站着也不可可",
+      "no_speech_prob": 0.006,
+      "words": [
+        {
+          "word": "站",
+          "rel_start": 2.84,
+          "rel_end": 3.2,
+          "abs_start": 559.36,
+          "abs_end": 559.72,
+          "probability": 0.27
+        },
+        {
+          "word": "着",
+          "rel_start": 3.2,
+          "rel_end": 3.36,
+          "abs_start": 559.72,
+          "abs_end": 559.88,
+          "probability": 0.4854
+        },
+        {
+          "word": "也",
+          "rel_start": 3.36,
+          "rel_end": 3.5,
+          "abs_start": 559.88,
+          "abs_end": 560.02,
+          "probability": 0.2129
+        },
+        {
+          "word": "不",
+          "rel_start": 3.5,
+          "rel_end": 3.62,
+          "abs_start": 560.02,
+          "abs_end": 560.14,
+          "probability": 0.7793
+        },
+        {
+          "word": "可",
+          "rel_start": 3.62,
+          "rel_end": 3.78,
+          "abs_start": 560.14,
+          "abs_end": 560.3,
+          "probability": 0.8472
+        },
+        {
+          "word": "可",
+          "rel_start": 3.78,
+          "rel_end": 4.12,
+          "abs_start": 560.3,
+          "abs_end": 560.64,
+          "probability": 0.5293
+        }
+      ]
+    },
+    {
+      "rel_start": 5.16,
+      "rel_end": 6.48,
+      "abs_start": 561.68,
+      "abs_end": 563.0,
+      "text": "你自己保重吗",
+      "no_speech_prob": 0.006,
+      "words": [
+        {
+          "word": "你",
+          "rel_start": 5.16,
+          "rel_end": 5.4,
+          "abs_start": 561.68,
+          "abs_end": 561.92,
+          "probability": 0.5874
+        },
+        {
+          "word": "自己",
+          "rel_start": 5.4,
+          "rel_end": 5.56,
+          "abs_start": 561.92,
+          "abs_end": 562.08,
+          "probability": 0.9194
+        },
+        {
+          "word": "保",
+          "rel_start": 5.56,
+          "rel_end": 5.8,
+          "abs_start": 562.08,
+          "abs_end": 562.32,
+          "probability": 0.9395
+        },
+        {
+          "word": "重",
+          "rel_start": 5.8,
+          "rel_end": 5.98,
+          "abs_start": 562.32,
+          "abs_end": 562.5,
+          "probability": 0.9404
+        },
+        {
+          "word": "吗",
+          "rel_start": 5.98,
+          "rel_end": 6.48,
+          "abs_start": 562.5,
+          "abs_end": 563.0,
+          "probability": 0.8037
+        }
+      ]
+    },
+    {
+      "rel_start": 11.04,
+      "rel_end": 12.0,
+      "abs_start": 567.56,
+      "abs_end": 568.52,
+      "text": "全是二退",
+      "no_speech_prob": 0.006,
+      "words": [
+        {
+          "word": "全",
+          "rel_start": 11.04,
+          "rel_end": 11.4,
+          "abs_start": 567.56,
+          "abs_end": 567.92,
+          "probability": 0.7993
+        },
+        {
+          "word": "是",
+          "rel_start": 11.4,
+          "rel_end": 11.58,
+          "abs_start": 567.92,
+          "abs_end": 568.1,
+          "probability": 0.4565
+        },
+        {
+          "word": "二",
+          "rel_start": 11.58,
+          "rel_end": 11.76,
+          "abs_start": 568.1,
+          "abs_end": 568.28,
+          "probability": 0.603
+        },
+        {
+          "word": "退",
+          "rel_start": 11.76,
+          "rel_end": 12.0,
+          "abs_start": 568.28,
+          "abs_end": 568.52,
+          "probability": 0.5645
+        }
+      ]
+    },
+    {
+      "rel_start": 14.14,
+      "rel_end": 15.08,
+      "abs_start": 570.66,
+      "abs_end": 571.6,
+      "text": "我谢谢你",
+      "no_speech_prob": 0.006,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 14.14,
+          "rel_end": 14.5,
+          "abs_start": 570.66,
+          "abs_end": 571.02,
+          "probability": 0.8071
+        },
+        {
+          "word": "谢谢",
+          "rel_start": 14.5,
+          "rel_end": 14.7,
+          "abs_start": 571.02,
+          "abs_end": 571.22,
+          "probability": 0.8037
+        },
+        {
+          "word": "你",
+          "rel_start": 14.7,
+          "rel_end": 15.08,
+          "abs_start": 571.22,
+          "abs_end": 571.6,
+          "probability": 0.915
+        }
+      ]
+    }
+  ],
+  "ocr_event_count": 5,
+  "asr_segment_count": 5,
+  "fused_results": [
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 167,
+      "start_sec": 557.0,
+      "end_sec": 558.0,
+      "image_hash": "unknown",
+      "ocr_text": "提防李涯",
+      "asr_text": "替方的一行",
+      "resolved_text": null,
+      "similarity": 0.0,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 168,
+      "start_sec": 559.0,
+      "end_sec": 561.0,
+      "image_hash": "unknown",
+      "ocr_text": "站长也不可靠",
+      "asr_text": "站着也不可可",
+      "resolved_text": null,
+      "similarity": 0.667,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 169,
+      "start_sec": 562.0,
+      "end_sec": 563.0,
+      "image_hash": "unknown",
+      "ocr_text": "你自己保重吧",
+      "asr_text": "你自己保重吗",
+      "resolved_text": "你自己保重吧",
+      "final_text": "你自己保重吧",
+      "similarity": 0.833,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 170,
+      "start_sec": 567.0,
+      "end_sec": 568.0,
+      "image_hash": "unknown",
+      "ocr_text": "金身而退",
+      "asr_text": "全是二退",
+      "resolved_text": null,
+      "similarity": 0.25,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 570.66,
+      "end_sec": 571.6,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "我谢谢你",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "ocr_only",
+      "ocr_index": 171,
+      "start_sec": 573.0,
+      "end_sec": 575.0,
+      "image_hash": "unknown",
+      "ocr_text": "你说你这么就走了",
+      "asr_text": null,
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr_only"
+    }
+  ]
+}

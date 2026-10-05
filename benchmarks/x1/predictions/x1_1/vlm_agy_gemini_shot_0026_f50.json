@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0026_frame_50",
+  "shot_id": "shot_0026",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0026/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"成年男性，短黑发，佩戴圆框细边眼镜，身穿深色立领上衣\"], \"environment\": \"室内环境。背景有深色木质家具，人物坐在带有浅色花纹软包和深色木质雕花边框的沙发上，光线主要集中在人物面部。\", \"objects\": [\"圆框细边眼镜\", \"浅色花纹木框沙发\", \"深色木质家具\", \"白底蓝花瓷罐\"], \"physical_actions\": [\"坐立\", \"双眼闭合或视线下垂\"], \"uncertainty\": \"人物肩部以下部分被截断在画面外，背景略微虚化模糊。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "成年男性，短黑发，佩戴圆框细边眼镜，身穿深色立领上衣"
+      ],
+      "environment": "室内环境。背景有深色木质家具，人物坐在带有浅色花纹软包和深色木质雕花边框的沙发上，光线主要集中在人物面部。",
+      "objects": [
+        "圆框细边眼镜",
+        "浅色花纹木框沙发",
+        "深色木质家具",
+        "白底蓝花瓷罐"
+      ],
+      "physical_actions": [
+        "坐立",
+        "双眼闭合或视线下垂"
+      ],
+      "uncertainty": "人物肩部以下部分被截断在画面外，背景略微虚化模糊。"
+    },
+    "error": null,
+    "latency_ms": 30066.44,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18646,
+      "output_tokens": 2048,
+      "thinking_tokens": 1563,
+      "cache_read_tokens": 24363,
+      "total_tokens": 20694
+    },
+    "source_image_hash": "72353169881c9c4391737064d1e19b9fd7e934774248f98cf9a2fa2665bf920b",
+    "inference_image_hash": "9b65b7e6a9c84f715313a5fb993e06a957ae23a773fee60b0f1f8e2b52444839",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209391.629451
+}

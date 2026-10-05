@@ -1,0 +1,233 @@
+{
+  "parent_shot_id": "shot_0070",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 436,
+      "start_sec": 1466.0,
+      "end_sec": 1467.0,
+      "start_timecode": "00:24:26.000",
+      "end_timecode": "00:24:27.000",
+      "text": "你要给压岁钱哪",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 437,
+      "start_sec": 1467.0,
+      "end_sec": 1468.0,
+      "start_timecode": "00:24:27.000",
+      "end_timecode": "00:24:28.000",
+      "text": "我能猜猜吗",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 438,
+      "start_sec": 1472.0,
+      "end_sec": 1473.0,
+      "start_timecode": "00:24:32.000",
+      "end_timecode": "00:24:33.000",
+      "text": "猜吧",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 439,
+      "start_sec": 1473.0,
+      "end_sec": 1475.0,
+      "start_timecode": "00:24:33.000",
+      "end_timecode": "00:24:35.000",
+      "text": "你至少有个妹妹",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 1.46,
+      "abs_start": 1466.84,
+      "abs_end": 1468.3,
+      "text": "我能猜怎么",
+      "no_speech_prob": 0.002,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 0.0,
+          "rel_end": 0.66,
+          "abs_start": 1466.84,
+          "abs_end": 1467.5,
+          "probability": 0.6177
+        },
+        {
+          "word": "能",
+          "rel_start": 0.66,
+          "rel_end": 0.84,
+          "abs_start": 1467.5,
+          "abs_end": 1467.68,
+          "probability": 0.9604
+        },
+        {
+          "word": "猜",
+          "rel_start": 0.84,
+          "rel_end": 1.1,
+          "abs_start": 1467.68,
+          "abs_end": 1467.94,
+          "probability": 0.9277
+        },
+        {
+          "word": "怎么",
+          "rel_start": 1.1,
+          "rel_end": 1.46,
+          "abs_start": 1467.94,
+          "abs_end": 1468.3,
+          "probability": 0.7236
+        }
+      ]
+    },
+    {
+      "rel_start": 2.04,
+      "rel_end": 3.2,
+      "abs_start": 1468.88,
+      "abs_end": 1470.04,
+      "text": "臭父",
+      "no_speech_prob": 0.002,
+      "words": [
+        {
+          "word": "臭",
+          "rel_start": 2.03,
+          "rel_end": 2.62,
+          "abs_start": 1468.87,
+          "abs_end": 1469.46,
+          "probability": 0.5347
+        },
+        {
+          "word": "父",
+          "rel_start": 2.62,
+          "rel_end": 3.2,
+          "abs_start": 1469.46,
+          "abs_end": 1470.04,
+          "probability": 0.0489
+        }
+      ]
+    },
+    {
+      "rel_start": 5.2,
+      "rel_end": 6.24,
+      "abs_start": 1472.04,
+      "abs_end": 1473.08,
+      "text": "猜吧",
+      "no_speech_prob": 0.002,
+      "words": [
+        {
+          "word": "猜",
+          "rel_start": 5.05,
+          "rel_end": 5.64,
+          "abs_start": 1471.89,
+          "abs_end": 1472.48,
+          "probability": 0.7349
+        },
+        {
+          "word": "吧",
+          "rel_start": 5.64,
+          "rel_end": 6.24,
+          "abs_start": 1472.48,
+          "abs_end": 1473.08,
+          "probability": 0.9863
+        }
+      ]
+    }
+  ],
+  "ocr_event_count": 4,
+  "asr_segment_count": 3,
+  "fused_results": [
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 436,
+      "start_sec": 1466.0,
+      "end_sec": 1467.0,
+      "image_hash": "unknown",
+      "ocr_text": "你要给压岁钱哪",
+      "asr_text": "我能猜怎么",
+      "resolved_text": null,
+      "similarity": 0.0,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 437,
+      "start_sec": 1467.0,
+      "end_sec": 1468.0,
+      "image_hash": "unknown",
+      "ocr_text": "我能猜猜吗",
+      "asr_text": "我能猜怎么",
+      "resolved_text": null,
+      "similarity": 0.6,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1468.88,
+      "end_sec": 1470.04,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "臭父",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 438,
+      "start_sec": 1472.0,
+      "end_sec": 1473.0,
+      "image_hash": "unknown",
+      "ocr_text": "猜吧",
+      "asr_text": "猜吧",
+      "resolved_text": "猜吧",
+      "final_text": "猜吧",
+      "similarity": 0.95,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 439,
+      "start_sec": 1473.0,
+      "end_sec": 1475.0,
+      "image_hash": "unknown",
+      "ocr_text": "你至少有个妹妹",
+      "asr_text": "猜吧",
+      "resolved_text": null,
+      "similarity": 0.0,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0149_frame_50",
+  "shot_id": "shot_0149",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0149/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"A man with a short buzz cut wearing a black leather jacket over a white collared shirt\", \"A person facing away on the left wearing a dark top with a white collar\"], \"environment\": \"Indoor setting with a background wall featuring vertical Chinese calligraphy or text. The right side of the frame has superimposed Chinese text over a dark, blurry reddish-purple background.\", \"objects\": [\"Black leather jacket\", \"White collared shirt\", \"Dark top with white collar\"], \"physical_actions\": [\"Standing\", \"Looking slightly downward\"], \"uncertainty\": \"The face of the person on the left is completely obscured as they are facing away. The right side of the frame is heavily obscured by text overlays and dark blurriness.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "A man with a short buzz cut wearing a black leather jacket over a white collared shirt",
+        "A person facing away on the left wearing a dark top with a white collar"
+      ],
+      "environment": "Indoor setting with a background wall featuring vertical Chinese calligraphy or text. The right side of the frame has superimposed Chinese text over a dark, blurry reddish-purple background.",
+      "objects": [
+        "Black leather jacket",
+        "White collared shirt",
+        "Dark top with white collar"
+      ],
+      "physical_actions": [
+        "Standing",
+        "Looking slightly downward"
+      ],
+      "uncertainty": "The face of the person on the left is completely obscured as they are facing away. The right side of the frame is heavily obscured by text overlays and dark blurriness."
+    },
+    "error": null,
+    "latency_ms": 35370.26,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14824,
+      "output_tokens": 1971,
+      "thinking_tokens": 1490,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16795
+    },
+    "source_image_hash": "5a4ca0657c467092a0becb3e4028c1daf4ca6c164a09659c3b32d97d1f94f312",
+    "inference_image_hash": "44f100636237a3a3a027b24b675318976ebebf3b951c8640ba3198284463fff6",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210692.800132
+}

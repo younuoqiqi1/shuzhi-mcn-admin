@@ -1,0 +1,1206 @@
+{
+  "pair_count": 40,
+  "status": "pending_human_annotation",
+  "pairs": [
+    {
+      "pair_id": "pair_001",
+      "face_a": {
+        "face_id": "face_0008",
+        "shot_id": "shot_0026",
+        "bbox": [
+          551,
+          157,
+          314,
+          401
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_25_0008.jpg",
+        "embedding_hash": "361ab07e3e0b11d904073576e1a8ccb8cdc512e52b5f4dfb5a66faecdc94298b"
+      },
+      "face_b": {
+        "face_id": "face_0018",
+        "shot_id": "shot_0053",
+        "bbox": [
+          549,
+          82,
+          329,
+          493
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_50_0018.jpg",
+        "embedding_hash": "bf09d6e433918900e35776bd93d50da16246c3da0e3f2a8bc09ae0638ccb469e"
+      },
+      "_internal_cosine_sim": 0.6488,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_002",
+      "face_a": {
+        "face_id": "face_0009",
+        "shot_id": "shot_0026",
+        "bbox": [
+          583,
+          151,
+          315,
+          431
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_50_0009.jpg",
+        "embedding_hash": "baf208508ddfd499c5adcda6acbe0b5a6829557eec85bcaeff98a446eebcf433"
+      },
+      "face_b": {
+        "face_id": "face_0017",
+        "shot_id": "shot_0053",
+        "bbox": [
+          550,
+          103,
+          333,
+          454
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_25_0017.jpg",
+        "embedding_hash": "e9e81dc4e1d5ad373ed840ae1bc9cf77943775e141323d6b7e7d0093a70582cb"
+      },
+      "_internal_cosine_sim": 0.5809,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_003",
+      "face_a": {
+        "face_id": "face_0026",
+        "shot_id": "shot_0056",
+        "bbox": [
+          382,
+          239,
+          331,
+          427
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0056_50_0026.jpg",
+        "embedding_hash": "3e7a6beab432eb48d9d4e909dd0f7b3761a010ac50e96ff42038656a75e28ff5"
+      },
+      "face_b": {
+        "face_id": "face_0035",
+        "shot_id": "shot_0095",
+        "bbox": [
+          519,
+          182,
+          343,
+          438
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0095_25_0035.jpg",
+        "embedding_hash": "afeb0a48ab6600325e8321188a2b3200837611feb8ada0f8fc7c319414818c98"
+      },
+      "_internal_cosine_sim": 0.5491,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_004",
+      "face_a": {
+        "face_id": "face_0019",
+        "shot_id": "shot_0053",
+        "bbox": [
+          549,
+          88,
+          327,
+          461
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_75_0019.jpg",
+        "embedding_hash": "58e69dafbeb83fd1eda09c66bcad7f24fb65acf8b987211975b5866233685400"
+      },
+      "face_b": {
+        "face_id": "face_0021",
+        "shot_id": "shot_0055",
+        "bbox": [
+          447,
+          159,
+          353,
+          495
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_50_0021.jpg",
+        "embedding_hash": "b0106be3b7777ce3a8cf275deb8d153fd7f52dce5d864ea0320e558c84bd04e5"
+      },
+      "_internal_cosine_sim": 0.5729,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_005",
+      "face_a": {
+        "face_id": "face_0045",
+        "shot_id": "shot_0137",
+        "bbox": [
+          660,
+          215,
+          280,
+          340
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0137_25_0045.jpg",
+        "embedding_hash": "f4450a22f3f801c0d83043c36aeac5cf996ec3b19ac535909d6456bc6cb3d34d"
+      },
+      "face_b": {
+        "face_id": "face_0048",
+        "shot_id": "shot_0149",
+        "bbox": [
+          341,
+          154,
+          280,
+          358
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0149_75_0048.jpg",
+        "embedding_hash": "a841d1018efb7104b4f0d0a821c8aa09536c31a81bd490c5ad443bcdf3acb68a"
+      },
+      "_internal_cosine_sim": 0.0246,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_006",
+      "face_a": {
+        "face_id": "face_0009",
+        "shot_id": "shot_0026",
+        "bbox": [
+          583,
+          151,
+          315,
+          431
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_50_0009.jpg",
+        "embedding_hash": "baf208508ddfd499c5adcda6acbe0b5a6829557eec85bcaeff98a446eebcf433"
+      },
+      "face_b": {
+        "face_id": "face_0020",
+        "shot_id": "shot_0055",
+        "bbox": [
+          465,
+          166,
+          327,
+          384
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_25_0020.jpg",
+        "embedding_hash": "a9807d55e13f82b532f76d357d80ae87a366cae3967350a790a9f55b5a7e2561"
+      },
+      "_internal_cosine_sim": 0.6691,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_007",
+      "face_a": {
+        "face_id": "face_0011",
+        "shot_id": "shot_0035",
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_25_0011.jpg",
+        "embedding_hash": "9849c67b7fcb012f77603bad6acd438b2f0fd0e0cbf0d063268ccd5972da13bb"
+      },
+      "face_b": {
+        "face_id": "face_0020",
+        "shot_id": "shot_0055",
+        "bbox": [
+          465,
+          166,
+          327,
+          384
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_25_0020.jpg",
+        "embedding_hash": "a9807d55e13f82b532f76d357d80ae87a366cae3967350a790a9f55b5a7e2561"
+      },
+      "_internal_cosine_sim": 0.4115,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_008",
+      "face_a": {
+        "face_id": "face_0001",
+        "shot_id": "shot_0010",
+        "bbox": [
+          589,
+          137,
+          40,
+          54
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0010_50_0001.jpg",
+        "embedding_hash": "3636b64dce251eaeb8bb41e45f53a2c85c6be714b7fe114ddf238c8a47cd4b0d"
+      },
+      "face_b": {
+        "face_id": "face_0032",
+        "shot_id": "shot_0070",
+        "bbox": [
+          504,
+          138,
+          291,
+          381
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_25_0032.jpg",
+        "embedding_hash": "fc15005aafa5c2c1dfc4a03be183067a7c7eaa6766f558fe32f0b14a4e30085f"
+      },
+      "_internal_cosine_sim": 0.0126,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_009",
+      "face_a": {
+        "face_id": "face_0015",
+        "shot_id": "shot_0035",
+        "bbox": [
+          757,
+          145,
+          198,
+          267
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_75_0015.jpg",
+        "embedding_hash": "6f351e701deb926ebe283194a2781cb5442fd62c3650bb6421bd72007ea7a5e4"
+      },
+      "face_b": {
+        "face_id": "face_0043",
+        "shot_id": "shot_0133",
+        "bbox": [
+          586,
+          212,
+          35,
+          52
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0133_50_0043.jpg",
+        "embedding_hash": "d8a26276b123a22d796a7f080943d0a267afd9a8bf490b740941882b20ff7422"
+      },
+      "_internal_cosine_sim": 0.157,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_010",
+      "face_a": {
+        "face_id": "face_0004",
+        "shot_id": "shot_0018",
+        "bbox": [
+          548,
+          109,
+          123,
+          178
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0018_75_0004.jpg",
+        "embedding_hash": "daf7b2b717bcb4a36d6b43da16401eb6570f2876535b506f1901af59eeb6e73a"
+      },
+      "face_b": {
+        "face_id": "face_0040",
+        "shot_id": "shot_0117",
+        "bbox": [
+          293,
+          158,
+          297,
+          403
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0117_50_0040.jpg",
+        "embedding_hash": "130cf874c461713588ea6fd81254754c88252fa1996774bacde7c1dff7305d7d"
+      },
+      "_internal_cosine_sim": 0.0011,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_011",
+      "face_a": {
+        "face_id": "face_0010",
+        "shot_id": "shot_0026",
+        "bbox": [
+          585,
+          172,
+          308,
+          414
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_75_0010.jpg",
+        "embedding_hash": "e68afe81db6528301625138686bf3bb62fe53d7ee414a0a21531a17c7aa6eebc"
+      },
+      "face_b": {
+        "face_id": "face_0015",
+        "shot_id": "shot_0035",
+        "bbox": [
+          757,
+          145,
+          198,
+          267
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_75_0015.jpg",
+        "embedding_hash": "6f351e701deb926ebe283194a2781cb5442fd62c3650bb6421bd72007ea7a5e4"
+      },
+      "_internal_cosine_sim": 0.6728,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_012",
+      "face_a": {
+        "face_id": "face_0036",
+        "shot_id": "shot_0095",
+        "bbox": [
+          513,
+          196,
+          341,
+          464
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0095_50_0036.jpg",
+        "embedding_hash": "cb13b288c6b6a198cc167428a3944287cc62c01fa4e7e0ad82bb9956b7b75616"
+      },
+      "face_b": {
+        "face_id": "face_0042",
+        "shot_id": "shot_0133",
+        "bbox": [
+          513,
+          195,
+          136,
+          168
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0133_25_0042.jpg",
+        "embedding_hash": "11f0dddcb35407fd032d61a0f58b4a04ae023e782f6433f937cff06f0112befd"
+      },
+      "_internal_cosine_sim": 0.0912,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_013",
+      "face_a": {
+        "face_id": "face_0002",
+        "shot_id": "shot_0018",
+        "bbox": [
+          555,
+          173,
+          135,
+          174
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0018_25_0002.jpg",
+        "embedding_hash": "ccd9212ded372dc1004dcde95e58803d609baf9085ac9c8fda2ea3a1f3206852"
+      },
+      "face_b": {
+        "face_id": "face_0047",
+        "shot_id": "shot_0149",
+        "bbox": [
+          349,
+          164,
+          259,
+          352
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0149_50_0047.jpg",
+        "embedding_hash": "8324a99d247e7651b133756c5163d801b651de1e3d9a0034c1a4d2ec9d9240aa"
+      },
+      "_internal_cosine_sim": 0.1474,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_014",
+      "face_a": {
+        "face_id": "face_0030",
+        "shot_id": "shot_0069",
+        "bbox": [
+          621,
+          230,
+          370,
+          400
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0069_50_0030.jpg",
+        "embedding_hash": "a9b71f91fe5eb974b50c64914fee0a6f37dfb87b62b5d1a09cf24eb6e48a2863"
+      },
+      "face_b": {
+        "face_id": "face_0048",
+        "shot_id": "shot_0149",
+        "bbox": [
+          341,
+          154,
+          280,
+          358
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0149_75_0048.jpg",
+        "embedding_hash": "a841d1018efb7104b4f0d0a821c8aa09536c31a81bd490c5ad443bcdf3acb68a"
+      },
+      "_internal_cosine_sim": -0.0523,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_015",
+      "face_a": {
+        "face_id": "face_0040",
+        "shot_id": "shot_0117",
+        "bbox": [
+          293,
+          158,
+          297,
+          403
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0117_50_0040.jpg",
+        "embedding_hash": "130cf874c461713588ea6fd81254754c88252fa1996774bacde7c1dff7305d7d"
+      },
+      "face_b": {
+        "face_id": "face_0045",
+        "shot_id": "shot_0137",
+        "bbox": [
+          660,
+          215,
+          280,
+          340
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0137_25_0045.jpg",
+        "embedding_hash": "f4450a22f3f801c0d83043c36aeac5cf996ec3b19ac535909d6456bc6cb3d34d"
+      },
+      "_internal_cosine_sim": 0.2566,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_016",
+      "face_a": {
+        "face_id": "face_0013",
+        "shot_id": "shot_0035",
+        "bbox": [
+          793,
+          179,
+          194,
+          241
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_50_0013.jpg",
+        "embedding_hash": "75e9d5c74e78b1db6b87744bbc8c724e9dfe36039b60fa93816f3fac81da21ce"
+      },
+      "face_b": {
+        "face_id": "face_0041",
+        "shot_id": "shot_0117",
+        "bbox": [
+          410,
+          350,
+          102,
+          161
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0117_75_0041.jpg",
+        "embedding_hash": "a90dc085090a36424b1d9932ba2143bf4854056a08814122f07825192748b27c"
+      },
+      "_internal_cosine_sim": 0.0298,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_017",
+      "face_a": {
+        "face_id": "face_0009",
+        "shot_id": "shot_0026",
+        "bbox": [
+          583,
+          151,
+          315,
+          431
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_50_0009.jpg",
+        "embedding_hash": "baf208508ddfd499c5adcda6acbe0b5a6829557eec85bcaeff98a446eebcf433"
+      },
+      "face_b": {
+        "face_id": "face_0045",
+        "shot_id": "shot_0137",
+        "bbox": [
+          660,
+          215,
+          280,
+          340
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0137_25_0045.jpg",
+        "embedding_hash": "f4450a22f3f801c0d83043c36aeac5cf996ec3b19ac535909d6456bc6cb3d34d"
+      },
+      "_internal_cosine_sim": -0.0336,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_018",
+      "face_a": {
+        "face_id": "face_0023",
+        "shot_id": "shot_0055",
+        "bbox": [
+          479,
+          207,
+          50,
+          79
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_75_0023.jpg",
+        "embedding_hash": "2b7e367d68bbf12eee0bb3f07ddb5219fa3df90cbfc7281b34a5887ff9609cc1"
+      },
+      "face_b": {
+        "face_id": "face_0046",
+        "shot_id": "shot_0149",
+        "bbox": [
+          342,
+          170,
+          279,
+          342
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0149_25_0046.jpg",
+        "embedding_hash": "2a99a4d4ef051485ff5dfe9a88850f9202f45d6ec6f935f29db8795dad8bea37"
+      },
+      "_internal_cosine_sim": 0.1096,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_019",
+      "face_a": {
+        "face_id": "face_0034",
+        "shot_id": "shot_0070",
+        "bbox": [
+          349,
+          146,
+          349,
+          459
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_75_0034.jpg",
+        "embedding_hash": "ff032663267979f0b4ea212c304e826828e706ffcd0f5ba9d517ec29e1d2bef2"
+      },
+      "face_b": {
+        "face_id": "face_0047",
+        "shot_id": "shot_0149",
+        "bbox": [
+          349,
+          164,
+          259,
+          352
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0149_50_0047.jpg",
+        "embedding_hash": "8324a99d247e7651b133756c5163d801b651de1e3d9a0034c1a4d2ec9d9240aa"
+      },
+      "_internal_cosine_sim": 0.0225,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_020",
+      "face_a": {
+        "face_id": "face_0044",
+        "shot_id": "shot_0133",
+        "bbox": [
+          636,
+          157,
+          312,
+          389
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0133_75_0044.jpg",
+        "embedding_hash": "f9ac7f61faf691d0e85947b0c8c25f6873e8dbeb4a2dc242afbec3cffebfbec2"
+      },
+      "face_b": {
+        "face_id": "face_0045",
+        "shot_id": "shot_0137",
+        "bbox": [
+          660,
+          215,
+          280,
+          340
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0137_25_0045.jpg",
+        "embedding_hash": "f4450a22f3f801c0d83043c36aeac5cf996ec3b19ac535909d6456bc6cb3d34d"
+      },
+      "_internal_cosine_sim": 0.5507,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_021",
+      "face_a": {
+        "face_id": "face_0007",
+        "shot_id": "shot_0019",
+        "bbox": [
+          628,
+          111,
+          60,
+          66
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0019_75_0007.jpg",
+        "embedding_hash": "1025155fe5a88aa43f7dbafe31e171aeaf6b78b51ea1bb54aa9e0be8569725b4"
+      },
+      "face_b": {
+        "face_id": "face_0037",
+        "shot_id": "shot_0095",
+        "bbox": [
+          513,
+          195,
+          341,
+          462
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0095_75_0037.jpg",
+        "embedding_hash": "90e73c12c5c8f6be3c06e6b780e1282a62b191252202b9580b1cfd485cec487b"
+      },
+      "_internal_cosine_sim": 0.0569,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_022",
+      "face_a": {
+        "face_id": "face_0002",
+        "shot_id": "shot_0018",
+        "bbox": [
+          555,
+          173,
+          135,
+          174
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0018_25_0002.jpg",
+        "embedding_hash": "ccd9212ded372dc1004dcde95e58803d609baf9085ac9c8fda2ea3a1f3206852"
+      },
+      "face_b": {
+        "face_id": "face_0027",
+        "shot_id": "shot_0056",
+        "bbox": [
+          548,
+          224,
+          300,
+          368
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0056_75_0027.jpg",
+        "embedding_hash": "c7de80e5769c3d0774596afab40bcfd08820a68619224c0fc57d5e01e5c95ddb"
+      },
+      "_internal_cosine_sim": 0.1461,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_023",
+      "face_a": {
+        "face_id": "face_0011",
+        "shot_id": "shot_0035",
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_25_0011.jpg",
+        "embedding_hash": "9849c67b7fcb012f77603bad6acd438b2f0fd0e0cbf0d063268ccd5972da13bb"
+      },
+      "face_b": {
+        "face_id": "face_0034",
+        "shot_id": "shot_0070",
+        "bbox": [
+          349,
+          146,
+          349,
+          459
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_75_0034.jpg",
+        "embedding_hash": "ff032663267979f0b4ea212c304e826828e706ffcd0f5ba9d517ec29e1d2bef2"
+      },
+      "_internal_cosine_sim": 0.0817,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_024",
+      "face_a": {
+        "face_id": "face_0031",
+        "shot_id": "shot_0069",
+        "bbox": [
+          606,
+          223,
+          330,
+          391
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0069_75_0031.jpg",
+        "embedding_hash": "e89c99864b249c456810c15b26a01ad5dd1d12b8d2876293bb8039240ed2309a"
+      },
+      "face_b": {
+        "face_id": "face_0034",
+        "shot_id": "shot_0070",
+        "bbox": [
+          349,
+          146,
+          349,
+          459
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_75_0034.jpg",
+        "embedding_hash": "ff032663267979f0b4ea212c304e826828e706ffcd0f5ba9d517ec29e1d2bef2"
+      },
+      "_internal_cosine_sim": 0.6213,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_025",
+      "face_a": {
+        "face_id": "face_0014",
+        "shot_id": "shot_0035",
+        "bbox": [
+          261,
+          134,
+          208,
+          275
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_50_0014.jpg",
+        "embedding_hash": "df150c3c95f0b15b4b347d9d24e87005dec2b9e7711e223e98e003ec6a99ca9e"
+      },
+      "face_b": {
+        "face_id": "face_0025",
+        "shot_id": "shot_0056",
+        "bbox": [
+          703,
+          118,
+          186,
+          269
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0056_25_0025.jpg",
+        "embedding_hash": "6c708dcfecfbc3591054d09ad7132e431d4380b45bc94e405d6b9f2f14e06e28"
+      },
+      "_internal_cosine_sim": 0.1054,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_026",
+      "face_a": {
+        "face_id": "face_0018",
+        "shot_id": "shot_0053",
+        "bbox": [
+          549,
+          82,
+          329,
+          493
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_50_0018.jpg",
+        "embedding_hash": "bf09d6e433918900e35776bd93d50da16246c3da0e3f2a8bc09ae0638ccb469e"
+      },
+      "face_b": {
+        "face_id": "face_0021",
+        "shot_id": "shot_0055",
+        "bbox": [
+          447,
+          159,
+          353,
+          495
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_50_0021.jpg",
+        "embedding_hash": "b0106be3b7777ce3a8cf275deb8d153fd7f52dce5d864ea0320e558c84bd04e5"
+      },
+      "_internal_cosine_sim": 0.5515,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_027",
+      "face_a": {
+        "face_id": "face_0029",
+        "shot_id": "shot_0069",
+        "bbox": [
+          637,
+          232,
+          378,
+          440
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0069_25_0029.jpg",
+        "embedding_hash": "c5fe1ef954dd29c5121ddb3ec9896b7926693077ce63ff106cc5b5e54257cd3f"
+      },
+      "face_b": {
+        "face_id": "face_0033",
+        "shot_id": "shot_0070",
+        "bbox": [
+          697,
+          53,
+          317,
+          339
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_50_0033.jpg",
+        "embedding_hash": "c1834e924dfea509c3bfb015b4b685ef505b18a5d90a06d0c65101877175ba36"
+      },
+      "_internal_cosine_sim": 0.0671,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_028",
+      "face_a": {
+        "face_id": "face_0010",
+        "shot_id": "shot_0026",
+        "bbox": [
+          585,
+          172,
+          308,
+          414
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_75_0010.jpg",
+        "embedding_hash": "e68afe81db6528301625138686bf3bb62fe53d7ee414a0a21531a17c7aa6eebc"
+      },
+      "face_b": {
+        "face_id": "face_0021",
+        "shot_id": "shot_0055",
+        "bbox": [
+          447,
+          159,
+          353,
+          495
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_50_0021.jpg",
+        "embedding_hash": "b0106be3b7777ce3a8cf275deb8d153fd7f52dce5d864ea0320e558c84bd04e5"
+      },
+      "_internal_cosine_sim": 0.6632,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_029",
+      "face_a": {
+        "face_id": "face_0018",
+        "shot_id": "shot_0053",
+        "bbox": [
+          549,
+          82,
+          329,
+          493
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_50_0018.jpg",
+        "embedding_hash": "bf09d6e433918900e35776bd93d50da16246c3da0e3f2a8bc09ae0638ccb469e"
+      },
+      "face_b": {
+        "face_id": "face_0034",
+        "shot_id": "shot_0070",
+        "bbox": [
+          349,
+          146,
+          349,
+          459
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_75_0034.jpg",
+        "embedding_hash": "ff032663267979f0b4ea212c304e826828e706ffcd0f5ba9d517ec29e1d2bef2"
+      },
+      "_internal_cosine_sim": 0.0414,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_030",
+      "face_a": {
+        "face_id": "face_0002",
+        "shot_id": "shot_0018",
+        "bbox": [
+          555,
+          173,
+          135,
+          174
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0018_25_0002.jpg",
+        "embedding_hash": "ccd9212ded372dc1004dcde95e58803d609baf9085ac9c8fda2ea3a1f3206852"
+      },
+      "face_b": {
+        "face_id": "face_0011",
+        "shot_id": "shot_0035",
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_25_0011.jpg",
+        "embedding_hash": "9849c67b7fcb012f77603bad6acd438b2f0fd0e0cbf0d063268ccd5972da13bb"
+      },
+      "_internal_cosine_sim": -0.0526,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_031",
+      "face_a": {
+        "face_id": "face_0011",
+        "shot_id": "shot_0035",
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_25_0011.jpg",
+        "embedding_hash": "9849c67b7fcb012f77603bad6acd438b2f0fd0e0cbf0d063268ccd5972da13bb"
+      },
+      "face_b": {
+        "face_id": "face_0018",
+        "shot_id": "shot_0053",
+        "bbox": [
+          549,
+          82,
+          329,
+          493
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_50_0018.jpg",
+        "embedding_hash": "bf09d6e433918900e35776bd93d50da16246c3da0e3f2a8bc09ae0638ccb469e"
+      },
+      "_internal_cosine_sim": 0.4067,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_032",
+      "face_a": {
+        "face_id": "face_0019",
+        "shot_id": "shot_0053",
+        "bbox": [
+          549,
+          88,
+          327,
+          461
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_75_0019.jpg",
+        "embedding_hash": "58e69dafbeb83fd1eda09c66bcad7f24fb65acf8b987211975b5866233685400"
+      },
+      "face_b": {
+        "face_id": "face_0020",
+        "shot_id": "shot_0055",
+        "bbox": [
+          465,
+          166,
+          327,
+          384
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_25_0020.jpg",
+        "embedding_hash": "a9807d55e13f82b532f76d357d80ae87a366cae3967350a790a9f55b5a7e2561"
+      },
+      "_internal_cosine_sim": 0.6874,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_033",
+      "face_a": {
+        "face_id": "face_0005",
+        "shot_id": "shot_0019",
+        "bbox": [
+          618,
+          47,
+          153,
+          219
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0019_50_0005.jpg",
+        "embedding_hash": "a95cc770136007b7d30136e982bab3389811096626bcf92250f30e3f139ee87e"
+      },
+      "face_b": {
+        "face_id": "face_0008",
+        "shot_id": "shot_0026",
+        "bbox": [
+          551,
+          157,
+          314,
+          401
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_25_0008.jpg",
+        "embedding_hash": "361ab07e3e0b11d904073576e1a8ccb8cdc512e52b5f4dfb5a66faecdc94298b"
+      },
+      "_internal_cosine_sim": 0.0297,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_034",
+      "face_a": {
+        "face_id": "face_0028",
+        "shot_id": "shot_0056",
+        "bbox": [
+          359,
+          242,
+          150,
+          311
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0056_75_0028.jpg",
+        "embedding_hash": "f4cb044f5bf6c73fc3aebf0819144ac93c12ea7868326f82c79b915559d61fa6"
+      },
+      "face_b": {
+        "face_id": "face_0033",
+        "shot_id": "shot_0070",
+        "bbox": [
+          697,
+          53,
+          317,
+          339
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0070_50_0033.jpg",
+        "embedding_hash": "c1834e924dfea509c3bfb015b4b685ef505b18a5d90a06d0c65101877175ba36"
+      },
+      "_internal_cosine_sim": 0.1423,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_035",
+      "face_a": {
+        "face_id": "face_0015",
+        "shot_id": "shot_0035",
+        "bbox": [
+          757,
+          145,
+          198,
+          267
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_75_0015.jpg",
+        "embedding_hash": "6f351e701deb926ebe283194a2781cb5442fd62c3650bb6421bd72007ea7a5e4"
+      },
+      "face_b": {
+        "face_id": "face_0017",
+        "shot_id": "shot_0053",
+        "bbox": [
+          550,
+          103,
+          333,
+          454
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_25_0017.jpg",
+        "embedding_hash": "e9e81dc4e1d5ad373ed840ae1bc9cf77943775e141323d6b7e7d0093a70582cb"
+      },
+      "_internal_cosine_sim": 0.4932,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_036",
+      "face_a": {
+        "face_id": "face_0017",
+        "shot_id": "shot_0053",
+        "bbox": [
+          550,
+          103,
+          333,
+          454
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0053_25_0017.jpg",
+        "embedding_hash": "e9e81dc4e1d5ad373ed840ae1bc9cf77943775e141323d6b7e7d0093a70582cb"
+      },
+      "face_b": {
+        "face_id": "face_0020",
+        "shot_id": "shot_0055",
+        "bbox": [
+          465,
+          166,
+          327,
+          384
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_25_0020.jpg",
+        "embedding_hash": "a9807d55e13f82b532f76d357d80ae87a366cae3967350a790a9f55b5a7e2561"
+      },
+      "_internal_cosine_sim": 0.6231,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_037",
+      "face_a": {
+        "face_id": "face_0001",
+        "shot_id": "shot_0010",
+        "bbox": [
+          589,
+          137,
+          40,
+          54
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0010_50_0001.jpg",
+        "embedding_hash": "3636b64dce251eaeb8bb41e45f53a2c85c6be714b7fe114ddf238c8a47cd4b0d"
+      },
+      "face_b": {
+        "face_id": "face_0040",
+        "shot_id": "shot_0117",
+        "bbox": [
+          293,
+          158,
+          297,
+          403
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0117_50_0040.jpg",
+        "embedding_hash": "130cf874c461713588ea6fd81254754c88252fa1996774bacde7c1dff7305d7d"
+      },
+      "_internal_cosine_sim": 0.1385,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_038",
+      "face_a": {
+        "face_id": "face_0011",
+        "shot_id": "shot_0035",
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_25_0011.jpg",
+        "embedding_hash": "9849c67b7fcb012f77603bad6acd438b2f0fd0e0cbf0d063268ccd5972da13bb"
+      },
+      "face_b": {
+        "face_id": "face_0023",
+        "shot_id": "shot_0055",
+        "bbox": [
+          479,
+          207,
+          50,
+          79
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_75_0023.jpg",
+        "embedding_hash": "2b7e367d68bbf12eee0bb3f07ddb5219fa3df90cbfc7281b34a5887ff9609cc1"
+      },
+      "_internal_cosine_sim": 0.0676,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_039",
+      "face_a": {
+        "face_id": "face_0011",
+        "shot_id": "shot_0035",
+        "bbox": [
+          763,
+          182,
+          190,
+          255
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0035_25_0011.jpg",
+        "embedding_hash": "9849c67b7fcb012f77603bad6acd438b2f0fd0e0cbf0d063268ccd5972da13bb"
+      },
+      "face_b": {
+        "face_id": "face_0031",
+        "shot_id": "shot_0069",
+        "bbox": [
+          606,
+          223,
+          330,
+          391
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0069_75_0031.jpg",
+        "embedding_hash": "e89c99864b249c456810c15b26a01ad5dd1d12b8d2876293bb8039240ed2309a"
+      },
+      "_internal_cosine_sim": 0.0744,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    },
+    {
+      "pair_id": "pair_040",
+      "face_a": {
+        "face_id": "face_0009",
+        "shot_id": "shot_0026",
+        "bbox": [
+          583,
+          151,
+          315,
+          431
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0026_50_0009.jpg",
+        "embedding_hash": "baf208508ddfd499c5adcda6acbe0b5a6829557eec85bcaeff98a446eebcf433"
+      },
+      "face_b": {
+        "face_id": "face_0023",
+        "shot_id": "shot_0055",
+        "bbox": [
+          479,
+          207,
+          50,
+          79
+        ],
+        "crop_path": "/private/tmp/x1_1/face_crops/face_shot_0055_75_0023.jpg",
+        "embedding_hash": "2b7e367d68bbf12eee0bb3f07ddb5219fa3df90cbfc7281b34a5887ff9609cc1"
+      },
+      "_internal_cosine_sim": 0.1003,
+      "human_label": null,
+      "status": "pending_human_annotation"
+    }
+  ]
+}

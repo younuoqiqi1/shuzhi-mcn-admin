@@ -1,0 +1,44 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0018_frame_50",
+  "shot_id": "shot_0018",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0018/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"中心位置的人物，面部朝向正前方，身穿带有领章和圆形纽扣的浅色制服，头戴带有徽章的制服帽，两侧有垂下的头发或辫子。\", \"左侧边缘部分可见的人物躯干，穿着深色外套和浅色内搭。\"], \"environment\": \"非真实的数字排版或视频特效包装空间，整体呈冷紫色调。背景包含垂直的区块和边框，右侧面板上有汉字和网格点阵图案，画面整体叠加了强烈的放射状光束效果。\", \"objects\": [\"制服\", \"制服帽\", \"领章\", \"圆形纽扣\", \"帽徽\"], \"physical_actions\": [\"中心人物面向前方保持静态姿势\"], \"uncertainty\": \"画面上覆盖有强烈的放射状光效和动态模糊线条，影响了细节的清晰度；左侧人物被大幅度裁剪和遮挡，无法看到面部；背景汉字部分被裁剪。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "中心位置的人物，面部朝向正前方，身穿带有领章和圆形纽扣的浅色制服，头戴带有徽章的制服帽，两侧有垂下的头发或辫子。",
+        "左侧边缘部分可见的人物躯干，穿着深色外套和浅色内搭。"
+      ],
+      "environment": "非真实的数字排版或视频特效包装空间，整体呈冷紫色调。背景包含垂直的区块和边框，右侧面板上有汉字和网格点阵图案，画面整体叠加了强烈的放射状光束效果。",
+      "objects": [
+        "制服",
+        "制服帽",
+        "领章",
+        "圆形纽扣",
+        "帽徽"
+      ],
+      "physical_actions": [
+        "中心人物面向前方保持静态姿势"
+      ],
+      "uncertainty": "画面上覆盖有强烈的放射状光效和动态模糊线条，影响了细节的清晰度；左侧人物被大幅度裁剪和遮挡，无法看到面部；背景汉字部分被裁剪。"
+    },
+    "error": null,
+    "latency_ms": 39934.46,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 14724,
+      "output_tokens": 2251,
+      "thinking_tokens": 1906,
+      "cache_read_tokens": 28437,
+      "total_tokens": 16975
+    },
+    "source_image_hash": "f19124dae3d1c46ec7cd328d19b5ece705895c243b23a5951f2bff99f309759a",
+    "inference_image_hash": "f02b9575e2f9ef14986ad82add2d31089fb0d05a5cc76cfad91bf0383392175f",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208227.687336
+}

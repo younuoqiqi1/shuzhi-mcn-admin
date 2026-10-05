@@ -1,0 +1,42 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0070_frame_25",
+  "shot_id": "shot_0070",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0070/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名成年男性，黑色短发，穿着浅蓝色衬衫和米色背心\"], \"environment\": \"室内环境，墙壁为浅黄色，左侧墙面上挂着一幅静物画，右侧有深色木质家具\", \"objects\": [\"静物画\", \"深色木质家具\", \"深色装饰物\"], \"physical_actions\": [\"头部微微向左下倾斜\", \"视线看向左下方\"], \"uncertainty\": \"画面整体光线偏暗，左下角存在深色模糊遮挡物\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名成年男性，黑色短发，穿着浅蓝色衬衫和米色背心"
+      ],
+      "environment": "室内环境，墙壁为浅黄色，左侧墙面上挂着一幅静物画，右侧有深色木质家具",
+      "objects": [
+        "静物画",
+        "深色木质家具",
+        "深色装饰物"
+      ],
+      "physical_actions": [
+        "头部微微向左下倾斜",
+        "视线看向左下方"
+      ],
+      "uncertainty": "画面整体光线偏暗，左下角存在深色模糊遮挡物"
+    },
+    "error": null,
+    "latency_ms": 26549.35,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18566,
+      "output_tokens": 1172,
+      "thinking_tokens": 925,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19738
+    },
+    "source_image_hash": "0ca59f03f02cd3cfcca2a39a7b77b290745338c01455e4a1bc1d58010ada70fb",
+    "inference_image_hash": "17723f4ef3c735bd0b66f76fa64563533228b1e775c0ec2a51da9b9786708512",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210040.7907012
+}

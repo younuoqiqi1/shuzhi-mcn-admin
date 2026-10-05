@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0035_frame_50",
+  "shot_id": "shot_0035",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0035/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名穿着深色西服、白衬衫并打着条纹领带的短发男子，佩戴眼镜\", \"一名穿着黑色中山装、领口露出白领的短发男子，佩戴眼镜\"], \"environment\": \"背景是一面灰色的砖墙，侧面有自然光线照射，右侧边缘有深色垂直结构\", \"objects\": [\"眼镜\", \"条纹领带\", \"钢笔\"], \"physical_actions\": [\"两人站立\", \"两人均低头向下看\"], \"uncertainty\": \"无明显遮挡，画面光线充足，人物面部清晰可见\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名穿着深色西服、白衬衫并打着条纹领带的短发男子，佩戴眼镜",
+        "一名穿着黑色中山装、领口露出白领的短发男子，佩戴眼镜"
+      ],
+      "environment": "背景是一面灰色的砖墙，侧面有自然光线照射，右侧边缘有深色垂直结构",
+      "objects": [
+        "眼镜",
+        "条纹领带",
+        "钢笔"
+      ],
+      "physical_actions": [
+        "两人站立",
+        "两人均低头向下看"
+      ],
+      "uncertainty": "无明显遮挡，画面光线充足，人物面部清晰可见"
+    },
+    "error": null,
+    "latency_ms": 30449.65,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22853,
+      "output_tokens": 1209,
+      "thinking_tokens": 949,
+      "cache_read_tokens": 20303,
+      "total_tokens": 24062
+    },
+    "source_image_hash": "226f48d9550d59acfe8ab9dfb21e224e2ff714683fdcbd7fe582c5195fba0105",
+    "inference_image_hash": "5c3338551cd0ded3fae5835c8e3306710ed5b6d8fd18f44d930dc1fe14c43654",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209577.3218381
+}

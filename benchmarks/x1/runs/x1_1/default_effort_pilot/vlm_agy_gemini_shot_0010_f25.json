@@ -1,0 +1,42 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0010_frame_25",
+  "shot_id": "shot_0010",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0010/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"仰面躺着的深色头发人物，面部朝上，可见浅色衣领\", \"俯身向下的深色短发人物，呈现侧脸轮廓，穿着深色衣物\"], \"environment\": \"光线昏暗，整体呈现强烈的深蓝色调，背景带有水平横向条纹或褶皱纹理\", \"objects\": [\"浅色衣领\", \"深色上衣\"], \"physical_actions\": [\"一人仰面平躺\", \"另一人从上方俯身向下，两人面部相互贴近\"], \"uncertainty\": \"整体环境光线极暗，画面存在明显的深色阴影和噪点模糊，人物身体的大部分在画面外\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "仰面躺着的深色头发人物，面部朝上，可见浅色衣领",
+        "俯身向下的深色短发人物，呈现侧脸轮廓，穿着深色衣物"
+      ],
+      "environment": "光线昏暗，整体呈现强烈的深蓝色调，背景带有水平横向条纹或褶皱纹理",
+      "objects": [
+        "浅色衣领",
+        "深色上衣"
+      ],
+      "physical_actions": [
+        "一人仰面平躺",
+        "另一人从上方俯身向下，两人面部相互贴近"
+      ],
+      "uncertainty": "整体环境光线极暗，画面存在明显的深色阴影和噪点模糊，人物身体的大部分在画面外"
+    },
+    "error": null,
+    "latency_ms": 35716.75,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 22975,
+      "output_tokens": 2102,
+      "thinking_tokens": 1622,
+      "cache_read_tokens": 20314,
+      "total_tokens": 25077
+    },
+    "source_image_hash": "ef7b28c4a8d57811f635e1bf96d9c6b42564cbb06954feff3bb558270a989150",
+    "inference_image_hash": "c3fb6a804b58e48ab2b5a6b8a297d59c6dad5adc6bd4e6b710eda5450b4f1383",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208109.006658
+}

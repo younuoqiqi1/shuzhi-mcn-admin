@@ -1,0 +1,47 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0035_frame_25",
+  "shot_id": "shot_0035",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0035/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"左侧可见一成年男性，深色短发，佩戴金属细边框眼镜，着深色西装外套、白色衬衫，打深色领带。\", \"右侧可见一成年男性，深色短发，佩戴深色圆框眼镜，着深色排扣立领外套。\"], \"environment\": \"人物后方为一面深灰色砖块砌成的墙面，光线为带有阴影的自然侧光。\", \"objects\": [\"金属细边框眼镜\", \"深色圆框眼镜\", \"深色西装\", \"白色衬衫\", \"深色领带\", \"深色排扣立领外套\", \"别在右侧男子外套左胸口袋处的笔\"], \"physical_actions\": [\"左侧男子侧身朝向右侧，右手抬起至胸口高度并触碰领口/领带区域。\", \"右侧男子躯干朝向前方但头部向下低垂，视线朝下。\"], \"uncertainty\": \"左侧男子抬起的手臂部分超出画面边缘；画面存在轻微的模糊和噪点；右侧男子的镜片上有轻微反光；画面无严重光线过暗问题。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "左侧可见一成年男性，深色短发，佩戴金属细边框眼镜，着深色西装外套、白色衬衫，打深色领带。",
+        "右侧可见一成年男性，深色短发，佩戴深色圆框眼镜，着深色排扣立领外套。"
+      ],
+      "environment": "人物后方为一面深灰色砖块砌成的墙面，光线为带有阴影的自然侧光。",
+      "objects": [
+        "金属细边框眼镜",
+        "深色圆框眼镜",
+        "深色西装",
+        "白色衬衫",
+        "深色领带",
+        "深色排扣立领外套",
+        "别在右侧男子外套左胸口袋处的笔"
+      ],
+      "physical_actions": [
+        "左侧男子侧身朝向右侧，右手抬起至胸口高度并触碰领口/领带区域。",
+        "右侧男子躯干朝向前方但头部向下低垂，视线朝下。"
+      ],
+      "uncertainty": "左侧男子抬起的手臂部分超出画面边缘；画面存在轻微的模糊和噪点；右侧男子的镜片上有轻微反光；画面无严重光线过暗问题。"
+    },
+    "error": null,
+    "latency_ms": 43049.54,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 27178,
+      "output_tokens": 3113,
+      "thinking_tokens": 2403,
+      "cache_read_tokens": 16251,
+      "total_tokens": 30291
+    },
+    "source_image_hash": "3048065c78f91ca6f439500c1c45400154a44a0079297f2cec0fdb7cc11a832a",
+    "inference_image_hash": "be9d04ee42d6139119c6f207532046193966d066d37da1e92533af35b0e016f5",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208533.472081
+}

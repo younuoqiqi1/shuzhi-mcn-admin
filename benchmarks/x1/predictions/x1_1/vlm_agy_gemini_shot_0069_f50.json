@@ -1,0 +1,44 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0069_frame_50",
+  "shot_id": "shot_0069",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0069/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with dark wavy hair wearing a light blue and white checkered collared shirt.\"], \"environment\": \"Indoor room with wooden door frame, light walls, and a blurred background containing wooden furniture.\", \"objects\": [\"Wooden door frame\", \"Wooden furniture\", \"Red patterned fabric\", \"Wall object\"], \"physical_actions\": [\"Head turned slightly to the side\", \"Smiling slightly\", \"Looking off-camera\"], \"uncertainty\": \"The person's body below the shoulders is not visible. Background is out of focus.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with dark wavy hair wearing a light blue and white checkered collared shirt."
+      ],
+      "environment": "Indoor room with wooden door frame, light walls, and a blurred background containing wooden furniture.",
+      "objects": [
+        "Wooden door frame",
+        "Wooden furniture",
+        "Red patterned fabric",
+        "Wall object"
+      ],
+      "physical_actions": [
+        "Head turned slightly to the side",
+        "Smiling slightly",
+        "Looking off-camera"
+      ],
+      "uncertainty": "The person's body below the shoulders is not visible. Background is out of focus."
+    },
+    "error": null,
+    "latency_ms": 35838.96,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17643,
+      "output_tokens": 1342,
+      "thinking_tokens": 932,
+      "cache_read_tokens": 48725,
+      "total_tokens": 18985
+    },
+    "source_image_hash": "638e1ac1b3c1a032628ee9dca1824d914114abc420fb569dabb1707a120278bb",
+    "inference_image_hash": "a620171600c548cbf7413fd9138b70ade92dc2cbce39c07d0fe63a5c7c517c2a",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210005.002007
+}

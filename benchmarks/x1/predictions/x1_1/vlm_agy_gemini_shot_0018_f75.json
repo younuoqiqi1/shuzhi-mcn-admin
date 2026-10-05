@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0018_frame_75",
+  "shot_id": "shot_0018",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0018/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"一名深色短发人物，身穿深色西装外套，内搭白色衬衫\"], \"environment\": \"光线较暗的室内空间，右侧有冷蓝色光线，左侧墙面有网格状纹理\", \"objects\": [\"深色西装外套\", \"白色衬衫\", \"深色长方形物体（公文包或小型手提箱）\", \"带网格纹理的墙面或隔断\"], \"physical_actions\": [\"弯腰前倾\", \"头部低垂枕在交叉的手臂或双手上\"], \"uncertainty\": \"人物面部完全被手臂遮挡不可见。画面左侧前景有模糊遮挡物。画面右下方有不明显的白色纹理或文字叠加痕迹。整体光线昏暗，下半身隐入暗部。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "一名深色短发人物，身穿深色西装外套，内搭白色衬衫"
+      ],
+      "environment": "光线较暗的室内空间，右侧有冷蓝色光线，左侧墙面有网格状纹理",
+      "objects": [
+        "深色西装外套",
+        "白色衬衫",
+        "深色长方形物体（公文包或小型手提箱）",
+        "带网格纹理的墙面或隔断"
+      ],
+      "physical_actions": [
+        "弯腰前倾",
+        "头部低垂枕在交叉的手臂或双手上"
+      ],
+      "uncertainty": "人物面部完全被手臂遮挡不可见。画面左侧前景有模糊遮挡物。画面右下方有不明显的白色纹理或文字叠加痕迹。整体光线昏暗，下半身隐入暗部。"
+    },
+    "error": null,
+    "latency_ms": 31295.34,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14817,
+      "output_tokens": 1381,
+      "thinking_tokens": 1076,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16198
+    },
+    "source_image_hash": "0811f31bd9c7dab1ca6f092411ec557c59471b30f8a04655787d708c0812f2ba",
+    "inference_image_hash": "cc99db33846dff7d21bd0721d805401923d6ddecf174be4afac247989030b226",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209288.498026
+}

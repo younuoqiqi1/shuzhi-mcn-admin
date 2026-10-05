@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0018_frame_25",
+  "shot_id": "shot_0018",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0018/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"中心人物，头戴带徽军帽，身着翻领制服，左胸佩戴两枚圆形徽章\", \"左侧半透明人物，戴深色边框眼镜，穿暗色外套与浅色内搭衬衫\"], \"environment\": \"偏蓝色的复合特效空间，中间有类似相框的矩形区域，右侧可见竖排汉字及网点阵列图案，四周有放射状的光晕线条\", \"objects\": [\"军帽\", \"制服外套\", \"圆形徽章\", \"眼镜\", \"汉字字符\"], \"physical_actions\": [\"中心人物正视前方，嘴唇微张\", \"左侧人物略微侧身站立\"], \"uncertainty\": \"画面存在强烈的半透明多图层叠加、放射状光束干扰及模糊效果，左侧人物呈半透明且被部分截断\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "中心人物，头戴带徽军帽，身着翻领制服，左胸佩戴两枚圆形徽章",
+        "左侧半透明人物，戴深色边框眼镜，穿暗色外套与浅色内搭衬衫"
+      ],
+      "environment": "偏蓝色的复合特效空间，中间有类似相框的矩形区域，右侧可见竖排汉字及网点阵列图案，四周有放射状的光晕线条",
+      "objects": [
+        "军帽",
+        "制服外套",
+        "圆形徽章",
+        "眼镜",
+        "汉字字符"
+      ],
+      "physical_actions": [
+        "中心人物正视前方，嘴唇微张",
+        "左侧人物略微侧身站立"
+      ],
+      "uncertainty": "画面存在强烈的半透明多图层叠加、放射状光束干扰及模糊效果，左侧人物呈半透明且被部分截断"
+    },
+    "error": null,
+    "latency_ms": 39833.38,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 14899,
+      "output_tokens": 2350,
+      "thinking_tokens": 1782,
+      "cache_read_tokens": 28438,
+      "total_tokens": 17249
+    },
+    "source_image_hash": "1e243aaa3becca6375ced8c1928d89ce357b2a22c9d76f6ae94240ea951ca6c6",
+    "inference_image_hash": "2cbbdf54a9997897cd22a91255af407157ae10e4e7c7464a6e56c79006668e14",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208222.694582
+}

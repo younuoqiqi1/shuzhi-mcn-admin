@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0026_frame_25",
+  "shot_id": "shot_0026",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0026/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名深色短发成年男性，佩戴圆形金属细边框眼镜，身穿深蓝色立领上衣\"], \"environment\": \"室内环境，整体光线偏暗。人物后方有一张带有叶子状纹理图案的浅色布艺沙发，背景可见深色的木质家具，包含一个木柜和带有雕花的深色木质沙发框架。\", \"objects\": [\"圆形金属细边框眼镜\", \"深蓝色立领上衣\", \"浅色纹理布艺沙发\", \"深色木柜\", \"深色雕花木质框架\"], \"physical_actions\": [\"坐在沙发上\", \"双眼闭合\", \"头部微微向下倾斜\"], \"uncertainty\": \"由于背景光线较暗，深色木质家具的具体细节部分被遮蔽；图像整体具有一定的低分辨率和轻微模糊感。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名深色短发成年男性，佩戴圆形金属细边框眼镜，身穿深蓝色立领上衣"
+      ],
+      "environment": "室内环境，整体光线偏暗。人物后方有一张带有叶子状纹理图案的浅色布艺沙发，背景可见深色的木质家具，包含一个木柜和带有雕花的深色木质沙发框架。",
+      "objects": [
+        "圆形金属细边框眼镜",
+        "深蓝色立领上衣",
+        "浅色纹理布艺沙发",
+        "深色木柜",
+        "深色雕花木质框架"
+      ],
+      "physical_actions": [
+        "坐在沙发上",
+        "双眼闭合",
+        "头部微微向下倾斜"
+      ],
+      "uncertainty": "由于背景光线较暗，深色木质家具的具体细节部分被遮蔽；图像整体具有一定的低分辨率和轻微模糊感。"
+    },
+    "error": null,
+    "latency_ms": 38105.82,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 14790,
+      "output_tokens": 2693,
+      "thinking_tokens": 2133,
+      "cache_read_tokens": 28438,
+      "total_tokens": 17483
+    },
+    "source_image_hash": "f13df2e919c510abb28bc99c704a8d1a626eb732f6a9b97493c4be48e0b710a5",
+    "inference_image_hash": "49473285d73a674b088c82710e3a3ebd1a6521fa22d58dbfc296ac5f49a8653c",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208431.503382
+}

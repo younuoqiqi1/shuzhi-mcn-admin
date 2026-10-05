@@ -1,0 +1,42 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0019_frame_25",
+  "shot_id": "shot_0019",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0019/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Person with dark hair wearing a dark suit jacket\"], \"environment\": \"Dark environment with blue and purple lighting, showing a horizontal ridge on the right wall and a halftone dot pattern on the left.\", \"objects\": [\"Dark suit jacket\", \"Bright white curved graphic overlay\", \"Yellow text\"], \"physical_actions\": [\"Leaning forward\", \"Head tilted downwards\"], \"uncertainty\": \"Face is completely occluded by a bright white graphic. The image is dark, with text and graphical patterns obscuring parts of the scene.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Person with dark hair wearing a dark suit jacket"
+      ],
+      "environment": "Dark environment with blue and purple lighting, showing a horizontal ridge on the right wall and a halftone dot pattern on the left.",
+      "objects": [
+        "Dark suit jacket",
+        "Bright white curved graphic overlay",
+        "Yellow text"
+      ],
+      "physical_actions": [
+        "Leaning forward",
+        "Head tilted downwards"
+      ],
+      "uncertainty": "Face is completely occluded by a bright white graphic. The image is dark, with text and graphical patterns obscuring parts of the scene."
+    },
+    "error": null,
+    "latency_ms": 44654.19,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 14737,
+      "output_tokens": 3026,
+      "thinking_tokens": 2629,
+      "cache_read_tokens": 28438,
+      "total_tokens": 17763
+    },
+    "source_image_hash": "aca60f385d16e8bc0fb3cc9747b55640fe01b837be70e74b3c86a80796ebb6fa",
+    "inference_image_hash": "6440dff2e937f7b684e644202eec31c467c6f3b32ea0487e7205a510f74f1f09",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208302.047252
+}

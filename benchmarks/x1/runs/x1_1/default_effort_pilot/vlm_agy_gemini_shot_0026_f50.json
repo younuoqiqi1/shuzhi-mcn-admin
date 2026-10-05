@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0026_frame_50",
+  "shot_id": "shot_0026",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0026/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"短黑发成年男性，佩戴圆形金属细框眼镜，内穿白色带领内搭，外穿深蓝色立领外套，双眼闭合。\"], \"environment\": \"室内环境，光线较暗且偏暖。人物后方是带有繁复花纹的米色软包靠背及深色木质雕花家具结构。左侧后方的木柜上摆放着一个带有蓝色图案的白色瓷瓶。\", \"objects\": [\"圆形金属边框眼镜\", \"深蓝色立领外套\", \"米色花纹布艺软包\", \"深色木质雕花家具\", \"带有蓝色图案的白色瓷瓶\"], \"physical_actions\": [\"坐姿\", \"双眼闭合\", \"头部微低\"], \"uncertainty\": \"画面分辨率较低且略微模糊，整体光线偏暗；人物胸部以下身体部位及双手处于画面边界之外被裁切，无法观测。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "短黑发成年男性，佩戴圆形金属细框眼镜，内穿白色带领内搭，外穿深蓝色立领外套，双眼闭合。"
+      ],
+      "environment": "室内环境，光线较暗且偏暖。人物后方是带有繁复花纹的米色软包靠背及深色木质雕花家具结构。左侧后方的木柜上摆放着一个带有蓝色图案的白色瓷瓶。",
+      "objects": [
+        "圆形金属边框眼镜",
+        "深蓝色立领外套",
+        "米色花纹布艺软包",
+        "深色木质雕花家具",
+        "带有蓝色图案的白色瓷瓶"
+      ],
+      "physical_actions": [
+        "坐姿",
+        "双眼闭合",
+        "头部微低"
+      ],
+      "uncertainty": "画面分辨率较低且略微模糊，整体光线偏暗；人物胸部以下身体部位及双手处于画面边界之外被裁切，无法观测。"
+    },
+    "error": null,
+    "latency_ms": 32772.02,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 14812,
+      "output_tokens": 2294,
+      "thinking_tokens": 1700,
+      "cache_read_tokens": 28437,
+      "total_tokens": 17106
+    },
+    "source_image_hash": "72353169881c9c4391737064d1e19b9fd7e934774248f98cf9a2fa2665bf920b",
+    "inference_image_hash": "9b65b7e6a9c84f715313a5fb993e06a957ae23a773fee60b0f1f8e2b52444839",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208431.755362
+}

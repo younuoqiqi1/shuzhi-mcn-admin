@@ -1,0 +1,50 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0035_frame_75",
+  "shot_id": "shot_0035",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0035/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Male on left, short black hair, glasses, dark suit, white shirt, striped tie. Profile facing right.\", \"Male on right, short black hair, round glasses, black high-collared jacket, pen in pocket.\"], \"environment\": \"An area adjacent to a textured grey brick wall. Lighting comes from the left, casting shadows.\", \"objects\": [\"thin-rimmed glasses\", \"round wire-rimmed glasses\", \"dark suit jacket\", \"white collared shirt\", \"striped tie\", \"black high-collared jacket\", \"pen\", \"grey brick wall\"], \"physical_actions\": [\"standing\", \"facing right in profile\", \"facing forward with gaze directed downward\", \"mouth slightly open\"], \"uncertainty\": \"Lower bodies are not visible. Leftmost edge truncates the back of the left subject's head and shoulder. Image has low resolution.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Male on left, short black hair, glasses, dark suit, white shirt, striped tie. Profile facing right.",
+        "Male on right, short black hair, round glasses, black high-collared jacket, pen in pocket."
+      ],
+      "environment": "An area adjacent to a textured grey brick wall. Lighting comes from the left, casting shadows.",
+      "objects": [
+        "thin-rimmed glasses",
+        "round wire-rimmed glasses",
+        "dark suit jacket",
+        "white collared shirt",
+        "striped tie",
+        "black high-collared jacket",
+        "pen",
+        "grey brick wall"
+      ],
+      "physical_actions": [
+        "standing",
+        "facing right in profile",
+        "facing forward with gaze directed downward",
+        "mouth slightly open"
+      ],
+      "uncertainty": "Lower bodies are not visible. Leftmost edge truncates the back of the left subject's head and shoulder. Image has low resolution."
+    },
+    "error": null,
+    "latency_ms": 34499.6,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 22087,
+      "output_tokens": 2024,
+      "thinking_tokens": 1389,
+      "cache_read_tokens": 44686,
+      "total_tokens": 24111
+    },
+    "source_image_hash": "4ce04af66953d0f1ef5e18c929f25f87aa9f6319a06c9f22c70997d981672316",
+    "inference_image_hash": "046d472facff5e506d160cf871b6fbd88f150c431d73a8064027f0634e22ad31",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208593.854184
+}

@@ -1,0 +1,20 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0018_frame_75",
+  "shot_id": "shot_0018",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0018/frame_75.jpg",
+  "response": {
+    "raw_text": "",
+    "parsed_validation": null,
+    "error": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+    "latency_ms": 50030.23,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {},
+    "source_image_hash": "0811f31bd9c7dab1ca6f092411ec557c59471b30f8a04655787d708c0812f2ba",
+    "inference_image_hash": "cc99db33846dff7d21bd0721d805401923d6ddecf174be4afac247989030b226",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208302.385118
+}

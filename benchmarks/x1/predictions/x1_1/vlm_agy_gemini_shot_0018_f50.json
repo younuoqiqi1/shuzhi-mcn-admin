@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0018_frame_50",
+  "shot_id": "shot_0018",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0018/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"A person with dark hair in pigtails, wearing a buttoned uniform jacket, cap, and badges.\", \"A faint figure on the left, partially obscured, wearing a dark jacket over a lighter shirt.\"], \"environment\": \"A stylized composite space with a central framed image, bright light rays, text and dot patterns.\", \"objects\": [\"uniform\", \"cap\", \"badges\", \"rectangular frame\", \"text overlay\", \"dot matrix overlay\"], \"physical_actions\": [\"facing forward\"], \"uncertainty\": \"Significant obscuration due to overlaid bright radial light streaks, visual distortion and effects.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "A person with dark hair in pigtails, wearing a buttoned uniform jacket, cap, and badges.",
+        "A faint figure on the left, partially obscured, wearing a dark jacket over a lighter shirt."
+      ],
+      "environment": "A stylized composite space with a central framed image, bright light rays, text and dot patterns.",
+      "objects": [
+        "uniform",
+        "cap",
+        "badges",
+        "rectangular frame",
+        "text overlay",
+        "dot matrix overlay"
+      ],
+      "physical_actions": [
+        "facing forward"
+      ],
+      "uncertainty": "Significant obscuration due to overlaid bright radial light streaks, visual distortion and effects."
+    },
+    "error": null,
+    "latency_ms": 34696.94,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18285,
+      "output_tokens": 1812,
+      "thinking_tokens": 1347,
+      "cache_read_tokens": 48730,
+      "total_tokens": 20097
+    },
+    "source_image_hash": "f19124dae3d1c46ec7cd328d19b5ece705895c243b23a5951f2bff99f309759a",
+    "inference_image_hash": "f02b9575e2f9ef14986ad82add2d31089fb0d05a5cc76cfad91bf0383392175f",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209294.697001
+}

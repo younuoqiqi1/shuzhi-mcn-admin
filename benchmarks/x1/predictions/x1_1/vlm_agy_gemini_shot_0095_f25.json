@@ -1,0 +1,42 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0095_frame_25",
+  "shot_id": "shot_0095",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0095/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名成年男性，黑色短发向后梳理，身穿白色衬衫和浅色马甲\"], \"environment\": \"室内环境，光线集中在人物面部，背景有深色木质家具\", \"objects\": [\"深色木质柜子\", \"透明玻璃瓶\", \"中文字幕\"], \"physical_actions\": [\"嘴部张开\", \"视线看向画面左侧\"], \"uncertainty\": \"背景较暗且虚化，无法完全看清柜子上的物品及更多细节\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名成年男性，黑色短发向后梳理，身穿白色衬衫和浅色马甲"
+      ],
+      "environment": "室内环境，光线集中在人物面部，背景有深色木质家具",
+      "objects": [
+        "深色木质柜子",
+        "透明玻璃瓶",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "嘴部张开",
+        "视线看向画面左侧"
+      ],
+      "uncertainty": "背景较暗且虚化，无法完全看清柜子上的物品及更多细节"
+    },
+    "error": null,
+    "latency_ms": 41472.4,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18172,
+      "output_tokens": 1928,
+      "thinking_tokens": 1531,
+      "cache_read_tokens": 49027,
+      "total_tokens": 20100
+    },
+    "source_image_hash": "3590b011cfd769311d2a2cbba2b2f50783e273e55d005b78a8fd2eb72263a4a1",
+    "inference_image_hash": "8b717e593920a5e322fa504a1d45f6632fe917232df94e1c2e22856806469129",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210126.649055
+}

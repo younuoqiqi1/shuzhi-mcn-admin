@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0137_frame_25",
+  "shot_id": "shot_0137",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0137/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"面朝镜头的女性，留着黑色短发，身穿带白色镶边的绿色印花旗袍，佩戴吊坠耳环\", \"画面左侧背对镜头的黑发人物轮廓，仅露出部分头部和肩部\"], \"environment\": \"室内环境，光线偏暗。背景可见深色的木质楼梯或扶手结构，左上方隐约可见绿色植物。\", \"objects\": [\"绿色印花旗袍\", \"吊坠耳环\", \"木质楼梯\", \"植物\", \"中文字幕\"], \"physical_actions\": [\"面朝镜头的女性微微低头，视线偏向下方的左侧，嘴唇微张\", \"背对镜头的人物保持静止\"], \"uncertainty\": \"画面左侧被前景人物头部和肩部大面积遮挡，背景光线较暗且部分失焦，导致背景细节不够清晰。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "面朝镜头的女性，留着黑色短发，身穿带白色镶边的绿色印花旗袍，佩戴吊坠耳环",
+        "画面左侧背对镜头的黑发人物轮廓，仅露出部分头部和肩部"
+      ],
+      "environment": "室内环境，光线偏暗。背景可见深色的木质楼梯或扶手结构，左上方隐约可见绿色植物。",
+      "objects": [
+        "绿色印花旗袍",
+        "吊坠耳环",
+        "木质楼梯",
+        "植物",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "面朝镜头的女性微微低头，视线偏向下方的左侧，嘴唇微张",
+        "背对镜头的人物保持静止"
+      ],
+      "uncertainty": "画面左侧被前景人物头部和肩部大面积遮挡，背景光线较暗且部分失焦，导致背景细节不够清晰。"
+    },
+    "error": null,
+    "latency_ms": 35320.64,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14655,
+      "output_tokens": 2076,
+      "thinking_tokens": 1501,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16731
+    },
+    "source_image_hash": "15ea31d586371d027b52fb480c9853258f338264364de39c28a9882a4d62b3ed",
+    "inference_image_hash": "5013616d9ae9b179b683e438e109c699864eb7d53ba67dc6f23fbe4d6c690cce",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210611.965714
+}

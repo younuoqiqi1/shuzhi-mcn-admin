@@ -2,10 +2,10 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**X1.0: L1 自动素材理解 Benchmark (Smoke Validation / 小样摸底)**  
-当前状态：**`X1.0 awaiting_review`**  
-核心决议：**2026-10-05 完成 X1.0 真实模型小样摸底实验，交付评估报告与数据目录，状态置为 `awaiting_review`；X1 整体未通过，不进入 X1.1/X2；结果提交后严格 STOP 等待用户 Review，停止后续开发。原 A8/A9/A10 维持冻结；旧 A2–A8 保持 Legacy 工程实现口径。**  
-执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家  
+当前阶段：**X1.1: L1 自动素材理解重验与结构化基线 (Revalidation Baseline)**
+当前状态：**`X1.1 awaiting_human_review`（工程批次已完成，40 人脸标签和 45 帧事实/幻觉审核待用户）**
+核心决议：**2026-10-05 完成 X1.1 自动化工程批次推理与独立核验（45 次 Gemini low 尝试：44 成功、1 遭遇服务 503 无重试，native schema/trace/原图与推理 hash 逐帧独立核验通过 44/45=97.8%；15 母区间 47 children max 26.52s；OCR/ASR fusion 15 完成）；报告 [`docs/agent-poc/x1.1-revalidation-report.md`](docs/agent-poc/x1.1-revalidation-report.md) 已由真实汇总器重新生成（不采用 AGY 自写统计）；人工 threshold/accuracy/hallucination/WER/CER 仍 pending；完整 X1.1 尚有人工指标待闭环，不宣称科学 PASS，不说全部 X1.1 已通过；X1 整体未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold；提交后严格 STOP 等待真人审核与 Review。**
+执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
 
@@ -14,19 +14,51 @@
 | 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
 |:---|:---:|:---:|:---|
 | **X0 Technology Spike Gate** | X0 结束点 | ✅ **approved** | **2026-10-05 用户明确批准**。完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)；正式授权开启 X1.0 |
-| **X1 L1 Understanding Benchmark** | X1 节点 | 🚪 **awaiting_review (X1.0 摸底待审 / X1 整体未通过)** | 完成 15 Shot 盲抽小样摸底；真实调用本地开源模型（mlx-whisper tiny ASR、Qwen2-VL-2B 4bit、YuNet+SFace）；**因无 Gold 标注不自宣科学 PASS，缺 OCR/Fusion 等完整范围明确不是本次交付**；X1 整体未通过，严格 STOP 不进入 X1.1/X2，等待用户审核裁定 |
-| **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中 (需等待 X1 真正通过)** | 50 条多类别需求（显式/抽象/改写/对抗负例/荒谬输入）盲测检索与 INSUFFICIENT 拒识率验证 |
+| **X1 L1 Understanding Benchmark** | X1.1 节点 | 🚪 **awaiting_human_review (X1.1 工程批次完成待真人审核 / X1 整体未通过)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，native schema/trace/原图与推理 hash 逐帧独立核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；报告已由真实汇总器重新生成（不采用 AGY 自写统计）；40 人脸标签与 45 帧事实/幻觉审核等待用户，人工 threshold/accuracy/hallucination/WER/CER 仍 pending；完整 X1.1 尚有人工指标待闭环，不宣称科学 PASS，不说全部 X1.1 已通过；X1 整体未通过，不进入 50-shot Gold / X2 / A8/A9/A10，严格 STOP 等待真人审核与 Review |
+| **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中 (需等待 X1 真正通过)** | 50 条多类别需求（显式/抽象/改写/对抗负例/荒谬输入）盲测检索与 INSUFFICIENT 拒识率验证；X1 未通过前严格冻结 |
 | **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述/时间表依赖、A5 人名关键词依赖、A6 预写模板及成片伪造字幕/画面不符事故，已全面冻结，不修改其实现，不继续投入 |
 
 ---
 
-## X1.0 真实模型小样摸底交付记录 (Smoke Validation Baseline)
+## X1.1 重验基线与执行状态 (Revalidation awaiting_human_review)
+
+- **授权与执行说明**：
+  - 当前阶段状态变更为 **`X1.1 awaiting_human_review`（工程批次已完成，40 人脸标签和 45 帧事实/幻觉审核待用户）**；
+  - 报告 [`docs/agent-poc/x1.1-revalidation-report.md`](docs/agent-poc/x1.1-revalidation-report.md) 已由真实汇总器重新生成，不采用 AGY 自写统计；
+  - **真人审核材料入口**：[`review.html`](/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html)（真实本地地址：`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html`，含 40 pairs 45 帧，待真人）；
+  - 保留历史 X1.0 `awaiting_review` 记录为当时阶段终点，不改旧 A5–A8 Legacy 能力口径、不宣称用户批准 X1.0 科学通过；
+  - 人工 threshold / accuracy / hallucination / WER / CER 仍 pending；完整 X1.1 尚有人工指标待闭环，**不说全部 X1.1 已通过，不宣称科学 PASS**；
+  - **X1 整体未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold**；
+  - 本轮提交后严格 **STOP 等待真人审核与 Review**；所有“完成率/通过”指标严禁从自评推断。
+- **X1.1 四项核心工作基线与实测执行事实**：
+  1. **固定 45 代表帧与云端大模型推理 (VLM)**：
+     - 基于原 15 个盲抽 Shot（15 blind）固定的 45 个代表帧锚点（45 anchors）；
+     - 模型调用：采用 Gemini Pro low（低推理档，温度由Provider管理且未知）经由 AGY CLI 执行全部 45 次正式尝试（无商业 API、无本地模型）；
+     - 实测结果：**44 次成功，1 次遭遇服务端 503，无重试**；
+     - 独立核验：通过 Native Schema + Trace + 原图与推理 ImageHash 逐帧独立核验，合规成功 **44/45 = 97.8%**；实际包含 1 次 503 异常，严禁预写 45/45。
+  2. **镜头切分与时长控制 (Shot Splitting)**：
+     - 对原 15 个盲抽父镜头切分为 47 个子镜头（47 children / 32 cuts），实现 15 个父区间全覆盖（15 全 coverage）；
+     - 实测最长子镜头26.52秒（非人工设置上限）（三个 50+ 秒 parent 超长镜头分别切分为 9、8、7 个子镜头）；
+     - 完全基于纯视觉客观变化切分，**绝无剧情假设、绝无人名关联、绝无人工边界干预**。
+  3. **多模态台词比对 (OCR + ASR Timeline Alignment)**：
+     - 15 个母区间 OCR/ASR timeline fusion 全部完成；涵盖 90 段 existing OCR 台词数据与 90 段 existing real X1.0 ASR（mlx-whisper tiny）音频识别结果；
+     - 对齐分布情况：产生 **34 条共识 (consensus)、43 条冲突 (conflict)、13 条仅 OCR 检测到 (ocr-only)、27 条仅 ASR 检测到 (asr-only)**；
+     - 原文完整保留冲突与独立检出；**因缺乏独立真实语音/字幕真值标注（Ground Truth），缺 CER/WER 真值，绝不自宣科学 PASS**。
+  4. **人脸算法特征簇与人类审核待评 (Face Clustering & Human Review)**：
+     - 构建包含 40 组人脸相似度对比对（40 人脸 pairs），**当前处于人工标注等待用户状态**；
+     - 审核材料真实本地地址：[`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html`](/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_1-review/review.html)（含 40 pairs 45 帧，待真人）；
+     - 余弦相似度阈值（Threshold）与聚类 F1 分数待用户真人标注后校准；
+     - 45 帧客观视觉事实判定与大模型幻觉率审核（Objective 事实与幻觉审核）严格等待人类真实标签输入，系统不进行自评推断。
+
+---
+
+## X1.0 真实模型小样摸底交付记录 (Smoke Validation Baseline - 历史阶段终点)
 
 - **范围与科学性声明**：
   - 本次交付为 **X1.0 真实模型小样摸底（Smoke Validation）**，仅验证本地开源模型推理管道的可执行性与真实输出表现；
   - **因无独立 Gold 标注文档，绝不自宣科学 PASS**；
   - **缺少 macOS Vision OCR 与 OCR/ASR Timeline Fusion 等完整 X1 范围，明确声明不属于完整 X1 交付**；
-  - **X1 整体未通过，不进入 X1.1 与 X2；用户要求结果提交后严格 STOP review，全面停止后续开发，等待人工审核裁决**。
+  - **X1.0 阶段当时记录：X1 整体未通过，当时不进入 X1.1 与 X2；用户要求结果提交后严格 STOP review，全面停止后续开发，等待人工审核裁决**。
 - **报告与产物索引**：
   - 摸底评估报告：[`docs/agent-poc/x1.0-smoke-validation.md`](docs/agent-poc/x1.0-smoke-validation.md)
   - 实验产物与数据目录：[`benchmarks/x1/`](benchmarks/x1/)
@@ -35,7 +67,7 @@
   2. **语音转写 (ASR)**：真实调用本地 `mlx-whisper tiny`，15 次调用全部成功，产出 10 条有文本输出与 5 条空文本；5 条空文本原因未核验，可能无语音或 tiny 漏识别，10 条有输出不可称识别真实正确对白；WER/CER 未评定。
   3. **视觉多模态大模型 (VLM)**：真实调用本地 `Qwen2-VL-2B 4bit` 对 45 张代表帧进行结构化推理；45 帧中 **20 帧 Schema 输出成功，25 帧 rejected**（模型输出格式/结构未合规被拒）；15 个 Shot 中 **3 个 Shot 实现三帧全结构成功，12 个 Shot 包含拒识**；**所有生成的视觉语义观察待人工审核**。
   4. **人脸检测与匿名特征聚类**：采用 `YuNet + SFace`，共产生 50 次人脸检测记录，聚类生成 **31 个匿名算法特征簇**（余弦相似度阈值 0.55 尚未校准，跨镜头一致性 F1 未评定，**明确记为算法特征簇，不称 31 人**）。
-  5. **后续流程控制**：旧 A8/A9/A10 维持冻结；当前原地 STOP，不进入 X1.1，不进入 X2。
+  5. **当时流程控制**：旧 A8/A9/A10 维持冻结；当时原地 STOP，等待审核。（现已由用户明确授权开启 X1.1 重验基线）。
 
 ---
 
@@ -166,6 +198,18 @@
     - 明确因无独立 Gold 标注不自宣科学 PASS；缺少 macOS Vision OCR 与 OCR/ASR Fusion 等完整 X1 范围明确不是本次交付；
     - **X1 整体未通过，不进入 X1.1 与 X2**；交付报告 [`docs/agent-poc/x1.0-smoke-validation.md`](docs/agent-poc/x1.0-smoke-validation.md) 与数据目录 [`benchmarks/x1/`](benchmarks/x1/)；
     - 当前阶段状态变更为 **`X1.0 awaiting_review`**；响应用户明确要求结果提交后严格 STOP review，全面停止后续开发，等待用户审核。
+33. **2026-10-05**：**用户明确授权开启 X1.1，推进为 `X1.1 in_progress`**：
+    - 用户明确授权并开启 X1.1 重验工作，更新状态为 `in_progress`（45 帧仍未全完 / 真人未标注）；
+    - 确认保留历史 X1.0 `awaiting_review` 记录为当时阶段终点，不改旧 A5–A8 Legacy 能力口径，不宣称用户批准 X1.0 科学通过；
+    - 确立 X1.1 四项核心工作基线（固定 45 anchors 经 AGY CLI、镜头切分、多模态台词比对、人脸与事实审核待标）；
+    - X1 整体仍未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold。
+34. **2026-10-05**：**完成 X1.1 自动化工程批次推理与独立核验，状态变更为 `X1.1 awaiting_human_review`，严格 STOP**：
+    - 完成 45 次正式 Gemini low 全部尝试（经 AGY CLI，无商业 API、无本地模型）：实测 44 成功、1 遭遇服务 503，无重试；
+    - Native Schema + Trace + 原图与推理 Hash 逐帧独立核验成功 44/45 = 97.8%（实际记录包含 1 次 503 异常，严禁预写 45/45）；
+    - 15 母区间完成 47 children（max 26.52s，无剧情/人名/人工边界）；15 个母区间 OCR/ASR timeline fusion 全部完成（34 consensus / 43 conflict / 13 ocr-only / 27 asr-only，原文保留，缺 CER/WER 真值不宣科学 PASS）；
+    - 报告 [`docs/agent-poc/x1.1-revalidation-report.md`](docs/agent-poc/x1.1-revalidation-report.md) 已由真实汇总器重新生成，不采用 AGY 自写统计；
+    - 40 人脸 pairs 标签与 45 帧事实/幻觉审核待用户人工标注，人工 threshold/accuracy/hallucination/WER/CER 仍 pending；完整 X1.1 尚有人工指标待闭环，不说全部 X1.1 已通过；
+    - X1 整体仍未通过，X2/A8/A9/A10 维持冻结，不进入 50-shot Gold；当前原地严格 STOP 等待真人审核与 Review。
 
 
 

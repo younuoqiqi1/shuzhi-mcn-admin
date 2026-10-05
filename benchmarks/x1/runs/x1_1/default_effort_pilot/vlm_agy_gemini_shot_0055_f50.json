@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0055_frame_50",
+  "shot_id": "shot_0055",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0055/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"短黑发，戴深色镜框眼镜，身穿白色翻领衬衫的男性\"], \"environment\": \"室内空间，光线较暗，背景右侧可见类似百叶窗或水平条纹结构的模糊影像\", \"objects\": [\"深色镜框眼镜\", \"白色翻领衬衫\", \"右下角部分可见的深色物体\"], \"physical_actions\": [\"头部微向右偏转\", \"双眼闭合\", \"嘴巴微张\"], \"uncertainty\": \"背景存在明显失焦模糊，光线较暗产生局部阴影，画面右下角物体部分超出画幅无法辨认全貌，人物胸部以下未在画面中显示\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "短黑发，戴深色镜框眼镜，身穿白色翻领衬衫的男性"
+      ],
+      "environment": "室内空间，光线较暗，背景右侧可见类似百叶窗或水平条纹结构的模糊影像",
+      "objects": [
+        "深色镜框眼镜",
+        "白色翻领衬衫",
+        "右下角部分可见的深色物体"
+      ],
+      "physical_actions": [
+        "头部微向右偏转",
+        "双眼闭合",
+        "嘴巴微张"
+      ],
+      "uncertainty": "背景存在明显失焦模糊，光线较暗产生局部阴影，画面右下角物体部分超出画幅无法辨认全貌，人物胸部以下未在画面中显示"
+    },
+    "error": null,
+    "latency_ms": 32658.88,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 25686,
+      "output_tokens": 1333,
+      "thinking_tokens": 851,
+      "cache_read_tokens": 40767,
+      "total_tokens": 27019
+    },
+    "source_image_hash": "8cc5cc73df19ed25346ca45f5e9adb0066ceb9ffd322097d4cf8df31cdf4c93b",
+    "inference_image_hash": "b46b94069704ae54e27646952a0d8319f7d2f2df897d2210744d196dbf470ef2",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791204126.437623
+}

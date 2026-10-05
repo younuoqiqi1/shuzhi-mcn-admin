@@ -1,0 +1,44 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0035_frame_25",
+  "shot_id": "shot_0035",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0035/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名佩戴金属边框眼镜、留黑色短发、身穿黑色西装与白衬衫打领带的男子\", \"一名佩戴圆形黑框眼镜、留黑色短发、身穿黑色中山装的男子\"], \"environment\": \"室外，背景为一面灰色的砖墙，自然光照明\", \"objects\": [\"金属边框眼镜\", \"圆形黑框眼镜\", \"领带\", \"钢笔\"], \"physical_actions\": [\"左侧男子右手抬起触碰自己的领带，头部偏向右侧\", \"右侧男子低头向下看，双臂自然下垂\"], \"uncertainty\": \"无明显视觉障碍，右侧男子身体右侧部分在画面外\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名佩戴金属边框眼镜、留黑色短发、身穿黑色西装与白衬衫打领带的男子",
+        "一名佩戴圆形黑框眼镜、留黑色短发、身穿黑色中山装的男子"
+      ],
+      "environment": "室外，背景为一面灰色的砖墙，自然光照明",
+      "objects": [
+        "金属边框眼镜",
+        "圆形黑框眼镜",
+        "领带",
+        "钢笔"
+      ],
+      "physical_actions": [
+        "左侧男子右手抬起触碰自己的领带，头部偏向右侧",
+        "右侧男子低头向下看，双臂自然下垂"
+      ],
+      "uncertainty": "无明显视觉障碍，右侧男子身体右侧部分在画面外"
+    },
+    "error": null,
+    "latency_ms": 28613.81,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14921,
+      "output_tokens": 1415,
+      "thinking_tokens": 1132,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16336
+    },
+    "source_image_hash": "3048065c78f91ca6f439500c1c45400154a44a0079297f2cec0fdb7cc11a832a",
+    "inference_image_hash": "be9d04ee42d6139119c6f207532046193966d066d37da1e92533af35b0e016f5",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209585.0912151
+}

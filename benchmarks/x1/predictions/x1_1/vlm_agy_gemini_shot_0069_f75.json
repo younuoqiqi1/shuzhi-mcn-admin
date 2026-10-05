@@ -1,0 +1,46 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0069_frame_75",
+  "shot_id": "shot_0069",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0069/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名深色卷发披肩的女性，身穿浅蓝色与白色相间的格子衬衫，面部朝向画面左侧，嘴部微张露出牙齿。\"], \"environment\": \"室内场景，左侧可见深色木质门框或隔断，背景墙面呈米白或浅黄色。右侧背景有一张深色椅子的靠背和墙上的深色挂件。背景整体偏暗且略带模糊。\", \"objects\": [\"浅蓝色格子衬衫\", \"深色木质门框\", \"红白相间的织物（位于左侧背景深处）\", \"深色椅子靠背\", \"墙面挂件\", \"底部中文字幕\"], \"physical_actions\": [\"头部微倾\", \"嘴部微张\", \"视线朝向画面左侧\"], \"uncertainty\": \"画面底部被白色中文字幕部分遮挡，背景处于景深之外较为模糊，分辨率较低导致细节不够清晰。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名深色卷发披肩的女性，身穿浅蓝色与白色相间的格子衬衫，面部朝向画面左侧，嘴部微张露出牙齿。"
+      ],
+      "environment": "室内场景，左侧可见深色木质门框或隔断，背景墙面呈米白或浅黄色。右侧背景有一张深色椅子的靠背和墙上的深色挂件。背景整体偏暗且略带模糊。",
+      "objects": [
+        "浅蓝色格子衬衫",
+        "深色木质门框",
+        "红白相间的织物（位于左侧背景深处）",
+        "深色椅子靠背",
+        "墙面挂件",
+        "底部中文字幕"
+      ],
+      "physical_actions": [
+        "头部微倾",
+        "嘴部微张",
+        "视线朝向画面左侧"
+      ],
+      "uncertainty": "画面底部被白色中文字幕部分遮挡，背景处于景深之外较为模糊，分辨率较低导致细节不够清晰。"
+    },
+    "error": null,
+    "latency_ms": 27378.33,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18689,
+      "output_tokens": 1274,
+      "thinking_tokens": 933,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19963
+    },
+    "source_image_hash": "fbec17f7824bfc002755ea2257ee030653111b556faaa5f8ce3e220f8579f06d",
+    "inference_image_hash": "b3187297dad71a40a651e2920f16e6bb467843dd1a84916eb9838da59625c829",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210033.955799
+}

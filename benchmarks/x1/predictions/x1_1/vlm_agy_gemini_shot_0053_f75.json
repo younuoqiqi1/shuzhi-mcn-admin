@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0053_frame_75",
+  "shot_id": "shot_0053",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0053/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"A man with short black hair, glasses, white shirt, and dark suit jacket.\", \"A partially visible person wearing a light-colored top with a pink floral pattern.\"], \"environment\": \"An indoor room with dim lighting, plain walls, and blurred dark wooden furniture in the background.\", \"objects\": [\"Wire-rimmed glasses\", \"Dark suit jacket\", \"White collared shirt\", \"Light-colored floral top\", \"Dark wooden furniture\"], \"physical_actions\": [\"The man is looking upwards with his mouth slightly open.\", \"The person on the left is standing partially in the frame.\"], \"uncertainty\": \"The person on the left is partially cut off and occluding part of the frame. Background is out of focus.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "A man with short black hair, glasses, white shirt, and dark suit jacket.",
+        "A partially visible person wearing a light-colored top with a pink floral pattern."
+      ],
+      "environment": "An indoor room with dim lighting, plain walls, and blurred dark wooden furniture in the background.",
+      "objects": [
+        "Wire-rimmed glasses",
+        "Dark suit jacket",
+        "White collared shirt",
+        "Light-colored floral top",
+        "Dark wooden furniture"
+      ],
+      "physical_actions": [
+        "The man is looking upwards with his mouth slightly open.",
+        "The person on the left is standing partially in the frame."
+      ],
+      "uncertainty": "The person on the left is partially cut off and occluding part of the frame. Background is out of focus."
+    },
+    "error": null,
+    "latency_ms": 37246.51,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 24514,
+      "output_tokens": 1586,
+      "thinking_tokens": 867,
+      "cache_read_tokens": 65255,
+      "total_tokens": 26100
+    },
+    "source_image_hash": "36561bad7ca08463aa125d5163ab775ce353adc8ff750f11fb6f3a97ca471221",
+    "inference_image_hash": "ff2f4aa3a6116634fddd26dd4920f77176ec5f6b79b6620e2661997b0eb62fc1",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209666.516864
+}

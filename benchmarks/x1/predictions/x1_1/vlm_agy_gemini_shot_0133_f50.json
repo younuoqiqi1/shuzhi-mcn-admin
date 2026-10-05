@@ -1,0 +1,41 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0133_frame_50",
+  "shot_id": "shot_0133",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0133/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"full_shot\", \"characters\": [\"一名身穿黑黄相间图案长旗袍和黑色高跟鞋的黑发女性，背对镜头\", \"一名身穿深绿色花纹短袖长旗袍和黑色高跟鞋的黑发女性，背对镜头\"], \"environment\": \"户外自然环境，前景为草地与裸露土壤，中景为河流及河岸植物，背景为有树木和裸露土坡的山丘\", \"objects\": [\"一个白色手提包\"], \"physical_actions\": [\"两人在草地上并排背向镜头行走\", \"左侧女性的右手拉着右侧女性的左手\"], \"uncertainty\": \"人物背对镜头，面部特征完全遮挡不可见；画面整体分辨率较低，细节存在模糊现象\"}",
+    "parsed_validation": {
+      "camera": "full_shot",
+      "characters": [
+        "一名身穿黑黄相间图案长旗袍和黑色高跟鞋的黑发女性，背对镜头",
+        "一名身穿深绿色花纹短袖长旗袍和黑色高跟鞋的黑发女性，背对镜头"
+      ],
+      "environment": "户外自然环境，前景为草地与裸露土壤，中景为河流及河岸植物，背景为有树木和裸露土坡的山丘",
+      "objects": [
+        "一个白色手提包"
+      ],
+      "physical_actions": [
+        "两人在草地上并排背向镜头行走",
+        "左侧女性的右手拉着右侧女性的左手"
+      ],
+      "uncertainty": "人物背对镜头，面部特征完全遮挡不可见；画面整体分辨率较低，细节存在模糊现象"
+    },
+    "error": null,
+    "latency_ms": 30964.12,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17668,
+      "output_tokens": 1675,
+      "thinking_tokens": 1168,
+      "cache_read_tokens": 48853,
+      "total_tokens": 19343
+    },
+    "source_image_hash": "5543d1f9592fa98cf32aafe4d2630d32dfc40a8a5884c2b1d56d508e541c379e",
+    "inference_image_hash": "587a4e13906995e27882e9acdddb60baa5756d0de302c8965b45d85b276532ca",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210567.5990038
+}

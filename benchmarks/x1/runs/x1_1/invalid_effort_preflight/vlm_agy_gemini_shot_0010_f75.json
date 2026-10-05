@@ -1,0 +1,26 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0010_frame_75",
+  "shot_id": "shot_0010",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0010/frame_75.jpg",
+  "response": {
+    "raw_text": "",
+    "parsed_validation": null,
+    "error": "AGY CLI 退出码非零 (1): error: invalid model selection (--model \"gemini-3.1-pro-high\" --effort \"low\"): --model gemini-3.1-pro-high conflicts with --effort=low\n",
+    "latency_ms": 12679.94,
+    "model_version": "agy-cli:gemini-3.1-pro-high:effort=low",
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "thinking_tokens": 0,
+      "cache_read_tokens": 0,
+      "total_tokens": 0
+    },
+    "source_image_hash": "21fe22266ee2b42e14aec6115c42037b5edaa66e48f9e5cf72d829dd94c9b375",
+    "inference_image_hash": "e37faeb630e7da2415e51a1551ee4ccce2cdd6511651ba6907e654105f2f6811",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208868.884255
+}

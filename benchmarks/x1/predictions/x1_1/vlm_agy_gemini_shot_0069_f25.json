@@ -1,0 +1,44 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0069_frame_25",
+  "shot_id": "shot_0069",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0069/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名黑发、齐肩卷发的女性，身穿浅蓝色与白色相间的格子带领衬衫，画面可见其头部与肩部\"], \"environment\": \"室内环境，左侧背景可见深色木制边框（类似门框或屏风），右侧可见一把深色木质椅子的靠背，右上方墙面隐约可见一幅装裱好的画作或字画。光线较暗，光源似乎来自画面左侧。\", \"objects\": [\"浅蓝色与白色相间格子衬衫\", \"深色木制边框（门框/屏风）\", \"深色木质椅背\", \"字幕“干什么呀”\"], \"physical_actions\": [\"头部微低\", \"双眼闭合\", \"嘴巴微张\"], \"uncertainty\": \"画面下方有白色中文字幕“干什么呀”遮挡了人物胸前部分的衣物；背景由于景深原因处于失焦模糊状态。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名黑发、齐肩卷发的女性，身穿浅蓝色与白色相间的格子带领衬衫，画面可见其头部与肩部"
+      ],
+      "environment": "室内环境，左侧背景可见深色木制边框（类似门框或屏风），右侧可见一把深色木质椅子的靠背，右上方墙面隐约可见一幅装裱好的画作或字画。光线较暗，光源似乎来自画面左侧。",
+      "objects": [
+        "浅蓝色与白色相间格子衬衫",
+        "深色木制边框（门框/屏风）",
+        "深色木质椅背",
+        "字幕“干什么呀”"
+      ],
+      "physical_actions": [
+        "头部微低",
+        "双眼闭合",
+        "嘴巴微张"
+      ],
+      "uncertainty": "画面下方有白色中文字幕“干什么呀”遮挡了人物胸前部分的衣物；背景由于景深原因处于失焦模糊状态。"
+    },
+    "error": null,
+    "latency_ms": 33360.75,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18546,
+      "output_tokens": 1465,
+      "thinking_tokens": 1128,
+      "cache_read_tokens": 24362,
+      "total_tokens": 20011
+    },
+    "source_image_hash": "52b09696bfc2cb523b5142aa952241e00d1b8dc28dfe9abc7ea6f99b795ed95b",
+    "inference_image_hash": "ee526f790a11fd011411e69445cfe03fc21839f728b4fabafdf9fb2e6249c91c",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209996.2125592
+}

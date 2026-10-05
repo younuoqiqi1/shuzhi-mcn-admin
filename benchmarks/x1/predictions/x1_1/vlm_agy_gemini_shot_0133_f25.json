@@ -1,0 +1,48 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0133_frame_25",
+  "shot_id": "shot_0133",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0133/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"画面左侧人物：背侧面朝向镜头，黑色卷发，穿着黑底黄色图案的旗袍/上衣。\", \"画面中间人物：正面朝向镜头，黑色盘发，佩戴珍珠耳环，穿着蓝绿色花卉图案的盘扣旗袍。\", \"画面右侧人物：背侧面朝向镜头，黑色卷发，佩戴发饰和珍珠项链，外穿紫底粉色花卉图案的披肩/外衣。\", \"左侧背景模糊人物：骑在棕色马匹上。\"], \"environment\": \"户外场景，白天。地面为泥土和碎石，背景中间有一堆灰白色的石块，远景为绿色的树林和植被。\", \"objects\": [\"珍珠耳环\", \"珍珠项链\", \"发饰\", \"石块堆\", \"马匹\"], \"physical_actions\": [\"三位前景人物呈站立姿态，互相围成一圈。\", \"中间人物目光正视前方。\", \"左侧背景人物骑在马上。\"], \"uncertainty\": \"画面左右两侧的前景人物背对/侧对镜头，面部被遮挡；左侧背景中的骑马者严重失焦并伴有运动模糊，难以辨认细节；画面整体分辨率较低。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "画面左侧人物：背侧面朝向镜头，黑色卷发，穿着黑底黄色图案的旗袍/上衣。",
+        "画面中间人物：正面朝向镜头，黑色盘发，佩戴珍珠耳环，穿着蓝绿色花卉图案的盘扣旗袍。",
+        "画面右侧人物：背侧面朝向镜头，黑色卷发，佩戴发饰和珍珠项链，外穿紫底粉色花卉图案的披肩/外衣。",
+        "左侧背景模糊人物：骑在棕色马匹上。"
+      ],
+      "environment": "户外场景，白天。地面为泥土和碎石，背景中间有一堆灰白色的石块，远景为绿色的树林和植被。",
+      "objects": [
+        "珍珠耳环",
+        "珍珠项链",
+        "发饰",
+        "石块堆",
+        "马匹"
+      ],
+      "physical_actions": [
+        "三位前景人物呈站立姿态，互相围成一圈。",
+        "中间人物目光正视前方。",
+        "左侧背景人物骑在马上。"
+      ],
+      "uncertainty": "画面左右两侧的前景人物背对/侧对镜头，面部被遮挡；左侧背景中的骑马者严重失焦并伴有运动模糊，难以辨认细节；画面整体分辨率较低。"
+    },
+    "error": null,
+    "latency_ms": 34394.41,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14749,
+      "output_tokens": 1313,
+      "thinking_tokens": 898,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16062
+    },
+    "source_image_hash": "e028a40773b56e28e32501155f5176de63f20776158fdeca3a3f8082821850ca",
+    "inference_image_hash": "7638edcadc058b820f0461a411f8413443a548872b91ac94a3c70a8498b42e22",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210565.807464
+}

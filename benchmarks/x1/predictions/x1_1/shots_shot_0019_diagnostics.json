@@ -1,0 +1,90 @@
+{
+  "parent_shot_id": "shot_0019",
+  "parent_start_sec": 73.84,
+  "parent_end_sec": 76.2,
+  "parent_duration": 2.36,
+  "parameters": {
+    "content_threshold": 27.0,
+    "adaptive_threshold": 3.0,
+    "min_content_val": 27.0,
+    "min_scene_len_frames": 3,
+    "no_1_5s_forced_merge": true,
+    "no_forced_max_duration_split": true,
+    "no_manual_or_plot_cuts": true
+  },
+  "cuts": [
+    75.28
+  ],
+  "cuts_scores": [
+    {
+      "time_sec": 75.28,
+      "frame_num": 1882,
+      "content_val": 34.2401,
+      "adaptive_ratio": 8.1716
+    }
+  ],
+  "scores_sampled": [
+    {
+      "time_sec": 75.28,
+      "frame_num": 1882,
+      "content_val": 34.2401,
+      "adaptive_ratio": 8.1716
+    }
+  ],
+  "children_count": 2,
+  "children": [
+    {
+      "child_id": "shot_0019_c001",
+      "parent_shot_id": "shot_0019",
+      "start_sec": 73.84,
+      "end_sec": 75.28,
+      "duration": 1.44,
+      "review_frames": {
+        "start": 73.84,
+        "mid": 74.56,
+        "end": 75.24
+      },
+      "review_frame_indices": {
+        "start_sec": 73.84,
+        "mid_sec": 74.56,
+        "end_sec": 75.28
+      }
+    },
+    {
+      "child_id": "shot_0019_c002",
+      "parent_shot_id": "shot_0019",
+      "start_sec": 75.28,
+      "end_sec": 76.2,
+      "duration": 0.92,
+      "review_frames": {
+        "start": 75.28,
+        "mid": 75.74,
+        "end": 76.16
+      },
+      "review_frame_indices": {
+        "start_sec": 75.28,
+        "mid_sec": 75.74,
+        "end_sec": 76.2
+      }
+    }
+  ],
+  "coverage_verified": true,
+  "full_interval_coverage": {
+    "verified": true,
+    "parent_start_sec": 73.84,
+    "parent_end_sec": 76.2,
+    "contact_sheet_pages": [
+      "/private/tmp/x1_1/contact_sheets/shot_0019_5fps_p001.jpg"
+    ],
+    "contact_sheet_coverage_start_sec": 73.84,
+    "contact_sheet_coverage_end_sec": 76.04,
+    "contact_sheet_coverage_duration_sec": 2.2,
+    "total_sampled_frames": 12,
+    "total_pages": 1
+  },
+  "contact_sheet_path": "/private/tmp/x1_1/contact_sheets/shot_0019_5fps_p001.jpg",
+  "contact_sheet_pages": [
+    "/private/tmp/x1_1/contact_sheets/shot_0019_5fps_p001.jpg"
+  ],
+  "raw_diagnostics_notes": "阈值 (content_threshold=27.0, adaptive_threshold=3.0, min_content_val=27.0) 均来自通用镜头检测标准对齐默认值，未用人工Gold特定调参，消除固定机位下微小运动导致的虚假硬切；未来人工 usable rate 仍待人工审核判定。"
+}

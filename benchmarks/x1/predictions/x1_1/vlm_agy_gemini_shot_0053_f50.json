@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0053_frame_50",
+  "shot_id": "shot_0053",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0053/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"A man with short black hair wearing round glasses, a white collared shirt, and a black jacket.\"], \"environment\": \"Indoor setting with dark walls and out-of-focus dark wooden furniture in the background.\", \"objects\": [\"Glasses\", \"White collared shirt\", \"Black jacket\", \"Floral patterned fabric\", \"Subtitle text\"], \"physical_actions\": [\"Looking slightly upwards and towards frame left.\"], \"uncertainty\": \"The left side of the frame is heavily occluded by a floral patterned fabric. The background is out of focus and somewhat dark.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "A man with short black hair wearing round glasses, a white collared shirt, and a black jacket."
+      ],
+      "environment": "Indoor setting with dark walls and out-of-focus dark wooden furniture in the background.",
+      "objects": [
+        "Glasses",
+        "White collared shirt",
+        "Black jacket",
+        "Floral patterned fabric",
+        "Subtitle text"
+      ],
+      "physical_actions": [
+        "Looking slightly upwards and towards frame left."
+      ],
+      "uncertainty": "The left side of the frame is heavily occluded by a floral patterned fabric. The background is out of focus and somewhat dark."
+    },
+    "error": null,
+    "latency_ms": 24106.72,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18659,
+      "output_tokens": 880,
+      "thinking_tokens": 636,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19539
+    },
+    "source_image_hash": "5953e970838fcef4f3b9dd15af1b186eb5f13bf0daaac5711367d6cc8a08c84a",
+    "inference_image_hash": "3222af7f0c0dd0bd724e159ad605ade7ae0cf80d2739f6962454ad6cadad8975",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209645.537717
+}

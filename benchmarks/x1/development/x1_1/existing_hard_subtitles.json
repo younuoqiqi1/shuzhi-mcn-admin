@@ -1,0 +1,7715 @@
+[
+  {
+    "start_sec" : 3,
+    "text" : "畏 区 炉",
+    "end_timecode" : "00:00:04.000",
+    "index" : 1,
+    "confidence" : 0.433,
+    "start_timecode" : "00:00:03.000",
+    "end_sec" : 4
+  },
+  {
+    "start_sec" : 4,
+    "text" : "张宏震 区念中 陈炜",
+    "end_timecode" : "00:00:05.000",
+    "index" : 2,
+    "confidence" : 1,
+    "start_timecode" : "00:00:04.000",
+    "end_sec" : 5
+  },
+  {
+    "start_sec" : 5,
+    "text" : "张宏 区念中 陈炜",
+    "end_timecode" : "00:00:06.000",
+    "index" : 3,
+    "confidence" : 0.833,
+    "start_timecode" : "00:00:05.000",
+    "end_sec" : 6
+  },
+  {
+    "start_sec" : 6,
+    "text" : "张宏震 区念中 陈炜",
+    "end_timecode" : "00:00:07.000",
+    "index" : 4,
+    "confidence" : 1,
+    "start_timecode" : "00:00:06.000",
+    "end_sec" : 7
+  },
+  {
+    "start_sec" : 8,
+    "text" : "张靜",
+    "end_timecode" : "00:00:09.000",
+    "index" : 5,
+    "confidence" : 0.5,
+    "start_timecode" : "00:00:08.000",
+    "end_sec" : 9
+  },
+  {
+    "start_sec" : 9,
+    "text" : "张静",
+    "end_timecode" : "00:00:10.000",
+    "index" : 6,
+    "confidence" : 1,
+    "start_timecode" : "00:00:09.000",
+    "end_sec" : 10
+  },
+  {
+    "start_sec" : 13,
+    "text" : "尼血制 余瑞金",
+    "end_timecode" : "00:00:14.000",
+    "index" : 7,
+    "confidence" : 0.65,
+    "start_timecode" : "00:00:13.000",
+    "end_sec" : 14
+  },
+  {
+    "start_sec" : 14,
+    "text" : "心區制 余瑞金",
+    "end_timecode" : "00:00:15.000",
+    "index" : 8,
+    "confidence" : 0.4,
+    "start_timecode" : "00:00:14.000",
+    "end_sec" : 15
+  },
+  {
+    "start_sec" : 15,
+    "text" : "心监制 余瑞金 陆群",
+    "end_timecode" : "00:00:16.000",
+    "index" : 9,
+    "confidence" : 0.767,
+    "start_timecode" : "00:00:15.000",
+    "end_sec" : 16
+  },
+  {
+    "start_sec" : 16,
+    "text" : "华明",
+    "end_timecode" : "00:00:17.000",
+    "index" : 10,
+    "confidence" : 0.3,
+    "start_timecode" : "00:00:16.000",
+    "end_sec" : 17
+  },
+  {
+    "start_sec" : 17,
+    "text" : "华明 何继昌",
+    "end_timecode" : "00:00:18.000",
+    "index" : 11,
+    "confidence" : 0.4,
+    "start_timecode" : "00:00:17.000",
+    "end_sec" : 18
+  },
+  {
+    "start_sec" : 18,
+    "text" : "何继昌",
+    "end_timecode" : "00:00:19.000",
+    "index" : 12,
+    "confidence" : 1,
+    "start_timecode" : "00:00:18.000",
+    "end_sec" : 19
+  },
+  {
+    "start_sec" : 19,
+    "text" : "华明 何继昌",
+    "end_timecode" : "00:00:20.000",
+    "index" : 13,
+    "confidence" : 1,
+    "start_timecode" : "00:00:19.000",
+    "end_sec" : 20
+  },
+  {
+    "start_sec" : 21,
+    "text" : "卢锋 王海涛",
+    "end_timecode" : "00:00:22.000",
+    "index" : 14,
+    "confidence" : 0.3,
+    "start_timecode" : "00:00:21.000",
+    "end_sec" : 22
+  },
+  {
+    "start_sec" : 22,
+    "text" : "宋 卢锋 王海涛",
+    "end_timecode" : "00:00:24.000",
+    "index" : 15,
+    "confidence" : 0.45,
+    "start_timecode" : "00:00:22.000",
+    "end_sec" : 24
+  },
+  {
+    "start_sec" : 24,
+    "text" : "×J 卢锋 王",
+    "end_timecode" : "00:00:25.000",
+    "index" : 16,
+    "confidence" : 0.3,
+    "start_timecode" : "00:00:24.000",
+    "end_sec" : 25
+  },
+  {
+    "start_sec" : 32,
+    "text" : "同有小沈以細",
+    "end_timecode" : "00:00:33.000",
+    "index" : 17,
+    "confidence" : 0.3,
+    "start_timecode" : "00:00:32.000",
+    "end_sec" : 33
+  },
+  {
+    "start_sec" : 33,
+    "text" : "根据公同省小玩以细",
+    "end_timecode" : "00:00:34.000",
+    "index" : 18,
+    "confidence" : 0.3,
+    "start_timecode" : "00:00:33.000",
+    "end_sec" : 34
+  },
+  {
+    "start_sec" : 34,
+    "text" : "根据龙一同名小说改编",
+    "end_timecode" : "00:00:35.000",
+    "index" : 19,
+    "confidence" : 0.3,
+    "start_timecode" : "00:00:34.000",
+    "end_sec" : 35
+  },
+  {
+    "start_sec" : 48,
+    "text" : "7100P 130 孙红雷 姚晨",
+    "end_timecode" : "00:00:49.000",
+    "index" : 20,
+    "confidence" : 0.767,
+    "start_timecode" : "00:00:48.000",
+    "end_sec" : 49
+  },
+  {
+    "start_sec" : 49,
+    "text" : "干 孙红雷 姚晨",
+    "end_timecode" : "00:00:50.000",
+    "index" : 21,
+    "confidence" : 0.767,
+    "start_timecode" : "00:00:49.000",
+    "end_sec" : 50
+  },
+  {
+    "start_sec" : 50,
+    "text" : "孙红雷 姚晨",
+    "end_timecode" : "00:00:51.000",
+    "index" : 22,
+    "confidence" : 1,
+    "start_timecode" : "00:00:50.000",
+    "end_sec" : 51
+  },
+  {
+    "start_sec" : 65,
+    "text" : "姜伟",
+    "end_timecode" : "00:01:08.000",
+    "index" : 23,
+    "confidence" : 1,
+    "start_timecode" : "00:01:05.000",
+    "end_sec" : 68
+  },
+  {
+    "start_sec" : 69,
+    "text" : "张译水",
+    "end_timecode" : "00:01:10.000",
+    "index" : 24,
+    "confidence" : 0.5,
+    "start_timecode" : "00:01:09.000",
+    "end_sec" : 70
+  },
+  {
+    "start_sec" : 70,
+    "text" : "摄",
+    "end_timecode" : "00:01:11.000",
+    "index" : 25,
+    "confidence" : 1,
+    "start_timecode" : "00:01:10.000",
+    "end_sec" : 71
+  },
+  {
+    "start_sec" : 71,
+    "text" : "张译水",
+    "end_timecode" : "00:01:12.000",
+    "index" : 26,
+    "confidence" : 1,
+    "start_timecode" : "00:01:11.000",
+    "end_sec" : 72
+  },
+  {
+    "start_sec" : 74,
+    "text" : "水目 王然 冯震",
+    "end_timecode" : "00:01:17.000",
+    "index" : 27,
+    "confidence" : 0.4,
+    "start_timecode" : "00:01:14.000",
+    "end_sec" : 77
+  },
+  {
+    "start_sec" : 78,
+    "text" : "美不 李继麟",
+    "end_timecode" : "00:01:21.000",
+    "index" : 28,
+    "confidence" : 0.717,
+    "start_timecode" : "00:01:18.000",
+    "end_sec" : 81
+  },
+  {
+    "start_sec" : 82,
+    "text" : "葆 韩",
+    "end_timecode" : "00:01:23.000",
+    "index" : 29,
+    "confidence" : 1,
+    "start_timecode" : "00:01:22.000",
+    "end_sec" : 83
+  },
+  {
+    "start_sec" : 83,
+    "text" : "韩 葆",
+    "end_timecode" : "00:01:25.000",
+    "index" : 30,
+    "confidence" : 1,
+    "start_timecode" : "00:01:23.000",
+    "end_sec" : 85
+  },
+  {
+    "start_sec" : 86,
+    "text" : "男辑 周新霞",
+    "end_timecode" : "00:01:29.000",
+    "index" : 31,
+    "confidence" : 0.717,
+    "start_timecode" : "00:01:26.000",
+    "end_sec" : 89
+  },
+  {
+    "start_sec" : 90,
+    "text" : "寻凍 姜伟 付玮",
+    "end_timecode" : "00:01:31.000",
+    "index" : 32,
+    "confidence" : 0.3,
+    "start_timecode" : "00:01:30.000",
+    "end_sec" : 91
+  },
+  {
+    "start_sec" : 91,
+    "text" : "亍凍 《姜伟 付玮",
+    "end_timecode" : "00:01:32.000",
+    "index" : 33,
+    "confidence" : 0.3,
+    "start_timecode" : "00:01:31.000",
+    "end_sec" : 92
+  },
+  {
+    "start_sec" : 92,
+    "text" : "姜伟 付玮",
+    "end_timecode" : "00:01:33.000",
+    "index" : 34,
+    "confidence" : 0.3,
+    "start_timecode" : "00:01:32.000",
+    "end_sec" : 93
+  },
+  {
+    "start_sec" : 93,
+    "text" : "付玮",
+    "end_timecode" : "00:01:34.000",
+    "index" : 35,
+    "confidence" : 0.3,
+    "start_timecode" : "00:01:33.000",
+    "end_sec" : 94
+  },
+  {
+    "start_sec" : 98,
+    "text" : "第18集 （粤）剧审字（2008）第038号",
+    "end_timecode" : "00:01:40.000",
+    "index" : 36,
+    "confidence" : 0.625,
+    "start_timecode" : "00:01:38.000",
+    "end_sec" : 100
+  },
+  {
+    "start_sec" : 102,
+    "text" : "陆桥山这回可能够戗了",
+    "end_timecode" : "00:01:43.000",
+    "index" : 37,
+    "confidence" : 1,
+    "start_timecode" : "00:01:42.000",
+    "end_sec" : 103
+  },
+  {
+    "start_sec" : 105,
+    "text" : "会杀他吗",
+    "end_timecode" : "00:01:46.000",
+    "index" : 38,
+    "confidence" : 1,
+    "start_timecode" : "00:01:45.000",
+    "end_sec" : 106
+  },
+  {
+    "start_sec" : 107,
+    "text" : "难说",
+    "end_timecode" : "00:01:48.000",
+    "index" : 39,
+    "confidence" : 1,
+    "start_timecode" : "00:01:47.000",
+    "end_sec" : 108
+  },
+  {
+    "start_sec" : 109,
+    "text" : "保密局家规很严",
+    "end_timecode" : "00:01:50.000",
+    "index" : 40,
+    "confidence" : 1,
+    "start_timecode" : "00:01:49.000",
+    "end_sec" : 110
+  },
+  {
+    "start_sec" : 110,
+    "text" : "特别是对这种吃里爬外的人",
+    "end_timecode" : "00:01:52.000",
+    "index" : 41,
+    "confidence" : 1,
+    "start_timecode" : "00:01:50.000",
+    "end_sec" : 112
+  },
+  {
+    "start_sec" : 115,
+    "text" : "那李涯也鬼得很 你得防着他",
+    "end_timecode" : "00:01:57.000",
+    "index" : 42,
+    "confidence" : 1,
+    "start_timecode" : "00:01:55.000",
+    "end_sec" : 117
+  },
+  {
+    "start_sec" : 124,
+    "text" : "是我 是我",
+    "end_timecode" : "00:02:05.000",
+    "index" : 43,
+    "confidence" : 1,
+    "start_timecode" : "00:02:04.000",
+    "end_sec" : 125
+  },
+  {
+    "start_sec" : 125,
+    "text" : "陆太太",
+    "end_timecode" : "00:02:07.000",
+    "index" : 44,
+    "confidence" : 1,
+    "start_timecode" : "00:02:05.000",
+    "end_sec" : 127
+  },
+  {
+    "start_sec" : 131,
+    "text" : "则成 我知道出事了",
+    "end_timecode" : "00:02:13.000",
+    "index" : 45,
+    "confidence" : 0.5,
+    "start_timecode" : "00:02:11.000",
+    "end_sec" : 133
+  },
+  {
+    "start_sec" : 135,
+    "text" : "老陆打电话回来说 他回不来了",
+    "end_timecode" : "00:02:18.000",
+    "index" : 46,
+    "confidence" : 0.667,
+    "start_timecode" : "00:02:15.000",
+    "end_sec" : 138
+  },
+  {
+    "start_sec" : 138,
+    "text" : "他让我来找你",
+    "end_timecode" : "00:02:19.000",
+    "index" : 47,
+    "confidence" : 1,
+    "start_timecode" : "00:02:18.000",
+    "end_sec" : 139
+  },
+  {
+    "start_sec" : 139,
+    "text" : "你帮帮他",
+    "end_timecode" : "00:02:20.000",
+    "index" : 48,
+    "confidence" : 1,
+    "start_timecode" : "00:02:19.000",
+    "end_sec" : 140
+  },
+  {
+    "start_sec" : 141,
+    "text" : "嫂子 你别着急 你慢慢说",
+    "end_timecode" : "00:02:22.000",
+    "index" : 49,
+    "confidence" : 1,
+    "start_timecode" : "00:02:21.000",
+    "end_sec" : 142
+  },
+  {
+    "start_sec" : 144,
+    "text" : "李涯把他给算计了",
+    "end_timecode" : "00:02:25.000",
+    "index" : 50,
+    "confidence" : 1,
+    "start_timecode" : "00:02:24.000",
+    "end_sec" : 145
+  },
+  {
+    "start_sec" : 145,
+    "text" : "则成 你要是再不帮他",
+    "end_timecode" : "00:02:27.000",
+    "index" : 51,
+    "confidence" : 0.75,
+    "start_timecode" : "00:02:25.000",
+    "end_sec" : 147
+  },
+  {
+    "start_sec" : 150,
+    "text" : "你跟站长太太说得上话",
+    "end_timecode" : "00:02:31.000",
+    "index" : 52,
+    "confidence" : 0.5,
+    "start_timecode" : "00:02:30.000",
+    "end_sec" : 151
+  },
+  {
+    "start_sec" : 151,
+    "text" : "你也帮帮他呀",
+    "end_timecode" : "00:02:33.000",
+    "index" : 53,
+    "confidence" : 1,
+    "start_timecode" : "00:02:31.000",
+    "end_sec" : 153
+  },
+  {
+    "start_sec" : 154,
+    "text" : "我们感恩戴德",
+    "end_timecode" : "00:02:35.000",
+    "index" : 54,
+    "confidence" : 1,
+    "start_timecode" : "00:02:34.000",
+    "end_sec" : 155
+  },
+  {
+    "start_sec" : 156,
+    "text" : "别嫂子你别这样",
+    "end_timecode" : "00:02:37.000",
+    "index" : 55,
+    "confidence" : 1,
+    "start_timecode" : "00:02:36.000",
+    "end_sec" : 157
+  },
+  {
+    "start_sec" : 157,
+    "text" : "你快起来 你快起来",
+    "end_timecode" : "00:02:38.000",
+    "index" : 56,
+    "confidence" : 1,
+    "start_timecode" : "00:02:37.000",
+    "end_sec" : 158
+  },
+  {
+    "start_sec" : 158,
+    "text" : "不",
+    "end_timecode" : "00:02:39.000",
+    "index" : 57,
+    "confidence" : 1,
+    "start_timecode" : "00:02:38.000",
+    "end_sec" : 159
+  },
+  {
+    "start_sec" : 159,
+    "text" : "陆太太 你 我来想办法",
+    "end_timecode" : "00:02:41.000",
+    "index" : 58,
+    "confidence" : 0.5,
+    "start_timecode" : "00:02:39.000",
+    "end_sec" : 161
+  },
+  {
+    "start_sec" : 161,
+    "text" : "你先起来 你先起来",
+    "end_timecode" : "00:02:42.000",
+    "index" : 59,
+    "confidence" : 0.5,
+    "start_timecode" : "00:02:41.000",
+    "end_sec" : 162
+  },
+  {
+    "start_sec" : 163,
+    "text" : "您消消气 别生气了气坏了身子",
+    "end_timecode" : "00:02:45.000",
+    "index" : 60,
+    "confidence" : 0.5,
+    "start_timecode" : "00:02:43.000",
+    "end_sec" : 165
+  },
+  {
+    "start_sec" : 168,
+    "text" : "我是这么想的 站长",
+    "end_timecode" : "00:02:49.000",
+    "index" : 61,
+    "confidence" : 0.5,
+    "start_timecode" : "00:02:48.000",
+    "end_sec" : 169
+  },
+  {
+    "start_sec" : 171,
+    "text" : "陆桥山出现了这样的问题",
+    "end_timecode" : "00:02:53.000",
+    "index" : 62,
+    "confidence" : 1,
+    "start_timecode" : "00:02:51.000",
+    "end_sec" : 173
+  },
+  {
+    "start_sec" : 173,
+    "text" : "只能算是不忠于保密局",
+    "end_timecode" : "00:02:56.000",
+    "index" : 63,
+    "confidence" : 1,
+    "start_timecode" : "00:02:53.000",
+    "end_sec" : 176
+  },
+  {
+    "start_sec" : 177,
+    "text" : "但他对党国还是很忠诚的",
+    "end_timecode" : "00:02:59.000",
+    "index" : 64,
+    "confidence" : 1,
+    "start_timecode" : "00:02:57.000",
+    "end_sec" : 179
+  },
+  {
+    "start_sec" : 179,
+    "text" : "毕竟他没有把消息泄露给中共嘛",
+    "end_timecode" : "00:03:02.000",
+    "index" : 65,
+    "confidence" : 1,
+    "start_timecode" : "00:02:59.000",
+    "end_sec" : 182
+  },
+  {
+    "start_sec" : 183,
+    "text" : "警备司令部那边走漏了风声",
+    "end_timecode" : "00:03:05.000",
+    "index" : 66,
+    "confidence" : 0.75,
+    "start_timecode" : "00:03:03.000",
+    "end_sec" : 185
+  },
+  {
+    "start_sec" : 185,
+    "text" : "泄露了消息 行动落空",
+    "end_timecode" : "00:03:07.000",
+    "index" : 67,
+    "confidence" : 0.5,
+    "start_timecode" : "00:03:05.000",
+    "end_sec" : 187
+  },
+  {
+    "start_sec" : 188,
+    "text" : "那只能说明他们内部有奸细",
+    "end_timecode" : "00:03:10.000",
+    "index" : 68,
+    "confidence" : 1,
+    "start_timecode" : "00:03:08.000",
+    "end_sec" : 190
+  },
+  {
+    "start_sec" : 190,
+    "text" : "陆桥山只是间接责任",
+    "end_timecode" : "00:03:13.000",
+    "index" : 69,
+    "confidence" : 1,
+    "start_timecode" : "00:03:10.000",
+    "end_sec" : 193
+  },
+  {
+    "start_sec" : 193,
+    "text" : "这就是私欲膨胀",
+    "end_timecode" : "00:03:15.000",
+    "index" : 70,
+    "confidence" : 1,
+    "start_timecode" : "00:03:13.000",
+    "end_sec" : 195
+  },
+  {
+    "start_sec" : 196,
+    "text" : "拿着党国的利益官报私仇",
+    "end_timecode" : "00:03:18.000",
+    "index" : 71,
+    "confidence" : 1,
+    "start_timecode" : "00:03:16.000",
+    "end_sec" : 198
+  },
+  {
+    "start_sec" : 200,
+    "text" : "没能抓住深海和北方一号",
+    "end_timecode" : "00:03:22.000",
+    "index" : 72,
+    "confidence" : 1,
+    "start_timecode" : "00:03:20.000",
+    "end_sec" : 202
+  },
+  {
+    "start_sec" : 204,
+    "text" : "我们确实是失去了",
+    "end_timecode" : "00:03:25.000",
+    "index" : 73,
+    "confidence" : 1,
+    "start_timecode" : "00:03:24.000",
+    "end_sec" : 205
+  },
+  {
+    "start_sec" : 205,
+    "text" : "立功的绝好机会",
+    "end_timecode" : "00:03:27.000",
+    "index" : 74,
+    "confidence" : 1,
+    "start_timecode" : "00:03:25.000",
+    "end_sec" : 207
+  },
+  {
+    "start_sec" : 208,
+    "text" : "可是此事万万不可张扬啊",
+    "end_timecode" : "00:03:30.000",
+    "index" : 75,
+    "confidence" : 1,
+    "start_timecode" : "00:03:28.000",
+    "end_sec" : 210
+  },
+  {
+    "start_sec" : 210,
+    "text" : "尤其不能让其他省站知道",
+    "end_timecode" : "00:03:32.000",
+    "index" : 76,
+    "confidence" : 1,
+    "start_timecode" : "00:03:30.000",
+    "end_sec" : 212
+  },
+  {
+    "start_sec" : 215,
+    "text" : "我怀疑袁佩林的案子",
+    "end_timecode" : "00:03:37.000",
+    "index" : 77,
+    "confidence" : 1,
+    "start_timecode" : "00:03:35.000",
+    "end_sec" : 217
+  },
+  {
+    "start_sec" : 218,
+    "text" : "也坏在陆桥山的身上",
+    "end_timecode" : "00:03:39.000",
+    "index" : 78,
+    "confidence" : 1,
+    "start_timecode" : "00:03:38.000",
+    "end_sec" : 219
+  },
+  {
+    "start_sec" : 221,
+    "text" : "让这些事快点过去吧",
+    "end_timecode" : "00:03:42.000",
+    "index" : 79,
+    "confidence" : 0.5,
+    "start_timecode" : "00:03:41.000",
+    "end_sec" : 222
+  },
+  {
+    "start_sec" : 223,
+    "text" : "最好是密件上报总部",
+    "end_timecode" : "00:03:45.000",
+    "index" : 80,
+    "confidence" : 1,
+    "start_timecode" : "00:03:43.000",
+    "end_sec" : 225
+  },
+  {
+    "start_sec" : 226,
+    "text" : "怎么处理陆桥山 推给郑介民",
+    "end_timecode" : "00:03:49.000",
+    "index" : 81,
+    "confidence" : 1,
+    "start_timecode" : "00:03:46.000",
+    "end_sec" : 229
+  },
+  {
+    "start_sec" : 229,
+    "text" : "他们关系好 看他怎么处理",
+    "end_timecode" : "00:03:51.000",
+    "index" : 82,
+    "confidence" : 0.5,
+    "start_timecode" : "00:03:49.000",
+    "end_sec" : 231
+  },
+  {
+    "start_sec" : 232,
+    "text" : "您要是处理",
+    "end_timecode" : "00:03:53.000",
+    "index" : 83,
+    "confidence" : 1,
+    "start_timecode" : "00:03:52.000",
+    "end_sec" : 233
+  },
+  {
+    "start_sec" : 235,
+    "text" : "很难说郑局长会怎么想",
+    "end_timecode" : "00:03:58.000",
+    "index" : 84,
+    "confidence" : 1,
+    "start_timecode" : "00:03:55.000",
+    "end_sec" : 238
+  },
+  {
+    "start_sec" : 238,
+    "text" : "到时候扔过一双小鞋来",
+    "end_timecode" : "00:04:00.000",
+    "index" : 85,
+    "confidence" : 1,
+    "start_timecode" : "00:03:58.000",
+    "end_sec" : 240
+  },
+  {
+    "start_sec" : 241,
+    "text" : "您说您穿是不穿",
+    "end_timecode" : "00:04:03.000",
+    "index" : 86,
+    "confidence" : 1,
+    "start_timecode" : "00:04:01.000",
+    "end_sec" : 243
+  },
+  {
+    "start_sec" : 244,
+    "text" : "都别扭",
+    "end_timecode" : "00:04:05.000",
+    "index" : 87,
+    "confidence" : 1,
+    "start_timecode" : "00:04:04.000",
+    "end_sec" : 245
+  },
+  {
+    "start_sec" : 245,
+    "text" : "以我现在的脾气",
+    "end_timecode" : "00:04:07.000",
+    "index" : 88,
+    "confidence" : 1,
+    "start_timecode" : "00:04:05.000",
+    "end_sec" : 247
+  },
+  {
+    "start_sec" : 247,
+    "text" : "我就地正法了他",
+    "end_timecode" : "00:04:09.000",
+    "index" : 89,
+    "confidence" : 1,
+    "start_timecode" : "00:04:07.000",
+    "end_sec" : 249
+  },
+  {
+    "start_sec" : 249,
+    "text" : "郑介民能奈我何",
+    "end_timecode" : "00:04:10.000",
+    "index" : 90,
+    "confidence" : 1,
+    "start_timecode" : "00:04:09.000",
+    "end_sec" : 250
+  },
+  {
+    "start_sec" : 251,
+    "text" : "您消消气",
+    "end_timecode" : "00:04:12.000",
+    "index" : 91,
+    "confidence" : 1,
+    "start_timecode" : "00:04:11.000",
+    "end_sec" : 252
+  },
+  {
+    "start_sec" : 252,
+    "text" : "就是就地正法也得上报总部啊",
+    "end_timecode" : "00:04:15.000",
+    "index" : 92,
+    "confidence" : 1,
+    "start_timecode" : "00:04:12.000",
+    "end_sec" : 255
+  },
+  {
+    "start_sec" : 256,
+    "text" : "你说以后",
+    "end_timecode" : "00:04:17.000",
+    "index" : 93,
+    "confidence" : 1,
+    "start_timecode" : "00:04:16.000",
+    "end_sec" : 257
+  },
+  {
+    "start_sec" : 257,
+    "text" : "天津站难免跟上边产生什么摩擦",
+    "end_timecode" : "00:04:20.000",
+    "index" : 94,
+    "confidence" : 1,
+    "start_timecode" : "00:04:17.000",
+    "end_sec" : 260
+  },
+  {
+    "start_sec" : 261,
+    "text" : "老师 从长计议为重",
+    "end_timecode" : "00:04:23.000",
+    "index" : 95,
+    "confidence" : 0.75,
+    "start_timecode" : "00:04:21.000",
+    "end_sec" : 263
+  },
+  {
+    "start_sec" : 265,
+    "text" : "你的意思呢",
+    "end_timecode" : "00:04:26.000",
+    "index" : 96,
+    "confidence" : 1,
+    "start_timecode" : "00:04:25.000",
+    "end_sec" : 266
+  },
+  {
+    "start_sec" : 268,
+    "text" : "交给南京让他们处理算了",
+    "end_timecode" : "00:04:31.000",
+    "index" : 97,
+    "confidence" : 1,
+    "start_timecode" : "00:04:28.000",
+    "end_sec" : 271
+  },
+  {
+    "start_sec" : 274,
+    "text" : "您要是实在咽不下这口恶气",
+    "end_timecode" : "00:04:36.000",
+    "index" : 98,
+    "confidence" : 1,
+    "start_timecode" : "00:04:34.000",
+    "end_sec" : 276
+  },
+  {
+    "start_sec" : 277,
+    "text" : "把报告写得重一些 不就完了吗",
+    "end_timecode" : "00:04:39.000",
+    "index" : 99,
+    "confidence" : 0.5,
+    "start_timecode" : "00:04:37.000",
+    "end_sec" : 279
+  },
+  {
+    "start_sec" : 279,
+    "text" : "把报告写得重一些不就完了吗",
+    "end_timecode" : "00:04:40.000",
+    "index" : 100,
+    "confidence" : 0.5,
+    "start_timecode" : "00:04:39.000",
+    "end_sec" : 280
+  },
+  {
+    "start_sec" : 280,
+    "text" : "把报告写得重一些 不就完了吗",
+    "end_timecode" : "00:04:41.000",
+    "index" : 101,
+    "confidence" : 0.5,
+    "start_timecode" : "00:04:40.000",
+    "end_sec" : 281
+  },
+  {
+    "start_sec" : 286,
+    "text" : "马奎通共 陆桥山内讧",
+    "end_timecode" : "00:04:49.000",
+    "index" : 102,
+    "confidence" : 0.5,
+    "start_timecode" : "00:04:46.000",
+    "end_sec" : 289
+  },
+  {
+    "start_sec" : 289,
+    "text" : "这",
+    "end_timecode" : "00:04:50.000",
+    "index" : 103,
+    "confidence" : 1,
+    "start_timecode" : "00:04:49.000",
+    "end_sec" : 290
+  },
+  {
+    "start_sec" : 293,
+    "text" : "正好",
+    "end_timecode" : "00:04:54.000",
+    "index" : 104,
+    "confidence" : 1,
+    "start_timecode" : "00:04:53.000",
+    "end_sec" : 294
+  },
+  {
+    "start_sec" : 295,
+    "text" : "你陆桥山自绝党国",
+    "end_timecode" : "00:04:57.000",
+    "index" : 105,
+    "confidence" : 1,
+    "start_timecode" : "00:04:55.000",
+    "end_sec" : 297
+  },
+  {
+    "start_sec" : 299,
+    "text" : "你来当这个副站长",
+    "end_timecode" : "00:05:00.000",
+    "index" : 106,
+    "confidence" : 1,
+    "start_timecode" : "00:04:59.000",
+    "end_sec" : 300
+  },
+  {
+    "start_sec" : 303,
+    "text" : "不合适吧",
+    "end_timecode" : "00:05:04.000",
+    "index" : 107,
+    "confidence" : 1,
+    "start_timecode" : "00:05:03.000",
+    "end_sec" : 304
+  },
+  {
+    "start_sec" : 304,
+    "text" : "还是跟李队长商量商量",
+    "end_timecode" : "00:05:06.000",
+    "index" : 108,
+    "confidence" : 1,
+    "start_timecode" : "00:05:04.000",
+    "end_sec" : 306
+  },
+  {
+    "start_sec" : 306,
+    "text" : "李涯也不是个省油的灯",
+    "end_timecode" : "00:05:09.000",
+    "index" : 109,
+    "confidence" : 1,
+    "start_timecode" : "00:05:06.000",
+    "end_sec" : 309
+  },
+  {
+    "start_sec" : 310,
+    "text" : "副站长就是你",
+    "end_timecode" : "00:05:11.000",
+    "index" : 110,
+    "confidence" : 1,
+    "start_timecode" : "00:05:10.000",
+    "end_sec" : 311
+  },
+  {
+    "start_sec" : 313,
+    "text" : "谢谢老师栽培",
+    "end_timecode" : "00:05:14.000",
+    "index" : 111,
+    "confidence" : 1,
+    "start_timecode" : "00:05:13.000",
+    "end_sec" : 314
+  },
+  {
+    "start_sec" : 319,
+    "text" : "今天我跟站长太太去做旗袍",
+    "end_timecode" : "00:05:20.000",
+    "index" : 112,
+    "confidence" : 1,
+    "start_timecode" : "00:05:19.000",
+    "end_sec" : 320
+  },
+  {
+    "start_sec" : 321,
+    "text" : "站长太太说",
+    "end_timecode" : "00:05:22.000",
+    "index" : 113,
+    "confidence" : 1,
+    "start_timecode" : "00:05:21.000",
+    "end_sec" : 322
+  },
+  {
+    "start_sec" : 322,
+    "text" : "站长好像不想干了 想走",
+    "end_timecode" : "00:05:24.000",
+    "index" : 114,
+    "confidence" : 0.5,
+    "start_timecode" : "00:05:22.000",
+    "end_sec" : 324
+  },
+  {
+    "start_sec" : 325,
+    "text" : "走去哪儿",
+    "end_timecode" : "00:05:27.000",
+    "index" : 115,
+    "confidence" : 0.3,
+    "start_timecode" : "00:05:25.000",
+    "end_sec" : 327
+  },
+  {
+    "start_sec" : 329,
+    "text" : "她怕有人查她家",
+    "end_timecode" : "00:05:30.000",
+    "index" : 116,
+    "confidence" : 1,
+    "start_timecode" : "00:05:29.000",
+    "end_sec" : 330
+  },
+  {
+    "start_sec" : 331,
+    "text" : "好像他们家有很多值钱的东西",
+    "end_timecode" : "00:05:33.000",
+    "index" : 117,
+    "confidence" : 1,
+    "start_timecode" : "00:05:31.000",
+    "end_sec" : 333
+  },
+  {
+    "start_sec" : 336,
+    "text" : "贪够了想溜呗 都是这样",
+    "end_timecode" : "00:05:38.000",
+    "index" : 118,
+    "confidence" : 1,
+    "start_timecode" : "00:05:36.000",
+    "end_sec" : 338
+  },
+  {
+    "start_sec" : 339,
+    "text" : "那他要是走了 你会当站长吗",
+    "end_timecode" : "00:05:42.000",
+    "index" : 119,
+    "confidence" : 0.667,
+    "start_timecode" : "00:05:39.000",
+    "end_sec" : 342
+  },
+  {
+    "start_sec" : 343,
+    "text" : "不会 站长一般是少将军衔",
+    "end_timecode" : "00:05:47.000",
+    "index" : 120,
+    "confidence" : 0.5,
+    "start_timecode" : "00:05:43.000",
+    "end_sec" : 347
+  },
+  {
+    "start_sec" : 348,
+    "text" : "上面需要有人",
+    "end_timecode" : "00:05:50.000",
+    "index" : 121,
+    "confidence" : 1,
+    "start_timecode" : "00:05:48.000",
+    "end_sec" : 350
+  },
+  {
+    "start_sec" : 352,
+    "text" : "少将有什么难的",
+    "end_timecode" : "00:05:54.000",
+    "index" : 122,
+    "confidence" : 1,
+    "start_timecode" : "00:05:52.000",
+    "end_sec" : 354
+  },
+  {
+    "start_sec" : 355,
+    "text" : "今天我去军属会",
+    "end_timecode" : "00:05:56.000",
+    "index" : 123,
+    "confidence" : 1,
+    "start_timecode" : "00:05:55.000",
+    "end_sec" : 356
+  },
+  {
+    "start_sec" : 356,
+    "text" : "那儿有好几个少将太太呢",
+    "end_timecode" : "00:05:58.000",
+    "index" : 124,
+    "confidence" : 1,
+    "start_timecode" : "00:05:56.000",
+    "end_sec" : 358
+  },
+  {
+    "start_sec" : 359,
+    "text" : "去那儿干吗 乱哄哄的",
+    "end_timecode" : "00:06:00.000",
+    "index" : 125,
+    "confidence" : 0.5,
+    "start_timecode" : "00:05:59.000",
+    "end_sec" : 360
+  },
+  {
+    "start_sec" : 361,
+    "text" : "我学跳舞去了",
+    "end_timecode" : "00:06:02.000",
+    "index" : 126,
+    "confidence" : 1,
+    "start_timecode" : "00:06:01.000",
+    "end_sec" : 362
+  },
+  {
+    "start_sec" : 363,
+    "text" : "她们拖我去的",
+    "end_timecode" : "00:06:04.000",
+    "index" : 127,
+    "confidence" : 1,
+    "start_timecode" : "00:06:03.000",
+    "end_sec" : 364
+  },
+  {
+    "start_sec" : 365,
+    "text" : "学会了吗",
+    "end_timecode" : "00:06:06.000",
+    "index" : 128,
+    "confidence" : 1,
+    "start_timecode" : "00:06:05.000",
+    "end_sec" : 366
+  },
+  {
+    "start_sec" : 367,
+    "text" : "没学会 太难了",
+    "end_timecode" : "00:06:10.000",
+    "index" : 129,
+    "confidence" : 0.433,
+    "start_timecode" : "00:06:07.000",
+    "end_sec" : 370
+  },
+  {
+    "start_sec" : 371,
+    "text" : "我腿都拧成麻花了也没学会",
+    "end_timecode" : "00:06:12.000",
+    "index" : 130,
+    "confidence" : 1,
+    "start_timecode" : "00:06:11.000",
+    "end_sec" : 372
+  },
+  {
+    "start_sec" : 378,
+    "text" : "你会吗",
+    "end_timecode" : "00:06:19.000",
+    "index" : 131,
+    "confidence" : 1,
+    "start_timecode" : "00:06:18.000",
+    "end_sec" : 379
+  },
+  {
+    "start_sec" : 380,
+    "text" : "会",
+    "end_timecode" : "00:06:21.000",
+    "index" : 132,
+    "confidence" : 1,
+    "start_timecode" : "00:06:20.000",
+    "end_sec" : 381
+  },
+  {
+    "start_sec" : 381,
+    "text" : "你会呀",
+    "end_timecode" : "00:06:22.000",
+    "index" : 133,
+    "confidence" : 1,
+    "start_timecode" : "00:06:21.000",
+    "end_sec" : 382
+  },
+  {
+    "start_sec" : 383,
+    "text" : "不早说",
+    "end_timecode" : "00:06:24.000",
+    "index" : 134,
+    "confidence" : 1,
+    "start_timecode" : "00:06:23.000",
+    "end_sec" : 384
+  },
+  {
+    "start_sec" : 384,
+    "text" : "来来来",
+    "end_timecode" : "00:06:26.000",
+    "index" : 135,
+    "confidence" : 1,
+    "start_timecode" : "00:06:24.000",
+    "end_sec" : 386
+  },
+  {
+    "start_sec" : 386,
+    "text" : "你教我 你教我",
+    "end_timecode" : "00:06:27.000",
+    "index" : 136,
+    "confidence" : 0.5,
+    "start_timecode" : "00:06:26.000",
+    "end_sec" : 387
+  },
+  {
+    "start_sec" : 387,
+    "text" : "你干什么呀",
+    "end_timecode" : "00:06:28.000",
+    "index" : 137,
+    "confidence" : 1,
+    "start_timecode" : "00:06:27.000",
+    "end_sec" : 388
+  },
+  {
+    "start_sec" : 388,
+    "text" : "你教教我呀",
+    "end_timecode" : "00:06:29.000",
+    "index" : 138,
+    "confidence" : 1,
+    "start_timecode" : "00:06:28.000",
+    "end_sec" : 389
+  },
+  {
+    "start_sec" : 391,
+    "text" : "起来",
+    "end_timecode" : "00:06:32.000",
+    "index" : 139,
+    "confidence" : 1,
+    "start_timecode" : "00:06:31.000",
+    "end_sec" : 392
+  },
+  {
+    "start_sec" : 392,
+    "text" : "这儿没音乐",
+    "end_timecode" : "00:06:33.000",
+    "index" : 140,
+    "confidence" : 1,
+    "start_timecode" : "00:06:32.000",
+    "end_sec" : 393
+  },
+  {
+    "start_sec" : 394,
+    "text" : "比画几下就行了",
+    "end_timecode" : "00:06:35.000",
+    "index" : 141,
+    "confidence" : 1,
+    "start_timecode" : "00:06:34.000",
+    "end_sec" : 395
+  },
+  {
+    "start_sec" : 395,
+    "text" : "快 起来",
+    "end_timecode" : "00:06:36.000",
+    "index" : 142,
+    "confidence" : 0.5,
+    "start_timecode" : "00:06:35.000",
+    "end_sec" : 396
+  },
+  {
+    "start_sec" : 396,
+    "text" : "快点",
+    "end_timecode" : "00:06:38.000",
+    "index" : 143,
+    "confidence" : 1,
+    "start_timecode" : "00:06:36.000",
+    "end_sec" : 398
+  },
+  {
+    "start_sec" : 400,
+    "text" : "手搁这儿吧",
+    "end_timecode" : "00:06:41.000",
+    "index" : 144,
+    "confidence" : 1,
+    "start_timecode" : "00:06:40.000",
+    "end_sec" : 401
+  },
+  {
+    "start_sec" : 402,
+    "text" : "来走",
+    "end_timecode" : "00:06:44.000",
+    "index" : 145,
+    "confidence" : 0.75,
+    "start_timecode" : "00:06:42.000",
+    "end_sec" : 404
+  },
+  {
+    "start_sec" : 406,
+    "text" : "这样",
+    "end_timecode" : "00:06:47.000",
+    "index" : 146,
+    "confidence" : 1,
+    "start_timecode" : "00:06:46.000",
+    "end_sec" : 407
+  },
+  {
+    "start_sec" : 410,
+    "text" : "你轻一点动作",
+    "end_timecode" : "00:06:52.000",
+    "index" : 147,
+    "confidence" : 1,
+    "start_timecode" : "00:06:50.000",
+    "end_sec" : 412
+  },
+  {
+    "start_sec" : 413,
+    "text" : "这样对 放这儿对",
+    "end_timecode" : "00:06:55.000",
+    "index" : 148,
+    "confidence" : 0.5,
+    "start_timecode" : "00:06:53.000",
+    "end_sec" : 415
+  },
+  {
+    "start_sec" : 416,
+    "text" : "把腰挺直",
+    "end_timecode" : "00:06:57.000",
+    "index" : 149,
+    "confidence" : 1,
+    "start_timecode" : "00:06:56.000",
+    "end_sec" : 417
+  },
+  {
+    "start_sec" : 419,
+    "text" : "来",
+    "end_timecode" : "00:07:00.000",
+    "index" : 150,
+    "confidence" : 0.5,
+    "start_timecode" : "00:06:59.000",
+    "end_sec" : 420
+  },
+  {
+    "start_sec" : 421,
+    "text" : "一",
+    "end_timecode" : "00:07:02.000",
+    "index" : 151,
+    "confidence" : 0.3,
+    "start_timecode" : "00:07:01.000",
+    "end_sec" : 422
+  },
+  {
+    "start_sec" : 423,
+    "text" : "一 |I",
+    "end_timecode" : "00:07:04.000",
+    "index" : 152,
+    "confidence" : 0.3,
+    "start_timecode" : "00:07:03.000",
+    "end_sec" : 424
+  },
+  {
+    "start_sec" : 425,
+    "text" : "你左脚跟上跟上",
+    "end_timecode" : "00:07:07.000",
+    "index" : 153,
+    "confidence" : 0.75,
+    "start_timecode" : "00:07:05.000",
+    "end_sec" : 427
+  },
+  {
+    "start_sec" : 427,
+    "text" : "左右左",
+    "end_timecode" : "00:07:10.000",
+    "index" : 154,
+    "confidence" : 1,
+    "start_timecode" : "00:07:07.000",
+    "end_sec" : 430
+  },
+  {
+    "start_sec" : 504,
+    "text" : "走吧",
+    "end_timecode" : "00:08:25.000",
+    "index" : 155,
+    "confidence" : 1,
+    "start_timecode" : "00:08:24.000",
+    "end_sec" : 505
+  },
+  {
+    "start_sec" : 509,
+    "text" : "南京",
+    "end_timecode" : "00:08:30.000",
+    "index" : 156,
+    "confidence" : 1,
+    "start_timecode" : "00:08:29.000",
+    "end_sec" : 510
+  },
+  {
+    "start_sec" : 527,
+    "text" : "你摇头什么意思呀",
+    "end_timecode" : "00:08:48.000",
+    "index" : 157,
+    "confidence" : 1,
+    "start_timecode" : "00:08:47.000",
+    "end_sec" : 528
+  },
+  {
+    "start_sec" : 530,
+    "text" : "损人不利已 我难以理解",
+    "end_timecode" : "00:08:51.000",
+    "index" : 158,
+    "confidence" : 0.5,
+    "start_timecode" : "00:08:50.000",
+    "end_sec" : 531
+  },
+  {
+    "start_sec" : 531,
+    "text" : "损人不利己 我难以理解",
+    "end_timecode" : "00:08:53.000",
+    "index" : 159,
+    "confidence" : 0.4,
+    "start_timecode" : "00:08:51.000",
+    "end_sec" : 533
+  },
+  {
+    "start_sec" : 535,
+    "text" : "盖过你 取代我",
+    "end_timecode" : "00:08:57.000",
+    "index" : 160,
+    "confidence" : 0.75,
+    "start_timecode" : "00:08:55.000",
+    "end_sec" : 537
+  },
+  {
+    "start_sec" : 538,
+    "text" : "有什么难以理解的",
+    "end_timecode" : "00:08:59.000",
+    "index" : 161,
+    "confidence" : 1,
+    "start_timecode" : "00:08:58.000",
+    "end_sec" : 539
+  },
+  {
+    "start_sec" : 544,
+    "text" : "件蠢事啊 老陆",
+    "end_timecode" : "00:09:05.000",
+    "index" : 162,
+    "confidence" : 0.3,
+    "start_timecode" : "00:09:04.000",
+    "end_sec" : 545
+  },
+  {
+    "start_sec" : 546,
+    "text" : "我还会回来的",
+    "end_timecode" : "00:09:07.000",
+    "index" : 163,
+    "confidence" : 1,
+    "start_timecode" : "00:09:06.000",
+    "end_sec" : 547
+  },
+  {
+    "start_sec" : 549,
+    "text" : "中国这么大你回这儿来干什么呀",
+    "end_timecode" : "00:09:11.000",
+    "index" : 164,
+    "confidence" : 1,
+    "start_timecode" : "00:09:09.000",
+    "end_sec" : 551
+  },
+  {
+    "start_sec" : 553,
+    "text" : "嫂子在车站等你",
+    "end_timecode" : "00:09:14.000",
+    "index" : 165,
+    "confidence" : 1,
+    "start_timecode" : "00:09:13.000",
+    "end_sec" : 554
+  },
+  {
+    "start_sec" : 555,
+    "text" : "车在门口",
+    "end_timecode" : "00:09:16.000",
+    "index" : 166,
+    "confidence" : 0.5,
+    "start_timecode" : "00:09:15.000",
+    "end_sec" : 556
+  },
+  {
+    "start_sec" : 557,
+    "text" : "提防李涯",
+    "end_timecode" : "00:09:18.000",
+    "index" : 167,
+    "confidence" : 1,
+    "start_timecode" : "00:09:17.000",
+    "end_sec" : 558
+  },
+  {
+    "start_sec" : 559,
+    "text" : "站长也不可靠",
+    "end_timecode" : "00:09:21.000",
+    "index" : 168,
+    "confidence" : 1,
+    "start_timecode" : "00:09:19.000",
+    "end_sec" : 561
+  },
+  {
+    "start_sec" : 562,
+    "text" : "你自己保重吧",
+    "end_timecode" : "00:09:23.000",
+    "index" : 169,
+    "confidence" : 1,
+    "start_timecode" : "00:09:22.000",
+    "end_sec" : 563
+  },
+  {
+    "start_sec" : 567,
+    "text" : "金身而退",
+    "end_timecode" : "00:09:28.000",
+    "index" : 170,
+    "confidence" : 1,
+    "start_timecode" : "00:09:27.000",
+    "end_sec" : 568
+  },
+  {
+    "start_sec" : 573,
+    "text" : "你说你这么就走了",
+    "end_timecode" : "00:09:35.000",
+    "index" : 171,
+    "confidence" : 1,
+    "start_timecode" : "00:09:33.000",
+    "end_sec" : 575
+  },
+  {
+    "start_sec" : 577,
+    "text" : "我心里真有点难过",
+    "end_timecode" : "00:09:38.000",
+    "index" : 172,
+    "confidence" : 1,
+    "start_timecode" : "00:09:37.000",
+    "end_sec" : 578
+  },
+  {
+    "start_sec" : 581,
+    "text" : "你教会了我很多东西",
+    "end_timecode" : "00:09:43.000",
+    "index" : 173,
+    "confidence" : 1,
+    "start_timecode" : "00:09:41.000",
+    "end_sec" : 583
+  },
+  {
+    "start_sec" : 584,
+    "text" : "我们是朋友",
+    "end_timecode" : "00:09:46.000",
+    "index" : 174,
+    "confidence" : 1,
+    "start_timecode" : "00:09:44.000",
+    "end_sec" : 586
+  },
+  {
+    "start_sec" : 588,
+    "text" : "再见",
+    "end_timecode" : "00:09:49.000",
+    "index" : 175,
+    "confidence" : 1,
+    "start_timecode" : "00:09:48.000",
+    "end_sec" : 589
+  },
+  {
+    "start_sec" : 600,
+    "text" : "胡宗南长官今日光荣占领共匪老巢延安",
+    "end_timecode" : "00:10:05.000",
+    "index" : 176,
+    "confidence" : 1,
+    "start_timecode" : "00:10:00.000",
+    "end_sec" : 605
+  },
+  {
+    "start_sec" : 605,
+    "text" : "丟盔弃甲的共匪分多路逃窜",
+    "end_timecode" : "00:10:06.000",
+    "index" : 177,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:05.000",
+    "end_sec" : 606
+  },
+  {
+    "start_sec" : 606,
+    "text" : "丟盔弃用的共匪分多路逃窜",
+    "end_timecode" : "00:10:07.000",
+    "index" : 178,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:06.000",
+    "end_sec" : 607
+  },
+  {
+    "start_sec" : 607,
+    "text" : "丟盔弃甲的共匪分多路逃窜",
+    "end_timecode" : "00:10:09.000",
+    "index" : 179,
+    "confidence" : 0.75,
+    "start_timecode" : "00:10:07.000",
+    "end_sec" : 609
+  },
+  {
+    "start_sec" : 610,
+    "text" : "进来 国军正以英勇无惧的气魄",
+    "end_timecode" : "00:10:11.000",
+    "index" : 180,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:10.000",
+    "end_sec" : 611
+  },
+  {
+    "start_sec" : 611,
+    "text" : "进来国军正以英勇无惧的气魄",
+    "end_timecode" : "00:10:12.000",
+    "index" : 181,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:11.000",
+    "end_sec" : 612
+  },
+  {
+    "start_sec" : 612,
+    "text" : "进来 国军正以英勇无惧的气魄",
+    "end_timecode" : "00:10:13.000",
+    "index" : 182,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:12.000",
+    "end_sec" : 613
+  },
+  {
+    "start_sec" : 613,
+    "text" : "追溯残敌",
+    "end_timecode" : "00:10:15.000",
+    "index" : 183,
+    "confidence" : 1,
+    "start_timecode" : "00:10:13.000",
+    "end_sec" : 615
+  },
+  {
+    "start_sec" : 617,
+    "text" : "则成 你听",
+    "end_timecode" : "00:10:18.000",
+    "index" : 184,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:17.000",
+    "end_sec" : 618
+  },
+  {
+    "start_sec" : 618,
+    "text" : "胡长官占领延安了",
+    "end_timecode" : "00:10:19.000",
+    "index" : 185,
+    "confidence" : 1,
+    "start_timecode" : "00:10:18.000",
+    "end_sec" : 619
+  },
+  {
+    "start_sec" : 620,
+    "text" : "真的",
+    "end_timecode" : "00:10:21.000",
+    "index" : 186,
+    "confidence" : 1,
+    "start_timecode" : "00:10:20.000",
+    "end_sec" : 621
+  },
+  {
+    "start_sec" : 622,
+    "text" : "正在拉网式搜找共匪朱毛匪首",
+    "end_timecode" : "00:10:24.000",
+    "index" : 187,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:22.000",
+    "end_sec" : 624
+  },
+  {
+    "start_sec" : 624,
+    "text" : "正在拉网式搜找共匪朱 毛匪首",
+    "end_timecode" : "00:10:26.000",
+    "index" : 188,
+    "confidence" : 0.75,
+    "start_timecode" : "00:10:24.000",
+    "end_sec" : 626
+  },
+  {
+    "start_sec" : 626,
+    "text" : "相信不日就会将这群",
+    "end_timecode" : "00:10:29.000",
+    "index" : 189,
+    "confidence" : 1,
+    "start_timecode" : "00:10:26.000",
+    "end_sec" : 629
+  },
+  {
+    "start_sec" : 629,
+    "text" : "盘踞西北的亡命之徒全部缉拿归案",
+    "end_timecode" : "00:10:32.000",
+    "index" : 190,
+    "confidence" : 1,
+    "start_timecode" : "00:10:29.000",
+    "end_sec" : 632
+  },
+  {
+    "start_sec" : 632,
+    "text" : "我看也用不着打了",
+    "end_timecode" : "00:10:33.000",
+    "index" : 191,
+    "confidence" : 1,
+    "start_timecode" : "00:10:32.000",
+    "end_sec" : 633
+  },
+  {
+    "start_sec" : 633,
+    "text" : "战争马上就要结束了",
+    "end_timecode" : "00:10:34.000",
+    "index" : 192,
+    "confidence" : 1,
+    "start_timecode" : "00:10:33.000",
+    "end_sec" : 634
+  },
+  {
+    "start_sec" : 635,
+    "text" : "委座发话了",
+    "end_timecode" : "00:10:36.000",
+    "index" : 193,
+    "confidence" : 1,
+    "start_timecode" : "00:10:35.000",
+    "end_sec" : 636
+  },
+  {
+    "start_sec" : 636,
+    "text" : "三个月 三个月解决问题",
+    "end_timecode" : "00:10:38.000",
+    "index" : 194,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:36.000",
+    "end_sec" : 638
+  },
+  {
+    "start_sec" : 638,
+    "text" : "三个月三个月解决问题",
+    "end_timecode" : "00:10:39.000",
+    "index" : 195,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:38.000",
+    "end_sec" : 639
+  },
+  {
+    "start_sec" : 639,
+    "text" : "三个月 三个月解决问题",
+    "end_timecode" : "00:10:40.000",
+    "index" : 196,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:39.000",
+    "end_sec" : 640
+  },
+  {
+    "start_sec" : 640,
+    "text" : "太好了",
+    "end_timecode" : "00:10:41.000",
+    "index" : 197,
+    "confidence" : 1,
+    "start_timecode" : "00:10:40.000",
+    "end_sec" : 641
+  },
+  {
+    "start_sec" : 642,
+    "text" : "三个月以后天下太平",
+    "end_timecode" : "00:10:44.000",
+    "index" : 198,
+    "confidence" : 1,
+    "start_timecode" : "00:10:42.000",
+    "end_sec" : 644
+  },
+  {
+    "start_sec" : 645,
+    "text" : "我看 今天值得庆祝",
+    "end_timecode" : "00:10:47.000",
+    "index" : 199,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:45.000",
+    "end_sec" : 647
+  },
+  {
+    "start_sec" : 649,
+    "text" : "一为收复延安",
+    "end_timecode" : "00:10:51.000",
+    "index" : 200,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:49.000",
+    "end_sec" : 651
+  },
+  {
+    "start_sec" : 652,
+    "text" : "二 则成晋升为中校副站长",
+    "end_timecode" : "00:10:53.000",
+    "index" : 201,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:52.000",
+    "end_sec" : 653
+  },
+  {
+    "start_sec" : 653,
+    "text" : "二则成晋升为中校副站长",
+    "end_timecode" : "00:10:55.000",
+    "index" : 202,
+    "confidence" : 0.5,
+    "start_timecode" : "00:10:53.000",
+    "end_sec" : 655
+  },
+  {
+    "start_sec" : 662,
+    "text" : "余副站长 恭喜呀",
+    "end_timecode" : "00:11:05.000",
+    "index" : 203,
+    "confidence" : 0.833,
+    "start_timecode" : "00:11:02.000",
+    "end_sec" : 665
+  },
+  {
+    "start_sec" : 665,
+    "text" : "以后多多关照啊",
+    "end_timecode" : "00:11:06.000",
+    "index" : 204,
+    "confidence" : 1,
+    "start_timecode" : "00:11:05.000",
+    "end_sec" : 666
+  },
+  {
+    "start_sec" : 668,
+    "text" : "同甘共苦 同甘共苦",
+    "end_timecode" : "00:11:10.000",
+    "index" : 205,
+    "confidence" : 1,
+    "start_timecode" : "00:11:08.000",
+    "end_sec" : 670
+  },
+  {
+    "start_sec" : 679,
+    "text" : "余副站长",
+    "end_timecode" : "00:11:20.000",
+    "index" : 206,
+    "confidence" : 0.5,
+    "start_timecode" : "00:11:19.000",
+    "end_sec" : 680
+  },
+  {
+    "start_sec" : 699,
+    "text" : "余则成在听到延安失守的瞬间",
+    "end_timecode" : "00:11:42.000",
+    "index" : 207,
+    "confidence" : 1,
+    "start_timecode" : "00:11:39.000",
+    "end_sec" : 702
+  },
+  {
+    "start_sec" : 702,
+    "text" : "突然觉得两腿站不住",
+    "end_timecode" : "00:11:44.000",
+    "index" : 208,
+    "confidence" : 1,
+    "start_timecode" : "00:11:42.000",
+    "end_sec" : 704
+  },
+  {
+    "start_sec" : 704,
+    "text" : "身体在飘",
+    "end_timecode" : "00:11:45.000",
+    "index" : 209,
+    "confidence" : 1,
+    "start_timecode" : "00:11:44.000",
+    "end_sec" : 705
+  },
+  {
+    "start_sec" : 706,
+    "text" : "他不知道将来怎么工作",
+    "end_timecode" : "00:11:48.000",
+    "index" : 210,
+    "confidence" : 1,
+    "start_timecode" : "00:11:46.000",
+    "end_sec" : 708
+  },
+  {
+    "start_sec" : 709,
+    "text" : "不知道延安丢失后",
+    "end_timecode" : "00:11:50.000",
+    "index" : 211,
+    "confidence" : 1,
+    "start_timecode" : "00:11:49.000",
+    "end_sec" : 710
+  },
+  {
+    "start_sec" : 710,
+    "text" : "在那个地方",
+    "end_timecode" : "00:11:51.000",
+    "index" : 212,
+    "confidence" : 1,
+    "start_timecode" : "00:11:50.000",
+    "end_sec" : 711
+  },
+  {
+    "start_sec" : 711,
+    "text" : "运筹帷幄的那些人怎么样",
+    "end_timecode" : "00:11:53.000",
+    "index" : 213,
+    "confidence" : 1,
+    "start_timecode" : "00:11:51.000",
+    "end_sec" : 713
+  },
+  {
+    "start_sec" : 714,
+    "text" : "不知道他们在哪里",
+    "end_timecode" : "00:11:56.000",
+    "index" : 214,
+    "confidence" : 1,
+    "start_timecode" : "00:11:54.000",
+    "end_sec" : 716
+  },
+  {
+    "start_sec" : 716,
+    "text" : "不知道明天的广播里",
+    "end_timecode" : "00:11:57.000",
+    "index" : 215,
+    "confidence" : 1,
+    "start_timecode" : "00:11:56.000",
+    "end_sec" : 717
+  },
+  {
+    "start_sec" : 717,
+    "text" : "会不会传来更可怕的消息",
+    "end_timecode" : "00:12:00.000",
+    "index" : 216,
+    "confidence" : 1,
+    "start_timecode" : "00:11:57.000",
+    "end_sec" : 720
+  },
+  {
+    "start_sec" : 720,
+    "text" : "他心中顿时被阴霾填塞得几乎窒息",
+    "end_timecode" : "00:12:05.000",
+    "index" : 217,
+    "confidence" : 1,
+    "start_timecode" : "00:12:00.000",
+    "end_sec" : 725
+  },
+  {
+    "start_sec" : 727,
+    "text" : "你今天不该来",
+    "end_timecode" : "00:12:09.000",
+    "index" : 218,
+    "confidence" : 1,
+    "start_timecode" : "00:12:07.000",
+    "end_sec" : 729
+  },
+  {
+    "start_sec" : 730,
+    "text" : "我知道",
+    "end_timecode" : "00:12:11.000",
+    "index" : 219,
+    "confidence" : 1,
+    "start_timecode" : "00:12:10.000",
+    "end_sec" : 731
+  },
+  {
+    "start_sec" : 733,
+    "text" : "可是我这心里实在是太难受了",
+    "end_timecode" : "00:12:15.000",
+    "index" : 220,
+    "confidence" : 1,
+    "start_timecode" : "00:12:13.000",
+    "end_sec" : 735
+  },
+  {
+    "start_sec" : 738,
+    "text" : "延安不是丢失 而是放弃",
+    "end_timecode" : "00:12:21.000",
+    "index" : 221,
+    "confidence" : 0.5,
+    "start_timecode" : "00:12:18.000",
+    "end_sec" : 741
+  },
+  {
+    "start_sec" : 743,
+    "text" : "整个中央毫发未损",
+    "end_timecode" : "00:12:24.000",
+    "index" : 222,
+    "confidence" : 1,
+    "start_timecode" : "00:12:23.000",
+    "end_sec" : 744
+  },
+  {
+    "start_sec" : 745,
+    "text" : "我们的战斗还在继续",
+    "end_timecode" : "00:12:26.000",
+    "index" : 223,
+    "confidence" : 1,
+    "start_timecode" : "00:12:25.000",
+    "end_sec" : 746
+  },
+  {
+    "start_sec" : 749,
+    "text" : "只是会更加残酷",
+    "end_timecode" : "00:12:31.000",
+    "index" : 224,
+    "confidence" : 1,
+    "start_timecode" : "00:12:29.000",
+    "end_sec" : 751
+  },
+  {
+    "start_sec" : 752,
+    "text" : "我不怕残酷",
+    "end_timecode" : "00:12:33.000",
+    "index" : 225,
+    "confidence" : 1,
+    "start_timecode" : "00:12:32.000",
+    "end_sec" : 753
+  },
+  {
+    "start_sec" : 755,
+    "text" : "我就是怕",
+    "end_timecode" : "00:12:36.000",
+    "index" : 226,
+    "confidence" : 1,
+    "start_timecode" : "00:12:35.000",
+    "end_sec" : 756
+  },
+  {
+    "start_sec" : 756,
+    "text" : "怕失败",
+    "end_timecode" : "00:12:37.000",
+    "index" : 227,
+    "confidence" : 1,
+    "start_timecode" : "00:12:36.000",
+    "end_sec" : 757
+  },
+  {
+    "start_sec" : 760,
+    "text" : "我在延安住过半年",
+    "end_timecode" : "00:12:42.000",
+    "index" : 228,
+    "confidence" : 1,
+    "start_timecode" : "00:12:40.000",
+    "end_sec" : 762
+  },
+  {
+    "start_sec" : 762,
+    "text" : "对那儿很有感情",
+    "end_timecode" : "00:12:44.000",
+    "index" : 229,
+    "confidence" : 1,
+    "start_timecode" : "00:12:42.000",
+    "end_sec" : 764
+  },
+  {
+    "start_sec" : 766,
+    "text" : "那里有一种精神",
+    "end_timecode" : "00:12:47.000",
+    "index" : 230,
+    "confidence" : 1,
+    "start_timecode" : "00:12:46.000",
+    "end_sec" : 767
+  },
+  {
+    "start_sec" : 768,
+    "text" : "一种乐观抗争的精神",
+    "end_timecode" : "00:12:49.000",
+    "index" : 231,
+    "confidence" : 1,
+    "start_timecode" : "00:12:48.000",
+    "end_sec" : 769
+  },
+  {
+    "start_sec" : 770,
+    "text" : "你看着吧",
+    "end_timecode" : "00:12:51.000",
+    "index" : 232,
+    "confidence" : 1,
+    "start_timecode" : "00:12:50.000",
+    "end_sec" : 771
+  },
+  {
+    "start_sec" : 772,
+    "text" : "胡宗南的命运会终结在延安的",
+    "end_timecode" : "00:12:56.000",
+    "index" : 233,
+    "confidence" : 1,
+    "start_timecode" : "00:12:52.000",
+    "end_sec" : 776
+  },
+  {
+    "start_sec" : 776,
+    "text" : "万万不要悲观",
+    "end_timecode" : "00:12:57.000",
+    "index" : 234,
+    "confidence" : 1,
+    "start_timecode" : "00:12:56.000",
+    "end_sec" : 777
+  },
+  {
+    "start_sec" : 778,
+    "text" : "仗有很多种打法",
+    "end_timecode" : "00:13:00.000",
+    "index" : 235,
+    "confidence" : 1,
+    "start_timecode" : "00:12:58.000",
+    "end_sec" : 780
+  },
+  {
+    "start_sec" : 780,
+    "text" : "有一种胜利 叫撤退",
+    "end_timecode" : "00:13:02.000",
+    "index" : 236,
+    "confidence" : 0.5,
+    "start_timecode" : "00:13:00.000",
+    "end_sec" : 782
+  },
+  {
+    "start_sec" : 783,
+    "text" : "有一种失败 叫占领",
+    "end_timecode" : "00:13:05.000",
+    "index" : 237,
+    "confidence" : 0.5,
+    "start_timecode" : "00:13:03.000",
+    "end_sec" : 785
+  },
+  {
+    "start_sec" : 792,
+    "text" : "我就是一时茫然",
+    "end_timecode" : "00:13:13.000",
+    "index" : 238,
+    "confidence" : 1,
+    "start_timecode" : "00:13:12.000",
+    "end_sec" : 793
+  },
+  {
+    "start_sec" : 794,
+    "text" : "现在好了",
+    "end_timecode" : "00:13:16.000",
+    "index" : 239,
+    "confidence" : 1,
+    "start_timecode" : "00:13:14.000",
+    "end_sec" : 796
+  },
+  {
+    "start_sec" : 797,
+    "text" : "我说吧 我们俩之间",
+    "end_timecode" : "00:13:20.000",
+    "index" : 240,
+    "confidence" : 0.5,
+    "start_timecode" : "00:13:17.000",
+    "end_sec" : 800
+  },
+  {
+    "start_sec" : 801,
+    "text" : "还是你做领导比较合适",
+    "end_timecode" : "00:13:23.000",
+    "index" : 241,
+    "confidence" : 1,
+    "start_timecode" : "00:13:21.000",
+    "end_sec" : 803
+  },
+  {
+    "start_sec" : 804,
+    "text" : "几句话就让我精神振奋",
+    "end_timecode" : "00:13:26.000",
+    "index" : 242,
+    "confidence" : 1,
+    "start_timecode" : "00:13:24.000",
+    "end_sec" : 806
+  },
+  {
+    "start_sec" : 808,
+    "text" : "还有 我已经晋升副站长了",
+    "end_timecode" : "00:13:31.000",
+    "index" : 243,
+    "confidence" : 0.667,
+    "start_timecode" : "00:13:28.000",
+    "end_sec" : 811
+  },
+  {
+    "start_sec" : 812,
+    "text" : "好啊 这值得庆贺",
+    "end_timecode" : "00:13:34.000",
+    "index" : 244,
+    "confidence" : 0.5,
+    "start_timecode" : "00:13:32.000",
+    "end_sec" : 814
+  },
+  {
+    "start_sec" : 822,
+    "text" : "嫂子 这是我写的诗",
+    "end_timecode" : "00:13:46.000",
+    "index" : 245,
+    "confidence" : 0.625,
+    "start_timecode" : "00:13:42.000",
+    "end_sec" : 826
+  },
+  {
+    "start_sec" : 828,
+    "text" : "你写的 在报上",
+    "end_timecode" : "00:13:50.000",
+    "index" : 246,
+    "confidence" : 0.5,
+    "start_timecode" : "00:13:48.000",
+    "end_sec" : 830
+  },
+  {
+    "start_sec" : 832,
+    "text" : "这儿",
+    "end_timecode" : "00:13:53.000",
+    "index" : 247,
+    "confidence" : 1,
+    "start_timecode" : "00:13:52.000",
+    "end_sec" : 833
+  },
+  {
+    "start_sec" : 836,
+    "text" : "妹子，你去了不起了",
+    "end_timecode" : "00:13:57.000",
+    "index" : 248,
+    "confidence" : 0.3,
+    "start_timecode" : "00:13:56.000",
+    "end_sec" : 837
+  },
+  {
+    "start_sec" : 837,
+    "text" : "妹子 你太了不起了",
+    "end_timecode" : "00:13:58.000",
+    "index" : 249,
+    "confidence" : 0.5,
+    "start_timecode" : "00:13:57.000",
+    "end_sec" : 838
+  },
+  {
+    "start_sec" : 842,
+    "text" : "那你怎么还不高兴",
+    "end_timecode" : "00:14:04.000",
+    "index" : 250,
+    "confidence" : 0.75,
+    "start_timecode" : "00:14:02.000",
+    "end_sec" : 844
+  },
+  {
+    "start_sec" : 846,
+    "text" : "今天早上",
+    "end_timecode" : "00:14:07.000",
+    "index" : 251,
+    "confidence" : 1,
+    "start_timecode" : "00:14:06.000",
+    "end_sec" : 847
+  },
+  {
+    "start_sec" : 848,
+    "text" : "我在他包里发现了一把手枪",
+    "end_timecode" : "00:14:11.000",
+    "index" : 252,
+    "confidence" : 1,
+    "start_timecode" : "00:14:08.000",
+    "end_sec" : 851
+  },
+  {
+    "start_sec" : 852,
+    "text" : "什么型号",
+    "end_timecode" : "00:14:13.000",
+    "index" : 253,
+    "confidence" : 1,
+    "start_timecode" : "00:14:12.000",
+    "end_sec" : 853
+  },
+  {
+    "start_sec" : 853,
+    "text" : "我哪懂啊",
+    "end_timecode" : "00:14:14.000",
+    "index" : 254,
+    "confidence" : 1,
+    "start_timecode" : "00:14:13.000",
+    "end_sec" : 854
+  },
+  {
+    "start_sec" : 855,
+    "text" : "你懂",
+    "end_timecode" : "00:14:16.000",
+    "index" : 255,
+    "confidence" : 1,
+    "start_timecode" : "00:14:15.000",
+    "end_sec" : 856
+  },
+  {
+    "start_sec" : 857,
+    "text" : "我哪懂",
+    "end_timecode" : "00:14:18.000",
+    "index" : 256,
+    "confidence" : 1,
+    "start_timecode" : "00:14:17.000",
+    "end_sec" : 858
+  },
+  {
+    "start_sec" : 859,
+    "text" : "我是说真枪还是假枪",
+    "end_timecode" : "00:14:20.000",
+    "index" : 257,
+    "confidence" : 1,
+    "start_timecode" : "00:14:19.000",
+    "end_sec" : 860
+  },
+  {
+    "start_sec" : 860,
+    "text" : "**“我是说真枪还是假枪",
+    "end_timecode" : "00:14:21.000",
+    "index" : 258,
+    "confidence" : 0.5,
+    "start_timecode" : "00:14:20.000",
+    "end_sec" : 861
+  },
+  {
+    "start_sec" : 863,
+    "text" : "真的",
+    "end_timecode" : "00:14:24.000",
+    "index" : 259,
+    "confidence" : 1,
+    "start_timecode" : "00:14:23.000",
+    "end_sec" : 864
+  },
+  {
+    "start_sec" : 865,
+    "text" : "他做秘密事的嘛",
+    "end_timecode" : "00:14:27.000",
+    "index" : 260,
+    "confidence" : 1,
+    "start_timecode" : "00:14:25.000",
+    "end_sec" : 867
+  },
+  {
+    "start_sec" : 867,
+    "text" : "有枪就有枪呗",
+    "end_timecode" : "00:14:28.000",
+    "index" : 261,
+    "confidence" : 1,
+    "start_timecode" : "00:14:27.000",
+    "end_sec" : 868
+  },
+  {
+    "start_sec" : 869,
+    "text" : "～你余大哥也别着那玩意回来过呢",
+    "end_timecode" : "00:14:30.000",
+    "index" : 262,
+    "confidence" : 0.5,
+    "start_timecode" : "00:14:29.000",
+    "end_sec" : 870
+  },
+  {
+    "start_sec" : 870,
+    "text" : "你余大哥也别着那玩意回来过呢",
+    "end_timecode" : "00:14:31.000",
+    "index" : 263,
+    "confidence" : 1,
+    "start_timecode" : "00:14:30.000",
+    "end_sec" : 871
+  },
+  {
+    "start_sec" : 873,
+    "text" : "除了枪",
+    "end_timecode" : "00:14:34.000",
+    "index" : 264,
+    "confidence" : 1,
+    "start_timecode" : "00:14:33.000",
+    "end_sec" : 874
+  },
+  {
+    "start_sec" : 876,
+    "text" : "还有两张戏园子的票根",
+    "end_timecode" : "00:14:38.000",
+    "index" : 265,
+    "confidence" : 1,
+    "start_timecode" : "00:14:36.000",
+    "end_sec" : 878
+  },
+  {
+    "start_sec" : 881,
+    "text" : "也不知道跟哪路女流逍遥去的",
+    "end_timecode" : "00:14:44.000",
+    "index" : 266,
+    "confidence" : 1,
+    "start_timecode" : "00:14:41.000",
+    "end_sec" : 884
+  },
+  {
+    "start_sec" : 887,
+    "text" : "他在外面有女人",
+    "end_timecode" : "00:14:48.000",
+    "index" : 267,
+    "confidence" : 1,
+    "start_timecode" : "00:14:47.000",
+    "end_sec" : 888
+  },
+  {
+    "start_sec" : 888,
+    "text" : "差不多吧",
+    "end_timecode" : "00:14:49.000",
+    "index" : 268,
+    "confidence" : 1,
+    "start_timecode" : "00:14:48.000",
+    "end_sec" : 889
+  },
+  {
+    "start_sec" : 893,
+    "text" : "4 早上我偷偷跟他出了门",
+    "end_timecode" : "00:14:54.000",
+    "index" : 269,
+    "confidence" : 0.5,
+    "start_timecode" : "00:14:53.000",
+    "end_sec" : 894
+  },
+  {
+    "start_sec" : 894,
+    "text" : "早上我偷偷跟他出了门",
+    "end_timecode" : "00:14:55.000",
+    "index" : 270,
+    "confidence" : 1,
+    "start_timecode" : "00:14:54.000",
+    "end_sec" : 895
+  },
+  {
+    "start_sec" : 896,
+    "text" : "他是说去看生意",
+    "end_timecode" : "00:14:58.000",
+    "index" : 271,
+    "confidence" : 1,
+    "start_timecode" : "00:14:56.000",
+    "end_sec" : 898
+  },
+  {
+    "start_sec" : 899,
+    "text" : "结果拐了弯 就上了一辆车",
+    "end_timecode" : "00:15:02.000",
+    "index" : 272,
+    "confidence" : 0.667,
+    "start_timecode" : "00:14:59.000",
+    "end_sec" : 902
+  },
+  {
+    "start_sec" : 904,
+    "text" : "妹子；你就不该跟他",
+    "end_timecode" : "00:15:05.000",
+    "index" : 273,
+    "confidence" : 0.3,
+    "start_timecode" : "00:15:04.000",
+    "end_sec" : 905
+  },
+  {
+    "start_sec" : 906,
+    "text" : "你看到什么还不自己心里难受吗",
+    "end_timecode" : "00:15:08.000",
+    "index" : 274,
+    "confidence" : 1,
+    "start_timecode" : "00:15:06.000",
+    "end_sec" : 908
+  },
+  {
+    "start_sec" : 909,
+    "text" : "眼不见心不烦呢",
+    "end_timecode" : "00:15:10.000",
+    "index" : 275,
+    "confidence" : 1,
+    "start_timecode" : "00:15:09.000",
+    "end_sec" : 910
+  },
+  {
+    "start_sec" : 913,
+    "text" : "不烦 不烦了",
+    "end_timecode" : "00:15:14.000",
+    "index" : 276,
+    "confidence" : 0.5,
+    "start_timecode" : "00:15:13.000",
+    "end_sec" : 914
+  },
+  {
+    "start_sec" : 914,
+    "text" : "你给我念念这个",
+    "end_timecode" : "00:15:15.000",
+    "index" : 277,
+    "confidence" : 1,
+    "start_timecode" : "00:15:14.000",
+    "end_sec" : 915
+  },
+  {
+    "start_sec" : 922,
+    "text" : "忧伤被泪湿坏了翅膀",
+    "end_timecode" : "00:15:26.000",
+    "index" : 278,
+    "confidence" : 0.875,
+    "start_timecode" : "00:15:22.000",
+    "end_sec" : 926
+  },
+  {
+    "start_sec" : 926,
+    "text" : "甲骨文说我太古老",
+    "end_timecode" : "00:15:28.000",
+    "index" : 279,
+    "confidence" : 1,
+    "start_timecode" : "00:15:26.000",
+    "end_sec" : 928
+  },
+  {
+    "start_sec" : 929,
+    "text" : "一滴血落在粉嫩的腿上",
+    "end_timecode" : "00:15:33.000",
+    "index" : 280,
+    "confidence" : 1,
+    "start_timecode" : "00:15:29.000",
+    "end_sec" : 933
+  },
+  {
+    "start_sec" : 937,
+    "text" : "油纸伞说浪漫已经死掉",
+    "end_timecode" : "00:15:40.000",
+    "index" : 281,
+    "confidence" : 1,
+    "start_timecode" : "00:15:37.000",
+    "end_sec" : 940
+  },
+  {
+    "start_sec" : 948,
+    "text" : "老天爷我死了算了",
+    "end_timecode" : "00:15:49.000",
+    "index" : 282,
+    "confidence" : 0.5,
+    "start_timecode" : "00:15:48.000",
+    "end_sec" : 949
+  },
+  {
+    "start_sec" : 949,
+    "text" : "老天爷，我死了算了",
+    "end_timecode" : "00:15:50.000",
+    "index" : 283,
+    "confidence" : 0.5,
+    "start_timecode" : "00:15:49.000",
+    "end_sec" : 950
+  },
+  {
+    "start_sec" : 950,
+    "text" : "老天爷我死了算了",
+    "end_timecode" : "00:15:52.000",
+    "index" : 284,
+    "confidence" : 0.5,
+    "start_timecode" : "00:15:50.000",
+    "end_sec" : 952
+  },
+  {
+    "start_sec" : 953,
+    "text" : "我怎么一句都听不懂",
+    "end_timecode" : "00:15:55.000",
+    "index" : 285,
+    "confidence" : 1,
+    "start_timecode" : "00:15:53.000",
+    "end_sec" : 955
+  },
+  {
+    "start_sec" : 958,
+    "text" : "就是忧伤",
+    "end_timecode" : "00:15:59.000",
+    "index" : 286,
+    "confidence" : 1,
+    "start_timecode" : "00:15:58.000",
+    "end_sec" : 959
+  },
+  {
+    "start_sec" : 962,
+    "text" : "忧伤是什么",
+    "end_timecode" : "00:16:04.000",
+    "index" : 287,
+    "confidence" : 1,
+    "start_timecode" : "00:16:02.000",
+    "end_sec" : 964
+  },
+  {
+    "start_sec" : 967,
+    "text" : "可能就是我这样吧",
+    "end_timecode" : "00:16:09.000",
+    "index" : 288,
+    "confidence" : 1,
+    "start_timecode" : "00:16:07.000",
+    "end_sec" : 969
+  },
+  {
+    "start_sec" : 994,
+    "text" : "忙了一天累坏了吧",
+    "end_timecode" : "00:16:37.000",
+    "index" : 289,
+    "confidence" : 0.833,
+    "start_timecode" : "00:16:34.000",
+    "end_sec" : 997
+  },
+  {
+    "start_sec" : 1003,
+    "text" : "茶泡好丁 我给你端去",
+    "end_timecode" : "00:16:44.000",
+    "index" : 290,
+    "confidence" : 0.5,
+    "start_timecode" : "00:16:43.000",
+    "end_sec" : 1004
+  },
+  {
+    "start_sec" : 1004,
+    "text" : "茶泡好了 我给你端去",
+    "end_timecode" : "00:16:45.000",
+    "index" : 291,
+    "confidence" : 0.5,
+    "start_timecode" : "00:16:44.000",
+    "end_sec" : 1005
+  },
+  {
+    "start_sec" : 1005,
+    "text" : "茶泡好了我给你端去",
+    "end_timecode" : "00:16:46.000",
+    "index" : 292,
+    "confidence" : 0.5,
+    "start_timecode" : "00:16:45.000",
+    "end_sec" : 1006
+  },
+  {
+    "start_sec" : 1015,
+    "text" : "你又跟她说什么了",
+    "end_timecode" : "00:16:57.000",
+    "index" : 293,
+    "confidence" : 1,
+    "start_timecode" : "00:16:55.000",
+    "end_sec" : 1017
+  },
+  {
+    "start_sec" : 1018,
+    "text" : "她怎么变成这样了",
+    "end_timecode" : "00:16:59.000",
+    "index" : 294,
+    "confidence" : 1,
+    "start_timecode" : "00:16:58.000",
+    "end_sec" : 1019
+  },
+  {
+    "start_sec" : 1022,
+    "text" : "没什么 就是忧伤",
+    "end_timecode" : "00:17:06.000",
+    "index" : 295,
+    "confidence" : 0.5,
+    "start_timecode" : "00:17:02.000",
+    "end_sec" : 1026
+  },
+  {
+    "start_sec" : 1027,
+    "text" : "我走了",
+    "end_timecode" : "00:17:08.000",
+    "index" : 296,
+    "confidence" : 1,
+    "start_timecode" : "00:17:07.000",
+    "end_sec" : 1028
+  },
+  {
+    "start_sec" : 1051,
+    "text" : "你怎么还站着呀",
+    "end_timecode" : "00:17:32.000",
+    "index" : 297,
+    "confidence" : 1,
+    "start_timecode" : "00:17:31.000",
+    "end_sec" : 1052
+  },
+  {
+    "start_sec" : 1053,
+    "text" : "快坐下 歇会儿",
+    "end_timecode" : "00:17:35.000",
+    "index" : 298,
+    "confidence" : 0.5,
+    "start_timecode" : "00:17:33.000",
+    "end_sec" : 1055
+  },
+  {
+    "start_sec" : 1064,
+    "text" : "你怎么了",
+    "end_timecode" : "00:17:45.000",
+    "index" : 299,
+    "confidence" : 1,
+    "start_timecode" : "00:17:44.000",
+    "end_sec" : 1065
+  },
+  {
+    "start_sec" : 1067,
+    "text" : "弄得我浑身鸡皮疙瘩都起来了",
+    "end_timecode" : "00:17:49.000",
+    "index" : 300,
+    "confidence" : 1,
+    "start_timecode" : "00:17:47.000",
+    "end_sec" : 1069
+  },
+  {
+    "start_sec" : 1070,
+    "text" : "像以前那样挺好的",
+    "end_timecode" : "00:17:51.000",
+    "index" : 301,
+    "confidence" : 1,
+    "start_timecode" : "00:17:50.000",
+    "end_sec" : 1071
+  },
+  {
+    "start_sec" : 1072,
+    "text" : "我怎么了",
+    "end_timecode" : "00:17:53.000",
+    "index" : 302,
+    "confidence" : 0.5,
+    "start_timecode" : "00:17:52.000",
+    "end_sec" : 1073
+  },
+  {
+    "start_sec" : 1074,
+    "text" : "忙一天了累了吧",
+    "end_timecode" : "00:17:55.000",
+    "index" : 303,
+    "confidence" : 0.5,
+    "start_timecode" : "00:17:54.000",
+    "end_sec" : 1075
+  },
+  {
+    "start_sec" : 1075,
+    "text" : "忙一天不 累了吧",
+    "end_timecode" : "00:17:56.000",
+    "index" : 304,
+    "confidence" : 0.5,
+    "start_timecode" : "00:17:55.000",
+    "end_sec" : 1076
+  },
+  {
+    "start_sec" : 1076,
+    "text" : "茶泡好了我给你端过来",
+    "end_timecode" : "00:17:58.000",
+    "index" : 305,
+    "confidence" : 1,
+    "start_timecode" : "00:17:56.000",
+    "end_sec" : 1078
+  },
+  {
+    "start_sec" : 1078,
+    "text" : "跟谁学的你",
+    "end_timecode" : "00:17:59.000",
+    "index" : 306,
+    "confidence" : 1,
+    "start_timecode" : "00:17:58.000",
+    "end_sec" : 1079
+  },
+  {
+    "start_sec" : 1080,
+    "text" : "胡说八道",
+    "end_timecode" : "00:18:01.000",
+    "index" : 307,
+    "confidence" : 1,
+    "start_timecode" : "00:18:00.000",
+    "end_sec" : 1081
+  },
+  {
+    "start_sec" : 1082,
+    "text" : "我是那样说的吗",
+    "end_timecode" : "00:18:03.000",
+    "index" : 308,
+    "confidence" : 1,
+    "start_timecode" : "00:18:02.000",
+    "end_sec" : 1083
+  },
+  {
+    "start_sec" : 1083,
+    "text" : "就是这样说的",
+    "end_timecode" : "00:18:04.000",
+    "index" : 309,
+    "confidence" : 1,
+    "start_timecode" : "00:18:03.000",
+    "end_sec" : 1084
+  },
+  {
+    "start_sec" : 1088,
+    "text" : "我让那小妖精给拿了魂了",
+    "end_timecode" : "00:18:10.000",
+    "index" : 310,
+    "confidence" : 1,
+    "start_timecode" : "00:18:08.000",
+    "end_sec" : 1090
+  },
+  {
+    "start_sec" : 1093,
+    "text" : "她给我念的这个",
+    "end_timecode" : "00:18:14.000",
+    "index" : 311,
+    "confidence" : 1,
+    "start_timecode" : "00:18:13.000",
+    "end_sec" : 1094
+  },
+  {
+    "start_sec" : 1095,
+    "text" : "我一不就麻酥酥的了",
+    "end_timecode" : "00:18:16.000",
+    "index" : 312,
+    "confidence" : 1,
+    "start_timecode" : "00:18:15.000",
+    "end_sec" : 1096
+  },
+  {
+    "start_sec" : 1096,
+    "text" : "我一下就麻酥酥的了",
+    "end_timecode" : "00:18:17.000",
+    "index" : 313,
+    "confidence" : 1,
+    "start_timecode" : "00:18:16.000",
+    "end_sec" : 1097
+  },
+  {
+    "start_sec" : 1105,
+    "text" : "延安被敌人占领了",
+    "end_timecode" : "00:18:26.000",
+    "index" : 314,
+    "confidence" : 1,
+    "start_timecode" : "00:18:25.000",
+    "end_sec" : 1106
+  },
+  {
+    "start_sec" : 1109,
+    "text" : "蒋委员长及国民政府",
+    "end_timecode" : "00:18:31.000",
+    "index" : 315,
+    "confidence" : 1,
+    "start_timecode" : "00:18:29.000",
+    "end_sec" : 1111
+  },
+  {
+    "start_sec" : 1112,
+    "text" : "向攻取延安的铁军雄狮发出了",
+    "end_timecode" : "00:18:35.000",
+    "index" : 316,
+    "confidence" : 0.833,
+    "start_timecode" : "00:18:32.000",
+    "end_sec" : 1115
+  },
+  {
+    "start_sec" : 1115,
+    "text" : "问攻取延安的铁军雄狮发出了",
+    "end_timecode" : "00:18:36.000",
+    "index" : 317,
+    "confidence" : 1,
+    "start_timecode" : "00:18:35.000",
+    "end_sec" : 1116
+  },
+  {
+    "start_sec" : 1116,
+    "text" : "特别嘉奖令",
+    "end_timecode" : "00:18:38.000",
+    "index" : 318,
+    "confidence" : 1,
+    "start_timecode" : "00:18:36.000",
+    "end_sec" : 1118
+  },
+  {
+    "start_sec" : 1118,
+    "text" : "我们就该拿起枪去打仗",
+    "end_timecode" : "00:18:39.000",
+    "index" : 319,
+    "confidence" : 1,
+    "start_timecode" : "00:18:38.000",
+    "end_sec" : 1119
+  },
+  {
+    "start_sec" : 1120,
+    "text" : "在这儿睡软床吃白米有什么用啊",
+    "end_timecode" : "00:18:42.000",
+    "index" : 320,
+    "confidence" : 1,
+    "start_timecode" : "00:18:40.000",
+    "end_sec" : 1122
+  },
+  {
+    "start_sec" : 1123,
+    "text" : "错了 翠平",
+    "end_timecode" : "00:18:44.000",
+    "index" : 321,
+    "confidence" : 0.3,
+    "start_timecode" : "00:18:43.000",
+    "end_sec" : 1124
+  },
+  {
+    "start_sec" : 1125,
+    "text" : "现在是最需要我们的时候",
+    "end_timecode" : "00:18:46.000",
+    "index" : 322,
+    "confidence" : 1,
+    "start_timecode" : "00:18:45.000",
+    "end_sec" : 1126
+  },
+  {
+    "start_sec" : 1127,
+    "text" : "可你听只有三个的时间了",
+    "end_timecode" : "00:18:48.000",
+    "index" : 323,
+    "confidence" : 0.5,
+    "start_timecode" : "00:18:47.000",
+    "end_sec" : 1128
+  },
+  {
+    "start_sec" : 1134,
+    "text" : "有一种胜利四撤退",
+    "end_timecode" : "00:18:55.000",
+    "index" : 324,
+    "confidence" : 0.5,
+    "start_timecode" : "00:18:54.000",
+    "end_sec" : 1135
+  },
+  {
+    "start_sec" : 1136,
+    "text" : "有一种失败叫占领",
+    "end_timecode" : "00:18:57.000",
+    "index" : 325,
+    "confidence" : 0.5,
+    "start_timecode" : "00:18:56.000",
+    "end_sec" : 1137
+  },
+  {
+    "start_sec" : 1137,
+    "text" : "有一种失败門占领",
+    "end_timecode" : "00:18:58.000",
+    "index" : 326,
+    "confidence" : 0.5,
+    "start_timecode" : "00:18:57.000",
+    "end_sec" : 1138
+  },
+  {
+    "start_sec" : 1139,
+    "text" : "别听他们瞎吹",
+    "end_timecode" : "00:19:00.000",
+    "index" : 327,
+    "confidence" : 1,
+    "start_timecode" : "00:18:59.000",
+    "end_sec" : 1140
+  },
+  {
+    "start_sec" : 1145,
+    "text" : "我妹妹在延安也不知道怎么样了",
+    "end_timecode" : "00:19:07.000",
+    "index" : 328,
+    "confidence" : 1,
+    "start_timecode" : "00:19:05.000",
+    "end_sec" : 1147
+  },
+  {
+    "start_sec" : 1152,
+    "text" : "上面指示",
+    "end_timecode" : "00:19:13.000",
+    "index" : 329,
+    "confidence" : 1,
+    "start_timecode" : "00:19:12.000",
+    "end_sec" : 1153
+  },
+  {
+    "start_sec" : 1155,
+    "text" : "让我们继续潜伏下去",
+    "end_timecode" : "00:19:16.000",
+    "index" : 330,
+    "confidence" : 1,
+    "start_timecode" : "00:19:15.000",
+    "end_sec" : 1156
+  },
+  {
+    "start_sec" : 1156,
+    "text" : "等待最后的胜利",
+    "end_timecode" : "00:19:17.000",
+    "index" : 331,
+    "confidence" : 1,
+    "start_timecode" : "00:19:16.000",
+    "end_sec" : 1157
+  },
+  {
+    "start_sec" : 1157,
+    "text" : "等待最 的胜利",
+    "end_timecode" : "00:19:18.000",
+    "index" : 332,
+    "confidence" : 1,
+    "start_timecode" : "00:19:17.000",
+    "end_sec" : 1158
+  },
+  {
+    "start_sec" : 1161,
+    "text" : "老尚 你需要什么情报啊",
+    "end_timecode" : "00:19:24.000",
+    "index" : 333,
+    "confidence" : 1,
+    "start_timecode" : "00:19:21.000",
+    "end_sec" : 1164
+  },
+  {
+    "start_sec" : 1168,
+    "text" : "八路军改名了叫中国人民解放军",
+    "end_timecode" : "00:19:34.000",
+    "index" : 334,
+    "confidence" : 1,
+    "start_timecode" : "00:19:28.000",
+    "end_sec" : 1174
+  },
+  {
+    "start_sec" : 1174,
+    "text" : "新建制和番号那我都有",
+    "end_timecode" : "00:19:37.000",
+    "index" : 335,
+    "confidence" : 1,
+    "start_timecode" : "00:19:34.000",
+    "end_sec" : 1177
+  },
+  {
+    "start_sec" : 1180,
+    "text" : "胡宗南丢了一个团",
+    "end_timecode" : "00:19:42.000",
+    "index" : 336,
+    "confidence" : 1,
+    "start_timecode" : "00:19:40.000",
+    "end_sec" : 1182
+  },
+  {
+    "start_sec" : 1183,
+    "text" : "三十一旅旅长被俘了",
+    "end_timecode" : "00:19:45.000",
+    "index" : 337,
+    "confidence" : 1,
+    "start_timecode" : "00:19:43.000",
+    "end_sec" : 1185
+  },
+  {
+    "start_sec" : 1185,
+    "text" : "中央还都不知道呢",
+    "end_timecode" : "00:19:47.000",
+    "index" : 338,
+    "confidence" : 1,
+    "start_timecode" : "00:19:45.000",
+    "end_sec" : 1187
+  },
+  {
+    "start_sec" : 1187,
+    "text" : "还有什么",
+    "end_timecode" : "00:19:48.000",
+    "index" : 339,
+    "confidence" : 1,
+    "start_timecode" : "00:19:47.000",
+    "end_sec" : 1188
+  },
+  {
+    "start_sec" : 1191,
+    "text" : "周佛海免予死刑",
+    "end_timecode" : "00:19:53.000",
+    "index" : 340,
+    "confidence" : 1,
+    "start_timecode" : "00:19:51.000",
+    "end_sec" : 1193
+  },
+  {
+    "start_sec" : 1194,
+    "text" : "这算狗屁情报 这",
+    "end_timecode" : "00:19:55.000",
+    "index" : 341,
+    "confidence" : 0.5,
+    "start_timecode" : "00:19:54.000",
+    "end_sec" : 1195
+  },
+  {
+    "start_sec" : 1195,
+    "text" : "这算狗屁情报这",
+    "end_timecode" : "00:19:56.000",
+    "index" : 342,
+    "confidence" : 0.5,
+    "start_timecode" : "00:19:55.000",
+    "end_sec" : 1196
+  },
+  {
+    "start_sec" : 1198,
+    "text" : "免予死刑那是有内幕的",
+    "end_timecode" : "00:20:00.000",
+    "index" : 343,
+    "confidence" : 1,
+    "start_timecode" : "00:19:58.000",
+    "end_sec" : 1200
+  },
+  {
+    "start_sec" : 1200,
+    "text" : "杨淑慧那一千五百两黄金",
+    "end_timecode" : "00:20:03.000",
+    "index" : 344,
+    "confidence" : 1,
+    "start_timecode" : "00:20:00.000",
+    "end_sec" : 1203
+  },
+  {
+    "start_sec" : 1203,
+    "text" : "都打点给谁了你知道吗",
+    "end_timecode" : "00:20:05.000",
+    "index" : 345,
+    "confidence" : 1,
+    "start_timecode" : "00:20:03.000",
+    "end_sec" : 1205
+  },
+  {
+    "start_sec" : 1205,
+    "text" : "我不想知道",
+    "end_timecode" : "00:20:06.000",
+    "index" : 346,
+    "confidence" : 1,
+    "start_timecode" : "00:20:05.000",
+    "end_sec" : 1206
+  },
+  {
+    "start_sec" : 1207,
+    "text" : "我感兴趣的是",
+    "end_timecode" : "00:20:08.000",
+    "index" : 347,
+    "confidence" : 1,
+    "start_timecode" : "00:20:07.000",
+    "end_sec" : 1208
+  },
+  {
+    "start_sec" : 1208,
+    "text" : "美金公债何时发行",
+    "end_timecode" : "00:20:10.000",
+    "index" : 348,
+    "confidence" : 1,
+    "start_timecode" : "00:20:08.000",
+    "end_sec" : 1210
+  },
+  {
+    "start_sec" : 1213,
+    "text" : "这我明天就可以给你消息",
+    "end_timecode" : "00:20:15.000",
+    "index" : 349,
+    "confidence" : 1,
+    "start_timecode" : "00:20:13.000",
+    "end_sec" : 1215
+  },
+  {
+    "start_sec" : 1216,
+    "text" : "我有个朋友在销募委员会",
+    "end_timecode" : "00:20:18.000",
+    "index" : 350,
+    "confidence" : 1,
+    "start_timecode" : "00:20:16.000",
+    "end_sec" : 1218
+  },
+  {
+    "start_sec" : 1219,
+    "text" : "你那儿有什么值钱的货",
+    "end_timecode" : "00:20:22.000",
+    "index" : 351,
+    "confidence" : 1,
+    "start_timecode" : "00:20:19.000",
+    "end_sec" : 1222
+  },
+  {
+    "start_sec" : 1224,
+    "text" : "延安都占领了",
+    "end_timecode" : "00:20:25.000",
+    "index" : 352,
+    "confidence" : 1,
+    "start_timecode" : "00:20:24.000",
+    "end_sec" : 1225
+  },
+  {
+    "start_sec" : 1225,
+    "text" : "能有什么屁值钱的货",
+    "end_timecode" : "00:20:27.000",
+    "index" : 353,
+    "confidence" : 1,
+    "start_timecode" : "00:20:25.000",
+    "end_sec" : 1227
+  },
+  {
+    "start_sec" : 1228,
+    "text" : "延安也有叛徒的",
+    "end_timecode" : "00:20:30.000",
+    "index" : 354,
+    "confidence" : 1,
+    "start_timecode" : "00:20:28.000",
+    "end_sec" : 1230
+  },
+  {
+    "start_sec" : 1230,
+    "text" : "这个人带着国军",
+    "end_timecode" : "00:20:31.000",
+    "index" : 355,
+    "confidence" : 1,
+    "start_timecode" : "00:20:30.000",
+    "end_sec" : 1231
+  },
+  {
+    "start_sec" : 1232,
+    "text" : "在安塞挖出了宝贝",
+    "end_timecode" : "00:20:34.000",
+    "index" : 356,
+    "confidence" : 1,
+    "start_timecode" : "00:20:32.000",
+    "end_sec" : 1234
+  },
+  {
+    "start_sec" : 1236,
+    "text" : "什么宝贝",
+    "end_timecode" : "00:20:37.000",
+    "index" : 357,
+    "confidence" : 1,
+    "start_timecode" : "00:20:36.000",
+    "end_sec" : 1237
+  },
+  {
+    "start_sec" : 1240,
+    "text" : "共党逃跑来不及带走的文件",
+    "end_timecode" : "00:20:43.000",
+    "index" : 358,
+    "confidence" : 1,
+    "start_timecode" : "00:20:40.000",
+    "end_sec" : 1243
+  },
+  {
+    "start_sec" : 1243,
+    "text" : "全埋在那里了",
+    "end_timecode" : "00:20:44.000",
+    "index" : 359,
+    "confidence" : 1,
+    "start_timecode" : "00:20:43.000",
+    "end_sec" : 1244
+  },
+  {
+    "start_sec" : 1248,
+    "text" : "来来来",
+    "end_timecode" : "00:20:49.000",
+    "index" : 360,
+    "confidence" : 1,
+    "start_timecode" : "00:20:48.000",
+    "end_sec" : 1249
+  },
+  {
+    "start_sec" : 1250,
+    "text" : "请进",
+    "end_timecode" : "00:20:51.000",
+    "index" : 361,
+    "confidence" : 1,
+    "start_timecode" : "00:20:50.000",
+    "end_sec" : 1251
+  },
+  {
+    "start_sec" : 1253,
+    "text" : "怎么样 我这儿还不错吧",
+    "end_timecode" : "00:20:54.000",
+    "index" : 362,
+    "confidence" : 0.5,
+    "start_timecode" : "00:20:53.000",
+    "end_sec" : 1254
+  },
+  {
+    "start_sec" : 1257,
+    "text" : "喜欢这玩意",
+    "end_timecode" : "00:20:59.000",
+    "index" : 363,
+    "confidence" : 1,
+    "start_timecode" : "00:20:57.000",
+    "end_sec" : 1259
+  },
+  {
+    "start_sec" : 1259,
+    "text" : "喜欢",
+    "end_timecode" : "00:21:00.000",
+    "index" : 364,
+    "confidence" : 1,
+    "start_timecode" : "00:20:59.000",
+    "end_sec" : 1260
+  },
+  {
+    "start_sec" : 1261,
+    "text" : "再倒几年情报啊 挣够了钱",
+    "end_timecode" : "00:21:04.000",
+    "index" : 365,
+    "confidence" : 1,
+    "start_timecode" : "00:21:01.000",
+    "end_sec" : 1264
+  },
+  {
+    "start_sec" : 1265,
+    "text" : "老子就开个刀剑工厂",
+    "end_timecode" : "00:21:06.000",
+    "index" : 366,
+    "confidence" : 0.5,
+    "start_timecode" : "00:21:05.000",
+    "end_sec" : 1266
+  },
+  {
+    "start_sec" : 1271,
+    "text" : "这都是延安的",
+    "end_timecode" : "00:21:13.000",
+    "index" : 367,
+    "confidence" : 1,
+    "start_timecode" : "00:21:11.000",
+    "end_sec" : 1273
+  },
+  {
+    "start_sec" : 1274,
+    "text" : "不是 哪能有那么多",
+    "end_timecode" : "00:21:16.000",
+    "index" : 368,
+    "confidence" : 0.75,
+    "start_timecode" : "00:21:14.000",
+    "end_sec" : 1276
+  },
+  {
+    "start_sec" : 1277,
+    "text" : "这都是过期的",
+    "end_timecode" : "00:21:18.000",
+    "index" : 369,
+    "confidence" : 1,
+    "start_timecode" : "00:21:17.000",
+    "end_sec" : 1278
+  },
+  {
+    "start_sec" : 1279,
+    "text" : "这是军调时代剩下的",
+    "end_timecode" : "00:21:20.000",
+    "index" : 370,
+    "confidence" : 1,
+    "start_timecode" : "00:21:19.000",
+    "end_sec" : 1280
+  },
+  {
+    "start_sec" : 1280,
+    "text" : "这是美国的 共党的",
+    "end_timecode" : "00:21:23.000",
+    "index" : 371,
+    "confidence" : 0.5,
+    "start_timecode" : "00:21:20.000",
+    "end_sec" : 1283
+  },
+  {
+    "start_sec" : 1283,
+    "text" : "还有俄国的",
+    "end_timecode" : "00:21:24.000",
+    "index" : 372,
+    "confidence" : 1,
+    "start_timecode" : "00:21:23.000",
+    "end_sec" : 1284
+  },
+  {
+    "start_sec" : 1288,
+    "text" : "早就该作价甩卖了",
+    "end_timecode" : "00:21:30.000",
+    "index" : 373,
+    "confidence" : 1,
+    "start_timecode" : "00:21:28.000",
+    "end_sec" : 1290
+  },
+  {
+    "start_sec" : 1290,
+    "text" : "全砸在手上了",
+    "end_timecode" : "00:21:31.000",
+    "index" : 374,
+    "confidence" : 1,
+    "start_timecode" : "00:21:30.000",
+    "end_sec" : 1291
+  },
+  {
+    "start_sec" : 1291,
+    "text" : "现在一文钱不值",
+    "end_timecode" : "00:21:32.000",
+    "index" : 375,
+    "confidence" : 1,
+    "start_timecode" : "00:21:31.000",
+    "end_sec" : 1292
+  },
+  {
+    "start_sec" : 1292,
+    "text" : "这是延安的",
+    "end_timecode" : "00:21:33.000",
+    "index" : 376,
+    "confidence" : 1,
+    "start_timecode" : "00:21:32.000",
+    "end_sec" : 1293
+  },
+  {
+    "start_sec" : 1297,
+    "text" : "现在这生意它没法做",
+    "end_timecode" : "00:21:39.000",
+    "index" : 377,
+    "confidence" : 1,
+    "start_timecode" : "00:21:37.000",
+    "end_sec" : 1299
+  },
+  {
+    "start_sec" : 1300,
+    "text" : "省从这党適局顯供密局",
+    "end_timecode" : "00:21:41.000",
+    "index" : 378,
+    "confidence" : 0.3,
+    "start_timecode" : "00:21:40.000",
+    "end_sec" : 1301
+  },
+  {
+    "start_sec" : 1301,
+    "text" : "自从这党通局跟保密局",
+    "end_timecode" : "00:21:43.000",
+    "index" : 379,
+    "confidence" : 1,
+    "start_timecode" : "00:21:41.000",
+    "end_sec" : 1303
+  },
+  {
+    "start_sec" : 1303,
+    "text" : "692 2071 16%6 129 （b 这高层一介入4 5861 2704 C-",
+    "end_timecode" : "00:21:44.000",
+    "index" : 380,
+    "confidence" : 0.3,
+    "start_timecode" : "00:21:43.000",
+    "end_sec" : 1304
+  },
+  {
+    "start_sec" : 1304,
+    "text" : "他们就是最权威的",
+    "end_timecode" : "00:21:46.000",
+    "index" : 381,
+    "confidence" : 1,
+    "start_timecode" : "00:21:44.000",
+    "end_sec" : 1306
+  },
+  {
+    "start_sec" : 1307,
+    "text" : "他们发了",
+    "end_timecode" : "00:21:48.000",
+    "index" : 382,
+    "confidence" : 1,
+    "start_timecode" : "00:21:47.000",
+    "end_sec" : 1308
+  },
+  {
+    "start_sec" : 1309,
+    "text" : "以前咱们靠造假",
+    "end_timecode" : "00:21:50.000",
+    "index" : 383,
+    "confidence" : 1,
+    "start_timecode" : "00:21:49.000",
+    "end_sec" : 1310
+  },
+  {
+    "start_sec" : 1310,
+    "text" : "那还能混口饭吃",
+    "end_timecode" : "00:21:52.000",
+    "index" : 384,
+    "confidence" : 1,
+    "start_timecode" : "00:21:50.000",
+    "end_sec" : 1312
+  },
+  {
+    "start_sec" : 1313,
+    "text" : "现在他们拿一个就是一个",
+    "end_timecode" : "00:21:55.000",
+    "index" : 385,
+    "confidence" : 1,
+    "start_timecode" : "00:21:53.000",
+    "end_sec" : 1315
+  },
+  {
+    "start_sec" : 1316,
+    "text" : "买消息还得是人共党舍得花钱",
+    "end_timecode" : "00:22:01.000",
+    "index" : 386,
+    "confidence" : 1,
+    "start_timecode" : "00:21:56.000",
+    "end_sec" : 1321
+  },
+  {
+    "start_sec" : 1321,
+    "text" : "可不是吗 ：北九前养",
+    "end_timecode" : "00:22:02.000",
+    "index" : 387,
+    "confidence" : 0.65,
+    "start_timecode" : "00:22:01.000",
+    "end_sec" : 1322
+  },
+  {
+    "start_sec" : 1322,
+    "text" : "社 前不是吗",
+    "end_timecode" : "00:22:03.000",
+    "index" : 388,
+    "confidence" : 0.4,
+    "start_timecode" : "00:22:02.000",
+    "end_sec" : 1323
+  },
+  {
+    "start_sec" : 1323,
+    "text" : "北多局壽",
+    "end_timecode" : "00:22:04.000",
+    "index" : 389,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:03.000",
+    "end_sec" : 1324
+  },
+  {
+    "start_sec" : 1329,
+    "text" : "伏",
+    "end_timecode" : "00:22:10.000",
+    "index" : 390,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:09.000",
+    "end_sec" : 1330
+  },
+  {
+    "start_sec" : 1330,
+    "text" : "到",
+    "end_timecode" : "00:22:11.000",
+    "index" : 391,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:10.000",
+    "end_sec" : 1331
+  },
+  {
+    "start_sec" : 1331,
+    "text" : "• 諸 二：",
+    "end_timecode" : "00:22:12.000",
+    "index" : 392,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:11.000",
+    "end_sec" : 1332
+  },
+  {
+    "start_sec" : 1332,
+    "text" : "科",
+    "end_timecode" : "00:22:13.000",
+    "index" : 393,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:12.000",
+    "end_sec" : 1333
+  },
+  {
+    "start_sec" : 1333,
+    "text" : "峨",
+    "end_timecode" : "00:22:14.000",
+    "index" : 394,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:13.000",
+    "end_sec" : 1334
+  },
+  {
+    "start_sec" : 1335,
+    "text" : "这跟天津有关 我要了",
+    "end_timecode" : "00:22:18.000",
+    "index" : 395,
+    "confidence" : 0.667,
+    "start_timecode" : "00:22:15.000",
+    "end_sec" : 1338
+  },
+  {
+    "start_sec" : 1338,
+    "text" : "你想要什么就随便挑吧",
+    "end_timecode" : "00:22:20.000",
+    "index" : 396,
+    "confidence" : 0.75,
+    "start_timecode" : "00:22:18.000",
+    "end_sec" : 1340
+  },
+  {
+    "start_sec" : 1347,
+    "text" : "始志1",
+    "end_timecode" : "00:22:28.000",
+    "index" : 397,
+    "confidence" : 0.3,
+    "start_timecode" : "00:22:27.000",
+    "end_sec" : 1348
+  },
+  {
+    "start_sec" : 1361,
+    "text" : "一時",
+    "end_timecode" : "00:22:42.000",
+    "index" : 398,
+    "confidence" : 0.5,
+    "start_timecode" : "00:22:41.000",
+    "end_sec" : 1362
+  },
+  {
+    "start_sec" : 1363,
+    "text" : "淋 有",
+    "end_timecode" : "00:22:44.000",
+    "index" : 399,
+    "confidence" : 0.65,
+    "start_timecode" : "00:22:43.000",
+    "end_sec" : 1364
+  },
+  {
+    "start_sec" : 1364,
+    "text" : "許 牛",
+    "end_timecode" : "00:22:45.000",
+    "index" : 400,
+    "confidence" : 0.75,
+    "start_timecode" : "00:22:44.000",
+    "end_sec" : 1365
+  },
+  {
+    "start_sec" : 1374,
+    "text" : "都到门口了",
+    "end_timecode" : "00:22:55.000",
+    "index" : 401,
+    "confidence" : 1,
+    "start_timecode" : "00:22:54.000",
+    "end_sec" : 1375
+  },
+  {
+    "start_sec" : 1375,
+    "text" : "进来就说两句",
+    "end_timecode" : "00:22:56.000",
+    "index" : 402,
+    "confidence" : 0.5,
+    "start_timecode" : "00:22:55.000",
+    "end_sec" : 1376
+  },
+  {
+    "start_sec" : 1376,
+    "text" : "进来 就说两句",
+    "end_timecode" : "00:22:58.000",
+    "index" : 403,
+    "confidence" : 0.5,
+    "start_timecode" : "00:22:56.000",
+    "end_sec" : 1378
+  },
+  {
+    "start_sec" : 1378,
+    "text" : "来嘛 来嘛",
+    "end_timecode" : "00:23:00.000",
+    "index" : 404,
+    "confidence" : 0.75,
+    "start_timecode" : "00:22:58.000",
+    "end_sec" : 1380
+  },
+  {
+    "start_sec" : 1381,
+    "text" : "进来 到门口了",
+    "end_timecode" : "00:23:02.000",
+    "index" : 405,
+    "confidence" : 0.5,
+    "start_timecode" : "00:23:01.000",
+    "end_sec" : 1382
+  },
+  {
+    "start_sec" : 1386,
+    "text" : "就说两甸",
+    "end_timecode" : "00:23:07.000",
+    "index" : 406,
+    "confidence" : 0.5,
+    "start_timecode" : "00:23:06.000",
+    "end_sec" : 1387
+  },
+  {
+    "start_sec" : 1387,
+    "text" : "萆 说个屁 我跟他有什么好说的",
+    "end_timecode" : "00:23:08.000",
+    "index" : 407,
+    "confidence" : 0.4,
+    "start_timecode" : "00:23:07.000",
+    "end_sec" : 1388
+  },
+  {
+    "start_sec" : 1388,
+    "text" : "说个屁 我跟他有什么好说的",
+    "end_timecode" : "00:23:09.000",
+    "index" : 408,
+    "confidence" : 0.5,
+    "start_timecode" : "00:23:08.000",
+    "end_sec" : 1389
+  },
+  {
+    "start_sec" : 1390,
+    "text" : "人我给你带来了",
+    "end_timecode" : "00:23:11.000",
+    "index" : 409,
+    "confidence" : 1,
+    "start_timecode" : "00:23:10.000",
+    "end_sec" : 1391
+  },
+  {
+    "start_sec" : 1397,
+    "text" : "已：",
+    "end_timecode" : "00:23:18.000",
+    "index" : 410,
+    "confidence" : 0.3,
+    "start_timecode" : "00:23:17.000",
+    "end_sec" : 1398
+  },
+  {
+    "start_sec" : 1398,
+    "text" : "晚秋说你找我",
+    "end_timecode" : "00:23:19.000",
+    "index" : 411,
+    "confidence" : 1,
+    "start_timecode" : "00:23:18.000",
+    "end_sec" : 1399
+  },
+  {
+    "start_sec" : 1400,
+    "text" : "是这样 这个晚上",
+    "end_timecode" : "00:23:22.000",
+    "index" : 412,
+    "confidence" : 0.5,
+    "start_timecode" : "00:23:20.000",
+    "end_sec" : 1402
+  },
+  {
+    "start_sec" : 1402,
+    "text" : "你家先生回来就别做饭了",
+    "end_timecode" : "00:23:25.000",
+    "index" : 413,
+    "confidence" : 1,
+    "start_timecode" : "00:23:22.000",
+    "end_sec" : 1405
+  },
+  {
+    "start_sec" : 1405,
+    "text" : "在我家吃吧",
+    "end_timecode" : "00:23:26.000",
+    "index" : 414,
+    "confidence" : 1,
+    "start_timecode" : "00:23:25.000",
+    "end_sec" : 1406
+  },
+  {
+    "start_sec" : 1408,
+    "text" : "这当然好啊",
+    "end_timecode" : "00:23:29.000",
+    "index" : 415,
+    "confidence" : 1,
+    "start_timecode" : "00:23:28.000",
+    "end_sec" : 1409
+  },
+  {
+    "start_sec" : 1412,
+    "text" : "怎么吃啊 家里只有半张烙饼",
+    "end_timecode" : "00:23:33.000",
+    "index" : 416,
+    "confidence" : 1,
+    "start_timecode" : "00:23:32.000",
+    "end_sec" : 1413
+  },
+  {
+    "start_sec" : 1413,
+    "text" : "怎么吃啊；家里只有半张烙饼",
+    "end_timecode" : "00:23:34.000",
+    "index" : 417,
+    "confidence" : 0.5,
+    "start_timecode" : "00:23:33.000",
+    "end_sec" : 1414
+  },
+  {
+    "start_sec" : 1414,
+    "text" : "怎么吃啊，家里只有半张烙饼",
+    "end_timecode" : "00:23:35.000",
+    "index" : 418,
+    "confidence" : 0.5,
+    "start_timecode" : "00:23:34.000",
+    "end_sec" : 1415
+  },
+  {
+    "start_sec" : 1415,
+    "text" : "这你就别操心了",
+    "end_timecode" : "00:23:37.000",
+    "index" : 419,
+    "confidence" : 1,
+    "start_timecode" : "00:23:35.000",
+    "end_sec" : 1417
+  },
+  {
+    "start_sec" : 1418,
+    "text" : "我一会儿让人送个锅子来",
+    "end_timecode" : "00:23:39.000",
+    "index" : 420,
+    "confidence" : 1,
+    "start_timecode" : "00:23:38.000",
+    "end_sec" : 1419
+  },
+  {
+    "start_sec" : 1420,
+    "text" : "咱们吃涮羊肉",
+    "end_timecode" : "00:23:41.000",
+    "index" : 421,
+    "confidence" : 1,
+    "start_timecode" : "00:23:40.000",
+    "end_sec" : 1421
+  },
+  {
+    "start_sec" : 1421,
+    "text" : "蒙古馆子的羊肉",
+    "end_timecode" : "00:23:42.000",
+    "index" : 422,
+    "confidence" : 1,
+    "start_timecode" : "00:23:41.000",
+    "end_sec" : 1422
+  },
+  {
+    "start_sec" : 1424,
+    "text" : "叔伯在的时候倒是经常吃",
+    "end_timecode" : "00:23:45.000",
+    "index" : 423,
+    "confidence" : 1,
+    "start_timecode" : "00:23:44.000",
+    "end_sec" : 1425
+  },
+  {
+    "start_sec" : 1426,
+    "text" : "眼下吃顿羊肉啊",
+    "end_timecode" : "00:23:47.000",
+    "index" : 424,
+    "confidence" : 1,
+    "start_timecode" : "00:23:46.000",
+    "end_sec" : 1427
+  },
+  {
+    "start_sec" : 1428,
+    "text" : "就像过年一样",
+    "end_timecode" : "00:23:50.000",
+    "index" : 425,
+    "confidence" : 1,
+    "start_timecode" : "00:23:48.000",
+    "end_sec" : 1430
+  },
+  {
+    "start_sec" : 1433,
+    "text" : "羊肉还是包大包子好吃啊",
+    "end_timecode" : "00:23:55.000",
+    "index" : 426,
+    "confidence" : 1,
+    "start_timecode" : "00:23:53.000",
+    "end_sec" : 1435
+  },
+  {
+    "start_sec" : 1439,
+    "text" : "余太太 什么时候来的天津啊",
+    "end_timecode" : "00:24:01.000",
+    "index" : 427,
+    "confidence" : 0.75,
+    "start_timecode" : "00:23:59.000",
+    "end_sec" : 1441
+  },
+  {
+    "start_sec" : 1441,
+    "text" : "7 余太太 什么时候来的天津啊",
+    "end_timecode" : "00:24:02.000",
+    "index" : 428,
+    "confidence" : 0.5,
+    "start_timecode" : "00:24:01.000",
+    "end_sec" : 1442
+  },
+  {
+    "start_sec" : 1442,
+    "text" : "余太太 什么时候来的天津啊",
+    "end_timecode" : "00:24:03.000",
+    "index" : 429,
+    "confidence" : 0.5,
+    "start_timecode" : "00:24:02.000",
+    "end_sec" : 1443
+  },
+  {
+    "start_sec" : 1444,
+    "text" : "胜利那年吧",
+    "end_timecode" : "00:24:05.000",
+    "index" : 430,
+    "confidence" : 1,
+    "start_timecode" : "00:24:04.000",
+    "end_sec" : 1445
+  },
+  {
+    "start_sec" : 1447,
+    "text" : "几月呀",
+    "end_timecode" : "00:24:08.000",
+    "index" : 431,
+    "confidence" : 1,
+    "start_timecode" : "00:24:07.000",
+    "end_sec" : 1448
+  },
+  {
+    "start_sec" : 1450,
+    "text" : "种麦子的时候",
+    "end_timecode" : "00:24:11.000",
+    "index" : 432,
+    "confidence" : 1,
+    "start_timecode" : "00:24:10.000",
+    "end_sec" : 1451
+  },
+  {
+    "start_sec" : 1453,
+    "text" : "几月九吧",
+    "end_timecode" : "00:24:16.000",
+    "index" : 433,
+    "confidence" : 0.433,
+    "start_timecode" : "00:24:13.000",
+    "end_sec" : 1456
+  },
+  {
+    "start_sec" : 1458,
+    "text" : "问这干吗",
+    "end_timecode" : "00:24:19.000",
+    "index" : 434,
+    "confidence" : 0.5,
+    "start_timecode" : "00:24:18.000",
+    "end_sec" : 1459
+  },
+  {
+    "start_sec" : 1460,
+    "text" : "瞎问 家里还有兄弟姐妹吗",
+    "end_timecode" : "00:24:23.000",
+    "index" : 435,
+    "confidence" : 0.5,
+    "start_timecode" : "00:24:20.000",
+    "end_sec" : 1463
+  },
+  {
+    "start_sec" : 1466,
+    "text" : "你要给压岁钱哪",
+    "end_timecode" : "00:24:27.000",
+    "index" : 436,
+    "confidence" : 1,
+    "start_timecode" : "00:24:26.000",
+    "end_sec" : 1467
+  },
+  {
+    "start_sec" : 1467,
+    "text" : "我能猜猜吗",
+    "end_timecode" : "00:24:28.000",
+    "index" : 437,
+    "confidence" : 1,
+    "start_timecode" : "00:24:27.000",
+    "end_sec" : 1468
+  },
+  {
+    "start_sec" : 1472,
+    "text" : "猜吧",
+    "end_timecode" : "00:24:33.000",
+    "index" : 438,
+    "confidence" : 1,
+    "start_timecode" : "00:24:32.000",
+    "end_sec" : 1473
+  },
+  {
+    "start_sec" : 1473,
+    "text" : "你至少有个妹妹",
+    "end_timecode" : "00:24:35.000",
+    "index" : 439,
+    "confidence" : 1,
+    "start_timecode" : "00:24:33.000",
+    "end_sec" : 1475
+  },
+  {
+    "start_sec" : 1476,
+    "text" : "瞎说 没有",
+    "end_timecode" : "00:24:37.000",
+    "index" : 440,
+    "confidence" : 0.3,
+    "start_timecode" : "00:24:36.000",
+    "end_sec" : 1477
+  },
+  {
+    "start_sec" : 1478,
+    "text" : "有",
+    "end_timecode" : "00:24:39.000",
+    "index" : 441,
+    "confidence" : 1,
+    "start_timecode" : "00:24:38.000",
+    "end_sec" : 1479
+  },
+  {
+    "start_sec" : 1479,
+    "text" : "你叫翠平 你妹妹叫秋平",
+    "end_timecode" : "00:24:42.000",
+    "index" : 442,
+    "confidence" : 0.833,
+    "start_timecode" : "00:24:39.000",
+    "end_sec" : 1482
+  },
+  {
+    "start_sec" : 1484,
+    "text" : "这来天津以后",
+    "end_timecode" : "00:24:45.000",
+    "index" : 443,
+    "confidence" : 1,
+    "start_timecode" : "00:24:44.000",
+    "end_sec" : 1485
+  },
+  {
+    "start_sec" : 1486,
+    "text" : "就很久没有见到你妹妹了",
+    "end_timecode" : "00:24:47.000",
+    "index" : 444,
+    "confidence" : 1,
+    "start_timecode" : "00:24:46.000",
+    "end_sec" : 1487
+  },
+  {
+    "start_sec" : 1488,
+    "text" : "说书呢",
+    "end_timecode" : "00:24:49.000",
+    "index" : 445,
+    "confidence" : 1,
+    "start_timecode" : "00:24:48.000",
+    "end_sec" : 1489
+  },
+  {
+    "start_sec" : 1492,
+    "text" : "余先生回来了",
+    "end_timecode" : "00:24:53.000",
+    "index" : 446,
+    "confidence" : 1,
+    "start_timecode" : "00:24:52.000",
+    "end_sec" : 1493
+  },
+  {
+    "start_sec" : 1496,
+    "text" : "草",
+    "end_timecode" : "00:24:57.000",
+    "index" : 447,
+    "confidence" : 0.3,
+    "start_timecode" : "00:24:56.000",
+    "end_sec" : 1497
+  },
+  {
+    "start_sec" : 1501,
+    "text" : "草",
+    "end_timecode" : "00:25:02.000",
+    "index" : 448,
+    "confidence" : 0.3,
+    "start_timecode" : "00:25:01.000",
+    "end_sec" : 1502
+  },
+  {
+    "start_sec" : 1512,
+    "text" : "我画了图 他会过来的",
+    "end_timecode" : "00:25:15.000",
+    "index" : 449,
+    "confidence" : 0.833,
+    "start_timecode" : "00:25:12.000",
+    "end_sec" : 1515
+  },
+  {
+    "start_sec" : 1523,
+    "text" : "老余来",
+    "end_timecode" : "00:25:24.000",
+    "index" : 450,
+    "confidence" : 0.5,
+    "start_timecode" : "00:25:23.000",
+    "end_sec" : 1524
+  },
+  {
+    "start_sec" : 1527,
+    "text" : "你看谢先生请咱们吃",
+    "end_timecode" : "00:25:28.000",
+    "index" : 451,
+    "confidence" : 1,
+    "start_timecode" : "00:25:27.000",
+    "end_sec" : 1528
+  },
+  {
+    "start_sec" : 1529,
+    "text" : "吃什么",
+    "end_timecode" : "00:25:30.000",
+    "index" : 452,
+    "confidence" : 0.5,
+    "start_timecode" : "00:25:29.000",
+    "end_sec" : 1530
+  },
+  {
+    "start_sec" : 1530,
+    "text" : "涮羊肉",
+    "end_timecode" : "00:25:32.000",
+    "index" : 453,
+    "confidence" : 1,
+    "start_timecode" : "00:25:30.000",
+    "end_sec" : 1532
+  },
+  {
+    "start_sec" : 1532,
+    "text" : "真的",
+    "end_timecode" : "00:25:33.000",
+    "index" : 454,
+    "confidence" : 1,
+    "start_timecode" : "00:25:32.000",
+    "end_sec" : 1533
+  },
+  {
+    "start_sec" : 1535,
+    "text" : "谢先生又发财了",
+    "end_timecode" : "00:25:36.000",
+    "index" : 455,
+    "confidence" : 1,
+    "start_timecode" : "00:25:35.000",
+    "end_sec" : 1536
+  },
+  {
+    "start_sec" : 1537,
+    "text" : "还是党通局又发外快了",
+    "end_timecode" : "00:25:39.000",
+    "index" : 456,
+    "confidence" : 1,
+    "start_timecode" : "00:25:37.000",
+    "end_sec" : 1539
+  },
+  {
+    "start_sec" : 1539,
+    "text" : "你说来听听啊",
+    "end_timecode" : "00:25:40.000",
+    "index" : 457,
+    "confidence" : 1,
+    "start_timecode" : "00:25:39.000",
+    "end_sec" : 1540
+  },
+  {
+    "start_sec" : 1541,
+    "text" : "实不相瞒",
+    "end_timecode" : "00:25:42.000",
+    "index" : 458,
+    "confidence" : 1,
+    "start_timecode" : "00:25:41.000",
+    "end_sec" : 1542
+  },
+  {
+    "start_sec" : 1543,
+    "text" : "今天请余先生来",
+    "end_timecode" : "00:25:44.000",
+    "index" : 459,
+    "confidence" : 1,
+    "start_timecode" : "00:25:43.000",
+    "end_sec" : 1544
+  },
+  {
+    "start_sec" : 1545,
+    "text" : "还真是想跟您深度地勾兑一下",
+    "end_timecode" : "00:25:48.000",
+    "index" : 460,
+    "confidence" : 1,
+    "start_timecode" : "00:25:45.000",
+    "end_sec" : 1548
+  },
+  {
+    "start_sec" : 1550,
+    "text" : "这芝麻做的酱 真香",
+    "end_timecode" : "00:25:52.000",
+    "index" : 461,
+    "confidence" : 0.75,
+    "start_timecode" : "00:25:50.000",
+    "end_sec" : 1552
+  },
+  {
+    "start_sec" : 1553,
+    "text" : "翠平你和晚秋带点切面",
+    "end_timecode" : "00:25:54.000",
+    "index" : 462,
+    "confidence" : 0.5,
+    "start_timecode" : "00:25:53.000",
+    "end_sec" : 1554
+  },
+  {
+    "start_sec" : 1554,
+    "text" : "翠平 你和晚秋带点切面",
+    "end_timecode" : "00:25:56.000",
+    "index" : 463,
+    "confidence" : 0.5,
+    "start_timecode" : "00:25:54.000",
+    "end_sec" : 1556
+  },
+  {
+    "start_sec" : 1557,
+    "text" : "去咱们家吃吧",
+    "end_timecode" : "00:25:58.000",
+    "index" : 464,
+    "confidence" : 1,
+    "start_timecode" : "00:25:57.000",
+    "end_sec" : 1558
+  },
+  {
+    "start_sec" : 1560,
+    "text" : "行",
+    "end_timecode" : "00:26:01.000",
+    "index" : 465,
+    "confidence" : 1,
+    "start_timecode" : "00:26:00.000",
+    "end_sec" : 1561
+  },
+  {
+    "start_sec" : 1564,
+    "text" : "余先生 您留点神",
+    "end_timecode" : "00:26:06.000",
+    "index" : 466,
+    "confidence" : 0.5,
+    "start_timecode" : "00:26:04.000",
+    "end_sec" : 1566
+  },
+  {
+    "start_sec" : 1582,
+    "text" : "如果你知道我是共党分子",
+    "end_timecode" : "00:26:24.000",
+    "index" : 467,
+    "confidence" : 1,
+    "start_timecode" : "00:26:22.000",
+    "end_sec" : 1584
+  },
+  {
+    "start_sec" : 1586,
+    "text" : "抓",
+    "end_timecode" : "00:26:27.000",
+    "index" : 468,
+    "confidence" : 1,
+    "start_timecode" : "00:26:26.000",
+    "end_sec" : 1587
+  },
+  {
+    "start_sec" : 1588,
+    "text" : "你傻",
+    "end_timecode" : "00:26:30.000",
+    "index" : 469,
+    "confidence" : 1,
+    "start_timecode" : "00:26:28.000",
+    "end_sec" : 1590
+  },
+  {
+    "start_sec" : 1591,
+    "text" : "怎么做不傻",
+    "end_timecode" : "00:26:32.000",
+    "index" : 470,
+    "confidence" : 1,
+    "start_timecode" : "00:26:31.000",
+    "end_sec" : 1592
+  },
+  {
+    "start_sec" : 1593,
+    "text" : "留着呀",
+    "end_timecode" : "00:26:34.000",
+    "index" : 471,
+    "confidence" : 1,
+    "start_timecode" : "00:26:33.000",
+    "end_sec" : 1594
+  },
+  {
+    "start_sec" : 1595,
+    "text" : "我是中共 你是保密局的",
+    "end_timecode" : "00:26:38.000",
+    "index" : 472,
+    "confidence" : 0.667,
+    "start_timecode" : "00:26:35.000",
+    "end_sec" : 1598
+  },
+  {
+    "start_sec" : 1598,
+    "text" : "咱俩有生意可以做呀",
+    "end_timecode" : "00:26:40.000",
+    "index" : 473,
+    "confidence" : 1,
+    "start_timecode" : "00:26:38.000",
+    "end_sec" : 1600
+  },
+  {
+    "start_sec" : 1602,
+    "text" : "要是让我们站长知道了",
+    "end_timecode" : "00:26:43.000",
+    "index" : 474,
+    "confidence" : 1,
+    "start_timecode" : "00:26:42.000",
+    "end_sec" : 1603
+  },
+  {
+    "start_sec" : 1604,
+    "text" : "这是要杀头的",
+    "end_timecode" : "00:26:45.000",
+    "index" : 475,
+    "confidence" : 1,
+    "start_timecode" : "00:26:44.000",
+    "end_sec" : 1605
+  },
+  {
+    "start_sec" : 1605,
+    "text" : "简单了",
+    "end_timecode" : "00:26:46.000",
+    "index" : 476,
+    "confidence" : 1,
+    "start_timecode" : "00:26:45.000",
+    "end_sec" : 1606
+  },
+  {
+    "start_sec" : 1607,
+    "text" : "他要是知道就把他拉进来",
+    "end_timecode" : "00:26:50.000",
+    "index" : 477,
+    "confidence" : 0.833,
+    "start_timecode" : "00:26:47.000",
+    "end_sec" : 1610
+  },
+  {
+    "start_sec" : 1610,
+    "text" : "有钱大家一起赚嘛",
+    "end_timecode" : "00:26:52.000",
+    "index" : 478,
+    "confidence" : 1,
+    "start_timecode" : "00:26:50.000",
+    "end_sec" : 1612
+  },
+  {
+    "start_sec" : 1613,
+    "text" : "不敢",
+    "end_timecode" : "00:26:54.000",
+    "index" : 479,
+    "confidence" : 1,
+    "start_timecode" : "00:26:53.000",
+    "end_sec" : 1614
+  },
+  {
+    "start_sec" : 1615,
+    "text" : "这反过来",
+    "end_timecode" : "00:26:56.000",
+    "index" : 480,
+    "confidence" : 1,
+    "start_timecode" : "00:26:55.000",
+    "end_sec" : 1616
+  },
+  {
+    "start_sec" : 1617,
+    "text" : "如果您是中共 您太太也是",
+    "end_timecode" : "00:27:01.000",
+    "index" : 481,
+    "confidence" : 0.625,
+    "start_timecode" : "00:26:57.000",
+    "end_sec" : 1621
+  },
+  {
+    "start_sec" : 1621,
+    "text" : "我就不会说出去",
+    "end_timecode" : "00:27:03.000",
+    "index" : 482,
+    "confidence" : 1,
+    "start_timecode" : "00:27:01.000",
+    "end_sec" : 1623
+  },
+  {
+    "start_sec" : 1627,
+    "text" : "其实您和您太太都是",
+    "end_timecode" : "00:27:10.000",
+    "index" : 483,
+    "confidence" : 1,
+    "start_timecode" : "00:27:07.000",
+    "end_sec" : 1630
+  },
+  {
+    "start_sec" : 1637,
+    "text" : "你想钱是想疯了你",
+    "end_timecode" : "00:27:19.000",
+    "index" : 484,
+    "confidence" : 0.5,
+    "start_timecode" : "00:27:17.000",
+    "end_sec" : 1639
+  },
+  {
+    "start_sec" : 1640,
+    "text" : "别跟我开这种玩笑 你害我呀你",
+    "end_timecode" : "00:27:22.000",
+    "index" : 485,
+    "confidence" : 1,
+    "start_timecode" : "00:27:20.000",
+    "end_sec" : 1642
+  },
+  {
+    "start_sec" : 1643,
+    "text" : "我给你拿点东西你看看啊",
+    "end_timecode" : "00:27:25.000",
+    "index" : 486,
+    "confidence" : 1,
+    "start_timecode" : "00:27:23.000",
+    "end_sec" : 1645
+  },
+  {
+    "start_sec" : 1648,
+    "text" : "00：",
+    "end_timecode" : "00:27:29.000",
+    "index" : 487,
+    "confidence" : 0.3,
+    "start_timecode" : "00:27:28.000",
+    "end_sec" : 1649
+  },
+  {
+    "start_sec" : 1658,
+    "text" : "不会是我的入党申请书吧",
+    "end_timecode" : "00:27:39.000",
+    "index" : 488,
+    "confidence" : 1,
+    "start_timecode" : "00:27:38.000",
+    "end_sec" : 1659
+  },
+  {
+    "start_sec" : 1659,
+    "text" : "会是我的入党申请书吧",
+    "end_timecode" : "00:27:40.000",
+    "index" : 489,
+    "confidence" : 1,
+    "start_timecode" : "00:27:39.000",
+    "end_sec" : 1660
+  },
+  {
+    "start_sec" : 1661,
+    "text" : "我哪有那么大本事",
+    "end_timecode" : "00:27:42.000",
+    "index" : 490,
+    "confidence" : 1,
+    "start_timecode" : "00:27:41.000",
+    "end_sec" : 1662
+  },
+  {
+    "start_sec" : 1662,
+    "text" : "我哪有那么天本事",
+    "end_timecode" : "00:27:43.000",
+    "index" : 491,
+    "confidence" : 0.5,
+    "start_timecode" : "00:27:42.000",
+    "end_sec" : 1663
+  },
+  {
+    "start_sec" : 1666,
+    "text" : "这可是延安叛徒韩继恩",
+    "end_timecode" : "00:27:47.000",
+    "index" : 492,
+    "confidence" : 1,
+    "start_timecode" : "00:27:46.000",
+    "end_sec" : 1667
+  },
+  {
+    "start_sec" : 1667,
+    "text" : "带人从陕北挖出来的",
+    "end_timecode" : "00:27:49.000",
+    "index" : 493,
+    "confidence" : 1,
+    "start_timecode" : "00:27:47.000",
+    "end_sec" : 1669
+  },
+  {
+    "start_sec" : 1669,
+    "text" : "都是秘密档案",
+    "end_timecode" : "00:27:51.000",
+    "index" : 494,
+    "confidence" : 1,
+    "start_timecode" : "00:27:49.000",
+    "end_sec" : 1671
+  },
+  {
+    "start_sec" : 1674,
+    "text" : "上面找着余则成的大名了",
+    "end_timecode" : "00:27:56.000",
+    "index" : 495,
+    "confidence" : 1,
+    "start_timecode" : "00:27:54.000",
+    "end_sec" : 1676
+  },
+  {
+    "start_sec" : 1678,
+    "text" : "陈秋平的通告",
+    "end_timecode" : "00:28:01.000",
+    "index" : 496,
+    "confidence" : 1,
+    "start_timecode" : "00:27:58.000",
+    "end_sec" : 1681
+  },
+  {
+    "start_sec" : 1681,
+    "text" : "急调陈秋平同志的任务是",
+    "end_timecode" : "00:28:04.000",
+    "index" : 497,
+    "confidence" : 1,
+    "start_timecode" : "00:28:01.000",
+    "end_sec" : 1684
+  },
+  {
+    "start_sec" : 1684,
+    "text" : "赶赴天津",
+    "end_timecode" : "00:28:05.000",
+    "index" : 498,
+    "confidence" : 1,
+    "start_timecode" : "00:28:04.000",
+    "end_sec" : 1685
+  },
+  {
+    "start_sec" : 1685,
+    "text" : "与峨眉峰以夫妻之名义工作",
+    "end_timecode" : "00:28:09.000",
+    "index" : 499,
+    "confidence" : 1,
+    "start_timecode" : "00:28:05.000",
+    "end_sec" : 1689
+  },
+  {
+    "start_sec" : 1689,
+    "text" : "掩护其实施潜伏任务",
+    "end_timecode" : "00:28:12.000",
+    "index" : 500,
+    "confidence" : 1,
+    "start_timecode" : "00:28:09.000",
+    "end_sec" : 1692
+  },
+  {
+    "start_sec" : 1692,
+    "text" : "请务必于9月28日前",
+    "end_timecode" : "00:28:15.000",
+    "index" : 501,
+    "confidence" : 1,
+    "start_timecode" : "00:28:12.000",
+    "end_sec" : 1695
+  },
+  {
+    "start_sec" : 1695,
+    "text" : "到达分局社会部报到",
+    "end_timecode" : "00:28:18.000",
+    "index" : 502,
+    "confidence" : 1,
+    "start_timecode" : "00:28:15.000",
+    "end_sec" : 1698
+  },
+  {
+    "start_sec" : 1698,
+    "text" : "绝密",
+    "end_timecode" : "00:28:19.000",
+    "index" : 503,
+    "confidence" : 1,
+    "start_timecode" : "00:28:18.000",
+    "end_sec" : 1699
+  },
+  {
+    "start_sec" : 1702,
+    "text" : "还有吗",
+    "end_timecode" : "00:28:23.000",
+    "index" : 504,
+    "confidence" : 1,
+    "start_timecode" : "00:28:22.000",
+    "end_sec" : 1703
+  },
+  {
+    "start_sec" : 1703,
+    "text" : "有还有一份讣告",
+    "end_timecode" : "00:28:25.000",
+    "index" : 505,
+    "confidence" : 1,
+    "start_timecode" : "00:28:23.000",
+    "end_sec" : 1705
+  },
+  {
+    "start_sec" : 1706,
+    "text" : "讣告 边保六科陈秋平同志",
+    "end_timecode" : "00:28:29.000",
+    "index" : 506,
+    "confidence" : 0.667,
+    "start_timecode" : "00:28:26.000",
+    "end_sec" : 1709
+  },
+  {
+    "start_sec" : 1710,
+    "text" : "于民国24年9月26日",
+    "end_timecode" : "00:28:32.000",
+    "index" : 507,
+    "confidence" : 1,
+    "start_timecode" : "00:28:30.000",
+    "end_sec" : 1712
+  },
+  {
+    "start_sec" : 1713,
+    "text" : "在前赴北方分局执行任务途中",
+    "end_timecode" : "00:28:36.000",
+    "index" : 508,
+    "confidence" : 0.833,
+    "start_timecode" : "00:28:33.000",
+    "end_sec" : 1716
+  },
+  {
+    "start_sec" : 1716,
+    "text" : "在前赴北方分局执行住务途中",
+    "end_timecode" : "00:28:37.000",
+    "index" : 509,
+    "confidence" : 0.5,
+    "start_timecode" : "00:28:36.000",
+    "end_sec" : 1717
+  },
+  {
+    "start_sec" : 1717,
+    "text" : "不幸以身殉职",
+    "end_timecode" : "00:28:39.000",
+    "index" : 510,
+    "confidence" : 1,
+    "start_timecode" : "00:28:37.000",
+    "end_sec" : 1719
+  },
+  {
+    "start_sec" : 1720,
+    "text" : "终岁二十五",
+    "end_timecode" : "00:28:42.000",
+    "index" : 511,
+    "confidence" : 0.65,
+    "start_timecode" : "00:28:40.000",
+    "end_sec" : 1722
+  },
+  {
+    "start_sec" : 1722,
+    "text" : "10月3日上午8点",
+    "end_timecode" : "00:28:44.000",
+    "index" : 512,
+    "confidence" : 1,
+    "start_timecode" : "00:28:42.000",
+    "end_sec" : 1724
+  },
+  {
+    "start_sec" : 1724,
+    "text" : "陈秋平同志的追悼会",
+    "end_timecode" : "00:28:46.000",
+    "index" : 513,
+    "confidence" : 1,
+    "start_timecode" : "00:28:44.000",
+    "end_sec" : 1726
+  },
+  {
+    "start_sec" : 1726,
+    "text" : "将在王范岭村村委会举行",
+    "end_timecode" : "00:28:49.000",
+    "index" : 514,
+    "confidence" : 0.667,
+    "start_timecode" : "00:28:46.000",
+    "end_sec" : 1729
+  },
+  {
+    "start_sec" : 1729,
+    "text" : "望接到讣告之支部派会员到场",
+    "end_timecode" : "00:28:54.000",
+    "index" : 515,
+    "confidence" : 1,
+    "start_timecode" : "00:28:49.000",
+    "end_sec" : 1734
+  },
+  {
+    "start_sec" : 1735,
+    "text" : "还有吗",
+    "end_timecode" : "00:28:56.000",
+    "index" : 516,
+    "confidence" : 1,
+    "start_timecode" : "00:28:55.000",
+    "end_sec" : 1736
+  },
+  {
+    "start_sec" : 1736,
+    "text" : "有",
+    "end_timecode" : "00:28:57.000",
+    "index" : 517,
+    "confidence" : 1,
+    "start_timecode" : "00:28:56.000",
+    "end_sec" : 1737
+  },
+  {
+    "start_sec" : 1737,
+    "text" : "还有就是王范岭村那个村民",
+    "end_timecode" : "00:28:58.000",
+    "index" : 518,
+    "confidence" : 1,
+    "start_timecode" : "00:28:57.000",
+    "end_sec" : 1738
+  },
+  {
+    "start_sec" : 1738,
+    "text" : "还有就是玉范岭村那个村民",
+    "end_timecode" : "00:28:59.000",
+    "index" : 519,
+    "confidence" : 1,
+    "start_timecode" : "00:28:58.000",
+    "end_sec" : 1739
+  },
+  {
+    "start_sec" : 1739,
+    "text" : "还有就是王范岭村那个村民",
+    "end_timecode" : "00:29:00.000",
+    "index" : 520,
+    "confidence" : 1,
+    "start_timecode" : "00:28:59.000",
+    "end_sec" : 1740
+  },
+  {
+    "start_sec" : 1741,
+    "text" : "谷有牛口述的",
+    "end_timecode" : "00:29:03.000",
+    "index" : 521,
+    "confidence" : 1,
+    "start_timecode" : "00:29:01.000",
+    "end_sec" : 1743
+  },
+  {
+    "start_sec" : 1743,
+    "text" : "陈秋平同志殉职始末",
+    "end_timecode" : "00:29:06.000",
+    "index" : 522,
+    "confidence" : 0.833,
+    "start_timecode" : "00:29:03.000",
+    "end_sec" : 1746
+  },
+  {
+    "start_sec" : 1748,
+    "text" : "这太长了我就不念了吧",
+    "end_timecode" : "00:29:10.000",
+    "index" : 523,
+    "confidence" : 1,
+    "start_timecode" : "00:29:08.000",
+    "end_sec" : 1750
+  },
+  {
+    "start_sec" : 1751,
+    "text" : "这谷有牛啊是给陈秋平牵马的",
+    "end_timecode" : "00:29:15.000",
+    "index" : 524,
+    "confidence" : 0.875,
+    "start_timecode" : "00:29:11.000",
+    "end_sec" : 1755
+  },
+  {
+    "start_sec" : 1756,
+    "text" : "据他所说",
+    "end_timecode" : "00:29:18.000",
+    "index" : 525,
+    "confidence" : 1,
+    "start_timecode" : "00:29:16.000",
+    "end_sec" : 1758
+  },
+  {
+    "start_sec" : 1758,
+    "text" : "这陈秋平是在来的路上",
+    "end_timecode" : "00:29:20.000",
+    "index" : 526,
+    "confidence" : 1,
+    "start_timecode" : "00:29:18.000",
+    "end_sec" : 1760
+  },
+  {
+    "start_sec" : 1760,
+    "text" : "因为雨天路滑",
+    "end_timecode" : "00:29:22.000",
+    "index" : 527,
+    "confidence" : 1,
+    "start_timecode" : "00:29:20.000",
+    "end_sec" : 1762
+  },
+  {
+    "start_sec" : 1762,
+    "text" : "连人带马那是掉进山沟里摔死了",
+    "end_timecode" : "00:29:25.000",
+    "index" : 528,
+    "confidence" : 1,
+    "start_timecode" : "00:29:22.000",
+    "end_sec" : 1765
+  },
+  {
+    "start_sec" : 1767,
+    "text" : "还有吗",
+    "end_timecode" : "00:29:28.000",
+    "index" : 529,
+    "confidence" : 1,
+    "start_timecode" : "00:29:27.000",
+    "end_sec" : 1768
+  },
+  {
+    "start_sec" : 1768,
+    "text" : "没了",
+    "end_timecode" : "00:29:29.000",
+    "index" : 530,
+    "confidence" : 1,
+    "start_timecode" : "00:29:28.000",
+    "end_sec" : 1769
+  },
+  {
+    "start_sec" : 1771,
+    "text" : "那跟我有什么关系呀",
+    "end_timecode" : "00:29:33.000",
+    "index" : 531,
+    "confidence" : 0.75,
+    "start_timecode" : "00:29:31.000",
+    "end_sec" : 1773
+  },
+  {
+    "start_sec" : 1774,
+    "text" : "这陈秋平啊和你家翠平",
+    "end_timecode" : "00:29:37.000",
+    "index" : 532,
+    "confidence" : 0.767,
+    "start_timecode" : "00:29:34.000",
+    "end_sec" : 1777
+  },
+  {
+    "start_sec" : 1777,
+    "text" : "只有一字之差",
+    "end_timecode" : "00:29:39.000",
+    "index" : 533,
+    "confidence" : 1,
+    "start_timecode" : "00:29:37.000",
+    "end_sec" : 1779
+  },
+  {
+    "start_sec" : 1779,
+    "text" : "而且在她意外死亡之后",
+    "end_timecode" : "00:29:41.000",
+    "index" : 534,
+    "confidence" : 1,
+    "start_timecode" : "00:29:39.000",
+    "end_sec" : 1781
+  },
+  {
+    "start_sec" : 1782,
+    "text" : "你家太太",
+    "end_timecode" : "00:29:43.000",
+    "index" : 535,
+    "confidence" : 1,
+    "start_timecode" : "00:29:42.000",
+    "end_sec" : 1783
+  },
+  {
+    "start_sec" : 1783,
+    "text" : "第三天就已经到了天津了",
+    "end_timecode" : "00:29:46.000",
+    "index" : 536,
+    "confidence" : 1,
+    "start_timecode" : "00:29:43.000",
+    "end_sec" : 1786
+  },
+  {
+    "start_sec" : 1786,
+    "text" : "然后就跟我用这个假去妻的名义",
+    "end_timecode" : "00:29:47.000",
+    "index" : 537,
+    "confidence" : 0.5,
+    "start_timecode" : "00:29:46.000",
+    "end_sec" : 1787
+  },
+  {
+    "start_sec" : 1787,
+    "text" : "然后就跟我用这个假夫妻的名义",
+    "end_timecode" : "00:29:48.000",
+    "index" : 538,
+    "confidence" : 1,
+    "start_timecode" : "00:29:47.000",
+    "end_sec" : 1788
+  },
+  {
+    "start_sec" : 1789,
+    "text" : "一块生活了",
+    "end_timecode" : "00:29:50.000",
+    "index" : 539,
+    "confidence" : 1,
+    "start_timecode" : "00:29:49.000",
+    "end_sec" : 1790
+  },
+  {
+    "start_sec" : 1792,
+    "text" : "陈秋平是你家太太的妹妹",
+    "end_timecode" : "00:29:55.000",
+    "index" : 540,
+    "confidence" : 0.833,
+    "start_timecode" : "00:29:52.000",
+    "end_sec" : 1795
+  },
+  {
+    "start_sec" : 1796,
+    "text" : "就在她意外死亡之后",
+    "end_timecode" : "00:29:58.000",
+    "index" : 541,
+    "confidence" : 1,
+    "start_timecode" : "00:29:56.000",
+    "end_sec" : 1798
+  },
+  {
+    "start_sec" : 1798,
+    "text" : "上面急需给你配备一个大太",
+    "end_timecode" : "00:30:01.000",
+    "index" : 542,
+    "confidence" : 1,
+    "start_timecode" : "00:29:58.000",
+    "end_sec" : 1801
+  },
+  {
+    "start_sec" : 1802,
+    "text" : "也可能是时间来不及了",
+    "end_timecode" : "00:30:05.000",
+    "index" : 543,
+    "confidence" : 1,
+    "start_timecode" : "00:30:02.000",
+    "end_sec" : 1805
+  },
+  {
+    "start_sec" : 1805,
+    "text" : "也可能是有人已经看过照片了",
+    "end_timecode" : "00:30:08.000",
+    "index" : 544,
+    "confidence" : 1,
+    "start_timecode" : "00:30:05.000",
+    "end_sec" : 1808
+  },
+  {
+    "start_sec" : 1809,
+    "text" : "找一个特别像的",
+    "end_timecode" : "00:30:11.000",
+    "index" : 545,
+    "confidence" : 1,
+    "start_timecode" : "00:30:09.000",
+    "end_sec" : 1811
+  },
+  {
+    "start_sec" : 1811,
+    "text" : "结果就拿她姐姐出来顶替",
+    "end_timecode" : "00:30:14.000",
+    "index" : 546,
+    "confidence" : 1,
+    "start_timecode" : "00:30:11.000",
+    "end_sec" : 1814
+  },
+  {
+    "start_sec" : 1816,
+    "text" : "你就是峨眉峰",
+    "end_timecode" : "00:30:18.000",
+    "index" : 547,
+    "confidence" : 0.75,
+    "start_timecode" : "00:30:16.000",
+    "end_sec" : 1818
+  },
+  {
+    "start_sec" : 1818,
+    "text" : "时间 去处 严丝合缝",
+    "end_timecode" : "00:30:20.000",
+    "index" : 548,
+    "confidence" : 0.5,
+    "start_timecode" : "00:30:18.000",
+    "end_sec" : 1820
+  },
+  {
+    "start_sec" : 1820,
+    "text" : "时间 去处严丝合缝",
+    "end_timecode" : "00:30:21.000",
+    "index" : 549,
+    "confidence" : 0.3,
+    "start_timecode" : "00:30:20.000",
+    "end_sec" : 1821
+  },
+  {
+    "start_sec" : 1826,
+    "text" : "亏你还是搞情报的",
+    "end_timecode" : "00:30:28.000",
+    "index" : 550,
+    "confidence" : 1,
+    "start_timecode" : "00:30:26.000",
+    "end_sec" : 1828
+  },
+  {
+    "start_sec" : 1830,
+    "text" : "峨眉峰已经找着了 你不知道啊",
+    "end_timecode" : "00:30:32.000",
+    "index" : 551,
+    "confidence" : 0.5,
+    "start_timecode" : "00:30:30.000",
+    "end_sec" : 1832
+  },
+  {
+    "start_sec" : 1834,
+    "text" : "确实是保密局的",
+    "end_timecode" : "00:30:35.000",
+    "index" : 552,
+    "confidence" : 1,
+    "start_timecode" : "00:30:34.000",
+    "end_sec" : 1835
+  },
+  {
+    "start_sec" : 1837,
+    "text" : "抓了",
+    "end_timecode" : "00:30:38.000",
+    "index" : 553,
+    "confidence" : 1,
+    "start_timecode" : "00:30:37.000",
+    "end_sec" : 1838
+  },
+  {
+    "start_sec" : 1843,
+    "text" : "去年的蒲扇胡同枪击案那么轰动",
+    "end_timecode" : "00:30:47.000",
+    "index" : 554,
+    "confidence" : 1,
+    "start_timecode" : "00:30:43.000",
+    "end_sec" : 1847
+  },
+  {
+    "start_sec" : 1848,
+    "text" : "你是真不知道",
+    "end_timecode" : "00:30:49.000",
+    "index" : 555,
+    "confidence" : 1,
+    "start_timecode" : "00:30:48.000",
+    "end_sec" : 1849
+  },
+  {
+    "start_sec" : 1849,
+    "text" : "你还是跟我装傻呀你",
+    "end_timecode" : "00:30:51.000",
+    "index" : 556,
+    "confidence" : 1,
+    "start_timecode" : "00:30:49.000",
+    "end_sec" : 1851
+  },
+  {
+    "start_sec" : 1851,
+    "text" : "我知道呀",
+    "end_timecode" : "00:30:53.000",
+    "index" : 557,
+    "confidence" : 1,
+    "start_timecode" : "00:30:51.000",
+    "end_sec" : 1853
+  },
+  {
+    "start_sec" : 1853,
+    "text" : "共党分子内讧",
+    "end_timecode" : "00:30:54.000",
+    "index" : 558,
+    "confidence" : 0.5,
+    "start_timecode" : "00:30:53.000",
+    "end_sec" : 1854
+  },
+  {
+    "start_sec" : 1854,
+    "text" : "共党分子内边",
+    "end_timecode" : "00:30:55.000",
+    "index" : 559,
+    "confidence" : 0.5,
+    "start_timecode" : "00:30:54.000",
+    "end_sec" : 1855
+  },
+  {
+    "start_sec" : 1855,
+    "text" : "那女的不就是那个代表吗",
+    "end_timecode" : "00:30:57.000",
+    "index" : 560,
+    "confidence" : 1,
+    "start_timecode" : "00:30:55.000",
+    "end_sec" : 1857
+  },
+  {
+    "start_sec" : 1857,
+    "text" : "男的不就是峨眉峰吗",
+    "end_timecode" : "00:30:59.000",
+    "index" : 561,
+    "confidence" : 1,
+    "start_timecode" : "00:30:57.000",
+    "end_sec" : 1859
+  },
+  {
+    "start_sec" : 1861,
+    "text" : "我们保密局行动队的马队长马奎",
+    "end_timecode" : "00:31:03.000",
+    "index" : 562,
+    "confidence" : 1,
+    "start_timecode" : "00:31:01.000",
+    "end_sec" : 1863
+  },
+  {
+    "start_sec" : 1864,
+    "text" : "不知道吗",
+    "end_timecode" : "00:31:05.000",
+    "index" : 563,
+    "confidence" : 1,
+    "start_timecode" : "00:31:04.000",
+    "end_sec" : 1865
+  },
+  {
+    "start_sec" : 1865,
+    "text" : "坟墓就在那个什公什么",
+    "end_timecode" : "00:31:07.000",
+    "index" : 564,
+    "confidence" : 0.75,
+    "start_timecode" : "00:31:05.000",
+    "end_sec" : 1867
+  },
+  {
+    "start_sec" : 1868,
+    "text" : "他们叫烈士陵园",
+    "end_timecode" : "00:31:09.000",
+    "index" : 565,
+    "confidence" : 1,
+    "start_timecode" : "00:31:08.000",
+    "end_sec" : 1869
+  },
+  {
+    "start_sec" : 1870,
+    "text" : "我们去的人还拍了照",
+    "end_timecode" : "00:31:12.000",
+    "index" : 566,
+    "confidence" : 1,
+    "start_timecode" : "00:31:10.000",
+    "end_sec" : 1872
+  },
+  {
+    "start_sec" : 1872,
+    "text" : "墓前都是鲜花",
+    "end_timecode" : "00:31:13.000",
+    "index" : 567,
+    "confidence" : 1,
+    "start_timecode" : "00:31:12.000",
+    "end_sec" : 1873
+  },
+  {
+    "start_sec" : 1874,
+    "text" : "那会儿我去晚秋的老家",
+    "end_timecode" : "00:31:17.000",
+    "index" : 568,
+    "confidence" : 1,
+    "start_timecode" : "00:31:14.000",
+    "end_sec" : 1877
+  },
+  {
+    "start_sec" : 1877,
+    "text" : "结婚去了呀",
+    "end_timecode" : "00:31:18.000",
+    "index" : 569,
+    "confidence" : 1,
+    "start_timecode" : "00:31:17.000",
+    "end_sec" : 1878
+  },
+  {
+    "start_sec" : 1881,
+    "text" : "这马奎的老婆呢",
+    "end_timecode" : "00:31:22.000",
+    "index" : 570,
+    "confidence" : 1,
+    "start_timecode" : "00:31:21.000",
+    "end_sec" : 1882
+  },
+  {
+    "start_sec" : 1886,
+    "text" : "那要真像你说的是",
+    "end_timecode" : "00:31:27.000",
+    "index" : 571,
+    "confidence" : 1,
+    "start_timecode" : "00:31:26.000",
+    "end_sec" : 1887
+  },
+  {
+    "start_sec" : 1888,
+    "text" : "上面有人派下来的",
+    "end_timecode" : "00:31:30.000",
+    "index" : 572,
+    "confidence" : 1,
+    "start_timecode" : "00:31:28.000",
+    "end_sec" : 1890
+  },
+  {
+    "start_sec" : 1891,
+    "text" : "那我估计现在已经是无影无踪了",
+    "end_timecode" : "00:31:33.000",
+    "index" : 573,
+    "confidence" : 0.75,
+    "start_timecode" : "00:31:31.000",
+    "end_sec" : 1893
+  },
+  {
+    "start_sec" : 1894,
+    "text" : "老谢 你怎么会想到是我呢",
+    "end_timecode" : "00:31:37.000",
+    "index" : 574,
+    "confidence" : 0.5,
+    "start_timecode" : "00:31:34.000",
+    "end_sec" : 1897
+  },
+  {
+    "start_sec" : 1905,
+    "text" : "你这种猜测让我非常非常害怕",
+    "end_timecode" : "00:31:47.000",
+    "index" : 575,
+    "confidence" : 1,
+    "start_timecode" : "00:31:45.000",
+    "end_sec" : 1907
+  },
+  {
+    "start_sec" : 1908,
+    "text" : "保密局眼里不揉沙子",
+    "end_timecode" : "00:31:50.000",
+    "index" : 576,
+    "confidence" : 1,
+    "start_timecode" : "00:31:48.000",
+    "end_sec" : 1910
+  },
+  {
+    "start_sec" : 1911,
+    "text" : "你要是真这么想",
+    "end_timecode" : "00:31:52.000",
+    "index" : 577,
+    "confidence" : 1,
+    "start_timecode" : "00:31:51.000",
+    "end_sec" : 1912
+  },
+  {
+    "start_sec" : 1913,
+    "text" : "我现在马上上去",
+    "end_timecode" : "00:31:54.000",
+    "index" : 578,
+    "confidence" : 1,
+    "start_timecode" : "00:31:53.000",
+    "end_sec" : 1914
+  },
+  {
+    "start_sec" : 1915,
+    "text" : "把我们俩的结婚帖子",
+    "end_timecode" : "00:31:57.000",
+    "index" : 579,
+    "confidence" : 1,
+    "start_timecode" : "00:31:55.000",
+    "end_sec" : 1917
+  },
+  {
+    "start_sec" : 1917,
+    "text" : "拿给你看一看",
+    "end_timecode" : "00:31:58.000",
+    "index" : 580,
+    "confidence" : 1,
+    "start_timecode" : "00:31:57.000",
+    "end_sec" : 1918
+  },
+  {
+    "start_sec" : 1918,
+    "text" : "有时间 有照片 有印花税",
+    "end_timecode" : "00:32:01.000",
+    "index" : 581,
+    "confidence" : 0.5,
+    "start_timecode" : "00:31:58.000",
+    "end_sec" : 1921
+  },
+  {
+    "start_sec" : 1921,
+    "text" : "还有县太爷的章子",
+    "end_timecode" : "00:32:03.000",
+    "index" : 582,
+    "confidence" : 1,
+    "start_timecode" : "00:32:01.000",
+    "end_sec" : 1923
+  },
+  {
+    "start_sec" : 1923,
+    "text" : "余先生 息怒 息怒",
+    "end_timecode" : "00:32:06.000",
+    "index" : 583,
+    "confidence" : 0.367,
+    "start_timecode" : "00:32:03.000",
+    "end_sec" : 1926
+  },
+  {
+    "start_sec" : 1926,
+    "text" : "我怎么息怒啊",
+    "end_timecode" : "00:32:07.000",
+    "index" : 584,
+    "confidence" : 1,
+    "start_timecode" : "00:32:06.000",
+    "end_sec" : 1927
+  },
+  {
+    "start_sec" : 1928,
+    "text" : "老谢 你是党通局的人",
+    "end_timecode" : "00:32:10.000",
+    "index" : 585,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:08.000",
+    "end_sec" : 1930
+  },
+  {
+    "start_sec" : 1930,
+    "text" : "你该知道里面的利害关系呀",
+    "end_timecode" : "00:32:12.000",
+    "index" : 586,
+    "confidence" : 1,
+    "start_timecode" : "00:32:10.000",
+    "end_sec" : 1932
+  },
+  {
+    "start_sec" : 1933,
+    "text" : "你今天也就是跟我说说",
+    "end_timecode" : "00:32:14.000",
+    "index" : 587,
+    "confidence" : 1,
+    "start_timecode" : "00:32:13.000",
+    "end_sec" : 1934
+  },
+  {
+    "start_sec" : 1935,
+    "text" : "你要是跟你的长官说了",
+    "end_timecode" : "00:32:16.000",
+    "index" : 588,
+    "confidence" : 1,
+    "start_timecode" : "00:32:15.000",
+    "end_sec" : 1936
+  },
+  {
+    "start_sec" : 1937,
+    "text" : "我可能连个申诉的机会都没有",
+    "end_timecode" : "00:32:20.000",
+    "index" : 589,
+    "confidence" : 1,
+    "start_timecode" : "00:32:17.000",
+    "end_sec" : 1940
+  },
+  {
+    "start_sec" : 1940,
+    "text" : "就给拉到南京关起来了",
+    "end_timecode" : "00:32:21.000",
+    "index" : 590,
+    "confidence" : 1,
+    "start_timecode" : "00:32:20.000",
+    "end_sec" : 1941
+  },
+  {
+    "start_sec" : 1942,
+    "text" : "保密局跟你们的关系是怎么样的",
+    "end_timecode" : "00:32:25.000",
+    "index" : 591,
+    "confidence" : 1,
+    "start_timecode" : "00:32:22.000",
+    "end_sec" : 1945
+  },
+  {
+    "start_sec" : 1945,
+    "text" : "你应该清楚啊",
+    "end_timecode" : "00:32:26.000",
+    "index" : 592,
+    "confidence" : 1,
+    "start_timecode" : "00:32:25.000",
+    "end_sec" : 1946
+  },
+  {
+    "start_sec" : 1946,
+    "text" : "水火不容啊",
+    "end_timecode" : "00:32:27.000",
+    "index" : 593,
+    "confidence" : 1,
+    "start_timecode" : "00:32:26.000",
+    "end_sec" : 1947
+  },
+  {
+    "start_sec" : 1949,
+    "text" : "我余则成辛辛苦菁地熬到今天",
+    "end_timecode" : "00:32:30.000",
+    "index" : 594,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:29.000",
+    "end_sec" : 1950
+  },
+  {
+    "start_sec" : 1950,
+    "text" : "我余则成辛辛菁苦地熬到今天",
+    "end_timecode" : "00:32:31.000",
+    "index" : 595,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:30.000",
+    "end_sec" : 1951
+  },
+  {
+    "start_sec" : 1951,
+    "text" : "容易吗",
+    "end_timecode" : "00:32:32.000",
+    "index" : 596,
+    "confidence" : 1,
+    "start_timecode" : "00:32:31.000",
+    "end_sec" : 1952
+  },
+  {
+    "start_sec" : 1952,
+    "text" : "就凭你几张垃圾情报",
+    "end_timecode" : "00:32:34.000",
+    "index" : 597,
+    "confidence" : 0.75,
+    "start_timecode" : "00:32:32.000",
+    "end_sec" : 1954
+  },
+  {
+    "start_sec" : 1955,
+    "text" : "就把我这一辈子全毁了",
+    "end_timecode" : "00:32:36.000",
+    "index" : 598,
+    "confidence" : 1,
+    "start_timecode" : "00:32:35.000",
+    "end_sec" : 1956
+  },
+  {
+    "start_sec" : 1958,
+    "text" : "这第一呀",
+    "end_timecode" : "00:32:39.000",
+    "index" : 599,
+    "confidence" : 1,
+    "start_timecode" : "00:32:38.000",
+    "end_sec" : 1959
+  },
+  {
+    "start_sec" : 1960,
+    "text" : "重要的情报没人向上汇报",
+    "end_timecode" : "00:32:43.000",
+    "index" : 600,
+    "confidence" : 1,
+    "start_timecode" : "00:32:40.000",
+    "end_sec" : 1963
+  },
+  {
+    "start_sec" : 1964,
+    "text" : "这第二啊",
+    "end_timecode" : "00:32:45.000",
+    "index" : 601,
+    "confidence" : 1,
+    "start_timecode" : "00:32:44.000",
+    "end_sec" : 1965
+  },
+  {
+    "start_sec" : 1965,
+    "text" : "你是共党 那我很高兴",
+    "end_timecode" : "00:32:48.000",
+    "index" : 602,
+    "confidence" : 0.667,
+    "start_timecode" : "00:32:45.000",
+    "end_sec" : 1968
+  },
+  {
+    "start_sec" : 1969,
+    "text" : "这第三呢",
+    "end_timecode" : "00:32:50.000",
+    "index" : 603,
+    "confidence" : 1,
+    "start_timecode" : "00:32:49.000",
+    "end_sec" : 1970
+  },
+  {
+    "start_sec" : 1970,
+    "text" : "行行 得得得",
+    "end_timecode" : "00:32:51.000",
+    "index" : 604,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:50.000",
+    "end_sec" : 1971
+  },
+  {
+    "start_sec" : 1971,
+    "text" : "你别跟我在这儿一二三四五的",
+    "end_timecode" : "00:32:52.000",
+    "index" : 605,
+    "confidence" : 1,
+    "start_timecode" : "00:32:51.000",
+    "end_sec" : 1972
+  },
+  {
+    "start_sec" : 1972,
+    "text" : "你别跟我在这儿六二三四五的",
+    "end_timecode" : "00:32:53.000",
+    "index" : 606,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:52.000",
+    "end_sec" : 1973
+  },
+  {
+    "start_sec" : 1973,
+    "text" : "我不是共产党 你也别高兴",
+    "end_timecode" : "00:32:54.000",
+    "index" : 607,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:53.000",
+    "end_sec" : 1974
+  },
+  {
+    "start_sec" : 1974,
+    "text" : "我不是共产觉 你也别高兴",
+    "end_timecode" : "00:32:55.000",
+    "index" : 608,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:54.000",
+    "end_sec" : 1975
+  },
+  {
+    "start_sec" : 1975,
+    "text" : "我不是共产党 你也别高兴",
+    "end_timecode" : "00:32:56.000",
+    "index" : 609,
+    "confidence" : 0.5,
+    "start_timecode" : "00:32:55.000",
+    "end_sec" : 1976
+  },
+  {
+    "start_sec" : 1976,
+    "text" : "愿意是你是",
+    "end_timecode" : "00:32:58.000",
+    "index" : 610,
+    "confidence" : 0.75,
+    "start_timecode" : "00:32:56.000",
+    "end_sec" : 1978
+  },
+  {
+    "start_sec" : 1978,
+    "text" : "我巴不得是呢",
+    "end_timecode" : "00:33:00.000",
+    "index" : 611,
+    "confidence" : 1,
+    "start_timecode" : "00:32:58.000",
+    "end_sec" : 1980
+  },
+  {
+    "start_sec" : 1981,
+    "text" : "现在共党的情报",
+    "end_timecode" : "00:33:02.000",
+    "index" : 612,
+    "confidence" : 1,
+    "start_timecode" : "00:33:01.000",
+    "end_sec" : 1982
+  },
+  {
+    "start_sec" : 1983,
+    "text" : "那都卖到什么价了",
+    "end_timecode" : "00:33:04.000",
+    "index" : 613,
+    "confidence" : 1,
+    "start_timecode" : "00:33:03.000",
+    "end_sec" : 1984
+  },
+  {
+    "start_sec" : 1986,
+    "text" : "去年年底粟裕的部队偷袭宿迁",
+    "end_timecode" : "00:33:12.000",
+    "index" : 614,
+    "confidence" : 1,
+    "start_timecode" : "00:33:06.000",
+    "end_sec" : 1992
+  },
+  {
+    "start_sec" : 1992,
+    "text" : "偷袭呀，",
+    "end_timecode" : "00:33:13.000",
+    "index" : 615,
+    "confidence" : 0.3,
+    "start_timecode" : "00:33:12.000",
+    "end_sec" : 1993
+  },
+  {
+    "start_sec" : 1993,
+    "text" : "偷袭呀",
+    "end_timecode" : "00:33:14.000",
+    "index" : 616,
+    "confidence" : 1,
+    "start_timecode" : "00:33:13.000",
+    "end_sec" : 1994
+  },
+  {
+    "start_sec" : 1994,
+    "text" : "头四天的情报就开始喊上价了",
+    "end_timecode" : "00:33:18.000",
+    "index" : 617,
+    "confidence" : 1,
+    "start_timecode" : "00:33:14.000",
+    "end_sec" : 1998
+  },
+  {
+    "start_sec" : 1998,
+    "text" : "最后成交才这个数",
+    "end_timecode" : "00:33:21.000",
+    "index" : 618,
+    "confidence" : 1,
+    "start_timecode" : "00:33:18.000",
+    "end_sec" : 2001
+  },
+  {
+    "start_sec" : 2002,
+    "text" : "那戴之奇师怎么还被干掉了",
+    "end_timecode" : "00:33:25.000",
+    "index" : 619,
+    "confidence" : 1,
+    "start_timecode" : "00:33:22.000",
+    "end_sec" : 2005
+  },
+  {
+    "start_sec" : 2006,
+    "text" : "这不明摆着呢吗",
+    "end_timecode" : "00:33:28.000",
+    "index" : 620,
+    "confidence" : 1,
+    "start_timecode" : "00:33:26.000",
+    "end_sec" : 2008
+  },
+  {
+    "start_sec" : 2009,
+    "text" : "买走情报那是共党",
+    "end_timecode" : "00:33:32.000",
+    "index" : 621,
+    "confidence" : 1,
+    "start_timecode" : "00:33:29.000",
+    "end_sec" : 2012
+  },
+  {
+    "start_sec" : 2012,
+    "text" : "就等于封锁消息了",
+    "end_timecode" : "00:33:35.000",
+    "index" : 622,
+    "confidence" : 1,
+    "start_timecode" : "00:33:32.000",
+    "end_sec" : 2015
+  },
+  {
+    "start_sec" : 2017,
+    "text" : "一个师呀才两根金条",
+    "end_timecode" : "00:33:40.000",
+    "index" : 623,
+    "confidence" : 0.833,
+    "start_timecode" : "00:33:37.000",
+    "end_sec" : 2020
+  },
+  {
+    "start_sec" : 2021,
+    "text" : "人家这买卖多会做呀",
+    "end_timecode" : "00:33:43.000",
+    "index" : 624,
+    "confidence" : 1,
+    "start_timecode" : "00:33:41.000",
+    "end_sec" : 2023
+  },
+  {
+    "start_sec" : 2026,
+    "text" : "这情况我必须得向上面汇报",
+    "end_timecode" : "00:33:48.000",
+    "index" : 625,
+    "confidence" : 1,
+    "start_timecode" : "00:33:46.000",
+    "end_sec" : 2028
+  },
+  {
+    "start_sec" : 2029,
+    "text" : "这种买卖误党误国呀",
+    "end_timecode" : "00:33:51.000",
+    "index" : 626,
+    "confidence" : 1,
+    "start_timecode" : "00:33:49.000",
+    "end_sec" : 2031
+  },
+  {
+    "start_sec" : 2031,
+    "text" : "成何体统啊",
+    "end_timecode" : "00:33:52.000",
+    "index" : 627,
+    "confidence" : 1,
+    "start_timecode" : "00:33:51.000",
+    "end_sec" : 2032
+  },
+  {
+    "start_sec" : 2032,
+    "text" : "我建议你啊不要插手",
+    "end_timecode" : "00:33:55.000",
+    "index" : 628,
+    "confidence" : 1,
+    "start_timecode" : "00:33:52.000",
+    "end_sec" : 2035
+  },
+  {
+    "start_sec" : 2036,
+    "text" : "现在这个局里",
+    "end_timecode" : "00:33:57.000",
+    "index" : 629,
+    "confidence" : 1,
+    "start_timecode" : "00:33:56.000",
+    "end_sec" : 2037
+  },
+  {
+    "start_sec" : 2037,
+    "text" : "南京 武汉的人都有",
+    "end_timecode" : "00:33:59.000",
+    "index" : 630,
+    "confidence" : 0.5,
+    "start_timecode" : "00:33:57.000",
+    "end_sec" : 2039
+  },
+  {
+    "start_sec" : 2039,
+    "text" : "你断人家财路",
+    "end_timecode" : "00:34:01.000",
+    "index" : 631,
+    "confidence" : 1,
+    "start_timecode" : "00:33:59.000",
+    "end_sec" : 2041
+  },
+  {
+    "start_sec" : 2041,
+    "text" : "人家会断你生路的",
+    "end_timecode" : "00:34:03.000",
+    "index" : 632,
+    "confidence" : 1,
+    "start_timecode" : "00:34:01.000",
+    "end_sec" : 2043
+  },
+  {
+    "start_sec" : 2045,
+    "text" : "你就为了钱 说我是共产党",
+    "end_timecode" : "00:34:09.000",
+    "index" : 633,
+    "confidence" : 0.875,
+    "start_timecode" : "00:34:05.000",
+    "end_sec" : 2049
+  },
+  {
+    "start_sec" : 2051,
+    "text" : "我太太是从延安派来的",
+    "end_timecode" : "00:34:14.000",
+    "index" : 634,
+    "confidence" : 1,
+    "start_timecode" : "00:34:11.000",
+    "end_sec" : 2054
+  },
+  {
+    "start_sec" : 2056,
+    "text" : "不是说你们是",
+    "end_timecode" : "00:34:18.000",
+    "index" : 635,
+    "confidence" : 1,
+    "start_timecode" : "00:34:16.000",
+    "end_sec" : 2058
+  },
+  {
+    "start_sec" : 2058,
+    "text" : "那我是太希望你们是了",
+    "end_timecode" : "00:34:21.000",
+    "index" : 636,
+    "confidence" : 1,
+    "start_timecode" : "00:34:18.000",
+    "end_sec" : 2061
+  },
+  {
+    "start_sec" : 2062,
+    "text" : "您要是共党",
+    "end_timecode" : "00:34:23.000",
+    "index" : 637,
+    "confidence" : 1,
+    "start_timecode" : "00:34:22.000",
+    "end_sec" : 2063
+  },
+  {
+    "start_sec" : 2063,
+    "text" : "那我得像祖宗一样的",
+    "end_timecode" : "00:34:25.000",
+    "index" : 638,
+    "confidence" : 1,
+    "start_timecode" : "00:34:23.000",
+    "end_sec" : 2065
+  },
+  {
+    "start_sec" : 2065,
+    "text" : "天天供着您呀",
+    "end_timecode" : "00:34:27.000",
+    "index" : 639,
+    "confidence" : 1,
+    "start_timecode" : "00:34:25.000",
+    "end_sec" : 2067
+  },
+  {
+    "start_sec" : 2067,
+    "text" : "谁要是说出去",
+    "end_timecode" : "00:34:28.000",
+    "index" : 640,
+    "confidence" : 1,
+    "start_timecode" : "00:34:27.000",
+    "end_sec" : 2068
+  },
+  {
+    "start_sec" : 2069,
+    "text" : "那他脑子那是缺斤短两",
+    "end_timecode" : "00:34:32.000",
+    "index" : 641,
+    "confidence" : 1,
+    "start_timecode" : "00:34:29.000",
+    "end_sec" : 2072
+  },
+  {
+    "start_sec" : 2074,
+    "text" : "行了",
+    "end_timecode" : "00:34:35.000",
+    "index" : 642,
+    "confidence" : 0.5,
+    "start_timecode" : "00:34:34.000",
+    "end_sec" : 2075
+  },
+  {
+    "start_sec" : 2076,
+    "text" : "老谢呀",
+    "end_timecode" : "00:34:37.000",
+    "index" : 643,
+    "confidence" : 1,
+    "start_timecode" : "00:34:36.000",
+    "end_sec" : 2077
+  },
+  {
+    "start_sec" : 2078,
+    "text" : "咱们俩还是少接触吧",
+    "end_timecode" : "00:34:40.000",
+    "index" : 644,
+    "confidence" : 1,
+    "start_timecode" : "00:34:38.000",
+    "end_sec" : 2080
+  },
+  {
+    "start_sec" : 2080,
+    "text" : "咱们俩不是一类人",
+    "end_timecode" : "00:34:41.000",
+    "index" : 645,
+    "confidence" : 1,
+    "start_timecode" : "00:34:40.000",
+    "end_sec" : 2081
+  },
+  {
+    "start_sec" : 2083,
+    "text" : "•你再想一想",
+    "end_timecode" : "00:34:44.000",
+    "index" : 646,
+    "confidence" : 0.5,
+    "start_timecode" : "00:34:43.000",
+    "end_sec" : 2084
+  },
+  {
+    "start_sec" : 2084,
+    "text" : "我也可以把党通局的机密告诉你",
+    "end_timecode" : "00:34:47.000",
+    "index" : 647,
+    "confidence" : 1,
+    "start_timecode" : "00:34:44.000",
+    "end_sec" : 2087
+  },
+  {
+    "start_sec" : 2089,
+    "text" : "谢谢你的羊肉 我得回去了",
+    "end_timecode" : "00:34:51.000",
+    "index" : 648,
+    "confidence" : 1,
+    "start_timecode" : "00:34:49.000",
+    "end_sec" : 2091
+  },
+  {
+    "start_sec" : 2097,
+    "text" : "硕果仅存的蠢货",
+    "end_timecode" : "00:35:01.000",
+    "index" : 649,
+    "confidence" : 1,
+    "start_timecode" : "00:34:57.000",
+    "end_sec" : 2101
+  },
+  {
+    "start_sec" : 2103,
+    "text" : "你妹妹什么样啊",
+    "end_timecode" : "00:35:04.000",
+    "index" : 650,
+    "confidence" : 1,
+    "start_timecode" : "00:35:03.000",
+    "end_sec" : 2104
+  },
+  {
+    "start_sec" : 2108,
+    "text" : "我妹妹跟我长得一样",
+    "end_timecode" : "00:35:09.000",
+    "index" : 651,
+    "confidence" : 1,
+    "start_timecode" : "00:35:08.000",
+    "end_sec" : 2109
+  },
+  {
+    "start_sec" : 2112,
+    "text" : "就是很像",
+    "end_timecode" : "00:35:13.000",
+    "index" : 652,
+    "confidence" : 1,
+    "start_timecode" : "00:35:12.000",
+    "end_sec" : 2113
+  },
+  {
+    "start_sec" : 2114,
+    "text" : "但比我漂亮",
+    "end_timecode" : "00:35:15.000",
+    "index" : 653,
+    "confidence" : 1,
+    "start_timecode" : "00:35:14.000",
+    "end_sec" : 2115
+  },
+  {
+    "start_sec" : 2117,
+    "text" : "念过书 有文化很进步",
+    "end_timecode" : "00:35:19.000",
+    "index" : 654,
+    "confidence" : 0.5,
+    "start_timecode" : "00:35:17.000",
+    "end_sec" : 2119
+  },
+  {
+    "start_sec" : 2119,
+    "text" : "念过书 有文化 很进步",
+    "end_timecode" : "00:35:20.000",
+    "index" : 655,
+    "confidence" : 0.3,
+    "start_timecode" : "00:35:19.000",
+    "end_sec" : 2120
+  },
+  {
+    "start_sec" : 2120,
+    "text" : "念过书 有文化很进步",
+    "end_timecode" : "00:35:22.000",
+    "index" : 656,
+    "confidence" : 0.5,
+    "start_timecode" : "00:35:20.000",
+    "end_sec" : 2122
+  },
+  {
+    "start_sec" : 2123,
+    "text" : "在延安呢",
+    "end_timecode" : "00:35:24.000",
+    "index" : 657,
+    "confidence" : 1,
+    "start_timecode" : "00:35:23.000",
+    "end_sec" : 2124
+  },
+  {
+    "start_sec" : 2127,
+    "text" : "现在延安丢了",
+    "end_timecode" : "00:35:28.000",
+    "index" : 658,
+    "confidence" : 1,
+    "start_timecode" : "00:35:27.000",
+    "end_sec" : 2128
+  },
+  {
+    "start_sec" : 2128,
+    "text" : "也不知道她在哪儿呢",
+    "end_timecode" : "00:35:29.000",
+    "index" : 659,
+    "confidence" : 1,
+    "start_timecode" : "00:35:28.000",
+    "end_sec" : 2129
+  },
+  {
+    "start_sec" : 2133,
+    "text" : "根她吗",
+    "end_timecode" : "00:35:34.000",
+    "index" : 660,
+    "confidence" : 0.5,
+    "start_timecode" : "00:35:33.000",
+    "end_sec" : 2134
+  },
+  {
+    "start_sec" : 2136,
+    "text" : "想 能不想吗",
+    "end_timecode" : "00:35:38.000",
+    "index" : 661,
+    "confidence" : 0.5,
+    "start_timecode" : "00:35:36.000",
+    "end_sec" : 2138
+  },
+  {
+    "start_sec" : 2141,
+    "text" : "她可有见识了",
+    "end_timecode" : "00:35:43.000",
+    "index" : 662,
+    "confidence" : 1,
+    "start_timecode" : "00:35:41.000",
+    "end_sec" : 2143
+  },
+  {
+    "start_sec" : 2143,
+    "text" : "你以后要能见着她就好了",
+    "end_timecode" : "00:35:45.000",
+    "index" : 663,
+    "confidence" : 1,
+    "start_timecode" : "00:35:43.000",
+    "end_sec" : 2145
+  },
+  {
+    "start_sec" : 2147,
+    "text" : "对她挺像左蓝的",
+    "end_timecode" : "00:35:49.000",
+    "index" : 664,
+    "confidence" : 0.75,
+    "start_timecode" : "00:35:47.000",
+    "end_sec" : 2149
+  },
+  {
+    "start_sec" : 2152,
+    "text" : "短头发 说话也快还老带文词",
+    "end_timecode" : "00:35:53.000",
+    "index" : 665,
+    "confidence" : 0.5,
+    "start_timecode" : "00:35:52.000",
+    "end_sec" : 2153
+  },
+  {
+    "start_sec" : 2153,
+    "text" : "短头发 说话也快 还老带文词",
+    "end_timecode" : "00:35:56.000",
+    "index" : 666,
+    "confidence" : 0.5,
+    "start_timecode" : "00:35:53.000",
+    "end_sec" : 2156
+  },
+  {
+    "start_sec" : 2160,
+    "text" : "你不喜欢我 说不定能喜欢她",
+    "end_timecode" : "00:36:03.000",
+    "index" : 667,
+    "confidence" : 0.667,
+    "start_timecode" : "00:36:00.000",
+    "end_sec" : 2163
+  },
+  {
+    "start_sec" : 2163,
+    "text" : "谁说我不喜欢你",
+    "end_timecode" : "00:36:05.000",
+    "index" : 668,
+    "confidence" : 1,
+    "start_timecode" : "00:36:03.000",
+    "end_sec" : 2165
+  },
+  {
+    "start_sec" : 2171,
+    "text" : "我傻呀",
+    "end_timecode" : "00:36:12.000",
+    "index" : 669,
+    "confidence" : 1,
+    "start_timecode" : "00:36:11.000",
+    "end_sec" : 2172
+  },
+  {
+    "start_sec" : 2175,
+    "text" : "翠平至今还不知道妹妹牺牲的消息",
+    "end_timecode" : "00:36:16.000",
+    "index" : 670,
+    "confidence" : 1,
+    "start_timecode" : "00:36:15.000",
+    "end_sec" : 2176
+  },
+  {
+    "start_sec" : 2176,
+    "text" : "翠业至 今还不知道妹妹牺牲的消息",
+    "end_timecode" : "00:36:17.000",
+    "index" : 671,
+    "confidence" : 0.65,
+    "start_timecode" : "00:36:16.000",
+    "end_sec" : 2177
+  },
+  {
+    "start_sec" : 2179,
+    "text" : "余则成听着翠平骄傲的述说",
+    "end_timecode" : "00:36:21.000",
+    "index" : 672,
+    "confidence" : 1,
+    "start_timecode" : "00:36:19.000",
+    "end_sec" : 2181
+  },
+  {
+    "start_sec" : 2181,
+    "text" : "心头忽然感到阵阵凄凉",
+    "end_timecode" : "00:36:23.000",
+    "index" : 673,
+    "confidence" : 1,
+    "start_timecode" : "00:36:21.000",
+    "end_sec" : 2183
+  },
+  {
+    "start_sec" : 2185,
+    "text" : "他觉得有些对不起翠平",
+    "end_timecode" : "00:36:26.000",
+    "index" : 674,
+    "confidence" : 1,
+    "start_timecode" : "00:36:25.000",
+    "end_sec" : 2186
+  },
+  {
+    "start_sec" : 2187,
+    "text" : "怎么对不起",
+    "end_timecode" : "00:36:28.000",
+    "index" : 675,
+    "confidence" : 1,
+    "start_timecode" : "00:36:27.000",
+    "end_sec" : 2188
+  },
+  {
+    "start_sec" : 2188,
+    "text" : "他也说不清楚",
+    "end_timecode" : "00:36:29.000",
+    "index" : 676,
+    "confidence" : 1,
+    "start_timecode" : "00:36:28.000",
+    "end_sec" : 2189
+  },
+  {
+    "start_sec" : 2191,
+    "text" : "在这样的环境里生存",
+    "end_timecode" : "00:36:32.000",
+    "index" : 677,
+    "confidence" : 1,
+    "start_timecode" : "00:36:31.000",
+    "end_sec" : 2192
+  },
+  {
+    "start_sec" : 2192,
+    "text" : "翠平比他还不容易",
+    "end_timecode" : "00:36:34.000",
+    "index" : 678,
+    "confidence" : 1,
+    "start_timecode" : "00:36:32.000",
+    "end_sec" : 2194
+  },
+  {
+    "start_sec" : 2195,
+    "text" : "左蓝给过他一种信念",
+    "end_timecode" : "00:36:36.000",
+    "index" : 679,
+    "confidence" : 1,
+    "start_timecode" : "00:36:35.000",
+    "end_sec" : 2196
+  },
+  {
+    "start_sec" : 2197,
+    "text" : "但这种信念的力量",
+    "end_timecode" : "00:36:38.000",
+    "index" : 680,
+    "confidence" : 1,
+    "start_timecode" : "00:36:37.000",
+    "end_sec" : 2198
+  },
+  {
+    "start_sec" : 2199,
+    "text" : "却是翠平传递给他的",
+    "end_timecode" : "00:36:41.000",
+    "index" : 681,
+    "confidence" : 1,
+    "start_timecode" : "00:36:39.000",
+    "end_sec" : 2201
+  },
+  {
+    "start_sec" : 2216,
+    "text" : "这是要去哪儿啊",
+    "end_timecode" : "00:36:57.000",
+    "index" : 682,
+    "confidence" : 1,
+    "start_timecode" : "00:36:56.000",
+    "end_sec" : 2217
+  },
+  {
+    "start_sec" : 2218,
+    "text" : "买花布",
+    "end_timecode" : "00:36:59.000",
+    "index" : 683,
+    "confidence" : 1,
+    "start_timecode" : "00:36:58.000",
+    "end_sec" : 2219
+  },
+  {
+    "start_sec" : 2223,
+    "text" : "买花布叫着晚秋一块去吧",
+    "end_timecode" : "00:37:05.000",
+    "index" : 684,
+    "confidence" : 1,
+    "start_timecode" : "00:37:03.000",
+    "end_sec" : 2225
+  },
+  {
+    "start_sec" : 2225,
+    "text" : "她比你会买",
+    "end_timecode" : "00:37:06.000",
+    "index" : 685,
+    "confidence" : 1,
+    "start_timecode" : "00:37:05.000",
+    "end_sec" : 2226
+  },
+  {
+    "start_sec" : 2229,
+    "text" : "是啊 人家是城市大小姐",
+    "end_timecode" : "00:37:11.000",
+    "index" : 686,
+    "confidence" : 0.5,
+    "start_timecode" : "00:37:09.000",
+    "end_sec" : 2231
+  },
+  {
+    "start_sec" : 2234,
+    "text" : "你呀",
+    "end_timecode" : "00:37:15.000",
+    "index" : 687,
+    "confidence" : 1,
+    "start_timecode" : "00:37:14.000",
+    "end_sec" : 2235
+  },
+  {
+    "start_sec" : 2236,
+    "text" : "你别说",
+    "end_timecode" : "00:37:17.000",
+    "index" : 688,
+    "confidence" : 1,
+    "start_timecode" : "00:37:16.000",
+    "end_sec" : 2237
+  },
+  {
+    "start_sec" : 2238,
+    "text" : "我要是真娶了晚秋做二房",
+    "end_timecode" : "00:37:20.000",
+    "index" : 689,
+    "confidence" : 1,
+    "start_timecode" : "00:37:18.000",
+    "end_sec" : 2240
+  },
+  {
+    "start_sec" : 2241,
+    "text" : "你们俩这日子能过得不错",
+    "end_timecode" : "00:37:23.000",
+    "index" : 690,
+    "confidence" : 1,
+    "start_timecode" : "00:37:21.000",
+    "end_sec" : 2243
+  },
+  {
+    "start_sec" : 2252,
+    "text" : "你别忘了 她是二房",
+    "end_timecode" : "00:37:35.000",
+    "index" : 691,
+    "confidence" : 0.667,
+    "start_timecode" : "00:37:32.000",
+    "end_sec" : 2255
+  },
+  {
+    "start_sec" : 2256,
+    "text" : "娶她之前你先得娶我",
+    "end_timecode" : "00:37:37.000",
+    "index" : 692,
+    "confidence" : 1,
+    "start_timecode" : "00:37:36.000",
+    "end_sec" : 2257
+  },
+  {
+    "start_sec" : 2257,
+    "text" : "娶她之前你先娶我",
+    "end_timecode" : "00:37:38.000",
+    "index" : 693,
+    "confidence" : 0.3,
+    "start_timecode" : "00:37:37.000",
+    "end_sec" : 2258
+  },
+  {
+    "start_sec" : 2334,
+    "text" : "秋",
+    "end_timecode" : "00:38:55.000",
+    "index" : 694,
+    "confidence" : 1,
+    "start_timecode" : "00:38:54.000",
+    "end_sec" : 2335
+  },
+  {
+    "start_sec" : 2337,
+    "text" : "秋",
+    "end_timecode" : "00:38:58.000",
+    "index" : 695,
+    "confidence" : 1,
+    "start_timecode" : "00:38:57.000",
+    "end_sec" : 2338
+  },
+  {
+    "start_sec" : 2397,
+    "text" : "雪察橫",
+    "end_timecode" : "00:39:58.000",
+    "index" : 696,
+    "confidence" : 0.3,
+    "start_timecode" : "00:39:57.000",
+    "end_sec" : 2398
+  },
+  {
+    "start_sec" : 2426,
+    "text" : "快点",
+    "end_timecode" : "00:40:27.000",
+    "index" : 697,
+    "confidence" : 1,
+    "start_timecode" : "00:40:26.000",
+    "end_sec" : 2427
+  },
+  {
+    "start_sec" : 2428,
+    "text" : "1你看 你看",
+    "end_timecode" : "00:40:29.000",
+    "index" : 698,
+    "confidence" : 0.3,
+    "start_timecode" : "00:40:28.000",
+    "end_sec" : 2429
+  },
+  {
+    "start_sec" : 2430,
+    "text" : "我得找到我上回骑的那四",
+    "end_timecode" : "00:40:31.000",
+    "index" : 699,
+    "confidence" : 1,
+    "start_timecode" : "00:40:30.000",
+    "end_sec" : 2431
+  },
+  {
+    "start_sec" : 2431,
+    "text" : "我得找到我上回骑的那匹",
+    "end_timecode" : "00:40:32.000",
+    "index" : 700,
+    "confidence" : 0.5,
+    "start_timecode" : "00:40:31.000",
+    "end_sec" : 2432
+  },
+  {
+    "start_sec" : 2433,
+    "text" : "在哪呢",
+    "end_timecode" : "00:40:34.000",
+    "index" : 701,
+    "confidence" : 1,
+    "start_timecode" : "00:40:33.000",
+    "end_sec" : 2434
+  },
+  {
+    "start_sec" : 2435,
+    "text" : "大妹子",
+    "end_timecode" : "00:40:36.000",
+    "index" : 702,
+    "confidence" : 1,
+    "start_timecode" : "00:40:35.000",
+    "end_sec" : 2436
+  },
+  {
+    "start_sec" : 2437,
+    "text" : "梅姐",
+    "end_timecode" : "00:40:38.000",
+    "index" : 703,
+    "confidence" : 0.5,
+    "start_timecode" : "00:40:37.000",
+    "end_sec" : 2438
+  },
+  {
+    "start_sec" : 2439,
+    "text" : "中榮中路好候的间没来看我了前想死我",
+    "end_timecode" : "00:40:40.000",
+    "index" : 704,
+    "confidence" : 0.3,
+    "start_timecode" : "00:40:39.000",
+    "end_sec" : 2440
+  },
+  {
+    "start_sec" : 2440,
+    "text" : "长时间没来看我了可想死我了",
+    "end_timecode" : "00:40:41.000",
+    "index" : 705,
+    "confidence" : 1,
+    "start_timecode" : "00:40:40.000",
+    "end_sec" : 2441
+  },
+  {
+    "start_sec" : 2441,
+    "text" : "间没来看我了可想死我了",
+    "end_timecode" : "00:40:42.000",
+    "index" : 706,
+    "confidence" : 0.5,
+    "start_timecode" : "00:40:41.000",
+    "end_sec" : 2442
+  },
+  {
+    "start_sec" : 2442,
+    "text" : "梅姐我给你介绍一下",
+    "end_timecode" : "00:40:43.000",
+    "index" : 707,
+    "confidence" : 1,
+    "start_timecode" : "00:40:42.000",
+    "end_sec" : 2443
+  },
+  {
+    "start_sec" : 2443,
+    "text" : "晚秋",
+    "end_timecode" : "00:40:44.000",
+    "index" : 708,
+    "confidence" : 0.3,
+    "start_timecode" : "00:40:43.000",
+    "end_sec" : 2444
+  },
+  {
+    "start_sec" : 2446,
+    "text" : "这是我们街坊晚秋",
+    "end_timecode" : "00:40:47.000",
+    "index" : 709,
+    "confidence" : 1,
+    "start_timecode" : "00:40:46.000",
+    "end_sec" : 2447
+  },
+  {
+    "start_sec" : 2453,
+    "text" : "晚秋 你跑什么呀",
+    "end_timecode" : "00:40:55.000",
+    "index" : 710,
+    "confidence" : 0.75,
+    "start_timecode" : "00:40:53.000",
+    "end_sec" : 2455
+  },
+  {
+    "start_sec" : 2456,
+    "text" : "你怎么了",
+    "end_timecode" : "00:40:57.000",
+    "index" : 711,
+    "confidence" : 1,
+    "start_timecode" : "00:40:56.000",
+    "end_sec" : 2457
+  },
+  {
+    "start_sec" : 2460,
+    "text" : "要不是她男人敲诈我叔伯",
+    "end_timecode" : "00:41:01.000",
+    "index" : 712,
+    "confidence" : 1,
+    "start_timecode" : "00:41:00.000",
+    "end_sec" : 2461
+  },
+  {
+    "start_sec" : 2461,
+    "text" : "要不是她男人敲谁我叔伯",
+    "end_timecode" : "00:41:02.000",
+    "index" : 713,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:01.000",
+    "end_sec" : 2462
+  },
+  {
+    "start_sec" : 2463,
+    "text" : "我叔伯也不会逃到日本去",
+    "end_timecode" : "00:41:05.000",
+    "index" : 714,
+    "confidence" : 1,
+    "start_timecode" : "00:41:03.000",
+    "end_sec" : 2465
+  },
+  {
+    "start_sec" : 2468,
+    "text" : "我也不至于",
+    "end_timecode" : "00:41:09.000",
+    "index" : 715,
+    "confidence" : 1,
+    "start_timecode" : "00:41:08.000",
+    "end_sec" : 2469
+  },
+  {
+    "start_sec" : 2469,
+    "text" : "过现在这种心慌的日子",
+    "end_timecode" : "00:41:10.000",
+    "index" : 716,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:09.000",
+    "end_sec" : 2470
+  },
+  {
+    "start_sec" : 2470,
+    "text" : "［现在这种心慌的日子",
+    "end_timecode" : "00:41:11.000",
+    "index" : 717,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:10.000",
+    "end_sec" : 2471
+  },
+  {
+    "start_sec" : 2473,
+    "text" : "你",
+    "end_timecode" : "00:41:14.000",
+    "index" : 718,
+    "confidence" : 1,
+    "start_timecode" : "00:41:13.000",
+    "end_sec" : 2474
+  },
+  {
+    "start_sec" : 2479,
+    "text" : "嫂子 你怎么了",
+    "end_timecode" : "00:41:20.000",
+    "index" : 719,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:19.000",
+    "end_sec" : 2480
+  },
+  {
+    "start_sec" : 2483,
+    "text" : "我就不该吃那个冰的东西",
+    "end_timecode" : "00:41:24.000",
+    "index" : 720,
+    "confidence" : 1,
+    "start_timecode" : "00:41:23.000",
+    "end_sec" : 2484
+  },
+  {
+    "start_sec" : 2484,
+    "text" : "就不该吃那个冰的东西",
+    "end_timecode" : "00:41:25.000",
+    "index" : 721,
+    "confidence" : 1,
+    "start_timecode" : "00:41:24.000",
+    "end_sec" : 2485
+  },
+  {
+    "start_sec" : 2486,
+    "text" : "你脞亍疼是吗",
+    "end_timecode" : "00:41:27.000",
+    "index" : 722,
+    "confidence" : 0.3,
+    "start_timecode" : "00:41:26.000",
+    "end_sec" : 2487
+  },
+  {
+    "start_sec" : 2488,
+    "text" : "臊死了没脸见人了",
+    "end_timecode" : "00:41:30.000",
+    "index" : 723,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:28.000",
+    "end_sec" : 2490
+  },
+  {
+    "start_sec" : 2490,
+    "text" : "臊死了 没脸见人了",
+    "end_timecode" : "00:41:31.000",
+    "index" : 724,
+    "confidence" : 1,
+    "start_timecode" : "00:41:30.000",
+    "end_sec" : 2491
+  },
+  {
+    "start_sec" : 2493,
+    "text" : "医生怎么会是个老爷们儿呢",
+    "end_timecode" : "00:41:35.000",
+    "index" : 725,
+    "confidence" : 1,
+    "start_timecode" : "00:41:33.000",
+    "end_sec" : 2495
+  },
+  {
+    "start_sec" : 2495,
+    "text" : "医生男女都一样",
+    "end_timecode" : "00:41:37.000",
+    "index" : 726,
+    "confidence" : 1,
+    "start_timecode" : "00:41:35.000",
+    "end_sec" : 2497
+  },
+  {
+    "start_sec" : 2497,
+    "text" : "一样个屁",
+    "end_timecode" : "00:41:38.000",
+    "index" : 727,
+    "confidence" : 1,
+    "start_timecode" : "00:41:37.000",
+    "end_sec" : 2498
+  },
+  {
+    "start_sec" : 2500,
+    "text" : "都脱光了",
+    "end_timecode" : "00:41:41.000",
+    "index" : 728,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:40.000",
+    "end_sec" : 2501
+  },
+  {
+    "start_sec" : 2507,
+    "text" : "那妇科病是个什么病啊",
+    "end_timecode" : "00:41:49.000",
+    "index" : 729,
+    "confidence" : 1,
+    "start_timecode" : "00:41:47.000",
+    "end_sec" : 2509
+  },
+  {
+    "start_sec" : 2510,
+    "text" : "好了 回家",
+    "end_timecode" : "00:41:51.000",
+    "index" : 730,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:50.000",
+    "end_sec" : 2511
+  },
+  {
+    "start_sec" : 2513,
+    "text" : "来",
+    "end_timecode" : "00:41:54.000",
+    "index" : 731,
+    "confidence" : 0.5,
+    "start_timecode" : "00:41:53.000",
+    "end_sec" : 2514
+  },
+  {
+    "start_sec" : 2514,
+    "text" : "喝点水",
+    "end_timecode" : "00:41:55.000",
+    "index" : 732,
+    "confidence" : 1,
+    "start_timecode" : "00:41:54.000",
+    "end_sec" : 2515
+  },
+  {
+    "start_sec" : 2520,
+    "text" : "Cio",
+    "end_timecode" : "00:42:01.000",
+    "index" : 733,
+    "confidence" : 0.3,
+    "start_timecode" : "00:42:00.000",
+    "end_sec" : 2521
+  },
+  {
+    "start_sec" : 2522,
+    "text" : "你要生个孩子 这种病准好",
+    "end_timecode" : "00:42:05.000",
+    "index" : 734,
+    "confidence" : 0.433,
+    "start_timecode" : "00:42:02.000",
+    "end_sec" : 2525
+  },
+  {
+    "start_sec" : 2526,
+    "text" : "生不了了",
+    "end_timecode" : "00:42:07.000",
+    "index" : 735,
+    "confidence" : 1,
+    "start_timecode" : "00:42:06.000",
+    "end_sec" : 2527
+  },
+  {
+    "start_sec" : 2533,
+    "text" : "在黑夜里梦想着光",
+    "end_timecode" : "00:42:14.000",
+    "index" : 736,
+    "confidence" : 1,
+    "start_timecode" : "00:42:13.000",
+    "end_sec" : 2534
+  },
+  {
+    "start_sec" : 2534,
+    "text" : "在黑夜里梦根着光",
+    "end_timecode" : "00:42:15.000",
+    "index" : 737,
+    "confidence" : 1,
+    "start_timecode" : "00:42:14.000",
+    "end_sec" : 2535
+  },
+  {
+    "start_sec" : 2535,
+    "text" : "在黑夜里梦想着光",
+    "end_timecode" : "00:42:16.000",
+    "index" : 738,
+    "confidence" : 1,
+    "start_timecode" : "00:42:15.000",
+    "end_sec" : 2536
+  },
+  {
+    "start_sec" : 2537,
+    "text" : "心中覆盖悲伤",
+    "end_timecode" : "00:42:21.000",
+    "index" : 739,
+    "confidence" : 1,
+    "start_timecode" : "00:42:17.000",
+    "end_sec" : 2541
+  },
+  {
+    "start_sec" : 2541,
+    "text" : "在悲伤里忍受孤独",
+    "end_timecode" : "00:42:25.000",
+    "index" : 740,
+    "confidence" : 1,
+    "start_timecode" : "00:42:21.000",
+    "end_sec" : 2545
+  },
+  {
+    "start_sec" : 2546,
+    "text" : "空守一丝温暖",
+    "end_timecode" : "00:42:29.000",
+    "index" : 741,
+    "confidence" : 0.833,
+    "start_timecode" : "00:42:26.000",
+    "end_sec" : 2549
+  },
+  {
+    "start_sec" : 2550,
+    "text" : "我的泪水是无底深海",
+    "end_timecode" : "00:42:33.000",
+    "index" : 742,
+    "confidence" : 1,
+    "start_timecode" : "00:42:30.000",
+    "end_sec" : 2553
+  },
+  {
+    "start_sec" : 2553,
+    "text" : "我的涓水是无底深海",
+    "end_timecode" : "00:42:34.000",
+    "index" : 743,
+    "confidence" : 0.5,
+    "start_timecode" : "00:42:33.000",
+    "end_sec" : 2554
+  },
+  {
+    "start_sec" : 2555,
+    "text" : "对你的爱已无言",
+    "end_timecode" : "00:42:39.000",
+    "index" : 744,
+    "confidence" : 1,
+    "start_timecode" : "00:42:35.000",
+    "end_sec" : 2559
+  },
+  {
+    "start_sec" : 2560,
+    "text" : "相信无尽的力量",
+    "end_timecode" : "00:42:43.000",
+    "index" : 745,
+    "confidence" : 1,
+    "start_timecode" : "00:42:40.000",
+    "end_sec" : 2563
+  },
+  {
+    "start_sec" : 2563,
+    "text" : "那是真爱永在",
+    "end_timecode" : "00:42:46.000",
+    "index" : 746,
+    "confidence" : 1,
+    "start_timecode" : "00:42:43.000",
+    "end_sec" : 2566
+  },
+  {
+    "start_sec" : 2566,
+    "text" : "是真爱永在",
+    "end_timecode" : "00:42:47.000",
+    "index" : 747,
+    "confidence" : 1,
+    "start_timecode" : "00:42:46.000",
+    "end_sec" : 2567
+  },
+  {
+    "start_sec" : 2568,
+    "text" : "我的信仰是无底深海",
+    "end_timecode" : "00:42:52.000",
+    "index" : 748,
+    "confidence" : 1,
+    "start_timecode" : "00:42:48.000",
+    "end_sec" : 2572
+  },
+  {
+    "start_sec" : 2572,
+    "text" : "澎湃着心中火焰",
+    "end_timecode" : "00:42:57.000",
+    "index" : 749,
+    "confidence" : 1,
+    "start_timecode" : "00:42:52.000",
+    "end_sec" : 2577
+  },
+  {
+    "start_sec" : 2577,
+    "text" : "燃烧无尽的力量",
+    "end_timecode" : "00:43:01.000",
+    "index" : 750,
+    "confidence" : 1,
+    "start_timecode" : "00:42:57.000",
+    "end_sec" : 2581
+  },
+  {
+    "start_sec" : 2581,
+    "text" : "那是忠诚永在",
+    "end_timecode" : "00:43:03.000",
+    "index" : 751,
+    "confidence" : 1,
+    "start_timecode" : "00:43:01.000",
+    "end_sec" : 2583
+  },
+  {
+    "start_sec" : 2583,
+    "text" : "那是忠诚永在 富品表",
+    "end_timecode" : "00:43:04.000",
+    "index" : 752,
+    "confidence" : 0.65,
+    "start_timecode" : "00:43:03.000",
+    "end_sec" : 2584
+  },
+  {
+    "start_sec" : 2584,
+    "text" : "演员表",
+    "end_timecode" : "00:43:05.000",
+    "index" : 753,
+    "confidence" : 1,
+    "start_timecode" : "00:43:04.000",
+    "end_sec" : 2585
+  },
+  {
+    "start_sec" : 2585,
+    "text" : "余则成一一孙红雷",
+    "end_timecode" : "00:43:06.000",
+    "index" : 754,
+    "confidence" : 0.5,
+    "start_timecode" : "00:43:05.000",
+    "end_sec" : 2586
+  },
+  {
+    "start_sec" : 2586,
+    "text" : "温暖若停在你心里 翠平一一姚晨 李涯一一祖峰",
+    "end_timecode" : "00:43:07.000",
+    "index" : 755,
+    "confidence" : 0.533,
+    "start_timecode" : "00:43:06.000",
+    "end_sec" : 2587
+  },
+  {
+    "start_sec" : 2587,
+    "text" : "温暖若停在你心里 李涯一一祖峰 吴站长一一冯思鹤",
+    "end_timecode" : "00:43:08.000",
+    "index" : 756,
+    "confidence" : 0.367,
+    "start_timecode" : "00:43:07.000",
+    "end_sec" : 2588
+  },
+  {
+    "start_sec" : 2588,
+    "text" : "温暖若停在你心里 天站长一一冯思码 陆桥山一一吴 刚 士花一一沈勒骨",
+    "end_timecode" : "00:43:09.000",
+    "index" : 757,
+    "confidence" : 0.475,
+    "start_timecode" : "00:43:08.000",
+    "end_sec" : 2589
+  },
+  {
+    "start_sec" : 2589,
+    "text" : "温暖若停在你心里 左 蓝一一沈傲君 马奎一—范雨林",
+    "end_timecode" : "00:43:10.000",
+    "index" : 758,
+    "confidence" : 0.367,
+    "start_timecode" : "00:43:09.000",
+    "end_sec" : 2590
+  },
+  {
+    "start_sec" : 2590,
+    "text" : "愿用一生祝愿 马奎一一范雨林 晚秋一—朱杰",
+    "end_timecode" : "00:43:11.000",
+    "index" : 759,
+    "confidence" : 0.533,
+    "start_timecode" : "00:43:10.000",
+    "end_sec" : 2591
+  },
+  {
+    "start_sec" : 2591,
+    "text" : "愿用一生祝愿 谢若林一一曹炳琨 吴太太一—马军勒",
+    "end_timecode" : "00:43:12.000",
+    "index" : 760,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:11.000",
+    "end_sec" : 2592
+  },
+  {
+    "start_sec" : 2592,
+    "text" : "愿用一生祝愿 吴太太一一马军勤 秋掌柜——刘昌伟",
+    "end_timecode" : "00:43:13.000",
+    "index" : 761,
+    "confidence" : 0.533,
+    "start_timecode" : "00:43:12.000",
+    "end_sec" : 2593
+  },
+  {
+    "start_sec" : 2593,
+    "text" : "秋掌柜一一刘昌伟 罗掌柜一二陆羽 卧心包",
+    "end_timecode" : "00:43:14.000",
+    "index" : 762,
+    "confidence" : 0.3,
+    "start_timecode" : "00:43:13.000",
+    "end_sec" : 2594
+  },
+  {
+    "start_sec" : 2594,
+    "text" : "生命只为一个信仰 廖三民一一王 毅 李海丰——石文忠",
+    "end_timecode" : "00:43:15.000",
+    "index" : 763,
+    "confidence" : 0.533,
+    "start_timecode" : "00:43:14.000",
+    "end_sec" : 2595
+  },
+  {
+    "start_sec" : 2595,
+    "text" : "生命只为一个信仰 李海丰——石文忠 徐宝凤一一孙 岚",
+    "end_timecode" : "00:43:16.000",
+    "index" : 764,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:15.000",
+    "end_sec" : 2596
+  },
+  {
+    "start_sec" : 2596,
+    "text" : "生命只 一个信仰 使生风一一孙风 马太太一一徐婧灵 日宗方一一六 清",
+    "end_timecode" : "00:43:17.000",
+    "index" : 765,
+    "confidence" : 0.4,
+    "start_timecode" : "00:43:16.000",
+    "end_sec" : 2597
+  },
+  {
+    "start_sec" : 2597,
+    "text" : "生命只为一个信仰 日宗方一一卞 涛 洪秘书—一刘言语",
+    "end_timecode" : "00:43:18.000",
+    "index" : 766,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:17.000",
+    "end_sec" : 2598
+  },
+  {
+    "start_sec" : 2598,
+    "text" : "生命只为一个信仰 洪秘书一—刘言语 王占金一一崔 嵩 百電出",
+    "end_timecode" : "00:43:19.000",
+    "index" : 767,
+    "confidence" : 0.56,
+    "start_timecode" : "00:43:18.000",
+    "end_sec" : 2599
+  },
+  {
+    "start_sec" : 2599,
+    "text" : "无论谁能听见 周亚夫一- 波",
+    "end_timecode" : "00:43:20.000",
+    "index" : 768,
+    "confidence" : 0.767,
+    "start_timecode" : "00:43:19.000",
+    "end_sec" : 2600
+  },
+  {
+    "start_sec" : 2600,
+    "text" : "无论谁能听见",
+    "end_timecode" : "00:43:21.000",
+    "index" : 769,
+    "confidence" : 1,
+    "start_timecode" : "00:43:20.000",
+    "end_sec" : 2601
+  },
+  {
+    "start_sec" : 2601,
+    "text" : "无论谁能听见 旁一白：徐涛",
+    "end_timecode" : "00:43:22.000",
+    "index" : 770,
+    "confidence" : 0.75,
+    "start_timecode" : "00:43:21.000",
+    "end_sec" : 2602
+  },
+  {
+    "start_sec" : 2602,
+    "text" : "旁 白：徐涛 原二著：龙一",
+    "end_timecode" : "00:43:23.000",
+    "index" : 771,
+    "confidence" : 0.367,
+    "start_timecode" : "00:43:22.000",
+    "end_sec" : 2603
+  },
+  {
+    "start_sec" : 2603,
+    "text" : "海 者：龙 剧：姜 油。於 伟 住",
+    "end_timecode" : "00:43:24.000",
+    "index" : 772,
+    "confidence" : 0.483,
+    "start_timecode" : "00:43:23.000",
+    "end_sec" : 2604
+  },
+  {
+    "start_sec" : 2604,
+    "text" : "我的泪水是无底深海 导演：姜伟 付玮 摄一影：徐红兵 张译水",
+    "end_timecode" : "00:43:25.000",
+    "index" : 773,
+    "confidence" : 0.62,
+    "start_timecode" : "00:43:24.000",
+    "end_sec" : 2605
+  },
+  {
+    "start_sec" : 2605,
+    "text" : "我的泪水是无底深海 摄影：徐红兵 美一术：李继麟 张译水 黄嘉超",
+    "end_timecode" : "00:43:26.000",
+    "index" : 774,
+    "confidence" : 0.66,
+    "start_timecode" : "00:43:25.000",
+    "end_sec" : 2606
+  },
+  {
+    "start_sec" : 2606,
+    "text" : "我的泪水是无底深海 尚菲璇 录音：王 然 冯震",
+    "end_timecode" : "00:43:27.000",
+    "index" : 775,
+    "confidence" : 0.72,
+    "start_timecode" : "00:43:26.000",
+    "end_sec" : 2607
+  },
+  {
+    "start_sec" : 2607,
+    "text" : "录 音 音：王然冯震 乐：王晓锋",
+    "end_timecode" : "00:43:28.000",
+    "index" : 776,
+    "confidence" : 0.4,
+    "start_timecode" : "00:43:27.000",
+    "end_sec" : 2608
+  },
+  {
+    "start_sec" : 2608,
+    "text" : "对你的爱已无言 乐：王晓镡 词：韩葆",
+    "end_timecode" : "00:43:29.000",
+    "index" : 777,
+    "confidence" : 0.533,
+    "start_timecode" : "00:43:28.000",
+    "end_sec" : 2609
+  },
+  {
+    "start_sec" : 2609,
+    "text" : "对你的爱已无言 剪辑：周新霞 执行制片人：张玮刘永梅",
+    "end_timecode" : "00:43:30.000",
+    "index" : 778,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:29.000",
+    "end_sec" : 2610
+  },
+  {
+    "start_sec" : 2610,
+    "text" : "对你的爱已无言 执行制片人：张 责任编辑：卢锋 刘永梅",
+    "end_timecode" : "00:43:31.000",
+    "index" : 779,
+    "confidence" : 0.875,
+    "start_timecode" : "00:43:30.000",
+    "end_sec" : 2611
+  },
+  {
+    "start_sec" : 2611,
+    "text" : "对你的爱已无言 制片主任：李 统算：易 徐 峰",
+    "end_timecode" : "00:43:32.000",
+    "index" : 780,
+    "confidence" : 0.76,
+    "start_timecode" : "00:43:31.000",
+    "end_sec" : 2612
+  },
+  {
+    "start_sec" : 2612,
+    "text" : "统筹：易 冰 副导演：李苏 张虹颖",
+    "end_timecode" : "00:43:33.000",
+    "index" : 781,
+    "confidence" : 0.7,
+    "start_timecode" : "00:43:32.000",
+    "end_sec" : 2613
+  },
+  {
+    "start_sec" : 2613,
+    "text" : "相信无尽的力量 副导潢：李苏 李晓燕 张虹颖 娄亚江",
+    "end_timecode" : "00:43:34.000",
+    "index" : 782,
+    "confidence" : 0.76,
+    "start_timecode" : "00:43:33.000",
+    "end_sec" : 2614
+  },
+  {
+    "start_sec" : 2614,
+    "text" : "相信无尽的力量 场记：施维聪 服装：董清萍 薛迎娣",
+    "end_timecode" : "00:43:35.000",
+    "index" : 783,
+    "confidence" : 0.75,
+    "start_timecode" : "00:43:34.000",
+    "end_sec" : 2615
+  },
+  {
+    "start_sec" : 2615,
+    "text" : "相信无尽的力量 服 化 裝：董清萍 妆：马树英",
+    "end_timecode" : "00:43:36.000",
+    "index" : 784,
+    "confidence" : 0.56,
+    "start_timecode" : "00:43:35.000",
+    "end_sec" : 2616
+  },
+  {
+    "start_sec" : 2616,
+    "text" : "1双：当們失 灯光：胡庭鑫 浴口的汁，赵书平",
+    "end_timecode" : "00:43:37.000",
+    "index" : 785,
+    "confidence" : 0.367,
+    "start_timecode" : "00:43:36.000",
+    "end_sec" : 2617
+  },
+  {
+    "start_sec" : 2617,
+    "text" : "那是真爱永在 道具设计：赵书平 置景：陈家余 孙书明",
+    "end_timecode" : "00:43:38.000",
+    "index" : 786,
+    "confidence" : 0.875,
+    "start_timecode" : "00:43:37.000",
+    "end_sec" : 2618
+  },
+  {
+    "start_sec" : 2618,
+    "text" : "那是真爱永在 置景：陈家余 现场道具：薛耿亚 孙书明 张玉彬",
+    "end_timecode" : "00:43:39.000",
+    "index" : 787,
+    "confidence" : 0.9,
+    "start_timecode" : "00:43:38.000",
+    "end_sec" : 2619
+  },
+  {
+    "start_sec" : 2619,
+    "text" : "那是真爱永在 现场制片：雷云华 制片：高琳杨焰",
+    "end_timecode" : "00:43:40.000",
+    "index" : 788,
+    "confidence" : 0.833,
+    "start_timecode" : "00:43:39.000",
+    "end_sec" : 2620
+  },
+  {
+    "start_sec" : 2620,
+    "text" : "片：高 张 杨 焰",
+    "end_timecode" : "00:43:41.000",
+    "index" : 789,
+    "confidence" : 1,
+    "start_timecode" : "00:43:40.000",
+    "end_sec" : 2621
+  },
+  {
+    "start_sec" : 2621,
+    "text" : "在黑夜里梦懇着光 张 生活制片：余 马司与效回足4",
+    "end_timecode" : "00:43:42.000",
+    "index" : 790,
+    "confidence" : 0.475,
+    "start_timecode" : "00:43:41.000",
+    "end_sec" : 2622
+  },
+  {
+    "start_sec" : 2622,
+    "text" : "在黑夜里梦想着光 动画视效导演：汪 壮 动画视效制作：北京完美动力影像技术有限公司",
+    "end_timecode" : "00:43:43.000",
+    "index" : 791,
+    "confidence" : 1,
+    "start_timecode" : "00:43:42.000",
+    "end_sec" : 2623
+  },
+  {
+    "start_sec" : 2623,
+    "text" : "动画视效制作：北京完美动力影像技术有限公司 在黑夜里梦想着光",
+    "end_timecode" : "00:43:44.000",
+    "index" : 792,
+    "confidence" : 1,
+    "start_timecode" : "00:43:43.000",
+    "end_sec" : 2624
+  },
+  {
+    "start_sec" : 2624,
+    "text" : "在黑夜里梦想着光",
+    "end_timecode" : "00:43:45.000",
+    "index" : 793,
+    "confidence" : 1,
+    "start_timecode" : "00:43:44.000",
+    "end_sec" : 2625
+  },
+  {
+    "start_sec" : 2625,
+    "text" : "心中覆盖悲伤 片头：刘昕",
+    "end_timecode" : "00:43:46.000",
+    "index" : 794,
+    "confidence" : 0.75,
+    "start_timecode" : "00:43:45.000",
+    "end_sec" : 2626
+  },
+  {
+    "start_sec" : 2626,
+    "text" : "心中覆盖悲伤 头：刘昕 火：史炜",
+    "end_timecode" : "00:43:47.000",
+    "index" : 795,
+    "confidence" : 0.667,
+    "start_timecode" : "00:43:46.000",
+    "end_sec" : 2627
+  },
+  {
+    "start_sec" : 2627,
+    "text" : "心中覆盖悲伤 烟公：史炜 主题歌：《深海》",
+    "end_timecode" : "00:43:48.000",
+    "index" : 796,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:47.000",
+    "end_sec" : 2628
+  },
+  {
+    "start_sec" : 2628,
+    "text" : "心中覆盖悲伤 词：韩葆 作：阿•亚历山大罗夫",
+    "end_timecode" : "00:43:49.000",
+    "index" : 797,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:48.000",
+    "end_sec" : 2629
+  },
+  {
+    "start_sec" : 2629,
+    "text" : "原 编 作：阿。亚历山大罗夫 曲：王晓锋",
+    "end_timecode" : "00:43:50.000",
+    "index" : 798,
+    "confidence" : 0.875,
+    "start_timecode" : "00:43:49.000",
+    "end_sec" : 2630
+  },
+  {
+    "start_sec" : 2630,
+    "text" : "在悲伤里忍受孤独 1唱：亚洲爱乐合唱团 手风票：杨屹",
+    "end_timecode" : "00:43:51.000",
+    "index" : 799,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:50.000",
+    "end_sec" : 2631
+  },
+  {
+    "start_sec" : 2631,
+    "text" : "在悲伤里忍受孤独 手风琴：杨屹 小提琴：赵坤宇",
+    "end_timecode" : "00:43:52.000",
+    "index" : 800,
+    "confidence" : 0.667,
+    "start_timecode" : "00:43:51.000",
+    "end_sec" : 2632
+  },
+  {
+    "start_sec" : 2632,
+    "text" : "在悲伤里忍受孤独 小提芩：赵坤宇 大提琴：关正跃 口、牛身浆",
+    "end_timecode" : "00:43:53.000",
+    "index" : 801,
+    "confidence" : 0.65,
+    "start_timecode" : "00:43:52.000",
+    "end_sec" : 2633
+  },
+  {
+    "start_sec" : 2633,
+    "text" : "在悲伤里忍受孤独 圆号：朱昆强 吉它：刘麟",
+    "end_timecode" : "00:43:54.000",
+    "index" : 802,
+    "confidence" : 0.667,
+    "start_timecode" : "00:43:53.000",
+    "end_sec" : 2634
+  },
+  {
+    "start_sec" : 2634,
+    "text" : "空守一丝温暖 吉 它：刘麟 演奏：中国交响乐团",
+    "end_timecode" : "00:43:55.000",
+    "index" : 803,
+    "confidence" : 0.7,
+    "start_timecode" : "00:43:54.000",
+    "end_sec" : 2635
+  },
+  {
+    "start_sec" : 2635,
+    "text" : "空守一丝温暖 天：午国文門不四 中国爱乐乐团 指挥，王晓锋",
+    "end_timecode" : "00:43:56.000",
+    "index" : 804,
+    "confidence" : 0.525,
+    "start_timecode" : "00:43:55.000",
+    "end_sec" : 2636
+  },
+  {
+    "start_sec" : 2636,
+    "text" : "空守一丝温暖 指挥：王晓锋 音乐录音：李岳松",
+    "end_timecode" : "00:43:57.000",
+    "index" : 805,
+    "confidence" : 0.833,
+    "start_timecode" : "00:43:56.000",
+    "end_sec" : 2637
+  },
+  {
+    "start_sec" : 2637,
+    "text" : "音乐录音：李岳松 音乐制作人：王晓锋",
+    "end_timecode" : "00:43:58.000",
+    "index" : 806,
+    "confidence" : 0.75,
+    "start_timecode" : "00:43:57.000",
+    "end_sec" : 2638
+  },
+  {
+    "start_sec" : 2638,
+    "text" : "摄影助理：赵海健 王飞 服装助理：董源平 严红",
+    "end_timecode" : "00:43:59.000",
+    "index" : 807,
+    "confidence" : 0.6,
+    "start_timecode" : "00:43:58.000",
+    "end_sec" : 2639
+  },
+  {
+    "start_sec" : 2639,
+    "text" : "我的泪水是无底深海 。服装助理：董源平 徐桂花 严红 周晓燕",
+    "end_timecode" : "00:44:00.000",
+    "index" : 808,
+    "confidence" : 0.66,
+    "start_timecode" : "00:43:59.000",
+    "end_sec" : 2640
+  },
+  {
+    "start_sec" : 2640,
+    "text" : "我的泪水是无底深海 你住化 马旭 打来助理，干业老 间唍燕 蔡传艳 周元庆",
+    "end_timecode" : "00:44:01.000",
+    "index" : 809,
+    "confidence" : 0.529,
+    "start_timecode" : "00:44:00.000",
+    "end_sec" : 2641
+  },
+  {
+    "start_sec" : 2641,
+    "text" : "我的泪水是无底深海 灯光助理：王兴龙 钱林宏 周元庆 谢涛",
+    "end_timecode" : "00:44:02.000",
+    "index" : 810,
+    "confidence" : 0.86,
+    "start_timecode" : "00:44:01.000",
+    "end_sec" : 2642
+  },
+  {
+    "start_sec" : 2642,
+    "text" : "我的泪水是无底深海 钱林宏 将永成 谢 涛",
+    "end_timecode" : "00:44:03.000",
+    "index" : 811,
+    "confidence" : 0.9,
+    "start_timecode" : "00:44:02.000",
+    "end_sec" : 2643
+  },
+  {
+    "start_sec" : 2643,
+    "text" : "对你的爱已无言 化妆助理：孙 亮 蔺 丹 郑彦庆",
+    "end_timecode" : "00:44:04.000",
+    "index" : 812,
+    "confidence" : 0.883,
+    "start_timecode" : "00:44:03.000",
+    "end_sec" : 2644
+  },
+  {
+    "start_sec" : 2644,
+    "text" : "对你的爱已无言 蔺丹 场务：边晓九 杨宏",
+    "end_timecode" : "00:44:05.000",
+    "index" : 813,
+    "confidence" : 0.525,
+    "start_timecode" : "00:44:04.000",
+    "end_sec" : 2645
+  },
+  {
+    "start_sec" : 2645,
+    "text" : "对你的爱已无言 坳 分：辺院九 杜志军 司切，生建化 物宏 王俊壮",
+    "end_timecode" : "00:44:06.000",
+    "index" : 814,
+    "confidence" : 0.6,
+    "start_timecode" : "00:44:05.000",
+    "end_sec" : 2646
+  },
+  {
+    "start_sec" : 2646,
+    "text" : "对你的爱已无言 司机：朱建华 陈君君 李辉 陆旭健",
+    "end_timecode" : "00:44:07.000",
+    "index" : 815,
+    "confidence" : 0.76,
+    "start_timecode" : "00:44:06.000",
+    "end_sec" : 2647
+  },
+  {
+    "start_sec" : 2647,
+    "text" : "对你的爱已无言 陈君君 孔伟 陆旭健 张进刚",
+    "end_timecode" : "00:44:08.000",
+    "index" : 816,
+    "confidence" : 0.9,
+    "start_timecode" : "00:44:07.000",
+    "end_sec" : 2648
+  },
+  {
+    "start_sec" : 2648,
+    "text" : "申有恩 应新华 韦文洪 森",
+    "end_timecode" : "00:44:09.000",
+    "index" : 817,
+    "confidence" : 0.75,
+    "start_timecode" : "00:44:08.000",
+    "end_sec" : 2649
+  },
+  {
+    "start_sec" : 2649,
+    "text" : "相信无尽的力量 应新华 任玉红 吴 森 曲 志",
+    "end_timecode" : "00:44:10.000",
+    "index" : 818,
+    "confidence" : 0.9,
+    "start_timecode" : "00:44:09.000",
+    "end_sec" : 2650
+  },
+  {
+    "start_sec" : 2650,
+    "text" : "相信无尽的力量 任玉红 张小志 曲 志 韩红民",
+    "end_timecode" : "00:44:11.000",
+    "index" : 819,
+    "confidence" : 1,
+    "start_timecode" : "00:44:10.000",
+    "end_sec" : 2651
+  },
+  {
+    "start_sec" : 2651,
+    "text" : "相信无尽的力量 羊妙龙",
+    "end_timecode" : "00:44:12.000",
+    "index" : 820,
+    "confidence" : 1,
+    "start_timecode" : "00:44:11.000",
+    "end_sec" : 2652
+  },
+  {
+    "start_sec" : 2652,
+    "text" : "那是真爱永在",
+    "end_timecode" : "00:44:14.000",
+    "index" : 821,
+    "confidence" : 1,
+    "start_timecode" : "00:44:12.000",
+    "end_sec" : 2654
+  },
+  {
+    "start_sec" : 2654,
+    "text" : "那是真爱永在 参加演出 可il",
+    "end_timecode" : "00:44:15.000",
+    "index" : 822,
+    "confidence" : 0.767,
+    "start_timecode" : "00:44:14.000",
+    "end_sec" : 2655
+  },
+  {
+    "start_sec" : 2655,
+    "text" : "张子嫣 周志海 饶 刚 葛石柱",
+    "end_timecode" : "00:44:16.000",
+    "index" : 823,
+    "confidence" : 0.72,
+    "start_timecode" : "00:44:15.000",
+    "end_sec" : 2656
+  },
+  {
+    "start_sec" : 2656,
+    "text" : "尚菲璇 张国庆 周志海 李金蔚 葛石柱 于子宽",
+    "end_timecode" : "00:44:17.000",
+    "index" : 824,
+    "confidence" : 0.833,
+    "start_timecode" : "00:44:16.000",
+    "end_sec" : 2657
+  },
+  {
+    "start_sec" : 2657,
+    "text" : "我的信仰是无底深海 冬 軍波 芋盅射 张家俊 王建亚 任学海 叶新字",
+    "end_timecode" : "00:44:18.000",
+    "index" : 825,
+    "confidence" : 0.612,
+    "start_timecode" : "00:44:17.000",
+    "end_sec" : 2658
+  },
+  {
+    "start_sec" : 2658,
+    "text" : "我的信仰是无底深海 毛建平 韩振华 叶新宇 田 野",
+    "end_timecode" : "00:44:19.000",
+    "index" : 826,
+    "confidence" : 0.883,
+    "start_timecode" : "00:44:18.000",
+    "end_sec" : 2659
+  },
+  {
+    "start_sec" : 2659,
+    "text" : "我的信仰是无底深海 齐为 张国锋 韩振华 何志涛 田 野 杨军",
+    "end_timecode" : "00:44:20.000",
+    "index" : 827,
+    "confidence" : 0.913,
+    "start_timecode" : "00:44:19.000",
+    "end_sec" : 2660
+  },
+  {
+    "start_sec" : 2660,
+    "text" : "我的信 是光底深海 刚 瀑 王 宏 童剑刚 白利卫",
+    "end_timecode" : "00:44:21.000",
+    "index" : 828,
+    "confidence" : 0.938,
+    "start_timecode" : "00:44:20.000",
+    "end_sec" : 2661
+  },
+  {
+    "start_sec" : 2661,
+    "text" : "澎湃着心中火焰 冯瀑 陈培莉 王 宏 魏 斌 白利卫 金永明",
+    "end_timecode" : "00:44:22.000",
+    "index" : 829,
+    "confidence" : 0.867,
+    "start_timecode" : "00:44:21.000",
+    "end_sec" : 2662
+  },
+  {
+    "start_sec" : 2662,
+    "text" : "澎湃着心中火焰 除培莉 尘歌 斌 崔蔓莉 本姓空 金永明 饶金杰",
+    "end_timecode" : "00:44:23.000",
+    "index" : 830,
+    "confidence" : 0.675,
+    "start_timecode" : "00:44:22.000",
+    "end_sec" : 2663
+  },
+  {
+    "start_sec" : 2663,
+    "text" : "澎湃着心中火焰 1 高一清 吴利华 李铁军 王宏波 赵昌峰 李军",
+    "end_timecode" : "00:44:24.000",
+    "index" : 831,
+    "confidence" : 0.725,
+    "start_timecode" : "00:44:23.000",
+    "end_sec" : 2664
+  },
+  {
+    "start_sec" : 2664,
+    "text" : "澎湃着心中火焰 吴利华 杨晓强 王宏波 宋纪成 李 军 焦建伟",
+    "end_timecode" : "00:44:25.000",
+    "index" : 832,
+    "confidence" : 0.813,
+    "start_timecode" : "00:44:24.000",
+    "end_sec" : 2665
+  },
+  {
+    "start_sec" : 2665,
+    "text" : "杨念波 郝宗君 赵思全 窦莉莉",
+    "end_timecode" : "00:44:26.000",
+    "index" : 833,
+    "confidence" : 0.525,
+    "start_timecode" : "00:44:25.000",
+    "end_sec" : 2666
+  },
+  {
+    "start_sec" : 2666,
+    "text" : "燃烧无尽的力量",
+    "end_timecode" : "00:44:28.000",
+    "index" : 834,
+    "confidence" : 1,
+    "start_timecode" : "00:44:26.000",
+    "end_sec" : 2668
+  },
+  {
+    "start_sec" : 2668,
+    "text" : "燃烧无尽的力量 本剧音像由：广州诗咏文化传播有限公司独家发行",
+    "end_timecode" : "00:44:29.000",
+    "index" : 835,
+    "confidence" : 1,
+    "start_timecode" : "00:44:28.000",
+    "end_sec" : 2669
+  },
+  {
+    "start_sec" : 2669,
+    "text" : "本剧音像由：广州诗咏文化传播有限公司独家发行 燃无尽味剧策划宣传：爱媒森（北京）影视文化传播有限公司",
+    "end_timecode" : "00:44:30.000",
+    "index" : 836,
+    "confidence" : 0.75,
+    "start_timecode" : "00:44:29.000",
+    "end_sec" : 2670
+  },
+  {
+    "start_sec" : 2670,
+    "text" : "那是忠诚永在 ma新浪娖乐",
+    "end_timecode" : "00:44:31.000",
+    "index" : 837,
+    "confidence" : 0.65,
+    "start_timecode" : "00:44:30.000",
+    "end_sec" : 2671
+  },
+  {
+    "start_sec" : 2671,
+    "text" : "那是忠诚永在 网络合作伙伴。新浪娱乐 Sina新淀娱乐 • •00m.on",
+    "end_timecode" : "00:44:32.000",
+    "index" : 838,
+    "confidence" : 0.44,
+    "start_timecode" : "00:44:31.000",
+    "end_sec" : 2672
+  },
+  {
+    "start_sec" : 2672,
+    "text" : "那是忠诚永在",
+    "end_timecode" : "00:44:33.000",
+    "index" : 839,
+    "confidence" : 1,
+    "start_timecode" : "00:44:32.000",
+    "end_sec" : 2673
+  },
+  {
+    "start_sec" : 2674,
+    "text" : "我的信仰是无底深海 鸣谢单位",
+    "end_timecode" : "00:44:35.000",
+    "index" : 840,
+    "confidence" : 1,
+    "start_timecode" : "00:44:34.000",
+    "end_sec" : 2675
+  },
+  {
+    "start_sec" : 2675,
+    "text" : "我的信仰是无底深海店影视城 中国好莱坞",
+    "end_timecode" : "00:44:36.000",
+    "index" : 841,
+    "confidence" : 0.75,
+    "start_timecode" : "00:44:35.000",
+    "end_sec" : 2676
+  },
+  {
+    "start_sec" : 2676,
+    "text" : "我的信仰是无底深海 店！ 影悯嬪",
+    "end_timecode" : "00:44:37.000",
+    "index" : 842,
+    "confidence" : 0.533,
+    "start_timecode" : "00:44:36.000",
+    "end_sec" : 2677
+  },
+  {
+    "start_sec" : 2677,
+    "text" : "BM留早大年品年4母子 我的信仰是无底深海东华通用航空有限公司",
+    "end_timecode" : "00:44:38.000",
+    "index" : 843,
+    "confidence" : 0.65,
+    "start_timecode" : "00:44:37.000",
+    "end_sec" : 2678
+  },
+  {
+    "start_sec" : 2678,
+    "text" : "青岛永辦程式电子有限公司",
+    "end_timecode" : "00:44:39.000",
+    "index" : 844,
+    "confidence" : 0.5,
+    "start_timecode" : "00:44:38.000",
+    "end_sec" : 2679
+  },
+  {
+    "start_sec" : 2679,
+    "text" : "澎湃着心中火焰",
+    "end_timecode" : "00:44:41.000",
+    "index" : 845,
+    "confidence" : 1,
+    "start_timecode" : "00:44:39.000",
+    "end_sec" : 2681
+  },
+  {
+    "start_sec" : 2681,
+    "text" : "澎湃着心中火焰 崇阳青雨影视文化有限公司",
+    "end_timecode" : "00:44:42.000",
+    "index" : 846,
+    "confidence" : 0.75,
+    "start_timecode" : "00:44:41.000",
+    "end_sec" : 2682
+  },
+  {
+    "start_sec" : 2682,
+    "text" : "澎湃着心中火焰 东阳青雨影视文化有限公司 广东南方电视台",
+    "end_timecode" : "00:44:43.000",
+    "index" : 847,
+    "confidence" : 1,
+    "start_timecode" : "00:44:42.000",
+    "end_sec" : 2683
+  },
+  {
+    "start_sec" : 2683,
+    "text" : "东的汤电视合 南京启播电视集团",
+    "end_timecode" : "00:44:44.000",
+    "index" : 848,
+    "confidence" : 0.3,
+    "start_timecode" : "00:44:43.000",
+    "end_sec" : 2684
+  },
+  {
+    "start_sec" : 2684,
+    "text" : "燃烧无尽的力量 联合拍摄",
+    "end_timecode" : "00:44:45.000",
+    "index" : 849,
+    "confidence" : 1,
+    "start_timecode" : "00:44:44.000",
+    "end_sec" : 2685
+  },
+  {
+    "start_sec" : 2685,
+    "text" : "燃烧无尽的力量",
+    "end_timecode" : "00:44:47.000",
+    "index" : 850,
+    "confidence" : 1,
+    "start_timecode" : "00:44:45.000",
+    "end_sec" : 2687
+  },
+  {
+    "start_sec" : 2688,
+    "text" : "那是忠诚永在",
+    "end_timecode" : "00:44:51.000",
+    "index" : 851,
+    "confidence" : 1,
+    "start_timecode" : "00:44:48.000",
+    "end_sec" : 2691
+  },
+  {
+    "start_sec" : 2691,
+    "text" : "那是感m來御青雨影视文化有限公司",
+    "end_timecode" : "00:44:52.000",
+    "index" : 852,
+    "confidence" : 0.3,
+    "start_timecode" : "00:44:51.000",
+    "end_sec" : 2692
+  },
+  {
+    "start_sec" : 2692,
+    "text" : "那是忠诚永在 东阳青影视又化有限公司 广东南方电视台",
+    "end_timecode" : "00:44:53.000",
+    "index" : 853,
+    "confidence" : 0.767,
+    "start_timecode" : "00:44:52.000",
+    "end_sec" : 2693
+  },
+  {
+    "start_sec" : 2693,
+    "text" : "那是忠诚永在 东南方电视台 联合出品",
+    "end_timecode" : "00:44:54.000",
+    "index" : 854,
+    "confidence" : 0.667,
+    "start_timecode" : "00:44:53.000",
+    "end_sec" : 2694
+  },
+  {
+    "start_sec" : 2694,
+    "text" : "那是忠诚永在 联合出品",
+    "end_timecode" : "00:44:55.000",
+    "index" : 855,
+    "confidence" : 1,
+    "start_timecode" : "00:44:54.000",
+    "end_sec" : 2695
+  },
+  {
+    "start_sec" : 2695,
+    "text" : "那是忠诚永在",
+    "end_timecode" : "00:44:56.000",
+    "index" : 856,
+    "confidence" : 1,
+    "start_timecode" : "00:44:55.000",
+    "end_sec" : 2696
+  },
+  {
+    "start_sec" : 2696,
+    "text" : "许可证号：乙第17412号",
+    "end_timecode" : "00:45:00.000",
+    "index" : 857,
+    "confidence" : 1,
+    "start_timecode" : "00:44:56.000",
+    "end_sec" : 2700
+  }
+]

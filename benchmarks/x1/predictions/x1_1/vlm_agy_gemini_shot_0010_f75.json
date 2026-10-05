@@ -1,0 +1,51 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0010_frame_75",
+  "shot_id": "shot_0010",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0010/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"A person with dark hair wearing a light-colored, patterned top.\", \"A person with dark hair wearing a dark jacket with a white collar.\"], \"environment\": \"A dimly lit room with a wooden floor. The background contains vintage-style armchairs, a small table, and a telephone. In the foreground is a dark table serving as an altar.\", \"objects\": [\"red candles\", \"candlesticks\", \"incense sticks\", \"incense burner\", \"plates\", \"round food items\", \"rectangular food items\", \"small cups\", \"armchairs\", \"small table\", \"telephone\"], \"physical_actions\": [\"kneeling on the floor\", \"bowing with heads down\"], \"uncertainty\": \"The image has very low lighting and features significant blue and purple hazy visual artifacts and blurring, particularly on the left and right sides, which obscures details in those areas.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "A person with dark hair wearing a light-colored, patterned top.",
+        "A person with dark hair wearing a dark jacket with a white collar."
+      ],
+      "environment": "A dimly lit room with a wooden floor. The background contains vintage-style armchairs, a small table, and a telephone. In the foreground is a dark table serving as an altar.",
+      "objects": [
+        "red candles",
+        "candlesticks",
+        "incense sticks",
+        "incense burner",
+        "plates",
+        "round food items",
+        "rectangular food items",
+        "small cups",
+        "armchairs",
+        "small table",
+        "telephone"
+      ],
+      "physical_actions": [
+        "kneeling on the floor",
+        "bowing with heads down"
+      ],
+      "uncertainty": "The image has very low lighting and features significant blue and purple hazy visual artifacts and blurring, particularly on the left and right sides, which obscures details in those areas."
+    },
+    "error": null,
+    "latency_ms": 33639.24,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 15009,
+      "output_tokens": 2449,
+      "thinking_tokens": 2132,
+      "cache_read_tokens": 28427,
+      "total_tokens": 17458
+    },
+    "source_image_hash": "21fe22266ee2b42e14aec6115c42037b5edaa66e48f9e5cf72d829dd94c9b375",
+    "inference_image_hash": "e37faeb630e7da2415e51a1551ee4ccce2cdd6511651ba6907e654105f2f6811",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209158.416161
+}

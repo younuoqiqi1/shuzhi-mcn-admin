@@ -1,0 +1,40 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0019_frame_50",
+  "shot_id": "shot_0019",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0019/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"一名女性，黑色及肩长发，面朝正前方，身穿浅灰底色带细密深色花纹的长袖上衣。\"], \"environment\": \"幽暗的室内空间，整体光线偏暗，带有明显的深蓝紫色环境光，左侧有边缘模糊的柱状或层叠状结构。\", \"objects\": [\"左侧层叠状物体\", \"右下角黄绿色发光中文字幕\"], \"physical_actions\": [\"直立站立，双臂自然下垂置于身体两侧。\"], \"uncertainty\": \"画面整体分辨率较低，存在明显的噪点与模糊，光线较暗，右下角有字幕叠加遮挡。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "一名女性，黑色及肩长发，面朝正前方，身穿浅灰底色带细密深色花纹的长袖上衣。"
+      ],
+      "environment": "幽暗的室内空间，整体光线偏暗，带有明显的深蓝紫色环境光，左侧有边缘模糊的柱状或层叠状结构。",
+      "objects": [
+        "左侧层叠状物体",
+        "右下角黄绿色发光中文字幕"
+      ],
+      "physical_actions": [
+        "直立站立，双臂自然下垂置于身体两侧。"
+      ],
+      "uncertainty": "画面整体分辨率较低，存在明显的噪点与模糊，光线较暗，右下角有字幕叠加遮挡。"
+    },
+    "error": null,
+    "latency_ms": 29330.21,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14788,
+      "output_tokens": 1402,
+      "thinking_tokens": 1126,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16190
+    },
+    "source_image_hash": "6912c17a9685dfbc9befb6da510dc4bd20d459fb10452d36266fb5ac1f842911",
+    "inference_image_hash": "aca5cfcaf791505b1d8bf60d3ec917fb6a8f82f1e0a51602e656f1485ddde151",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209335.128754
+}

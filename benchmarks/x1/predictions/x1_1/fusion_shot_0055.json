@@ -1,0 +1,1888 @@
+{
+  "parent_shot_id": "shot_0055",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 320,
+      "start_sec": 1120.0,
+      "end_sec": 1122.0,
+      "start_timecode": "00:18:40.000",
+      "end_timecode": "00:18:42.000",
+      "text": "在这儿睡软床吃白米有什么用啊",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 321,
+      "start_sec": 1123.0,
+      "end_sec": 1124.0,
+      "start_timecode": "00:18:43.000",
+      "end_timecode": "00:18:44.000",
+      "text": "错了 翠平",
+      "confidence": 0.3,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 322,
+      "start_sec": 1125.0,
+      "end_sec": 1126.0,
+      "start_timecode": "00:18:45.000",
+      "end_timecode": "00:18:46.000",
+      "text": "现在是最需要我们的时候",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 323,
+      "start_sec": 1127.0,
+      "end_sec": 1128.0,
+      "start_timecode": "00:18:47.000",
+      "end_timecode": "00:18:48.000",
+      "text": "可你听只有三个的时间了",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 324,
+      "start_sec": 1134.0,
+      "end_sec": 1135.0,
+      "start_timecode": "00:18:54.000",
+      "end_timecode": "00:18:55.000",
+      "text": "有一种胜利四撤退",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 325,
+      "start_sec": 1136.0,
+      "end_sec": 1137.0,
+      "start_timecode": "00:18:56.000",
+      "end_timecode": "00:18:57.000",
+      "text": "有一种失败叫占领",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 326,
+      "start_sec": 1137.0,
+      "end_sec": 1138.0,
+      "start_timecode": "00:18:57.000",
+      "end_timecode": "00:18:58.000",
+      "text": "有一种失败門占领",
+      "confidence": 0.5,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 327,
+      "start_sec": 1139.0,
+      "end_sec": 1140.0,
+      "start_timecode": "00:18:59.000",
+      "end_timecode": "00:19:00.000",
+      "text": "别听他们瞎吹",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 328,
+      "start_sec": 1145.0,
+      "end_sec": 1147.0,
+      "start_timecode": "00:19:05.000",
+      "end_timecode": "00:19:07.000",
+      "text": "我妹妹在延安也不知道怎么样了",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 329,
+      "start_sec": 1152.0,
+      "end_sec": 1153.0,
+      "start_timecode": "00:19:12.000",
+      "end_timecode": "00:19:13.000",
+      "text": "上面指示",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 330,
+      "start_sec": 1155.0,
+      "end_sec": 1156.0,
+      "start_timecode": "00:19:15.000",
+      "end_timecode": "00:19:16.000",
+      "text": "让我们继续潜伏下去",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 331,
+      "start_sec": 1156.0,
+      "end_sec": 1157.0,
+      "start_timecode": "00:19:16.000",
+      "end_timecode": "00:19:17.000",
+      "text": "等待最后的胜利",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 332,
+      "start_sec": 1157.0,
+      "end_sec": 1158.0,
+      "start_timecode": "00:19:17.000",
+      "end_timecode": "00:19:18.000",
+      "text": "等待最 的胜利",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 333,
+      "start_sec": 1161.0,
+      "end_sec": 1164.0,
+      "start_timecode": "00:19:21.000",
+      "end_timecode": "00:19:24.000",
+      "text": "老尚 你需要什么情报啊",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 334,
+      "start_sec": 1168.0,
+      "end_sec": 1174.0,
+      "start_timecode": "00:19:28.000",
+      "end_timecode": "00:19:34.000",
+      "text": "八路军改名了叫中国人民解放军",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 335,
+      "start_sec": 1174.0,
+      "end_sec": 1177.0,
+      "start_timecode": "00:19:34.000",
+      "end_timecode": "00:19:37.000",
+      "text": "新建制和番号那我都有",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 336,
+      "start_sec": 1180.0,
+      "end_sec": 1182.0,
+      "start_timecode": "00:19:40.000",
+      "end_timecode": "00:19:42.000",
+      "text": "胡宗南丢了一个团",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 337,
+      "start_sec": 1183.0,
+      "end_sec": 1185.0,
+      "start_timecode": "00:19:43.000",
+      "end_timecode": "00:19:45.000",
+      "text": "三十一旅旅长被俘了",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    },
+    {
+      "index": 338,
+      "start_sec": 1185.0,
+      "end_sec": 1187.0,
+      "start_timecode": "00:19:45.000",
+      "end_timecode": "00:19:47.000",
+      "text": "中央还都不知道呢",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 0.8,
+      "abs_start": 1121.92,
+      "abs_end": 1122.72,
+      "text": "我昨天晚上",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 0.0,
+          "rel_end": 0.14,
+          "abs_start": 1121.92,
+          "abs_end": 1122.06,
+          "probability": 0.0794
+        },
+        {
+          "word": "昨",
+          "rel_start": 0.14,
+          "rel_end": 0.44,
+          "abs_start": 1122.06,
+          "abs_end": 1122.36,
+          "probability": 0.046
+        },
+        {
+          "word": "天",
+          "rel_start": 0.44,
+          "rel_end": 0.44,
+          "abs_start": 1122.36,
+          "abs_end": 1122.36,
+          "probability": 0.9092
+        },
+        {
+          "word": "晚上",
+          "rel_start": 0.44,
+          "rel_end": 0.8,
+          "abs_start": 1122.36,
+          "abs_end": 1122.72,
+          "probability": 0.0295
+        }
+      ]
+    },
+    {
+      "rel_start": 0.8,
+      "rel_end": 1.56,
+      "abs_start": 1122.72,
+      "abs_end": 1123.48,
+      "text": "昨天晚上",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "昨",
+          "rel_start": 0.8,
+          "rel_end": 1.4,
+          "abs_start": 1122.72,
+          "abs_end": 1123.32,
+          "probability": 0.0062
+        },
+        {
+          "word": "天",
+          "rel_start": 1.4,
+          "rel_end": 1.5,
+          "abs_start": 1123.32,
+          "abs_end": 1123.42,
+          "probability": 0.9761
+        },
+        {
+          "word": "晚上",
+          "rel_start": 1.5,
+          "rel_end": 1.72,
+          "abs_start": 1123.42,
+          "abs_end": 1123.64,
+          "probability": 0.2854
+        }
+      ]
+    },
+    {
+      "rel_start": 2.42,
+      "rel_end": 3.06,
+      "abs_start": 1124.34,
+      "abs_end": 1124.98,
+      "text": "昨天晚上",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "昨",
+          "rel_start": 2.42,
+          "rel_end": 2.42,
+          "abs_start": 1124.34,
+          "abs_end": 1124.34,
+          "probability": 0.0631
+        },
+        {
+          "word": "天",
+          "rel_start": 2.42,
+          "rel_end": 2.5,
+          "abs_start": 1124.34,
+          "abs_end": 1124.42,
+          "probability": 0.9917
+        },
+        {
+          "word": "晚上",
+          "rel_start": 2.5,
+          "rel_end": 3.06,
+          "abs_start": 1124.42,
+          "abs_end": 1124.98,
+          "probability": 0.9473
+        }
+      ]
+    },
+    {
+      "rel_start": 3.06,
+      "rel_end": 4.42,
+      "abs_start": 1124.98,
+      "abs_end": 1126.34,
+      "text": "现在是最需要的的时候",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "现在",
+          "rel_start": 3.06,
+          "rel_end": 3.06,
+          "abs_start": 1124.98,
+          "abs_end": 1124.98,
+          "probability": 0.0046
+        },
+        {
+          "word": "是",
+          "rel_start": 3.06,
+          "rel_end": 3.28,
+          "abs_start": 1124.98,
+          "abs_end": 1125.2,
+          "probability": 0.8623
+        },
+        {
+          "word": "最",
+          "rel_start": 3.28,
+          "rel_end": 3.44,
+          "abs_start": 1125.2,
+          "abs_end": 1125.36,
+          "probability": 0.957
+        },
+        {
+          "word": "需要",
+          "rel_start": 3.44,
+          "rel_end": 3.7,
+          "abs_start": 1125.36,
+          "abs_end": 1125.62,
+          "probability": 0.6904
+        },
+        {
+          "word": "的",
+          "rel_start": 3.7,
+          "rel_end": 3.88,
+          "abs_start": 1125.62,
+          "abs_end": 1125.8,
+          "probability": 0.6924
+        },
+        {
+          "word": "的时候",
+          "rel_start": 3.88,
+          "rel_end": 4.42,
+          "abs_start": 1125.8,
+          "abs_end": 1126.34,
+          "probability": 0.1379
+        }
+      ]
+    },
+    {
+      "rel_start": 4.42,
+      "rel_end": 4.52,
+      "abs_start": 1126.34,
+      "abs_end": 1126.44,
+      "text": "好",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "好",
+          "rel_start": 4.42,
+          "rel_end": 4.52,
+          "abs_start": 1126.34,
+          "abs_end": 1126.44,
+          "probability": 0.0028
+        }
+      ]
+    },
+    {
+      "rel_start": 4.52,
+      "rel_end": 6.4,
+      "abs_start": 1126.44,
+      "abs_end": 1128.32,
+      "text": "看你听这有三个月的时间",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "看",
+          "rel_start": 4.52,
+          "rel_end": 5.06,
+          "abs_start": 1126.44,
+          "abs_end": 1126.98,
+          "probability": 0.0483
+        },
+        {
+          "word": "你",
+          "rel_start": 5.06,
+          "rel_end": 5.2,
+          "abs_start": 1126.98,
+          "abs_end": 1127.12,
+          "probability": 0.9321
+        },
+        {
+          "word": "听",
+          "rel_start": 5.2,
+          "rel_end": 5.38,
+          "abs_start": 1127.12,
+          "abs_end": 1127.3,
+          "probability": 0.978
+        },
+        {
+          "word": "这",
+          "rel_start": 5.38,
+          "rel_end": 5.52,
+          "abs_start": 1127.3,
+          "abs_end": 1127.44,
+          "probability": 0.4265
+        },
+        {
+          "word": "有",
+          "rel_start": 5.52,
+          "rel_end": 5.58,
+          "abs_start": 1127.44,
+          "abs_end": 1127.5,
+          "probability": 0.8237
+        },
+        {
+          "word": "三",
+          "rel_start": 5.58,
+          "rel_end": 5.8,
+          "abs_start": 1127.5,
+          "abs_end": 1127.72,
+          "probability": 0.9497
+        },
+        {
+          "word": "个",
+          "rel_start": 5.8,
+          "rel_end": 5.88,
+          "abs_start": 1127.72,
+          "abs_end": 1127.8,
+          "probability": 0.998
+        },
+        {
+          "word": "月",
+          "rel_start": 5.88,
+          "rel_end": 5.96,
+          "abs_start": 1127.8,
+          "abs_end": 1127.88,
+          "probability": 0.8745
+        },
+        {
+          "word": "的",
+          "rel_start": 5.96,
+          "rel_end": 6.1,
+          "abs_start": 1127.88,
+          "abs_end": 1128.02,
+          "probability": 0.9922
+        },
+        {
+          "word": "时间",
+          "rel_start": 6.1,
+          "rel_end": 6.4,
+          "abs_start": 1128.02,
+          "abs_end": 1128.32,
+          "probability": 0.9453
+        }
+      ]
+    },
+    {
+      "rel_start": 11.42,
+      "rel_end": 13.38,
+      "abs_start": 1133.34,
+      "abs_end": 1135.3,
+      "text": "有一种上力叫车车",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "有一",
+          "rel_start": 11.42,
+          "rel_end": 11.86,
+          "abs_start": 1133.34,
+          "abs_end": 1133.78,
+          "probability": 0.1914
+        },
+        {
+          "word": "种",
+          "rel_start": 11.86,
+          "rel_end": 12.3,
+          "abs_start": 1133.78,
+          "abs_end": 1134.22,
+          "probability": 0.9893
+        },
+        {
+          "word": "上",
+          "rel_start": 12.3,
+          "rel_end": 12.64,
+          "abs_start": 1134.22,
+          "abs_end": 1134.56,
+          "probability": 0.261
+        },
+        {
+          "word": "力",
+          "rel_start": 12.64,
+          "rel_end": 12.74,
+          "abs_start": 1134.56,
+          "abs_end": 1134.66,
+          "probability": 0.0803
+        },
+        {
+          "word": "叫",
+          "rel_start": 12.74,
+          "rel_end": 12.98,
+          "abs_start": 1134.66,
+          "abs_end": 1134.9,
+          "probability": 0.7217
+        },
+        {
+          "word": "车",
+          "rel_start": 12.98,
+          "rel_end": 13.2,
+          "abs_start": 1134.9,
+          "abs_end": 1135.12,
+          "probability": 0.625
+        },
+        {
+          "word": "车",
+          "rel_start": 13.2,
+          "rel_end": 13.38,
+          "abs_start": 1135.12,
+          "abs_end": 1135.3,
+          "probability": 0.5791
+        }
+      ]
+    },
+    {
+      "rel_start": 14.3,
+      "rel_end": 15.98,
+      "abs_start": 1136.22,
+      "abs_end": 1137.9,
+      "text": "有一种失败叫战力",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "有一",
+          "rel_start": 14.3,
+          "rel_end": 14.74,
+          "abs_start": 1136.22,
+          "abs_end": 1136.66,
+          "probability": 0.9258
+        },
+        {
+          "word": "种",
+          "rel_start": 14.74,
+          "rel_end": 14.98,
+          "abs_start": 1136.66,
+          "abs_end": 1136.9,
+          "probability": 0.9917
+        },
+        {
+          "word": "失",
+          "rel_start": 14.98,
+          "rel_end": 15.26,
+          "abs_start": 1136.9,
+          "abs_end": 1137.18,
+          "probability": 0.6196
+        },
+        {
+          "word": "败",
+          "rel_start": 15.26,
+          "rel_end": 15.4,
+          "abs_start": 1137.18,
+          "abs_end": 1137.32,
+          "probability": 0.7607
+        },
+        {
+          "word": "叫",
+          "rel_start": 15.4,
+          "rel_end": 15.68,
+          "abs_start": 1137.32,
+          "abs_end": 1137.6,
+          "probability": 0.9351
+        },
+        {
+          "word": "战",
+          "rel_start": 15.68,
+          "rel_end": 15.88,
+          "abs_start": 1137.6,
+          "abs_end": 1137.8,
+          "probability": 0.6787
+        },
+        {
+          "word": "力",
+          "rel_start": 15.88,
+          "rel_end": 15.98,
+          "abs_start": 1137.8,
+          "abs_end": 1137.9,
+          "probability": 0.2898
+        }
+      ]
+    },
+    {
+      "rel_start": 16.72,
+      "rel_end": 17.56,
+      "abs_start": 1138.64,
+      "abs_end": 1139.48,
+      "text": "别听东西",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "别",
+          "rel_start": 16.72,
+          "rel_end": 17.16,
+          "abs_start": 1138.64,
+          "abs_end": 1139.08,
+          "probability": 0.5981
+        },
+        {
+          "word": "听",
+          "rel_start": 17.16,
+          "rel_end": 17.3,
+          "abs_start": 1139.08,
+          "abs_end": 1139.22,
+          "probability": 0.728
+        },
+        {
+          "word": "东",
+          "rel_start": 17.3,
+          "rel_end": 17.56,
+          "abs_start": 1139.22,
+          "abs_end": 1139.48,
+          "probability": 0.1655
+        },
+        {
+          "word": "西",
+          "rel_start": 17.56,
+          "rel_end": 17.56,
+          "abs_start": 1139.48,
+          "abs_end": 1139.48,
+          "probability": 0.9771
+        }
+      ]
+    },
+    {
+      "rel_start": 17.56,
+      "rel_end": 18.02,
+      "abs_start": 1139.48,
+      "abs_end": 1139.94,
+      "text": "小声",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "小",
+          "rel_start": 17.56,
+          "rel_end": 17.78,
+          "abs_start": 1139.48,
+          "abs_end": 1139.7,
+          "probability": 0.0781
+        },
+        {
+          "word": "声",
+          "rel_start": 17.78,
+          "rel_end": 18.02,
+          "abs_start": 1139.7,
+          "abs_end": 1139.94,
+          "probability": 0.5068
+        }
+      ]
+    },
+    {
+      "rel_start": 22.9,
+      "rel_end": 24.34,
+      "abs_start": 1144.82,
+      "abs_end": 1146.26,
+      "text": "我妹妹在眼眼",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 22.9,
+          "rel_end": 23.34,
+          "abs_start": 1144.82,
+          "abs_end": 1145.26,
+          "probability": 0.6792
+        },
+        {
+          "word": "妹",
+          "rel_start": 23.34,
+          "rel_end": 23.78,
+          "abs_start": 1145.26,
+          "abs_end": 1145.7,
+          "probability": 0.9688
+        },
+        {
+          "word": "妹",
+          "rel_start": 23.78,
+          "rel_end": 23.88,
+          "abs_start": 1145.7,
+          "abs_end": 1145.8,
+          "probability": 0.999
+        },
+        {
+          "word": "在",
+          "rel_start": 23.88,
+          "rel_end": 24.04,
+          "abs_start": 1145.8,
+          "abs_end": 1145.96,
+          "probability": 0.9224
+        },
+        {
+          "word": "眼",
+          "rel_start": 24.04,
+          "rel_end": 24.22,
+          "abs_start": 1145.96,
+          "abs_end": 1146.14,
+          "probability": 0.3513
+        },
+        {
+          "word": "眼",
+          "rel_start": 24.22,
+          "rel_end": 24.34,
+          "abs_start": 1146.14,
+          "abs_end": 1146.26,
+          "probability": 0.2439
+        }
+      ]
+    },
+    {
+      "rel_start": 24.34,
+      "rel_end": 25.18,
+      "abs_start": 1146.26,
+      "abs_end": 1147.1,
+      "text": "也不知道怎么样",
+      "no_speech_prob": 0.0446,
+      "words": [
+        {
+          "word": "也",
+          "rel_start": 24.34,
+          "rel_end": 24.48,
+          "abs_start": 1146.26,
+          "abs_end": 1146.4,
+          "probability": 0.9126
+        },
+        {
+          "word": "不知道",
+          "rel_start": 24.48,
+          "rel_end": 24.66,
+          "abs_start": 1146.4,
+          "abs_end": 1146.58,
+          "probability": 0.6289
+        },
+        {
+          "word": "怎么样",
+          "rel_start": 24.66,
+          "rel_end": 25.18,
+          "abs_start": 1146.58,
+          "abs_end": 1147.1,
+          "probability": 0.9883
+        }
+      ]
+    },
+    {
+      "rel_start": 30.24,
+      "rel_end": 34.12,
+      "abs_start": 1152.16,
+      "abs_end": 1156.04,
+      "text": "上面只是让我们继续前附下去",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "上面",
+          "rel_start": 30.24,
+          "rel_end": 30.8,
+          "abs_start": 1152.16,
+          "abs_end": 1152.72,
+          "probability": 0.02
+        },
+        {
+          "word": "只是",
+          "rel_start": 30.8,
+          "rel_end": 31.26,
+          "abs_start": 1152.72,
+          "abs_end": 1153.18,
+          "probability": 0.2488
+        },
+        {
+          "word": "让",
+          "rel_start": 31.26,
+          "rel_end": 32.94,
+          "abs_start": 1153.18,
+          "abs_end": 1154.86,
+          "probability": 0.9092
+        },
+        {
+          "word": "我们",
+          "rel_start": 32.94,
+          "rel_end": 33.14,
+          "abs_start": 1154.86,
+          "abs_end": 1155.06,
+          "probability": 0.729
+        },
+        {
+          "word": "继",
+          "rel_start": 33.14,
+          "rel_end": 33.26,
+          "abs_start": 1155.06,
+          "abs_end": 1155.18,
+          "probability": 0.8984
+        },
+        {
+          "word": "续",
+          "rel_start": 33.26,
+          "rel_end": 33.42,
+          "abs_start": 1155.18,
+          "abs_end": 1155.34,
+          "probability": 0.9961
+        },
+        {
+          "word": "前",
+          "rel_start": 33.42,
+          "rel_end": 33.62,
+          "abs_start": 1155.34,
+          "abs_end": 1155.54,
+          "probability": 0.1874
+        },
+        {
+          "word": "附",
+          "rel_start": 33.62,
+          "rel_end": 33.78,
+          "abs_start": 1155.54,
+          "abs_end": 1155.7,
+          "probability": 0.6514
+        },
+        {
+          "word": "下去",
+          "rel_start": 33.78,
+          "rel_end": 34.12,
+          "abs_start": 1155.7,
+          "abs_end": 1156.04,
+          "probability": 0.8677
+        }
+      ]
+    },
+    {
+      "rel_start": 34.12,
+      "rel_end": 35.62,
+      "abs_start": 1156.04,
+      "abs_end": 1157.54,
+      "text": "等待最后的声明",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "等",
+          "rel_start": 34.12,
+          "rel_end": 34.62,
+          "abs_start": 1156.04,
+          "abs_end": 1156.54,
+          "probability": 0.5972
+        },
+        {
+          "word": "待",
+          "rel_start": 34.62,
+          "rel_end": 34.78,
+          "abs_start": 1156.54,
+          "abs_end": 1156.7,
+          "probability": 0.9951
+        },
+        {
+          "word": "最",
+          "rel_start": 34.78,
+          "rel_end": 34.92,
+          "abs_start": 1156.7,
+          "abs_end": 1156.84,
+          "probability": 0.9453
+        },
+        {
+          "word": "后",
+          "rel_start": 34.92,
+          "rel_end": 35.04,
+          "abs_start": 1156.84,
+          "abs_end": 1156.96,
+          "probability": 0.9771
+        },
+        {
+          "word": "的",
+          "rel_start": 35.04,
+          "rel_end": 35.16,
+          "abs_start": 1156.96,
+          "abs_end": 1157.08,
+          "probability": 0.9907
+        },
+        {
+          "word": "声",
+          "rel_start": 35.16,
+          "rel_end": 35.32,
+          "abs_start": 1157.08,
+          "abs_end": 1157.24,
+          "probability": 0.2283
+        },
+        {
+          "word": "明",
+          "rel_start": 35.32,
+          "rel_end": 35.62,
+          "abs_start": 1157.24,
+          "abs_end": 1157.54,
+          "probability": 0.9082
+        }
+      ]
+    },
+    {
+      "rel_start": 38.54,
+      "rel_end": 39.38,
+      "abs_start": 1160.46,
+      "abs_end": 1161.3,
+      "text": "老上",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "老",
+          "rel_start": 38.54,
+          "rel_end": 39.1,
+          "abs_start": 1160.46,
+          "abs_end": 1161.02,
+          "probability": 0.0362
+        },
+        {
+          "word": "上",
+          "rel_start": 39.1,
+          "rel_end": 39.38,
+          "abs_start": 1161.02,
+          "abs_end": 1161.3,
+          "probability": 0.231
+        }
+      ]
+    },
+    {
+      "rel_start": 40.28,
+      "rel_end": 42.2,
+      "abs_start": 1162.2,
+      "abs_end": 1164.12,
+      "text": "你需要什么钱的话",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "你",
+          "rel_start": 40.28,
+          "rel_end": 40.84,
+          "abs_start": 1162.2,
+          "abs_end": 1162.76,
+          "probability": 0.6724
+        },
+        {
+          "word": "需要",
+          "rel_start": 40.84,
+          "rel_end": 41.3,
+          "abs_start": 1162.76,
+          "abs_end": 1163.22,
+          "probability": 0.8213
+        },
+        {
+          "word": "什么",
+          "rel_start": 41.3,
+          "rel_end": 41.72,
+          "abs_start": 1163.22,
+          "abs_end": 1163.64,
+          "probability": 0.9902
+        },
+        {
+          "word": "钱",
+          "rel_start": 41.72,
+          "rel_end": 41.9,
+          "abs_start": 1163.64,
+          "abs_end": 1163.82,
+          "probability": 0.4221
+        },
+        {
+          "word": "的话",
+          "rel_start": 41.9,
+          "rel_end": 42.2,
+          "abs_start": 1163.82,
+          "abs_end": 1164.12,
+          "probability": 0.155
+        }
+      ]
+    },
+    {
+      "rel_start": 43.9,
+      "rel_end": 45.02,
+      "abs_start": 1165.82,
+      "abs_end": 1166.94,
+      "text": "你有什么",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "你有",
+          "rel_start": 43.9,
+          "rel_end": 44.46,
+          "abs_start": 1165.82,
+          "abs_end": 1166.38,
+          "probability": 0.7451
+        },
+        {
+          "word": "什么",
+          "rel_start": 44.46,
+          "rel_end": 45.02,
+          "abs_start": 1166.38,
+          "abs_end": 1166.94,
+          "probability": 0.9985
+        }
+      ]
+    },
+    {
+      "rel_start": 47.08,
+      "rel_end": 49.38,
+      "abs_start": 1169.0,
+      "abs_end": 1171.3,
+      "text": "把努力据该迷了",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "把",
+          "rel_start": 47.08,
+          "rel_end": 47.64,
+          "abs_start": 1169.0,
+          "abs_end": 1169.56,
+          "probability": 0.152
+        },
+        {
+          "word": "努",
+          "rel_start": 47.64,
+          "rel_end": 47.96,
+          "abs_start": 1169.56,
+          "abs_end": 1169.88,
+          "probability": 0.5308
+        },
+        {
+          "word": "力",
+          "rel_start": 47.96,
+          "rel_end": 47.96,
+          "abs_start": 1169.88,
+          "abs_end": 1169.88,
+          "probability": 0.5498
+        },
+        {
+          "word": "据",
+          "rel_start": 47.96,
+          "rel_end": 48.1,
+          "abs_start": 1169.88,
+          "abs_end": 1170.02,
+          "probability": 0.4927
+        },
+        {
+          "word": "该",
+          "rel_start": 48.1,
+          "rel_end": 48.38,
+          "abs_start": 1170.02,
+          "abs_end": 1170.3,
+          "probability": 0.3125
+        },
+        {
+          "word": "迷",
+          "rel_start": 48.38,
+          "rel_end": 48.56,
+          "abs_start": 1170.3,
+          "abs_end": 1170.48,
+          "probability": 0.3193
+        },
+        {
+          "word": "了",
+          "rel_start": 48.56,
+          "rel_end": 49.38,
+          "abs_start": 1170.48,
+          "abs_end": 1171.3,
+          "probability": 0.3225
+        }
+      ]
+    },
+    {
+      "rel_start": 49.38,
+      "rel_end": 51.92,
+      "abs_start": 1171.3,
+      "abs_end": 1173.84,
+      "text": "叫中国人为借房间",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "叫",
+          "rel_start": 49.38,
+          "rel_end": 49.66,
+          "abs_start": 1171.3,
+          "abs_end": 1171.58,
+          "probability": 0.8662
+        },
+        {
+          "word": "中国",
+          "rel_start": 49.66,
+          "rel_end": 50.88,
+          "abs_start": 1171.58,
+          "abs_end": 1172.8,
+          "probability": 0.4695
+        },
+        {
+          "word": "人",
+          "rel_start": 50.88,
+          "rel_end": 51.12,
+          "abs_start": 1172.8,
+          "abs_end": 1173.04,
+          "probability": 0.9546
+        },
+        {
+          "word": "为",
+          "rel_start": 51.12,
+          "rel_end": 51.26,
+          "abs_start": 1173.04,
+          "abs_end": 1173.18,
+          "probability": 0.1448
+        },
+        {
+          "word": "借",
+          "rel_start": 51.26,
+          "rel_end": 51.44,
+          "abs_start": 1173.18,
+          "abs_end": 1173.36,
+          "probability": 0.5654
+        },
+        {
+          "word": "房",
+          "rel_start": 51.44,
+          "rel_end": 51.62,
+          "abs_start": 1173.36,
+          "abs_end": 1173.54,
+          "probability": 0.9834
+        },
+        {
+          "word": "间",
+          "rel_start": 51.62,
+          "rel_end": 51.92,
+          "abs_start": 1173.54,
+          "abs_end": 1173.84,
+          "probability": 0.7974
+        }
+      ]
+    },
+    {
+      "rel_start": 51.92,
+      "rel_end": 53.94,
+      "abs_start": 1173.84,
+      "abs_end": 1175.86,
+      "text": "新建成和翻好的",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "新",
+          "rel_start": 51.92,
+          "rel_end": 52.64,
+          "abs_start": 1173.84,
+          "abs_end": 1174.56,
+          "probability": 0.4734
+        },
+        {
+          "word": "建",
+          "rel_start": 52.64,
+          "rel_end": 52.84,
+          "abs_start": 1174.56,
+          "abs_end": 1174.76,
+          "probability": 0.9014
+        },
+        {
+          "word": "成",
+          "rel_start": 52.84,
+          "rel_end": 53.04,
+          "abs_start": 1174.76,
+          "abs_end": 1174.96,
+          "probability": 0.3088
+        },
+        {
+          "word": "和",
+          "rel_start": 53.04,
+          "rel_end": 53.3,
+          "abs_start": 1174.96,
+          "abs_end": 1175.22,
+          "probability": 0.2603
+        },
+        {
+          "word": "翻",
+          "rel_start": 53.3,
+          "rel_end": 53.52,
+          "abs_start": 1175.22,
+          "abs_end": 1175.44,
+          "probability": 0.5503
+        },
+        {
+          "word": "好的",
+          "rel_start": 53.52,
+          "rel_end": 53.94,
+          "abs_start": 1175.44,
+          "abs_end": 1175.86,
+          "probability": 0.2681
+        }
+      ]
+    },
+    {
+      "rel_start": 53.94,
+      "rel_end": 55.84,
+      "abs_start": 1175.86,
+      "abs_end": 1177.76,
+      "text": "我 我都有",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "我",
+          "rel_start": 53.94,
+          "rel_end": 54.78,
+          "abs_start": 1175.86,
+          "abs_end": 1176.7,
+          "probability": 0.7686
+        },
+        {
+          "word": " 我",
+          "rel_start": 54.78,
+          "rel_end": 55.14,
+          "abs_start": 1176.7,
+          "abs_end": 1177.06,
+          "probability": 0.1427
+        },
+        {
+          "word": "都有",
+          "rel_start": 55.14,
+          "rel_end": 55.84,
+          "abs_start": 1177.06,
+          "abs_end": 1177.76,
+          "probability": 0.9526
+        }
+      ]
+    },
+    {
+      "rel_start": 57.74,
+      "rel_end": 59.62,
+      "abs_start": 1179.66,
+      "abs_end": 1181.54,
+      "text": "胡松文丢了一个团",
+      "no_speech_prob": 0.0056,
+      "words": [
+        {
+          "word": "胡",
+          "rel_start": 57.74,
+          "rel_end": 58.3,
+          "abs_start": 1179.66,
+          "abs_end": 1180.22,
+          "probability": 0.2505
+        },
+        {
+          "word": "松",
+          "rel_start": 58.3,
+          "rel_end": 58.46,
+          "abs_start": 1180.22,
+          "abs_end": 1180.38,
+          "probability": 0.2297
+        },
+        {
+          "word": "文",
+          "rel_start": 58.46,
+          "rel_end": 58.62,
+          "abs_start": 1180.38,
+          "abs_end": 1180.54,
+          "probability": 0.1238
+        },
+        {
+          "word": "丢",
+          "rel_start": 58.62,
+          "rel_end": 58.88,
+          "abs_start": 1180.54,
+          "abs_end": 1180.8,
+          "probability": 0.9678
+        },
+        {
+          "word": "了",
+          "rel_start": 58.88,
+          "rel_end": 59.02,
+          "abs_start": 1180.8,
+          "abs_end": 1180.94,
+          "probability": 0.9961
+        },
+        {
+          "word": "一个",
+          "rel_start": 59.02,
+          "rel_end": 59.26,
+          "abs_start": 1180.94,
+          "abs_end": 1181.18,
+          "probability": 0.9912
+        },
+        {
+          "word": "团",
+          "rel_start": 59.26,
+          "rel_end": 59.62,
+          "abs_start": 1181.18,
+          "abs_end": 1181.54,
+          "probability": 0.9873
+        }
+      ]
+    },
+    {
+      "rel_start": 60.68,
+      "rel_end": 63.3,
+      "abs_start": 1182.6,
+      "abs_end": 1185.22,
+      "text": "三日一旅旅长被辅了",
+      "no_speech_prob": 0.0172,
+      "words": [
+        {
+          "word": "三",
+          "rel_start": 60.68,
+          "rel_end": 61.16,
+          "abs_start": 1182.6,
+          "abs_end": 1183.08,
+          "probability": 0.6528
+        },
+        {
+          "word": "日",
+          "rel_start": 61.16,
+          "rel_end": 61.36,
+          "abs_start": 1183.08,
+          "abs_end": 1183.28,
+          "probability": 0.3252
+        },
+        {
+          "word": "一",
+          "rel_start": 61.36,
+          "rel_end": 61.6,
+          "abs_start": 1183.28,
+          "abs_end": 1183.52,
+          "probability": 0.3652
+        },
+        {
+          "word": "旅",
+          "rel_start": 61.6,
+          "rel_end": 61.86,
+          "abs_start": 1183.52,
+          "abs_end": 1183.78,
+          "probability": 0.5586
+        },
+        {
+          "word": "旅",
+          "rel_start": 61.86,
+          "rel_end": 62.04,
+          "abs_start": 1183.78,
+          "abs_end": 1183.96,
+          "probability": 0.5317
+        },
+        {
+          "word": "长",
+          "rel_start": 62.04,
+          "rel_end": 62.3,
+          "abs_start": 1183.96,
+          "abs_end": 1184.22,
+          "probability": 0.5635
+        },
+        {
+          "word": "被",
+          "rel_start": 62.3,
+          "rel_end": 62.46,
+          "abs_start": 1184.22,
+          "abs_end": 1184.38,
+          "probability": 0.386
+        },
+        {
+          "word": "辅",
+          "rel_start": 62.46,
+          "rel_end": 62.74,
+          "abs_start": 1184.38,
+          "abs_end": 1184.66,
+          "probability": 0.3438
+        },
+        {
+          "word": "了",
+          "rel_start": 62.74,
+          "rel_end": 63.3,
+          "abs_start": 1184.66,
+          "abs_end": 1185.22,
+          "probability": 0.9023
+        }
+      ]
+    },
+    {
+      "rel_start": 63.3,
+      "rel_end": 64.7,
+      "abs_start": 1185.22,
+      "abs_end": 1186.62,
+      "text": "中央还都不知道了",
+      "no_speech_prob": 0.0172,
+      "words": [
+        {
+          "word": "中",
+          "rel_start": 63.3,
+          "rel_end": 63.46,
+          "abs_start": 1185.22,
+          "abs_end": 1185.38,
+          "probability": 0.5991
+        },
+        {
+          "word": "央",
+          "rel_start": 63.46,
+          "rel_end": 63.6,
+          "abs_start": 1185.38,
+          "abs_end": 1185.52,
+          "probability": 0.9736
+        },
+        {
+          "word": "还",
+          "rel_start": 63.6,
+          "rel_end": 63.74,
+          "abs_start": 1185.52,
+          "abs_end": 1185.66,
+          "probability": 0.4131
+        },
+        {
+          "word": "都",
+          "rel_start": 63.74,
+          "rel_end": 63.86,
+          "abs_start": 1185.66,
+          "abs_end": 1185.78,
+          "probability": 0.9282
+        },
+        {
+          "word": "不知道",
+          "rel_start": 63.86,
+          "rel_end": 64.34,
+          "abs_start": 1185.78,
+          "abs_end": 1186.26,
+          "probability": 0.8428
+        },
+        {
+          "word": "了",
+          "rel_start": 64.34,
+          "rel_end": 64.7,
+          "abs_start": 1186.26,
+          "abs_end": 1186.62,
+          "probability": 0.9292
+        }
+      ]
+    }
+  ],
+  "ocr_event_count": 19,
+  "asr_segment_count": 24,
+  "fused_results": [
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 320,
+      "start_sec": 1120.0,
+      "end_sec": 1122.0,
+      "image_hash": "unknown",
+      "ocr_text": "在这儿睡软床吃白米有什么用啊",
+      "asr_text": "我昨天晚上",
+      "resolved_text": null,
+      "similarity": 0.0,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1122.72,
+      "end_sec": 1123.48,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "昨天晚上",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 321,
+      "start_sec": 1123.0,
+      "end_sec": 1124.0,
+      "image_hash": "unknown",
+      "ocr_text": "错了 翠平",
+      "asr_text": "我昨天晚上",
+      "resolved_text": null,
+      "similarity": 0.0,
+      "confidence": 0.3,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1124.34,
+      "end_sec": 1124.98,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "昨天晚上",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 322,
+      "start_sec": 1125.0,
+      "end_sec": 1126.0,
+      "image_hash": "unknown",
+      "ocr_text": "现在是最需要我们的时候",
+      "asr_text": "现在是最需要的的时候",
+      "resolved_text": "现在是最需要我们的时候",
+      "final_text": "现在是最需要我们的时候",
+      "similarity": 0.857,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1126.34,
+      "end_sec": 1126.44,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "好",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 323,
+      "start_sec": 1127.0,
+      "end_sec": 1128.0,
+      "image_hash": "unknown",
+      "ocr_text": "可你听只有三个的时间了",
+      "asr_text": "看你听这有三个月的时间",
+      "resolved_text": "可你听只有三个的时间了",
+      "final_text": "可你听只有三个的时间了",
+      "similarity": 0.727,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 324,
+      "start_sec": 1134.0,
+      "end_sec": 1135.0,
+      "image_hash": "unknown",
+      "ocr_text": "有一种胜利四撤退",
+      "asr_text": "有一种上力叫车车",
+      "resolved_text": null,
+      "similarity": 0.375,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 325,
+      "start_sec": 1136.0,
+      "end_sec": 1137.0,
+      "image_hash": "unknown",
+      "ocr_text": "有一种失败叫占领",
+      "asr_text": "有一种失败叫战力",
+      "resolved_text": "有一种失败叫占领",
+      "final_text": "有一种失败叫占领",
+      "similarity": 0.75,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 326,
+      "start_sec": 1137.0,
+      "end_sec": 1138.0,
+      "image_hash": "unknown",
+      "ocr_text": "有一种失败門占领",
+      "asr_text": "有一种失败叫战力",
+      "resolved_text": null,
+      "similarity": 0.625,
+      "confidence": 0.5,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 327,
+      "start_sec": 1139.0,
+      "end_sec": 1140.0,
+      "image_hash": "unknown",
+      "ocr_text": "别听他们瞎吹",
+      "asr_text": "别听东西",
+      "resolved_text": null,
+      "similarity": 0.4,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1139.48,
+      "end_sec": 1139.94,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "小声",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1144.82,
+      "end_sec": 1146.26,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "我妹妹在眼眼",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 328,
+      "start_sec": 1145.0,
+      "end_sec": 1147.0,
+      "image_hash": "unknown",
+      "ocr_text": "我妹妹在延安也不知道怎么样了",
+      "asr_text": "也不知道怎么样",
+      "resolved_text": "我妹妹在延安也不知道怎么样了",
+      "final_text": "我妹妹在延安也不知道怎么样了",
+      "similarity": 0.95,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 329,
+      "start_sec": 1152.0,
+      "end_sec": 1153.0,
+      "image_hash": "unknown",
+      "ocr_text": "上面指示",
+      "asr_text": "上面只是让我们继续前附下去",
+      "resolved_text": null,
+      "similarity": 0.235,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 330,
+      "start_sec": 1155.0,
+      "end_sec": 1156.0,
+      "image_hash": "unknown",
+      "ocr_text": "让我们继续潜伏下去",
+      "asr_text": "上面只是让我们继续前附下去",
+      "resolved_text": null,
+      "similarity": 0.636,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 331,
+      "start_sec": 1156.0,
+      "end_sec": 1157.0,
+      "image_hash": "unknown",
+      "ocr_text": "等待最后的胜利",
+      "asr_text": "等待最后的声明",
+      "resolved_text": "等待最后的胜利",
+      "final_text": "等待最后的胜利",
+      "similarity": 0.714,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 332,
+      "start_sec": 1157.0,
+      "end_sec": 1158.0,
+      "image_hash": "unknown",
+      "ocr_text": "等待最 的胜利",
+      "asr_text": "等待最后的声明",
+      "resolved_text": null,
+      "similarity": 0.615,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1160.46,
+      "end_sec": 1161.3,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "老上",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 333,
+      "start_sec": 1161.0,
+      "end_sec": 1164.0,
+      "image_hash": "unknown",
+      "ocr_text": "老尚 你需要什么情报啊",
+      "asr_text": "你需要什么钱的话",
+      "resolved_text": null,
+      "similarity": 0.556,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1165.82,
+      "end_sec": 1166.94,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "你有什么",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 334,
+      "start_sec": 1168.0,
+      "end_sec": 1174.0,
+      "image_hash": "unknown",
+      "ocr_text": "八路军改名了叫中国人民解放军",
+      "asr_text": "叫中国人为借房间",
+      "resolved_text": null,
+      "similarity": 0.364,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1169.0,
+      "end_sec": 1171.3,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "把努力据该迷了",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1173.84,
+      "end_sec": 1175.86,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "新建成和翻好的",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 335,
+      "start_sec": 1174.0,
+      "end_sec": 1177.0,
+      "image_hash": "unknown",
+      "ocr_text": "新建制和番号那我都有",
+      "asr_text": "我 我都有",
+      "resolved_text": null,
+      "similarity": 0.429,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 336,
+      "start_sec": 1180.0,
+      "end_sec": 1182.0,
+      "image_hash": "unknown",
+      "ocr_text": "胡宗南丢了一个团",
+      "asr_text": "胡松文丢了一个团",
+      "resolved_text": "胡宗南丢了一个团",
+      "final_text": "胡宗南丢了一个团",
+      "similarity": 0.75,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 337,
+      "start_sec": 1183.0,
+      "end_sec": 1185.0,
+      "image_hash": "unknown",
+      "ocr_text": "三十一旅旅长被俘了",
+      "asr_text": "三日一旅旅长被辅了",
+      "resolved_text": "三十一旅旅长被俘了",
+      "final_text": "三十一旅旅长被俘了",
+      "similarity": 0.778,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    },
+    {
+      "fusion_type": "consensus",
+      "ocr_index": 338,
+      "start_sec": 1185.0,
+      "end_sec": 1187.0,
+      "image_hash": "unknown",
+      "ocr_text": "中央还都不知道呢",
+      "asr_text": "中央还都不知道了",
+      "resolved_text": "中央还都不知道呢",
+      "final_text": "中央还都不知道呢",
+      "similarity": 0.875,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "source": "existing_ocr+asr_consensus"
+    }
+  ]
+}

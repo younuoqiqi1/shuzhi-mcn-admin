@@ -1,0 +1,44 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0070_frame_75",
+  "shot_id": "shot_0070",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0070/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名面朝镜头的女性，黑色卷发及肩，穿着浅蓝色与白色相间的格子旗袍式上衣\", \"画面右侧可见另一人的手臂和部分身体躯干，穿着带有花色图案的白色衣服\"], \"environment\": \"光线较暗的室内空间，背景有深色木质墙板或家具，以及一个带有复杂雕花图案的柱状物体（疑似花瓶或装饰柱）。\", \"objects\": [\"浅蓝色与白色相间格子衣服\", \"带有花纹图案的白色衣服\", \"带有雕花的柱状物体\", \"深色木质家具或墙板\"], \"physical_actions\": [\"女性正面向前，嘴唇微张\", \"右侧人物手臂自然下垂\"], \"uncertainty\": \"右侧人物仅露出部分手臂和躯干，面部和身体大部分在画面外；背景光线较暗且部分失焦模糊。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名面朝镜头的女性，黑色卷发及肩，穿着浅蓝色与白色相间的格子旗袍式上衣",
+        "画面右侧可见另一人的手臂和部分身体躯干，穿着带有花色图案的白色衣服"
+      ],
+      "environment": "光线较暗的室内空间，背景有深色木质墙板或家具，以及一个带有复杂雕花图案的柱状物体（疑似花瓶或装饰柱）。",
+      "objects": [
+        "浅蓝色与白色相间格子衣服",
+        "带有花纹图案的白色衣服",
+        "带有雕花的柱状物体",
+        "深色木质家具或墙板"
+      ],
+      "physical_actions": [
+        "女性正面向前，嘴唇微张",
+        "右侧人物手臂自然下垂"
+      ],
+      "uncertainty": "右侧人物仅露出部分手臂和躯干，面部和身体大部分在画面外；背景光线较暗且部分失焦模糊。"
+    },
+    "error": null,
+    "latency_ms": 24846.26,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14708,
+      "output_tokens": 1062,
+      "thinking_tokens": 737,
+      "cache_read_tokens": 28424,
+      "total_tokens": 15770
+    },
+    "source_image_hash": "19cf59df323613c7b851e59b7b8b3628c77f8c94553588e1209a7824bb6525f4",
+    "inference_image_hash": "e2d371eff86615d088c450433feaa03b5b5d1363e7c3416746fa838d081b0bc4",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210079.844034
+}

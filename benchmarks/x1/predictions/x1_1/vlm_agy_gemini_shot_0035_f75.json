@@ -1,0 +1,44 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0035_frame_75",
+  "shot_id": "shot_0035",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0035/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"身穿黑色西装、白衬衫、打条纹领带的男子，戴眼镜，侧脸可见\", \"身穿黑色中山装、白衬衫的男子，戴圆形眼镜，上衣左胸口袋插有一支笔\"], \"environment\": \"室外，背景为一面灰色的砖墙，画面最右侧边缘有深色垂直结构（可能是柱子或门框），自然光照明，光线柔和\", \"objects\": [\"眼镜\", \"领带\", \"笔\"], \"physical_actions\": [\"站立\", \"左侧男子转头看向右侧男子\", \"右侧男子低头向下看\"], \"uncertainty\": \"无明显遮挡，画面清晰\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "身穿黑色西装、白衬衫、打条纹领带的男子，戴眼镜，侧脸可见",
+        "身穿黑色中山装、白衬衫的男子，戴圆形眼镜，上衣左胸口袋插有一支笔"
+      ],
+      "environment": "室外，背景为一面灰色的砖墙，画面最右侧边缘有深色垂直结构（可能是柱子或门框），自然光照明，光线柔和",
+      "objects": [
+        "眼镜",
+        "领带",
+        "笔"
+      ],
+      "physical_actions": [
+        "站立",
+        "左侧男子转头看向右侧男子",
+        "右侧男子低头向下看"
+      ],
+      "uncertainty": "无明显遮挡，画面清晰"
+    },
+    "error": null,
+    "latency_ms": 23531.34,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18659,
+      "output_tokens": 753,
+      "thinking_tokens": 473,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19412
+    },
+    "source_image_hash": "4ce04af66953d0f1ef5e18c929f25f87aa9f6319a06c9f22c70997d981672316",
+    "inference_image_hash": "046d472facff5e506d160cf871b6fbd88f150c431d73a8064027f0634e22ad31",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209605.93054
+}

@@ -1,0 +1,150 @@
+{
+  "parent_shot_id": "shot_0069",
+  "source_type": "existing_ocr",
+  "raw_source_path": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "raw_source_sha256": "dce24653f6b2f384b5e2b2f35952c8b30cb282d55a3af2c1d6a540a90d941254",
+  "asr_source_path": "benchmarks/x1/predictions/x1_0/asr_results.json",
+  "asr_source_sha256": "6f393b7882b9bb38b5b2e8ad89945d439ab2185c6970a690b20ea9d9eefce8da",
+  "reuse_existing": true,
+  "time_resolution": "1s",
+  "time_error_window": "±0.5s (1s timecode interval resolution, tolerance ±0.5s for alignment)",
+  "raw_ocr_events": [
+    {
+      "index": 436,
+      "start_sec": 1466.0,
+      "end_sec": 1467.0,
+      "start_timecode": "00:24:26.000",
+      "end_timecode": "00:24:27.000",
+      "text": "你要给压岁钱哪",
+      "confidence": 1,
+      "image_hash": "unknown",
+      "time_source": "existing_ocr",
+      "status": "success"
+    }
+  ],
+  "raw_asr_segments": [
+    {
+      "rel_start": 0.0,
+      "rel_end": 1.4,
+      "abs_start": 1463.56,
+      "abs_end": 1464.96,
+      "text": "干什么呀",
+      "no_speech_prob": 0.0012,
+      "words": [
+        {
+          "word": "干",
+          "rel_start": 0.0,
+          "rel_end": 0.62,
+          "abs_start": 1463.56,
+          "abs_end": 1464.18,
+          "probability": 0.4663
+        },
+        {
+          "word": "什么",
+          "rel_start": 0.62,
+          "rel_end": 0.84,
+          "abs_start": 1464.18,
+          "abs_end": 1464.4,
+          "probability": 0.9878
+        },
+        {
+          "word": "呀",
+          "rel_start": 0.84,
+          "rel_end": 1.4,
+          "abs_start": 1464.4,
+          "abs_end": 1464.96,
+          "probability": 0.5225
+        }
+      ]
+    },
+    {
+      "rel_start": 1.4,
+      "rel_end": 3.26,
+      "abs_start": 1464.96,
+      "abs_end": 1466.82,
+      "text": "你要给他睡前呢",
+      "no_speech_prob": 0.0012,
+      "words": [
+        {
+          "word": "你要",
+          "rel_start": 1.4,
+          "rel_end": 2.28,
+          "abs_start": 1464.96,
+          "abs_end": 1465.84,
+          "probability": 0.895
+        },
+        {
+          "word": "给",
+          "rel_start": 2.28,
+          "rel_end": 2.42,
+          "abs_start": 1465.84,
+          "abs_end": 1465.98,
+          "probability": 0.9507
+        },
+        {
+          "word": "他",
+          "rel_start": 2.42,
+          "rel_end": 2.54,
+          "abs_start": 1465.98,
+          "abs_end": 1466.1,
+          "probability": 0.3562
+        },
+        {
+          "word": "睡",
+          "rel_start": 2.54,
+          "rel_end": 2.64,
+          "abs_start": 1466.1,
+          "abs_end": 1466.2,
+          "probability": 0.7559
+        },
+        {
+          "word": "前",
+          "rel_start": 2.64,
+          "rel_end": 2.82,
+          "abs_start": 1466.2,
+          "abs_end": 1466.38,
+          "probability": 0.458
+        },
+        {
+          "word": "呢",
+          "rel_start": 2.82,
+          "rel_end": 3.26,
+          "abs_start": 1466.38,
+          "abs_end": 1466.82,
+          "probability": 0.6509
+        }
+      ]
+    }
+  ],
+  "ocr_event_count": 1,
+  "asr_segment_count": 2,
+  "fused_results": [
+    {
+      "fusion_type": "asr_only",
+      "start_sec": 1463.56,
+      "end_sec": 1464.96,
+      "image_hash": "unknown",
+      "ocr_text": null,
+      "asr_text": "干什么呀",
+      "resolved_text": null,
+      "resolution_note": "unverified_single_source",
+      "window_tolerance_sec": 0.5,
+      "source": "asr_only"
+    },
+    {
+      "fusion_type": "conflict",
+      "ocr_index": 436,
+      "start_sec": 1466.0,
+      "end_sec": 1467.0,
+      "image_hash": "unknown",
+      "ocr_text": "你要给压岁钱哪",
+      "asr_text": "你要给他睡前呢",
+      "resolved_text": null,
+      "similarity": 0.429,
+      "confidence": 1,
+      "window_tolerance_sec": 0.5,
+      "conflict_details": "时间区间重叠但文字表述不一致或相似度低，显式保留双源冲突，禁止强行覆盖",
+      "source": "explicit_conflict"
+    }
+  ]
+}

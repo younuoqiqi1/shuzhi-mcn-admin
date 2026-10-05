@@ -1,0 +1,43 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0137_frame_75",
+  "shot_id": "shot_0137",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0137/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"unknown\", \"characters\": [\"模糊的人影\", \"手持长杆的人影\"], \"environment\": \"透过深色网格窗棂看到的室外街道或庭院场景，右侧叠加有紫色和灰色的垂直条状模糊色块\", \"objects\": [\"深色网格窗棂\", \"长杆\", \"底部中文字幕\"], \"physical_actions\": [\"行走\", \"手持长杆\"], \"uncertainty\": \"画面存在严重的多重曝光、重叠或反光现象，导致大量信息丢失和极度模糊；右半部分被大块抽象的紫色色块遮挡，人物和背景细节无法清晰辨认\"}",
+    "parsed_validation": {
+      "camera": "unknown",
+      "characters": [
+        "模糊的人影",
+        "手持长杆的人影"
+      ],
+      "environment": "透过深色网格窗棂看到的室外街道或庭院场景，右侧叠加有紫色和灰色的垂直条状模糊色块",
+      "objects": [
+        "深色网格窗棂",
+        "长杆",
+        "底部中文字幕"
+      ],
+      "physical_actions": [
+        "行走",
+        "手持长杆"
+      ],
+      "uncertainty": "画面存在严重的多重曝光、重叠或反光现象，导致大量信息丢失和极度模糊；右半部分被大块抽象的紫色色块遮挡，人物和背景细节无法清晰辨认"
+    },
+    "error": null,
+    "latency_ms": 29570.97,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18700,
+      "output_tokens": 1456,
+      "thinking_tokens": 1197,
+      "cache_read_tokens": 24363,
+      "total_tokens": 20156
+    },
+    "source_image_hash": "18cca3e8e718e711532bc07840a56ee738b4c4f08a136bd6a04c54e22eb130be",
+    "inference_image_hash": "5ec51c7bb7ad2121ef84d5e7380195b1caf4ec546f1ea75c9030dbf5a947c602",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210652.787578
+}

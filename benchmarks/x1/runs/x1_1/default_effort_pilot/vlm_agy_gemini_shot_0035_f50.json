@@ -1,0 +1,47 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0035_frame_50",
+  "shot_id": "shot_0035",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0035/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"左侧男性，黑色短发，佩戴细边眼镜，身着黑色西装、白色衬衫及条纹领带\", \"右侧男性，黑色短发，佩戴深色边框眼镜，身着黑色中山装，左胸口袋别有一支钢笔\"], \"environment\": \"自然光照下的环境，背景为一面灰色的砖墙\", \"objects\": [\"细边眼镜\", \"深色边框眼镜\", \"西装\", \"白衬衫\", \"条纹领带\", \"中山装\", \"钢笔\"], \"physical_actions\": [\"两人并肩站立\", \"两人头部均微微向下倾斜，视线朝下\"], \"uncertainty\": \"画面特征清晰可见，无明显遮挡、模糊或过暗等视觉障碍\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "左侧男性，黑色短发，佩戴细边眼镜，身着黑色西装、白色衬衫及条纹领带",
+        "右侧男性，黑色短发，佩戴深色边框眼镜，身着黑色中山装，左胸口袋别有一支钢笔"
+      ],
+      "environment": "自然光照下的环境，背景为一面灰色的砖墙",
+      "objects": [
+        "细边眼镜",
+        "深色边框眼镜",
+        "西装",
+        "白衬衫",
+        "条纹领带",
+        "中山装",
+        "钢笔"
+      ],
+      "physical_actions": [
+        "两人并肩站立",
+        "两人头部均微微向下倾斜，视线朝下"
+      ],
+      "uncertainty": "画面特征清晰可见，无明显遮挡、模糊或过暗等视觉障碍"
+    },
+    "error": null,
+    "latency_ms": 45126.3,
+    "model_version": "agy-cli:gemini-3.1-pro-high",
+    "usage": {
+      "input_tokens": 15052,
+      "output_tokens": 3040,
+      "thinking_tokens": 2504,
+      "cache_read_tokens": 28440,
+      "total_tokens": 18092
+    },
+    "source_image_hash": "226f48d9550d59acfe8ab9dfb21e224e2ff714683fdcbd7fe582c5195fba0105",
+    "inference_image_hash": "5c3338551cd0ded3fae5835c8e3306710ed5b6d8fd18f44d930dc1fe14c43654",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791208596.644428
+}

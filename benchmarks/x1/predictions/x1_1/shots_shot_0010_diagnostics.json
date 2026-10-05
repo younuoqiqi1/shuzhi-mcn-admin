@@ -1,0 +1,150 @@
+{
+  "parent_shot_id": "shot_0010",
+  "parent_start_sec": 41.44,
+  "parent_end_sec": 49.4,
+  "parent_duration": 7.96,
+  "parameters": {
+    "content_threshold": 27.0,
+    "adaptive_threshold": 3.0,
+    "min_content_val": 27.0,
+    "min_scene_len_frames": 3,
+    "no_1_5s_forced_merge": true,
+    "no_forced_max_duration_split": true,
+    "no_manual_or_plot_cuts": true
+  },
+  "cuts": [
+    43.0,
+    44.0,
+    47.64
+  ],
+  "cuts_scores": [
+    {
+      "time_sec": 43.0,
+      "frame_num": 1075,
+      "content_val": 31.32,
+      "adaptive_ratio": 50.884
+    },
+    {
+      "time_sec": 44.0,
+      "frame_num": 1100,
+      "content_val": 33.6514,
+      "adaptive_ratio": 20.5211
+    },
+    {
+      "time_sec": 47.64,
+      "frame_num": 1191,
+      "content_val": 44.349,
+      "adaptive_ratio": 10.2486
+    }
+  ],
+  "scores_sampled": [
+    {
+      "time_sec": 43.0,
+      "frame_num": 1075,
+      "content_val": 31.32,
+      "adaptive_ratio": 50.884
+    },
+    {
+      "time_sec": 44.0,
+      "frame_num": 1100,
+      "content_val": 33.6514,
+      "adaptive_ratio": 20.5211
+    },
+    {
+      "time_sec": 47.64,
+      "frame_num": 1191,
+      "content_val": 44.349,
+      "adaptive_ratio": 10.2486
+    }
+  ],
+  "children_count": 4,
+  "children": [
+    {
+      "child_id": "shot_0010_c001",
+      "parent_shot_id": "shot_0010",
+      "start_sec": 41.44,
+      "end_sec": 43.0,
+      "duration": 1.56,
+      "review_frames": {
+        "start": 41.44,
+        "mid": 42.22,
+        "end": 42.96
+      },
+      "review_frame_indices": {
+        "start_sec": 41.44,
+        "mid_sec": 42.22,
+        "end_sec": 43.0
+      }
+    },
+    {
+      "child_id": "shot_0010_c002",
+      "parent_shot_id": "shot_0010",
+      "start_sec": 43.0,
+      "end_sec": 44.0,
+      "duration": 1.0,
+      "review_frames": {
+        "start": 43.0,
+        "mid": 43.5,
+        "end": 43.96
+      },
+      "review_frame_indices": {
+        "start_sec": 43.0,
+        "mid_sec": 43.5,
+        "end_sec": 44.0
+      }
+    },
+    {
+      "child_id": "shot_0010_c003",
+      "parent_shot_id": "shot_0010",
+      "start_sec": 44.0,
+      "end_sec": 47.64,
+      "duration": 3.64,
+      "review_frames": {
+        "start": 44.0,
+        "mid": 45.82,
+        "end": 47.6
+      },
+      "review_frame_indices": {
+        "start_sec": 44.0,
+        "mid_sec": 45.82,
+        "end_sec": 47.64
+      }
+    },
+    {
+      "child_id": "shot_0010_c004",
+      "parent_shot_id": "shot_0010",
+      "start_sec": 47.64,
+      "end_sec": 49.4,
+      "duration": 1.76,
+      "review_frames": {
+        "start": 47.64,
+        "mid": 48.52,
+        "end": 49.36
+      },
+      "review_frame_indices": {
+        "start_sec": 47.64,
+        "mid_sec": 48.52,
+        "end_sec": 49.4
+      }
+    }
+  ],
+  "coverage_verified": true,
+  "full_interval_coverage": {
+    "verified": true,
+    "parent_start_sec": 41.44,
+    "parent_end_sec": 49.4,
+    "contact_sheet_pages": [
+      "/private/tmp/x1_1/contact_sheets/shot_0010_5fps_p001.jpg"
+    ],
+    "contact_sheet_coverage_start_sec": 41.44,
+    "contact_sheet_coverage_end_sec": 49.24,
+    "contact_sheet_coverage_duration_sec": 7.8,
+    "total_sampled_frames": 40,
+    "total_pages": 1
+  },
+  "contact_sheet_path": "/private/tmp/x1_1/contact_sheets/shot_0010_5fps_p001.jpg",
+  "contact_sheet_pages": [
+    "/private/tmp/x1_1/contact_sheets/shot_0010_5fps_p001.jpg"
+  ],
+  "raw_diagnostics_notes": "阈值 (content_threshold=27.0, adaptive_threshold=3.0, min_content_val=27.0) 均来自通用镜头检测标准对齐默认值，未用人工Gold特定调参，消除固定机位下微小运动导致的虚假硬切；未来人工 usable rate 仍待人工审核判定。"
+}

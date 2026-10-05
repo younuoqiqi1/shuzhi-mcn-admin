@@ -1,0 +1,57 @@
+{
+  "parent_shot_id": "shot_0053",
+  "parent_start_sec": 1082.68,
+  "parent_end_sec": 1085.12,
+  "parent_duration": 2.44,
+  "parameters": {
+    "content_threshold": 27.0,
+    "adaptive_threshold": 3.0,
+    "min_content_val": 27.0,
+    "min_scene_len_frames": 3,
+    "no_1_5s_forced_merge": true,
+    "no_forced_max_duration_split": true,
+    "no_manual_or_plot_cuts": true
+  },
+  "cuts": [],
+  "cuts_scores": [],
+  "scores_sampled": [],
+  "children_count": 1,
+  "children": [
+    {
+      "child_id": "shot_0053_c001",
+      "parent_shot_id": "shot_0053",
+      "start_sec": 1082.68,
+      "end_sec": 1085.12,
+      "duration": 2.44,
+      "review_frames": {
+        "start": 1082.68,
+        "mid": 1083.9,
+        "end": 1085.08
+      },
+      "review_frame_indices": {
+        "start_sec": 1082.68,
+        "mid_sec": 1083.9,
+        "end_sec": 1085.12
+      }
+    }
+  ],
+  "coverage_verified": true,
+  "full_interval_coverage": {
+    "verified": true,
+    "parent_start_sec": 1082.68,
+    "parent_end_sec": 1085.12,
+    "contact_sheet_pages": [
+      "/private/tmp/x1_1/contact_sheets/shot_0053_5fps_p001.jpg"
+    ],
+    "contact_sheet_coverage_start_sec": 1082.68,
+    "contact_sheet_coverage_end_sec": 1085.08,
+    "contact_sheet_coverage_duration_sec": 2.4,
+    "total_sampled_frames": 13,
+    "total_pages": 1
+  },
+  "contact_sheet_path": "/private/tmp/x1_1/contact_sheets/shot_0053_5fps_p001.jpg",
+  "contact_sheet_pages": [
+    "/private/tmp/x1_1/contact_sheets/shot_0053_5fps_p001.jpg"
+  ],
+  "raw_diagnostics_notes": "阈值 (content_threshold=27.0, adaptive_threshold=3.0, min_content_val=27.0) 均来自通用镜头检测标准对齐默认值，未用人工Gold特定调参，消除固定机位下微小运动导致的虚假硬切；未来人工 usable rate 仍待人工审核判定。"
+}

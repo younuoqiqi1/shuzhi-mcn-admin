@@ -1,0 +1,46 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0026_frame_25",
+  "shot_id": "shot_0026",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0026/frame_25.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名成年男性，黑色短发，佩戴深色细框圆形眼镜，身穿深蓝色长袖立领上衣\"], \"environment\": \"室内环境，光线偏暗。背景可见深色木质储物柜和带木质边框的浅色花纹沙发。\", \"objects\": [\"细框圆形眼镜\", \"深蓝色立领上衣\", \"带浅色提花图案的布艺沙发垫\", \"深色木质沙发靠背\", \"深色木质储物柜\", \"白色罐状摆件\"], \"physical_actions\": [\"闭眼\", \"微低头\", \"嘴巴微张\"], \"uncertainty\": \"画面光线整体偏暗，分辨率偏低导致细节略有模糊，无明显物体遮挡。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名成年男性，黑色短发，佩戴深色细框圆形眼镜，身穿深蓝色长袖立领上衣"
+      ],
+      "environment": "室内环境，光线偏暗。背景可见深色木质储物柜和带木质边框的浅色花纹沙发。",
+      "objects": [
+        "细框圆形眼镜",
+        "深蓝色立领上衣",
+        "带浅色提花图案的布艺沙发垫",
+        "深色木质沙发靠背",
+        "深色木质储物柜",
+        "白色罐状摆件"
+      ],
+      "physical_actions": [
+        "闭眼",
+        "微低头",
+        "嘴巴微张"
+      ],
+      "uncertainty": "画面光线整体偏暗，分辨率偏低导致细节略有模糊，无明显物体遮挡。"
+    },
+    "error": null,
+    "latency_ms": 38537.44,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14790,
+      "output_tokens": 1884,
+      "thinking_tokens": 1356,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16674
+    },
+    "source_image_hash": "f13df2e919c510abb28bc99c704a8d1a626eb732f6a9b97493c4be48e0b710a5",
+    "inference_image_hash": "49473285d73a674b088c82710e3a3ebd1a6521fa22d58dbfc296ac5f49a8653c",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209377.7166421
+}

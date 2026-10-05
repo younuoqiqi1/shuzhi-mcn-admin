@@ -1,0 +1,41 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0055_frame_50",
+  "shot_id": "shot_0055",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0055/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Adult male, short dark hair, wearing a white collared shirt and round wire-rimmed glasses.\"], \"environment\": \"Dimly lit indoor space. The background is out of focus, featuring dark vertical panels with lighter horizontal lines resembling window blinds.\", \"objects\": [\"Wire-rimmed glasses.\", \"Dark out-of-focus object with red detail.\"], \"physical_actions\": [\"Eyes closed.\", \"Mouth slightly open.\"], \"uncertainty\": \"The background and the object on the right are out of focus due to depth of field blur.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Adult male, short dark hair, wearing a white collared shirt and round wire-rimmed glasses."
+      ],
+      "environment": "Dimly lit indoor space. The background is out of focus, featuring dark vertical panels with lighter horizontal lines resembling window blinds.",
+      "objects": [
+        "Wire-rimmed glasses.",
+        "Dark out-of-focus object with red detail."
+      ],
+      "physical_actions": [
+        "Eyes closed.",
+        "Mouth slightly open."
+      ],
+      "uncertainty": "The background and the object on the right are out of focus due to depth of field blur."
+    },
+    "error": null,
+    "latency_ms": 29887.18,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 20972,
+      "output_tokens": 992,
+      "thinking_tokens": 554,
+      "cache_read_tokens": 44659,
+      "total_tokens": 21964
+    },
+    "source_image_hash": "8cc5cc73df19ed25346ca45f5e9adb0066ceb9ffd322097d4cf8df31cdf4c93b",
+    "inference_image_hash": "b46b94069704ae54e27646952a0d8319f7d2f2df897d2210744d196dbf470ef2",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209705.2245371
+}

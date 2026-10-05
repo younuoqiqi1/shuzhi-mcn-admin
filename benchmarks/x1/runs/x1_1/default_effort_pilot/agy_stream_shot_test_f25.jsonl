@@ -1,0 +1,4 @@
+{"type": "step_update", "step_update": {"tool_name": "view_file", "state": "DONE", "tool_info": {"parameters": {"AbsolutePath": "shot_test_f25.jpg"}}}}
+{"type": "step_update", "step_update": {"tool_name": "read_file", "state": "DONE", "tool_info": {"parameters": {"AbsolutePath": "foo.txt"}}}}
+{"type": "step_update", "step_update": {"tool_name": "finish", "state": "DONE", "tool_info": {}}}
+{"type": "result", "result": {"structured_output": {"characters": ["A person in dark coat standing upright"], "environment": "Dimly lit interior corridor with stone walls", "physical_actions": ["Standing motionless facing forward"], "objects": ["Wooden door", "Metal handle", "Overhead lamp"], "camera": "medium_shot", "uncertainty": "Partial facial shadow on the left side, slightly low ambient lighting"}, "usage": {}}}

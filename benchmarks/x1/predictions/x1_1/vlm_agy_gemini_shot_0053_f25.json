@@ -1,0 +1,26 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0053_frame_25",
+  "shot_id": "shot_0053",
+  "frame_pct": "25",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0053/frame_25.jpg",
+  "response": {
+    "raw_text": "",
+    "parsed_validation": null,
+    "error": "AGY CLI 退出码非零 (1): error: Eligibility check failed: UNAVAILABLE (code 503): The service is currently unavailable.\n",
+    "latency_ms": 19189.16,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "thinking_tokens": 0,
+      "cache_read_tokens": 0,
+      "total_tokens": 0
+    },
+    "source_image_hash": "1a2dbbd0c30a3b93424604827fcef09d1d425b7bbe5217ed042c723da9e3c789",
+    "inference_image_hash": "549e331e8b416063a6a285962df4dcc9d73bc9b16138336cec5dd0aaad3c74cb",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209620.302412
+}

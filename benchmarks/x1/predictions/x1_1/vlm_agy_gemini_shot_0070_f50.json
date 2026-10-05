@@ -1,0 +1,45 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0070_frame_50",
+  "shot_id": "shot_0070",
+  "frame_pct": "50",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0070/frame_50.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名女性，深色头发，额前有卷曲刘海，穿着浅色带花纹的高领衣物，佩戴着垂坠式耳饰。\"], \"environment\": \"室内空间，光线较为柔和暗淡，墙面为浅色纯色，背景左侧可见一个深色的木质多层展示架，墙面挂有一幅装裱的字画或卷轴。\", \"objects\": [\"深色木质多层展示架\", \"架子上的圆形摆件\", \"墙面上的字画或卷轴\", \"垂坠式耳饰\", \"浅色高领花纹衣物\"], \"physical_actions\": [\"站立\", \"头部微低\", \"视线向下\"], \"uncertainty\": \"人物面部存在轻微的运动模糊或失焦，背景物体处于景深之外而虚化，人物头顶部分被画面上边缘裁切。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名女性，深色头发，额前有卷曲刘海，穿着浅色带花纹的高领衣物，佩戴着垂坠式耳饰。"
+      ],
+      "environment": "室内空间，光线较为柔和暗淡，墙面为浅色纯色，背景左侧可见一个深色的木质多层展示架，墙面挂有一幅装裱的字画或卷轴。",
+      "objects": [
+        "深色木质多层展示架",
+        "架子上的圆形摆件",
+        "墙面上的字画或卷轴",
+        "垂坠式耳饰",
+        "浅色高领花纹衣物"
+      ],
+      "physical_actions": [
+        "站立",
+        "头部微低",
+        "视线向下"
+      ],
+      "uncertainty": "人物面部存在轻微的运动模糊或失焦，背景物体处于景深之外而虚化，人物头顶部分被画面上边缘裁切。"
+    },
+    "error": null,
+    "latency_ms": 42891.1,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18672,
+      "output_tokens": 2760,
+      "thinking_tokens": 2176,
+      "cache_read_tokens": 24363,
+      "total_tokens": 21432
+    },
+    "source_image_hash": "d5af04993a9982c2c4f8d095b20283990a79b4610e49df57740848529f8dce9f",
+    "inference_image_hash": "6f211651e3bf97044ad4ade7a21785886321baca5c679399f97800f140d633db",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791210086.173604
+}

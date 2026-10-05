@@ -1,0 +1,48 @@
+{
+  "provider": "agy-gemini",
+  "frame_id": "shot_0019_frame_75",
+  "shot_id": "shot_0019",
+  "frame_pct": "75",
+  "frame_path": "/private/tmp/x1_0/frames/shot_0019/frame_75.jpg",
+  "response": {
+    "raw_text": "{\"camera\": \"full_shot\", \"characters\": [\"身穿浅色长款风衣、头戴深色礼帽的坐姿人物\", \"深色头发、身穿带有臂章的深色制服外套的坐姿人物\"], \"environment\": \"光线昏暗的室内空间，背景有带木格栅的门窗和墙上挂画，画面带有蓝色和黑色的边缘遮挡或特效滤镜，右下角叠加有黄绿色中文字幕。\", \"objects\": [\"圆形木桌\", \"木质圆凳\", \"纸张/文件\", \"两个小茶杯/茶碗\", \"圆柱形器皿（水壶或花瓶）\", \"木质网格门窗\", \"墙面挂画\", \"中文字幕\"], \"physical_actions\": [\"左侧人物坐在桌旁，手中拿着纸张正在观看\", \"右侧人物坐在桌旁，面朝左侧人物方向\"], \"uncertainty\": \"画面左右两侧存在大面积的蓝色和黑色模糊前景遮挡物或反光特效，整体画质分辨率较低且偏暗，右下角有文字叠加遮挡。\"}",
+    "parsed_validation": {
+      "camera": "full_shot",
+      "characters": [
+        "身穿浅色长款风衣、头戴深色礼帽的坐姿人物",
+        "深色头发、身穿带有臂章的深色制服外套的坐姿人物"
+      ],
+      "environment": "光线昏暗的室内空间，背景有带木格栅的门窗和墙上挂画，画面带有蓝色和黑色的边缘遮挡或特效滤镜，右下角叠加有黄绿色中文字幕。",
+      "objects": [
+        "圆形木桌",
+        "木质圆凳",
+        "纸张/文件",
+        "两个小茶杯/茶碗",
+        "圆柱形器皿（水壶或花瓶）",
+        "木质网格门窗",
+        "墙面挂画",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "左侧人物坐在桌旁，手中拿着纸张正在观看",
+        "右侧人物坐在桌旁，面朝左侧人物方向"
+      ],
+      "uncertainty": "画面左右两侧存在大面积的蓝色和黑色模糊前景遮挡物或反光特效，整体画质分辨率较低且偏暗，右下角有文字叠加遮挡。"
+    },
+    "error": null,
+    "latency_ms": 31858.95,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14710,
+      "output_tokens": 1623,
+      "thinking_tokens": 1256,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16333
+    },
+    "source_image_hash": "497e5ab492243697f4201a894a2b07bda788f278f57131fcc025eb27834484f0",
+    "inference_image_hash": "f76ebcbe498e8c351647159795b36aabf63fcecec825f67184691951fe5ec4c5",
+    "prompt_schema_hash": "40e2abbfece08cf4e93b2480bfcec6f1e875361e8954a79d2917b56768f81707",
+    "cost": "unknown"
+  },
+  "timestamp": 1791209357.065601
+}
