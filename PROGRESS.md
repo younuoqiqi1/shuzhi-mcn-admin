@@ -2,9 +2,9 @@
 
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**POC-AGENT A6.3: Evidence 对齐收口、检索缺失审计与 OCR 污染清洗**  
-当前状态：`A6.3 awaiting_final_review` (A1 approved, A2 approved, A3 approved, A4 approved, A4.5.1 approved, A5 approved, A6.3 awaiting_final_review; 83/83 测试全绿，系统自评覆盖率 87.5%，独立人工验收包已更新就绪，已彻底停止，严禁进入 A7)  
-执行责任：🏛️ 全栈架构师 & 🧪 测试与质量专家 & ⚡ 算法与性能专家  
+当前阶段：**POC-AGENT A7: Director Final —— 基于真实证据完成最终内容编排**  
+当前状态：`A7 awaiting_review` (A6 Final Review APPROVED，Top3 Gate 87.5% 正式通过；95/95 测试全绿；双真实选题 Final Director Plan、VMV 生产单及真人视听预览生成就绪；已彻底停止，严禁进入 A8，严禁生成 MP4，严禁真实 TTS)  
+执行责任：🏛️ 全栈架构师 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
 
 ---
 
@@ -13,11 +13,12 @@
 | 门禁名称 | 阶段点 | 当前状态 | 准入/通过标准 |
 |:---|:---:|:---:|:---|
 | **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
-| **Retrieval Top3 实测 Gate** | A6 结束点 | ⏳ **等待终审 (awaiting_final_review)** (2026-10-05) | 真实影视素材（**《潜伏》第18集全片约45:02**，共 2702.013 秒）全自动检索与视角重读：系统证据充分度与候选覆盖率客观自评为 **87.5% (7/8)**；`req_wu_03` 真实识别为 `INSUFFICIENT_EVIDENCE`；已生成 8 需求独立人工验收包（24 候选保持 pending）。**准入铁律：必须由真人完成全部 8 个需求审核，且每个需求 Top3 至少有 1 个镜头被人工核定为 `usable`，总可用率 $\ge 80.0\%$ 方可正式放行 A7！未审核前严禁系统自评冒充 Gate PASS**。 |
+| **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已通过** (2026-10-05) | 真实影视素材（《潜伏》第18集全片约45:02，共 2702.013 秒）检索与视角重读：有效覆盖率 7/8 = 87.5% >= 80%；`req_wu_03` 查实为全集无机要室且李涯零出镜，判定为 `INSUFFICIENT_EVIDENCE` 属真实正确结果，门禁正式批准通过。 |
+| **Director Final Review Gate** | A7 结束点 | ⏳ **等待审核 (awaiting_review)** (2026-10-05) | Final Director Plan 必须 100% 消费 A6 Top3 真实候选；原声有力保留与旁白职责先行；严禁未支撑伪断言 (Unsupported Claims)；处理 `req_wu_03` 显式决议；VMV Consumer Contract 验证通过并声明 A8 Blocker。 |
 
 ---
 
-## A0–A10 分阶段实施路线图 (总体完成度：80%)
+## A0–A10 分阶段实施路线图 (总体完成度：90%)
 
 | 阶段 | 权重 | 状态 | 交付物 / 验收入口 | 核心说明 |
 |:---|---:|:---:|:---|:---|
@@ -29,15 +30,15 @@
 | **A4.5. 真实 L1 Evidence 补齐与覆盖率深度核验** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5-evidence-enrichment-report.md`](docs/agent-poc/a4.5-evidence-enrichment-report.md) | 查清 130 vs 325 及 2702s 全片覆盖根因（VMV 1800s 截断）；Apple Vision OCR 提取 857 条真实台词；复用 caption-packet/importer；补齐 130/326 真实客观证据 |
 | **A4.5.1 尾部连续补齐与生成来源审计修复** | 4% | ✅ **completed** | [`docs/agent-poc/a4.5.1-review-fix-report.md`](docs/agent-poc/a4.5.1-review-fix-report.md)<br>[`tests/evidence-enrichment.test.mjs`](tests/evidence-enrichment.test.mjs) | A4.5.1 Review Approved。把 1800~2702.013s 真正补入 canonical 数据集（235 场景，0 到 2702.013s 连续无空洞）；审计视觉来源，落地 independent vs inherited 分级与置信度衰减；测试全绿 |
 | **A5. 候选镜头召回检索管道** | 10% | ✅ **completed** | [`src/retrieval/`](src/retrieval/)<br>[`docs/agent-poc/a5-retrieval-report.md`](docs/agent-poc/a5-retrieval-report.md)<br>[`tests/candidate-retrieval.test.mjs`](tests/candidate-retrieval.test.mjs) | A5 Review Approved。消费 MaterialRequirements，基于 Hybrid 检索（结构化+词法+语义Fallback+L2潜能）从真实 Canonical 数据集自动为每个诉求召回 Top20 客观候选；多场景多样性与 3s 时序去重；测试 62/62 全绿 |
-| **A6. 动态 Perspective Re-reading** | 12% | 🚪 **awaiting_final_review** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)<br>[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | 完成 A6.3 Evidence 对齐收口、演职员/歌词 OCR 彻底清洗（全库污染率 0%）、`req_wu_03` 真实识别为 `INSUFFICIENT_EVIDENCE`；重跑 A5/A6 管道并更新 8 需求独立人工验收包；测试 83/83 全绿 |
-| **A7. Director 真实证据终编服务** | 10% | 待开始 | Final Director Plan 锁定生成器 | **严禁提前进入**；等待真人完成 A6.3 终审；依据真实证据敲定台词、原声、IN-OUT |
-| **A8. VMV Stage 4/5 真实生产对接** | 8% | 待开始 | 本地生产 Runner 与真实 MP4 输出 | 阿里云 TTS 真实配音与 FFmpeg 剪辑压制 |
+| **A6. 动态 Perspective Re-reading** | 12% | ✅ **completed** | [`src/perspective/`](src/perspective/)<br>[`docs/agent-poc/a6-human-gate-review.md`](docs/agent-poc/a6-human-gate-review.md)<br>[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)<br>[`tests/perspective-rereading.test.mjs`](tests/perspective-rereading.test.mjs) | A6 Final Review Approved。完成 A6.3 Evidence 对齐收口、演职员/歌词 OCR 彻底清洗、`req_wu_03` 查实为全集无机要室且李涯零出镜判定为 `INSUFFICIENT_EVIDENCE`；Top3 Gate 87.5% 正式批准通过 |
+| **A7. Director 真实证据终编服务** | 10% | 🚪 **awaiting_review** | [`src/director/`](src/director/)<br>[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)<br>[`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)<br>[`tests/director-final.test.mjs`](tests/director-final.test.mjs) | 消费真实 A6 Top3；原声与旁白职责先行；严禁未支撑伪断言；处理 `req_wu_03` 显式决议；输出双真实选题 Plan、VMV 生产单与 Markdown 视听预览；测试 95/95 全绿 |
+| **A8. VMV Stage 4/5 真实生产对接** | 8% | 待开始 | 本地生产 Runner 与真实 MP4 输出 | **严禁提前进入**；等待真人完成 A7 终审；阿里云 TTS 真实配音与 FFmpeg 剪辑压制 |
 | **A9. 动态解释向通用 Affordance 受控回流** | 4% | 待开始 | 知识回流提纯流水线 | 验证有效模式回流至 L2，绝对隔离 L1 |
 | **A10. 双博主同素材 A/B 验证验收** | 4% | 待开始 | 两支不同风格的真实 1080p MP4 与指标报告 | 终极验收：同一部剧同素材池、双博主截然不同视听成品 |
 
 ---
 
-## 阶段产物与执行清单 (A1→A6.3)
+## 阶段产物与执行清单 (A1→A7)
 
 - [x] **A1 (Approved)**：正式数据契约、通用校验器、Job 状态机、VMV Stage 4/5 适配器与测试固件，测试 14/14 通过。
 - [x] **A2 (Approved)**：L1 客观 Evidence Schema 规范、VMV Stage 1 真实产物解析（130 个场景）、防污染只读 EvidenceStore，测试 5/5 通过。
@@ -82,9 +83,24 @@
   - **自动化测试套件全量更新与通过**：
     - 工程总测试扩展至 **83/83 passed**（0 失败，新增 2 项 A6.3 专项测试）；
   - **专题修复报告**：[`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)。
-- [x] **技术债登记**：
-  - **VMV Stage 4/5 适配器消费者集成测试待补**：当前 [`src/contracts/vmv-adapter.mjs`](src/contracts/vmv-adapter.mjs) 仅完成 Schema-level 数据映射与静态校验，尚未经过底层真实 VMV 消费链路（`python -m vmv render`、TTS 与 FFmpeg）的 Consumer Integration Test。在 A7/A8 前必须验证，严禁再写“100%兼容”。
-- [x] **严格守界**：**严禁进入 A7 Director Final，严禁视频剪辑、TTS 与 MP4 合成，原地停止等待真人审核**。
+- [x] **A7 (Awaiting Review)**：Final Director Plan 真实证据终编服务：
+  - **核心导演服务与校验器交付**：
+    - [`src/director/final-director-service.mjs`](src/director/final-director-service.mjs)：严格消费 A6 Top3 真实候选镜头；音频所有权先于旁白；Narration Job 职责先行；
+    - [`src/director/director-evidence-validator.mjs`](src/director/director-evidence-validator.mjs)：严格校验 Evidence Boundary；拦截未支撑客观伪断言（`unsupported_claim`）；杜绝旁白与关键原声硬切打架；
+    - [`src/director/vmv-production-adapter.mjs`](src/director/vmv-production-adapter.mjs)：完成 Final Director Plan 到 VMV Stage 4/5 标准生产单（`version: 1.0.0`）的适配转换，通过 Consumer Contract Test 校验；
+  - **双真实选题 Final Director Plan 生产**：
+    - 选题 B（优先成片）[`src/director/results/director_plan_topic_b.json`](src/director/results/director_plan_topic_b.json) 及生产单 [`src/director/results/vmv_order_topic_b.json`](src/director/results/vmv_order_topic_b.json)；
+    - 选题 A [`src/director/results/director_plan_topic_a.json`](src/director/results/director_plan_topic_a.json) 及生产单 [`src/director/results/vmv_order_topic_a.json`](src/director/results/vmv_order_topic_a.json)；
+  - **`req_wu_03` 显式决议落地**：记录 `director_resolution: "insufficient_evidence"`，执行 `resolution_action: "soften"`，旁白诚实澄清事实缺失并升华至心战试探，拒绝制造假镜头；
+  - **真人审阅 Markdown 视听预览导出**：
+    - [`docs/agent-poc/a7-director-preview-topic-b.md`](docs/agent-poc/a7-director-preview-topic-b.md)；
+    - [`docs/agent-poc/a7-director-preview-topic-a.md`](docs/agent-poc/a7-director-preview-topic-a.md)；
+  - **自动化测试套件全量更新与通过**：
+    - 全工程测试扩展至 **95/95 passed**（新增 12 项 A7 导演视听与契约专项测试）；
+  - **交付技术报告**：[`docs/agent-poc/a7-director-report.md`](docs/agent-poc/a7-director-report.md)。
+- [x] **技术债与集成状态说明**：
+  - **VMV 消费端真实跨语言执行标为 A8 Blocker**：当前适配器已通过真实 VMV Consumer Contract Schema 校验，但由于 `video-moment-validation` 仓库尚未部署 Stage 4/5 真实的 Python CLI (`python -m vmv render`) 与 ffmpeg / TTS 执行环境，真实的跨进程端到端集成测试标为 **A8 Blocker**，严禁虚假宣称“100%兼容”。
+- [x] **严格守界**：**严禁进入 A8，严禁开始视频合成、真实 TTS 与 MP4 导出，原地彻底停止等待真人审核**。
 
 ---
 
@@ -110,10 +126,6 @@
 18. **2026-10-05 12:00**：A6.1 人工审查反馈：**`FAIL / changes_requested`**。指出 4 大核心内容质量阻塞，要求执行 A6.2 修复生成链。
 19. **2026-10-05 12:10**：完成 A6.2 修复：重构 `build_canonical_evidence.mjs`，校准东来顺涮肉馆（谢若林/余则成），剔除 `scene_0125` 吴敬中，引入 370 个 Retrieval Units，落地一致性校验器，全工程 81/81 测试全绿，状态设为 `A6.2 awaiting_human_review`，Commit `2842165`。
 20. **2026-10-05 12:40**：A6.2 人工审查核定 7/8 requirements usable（可用率 87.5% >= 80%），但指出两项收口问题（`req_wu_03` 检索偏离判定 unusable、`req_probe_04` 片尾 OCR 演职员表/歌词污染），要求执行 A6.3。
-21. **2026-10-05 12:45**：完成 POC-AGENT A6.3 全部收口修复：
-    - 查实《潜伏》第18集全片无机要档案室且李涯零出镜，`req_wu_03` 属历史错设；算法收紧物理空间特征与 Grounding 约束，全候选判定为 `reject`，正确返回 **`INSUFFICIENT_EVIDENCE`**，杜绝凑数假命中；
-    - 落地演职员表（`CREDITS_PATTERNS`）与主题曲歌词（`LYRICS_PATTERNS`）清洗管道，全库对白污染率降至 0.0%；`unit_scene_0213_01` 对白置空并退出垄断，`req_probe_04` Top3 100% 回归真实站台蒸汽送别镜头（`scene_0193` / `scene_0188` / `scene_0191`）；
-    - 重跑真实端到端 A5/A6，更新 8 需求独立人工验收包（保持 `pending`，系统自评覆盖率更正为 87.5%）；
-    - 全工程 **83/83 自动化测试全绿**（新增 2 项 A6.3 专项测试）；
-    - 交付专题收口报告 [`docs/agent-poc/a6.3-evidence-closing-report.md`](docs/agent-poc/a6.3-evidence-closing-report.md)；
-    - 当前状态正式设为 **`A6.3 awaiting_final_review`**，原地彻底停止，严禁进入 A7。
+21. **2026-10-05 12:45**：完成 POC-AGENT A6.3 全部收口修复：查实第18集无机要室且李涯零出镜，`req_wu_03` 正确返回 `INSUFFICIENT_EVIDENCE`；演职员表与歌词彻底清洗（污染率 0%）；测试 83/83 全绿；Commit `28accfb`。
+22. **2026-10-05 12:50**：A6 Final Review 审查正式批准通过（**APPROVED**），授权进入 POC-AGENT A7: Director Final 阶段。
+23. **2026-10-05 13:05**：完成 POC-AGENT A7 全部交付：实现 `FinalDirectorService`、`DirectorEvidenceValidator`、`VMVProductionAdapter`；输出双真实选题 Plan、VMV 生产单与 Markdown 视听预览；处理 `req_wu_03` 显式决议；全工程 95/95 测试全绿；当前状态正式设为 **`A7 awaiting_review`**，原地彻底停止，严禁进入 A8。

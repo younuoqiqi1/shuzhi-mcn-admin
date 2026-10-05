@@ -1,0 +1,223 @@
+{
+  "director_plan_id": "plan_topic_qf18_wu_suspicion_v1",
+  "topic_id": "topic_qf18_wu_suspicion",
+  "blogger_id": "laozhou_zhuiju",
+  "target_duration": 33.12,
+  "aspect_ratio": "16:9",
+  "voice_config": {
+    "provider": "aliyun_tts",
+    "voice_id": "zh-CN-laozhou-deep",
+    "speech_rate": 1.05,
+    "pitch_rate": 0.98
+  },
+  "director_resolution_summary": {
+    "insufficient_evidence_count": 1,
+    "resolutions": [
+      {
+        "requirement_id": "req_wu_03",
+        "beat_id": "beat_wu_03_crisis",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "action": "soften",
+        "rationale": "第18集不存在机要室翻查档案镜头；拒绝伪造假镜头，旁白显式澄清事实缺失，将立意转为站长不依赖物理卷宗的心战敲打，使用合法 Top1 unit_scene_0059_01 承载画面。"
+      }
+    ]
+  },
+  "segments": [
+    {
+      "segment_id": "seg_wu_01",
+      "beat_id": "beat_wu_01_hook",
+      "requirement_id": "req_wu_01",
+      "purpose": "开场确立师生博弈基调，抛出吴站长究竟何时开始怀疑的核心悬念",
+      "selected_candidate_id": "cand_req_wu_01_unit_scene_0046_01_5",
+      "retrieval_unit_id": "unit_scene_0046_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0046:unit_scene_0046_01",
+      "parent_scene_id": "scene_0046",
+      "source_in": 310.96,
+      "source_out": 315,
+      "planned_duration": 4.04,
+      "visual_reason": "站长办公室内两人近距离对坐，余则成垂手谨慎，吴站长目光意味深长",
+      "narration_job": "foreshadow",
+      "audio_owner": "narration",
+      "narration_text": "老周聊谍战。许多观众问吴站长到底信不信余则成？第18集这句‘副站长就是你’，表面是提拔栽培，实则是站长布下的一场诛心大局。",
+      "original_dialogue_text": "副站长就是你 谢谢老师栽培",
+      "audio_transition": "fade",
+      "subtitle_mode": "bottom_standard",
+      "evidence_boundary": {
+        "visual_facts": [
+          "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+        ],
+        "dialogue_facts": [
+          "副站长就是你 谢谢老师栽培"
+        ],
+        "characters": [
+          "吴敬中",
+          "余则成"
+        ],
+        "scene_env": "保密局天津站站长办公室办公桌前",
+        "allowed_l3_inferences": [
+          "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
+          "老周视角下的视听叙事推论与观点赋能"
+        ],
+        "strictly_forbidden_claims": [
+          "站长确认余则成是共产党",
+          "余则成在档案室排查照片",
+          "余则成在机要档案室",
+          "李涯当面搜捕余则成"
+        ]
+      },
+      "risk_flags": [],
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ]
+    },
+    {
+      "segment_id": "seg_wu_02",
+      "beat_id": "beat_wu_02_testing",
+      "requirement_id": "req_wu_02",
+      "purpose": "展示吴站长抽雪茄敲山震虎的压迫感原声",
+      "selected_candidate_id": "cand_req_wu_02_unit_scene_0044_01_6",
+      "retrieval_unit_id": "unit_scene_0044_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0044:unit_scene_0044_01",
+      "parent_scene_id": "scene_0044",
+      "source_in": 299.96,
+      "source_out": 305.96,
+      "planned_duration": 6,
+      "visual_reason": "吴站长靠坐大班椅吐烟圈，余则成立正聆听，气场完全碾压",
+      "narration_job": "none",
+      "audio_owner": "original_dialogue",
+      "narration_text": "",
+      "original_dialogue_text": "你来当这个副站长 不合适吧 还是跟李队长商量商量",
+      "audio_transition": "hard_cut",
+      "subtitle_mode": "dialogue_highlight",
+      "evidence_boundary": {
+        "visual_facts": [
+          "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+        ],
+        "dialogue_facts": [
+          "你来当这个副站长 不合适吧 还是跟李队长商量商量"
+        ],
+        "characters": [
+          "吴敬中",
+          "余则成"
+        ],
+        "scene_env": "保密局天津站站长办公室办公桌前",
+        "allowed_l3_inferences": [
+          "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。",
+          "老周视角下的视听叙事推论与观点赋能"
+        ],
+        "strictly_forbidden_claims": [
+          "站长确认余则成是共产党",
+          "余则成在档案室排查照片",
+          "余则成在机要档案室",
+          "李涯当面搜捕余则成"
+        ]
+      },
+      "risk_flags": [],
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ]
+    },
+    {
+      "segment_id": "seg_wu_03",
+      "beat_id": "beat_wu_03_crisis",
+      "requirement_id": "req_wu_03",
+      "purpose": "处理档案室险情节拍：澄清物理档案缺失事实，升华至站长洞悉人性的心理试探",
+      "selected_candidate_id": "cand_req_wu_03_unit_scene_0059_01_8",
+      "retrieval_unit_id": "unit_scene_0059_01",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0059:unit_scene_0059_01",
+      "parent_scene_id": "scene_0059",
+      "source_in": 556.52,
+      "source_out": 573.24,
+      "planned_duration": 16.72,
+      "visual_reason": "两人在站长室内再次机密对话，李涯与站长名字被直接提及，紧迫感十足",
+      "narration_job": "context",
+      "audio_owner": "narration",
+      "narration_text": "老周必须说明：整部第18集里，并没有李涯在机要室搜查余则成物理档案的镜头。为什么？因为在老站长眼里，一纸档案根本不重要，真正致命的是人心。站长始终没有拿到物理卷宗，但他通过一次次言语刺探，早已在心底给余则成打下了问号。",
+      "original_dialogue_text": "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了",
+      "audio_transition": "L_cut",
+      "subtitle_mode": "bottom_standard",
+      "evidence_boundary": {
+        "visual_facts": [
+          "吴站长靠坐在皮椅上翻看文件夹，余则成垂手立于办公桌前"
+        ],
+        "dialogue_facts": [
+          "提防李涯 站长也不可靠 你自己保重吧 金身而退 你说你这么就走了"
+        ],
+        "characters": [
+          "吴敬中",
+          "余则成"
+        ],
+        "scene_env": "保密局天津站站长办公室办公桌前",
+        "allowed_l3_inferences": [
+          "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。",
+          "老周视角下的视听叙事推论与观点赋能"
+        ],
+        "strictly_forbidden_claims": [
+          "站长确认余则成是共产党",
+          "余则成在档案室排查照片",
+          "余则成在机要档案室",
+          "李涯当面搜捕余则成"
+        ]
+      },
+      "risk_flags": [
+        "weak_grounding"
+      ],
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ],
+      "director_resolution": "insufficient_evidence",
+      "resolution_action": "soften"
+    },
+    {
+      "segment_id": "seg_wu_04",
+      "beat_id": "beat_wu_04_conclusion",
+      "requirement_id": "req_wu_04",
+      "purpose": "收束全片论点：看穿不戳穿、留有余地才是老谋深算站长的真正驭人之道",
+      "selected_candidate_id": "cand_req_wu_04_unit_scene_0047_04_3",
+      "retrieval_unit_id": "unit_scene_0047_04",
+      "evidence_id": "qianfu_ep18_720p_25fps:scene_0047:unit_scene_0047_04",
+      "parent_scene_id": "scene_0047",
+      "source_in": 327,
+      "source_out": 333.36,
+      "planned_duration": 6.36,
+      "visual_reason": "谈及钱财与值钱家当，神态深沉克制，生动诠释保密局利益至上潜规则",
+      "narration_job": "interpretation",
+      "audio_owner": "narration",
+      "narration_text": "在老周看来，吴敬中从不追求‘余则成到底是不是共产党’的纯粹真相。只要你能帮我搞金佛、捞美钞，看破不戳破，才是这位保密局官场不倒翁的终极生存法则。",
+      "original_dialogue_text": "她怕有人查她家 好像他们家有很多值钱的东西",
+      "audio_transition": "duck",
+      "subtitle_mode": "bottom_standard",
+      "evidence_boundary": {
+        "visual_facts": [
+          "吴站长用火柴点燃雪茄，烟雾在暗调办公室内弥漫"
+        ],
+        "dialogue_facts": [
+          "她怕有人查她家 好像他们家有很多值钱的东西"
+        ],
+        "characters": [
+          "吴敬中",
+          "余则成"
+        ],
+        "scene_env": "保密局天津站站长办公室办公桌前",
+        "allowed_l3_inferences": [
+          "老周视角：在体制内，一把手点烟不说话、或者突然跟你聊贪官杀头的时候，往往是最危险的时刻。站长借题发挥敲山震虎，用世俗利益的假面来试探下属的真实底牌，老辣至极。",
+          "老周视角下的视听叙事推论与观点赋能"
+        ],
+        "strictly_forbidden_claims": [
+          "站长确认余则成是共产党",
+          "余则成在档案室排查照片",
+          "余则成在机要档案室",
+          "李涯当面搜捕余则成"
+        ]
+      },
+      "risk_flags": [],
+      "characters": [
+        "吴敬中",
+        "余则成"
+      ]
+    }
+  ]
+}
