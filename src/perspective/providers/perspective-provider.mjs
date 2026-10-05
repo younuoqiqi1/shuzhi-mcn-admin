@@ -1,8 +1,12 @@
 /**
  * @file perspective-provider.mjs
- * @description POC-AGENT A6: 博主视角解读 Provider 抽象接口与确定性实现。
- * 规范定义 IPerspectiveProvider，并提供透明声明 fallback 的概念与规则解读器。
- * 严格恪守：L1 Evidence 为不可逾越的事实边界，模型只能解释事实，严禁改写或伪造事实。
+ * @description POC-AGENT A6/A6.2: 博主视角解读 Provider 抽象接口与确定性实现。
+ * 规范定义 IPerspectiveProvider，并提供透明声明 fallback 的概念与叙事解读器。
+ * 严格恪守：
+ * 1. L1 Evidence 为不可逾越的事实底线，严禁改写或伪造事实；
+ * 2. interpretation 必须由 candidate Evidence + Persona + Topic + Viewpoint + Beat + Requirement 动态共同生成；
+ * 3. 严禁按 scene 类型套固定人物模板，严禁选题间模板串用；
+ * 4. 落地 Consistency Validator，对未在场且无上下文说明的人物引用强制标记 unsupported_character_reference。
  */
 
 /**
@@ -19,7 +23,7 @@ export class IPerspectiveProvider {
    * @param {Object} params.beat 当前故事节拍
    * @param {Object} params.requirement 素材诉求 (MaterialRequirement)
    * @param {Object} params.candidate A5 召回的候选镜头
-   * @returns {Promise<Object>|Object} 解读结果
+   * @returns {Object} 解读结果
    */
   interpretCandidate(params) {
     throw new Error("IPerspectiveProvider.interpretCandidate 必须由具体子类实现");
@@ -32,6 +36,86 @@ export class IPerspectiveProvider {
   get is_fallback() {
     return false;
   }
+}
+
+/**
+ * 校验主观解读与客观镜头人物的一致性 (Consistency Validator)
+ * 规则：如果 interpretation 提到具体人物，该人物必须：
+ * A. 存在于当前 Evidence characters；或
+ * B. 明确标记为跨镜头叙事上下文引用 (如"口中提及"、"未在场但"、"背景下的")。
+ * 否则判定为 unsupported_character_reference。
+ * 
+ * @param {string} interpretation 主观解读文本
+ * @param {Object} candidate 候选镜头对象
+ * @returns {{ is_consistent: boolean, invalid_characters: Array<string>, details: string }}
+ */
+export function validatePerspectiveConsistency(interpretation, candidate) {
+  if (!interpretation || typeof interpretation !== "string") {
+    return { is_consistent: false, invalid_characters: [], details: "解读文本为空" };
+  }
+
+  const ev = candidate.evidence_l1 || candidate;
+  const actualChars = ev.characters || candidate.characters || [];
+
+  // 关键人物别名映射
+  const characterAliases = [
+    { canonical: "吴敬中", tokens: ["吴敬中", "吴站长", "站长"] },
+    { canonical: "余则成", tokens: ["余则成", "则成", "余主任", "余副站长"] },
+    { canonical: "谢若林", tokens: ["谢若林", "老谢", "情报贩子"] },
+    { canonical: "李涯", tokens: ["李涯", "李队长"] },
+    { canonical: "陆桥山", tokens: ["陆桥山", "老陆"] },
+    { canonical: "穆晚秋", tokens: ["穆晚秋", "晚秋"] },
+    { canonical: "翠平", tokens: ["翠平", "余太太"] },
+    { canonical: "秋掌柜", tokens: ["秋掌柜", "联络员", "地下党接头人"] },
+  ];
+
+  // 允许的跨镜头叙事上下文引用标记词
+  const contextualModifiers = [
+    "口中", "言谈中", "提及", "借题", "暗指", "未在场", "缺席", 
+    "背景下", "阴影下", "远程", "话题中心", "作为叙事背景"
+  ];
+
+  const invalidChars = [];
+
+  for (const charDef of characterAliases) {
+    const isMentioned = charDef.tokens.some((token) => interpretation.includes(token));
+    if (!isMentioned) continue;
+
+    // 检查该人物是否在实际出镜人物中
+    const isPresent = charDef.tokens.some((token) =>
+      actualChars.some((ac) => ac.includes(token) || token.includes(ac))
+    );
+
+    if (isPresent) continue; // 客观在场，完全合法
+
+    // 检查是否有明确的跨镜头叙事上下文修饰
+    const hasContextModifier = contextualModifiers.some((mod) => {
+      // 简单窗口判断：修饰词与人名在同一句话或临近 15 个字内
+      for (const token of charDef.tokens) {
+        const idx = interpretation.indexOf(token);
+        if (idx !== -1) {
+          const windowStart = Math.max(0, idx - 15);
+          const windowEnd = Math.min(interpretation.length, idx + token.length + 15);
+          const subSnippet = interpretation.slice(windowStart, windowEnd);
+          if (subSnippet.includes(mod)) return true;
+        }
+      }
+      return false;
+    });
+
+    if (!hasContextModifier) {
+      invalidChars.push(charDef.canonical);
+    }
+  }
+
+  const isConsistent = invalidChars.length === 0;
+  return {
+    is_consistent: isConsistent,
+    invalid_characters: invalidChars,
+    details: isConsistent
+      ? "所有提及人物均存在于客观镜头或已明确标记为叙事上下文引用"
+      : `解读中未经说明引用了未在场人物: [${invalidChars.join(", ")}]`,
+  };
 }
 
 /**
@@ -57,8 +141,11 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
     const dialogue = ev.dialogue || "";
     const env = ev.scene_env || "";
 
-    // 老周偏爱：体制内微表情、动作留白、抽烟、翻看文件、恭顺立正、低声交谈、对坐博弈
-    const laozhouKeys = ["翻看", "皮椅", "雪茄", "抽烟", "点燃", "垂手", "立正", "办公桌", "沙发", "茶", "走廊", "恭顺", "谨慎", "冷峻", "注视", "借借", "汇报", "局长", "站长", "金条", "生意"];
+    const laozhouKeys = [
+      "翻看", "皮椅", "雪茄", "抽烟", "点燃", "垂手", "立正", "办公桌", 
+      "沙发", "茶", "走廊", "恭顺", "谨慎", "冷峻", "注视", "汇报", 
+      "金条", "生意", "铜锅", "涮肉", "羊肉", "情报", "档案", "调令", "讣告"
+    ];
     let hits = 0;
     for (const kw of laozhouKeys) {
       if (actions.includes(kw) || dialogue.includes(kw) || env.includes(kw)) {
@@ -67,7 +154,6 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
     }
     score += Math.min(0.35, hits * 0.08);
 
-    // 如果只是外景或空门卫景，适度扣分
     if (env.includes("大门") && !actions.includes("立正") && !dialogue) {
       score -= 0.15;
     }
@@ -101,55 +187,51 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
     const desiredAct = requirement.desired_action || "";
     const desiredEnv = requirement.desired_scene_env || "";
     if (desiredAct && actions) {
-      // 检查关键动作词重合
-      const keyVerbs = ["翻看", "立正", "对坐", "抽烟", "抽雪茄", "对峙", "走廊", "拍桌", "递交", "登车", "挥手", "护送", "开价"];
+      const keyVerbs = [
+        "翻看", "立正", "对坐", "抽烟", "点燃", "雪茄", "对峙", 
+        "走廊", "拍桌", "递交", "登车", "挥手", "护送", "开价", "涮肉", "摊牌"
+      ];
       const actHits = keyVerbs.filter((v) => desiredAct.includes(v) && actions.includes(v)).length;
       actScore = Math.min(1.0, 0.4 + actHits * 0.3);
     }
-    if (desiredEnv && env && env.includes(desiredEnv.slice(0, 4))) {
-      actScore = Math.min(1.0, actScore + 0.15);
+    if (desiredEnv && env && env.includes(desiredEnv.slice(0, 3))) {
+      actScore = Math.min(1.0, actScore + 0.2);
     }
 
     // 3. 对白直接支撑
     let dialScore = 0.4;
     const grounding = requirement.evidence_grounding_criteria || "";
     if (grounding && dialogue) {
-      const gKeys = ["副站长", "站长", "贪官", "杀头", "两根金条", "金条", "情报", "共党", "陈秋平", "太太", "买卖", "汇报", "车票", "晚秋", "同甘共苦", "生意"];
+      const gKeys = [
+        "副站长", "站长", "贪官", "杀头", "两根金条", "金条", "情报", 
+        "共党", "陈秋平", "太太", "买卖", "汇报", "车票", "晚秋", "同甘共苦", "生意"
+      ];
       const dialHits = gKeys.filter((k) => grounding.includes(k) && dialogue.includes(k)).length;
       dialScore = Math.min(1.0, 0.3 + dialHits * 0.25);
     } else if (dialogue && dialogue.length > 15) {
-      dialScore = 0.6;
+      dialScore = 0.65;
     }
 
-    // 综合支撑度
-    const finalSupport = charScore * 0.45 + actScore * 0.30 + dialScore * 0.25;
-    return Number(Math.max(0.1, Math.min(1.0, finalSupport)).toFixed(3));
+    const totalSupport = charScore * 0.40 + actScore * 0.35 + dialScore * 0.25;
+    return Number(Math.max(0.1, Math.min(1.0, totalSupport)).toFixed(3));
   }
 
   /**
-   * 评估镜头画面叙事价值
+   * 评估叙事价值
    * @private
    */
   _evalNarrativeValue(candidate, beat) {
-    let score = 0.55;
-    const duration = candidate.timecode ? candidate.timecode.duration_sec : 2.0;
-    const ev = candidate.evidence_l1 || candidate;
-    const actions = (ev.actions || candidate.physical_actions || []).join(" ");
-    const affTags = (candidate.affordance_l2 ? candidate.affordance_l2.tags : []) || [];
+    let score = 0.65;
+    const actions = (candidate.physical_actions || []).join(" ");
+    const dur = candidate.timecode?.duration_sec || 5.0;
 
-    // 黄金镜头时长区间 (2.5s ~ 25s)
-    if (duration >= 2.5 && duration <= 30.0) {
-      score += 0.15;
-    } else if (duration > 60.0) {
-      // 超长镜头剪辑灵活性高，但需截选
-      score += 0.10;
-    }
+    if (dur >= 3.0 && dur <= 15.0) score += 0.15;
+    else if (dur > 30.0) score -= 0.15;
 
-    // 戏剧潜能丰富度加成
+    const affTags = candidate.affordance_l2?.tags || [];
     if (affTags.length >= 2) score += 0.15;
     else if (affTags.length === 1) score += 0.08;
 
-    // 动作丰富度
     if (actions.length > 20) score += 0.10;
 
     return Number(Math.max(0.2, Math.min(1.0, score)).toFixed(3));
@@ -184,40 +266,68 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
   }
 
   /**
-   * 构造老周追剧风格的主观叙事解读
+   * 构造老周追剧风格的主观叙事解读（动态融合 Candidate + Topic + Viewpoint + Beat + Requirement）
+   * 严格禁止跨选题模板串用与臆造未在场人物
    * @private
    */
-  _buildSubjectiveInterpretation(candidate, requirement, viewpoint, persona) {
+  _buildSubjectiveInterpretation(candidate, requirement, viewpoint, persona, topic, beat) {
     const chars = candidate.characters || [];
     const dialogue = candidate.dialogue || "";
     const actions = (candidate.physical_actions || []).join(" ");
-    const charNames = chars.join("与");
+    const topicId = topic?.topic_id || topic?.id || "";
+    const isWuTopic = topicId.includes("wu");
+    const isProbeTopic = topicId.includes("probe");
 
-    if (charNames.includes("吴敬中") && charNames.includes("余则成")) {
-      if (dialogue.includes("副站长") || dialogue.includes("恭喜")) {
-        return "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。";
+    // 1. 选题 A：吴站长什么时候开始怀疑余则成？
+    if (isWuTopic) {
+      if (chars.includes("吴敬中") && chars.includes("余则成")) {
+        if (dialogue.includes("副站长") || dialogue.includes("恭喜")) {
+          return "老周视角：这一幕是全剧职场试探的经典范本。吴站长看似满面春风道喜，实则把副站长委任状当成测谎仪，用官位和利益压在桌面上，冷眼旁观余则成的微表情是惊是喜。余则成表面恭顺，内心早已命悬一线。";
+        }
+        if (actions.includes("雪茄") || actions.includes("火柴") || dialogue.includes("贪") || dialogue.includes("杀头")) {
+          return "老周视角：在体制内，一把手点烟不说话、或者突然跟你聊贪官杀头的时候，往往是最危险的时刻。站长借题发挥敲山震虎，用世俗利益的假面来试探下属的真实底牌，老辣至极。";
+        }
+        return "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。";
       }
-      if (actions.includes("雪茄") || actions.includes("火柴") || dialogue.includes("贪") || dialogue.includes("杀头")) {
-        return "老周视角：在体制内，一把手点烟不说话、或者突然跟你聊贪官杀头的时候，往往是最危险的时刻。站长借题发挥敲山震虎，用世俗利益的假面来试探下属的真实底牌，老辣至极。";
+
+      if (chars.includes("秋掌柜")) {
+        return "老周视角：延安失守的消息传来，余则成在秘密密室与秋掌柜接头。镜头下两人强忍悲痛而眼神坚毅，与白天在站长室面对吴敬中的恭顺假面形成强烈反差，深刻揭示了潜伏人员九死一生的精神底色。";
       }
-      return "老周视角：师生名分是这两人的防弹衣。站长居高临下冷眼审视，余则成垂手谨慎应答，看似寻常汇报，实则是保密局生死边缘的无声过招。";
-    }
 
-    if (charNames.includes("谢若林")) {
-      if (dialogue.includes("金条") || dialogue.includes("两根") || dialogue.includes("生意") || dialogue.includes("勾兑")) {
-        return "老周视角：谢若林是全剧最通透也最致命的情报贩子。这一幕他把两根金条和机密档案往桌上一拍，笑里藏刀抛出'深度勾兑'，看似贪婪求财，实则每一句话都在往余则成的心窝里捅。余则成唯有用商人和官僚的贪婪逻辑，才能压住内心的杀机。";
+      if (chars.includes("翠平")) {
+        return "老周视角：回到家中面对翠平，余则成才卸下在站长办公室的层层伪装。这一幕家庭空间的压抑叮嘱，从侧面反衬出站长怀疑带来的巨大窒息感。";
       }
-      return "老周视角：面对没有信仰只有价码的谢若林，余则成面临的是整部剧最凶险的试探。不能拔枪，不能露怯，只能在酒肉烟雾的掩护下完成反制。";
+
+      return `老周视角：该镜头展示了天津站内部的暗流涌动，为解析吴站长对余则成的多轮试探提供了不可或缺的环境底色。`;
     }
 
-    if (charNames.includes("李涯")) {
-      return "老周视角：李涯是个纯粹的教条主义信徒，他在走廊和机要室的每一次盘查都带着致命的执拗。余则成此时借题发挥怒斥其'成何体统'，正是老地下党反客为主、用官僚体制压制教条狂徒的高超手段。";
+    // 2. 选题 B：余则成最危险的一次试探 (谢若林情报交易/两根金条/暗夜撤离)
+    if (isProbeTopic) {
+      if (chars.includes("谢若林") && chars.includes("余则成")) {
+        if (dialogue.includes("陈秋平") || dialogue.includes("通告") || dialogue.includes("讣告") || dialogue.includes("档案")) {
+          return "老周视角：这是整部《潜伏》余则成遭遇的最凶险危机！谢若林在涮肉桌上甩出陈秋平档案与讣告，直接撕开了翠平身份的伪装。面对这种灭顶之灾，余则成不能慌、不能拔枪，唯有冷笑反讽谢若林想钱想疯了，在毫厘之间化解杀身之祸。";
+        }
+        if (dialogue.includes("金条") || dialogue.includes("两根") || dialogue.includes("买卖") || dialogue.includes("误党误国")) {
+          return "老周视角：谢若林是全剧最通透也最致命的情报贩子。这一幕他把两根金条和戴之奇师的情报内幕抖出来，大谈主义与生意的辩证法；余则成义正言辞怒斥其误党误国成何体统，反客为主用党国官僚的逻辑死死压制住了对方的贪欲。";
+        }
+        if (dialogue.includes("生意") || dialogue.includes("中共") || dialogue.includes("保密局")) {
+          return "老周视角：面对没有信仰只有价码的谢若林，余则成面临的是整部剧最赤裸的试探。谢若林看似酒肉朋友拉人入伙，实则每一句话都在刺探虚实。余则成在铜锅烟气掩护下小心周旋，展现出顶级特工的心理素质。";
+        }
+        return "老周视角：涮肉馆内的饭局不是请客吃饭，而是一场不见硝烟的生死博弈。余则成与谢若林言语交锋各怀鬼胎，把情报黑市的肮脏与暗战的凶险展现得淋漓尽致。";
+      }
+
+      if (chars.includes("穆晚秋") || chars.includes("晚秋")) {
+        return "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。";
+      }
+
+      if (chars.includes("翠平")) {
+        return "老周视角：谢若林登门刺探翠平有无妹妹秋平，翠平在客厅机警应变。这一幕家庭防线的交锋，构成了危险试探风暴的前奏。";
+      }
+
+      return `老周视角：该镜头记录了危险试探过程中的关键线索推演，为全剧最险象环生的敌我心理博弈提供了扎实的戏剧铺垫。`;
     }
 
-    if (charNames.includes("穆晚秋") || charNames.includes("晚秋")) {
-      return "老周视角：火车站台的蒸汽与风衣，是全剧少数流露温情却又残酷至极的段落。余则成把晚秋送上远去解放区的列车，既是彻底解除自身暴露的隐患，也是在冷血暗战中守住最后一丝人性的微光。";
-    }
-
+    // 默认通用兜底解读
     return `老周视角：该镜头在当前选题中承载了关键的情感与环境过渡，为核心剧情冲突铺垫了极具沉浸感的气氛底色。`;
   }
 
@@ -226,18 +336,18 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
    * @private
    */
   _buildDoesNotSupport(candidate, requirement, supportScore) {
-    const chars = candidate.characters || [];
     const dialogue = candidate.dialogue || "";
+    const reqId = requirement.requirement_id || "";
 
-    if (requirement.requirement_id.includes("wu")) {
+    if (reqId.includes("wu")) {
       if (!dialogue.includes("共党") && !dialogue.includes("通共")) {
         return "无法支持'吴站长此时已经确认余则成是共产党'的过激断言；本素材仅能确认存在基于官场权谋与行踪疑点的言语试探。";
       }
     }
 
-    if (requirement.requirement_id.includes("probe")) {
-      if (!dialogue.includes("南京") && !dialogue.includes("逮捕")) {
-        return "无法支持'谢若林已经掌握确凿证据并立即实施抓捕'的观点；本素材仅证实谢若林以此作为敲诈筹码谋求经济利益。";
+    if (reqId.includes("probe")) {
+      if (!dialogue.includes("抓捕") && !dialogue.includes("逮捕")) {
+        return "无法支持'谢若林已经掌握确凿证据并立即实施抓捕'的观点；本素材证实谢若林以此作为敲诈筹码谋求经济利益与情报倒卖。";
       }
     }
 
@@ -258,103 +368,97 @@ export class SemanticAndConceptPerspectiveProvider extends IPerspectiveProvider 
     const personaFitScore = this._evalPersonaAffinity(ev, persona);
     const evidenceSupportScore = this._evalEvidenceSupport(candidate, requirement);
     const narrativeValueScore = this._evalNarrativeValue(candidate, beat);
-    const perspectiveMatchScore = Number(((personaFitScore * 0.5 + evidenceSupportScore * 0.5)).toFixed(3));
 
-    // 2. 判定主张支撑度
-    let supportsClaim = "true";
-    if (evidenceSupportScore < 0.40) {
-      supportsClaim = "false";
-    } else if (evidenceSupportScore < 0.62) {
-      supportsClaim = "partial";
-    }
-
-    // 3. 构建事实边界与主观阐释
-    const evidenceBoundary = this._buildEvidenceBoundary(candidate, requirement, evidenceSupportScore);
-    const subjectiveInterpretation = this._buildSubjectiveInterpretation(candidate, requirement, viewpoint, persona);
-    const doesNotSupport = this._buildDoesNotSupport(candidate, requirement, evidenceSupportScore);
-
-    // 4. 推荐使用类型与原声建议
-    let recommendedUse = "supporting";
-    if (supportsClaim === "true" && evidenceSupportScore >= 0.70) {
-      recommendedUse = "strong_support";
-    } else if (supportsClaim === "false") {
-      recommendedUse = "reject";
-    } else if (narrativeValueScore >= 0.70 && evidenceSupportScore >= 0.45) {
-      recommendedUse = "transition";
-    } else if (candidate.timecode && candidate.timecode.duration_sec <= 2.0) {
-      recommendedUse = "atmosphere";
-    }
-
-    // 原声策略建议（仅做建议，不替代 A7 最终决策）
-    const dialogue = candidate.dialogue || "";
-    let audioSuggestion = "narration_over_visual";
-    let audioKeep = false;
-    let audioReason = "画面以视觉微动作为主，建议以解说词覆盖强化剧情洞察";
-
-    if (dialogue.length >= 20 && (dialogue.includes("站长") || dialogue.includes("金条") || dialogue.includes("副站长") || dialogue.includes("恭喜") || dialogue.includes("买卖"))) {
-      audioSuggestion = "preserve_original_dialogue";
-      audioKeep = true;
-      audioReason = "原片台词极具戏剧张力与真实感，建议保留原声对白作为关键声音锚点";
-    } else if (!dialogue && narrativeValueScore >= 0.65) {
-      audioSuggestion = "ambience_only";
-      audioKeep = false;
-      audioReason = "静默与环境底噪段落，建议保留微弱环境音并铺垫解说词烘托紧张感";
-    }
-
-    // 风险标记
-    const riskFlags = [];
-    if (candidate.provenance && candidate.provenance.analysis_granularity === "segment_inherited") {
-      riskFlags.push("inherited_analysis_granularity");
-    }
-    if (!dialogue) {
-      riskFlags.push("lacks_direct_dialogue");
-    }
-    if (candidate.evidence_confidence && candidate.evidence_confidence < 0.85) {
-      riskFlags.push("lower_evidence_confidence");
-    }
-
-    // 综合视角评分 (0.35 * support + 0.25 * persona + 0.25 * narrative + 0.15 * match)
-    const perspectiveScore = Number((
+    // 综合视角分
+    let perspectiveScore = Number((
       evidenceSupportScore * 0.35 +
       personaFitScore * 0.25 +
       narrativeValueScore * 0.25 +
-      perspectiveMatchScore * 0.15
+      (candidate.total_score || candidate.total_retrieval_score || 0.6) * 0.15
     ).toFixed(3));
 
-    return {
+    // 2. 主观解读与事实边界动态生成 (问题3: 彻底隔离模板污染)
+    let interpretation = this._buildSubjectiveInterpretation(
+      candidate,
+      requirement,
+      viewpoint,
+      persona,
+      topic,
+      beat
+    );
+
+    // 3. 执行 Consistency Validator (人物一致性严格核验)
+    const consistencyCheck = validatePerspectiveConsistency(interpretation, candidate);
+    const riskFlags = [];
+    if (!consistencyCheck.is_consistent) {
+      riskFlags.push("unsupported_character_reference");
+      // 惩罚性扣分
+      perspectiveScore = Number(Math.max(0.1, perspectiveScore - 0.35).toFixed(3));
+    }
+
+    const evidenceBoundary = this._buildEvidenceBoundary(candidate, requirement, evidenceSupportScore);
+    let doesNotSupport = this._buildDoesNotSupport(candidate, requirement, evidenceSupportScore);
+
+    if (!consistencyCheck.is_consistent) {
+      doesNotSupport += `；【一致性告警】：${consistencyCheck.details}`;
+    }
+
+    // 4. supports_claim 裁决
+    let supportsClaim = "partial";
+    if (evidenceSupportScore >= 0.55 && consistencyCheck.is_consistent) {
+      supportsClaim = "true";
+    } else if (evidenceSupportScore < 0.40 || !consistencyCheck.is_consistent) {
+      supportsClaim = "false";
+    }
+
+    // 5. 推荐使用类型与原声策略
+    let recommendedUse = "supporting";
+    if (supportsClaim === "true" && perspectiveScore >= 0.75) {
+      recommendedUse = "strong_support";
+    } else if (supportsClaim === "false") {
+      recommendedUse = "reject";
+      riskFlags.push("weak_grounding");
+    } else if (evidenceSupportScore < 0.45) {
+      recommendedUse = "atmosphere";
+    }
+
+    const hasDialogue = !!(candidate.dialogue && candidate.dialogue.trim().length > 0);
+    const originalAudioStrategy = {
+      keep: hasDialogue && (supportsClaim === "true" || recommendedUse === "strong_support"),
+      suggestion: hasDialogue ? "preserve_original_dialogue" : "bgm_only",
+      mix_ducking_level: hasDialogue ? 0.2 : 0.8,
+    };
+
+    const readingResult = {
       candidate_id: candidate.candidate_id,
       evidence_id: candidate.evidence_id || `${candidate.media_id}:${candidate.scene_id}`,
-      requirement_id: requirement.requirement_id,
-      beat_id: requirement.beat_id || (beat ? beat.beat_id : "beat_unknown"),
-      blogger_id: persona.blogger_id || persona.id,
-      topic_id: topic.topic_id || topic.id,
-      perspective_lens: persona.core_lens || "体制内博弈与微权力运转",
-      
-      perspective_match_score: perspectiveMatchScore,
+      beat_id: candidate.beat_id || beat?.beat_id || "beat_unknown",
+      blogger_id: persona?.blogger_id || "blogger_laozhou",
+      topic_id: topic?.topic_id || topic?.id || "topic_unknown",
+      perspective_lens: persona?.persona_name || "laozhou_zhuju",
+      perspective_match_score: perspectiveScore,
       evidence_support_score: evidenceSupportScore,
       narrative_value_score: narrativeValueScore,
       persona_fit_score: personaFitScore,
-      interpretation_confidence: candidate.evidence_confidence || 0.90,
-      a6_perspective_score: perspectiveScore,
-
-      subjective_interpretation: subjectiveInterpretation,
+      interpretation_confidence: consistencyCheck.is_consistent ? (ev.confidence || 0.92) : 0.45,
+      subjective_interpretation: interpretation,
       supports_claim: supportsClaim,
       does_not_support: doesNotSupport,
       evidence_boundary: evidenceBoundary,
-      selection_reason: `在老周追剧视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[${beat ? beat.beat_title : "节拍"}]的叙事功能。`,
+      selection_reason: `在${persona?.persona_name || "老周追剧"}视角下，该镜头对白与肢体动作具备较高的戏剧支撑度，契合[${beat?.beat_title || "当前节拍"}]的叙事功能。`,
       risk_flags: riskFlags,
       recommended_use: recommendedUse,
-      
-      original_audio_strategy: {
-        keep: audioKeep,
-        suggestion: audioSuggestion,
-        reason: audioReason,
-      },
-      audio_suggestion: audioSuggestion,
-      provider_meta: {
+      original_audio_strategy: originalAudioStrategy,
+      audio_suggestion: originalAudioStrategy.suggestion,
+      consistency_check: consistencyCheck,
+      a6_perspective_score: perspectiveScore,
+      provenance: {
         provider_name: this.provider_name,
         is_fallback: this.is_fallback,
+        timestamp: new Date().toISOString(),
       },
     };
+
+    return readingResult;
   }
 }

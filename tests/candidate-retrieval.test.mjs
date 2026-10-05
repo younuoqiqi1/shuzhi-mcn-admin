@@ -31,16 +31,21 @@ describe("POC-AGENT A5: 候选镜头召回 Retrieval Pipeline", () => {
   const topicA = JSON.parse(fs.readFileSync(topicAPath, "utf8"));
   const topicB = JSON.parse(fs.readFileSync(topicBPath, "utf8"));
 
-  it("1. 真实 canonical Evidence 数据载入完整性 (235镜头，2702s全覆盖，无手工mock)", () => {
-    assert.ok(Array.isArray(service.evidenceLibrary), "evidenceLibrary 必须是数组");
-    assert.strictEqual(service.evidenceLibrary.length, 235, "必须加载全部 235 个客观镜头");
+  it("1. 真实 canonical Evidence 数据载入完整性 (235镜头与细颗粒度 Retrieval Units，2702s全覆盖，无手工mock)", () => {
+    assert.ok(Array.isArray(service.canonicalScenes), "canonicalScenes 必须是数组");
+    assert.strictEqual(service.canonicalScenes.length, 235, "必须加载全部 235 个客观镜头");
 
-    const first = service.evidenceLibrary[0];
-    const last = service.evidenceLibrary[service.evidenceLibrary.length - 1];
+    const first = service.canonicalScenes[0];
+    const last = service.canonicalScenes[service.canonicalScenes.length - 1];
 
     assert.strictEqual(first.timecode.in, "00:00:00.000", "首镜头从 0 秒开始");
     assert.strictEqual(last.timecode.out, "00:45:02.013", "尾镜头覆盖至约 2702.013s (45:02.013)");
-    assert.ok(service.evidenceLibrary.every((ev) => ev.scene_id && ev.evidence_id), "所有条目具有真实唯一标识");
+    assert.ok(service.canonicalScenes.every((ev) => ev.scene_id && ev.evidence_id), "所有条目具有真实唯一标识");
+
+    // 细分 Retrieval Units 检索单元断言 (问题4: 以 retrieval unit 为实际候选单位)
+    assert.ok(Array.isArray(service.evidenceLibrary));
+    assert.ok(service.evidenceLibrary.length >= 235, "细分 Retrieval Units 数量应不少于宏观场景数");
+    assert.ok(service.evidenceLibrary.every((u) => u.unit_id && u.parent_scene_id), "检索单元必须挂载 parent_scene_id 与 unit_id");
   });
 
   it("2. L2 通用叙事潜能库加载与 AffordanceStore 协同", () => {

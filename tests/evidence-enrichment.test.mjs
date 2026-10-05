@@ -133,12 +133,13 @@ test("A4.5 Real Enriched Evidence: verifies authentic characters, dialogue, acti
   assert.ok(scene49.characters.includes("余则成") || scene49.characters.includes("翠平"));
   assert.ok(scene49.physical_actions.length > 0);
 
-  // Scene 125-130: 谢若林与余则成吃面和调查陈秋平
+  // Scene 125: 谢若林与余则成在涮肉馆谈生意与调查陈秋平 (真实环境对齐)
   const scene125 = enriched.find((e) => e.scene_id === "scene_0125");
   assert.ok(scene125);
   assert.ok(scene125.characters.includes("谢若林"));
   assert.ok(scene125.characters.includes("余则成"));
-  assert.equal(scene125.scene_env, "谢若林穆晚秋寓所餐厅与客厅");
+  assert.strictEqual(scene125.characters.includes("吴敬中"), false, "scene_0125 严禁污染包含吴敬中");
+  assert.ok(scene125.scene_env.includes("涮肉") || scene125.scene_env.includes("餐桌"), "真实物理环境为涮肉馆餐桌");
 
   // 3. 统计指标断言：绝大多数场景已补齐真实台词和人物
   const withDialogue = enriched.filter((e) => e.dialogue && e.dialogue.trim()).length;

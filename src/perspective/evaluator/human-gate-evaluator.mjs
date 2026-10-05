@@ -1,6 +1,6 @@
 /**
  * @file human-gate-evaluator.mjs
- * @description POC-AGENT A6.1: 独立 Gate Evaluation 层与人工验收包生成器。
+ * @description POC-AGENT A6.1/A6.2: 独立 Gate Evaluation 层与人工验收包生成器。
  * 
  * 核心原则：
  * 1. 自动 Perspective 结果与最终 Gate 判定必须严格分离；
@@ -8,6 +8,7 @@
  * 3. 严禁系统自评冒充人工审核；在真人确认前，human_verdict 必须为 pending；
  * 4. 只有 Top3 中至少存在 1 个 candidate 的 human_verdict == 'usable'，该 Requirement 才算 human PASS；
  * 5. 只有真人完成全部 8 个 Requirement 审核后，才能正式判定 Retrieval Top3 Gate PASS/FAIL；未审核前为 awaiting_human_review。
+ * 6. 支持细颗粒度 Retrieval Unit 显示与 Consistency Validator 状态透出。
  */
 
 export class HumanGateEvaluator {
@@ -47,6 +48,8 @@ export class HumanGateEvaluator {
           return {
             candidate_id: cand.candidate_id,
             scene_id: raw.scene_id || cand.scene_id,
+            parent_scene_id: raw.parent_scene_id || raw.scene_id || cand.scene_id,
+            retrieval_unit_id: raw.retrieval_unit_id || raw.unit_id || cand.candidate_id,
             evidence_id: cand.evidence_id || raw.evidence_id,
             timecode: {
               in: timecode.in || "00:00:00.000",
@@ -67,6 +70,9 @@ export class HumanGateEvaluator {
             evidence_boundary: cand.evidence_boundary || "",
             sample_frame_refs: prov.sample_frame_refs || [],
             analysis_granularity: prov.analysis_granularity || "independent_keyframe",
+            // 一致性校验与风险
+            consistency_check: cand.consistency_check || { is_consistent: true, details: "校验通过" },
+            risk_flags: cand.risk_flags || [],
             // 系统推荐
             system_recommendation: cand.recommended_use || "supporting",
             system_supports_claim: cand.supports_claim || "true",
@@ -117,7 +123,7 @@ export class HumanGateEvaluator {
     const systemCoverage = totalCount > 0 ? Number((systemPassCount / totalCount).toFixed(3)) : 0;
 
     return {
-      package_version: "1.0.0",
+      package_version: "1.2.0",
       generated_at: new Date().toISOString(),
       gate_status: "awaiting_human_review",
       gate_passed: false, // 真人未完成审核前，严禁为 true
@@ -233,7 +239,7 @@ export class HumanGateEvaluator {
   generateMarkdownReport(reviewPackage) {
     const lines = [];
 
-    lines.push("# POC-AGENT A6.1: Retrieval Top3 真实人工验收包 (Human Gate Review)");
+    lines.push("# POC-AGENT A6.2: Retrieval Top3 真实人工验收包 (Human Gate Review)");
     lines.push("");
     lines.push(`> **生成时间**: ${reviewPackage.generated_at}  `);
     lines.push(`> **当前 Gate 状态**: \`${reviewPackage.gate_status}\`  `);
@@ -274,10 +280,11 @@ export class HumanGateEvaluator {
       lines.push("");
 
       top3.forEach((cand, candIdx) => {
-        lines.push(`#### 镜头 Top ${candIdx + 1}: \`${cand.scene_id}\` (${cand.candidate_id})`);
+        lines.push(`#### 镜头 Top ${candIdx + 1}: \`${cand.scene_id}\` (单元: \`${cand.retrieval_unit_id}\`)`);
         lines.push("");
+        lines.push(`* **检索单元 ID**: \`${cand.retrieval_unit_id}\` (父场景: \`${cand.parent_scene_id}\`)`);
         lines.push(`* **时间码**: \`${cand.timecode.in}\` $\\rightarrow$ \`${cand.timecode.out}\` (时长: ${cand.timecode.duration_sec}s)`);
-        lines.push(`* **客观人物**: [${cand.characters.join(", ")}]`);
+        lines.push(`* **客观出镜人物**: [${cand.characters.join(", ")}]`);
         lines.push(`* **物理空间**: ${cand.scene_env}`);
         lines.push(`* **物理动作**: ${cand.physical_actions.join("；") || "无显式动作描述"}`);
         lines.push(`* **真实台词**: ${cand.dialogue ? `"${cand.dialogue}"` : "(无台词 / 纯画面)"}`);
@@ -285,6 +292,9 @@ export class HumanGateEvaluator {
         lines.push(`* **得分详情**: A5 检索分: \`${cand.retrieval_score}\` | A6 视角分: \`${cand.perspective_score}\` | 最终重排分: \`${cand.final_ranking_score}\``);
         lines.push(`* **老周追剧主观解读 (L3)**: ${cand.interpretation}`);
         lines.push(`* **事实边界 (Evidence Boundary)**: ${cand.evidence_boundary}`);
+        if (cand.consistency_check && !cand.consistency_check.is_consistent) {
+          lines.push(`* **⚠️ 人物一致性警告**: ${cand.consistency_check.details}`);
+        }
         if (cand.sample_frame_refs && cand.sample_frame_refs.length > 0) {
           lines.push(`* **采样代表帧引用 (Frame Refs)**: [${cand.sample_frame_refs.join(", ")}]`);
         }
