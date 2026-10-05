@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0047_pct75",
+  "shot_id": "shot_B0047",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "152963f3dfaa2060810c1dfb4c0d3f570fbd0b43c52665cb60bf0ed3adabf22c",
+  "inference_hash": "6731ffd55d4dbdccdd62337917af1c24139433d07fa971b56e14fc81453ae614",
+  "latency_ms": 27179.665707983077,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Female, dark hair up, long-sleeved dark qipao with gold pattern, pearl earring.\", \"Female, short dark hair, dark qipao with blue-green pattern and light piping.\"], \"environment\": \"Outdoor, natural lighting. Stone wall with decorative balustrade and light columns behind it. Low green bushes in front of the wall.\", \"objects\": [\"earring\", \"stone wall\", \"balustrade\", \"columns\", \"bushes\"], \"physical_actions\": [\"Both characters standing.\", \"Screen-left character's arm bent in front.\", \"Screen-right character's arms relaxed down.\"], \"uncertainty\": \"Slightly dark image. Lower bodies occluded by frame edge. Dark vertical object on far screen-right partially occludes background.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Female, dark hair up, long-sleeved dark qipao with gold pattern, pearl earring.",
+        "Female, short dark hair, dark qipao with blue-green pattern and light piping."
+      ],
+      "environment": "Outdoor, natural lighting. Stone wall with decorative balustrade and light columns behind it. Low green bushes in front of the wall.",
+      "objects": [
+        "earring",
+        "stone wall",
+        "balustrade",
+        "columns",
+        "bushes"
+      ],
+      "physical_actions": [
+        "Both characters standing.",
+        "Screen-left character's arm bent in front.",
+        "Screen-right character's arms relaxed down."
+      ],
+      "uncertainty": "Slightly dark image. Lower bodies occluded by frame edge. Dark vertical object on far screen-right partially occludes background."
+    },
+    "error": null,
+    "latency_ms": 27179.67,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21425,
+      "output_tokens": 1348,
+      "thinking_tokens": 762,
+      "cache_read_tokens": 44662,
+      "total_tokens": 22773
+    },
+    "source_image_hash": "152963f3dfaa2060810c1dfb4c0d3f570fbd0b43c52665cb60bf0ed3adabf22c",
+    "inference_image_hash": "6731ffd55d4dbdccdd62337917af1c24139433d07fa971b56e14fc81453ae614",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0034_pct25",
+  "shot_id": "shot_B0034",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2b899aabb6a3ce93f1c24016981f04b7cdd7f845d37fda5221a1d1126b0841f7",
+  "inference_hash": "41b61c5f3420663417eb7cc5292db5728a998180d20f45bbc77f276e3a2da1c5",
+  "latency_ms": 31398.440208053216,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Screen-left: Person in light shirt and beige vest, short dark hair, head down.\", \"Screen-right: Person in dark suit, white shirt, glasses, short dark hair.\"], \"environment\": \"Indoor room with light-colored walls, dark wainscoting, dark door in background. Artwork on walls.\", \"objects\": [\"Poster on screen-left wall\", \"Scroll with calligraphy on screen-right wall\", \"Coat rack\", \"Electric fan\", \"Glasses\", \"Unidentified metallic object\"], \"physical_actions\": [\"Screen-left person: Standing, bending forward, looking down, arms extended.\", \"Screen-right person: Seated, looking screen-left, right arm extended forward.\"], \"uncertainty\": \"Motion blur on screen-left person, face obscured. Object held is blurry and partially out of frame. Bottom area is dark.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Screen-left: Person in light shirt and beige vest, short dark hair, head down.",
+        "Screen-right: Person in dark suit, white shirt, glasses, short dark hair."
+      ],
+      "environment": "Indoor room with light-colored walls, dark wainscoting, dark door in background. Artwork on walls.",
+      "objects": [
+        "Poster on screen-left wall",
+        "Scroll with calligraphy on screen-right wall",
+        "Coat rack",
+        "Electric fan",
+        "Glasses",
+        "Unidentified metallic object"
+      ],
+      "physical_actions": [
+        "Screen-left person: Standing, bending forward, looking down, arms extended.",
+        "Screen-right person: Seated, looking screen-left, right arm extended forward."
+      ],
+      "uncertainty": "Motion blur on screen-left person, face obscured. Object held is blurry and partially out of frame. Bottom area is dark."
+    },
+    "error": null,
+    "latency_ms": 31398.44,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17902,
+      "output_tokens": 1900,
+      "thinking_tokens": 1278,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19802
+    },
+    "source_image_hash": "2b899aabb6a3ce93f1c24016981f04b7cdd7f845d37fda5221a1d1126b0841f7",
+    "inference_image_hash": "41b61c5f3420663417eb7cc5292db5728a998180d20f45bbc77f276e3a2da1c5",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0001_pct50",
+  "shot_id": "shot_B0001",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "f8992884be1daf02fbf0c8f8b73dc6bbacae4531bc677ef0ba7024ac62b14e34",
+  "inference_hash": "ec4489c759a409d1e3b311a098ed65dda89898a8fd368cf157612e2b2f80615d",
+  "latency_ms": 33034.38216703944,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"extreme_close_up\", \"characters\": [], \"environment\": \"暗色调环境，紫色/蓝色光线照明。背景极度模糊，可见下方的白色纸张表面。\", \"objects\": [\"钢笔尖\", \"纸张\", \"发光的文字字幕\"], \"physical_actions\": [\"钢笔尖接触纸面\"], \"uncertainty\": \"景深极浅导致背景及部分前景严重模糊，整体光线较暗且偏色严重。\"}",
+    "parsed_validation": {
+      "camera": "extreme_close_up",
+      "characters": [],
+      "environment": "暗色调环境，紫色/蓝色光线照明。背景极度模糊，可见下方的白色纸张表面。",
+      "objects": [
+        "钢笔尖",
+        "纸张",
+        "发光的文字字幕"
+      ],
+      "physical_actions": [
+        "钢笔尖接触纸面"
+      ],
+      "uncertainty": "景深极浅导致背景及部分前景严重模糊，整体光线较暗且偏色严重。"
+    },
+    "error": null,
+    "latency_ms": 33034.38,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 26801,
+      "output_tokens": 597,
+      "thinking_tokens": 382,
+      "cache_read_tokens": 16242,
+      "total_tokens": 27398
+    },
+    "source_image_hash": "f8992884be1daf02fbf0c8f8b73dc6bbacae4531bc677ef0ba7024ac62b14e34",
+    "inference_image_hash": "ec4489c759a409d1e3b311a098ed65dda89898a8fd368cf157612e2b2f80615d",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

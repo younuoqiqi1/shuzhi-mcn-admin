@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0049_pct25",
+  "shot_id": "shot_B0049",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "1325da1185f9422153683d55874ed7547ff8e5a222000f636eada4adc596c5cb",
+  "inference_hash": "fc183f23852ae7a290f3c3c26e24490b602db0f883f4ab26ab7dc87c380d72cd",
+  "latency_ms": 35422.41200001445,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"Person on screen-left in foreground wearing dark coat, viewed from behind\", \"Person on screen-right in foreground wearing dark tunic and cap, viewed from behind\", \"Multiple people sitting against wall in background, wearing dark clothing\"], \"environment\": \"Outdoor paved area with light rectangular stones. Wall at top left. Strong daylight casting shadows. Right side of screen has dark semi-transparent gradient overlay.\", \"objects\": [\"Paved stone blocks\", \"Clothing\", \"Chinese text overlays\"], \"physical_actions\": [\"Foreground people walking away from camera\", \"Background people sitting against wall\"], \"uncertainty\": \"Right side of screen obscured by dark gradient overlay and text. Faces not visible due to camera angle and distance.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "Person on screen-left in foreground wearing dark coat, viewed from behind",
+        "Person on screen-right in foreground wearing dark tunic and cap, viewed from behind",
+        "Multiple people sitting against wall in background, wearing dark clothing"
+      ],
+      "environment": "Outdoor paved area with light rectangular stones. Wall at top left. Strong daylight casting shadows. Right side of screen has dark semi-transparent gradient overlay.",
+      "objects": [
+        "Paved stone blocks",
+        "Clothing",
+        "Chinese text overlays"
+      ],
+      "physical_actions": [
+        "Foreground people walking away from camera",
+        "Background people sitting against wall"
+      ],
+      "uncertainty": "Right side of screen obscured by dark gradient overlay and text. Faces not visible due to camera angle and distance."
+    },
+    "error": null,
+    "latency_ms": 35422.41,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18456,
+      "output_tokens": 2524,
+      "thinking_tokens": 1550,
+      "cache_read_tokens": 48731,
+      "total_tokens": 20980
+    },
+    "source_image_hash": "1325da1185f9422153683d55874ed7547ff8e5a222000f636eada4adc596c5cb",
+    "inference_image_hash": "fc183f23852ae7a290f3c3c26e24490b602db0f883f4ab26ab7dc87c380d72cd",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

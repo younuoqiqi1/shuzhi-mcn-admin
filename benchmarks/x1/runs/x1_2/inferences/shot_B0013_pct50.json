@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0013_pct50",
+  "shot_id": "shot_B0013",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "3fce57781b1510f4129d2571e2622ee5ecf522997f170079e5f7e86b0f77807e",
+  "inference_hash": "4928c41c0f7e9e83de7fc12b9c1f33170d645b8bc4b9f7ff4c519a7b170469d9",
+  "latency_ms": 31994.650083011948,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Male screen-left, short dark hair, glasses, dark high-collared jacket.\", \"Male screen-right, buzzed hair, back/side profile, blue jacket.\"], \"environment\": \"Dimly lit interior space with dark wood paneling on the lower wall and signs on screen-left.\", \"objects\": [\"White rectangular sign with black text\", \"White vertical sign\", \"Glasses\", \"Pen in pocket\"], \"physical_actions\": [\"Standing\", \"Looking upwards\"], \"uncertainty\": \"Dim lighting obscures background details. Character on screen-right has face turned away.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Male screen-left, short dark hair, glasses, dark high-collared jacket.",
+        "Male screen-right, buzzed hair, back/side profile, blue jacket."
+      ],
+      "environment": "Dimly lit interior space with dark wood paneling on the lower wall and signs on screen-left.",
+      "objects": [
+        "White rectangular sign with black text",
+        "White vertical sign",
+        "Glasses",
+        "Pen in pocket"
+      ],
+      "physical_actions": [
+        "Standing",
+        "Looking upwards"
+      ],
+      "uncertainty": "Dim lighting obscures background details. Character on screen-right has face turned away."
+    },
+    "error": null,
+    "latency_ms": 31994.65,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17929,
+      "output_tokens": 1770,
+      "thinking_tokens": 1301,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19699
+    },
+    "source_image_hash": "3fce57781b1510f4129d2571e2622ee5ecf522997f170079e5f7e86b0f77807e",
+    "inference_image_hash": "4928c41c0f7e9e83de7fc12b9c1f33170d645b8bc4b9f7ff4c519a7b170469d9",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

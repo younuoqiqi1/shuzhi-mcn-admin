@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0030_pct25",
+  "shot_id": "shot_B0030",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "8af6a487746e2deb155bb3f233870bb9ec9043290baf449597c4e905ef386bd5",
+  "inference_hash": "805382887926c3c81de7dd92564e234534da015f4f096c3804c3eb816cc9f76f",
+  "latency_ms": 27345.583750051446,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"成年男性，短发向后梳，穿着浅蓝色长袖衬衫和浅褐色马甲\"], \"environment\": \"室内空间，浅色墙壁。屏幕左后方墙面上挂着一幅画着水果的静物画，屏幕右后方有一个深色的木制家具（可能是柜子）。光线从屏幕左侧打在人物脸上。\", \"objects\": [\"静物画\", \"深色木制家具\", \"衬衫\", \"马甲\", \"底部中文字幕\"], \"physical_actions\": [\"头部侧向屏幕左侧\", \"嘴唇微张\"], \"uncertainty\": \"人物躯干下半部在画框外，画面底部有白色文字字幕遮挡部分画面。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "成年男性，短发向后梳，穿着浅蓝色长袖衬衫和浅褐色马甲"
+      ],
+      "environment": "室内空间，浅色墙壁。屏幕左后方墙面上挂着一幅画着水果的静物画，屏幕右后方有一个深色的木制家具（可能是柜子）。光线从屏幕左侧打在人物脸上。",
+      "objects": [
+        "静物画",
+        "深色木制家具",
+        "衬衫",
+        "马甲",
+        "底部中文字幕"
+      ],
+      "physical_actions": [
+        "头部侧向屏幕左侧",
+        "嘴唇微张"
+      ],
+      "uncertainty": "人物躯干下半部在画框外，画面底部有白色文字字幕遮挡部分画面。"
+    },
+    "error": null,
+    "latency_ms": 27345.58,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14799,
+      "output_tokens": 1315,
+      "thinking_tokens": 1029,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16114
+    },
+    "source_image_hash": "8af6a487746e2deb155bb3f233870bb9ec9043290baf449597c4e905ef386bd5",
+    "inference_image_hash": "805382887926c3c81de7dd92564e234534da015f4f096c3804c3eb816cc9f76f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

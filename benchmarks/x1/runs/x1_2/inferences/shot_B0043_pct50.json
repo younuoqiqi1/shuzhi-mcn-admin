@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0043_pct50",
+  "shot_id": "shot_B0043",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "6acc9e6c80844279349f29287f9e10f5853bba481e17428ecf03f0fdcda303d1",
+  "inference_hash": "0799127e9fb096e483df27fde45bbfd6b016e287f4917e00f2d297988ef13019",
+  "latency_ms": 34536.73787496518,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person in center with dark wavy hair and white top\", \"Person on screen-left wearing light blue silk-like shirt, mostly off-screen\"], \"environment\": \"Indoor setting with a dark wooden bed frame on screen-right, and a blurred wooden nightstand with a lamp in the background\", \"objects\": [\"Light blue silk-like shirt\", \"White collared top\", \"Dark wooden bed frame\", \"Lamp\", \"Wooden nightstand\"], \"physical_actions\": [\"Person on screen-left rests hand on central person's shoulder\", \"Central person looks downward\"], \"uncertainty\": \"The face and body of the person on screen-left are mostly off-screen and occluded. The background is blurred due to shallow depth of field.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person in center with dark wavy hair and white top",
+        "Person on screen-left wearing light blue silk-like shirt, mostly off-screen"
+      ],
+      "environment": "Indoor setting with a dark wooden bed frame on screen-right, and a blurred wooden nightstand with a lamp in the background",
+      "objects": [
+        "Light blue silk-like shirt",
+        "White collared top",
+        "Dark wooden bed frame",
+        "Lamp",
+        "Wooden nightstand"
+      ],
+      "physical_actions": [
+        "Person on screen-left rests hand on central person's shoulder",
+        "Central person looks downward"
+      ],
+      "uncertainty": "The face and body of the person on screen-left are mostly off-screen and occluded. The background is blurred due to shallow depth of field."
+    },
+    "error": null,
+    "latency_ms": 34536.74,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18457,
+      "output_tokens": 2041,
+      "thinking_tokens": 1524,
+      "cache_read_tokens": 48731,
+      "total_tokens": 20498
+    },
+    "source_image_hash": "6acc9e6c80844279349f29287f9e10f5853bba481e17428ecf03f0fdcda303d1",
+    "inference_image_hash": "0799127e9fb096e483df27fde45bbfd6b016e287f4917e00f2d297988ef13019",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

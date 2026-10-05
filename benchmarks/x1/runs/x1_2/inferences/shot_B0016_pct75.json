@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0016_pct75",
+  "shot_id": "shot_B0016",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "13b882223097e9142a91bad2450c258aeb83569783cfa034f592d89c542e3927",
+  "inference_hash": "392de6d5c3298ad8534614e37574d5fb5424baffa840f4fa7a2eb73977764f9e",
+  "latency_ms": 28013.198625063524,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"深色长发的女性，发型部分后束，身穿浅色底深色碎花图案的立领盘扣上衣\"], \"environment\": \"室内空间，背景有深色木质镶板门或墙壁，光线略显昏暗\", \"objects\": [\"字幕\"], \"physical_actions\": [\"头部微微偏向画面左侧\", \"嘴巴微张\"], \"uncertainty\": \"下半身在画面外，画面底部中心有字幕遮挡，背景轻微模糊\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "深色长发的女性，发型部分后束，身穿浅色底深色碎花图案的立领盘扣上衣"
+      ],
+      "environment": "室内空间，背景有深色木质镶板门或墙壁，光线略显昏暗",
+      "objects": [
+        "字幕"
+      ],
+      "physical_actions": [
+        "头部微微偏向画面左侧",
+        "嘴巴微张"
+      ],
+      "uncertainty": "下半身在画面外，画面底部中心有字幕遮挡，背景轻微模糊"
+    },
+    "error": null,
+    "latency_ms": 28013.2,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14853,
+      "output_tokens": 1710,
+      "thinking_tokens": 1473,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16563
+    },
+    "source_image_hash": "13b882223097e9142a91bad2450c258aeb83569783cfa034f592d89c542e3927",
+    "inference_image_hash": "392de6d5c3298ad8534614e37574d5fb5424baffa840f4fa7a2eb73977764f9e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

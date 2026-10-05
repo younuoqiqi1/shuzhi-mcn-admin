@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0044_pct25",
+  "shot_id": "shot_B0044",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "b3150dd1318b6b83214f91d93c08026a1d6fd0f56e7eb2f1b26c368e4c9e30e5",
+  "inference_hash": "09191514637f5f4017bf673d337ca77aef2e68b844ec6af4165004f93a460554",
+  "latency_ms": 47669.934374978766,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Center person with dark hair curled at ends, pale skin, wearing a light top.\", \"Person on screen-left in light long-sleeved shirt, hand on center person's shoulder.\"], \"environment\": \"Dim indoor space with shallow depth of field. Lit table lamp with patterned shade in background right, beside a dark wooden frame. Pink floral fabric in lower right.\", \"objects\": [\"table lamp\", \"lampshade\", \"wooden frame\", \"pink floral fabric\", \"light top\", \"light long-sleeved shirt\"], \"physical_actions\": [\"Center person looks slightly screen-right with slightly open mouth.\", \"Person on screen-left rests hand on center person's shoulder.\"], \"uncertainty\": \"Background out of focus. Person on screen-left mostly cut off. Lower body of center person out of frame.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Center person with dark hair curled at ends, pale skin, wearing a light top.",
+        "Person on screen-left in light long-sleeved shirt, hand on center person's shoulder."
+      ],
+      "environment": "Dim indoor space with shallow depth of field. Lit table lamp with patterned shade in background right, beside a dark wooden frame. Pink floral fabric in lower right.",
+      "objects": [
+        "table lamp",
+        "lampshade",
+        "wooden frame",
+        "pink floral fabric",
+        "light top",
+        "light long-sleeved shirt"
+      ],
+      "physical_actions": [
+        "Center person looks slightly screen-right with slightly open mouth.",
+        "Person on screen-left rests hand on center person's shoulder."
+      ],
+      "uncertainty": "Background out of focus. Person on screen-left mostly cut off. Lower body of center person out of frame."
+    },
+    "error": null,
+    "latency_ms": 47669.93,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 20606,
+      "output_tokens": 4481,
+      "thinking_tokens": 3382,
+      "cache_read_tokens": 48745,
+      "total_tokens": 25087
+    },
+    "source_image_hash": "b3150dd1318b6b83214f91d93c08026a1d6fd0f56e7eb2f1b26c368e4c9e30e5",
+    "inference_image_hash": "09191514637f5f4017bf673d337ca77aef2e68b844ec6af4165004f93a460554",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0040_pct75",
+  "shot_id": "shot_B0040",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "22d769db9035da41f13424a3cf32046325b3dbfc0d36307cd745760e6c04dfb1",
+  "inference_hash": "17db9b8d761329db5fb4b3c7ff3507d385f472d127781b534110b1ace18878fe",
+  "latency_ms": 31619.142416049726,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Man with short dark hair, wearing a white shirt and beige vest, looking down and screen-right.\"], \"environment\": \"Indoor setting. Behind the man is a dark carved wooden cabinet. A glass bottle is visible to the screen-right. Lighting is somewhat dim.\", \"objects\": [\"carved wooden cabinet\", \"glass bottle\", \"white shirt\", \"beige vest\", \"Chinese subtitles\"], \"physical_actions\": [\"Looking down slightly\", \"Mouth slightly open\"], \"uncertainty\": \"Lower torso is occluded by framing. Low image resolution.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Man with short dark hair, wearing a white shirt and beige vest, looking down and screen-right."
+      ],
+      "environment": "Indoor setting. Behind the man is a dark carved wooden cabinet. A glass bottle is visible to the screen-right. Lighting is somewhat dim.",
+      "objects": [
+        "carved wooden cabinet",
+        "glass bottle",
+        "white shirt",
+        "beige vest",
+        "Chinese subtitles"
+      ],
+      "physical_actions": [
+        "Looking down slightly",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Lower torso is occluded by framing. Low image resolution."
+    },
+    "error": null,
+    "latency_ms": 31619.14,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17871,
+      "output_tokens": 1364,
+      "thinking_tokens": 920,
+      "cache_read_tokens": 48726,
+      "total_tokens": 19235
+    },
+    "source_image_hash": "22d769db9035da41f13424a3cf32046325b3dbfc0d36307cd745760e6c04dfb1",
+    "inference_image_hash": "17db9b8d761329db5fb4b3c7ff3507d385f472d127781b534110b1ace18878fe",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

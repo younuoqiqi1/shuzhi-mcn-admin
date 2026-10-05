@@ -1,0 +1,52 @@
+{
+  "frame_id": "shot_B0032_pct75",
+  "shot_id": "shot_B0032",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "3e03209b12dc426d5ba160bf72c8352b4c40d4f8b3a5df00551fc9e9ee5e74e2",
+  "inference_hash": "08586d9a8500be835164a5caa9bbe7dcd55f098defd98df5486d9bf0229ce80e",
+  "latency_ms": 31765.56366600562,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"一名位于画面左侧的男子，黑色短发，身穿浅蓝色带领衬衫，外搭米色背心，面部朝向画面右侧。\", \"一名位于画面右侧的男子，仅可见背部和右侧脸部轮廓，黑色短发，佩戴眼镜，身穿深色衣物。\"], \"environment\": \"室内场景，光线较暗。画面左侧背景可见深色雕花木质家具，中间背景为平整的浅色墙壁，右侧可见部分木质座椅结构。\", \"objects\": [\"浅蓝色衬衫\", \"米色背心\", \"深色衣物\", \"眼镜\", \"深色木质家具\", \"木质座椅部件\", \"中文字幕\"], \"physical_actions\": [\"画面左侧男子嘴部微张，看向右侧男子。\", \"画面右侧男子面朝左侧男子方向。\"], \"uncertainty\": \"画面右侧人物因背对镜头存在严重遮挡；画面底部中间有白色中文字幕覆盖；背景左侧区域光线过暗导致细节难以完全辨认。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "一名位于画面左侧的男子，黑色短发，身穿浅蓝色带领衬衫，外搭米色背心，面部朝向画面右侧。",
+        "一名位于画面右侧的男子，仅可见背部和右侧脸部轮廓，黑色短发，佩戴眼镜，身穿深色衣物。"
+      ],
+      "environment": "室内场景，光线较暗。画面左侧背景可见深色雕花木质家具，中间背景为平整的浅色墙壁，右侧可见部分木质座椅结构。",
+      "objects": [
+        "浅蓝色衬衫",
+        "米色背心",
+        "深色衣物",
+        "眼镜",
+        "深色木质家具",
+        "木质座椅部件",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "画面左侧男子嘴部微张，看向右侧男子。",
+        "画面右侧男子面朝左侧男子方向。"
+      ],
+      "uncertainty": "画面右侧人物因背对镜头存在严重遮挡；画面底部中间有白色中文字幕覆盖；背景左侧区域光线过暗导致细节难以完全辨认。"
+    },
+    "error": null,
+    "latency_ms": 31765.56,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14797,
+      "output_tokens": 2296,
+      "thinking_tokens": 1635,
+      "cache_read_tokens": 28424,
+      "total_tokens": 17093
+    },
+    "source_image_hash": "3e03209b12dc426d5ba160bf72c8352b4c40d4f8b3a5df00551fc9e9ee5e74e2",
+    "inference_image_hash": "08586d9a8500be835164a5caa9bbe7dcd55f098defd98df5486d9bf0229ce80e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

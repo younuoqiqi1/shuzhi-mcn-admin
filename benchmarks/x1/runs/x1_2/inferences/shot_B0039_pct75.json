@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0039_pct75",
+  "shot_id": "shot_B0039",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c462f4ea30d2ef48d70be1878db454018ae75cba6c17c62d12a9beb284a127a4",
+  "inference_hash": "f494ab9aa33c880eabbabe040ed475e37306c035ff6c3e8bdec8ddd5c0bd0506",
+  "latency_ms": 37959.86912492663,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with short dark hair, wearing round glasses, white shirt, and dark jacket.\"], \"environment\": \"Indoors with beige wall. Framed artwork with dark text hangs behind. Dark frame on screen-right.\", \"objects\": [\"glasses\", \"white shirt\", \"dark jacket\", \"framed artwork\", \"dark vertical frame\", \"subtitle text\"], \"physical_actions\": [\"Head facing slightly toward screen-right\", \"Mouth slightly open\"], \"uncertainty\": \"Subtitle text occludes lower clothing. Light reflections visible on forehead and cheeks.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with short dark hair, wearing round glasses, white shirt, and dark jacket."
+      ],
+      "environment": "Indoors with beige wall. Framed artwork with dark text hangs behind. Dark frame on screen-right.",
+      "objects": [
+        "glasses",
+        "white shirt",
+        "dark jacket",
+        "framed artwork",
+        "dark vertical frame",
+        "subtitle text"
+      ],
+      "physical_actions": [
+        "Head facing slightly toward screen-right",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Subtitle text occludes lower clothing. Light reflections visible on forehead and cheeks."
+    },
+    "error": null,
+    "latency_ms": 37959.87,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18796,
+      "output_tokens": 2630,
+      "thinking_tokens": 1948,
+      "cache_read_tokens": 48732,
+      "total_tokens": 21426
+    },
+    "source_image_hash": "c462f4ea30d2ef48d70be1878db454018ae75cba6c17c62d12a9beb284a127a4",
+    "inference_image_hash": "f494ab9aa33c880eabbabe040ed475e37306c035ff6c3e8bdec8ddd5c0bd0506",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

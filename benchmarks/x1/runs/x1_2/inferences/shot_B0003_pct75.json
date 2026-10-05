@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0003_pct75",
+  "shot_id": "shot_B0003",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "bfafae159edd8a3b0b897ad5a50752c49381b05395c0ca1aabade0359b2d78cd",
+  "inference_hash": "6beb3698b66c666e834455f8eecce7ab27414d9dc004952acaf211be392e8745",
+  "latency_ms": 48230.731416959316,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"一名黑发女性，头部戴有发带，穿着浅色高领长袖外套。\"], \"environment\": \"整体呈冷青色调的昏暗室内空间。画面右后方背景堆叠着木箱，上方隐约可见瓶状物；左后方背景模糊，有类似网格或粗糙纹理的表面。\", \"objects\": [\"深色桌面\", \"堆叠的木质箱子\", \"发带\", \"屏幕上叠加的黄色中文字幕\"], \"physical_actions\": [\"身体朝向画面右侧坐着\", \"双臂交叠倚靠在深色桌面上\", \"头部微低，视线向下\"], \"uncertainty\": \"环境光线昏暗，画面边缘及前景存在雾化或模糊效果；画面右侧偏下位置被黄色叠加文字部分遮挡。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "一名黑发女性，头部戴有发带，穿着浅色高领长袖外套。"
+      ],
+      "environment": "整体呈冷青色调的昏暗室内空间。画面右后方背景堆叠着木箱，上方隐约可见瓶状物；左后方背景模糊，有类似网格或粗糙纹理的表面。",
+      "objects": [
+        "深色桌面",
+        "堆叠的木质箱子",
+        "发带",
+        "屏幕上叠加的黄色中文字幕"
+      ],
+      "physical_actions": [
+        "身体朝向画面右侧坐着",
+        "双臂交叠倚靠在深色桌面上",
+        "头部微低，视线向下"
+      ],
+      "uncertainty": "环境光线昏暗，画面边缘及前景存在雾化或模糊效果；画面右侧偏下位置被黄色叠加文字部分遮挡。"
+    },
+    "error": null,
+    "latency_ms": 48230.73,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18674,
+      "output_tokens": 1277,
+      "thinking_tokens": 966,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19951
+    },
+    "source_image_hash": "bfafae159edd8a3b0b897ad5a50752c49381b05395c0ca1aabade0359b2d78cd",
+    "inference_image_hash": "6beb3698b66c666e834455f8eecce7ab27414d9dc004952acaf211be392e8745",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

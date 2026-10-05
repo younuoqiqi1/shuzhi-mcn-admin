@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0033_pct75",
+  "shot_id": "shot_B0033",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "bc383413a41314f9d2d0223a81d28ef4ede3aebe482b077de21a380f772aba1d",
+  "inference_hash": "323183f300b567604407c077b9b4a1daefa0162cc7ddd2db2ad50ef8d305f2e2",
+  "latency_ms": 30997.593667008914,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"man on screen-left, short black hair, light collared shirt, beige vest\", \"man on screen-right seen from behind, glasses, dark hair, dark garment\"], \"environment\": \"dimly lit indoor space, dark wooden cabinet on screen-left, plain wall in background\", \"objects\": [\"glasses\", \"mug with pattern\", \"bottle\", \"wooden cabinet\", \"chair spindle\"], \"physical_actions\": [\"screen-left man looking right\", \"screen-right man facing left\"], \"uncertainty\": \"face of screen-right man is occluded; background is dimly lit and slightly out of focus\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "man on screen-left, short black hair, light collared shirt, beige vest",
+        "man on screen-right seen from behind, glasses, dark hair, dark garment"
+      ],
+      "environment": "dimly lit indoor space, dark wooden cabinet on screen-left, plain wall in background",
+      "objects": [
+        "glasses",
+        "mug with pattern",
+        "bottle",
+        "wooden cabinet",
+        "chair spindle"
+      ],
+      "physical_actions": [
+        "screen-left man looking right",
+        "screen-right man facing left"
+      ],
+      "uncertainty": "face of screen-right man is occluded; background is dimly lit and slightly out of focus"
+    },
+    "error": null,
+    "latency_ms": 30997.59,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21569,
+      "output_tokens": 1491,
+      "thinking_tokens": 995,
+      "cache_read_tokens": 44664,
+      "total_tokens": 23060
+    },
+    "source_image_hash": "bc383413a41314f9d2d0223a81d28ef4ede3aebe482b077de21a380f772aba1d",
+    "inference_image_hash": "323183f300b567604407c077b9b4a1daefa0162cc7ddd2db2ad50ef8d305f2e2",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

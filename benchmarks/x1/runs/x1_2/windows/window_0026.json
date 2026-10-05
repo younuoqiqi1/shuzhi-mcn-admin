@@ -1,0 +1,92 @@
+{
+  "window_idx": 26,
+  "center_start": 1560.0,
+  "center_end": 1620.0,
+  "ctx_start": 1558.0,
+  "ctx_end": 1622.0,
+  "raw_cuts_count": 10,
+  "center_cuts": [
+    1564.64,
+    1568.72,
+    1581.28,
+    1585.84,
+    1592.76,
+    1597.92,
+    1604.96,
+    1611.92,
+    1618.8
+  ],
+  "scores": [
+    {
+      "time_sec": 1558.16,
+      "frame_num": 38954,
+      "content_val": 27.0279,
+      "adaptive_ratio": 1.0834
+    },
+    {
+      "time_sec": 1564.64,
+      "frame_num": 39116,
+      "content_val": 40.913,
+      "adaptive_ratio": 11.7975
+    },
+    {
+      "time_sec": 1568.72,
+      "frame_num": 39218,
+      "content_val": 48.4921,
+      "adaptive_ratio": 3.957
+    },
+    {
+      "time_sec": 1581.28,
+      "frame_num": 39532,
+      "content_val": 49.0338,
+      "adaptive_ratio": 77.7419
+    },
+    {
+      "time_sec": 1585.84,
+      "frame_num": 39646,
+      "content_val": 48.4417,
+      "adaptive_ratio": 57.6127
+    },
+    {
+      "time_sec": 1592.76,
+      "frame_num": 39819,
+      "content_val": 52.5556,
+      "adaptive_ratio": 11.1459
+    },
+    {
+      "time_sec": 1597.92,
+      "frame_num": 39948,
+      "content_val": 48.616,
+      "adaptive_ratio": 24.2909
+    },
+    {
+      "time_sec": 1604.96,
+      "frame_num": 40124,
+      "content_val": 47.4621,
+      "adaptive_ratio": 34.4286
+    },
+    {
+      "time_sec": 1611.92,
+      "frame_num": 40298,
+      "content_val": 49.5579,
+      "adaptive_ratio": 31.6539
+    },
+    {
+      "time_sec": 1618.8,
+      "frame_num": 40470,
+      "content_val": 47.5837,
+      "adaptive_ratio": 58.0615
+    }
+  ],
+  "params": {
+    "window_idx": 26,
+    "center_start": 1560.0,
+    "center_end": 1620.0,
+    "ctx_start": 1558.0,
+    "ctx_end": 1622.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "6dfaaa29f07cf3ea54cbbd3ae444293bc47feb2e998d7055c0cde560d4a98763",
+  "created_at": 1791218801.9764512
+}

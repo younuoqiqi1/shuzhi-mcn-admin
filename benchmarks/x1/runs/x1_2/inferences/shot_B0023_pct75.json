@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0023_pct75",
+  "shot_id": "shot_B0023",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "7843eb827b99d21d0a6a2254b1a727ac3d2b3720270c6f8ed6d5866eda08f23b",
+  "inference_hash": "e6da2dbc65d9994659a3eeaa05dc4acf3601139925c18bb91d52ac712d6d774f",
+  "latency_ms": 47996.440208982676,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"画面左侧的女性，黑色波浪卷发，穿着带有图案的浅色立领衣物\", \"画面右侧的人物，黑色短发，佩戴眼镜，穿着深色外套和白色领口衬衫\"], \"environment\": \"室内空间，光线较暗，背景左侧可见类似楼梯台阶的深色平行线条结构，光源主要集中在画面左侧女性的面部\", \"objects\": [\"眼镜\", \"带有图案的浅色立领衣物\", \"深色外套\", \"白色衬衫领口\"], \"physical_actions\": [\"画面左侧的女性微微低头，视线看向画面右侧人物的前胸或领口区域\", \"画面右侧的人物背离镜头站立，面向画面左侧的女性\"], \"uncertainty\": \"画面右侧人物的面部及身体正面由于背对镜头而不可见，背景区域因光线昏暗且失焦而模糊不清\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "画面左侧的女性，黑色波浪卷发，穿着带有图案的浅色立领衣物",
+        "画面右侧的人物，黑色短发，佩戴眼镜，穿着深色外套和白色领口衬衫"
+      ],
+      "environment": "室内空间，光线较暗，背景左侧可见类似楼梯台阶的深色平行线条结构，光源主要集中在画面左侧女性的面部",
+      "objects": [
+        "眼镜",
+        "带有图案的浅色立领衣物",
+        "深色外套",
+        "白色衬衫领口"
+      ],
+      "physical_actions": [
+        "画面左侧的女性微微低头，视线看向画面右侧人物的前胸或领口区域",
+        "画面右侧的人物背离镜头站立，面向画面左侧的女性"
+      ],
+      "uncertainty": "画面右侧人物的面部及身体正面由于背对镜头而不可见，背景区域因光线昏暗且失焦而模糊不清"
+    },
+    "error": null,
+    "latency_ms": 47996.44,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14740,
+      "output_tokens": 2807,
+      "thinking_tokens": 2216,
+      "cache_read_tokens": 28424,
+      "total_tokens": 17547
+    },
+    "source_image_hash": "7843eb827b99d21d0a6a2254b1a727ac3d2b3720270c6f8ed6d5866eda08f23b",
+    "inference_image_hash": "e6da2dbc65d9994659a3eeaa05dc4acf3601139925c18bb91d52ac712d6d774f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

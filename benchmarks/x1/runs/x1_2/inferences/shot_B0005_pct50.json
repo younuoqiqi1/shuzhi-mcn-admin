@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0005_pct50",
+  "shot_id": "shot_B0005",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2cf1bdeb9726484b5ebc61163a4e47182ac7711bdb0c5028f96c6948f1e34c3e",
+  "inference_hash": "fbda5fe87b427bad410091f30b6e371c429e80faf767527ecd9b61f715dd164c",
+  "latency_ms": 36682.40125000011,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Man in center-right with short dark hair, wearing a white towel over shoulders, facing screen-right.\", \"Dark silhouette of a person's head and shoulder in the screen-left foreground.\"], \"environment\": \"Dark and indistinct background with cool-toned lighting.\", \"objects\": [\"White towel\", \"Yellow on-screen text\", \"Digital dot matrix overlay graphic\"], \"physical_actions\": [\"Man looking down and towards screen-right.\"], \"uncertainty\": \"The man's face on screen-right is partially obscured by a digital overlay graphic. The person on screen-left is seen only as a dark, out-of-focus silhouette.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Man in center-right with short dark hair, wearing a white towel over shoulders, facing screen-right.",
+        "Dark silhouette of a person's head and shoulder in the screen-left foreground."
+      ],
+      "environment": "Dark and indistinct background with cool-toned lighting.",
+      "objects": [
+        "White towel",
+        "Yellow on-screen text",
+        "Digital dot matrix overlay graphic"
+      ],
+      "physical_actions": [
+        "Man looking down and towards screen-right."
+      ],
+      "uncertainty": "The man's face on screen-right is partially obscured by a digital overlay graphic. The person on screen-left is seen only as a dark, out-of-focus silhouette."
+    },
+    "error": null,
+    "latency_ms": 36682.4,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 57692,
+      "output_tokens": 1138,
+      "thinking_tokens": 692,
+      "cache_read_tokens": 8119,
+      "total_tokens": 58830
+    },
+    "source_image_hash": "2cf1bdeb9726484b5ebc61163a4e47182ac7711bdb0c5028f96c6948f1e34c3e",
+    "inference_image_hash": "fbda5fe87b427bad410091f30b6e371c429e80faf767527ecd9b61f715dd164c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

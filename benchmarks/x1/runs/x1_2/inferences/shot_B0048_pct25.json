@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0048_pct25",
+  "shot_id": "shot_B0048",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "b9acf2464bd39a6039f3c5e3aeade1282100bcbb4ebf6669975bfd43bde01f61",
+  "inference_hash": "ddcefb9abab0ab92ab462197dd4b174be21fb3777a18bc8d279b6114cc31c1c8",
+  "latency_ms": 40396.26979199238,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"long_shot\", \"characters\": [\"Figure on screen-left wearing dark clothing.\", \"Man in grey jacket and woman in dark patterned top seen from behind.\"], \"environment\": \"Dimly lit stone-paved alleyway at night. Brick wall on screen-left, building on right. White banner with green Chinese characters on left. Right side obscured by dark overlay.\", \"objects\": [\"White banner\", \"Stone pavement\", \"Brick wall\", \"Text overlay\"], \"physical_actions\": [\"Walking away from camera.\"], \"uncertainty\": \"Right side obscured by dark gradient and text. Dimly lit.\"}",
+    "parsed_validation": {
+      "camera": "long_shot",
+      "characters": [
+        "Figure on screen-left wearing dark clothing.",
+        "Man in grey jacket and woman in dark patterned top seen from behind."
+      ],
+      "environment": "Dimly lit stone-paved alleyway at night. Brick wall on screen-left, building on right. White banner with green Chinese characters on left. Right side obscured by dark overlay.",
+      "objects": [
+        "White banner",
+        "Stone pavement",
+        "Brick wall",
+        "Text overlay"
+      ],
+      "physical_actions": [
+        "Walking away from camera."
+      ],
+      "uncertainty": "Right side obscured by dark gradient and text. Dimly lit."
+    },
+    "error": null,
+    "latency_ms": 40396.27,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22499,
+      "output_tokens": 2554,
+      "thinking_tokens": 1802,
+      "cache_read_tokens": 69633,
+      "total_tokens": 25053
+    },
+    "source_image_hash": "b9acf2464bd39a6039f3c5e3aeade1282100bcbb4ebf6669975bfd43bde01f61",
+    "inference_image_hash": "ddcefb9abab0ab92ab462197dd4b174be21fb3777a18bc8d279b6114cc31c1c8",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

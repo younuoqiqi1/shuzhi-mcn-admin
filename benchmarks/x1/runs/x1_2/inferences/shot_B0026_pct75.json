@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0026_pct75",
+  "shot_id": "shot_B0026",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "e6c473d1ca52d5484977d66f0490679db52d9ad72c32954d6cfc6b6db23863c5",
+  "inference_hash": "1de8df8d68e2f3d4b423258b5d48243d521df2e8f521a1a4b237516f13383f01",
+  "latency_ms": 44439.573957934044,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Male on screen-right, short dark hair, wire-rimmed glasses, white shirt, black suit.\", \"Person on screen-left, back of head visible, short dark hair, red top, earring.\"], \"environment\": \"Dark indoor space with a dim wooden door or paneled wall visible in the background on screen-right. A light source from screen-left illuminates the male character's face.\", \"objects\": [\"Wire-rimmed glasses\", \"Earring\", \"White shirt\", \"Black suit\", \"Red top\", \"Subtitle text\"], \"physical_actions\": [\"Male on screen-right stands still, looking toward screen-left.\", \"Person on screen-left stands stationary, facing screen-right.\"], \"uncertainty\": \"The character on screen-left is heavily occluded, showing only the back of the head and a sliver of the side profile. The background is very dark, obscuring spatial details.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Male on screen-right, short dark hair, wire-rimmed glasses, white shirt, black suit.",
+        "Person on screen-left, back of head visible, short dark hair, red top, earring."
+      ],
+      "environment": "Dark indoor space with a dim wooden door or paneled wall visible in the background on screen-right. A light source from screen-left illuminates the male character's face.",
+      "objects": [
+        "Wire-rimmed glasses",
+        "Earring",
+        "White shirt",
+        "Black suit",
+        "Red top",
+        "Subtitle text"
+      ],
+      "physical_actions": [
+        "Male on screen-right stands still, looking toward screen-left.",
+        "Person on screen-left stands stationary, facing screen-right."
+      ],
+      "uncertainty": "The character on screen-left is heavily occluded, showing only the back of the head and a sliver of the side profile. The background is very dark, obscuring spatial details."
+    },
+    "error": null,
+    "latency_ms": 44439.57,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18378,
+      "output_tokens": 2112,
+      "thinking_tokens": 1514,
+      "cache_read_tokens": 48730,
+      "total_tokens": 20490
+    },
+    "source_image_hash": "e6c473d1ca52d5484977d66f0490679db52d9ad72c32954d6cfc6b6db23863c5",
+    "inference_image_hash": "1de8df8d68e2f3d4b423258b5d48243d521df2e8f521a1a4b237516f13383f01",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "window_idx": 44,
+  "center_start": 2640.0,
+  "center_end": 2700.0,
+  "ctx_start": 2638.0,
+  "ctx_end": 2702.0,
+  "raw_cuts_count": 27,
+  "center_cuts": [
+    2640.2,
+    2646.6,
+    2650.36,
+    2650.56,
+    2651.32,
+    2652.08,
+    2652.48,
+    2652.88,
+    2653.84,
+    2655.32,
+    2658.04,
+    2661.04,
+    2662.24,
+    2664.28,
+    2665.16,
+    2666.32,
+    2670.52,
+    2673.68,
+    2675.8,
+    2677.4,
+    2678.8,
+    2682.64,
+    2684.56,
+    2687.96,
+    2691.72,
+    2699.92
+  ],
+  "scores": [
+    {
+      "time_sec": 2638.32,
+      "frame_num": 65958,
+      "content_val": 37.4012,
+      "adaptive_ratio": 6.4892
+    },
+    {
+      "time_sec": 2640.2,
+      "frame_num": 66005,
+      "content_val": 40.399,
+      "adaptive_ratio": 8.1241
+    },
+    {
+      "time_sec": 2646.6,
+      "frame_num": 66165,
+      "content_val": 48.2547,
+      "adaptive_ratio": 10.8614
+    },
+    {
+      "time_sec": 2650.36,
+      "frame_num": 66259,
+      "content_val": 30.0223,
+      "adaptive_ratio": 3.7657
+    },
+    {
+      "time_sec": 2650.56,
+      "frame_num": 66264,
+      "content_val": 27.5587,
+      "adaptive_ratio": 1.4958
+    },
+    {
+      "time_sec": 2651.32,
+      "frame_num": 66283,
+      "content_val": 33.5003,
+      "adaptive_ratio": 2.9861
+    },
+    {
+      "time_sec": 2652.08,
+      "frame_num": 66302,
+      "content_val": 32.9258,
+      "adaptive_ratio": 2.5442
+    },
+    {
+      "time_sec": 2652.48,
+      "frame_num": 66312,
+      "content_val": 27.7432,
+      "adaptive_ratio": 1.2758
+    },
+    {
+      "time_sec": 2652.88,
+      "frame_num": 66322,
+      "content_val": 38.0991,
+      "adaptive_ratio": 3.3221
+    },
+    {
+      "time_sec": 2653.84,
+      "frame_num": 66346,
+      "content_val": 36.8234,
+      "adaptive_ratio": 4.9882
+    },
+    {
+      "time_sec": 2655.32,
+      "frame_num": 66383,
+      "content_val": 39.3135,
+      "adaptive_ratio": 11.146
+    },
+    {
+      "time_sec": 2658.04,
+      "frame_num": 66451,
+      "content_val": 54.1978,
+      "adaptive_ratio": 8.5545
+    },
+    {
+      "time_sec": 2661.04,
+      "frame_num": 66526,
+      "content_val": 38.9312,
+      "adaptive_ratio": 7.7965
+    },
+    {
+      "time_sec": 2662.24,
+      "frame_num": 66556,
+      "content_val": 31.9767,
+      "adaptive_ratio": 4.4717
+    },
+    {
+      "time_sec": 2664.28,
+      "frame_num": 66607,
+      "content_val": 42.5305,
+      "adaptive_ratio": 8.2784
+    },
+    {
+      "time_sec": 2665.16,
+      "frame_num": 66629,
+      "content_val": 38.8058,
+      "adaptive_ratio": 7.0139
+    },
+    {
+      "time_sec": 2666.32,
+      "frame_num": 66658,
+      "content_val": 46.2482,
+      "adaptive_ratio": 7.6932
+    },
+    {
+      "time_sec": 2670.52,
+      "frame_num": 66763,
+      "content_val": 39.0807,
+      "adaptive_ratio": 4.6955
+    },
+    {
+      "time_sec": 2673.68,
+      "frame_num": 66842,
+      "content_val": 42.1049,
+      "adaptive_ratio": 7.7474
+    },
+    {
+      "time_sec": 2675.8,
+      "frame_num": 66895,
+      "content_val": 30.1591,
+      "adaptive_ratio": 3.6073
+    },
+    {
+      "time_sec": 2677.4,
+      "frame_num": 66935,
+      "content_val": 37.5151,
+      "adaptive_ratio": 2.6375
+    },
+    {
+      "time_sec": 2678.8,
+      "frame_num": 66970,
+      "content_val": 68.6647,
+      "adaptive_ratio": 6.4435
+    },
+    {
+      "time_sec": 2682.64,
+      "frame_num": 67066,
+      "content_val": 43.0596,
+      "adaptive_ratio": 7.0451
+    },
+    {
+      "time_sec": 2684.56,
+      "frame_num": 67114,
+      "content_val": 54.9972,
+      "adaptive_ratio": 9.6268
+    },
+    {
+      "time_sec": 2687.96,
+      "frame_num": 67199,
+      "content_val": 50.7374,
+      "adaptive_ratio": 6.4382
+    },
+    {
+      "time_sec": 2691.72,
+      "frame_num": 67293,
+      "content_val": 52.2083,
+      "adaptive_ratio": 17.6347
+    },
+    {
+      "time_sec": 2699.92,
+      "frame_num": 67498,
+      "content_val": 46.5706,
+      "adaptive_ratio": 3.9502
+    }
+  ],
+  "params": {
+    "window_idx": 44,
+    "center_start": 2640.0,
+    "center_end": 2700.0,
+    "ctx_start": 2638.0,
+    "ctx_end": 2702.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "3b4ffc8ed5d559807d064f58d184a183dcb62d45c9c24a46b1df663e2105c9f9",
+  "created_at": 1791218883.558412
+}

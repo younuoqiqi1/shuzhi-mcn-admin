@@ -1,0 +1,43 @@
+{
+  "frame_id": "shot_B0028_pct50",
+  "shot_id": "shot_B0028",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "62101f98a1621e97e5f6dfb541cdf2c8c77614ff3c875d63b72a734ee30d95ff",
+  "inference_hash": "729b8a08d3d8962af123a8c911b4e2a58a8770d10f082681a4fa45ed9bd76926",
+  "latency_ms": 26471.347083104774,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Partial view of a fingertip visible in the bottom right corner (screen-right)\"], \"environment\": \"Close up view of a flat surface, dominated by a piece of lined paper. The lighting has a slightly cool, purplish tint.\", \"objects\": [\"White paper with faint vertical lines\", \"Handwritten Chinese characters in black ink\"], \"physical_actions\": [], \"uncertainty\": \"The text at the edges is partially cut off by the framing. There is slight blurriness overall, especially on the fingertip at screen-right.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Partial view of a fingertip visible in the bottom right corner (screen-right)"
+      ],
+      "environment": "Close up view of a flat surface, dominated by a piece of lined paper. The lighting has a slightly cool, purplish tint.",
+      "objects": [
+        "White paper with faint vertical lines",
+        "Handwritten Chinese characters in black ink"
+      ],
+      "physical_actions": [],
+      "uncertainty": "The text at the edges is partially cut off by the framing. There is slight blurriness overall, especially on the fingertip at screen-right."
+    },
+    "error": null,
+    "latency_ms": 26471.35,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18731,
+      "output_tokens": 1633,
+      "thinking_tokens": 1394,
+      "cache_read_tokens": 24363,
+      "total_tokens": 20364
+    },
+    "source_image_hash": "62101f98a1621e97e5f6dfb541cdf2c8c77614ff3c875d63b72a734ee30d95ff",
+    "inference_image_hash": "729b8a08d3d8962af123a8c911b4e2a58a8770d10f082681a4fa45ed9bd76926",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

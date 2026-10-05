@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0015_pct75",
+  "shot_id": "shot_B0015",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "e0f5c0e33f06721a687b870e2cd1a0dd0af7ad06cc7c7c5b3e3ab33d915d67e0",
+  "inference_hash": "e1b2f0e2e3b6d013f3884174e71e5c549366309234743ec197b295bef4e8e8b0",
+  "latency_ms": 45495.56420801673,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名深色盘发、侧分刘海的女性，皮肤白皙，佩戴小巧的坠式耳环，身穿带有绿色包边和花卉图案的紫红色高领传统旗袍\"], \"environment\": \"室内昏暗环境，背景整体呈深色调，画面右侧可见带有垂直栏杆的深色木质楼梯结构\", \"objects\": [\"耳环\", \"旗袍\", \"底部字幕文字\"], \"physical_actions\": [\"头部微转向画面右侧，视线向下微垂，嘴唇微张\"], \"uncertainty\": \"背景光线非常暗，导致后方空间细节严重隐蔽在阴影中\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名深色盘发、侧分刘海的女性，皮肤白皙，佩戴小巧的坠式耳环，身穿带有绿色包边和花卉图案的紫红色高领传统旗袍"
+      ],
+      "environment": "室内昏暗环境，背景整体呈深色调，画面右侧可见带有垂直栏杆的深色木质楼梯结构",
+      "objects": [
+        "耳环",
+        "旗袍",
+        "底部字幕文字"
+      ],
+      "physical_actions": [
+        "头部微转向画面右侧，视线向下微垂，嘴唇微张"
+      ],
+      "uncertainty": "背景光线非常暗，导致后方空间细节严重隐蔽在阴影中"
+    },
+    "error": null,
+    "latency_ms": 45495.56,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14818,
+      "output_tokens": 1799,
+      "thinking_tokens": 1329,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16617
+    },
+    "source_image_hash": "e0f5c0e33f06721a687b870e2cd1a0dd0af7ad06cc7c7c5b3e3ab33d915d67e0",
+    "inference_image_hash": "e1b2f0e2e3b6d013f3884174e71e5c549366309234743ec197b295bef4e8e8b0",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

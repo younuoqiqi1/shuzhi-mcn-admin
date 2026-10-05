@@ -1,0 +1,54 @@
+{
+  "frame_id": "shot_B0034_pct50",
+  "shot_id": "shot_B0034",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "3e0116385dac0552c170db7f4098c8b5a3042ac9ed0670aed71e78ba5e3e6ba2",
+  "inference_hash": "c397390e4d29b4d842b3b066714a97b3008589b081d7efcefaf3da6def7cb183",
+  "latency_ms": 37555.06062495988,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Man screen-left, short black hair, light blue shirt, beige vest.\", \"Man screen-right, short dark hair, glasses, white shirt, dark jacket.\"], \"environment\": \"Dimly lit indoor room with dark wooden furniture, table, and framed artwork.\", \"objects\": [\"brass hot pot\", \"sliced white food\", \"sliced red meat\", \"green vegetables\", \"bowls\", \"chopsticks\", \"papers\", \"fan\", \"framed artwork\"], \"physical_actions\": [\"Seated screen-left, holding and looking at a document.\", \"Seated screen-right, holding chopsticks, lifting food.\"], \"uncertainty\": \"Dim lighting creates shadows; steam partially obscures the center background.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Man screen-left, short black hair, light blue shirt, beige vest.",
+        "Man screen-right, short dark hair, glasses, white shirt, dark jacket."
+      ],
+      "environment": "Dimly lit indoor room with dark wooden furniture, table, and framed artwork.",
+      "objects": [
+        "brass hot pot",
+        "sliced white food",
+        "sliced red meat",
+        "green vegetables",
+        "bowls",
+        "chopsticks",
+        "papers",
+        "fan",
+        "framed artwork"
+      ],
+      "physical_actions": [
+        "Seated screen-left, holding and looking at a document.",
+        "Seated screen-right, holding chopsticks, lifting food."
+      ],
+      "uncertainty": "Dim lighting creates shadows; steam partially obscures the center background."
+    },
+    "error": null,
+    "latency_ms": 37555.06,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18911,
+      "output_tokens": 2820,
+      "thinking_tokens": 1841,
+      "cache_read_tokens": 48734,
+      "total_tokens": 21731
+    },
+    "source_image_hash": "3e0116385dac0552c170db7f4098c8b5a3042ac9ed0670aed71e78ba5e3e6ba2",
+    "inference_image_hash": "c397390e4d29b4d842b3b066714a97b3008589b081d7efcefaf3da6def7cb183",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

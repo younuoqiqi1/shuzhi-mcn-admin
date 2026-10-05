@@ -1,0 +1,52 @@
+{
+  "frame_id": "shot_B0006_pct25",
+  "shot_id": "shot_B0006",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "5b60bc0ac58348caa586c51050088595872a36d3ed9e33077ba29b23a9bf1d0a",
+  "inference_hash": "58113bd08d08ead7d10c0502ab55126b2c2f6cde93d5382e5661c7455f2be4a7",
+  "latency_ms": 44890.59633295983,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"画面左侧一名短发年长男性，身穿灰色立领中山装，内搭白色衬衫\", \"画面右侧一名戴眼镜的男性，身穿深蓝色西装，仅可见右半侧脸与肩膀\"], \"environment\": \"室内空间，背景有木质框架与浅色花纹软包的单人沙发，后方墙壁挂有书法字画，右侧有深绿色窗帘\", \"objects\": [\"灰色中山装\", \"白色衬衫\", \"眼镜\", \"深蓝色西装\", \"花纹软包沙发\", \"书法字画\", \"深绿色窗帘\"], \"physical_actions\": [\"左侧男性坐着，面朝画面右侧\", \"右侧男性背对镜头坐着，左手有轻微抬起动作\"], \"uncertainty\": \"画面右侧人物身体大部分被遮挡（仅可见背影和部分侧脸），画面底部居中存在白色字幕遮挡\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "画面左侧一名短发年长男性，身穿灰色立领中山装，内搭白色衬衫",
+        "画面右侧一名戴眼镜的男性，身穿深蓝色西装，仅可见右半侧脸与肩膀"
+      ],
+      "environment": "室内空间，背景有木质框架与浅色花纹软包的单人沙发，后方墙壁挂有书法字画，右侧有深绿色窗帘",
+      "objects": [
+        "灰色中山装",
+        "白色衬衫",
+        "眼镜",
+        "深蓝色西装",
+        "花纹软包沙发",
+        "书法字画",
+        "深绿色窗帘"
+      ],
+      "physical_actions": [
+        "左侧男性坐着，面朝画面右侧",
+        "右侧男性背对镜头坐着，左手有轻微抬起动作"
+      ],
+      "uncertainty": "画面右侧人物身体大部分被遮挡（仅可见背影和部分侧脸），画面底部居中存在白色字幕遮挡"
+    },
+    "error": null,
+    "latency_ms": 44890.6,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21978,
+      "output_tokens": 1787,
+      "thinking_tokens": 1180,
+      "cache_read_tokens": 44874,
+      "total_tokens": 23765
+    },
+    "source_image_hash": "5b60bc0ac58348caa586c51050088595872a36d3ed9e33077ba29b23a9bf1d0a",
+    "inference_image_hash": "58113bd08d08ead7d10c0502ab55126b2c2f6cde93d5382e5661c7455f2be4a7",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

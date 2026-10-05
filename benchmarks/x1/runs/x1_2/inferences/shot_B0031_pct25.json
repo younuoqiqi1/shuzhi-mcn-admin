@@ -1,0 +1,31 @@
+{
+  "frame_id": "shot_B0031_pct25",
+  "shot_id": "shot_B0031",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "b46079afcfe3190e7fcb47eb422fc885bf1ee97c0925121ab7f321f818fdab3d",
+  "inference_hash": "c502182b5caedc1cba3f3d85a661bcc783c9f81eca93640648e082ee99696331",
+  "latency_ms": 36959.94408300612,
+  "status": "failed",
+  "error": "AGY CLI 退出码非零 (1): error: Eligibility check failed: failed to get profile picture: Get \"<redacted-profile-url>\": EOF\n",
+  "response": {
+    "raw_text": "",
+    "parsed_validation": null,
+    "error": "AGY CLI 退出码非零 (1): error: Eligibility check failed: failed to get profile picture: Get \"<redacted-profile-url>\": EOF\n",
+    "latency_ms": 36959.94,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "thinking_tokens": 0,
+      "cache_read_tokens": 0,
+      "total_tokens": 0
+    },
+    "source_image_hash": "b46079afcfe3190e7fcb47eb422fc885bf1ee97c0925121ab7f321f818fdab3d",
+    "inference_image_hash": "c502182b5caedc1cba3f3d85a661bcc783c9f81eca93640648e082ee99696331",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

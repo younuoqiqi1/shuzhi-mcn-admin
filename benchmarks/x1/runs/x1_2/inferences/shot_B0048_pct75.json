@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0048_pct75",
+  "shot_id": "shot_B0048",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "4fcec7b6d177dbaa69c0f9ce5fd6a3faa1568b09061e40453028488f04cea7d8",
+  "inference_hash": "7cd47da90e71620cd2d202533dd2dcac5d7500bc239601e9328c8b8086979bbe",
+  "latency_ms": 35667.52645804081,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"full_shot\", \"characters\": [\"One man with short dark hair and glasses, wearing a dark suit, light-colored shirt, and tie.\"], \"environment\": \"A dimly lit paved alley or narrow street with brick or stone buildings on the sides. The screen-left side has a cool greenish tint, while the screen-right side fades into a dark purplish gradient.\", \"objects\": [\"Paved stone path\", \"Brick buildings\", \"On-screen text\"], \"physical_actions\": [\"Walking forward towards the camera\"], \"uncertainty\": \"The screen-right half is heavily obscured by a dark purple gradient and vertical text. Subtitles are present on the bottom-left. The scene is dark and low resolution.\"}",
+    "parsed_validation": {
+      "camera": "full_shot",
+      "characters": [
+        "One man with short dark hair and glasses, wearing a dark suit, light-colored shirt, and tie."
+      ],
+      "environment": "A dimly lit paved alley or narrow street with brick or stone buildings on the sides. The screen-left side has a cool greenish tint, while the screen-right side fades into a dark purplish gradient.",
+      "objects": [
+        "Paved stone path",
+        "Brick buildings",
+        "On-screen text"
+      ],
+      "physical_actions": [
+        "Walking forward towards the camera"
+      ],
+      "uncertainty": "The screen-right half is heavily obscured by a dark purple gradient and vertical text. Subtitles are present on the bottom-left. The scene is dark and low resolution."
+    },
+    "error": null,
+    "latency_ms": 35667.53,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18881,
+      "output_tokens": 2194,
+      "thinking_tokens": 859,
+      "cache_read_tokens": 48738,
+      "total_tokens": 21075
+    },
+    "source_image_hash": "4fcec7b6d177dbaa69c0f9ce5fd6a3faa1568b09061e40453028488f04cea7d8",
+    "inference_image_hash": "7cd47da90e71620cd2d202533dd2dcac5d7500bc239601e9328c8b8086979bbe",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

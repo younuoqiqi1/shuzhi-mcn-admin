@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0002_pct50",
+  "shot_id": "shot_B0002",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "13ba1ef48f0c71ab9bea6e72c5f2a4fd97beb46694b344f963fc6697c8a5a52c",
+  "inference_hash": "d6b93a9954b8e0427937028df9e7459a86fd4a2aafe69bd9c7b7e2646ba16f3e",
+  "latency_ms": 46775.04558302462,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person on screen-right in dark clothing, face heavily blurred.\", \"Possible second figure on screen-left, obscured by shadow.\"], \"environment\": \"Dimly lit setting with blueish light. A vertical structure stands on screen-left. The screen-right background has a dense grid of dark dots.\", \"objects\": [\"Vertical structure on screen-left\"], \"physical_actions\": [\"Figure is in motion, showing severe motion blur\"], \"uncertainty\": \"Severe motion blur. Very low lighting obscures details. Right side is overlaid with a dot matrix pattern.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person on screen-right in dark clothing, face heavily blurred.",
+        "Possible second figure on screen-left, obscured by shadow."
+      ],
+      "environment": "Dimly lit setting with blueish light. A vertical structure stands on screen-left. The screen-right background has a dense grid of dark dots.",
+      "objects": [
+        "Vertical structure on screen-left"
+      ],
+      "physical_actions": [
+        "Figure is in motion, showing severe motion blur"
+      ],
+      "uncertainty": "Severe motion blur. Very low lighting obscures details. Right side is overlaid with a dot matrix pattern."
+    },
+    "error": null,
+    "latency_ms": 46775.05,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 38526,
+      "output_tokens": 1925,
+      "thinking_tokens": 1480,
+      "cache_read_tokens": 28424,
+      "total_tokens": 40451
+    },
+    "source_image_hash": "13ba1ef48f0c71ab9bea6e72c5f2a4fd97beb46694b344f963fc6697c8a5a52c",
+    "inference_image_hash": "d6b93a9954b8e0427937028df9e7459a86fd4a2aafe69bd9c7b7e2646ba16f3e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

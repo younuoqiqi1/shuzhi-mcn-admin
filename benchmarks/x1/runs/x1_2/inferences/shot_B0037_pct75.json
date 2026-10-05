@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0037_pct75",
+  "shot_id": "shot_B0037",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "08b76375c96526a1495ee9d8e6c85f11ce8d17a92be1290299f2bac283a8735d",
+  "inference_hash": "1a80215ba8cde17bd83e9a4012287d720ad93040411651a8f4e314696cc20bdb",
+  "latency_ms": 33663.79899997264,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Adult male, short black hair, round glasses, dark jacket, white collared shirt.\"], \"environment\": \"Indoor room with a glass paneled door screen-left, a framed picture and hanging scroll screen-right.\", \"objects\": [\"glasses\", \"dark jacket\", \"white shirt\", \"paneled door\", \"framed picture\", \"hanging scroll\", \"subtitles\"], \"physical_actions\": [\"looking slightly downwards\", \"mouth slightly open\"], \"uncertainty\": \"Posture (standing or sitting) is obscured by the frame crop. Background is slightly out of focus.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Adult male, short black hair, round glasses, dark jacket, white collared shirt."
+      ],
+      "environment": "Indoor room with a glass paneled door screen-left, a framed picture and hanging scroll screen-right.",
+      "objects": [
+        "glasses",
+        "dark jacket",
+        "white shirt",
+        "paneled door",
+        "framed picture",
+        "hanging scroll",
+        "subtitles"
+      ],
+      "physical_actions": [
+        "looking slightly downwards",
+        "mouth slightly open"
+      ],
+      "uncertainty": "Posture (standing or sitting) is obscured by the frame crop. Background is slightly out of focus."
+    },
+    "error": null,
+    "latency_ms": 33663.8,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17565,
+      "output_tokens": 1574,
+      "thinking_tokens": 1111,
+      "cache_read_tokens": 48725,
+      "total_tokens": 19139
+    },
+    "source_image_hash": "08b76375c96526a1495ee9d8e6c85f11ce8d17a92be1290299f2bac283a8735d",
+    "inference_image_hash": "1a80215ba8cde17bd83e9a4012287d720ad93040411651a8f4e314696cc20bdb",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

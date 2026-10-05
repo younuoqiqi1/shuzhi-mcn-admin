@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0019_pct25",
+  "shot_id": "shot_B0019",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "4e9e24aed91017b427853e78f578dccc79fc6511f03c0930d28c45cad5f4f4c2",
+  "inference_hash": "5cfba09a978e89e53da0205da7d6dafa73d6e3e84d9d7e30023b79d55032dd6b",
+  "latency_ms": 31830.67424991168,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名人物，黑色短发，穿着紫红色高领衣物，双耳佩戴浅色珠状吊坠耳环\"], \"environment\": \"光线昏暗的室内，背景可见模糊的垂直木质柱状结构或栏杆\", \"objects\": [\"吊坠耳环\"], \"physical_actions\": [\"头部微垂\", \"视线向下看\"], \"uncertainty\": \"背景昏暗且失焦，无法辨别具体空间环境与物体细节\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名人物，黑色短发，穿着紫红色高领衣物，双耳佩戴浅色珠状吊坠耳环"
+      ],
+      "environment": "光线昏暗的室内，背景可见模糊的垂直木质柱状结构或栏杆",
+      "objects": [
+        "吊坠耳环"
+      ],
+      "physical_actions": [
+        "头部微垂",
+        "视线向下看"
+      ],
+      "uncertainty": "背景昏暗且失焦，无法辨别具体空间环境与物体细节"
+    },
+    "error": null,
+    "latency_ms": 31830.67,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14799,
+      "output_tokens": 1887,
+      "thinking_tokens": 1662,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16686
+    },
+    "source_image_hash": "4e9e24aed91017b427853e78f578dccc79fc6511f03c0930d28c45cad5f4f4c2",
+    "inference_image_hash": "5cfba09a978e89e53da0205da7d6dafa73d6e3e84d9d7e30023b79d55032dd6b",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

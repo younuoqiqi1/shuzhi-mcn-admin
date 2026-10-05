@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0046_pct50",
+  "shot_id": "shot_B0046",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c20332131f60ff7b36a622eedb460be26187a4fc9d49b8bb7d3862780d10d7d6",
+  "inference_hash": "412f5e83a24458855f721399e8cdaad26d957318e1fd5bfc526f8492a1727a6b",
+  "latency_ms": 39843.34170795046,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Man with short dark hair, white collared shirt, glasses, profile to screen-left.\"], \"environment\": \"Indoor with light walls. Dark garment hanging screen-right. Partial dark frame screen-left.\", \"objects\": [\"Glasses\", \"White collared shirt\", \"Dark garment\", \"Dark frame\"], \"physical_actions\": [\"Head tilted downward, looking towards screen-left.\"], \"uncertainty\": \"Lower body out of frame. Background screen-right is dark and slightly blurred.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Man with short dark hair, white collared shirt, glasses, profile to screen-left."
+      ],
+      "environment": "Indoor with light walls. Dark garment hanging screen-right. Partial dark frame screen-left.",
+      "objects": [
+        "Glasses",
+        "White collared shirt",
+        "Dark garment",
+        "Dark frame"
+      ],
+      "physical_actions": [
+        "Head tilted downward, looking towards screen-left."
+      ],
+      "uncertainty": "Lower body out of frame. Background screen-right is dark and slightly blurred."
+    },
+    "error": null,
+    "latency_ms": 39843.34,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18305,
+      "output_tokens": 2276,
+      "thinking_tokens": 1495,
+      "cache_read_tokens": 48729,
+      "total_tokens": 20581
+    },
+    "source_image_hash": "c20332131f60ff7b36a622eedb460be26187a4fc9d49b8bb7d3862780d10d7d6",
+    "inference_image_hash": "412f5e83a24458855f721399e8cdaad26d957318e1fd5bfc526f8492a1727a6b",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

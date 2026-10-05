@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0026_pct50",
+  "shot_id": "shot_B0026",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "54ec2550e9e06eea4400d24057737e5272f37b28f96974db07cecb396262b6ff",
+  "inference_hash": "f1392da7af038de2727fa52b9b724c825a5ae009d202272327e91339965f07bd",
+  "latency_ms": 34963.94858404528,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Person on screen-left, seen from back, with dark hair, dangling earring, and pinkish garment.\", \"Man on screen-right, facing forward, wearing black suit jacket, white shirt, and glasses.\"], \"environment\": \"A dimly lit interior space with a dark wooden paneled door visible in the background.\", \"objects\": [\"glasses\", \"earring\", \"suit jacket\", \"collared shirt\"], \"physical_actions\": [\"The man is facing the person on the left with his mouth slightly open.\", \"The person on the left is facing the man.\"], \"uncertainty\": \"Person on screen-left is heavily occluded. Background is dark, obscuring details.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Person on screen-left, seen from back, with dark hair, dangling earring, and pinkish garment.",
+        "Man on screen-right, facing forward, wearing black suit jacket, white shirt, and glasses."
+      ],
+      "environment": "A dimly lit interior space with a dark wooden paneled door visible in the background.",
+      "objects": [
+        "glasses",
+        "earring",
+        "suit jacket",
+        "collared shirt"
+      ],
+      "physical_actions": [
+        "The man is facing the person on the left with his mouth slightly open.",
+        "The person on the left is facing the man."
+      ],
+      "uncertainty": "Person on screen-left is heavily occluded. Background is dark, obscuring details."
+    },
+    "error": null,
+    "latency_ms": 34963.95,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21793,
+      "output_tokens": 1598,
+      "thinking_tokens": 1105,
+      "cache_read_tokens": 44665,
+      "total_tokens": 23391
+    },
+    "source_image_hash": "54ec2550e9e06eea4400d24057737e5272f37b28f96974db07cecb396262b6ff",
+    "inference_image_hash": "f1392da7af038de2727fa52b9b724c825a5ae009d202272327e91339965f07bd",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

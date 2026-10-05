@@ -1,0 +1,112 @@
+{
+  "window_idx": 5,
+  "center_start": 300.0,
+  "center_end": 360.0,
+  "ctx_start": 298.0,
+  "ctx_end": 362.0,
+  "raw_cuts_count": 13,
+  "center_cuts": [
+    305.96,
+    310.96,
+    315.0,
+    320.64,
+    324.2,
+    327.0,
+    333.36,
+    338.4,
+    342.96,
+    350.6,
+    357.96
+  ],
+  "scores": [
+    {
+      "time_sec": 299.96,
+      "frame_num": 7499,
+      "content_val": 43.8149,
+      "adaptive_ratio": 47.5576
+    },
+    {
+      "time_sec": 305.96,
+      "frame_num": 7649,
+      "content_val": 41.4643,
+      "adaptive_ratio": 23.6019
+    },
+    {
+      "time_sec": 310.96,
+      "frame_num": 7774,
+      "content_val": 45.35,
+      "adaptive_ratio": 36.2098
+    },
+    {
+      "time_sec": 315.0,
+      "frame_num": 7875,
+      "content_val": 56.3893,
+      "adaptive_ratio": 155.8417
+    },
+    {
+      "time_sec": 320.64,
+      "frame_num": 8016,
+      "content_val": 40.3706,
+      "adaptive_ratio": 22.2652
+    },
+    {
+      "time_sec": 324.2,
+      "frame_num": 8105,
+      "content_val": 42.3166,
+      "adaptive_ratio": 29.3798
+    },
+    {
+      "time_sec": 327.0,
+      "frame_num": 8175,
+      "content_val": 42.6565,
+      "adaptive_ratio": 49.7543
+    },
+    {
+      "time_sec": 333.36,
+      "frame_num": 8334,
+      "content_val": 42.0158,
+      "adaptive_ratio": 46.6449
+    },
+    {
+      "time_sec": 338.4,
+      "frame_num": 8460,
+      "content_val": 46.8355,
+      "adaptive_ratio": 21.842
+    },
+    {
+      "time_sec": 342.96,
+      "frame_num": 8574,
+      "content_val": 46.7503,
+      "adaptive_ratio": 11.9818
+    },
+    {
+      "time_sec": 350.6,
+      "frame_num": 8765,
+      "content_val": 47.8283,
+      "adaptive_ratio": 21.4826
+    },
+    {
+      "time_sec": 357.96,
+      "frame_num": 8949,
+      "content_val": 46.1882,
+      "adaptive_ratio": 40.1215
+    },
+    {
+      "time_sec": 360.6,
+      "frame_num": 9015,
+      "content_val": 45.4122,
+      "adaptive_ratio": 72.6231
+    }
+  ],
+  "params": {
+    "window_idx": 5,
+    "center_start": 300.0,
+    "center_end": 360.0,
+    "ctx_start": 298.0,
+    "ctx_end": 362.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "f35f5c0e05bd3de3ae991cc909f0dd63fd06c7e0aee6be4174d07fc3cfe77298",
+  "created_at": 1791218716.481174
+}

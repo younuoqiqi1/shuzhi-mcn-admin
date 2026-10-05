@@ -1,0 +1,54 @@
+{
+  "frame_id": "shot_B0034_pct75",
+  "shot_id": "shot_B0034",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "5f09fe6ef3e399f4a85ec0d2618c705cae0f121321e6b46aafb09799077761ac",
+  "inference_hash": "5f39599b54a84d9e45b44289c071e2909c12147b1a6e0bb72c807a25a38e6f5a",
+  "latency_ms": 30013.106749975123,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"短发男子位于画面左侧，身穿浅色衬衫，外搭浅色马甲\", \"短发男子位于画面右侧，佩戴眼镜，身穿深色西装外套，内搭浅色衬衫\"], \"environment\": \"室内环境，光线偏暗暖色调。背景可见墙上挂有带边框的画作和书法字幅，角落有一个深色立架。前景是一张摆放着餐具和食物的深色方形餐桌。\", \"objects\": [\"铜制带烟囱的火锅\", \"水蒸气\", \"多双筷子\", \"若干白色小碗和杯子\", \"装有豆腐的白盘\", \"装有红色肉片的白盘\", \"装有绿色蔬菜的白盘\", \"画面左下角桌面上的一叠浅色纸张或小本子\", \"底部白色中文字幕\"], \"physical_actions\": [\"画面左侧男子坐在桌旁，双手置于桌前，右手握着筷子，头部微低看向桌面\", \"画面右侧男子坐在桌旁，右手持筷子正在从面前的小碗中夹取食物，头部向下注视动作区域\"], \"uncertainty\": \"画面整体光线较暗；火锅上方升腾的蒸汽使画面中央部分略有模糊和遮挡；画面底部中央存在白色的中文字幕，遮挡了部分桌面和边缘细节。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "短发男子位于画面左侧，身穿浅色衬衫，外搭浅色马甲",
+        "短发男子位于画面右侧，佩戴眼镜，身穿深色西装外套，内搭浅色衬衫"
+      ],
+      "environment": "室内环境，光线偏暗暖色调。背景可见墙上挂有带边框的画作和书法字幅，角落有一个深色立架。前景是一张摆放着餐具和食物的深色方形餐桌。",
+      "objects": [
+        "铜制带烟囱的火锅",
+        "水蒸气",
+        "多双筷子",
+        "若干白色小碗和杯子",
+        "装有豆腐的白盘",
+        "装有红色肉片的白盘",
+        "装有绿色蔬菜的白盘",
+        "画面左下角桌面上的一叠浅色纸张或小本子",
+        "底部白色中文字幕"
+      ],
+      "physical_actions": [
+        "画面左侧男子坐在桌旁，双手置于桌前，右手握着筷子，头部微低看向桌面",
+        "画面右侧男子坐在桌旁，右手持筷子正在从面前的小碗中夹取食物，头部向下注视动作区域"
+      ],
+      "uncertainty": "画面整体光线较暗；火锅上方升腾的蒸汽使画面中央部分略有模糊和遮挡；画面底部中央存在白色的中文字幕，遮挡了部分桌面和边缘细节。"
+    },
+    "error": null,
+    "latency_ms": 30013.11,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18724,
+      "output_tokens": 1801,
+      "thinking_tokens": 1363,
+      "cache_read_tokens": 24363,
+      "total_tokens": 20525
+    },
+    "source_image_hash": "5f09fe6ef3e399f4a85ec0d2618c705cae0f121321e6b46aafb09799077761ac",
+    "inference_image_hash": "5f39599b54a84d9e45b44289c071e2909c12147b1a6e0bb72c807a25a38e6f5a",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

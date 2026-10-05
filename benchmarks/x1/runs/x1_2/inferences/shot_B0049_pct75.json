@@ -1,0 +1,54 @@
+{
+  "frame_id": "shot_B0049_pct75",
+  "shot_id": "shot_B0049",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "24d87253f7632f8b9af24adaf689971af39c104b08fd53f72ea9de6c2a1cf304",
+  "inference_hash": "5acc32ce94ea76c62f95885fb3b055f4d81b88185281bd4c9cd790752a1e3f24",
+  "latency_ms": 37589.17054196354,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"Screen-left foreground: Person with dark hair, in dark coat, standing.\", \"Center foreground: Person in blue coat, facing away, arms extended sideways.\", \"Bottom-center: Head and shoulders of person in light grey shirt.\", \"Screen-right background: Person in dark clothing, standing.\", \"Background: Six people sitting on ground against wall, some with bowed heads.\"], \"environment\": \"Outdoor paved courtyard enclosed by light grey walls. Bright daylight casting distinct shadows.\", \"objects\": [\"Square stone paving tiles\", \"Grey walls\", \"Bags on ground next to seated people\", \"White text overlays\", \"Dark purplish graphic overlay\"], \"physical_actions\": [\"Standing with both arms fully extended horizontally\", \"Sitting on the ground against a wall\", \"Standing still\"], \"uncertainty\": \"Right side obscured by dark overlay and white text. Faint text overlay on bottom left. Faces mostly not visible due to orientation, distance, or bowed heads.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "Screen-left foreground: Person with dark hair, in dark coat, standing.",
+        "Center foreground: Person in blue coat, facing away, arms extended sideways.",
+        "Bottom-center: Head and shoulders of person in light grey shirt.",
+        "Screen-right background: Person in dark clothing, standing.",
+        "Background: Six people sitting on ground against wall, some with bowed heads."
+      ],
+      "environment": "Outdoor paved courtyard enclosed by light grey walls. Bright daylight casting distinct shadows.",
+      "objects": [
+        "Square stone paving tiles",
+        "Grey walls",
+        "Bags on ground next to seated people",
+        "White text overlays",
+        "Dark purplish graphic overlay"
+      ],
+      "physical_actions": [
+        "Standing with both arms fully extended horizontally",
+        "Sitting on the ground against a wall",
+        "Standing still"
+      ],
+      "uncertainty": "Right side obscured by dark overlay and white text. Faint text overlay on bottom left. Faces mostly not visible due to orientation, distance, or bowed heads."
+    },
+    "error": null,
+    "latency_ms": 37589.17,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22383,
+      "output_tokens": 2573,
+      "thinking_tokens": 1943,
+      "cache_read_tokens": 44669,
+      "total_tokens": 24956
+    },
+    "source_image_hash": "24d87253f7632f8b9af24adaf689971af39c104b08fd53f72ea9de6c2a1cf304",
+    "inference_image_hash": "5acc32ce94ea76c62f95885fb3b055f4d81b88185281bd4c9cd790752a1e3f24",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

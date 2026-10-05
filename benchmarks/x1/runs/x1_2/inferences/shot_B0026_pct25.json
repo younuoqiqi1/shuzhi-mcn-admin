@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0026_pct25",
+  "shot_id": "shot_B0026",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "f8cc6ae1a7c0a9e38a6286e8edf0e7fed1b72f0fd98dc42b3607968ba176e756",
+  "inference_hash": "dfabec34163f90a85b7b7a0d3424695fa1fcb3c0e7e7e34dbe6175681feb3fd8",
+  "latency_ms": 35173.89249999542,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Screen-left person, seen from behind/side, with dark hair, dark red garment, and an earring.\", \"Screen-right person, facing forward, wearing a black suit jacket, white shirt, and glasses.\"], \"environment\": \"Dimly lit indoor space with dark wooden doors or paneling visible in the background.\", \"objects\": [\"Glasses\", \"Earring\", \"Suit jacket\", \"White shirt\", \"Subtitles\"], \"physical_actions\": [\"Facing each other\", \"Looking towards each other\"], \"uncertainty\": \"The face of the screen-left person is mostly obscured. The background is dark. Subtitles block bottom.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Screen-left person, seen from behind/side, with dark hair, dark red garment, and an earring.",
+        "Screen-right person, facing forward, wearing a black suit jacket, white shirt, and glasses."
+      ],
+      "environment": "Dimly lit indoor space with dark wooden doors or paneling visible in the background.",
+      "objects": [
+        "Glasses",
+        "Earring",
+        "Suit jacket",
+        "White shirt",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Facing each other",
+        "Looking towards each other"
+      ],
+      "uncertainty": "The face of the screen-left person is mostly obscured. The background is dark. Subtitles block bottom."
+    },
+    "error": null,
+    "latency_ms": 35173.89,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18691,
+      "output_tokens": 2271,
+      "thinking_tokens": 1800,
+      "cache_read_tokens": 48733,
+      "total_tokens": 20962
+    },
+    "source_image_hash": "f8cc6ae1a7c0a9e38a6286e8edf0e7fed1b72f0fd98dc42b3607968ba176e756",
+    "inference_image_hash": "dfabec34163f90a85b7b7a0d3424695fa1fcb3c0e7e7e34dbe6175681feb3fd8",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

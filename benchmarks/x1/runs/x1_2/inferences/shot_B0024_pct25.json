@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0024_pct25",
+  "shot_id": "shot_B0024",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "6fb76aa4b9a83fdb445bc5e8d93bdaccbc06cdcdbac44cd7b2f885fcb3e87cea",
+  "inference_hash": "1d714a42ced6d70d0436d6ce7a0975771d6418d4ed1a99d5aff1519b2ee1992f",
+  "latency_ms": 39799.699916969985,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"A person on screen-left with dark hair, seen from behind\", \"A person on screen-right wearing a black suit, white shirt, and glasses\"], \"environment\": \"Dimly lit interior room with a dark coat rack on the wall and a vertical wire.\", \"objects\": [\"Glasses\", \"Suit\", \"Shirt\", \"Tie\", \"Coat rack\", \"Wire\"], \"physical_actions\": [\"Person on screen-left raising hands to adjust tie of person on screen-right\", \"Person on screen-right standing still\"], \"uncertainty\": \"Face of person on screen-left is completely occluded. Dim lighting.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "A person on screen-left with dark hair, seen from behind",
+        "A person on screen-right wearing a black suit, white shirt, and glasses"
+      ],
+      "environment": "Dimly lit interior room with a dark coat rack on the wall and a vertical wire.",
+      "objects": [
+        "Glasses",
+        "Suit",
+        "Shirt",
+        "Tie",
+        "Coat rack",
+        "Wire"
+      ],
+      "physical_actions": [
+        "Person on screen-left raising hands to adjust tie of person on screen-right",
+        "Person on screen-right standing still"
+      ],
+      "uncertainty": "Face of person on screen-left is completely occluded. Dim lighting."
+    },
+    "error": null,
+    "latency_ms": 39799.7,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17634,
+      "output_tokens": 1400,
+      "thinking_tokens": 892,
+      "cache_read_tokens": 48724,
+      "total_tokens": 19034
+    },
+    "source_image_hash": "6fb76aa4b9a83fdb445bc5e8d93bdaccbc06cdcdbac44cd7b2f885fcb3e87cea",
+    "inference_image_hash": "1d714a42ced6d70d0436d6ce7a0975771d6418d4ed1a99d5aff1519b2ee1992f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

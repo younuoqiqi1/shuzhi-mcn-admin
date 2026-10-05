@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0002_pct75",
+  "shot_id": "shot_B0002",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "1700453431df73f51789b2a58ad2f0bf514432e146614817207f356ed9f706b3",
+  "inference_hash": "d418d4ed196047a64258f70b5f3f186554c3037f2ed0c2fa4e3a67d7c306c600",
+  "latency_ms": 45857.924540992826,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Person with short dark hair, glasses, dark jacket, and light shirt collar.\"], \"environment\": \"Dark space with a brick-like wall on screen-left lit by blue light, dark on screen-right.\", \"objects\": [\"Small black object pointed at camera\", \"Yellow Chinese text in lower center\", \"Halftone dot pattern on screen-right\", \"Red blurred streak near waist\", \"Blue light flares over the character\"], \"physical_actions\": [\"Standing, facing camera, arm extended pointing object at camera.\"], \"uncertainty\": \"Image is heavily blurred. Background obscured by halftone dots on screen-right, text overlays, and superimposed blue light flares.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Person with short dark hair, glasses, dark jacket, and light shirt collar."
+      ],
+      "environment": "Dark space with a brick-like wall on screen-left lit by blue light, dark on screen-right.",
+      "objects": [
+        "Small black object pointed at camera",
+        "Yellow Chinese text in lower center",
+        "Halftone dot pattern on screen-right",
+        "Red blurred streak near waist",
+        "Blue light flares over the character"
+      ],
+      "physical_actions": [
+        "Standing, facing camera, arm extended pointing object at camera."
+      ],
+      "uncertainty": "Image is heavily blurred. Background obscured by halftone dots on screen-right, text overlays, and superimposed blue light flares."
+    },
+    "error": null,
+    "latency_ms": 45857.92,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18891,
+      "output_tokens": 2763,
+      "thinking_tokens": 1830,
+      "cache_read_tokens": 48734,
+      "total_tokens": 21654
+    },
+    "source_image_hash": "1700453431df73f51789b2a58ad2f0bf514432e146614817207f356ed9f706b3",
+    "inference_image_hash": "d418d4ed196047a64258f70b5f3f186554c3037f2ed0c2fa4e3a67d7c306c600",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

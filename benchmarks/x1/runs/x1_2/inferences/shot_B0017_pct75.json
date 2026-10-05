@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0017_pct75",
+  "shot_id": "shot_B0017",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "62417769906c31ff3c48a3f7995dba9fc7802d25c5f948954ec25b9d864ab11d",
+  "inference_hash": "b177312ad16745674caf04cf3df258de91b598e5d61c38173e1d05da29b26b61",
+  "latency_ms": 23691.405749996193,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"A person with dark wavy hair wearing a light-colored top with small floral patterns.\"], \"environment\": \"A dark background with out-of-focus vertical elements resembling dark wood or structural pillars.\", \"objects\": [\"floral patterned shirt\", \"subtitles at the bottom\"], \"physical_actions\": [\"looking off-screen towards screen-left\", \"slightly parted lips\"], \"uncertainty\": \"The background is very dark and out of focus, obscuring details. Image has somewhat low resolution.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "A person with dark wavy hair wearing a light-colored top with small floral patterns."
+      ],
+      "environment": "A dark background with out-of-focus vertical elements resembling dark wood or structural pillars.",
+      "objects": [
+        "floral patterned shirt",
+        "subtitles at the bottom"
+      ],
+      "physical_actions": [
+        "looking off-screen towards screen-left",
+        "slightly parted lips"
+      ],
+      "uncertainty": "The background is very dark and out of focus, obscuring details. Image has somewhat low resolution."
+    },
+    "error": null,
+    "latency_ms": 23691.41,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21203,
+      "output_tokens": 945,
+      "thinking_tokens": 547,
+      "cache_read_tokens": 44660,
+      "total_tokens": 22148
+    },
+    "source_image_hash": "62417769906c31ff3c48a3f7995dba9fc7802d25c5f948954ec25b9d864ab11d",
+    "inference_image_hash": "b177312ad16745674caf04cf3df258de91b598e5d61c38173e1d05da29b26b61",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0021_pct75",
+  "shot_id": "shot_B0021",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "38f9224409ad4256dac43f92ca2bb2dd1565354fd4c733af0ca764a39aeecca5",
+  "inference_hash": "8d81c411be64cff98d117389b833883d5271a56fa445e2a5ddd67aab3e35df3d",
+  "latency_ms": 35217.78395795263,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with dark wavy hair, wearing a light-colored patterned top.\"], \"environment\": \"Dimly lit setting with a dark background. Indistinct horizontal structures are on the screen-right.\", \"objects\": [\"Text overlay '忧伤是什么'\"], \"physical_actions\": [\"Looking toward screen-left\", \"Mouth slightly open\"], \"uncertainty\": \"Background and screen-left side are obscured by dark shadows. Text overlay at the bottom.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with dark wavy hair, wearing a light-colored patterned top."
+      ],
+      "environment": "Dimly lit setting with a dark background. Indistinct horizontal structures are on the screen-right.",
+      "objects": [
+        "Text overlay '忧伤是什么'"
+      ],
+      "physical_actions": [
+        "Looking toward screen-left",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Background and screen-left side are obscured by dark shadows. Text overlay at the bottom."
+    },
+    "error": null,
+    "latency_ms": 35217.78,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 38680,
+      "output_tokens": 1986,
+      "thinking_tokens": 1580,
+      "cache_read_tokens": 28426,
+      "total_tokens": 40666
+    },
+    "source_image_hash": "38f9224409ad4256dac43f92ca2bb2dd1565354fd4c733af0ca764a39aeecca5",
+    "inference_image_hash": "8d81c411be64cff98d117389b833883d5271a56fa445e2a5ddd67aab3e35df3d",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

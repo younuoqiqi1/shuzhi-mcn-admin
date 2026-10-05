@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0009_pct50",
+  "shot_id": "shot_B0009",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "dc16c04631c9a77288d1415071def8ff8dfb7341249745649c25d556be14568a",
+  "inference_hash": "40c0e72c8267555dbe057623da67c1c1f8a4ef3c78f1f669c045e8dc631651e5",
+  "latency_ms": 24548.285166034475,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名短发或齐肩黑发女性，穿着浅色（可能是浅蓝色或白色）上衣\"], \"environment\": \"室内，光线昏暗的房间，背景中有家具轮廓\", \"objects\": [\"屏幕右侧背景处有一个放置在高脚架上的青花瓷图案大花盆或罐子\", \"屏幕底部的白色字幕\"], \"physical_actions\": [\"目光向屏幕右下方看\", \"保持静止姿态\"], \"uncertainty\": \"环境光线整体较暗；背景处于失焦模糊状态；画面底部被字幕部分遮挡\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名短发或齐肩黑发女性，穿着浅色（可能是浅蓝色或白色）上衣"
+      ],
+      "environment": "室内，光线昏暗的房间，背景中有家具轮廓",
+      "objects": [
+        "屏幕右侧背景处有一个放置在高脚架上的青花瓷图案大花盆或罐子",
+        "屏幕底部的白色字幕"
+      ],
+      "physical_actions": [
+        "目光向屏幕右下方看",
+        "保持静止姿态"
+      ],
+      "uncertainty": "环境光线整体较暗；背景处于失焦模糊状态；画面底部被字幕部分遮挡"
+    },
+    "error": null,
+    "latency_ms": 24548.29,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18738,
+      "output_tokens": 1076,
+      "thinking_tokens": 826,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19814
+    },
+    "source_image_hash": "dc16c04631c9a77288d1415071def8ff8dfb7341249745649c25d556be14568a",
+    "inference_image_hash": "40c0e72c8267555dbe057623da67c1c1f8a4ef3c78f1f669c045e8dc631651e5",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

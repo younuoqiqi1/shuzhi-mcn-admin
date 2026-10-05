@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0003_pct50",
+  "shot_id": "shot_B0003",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c5f16f76ea8f31f78e4c7016eeabe8c9e26b15a75068de70b42eec8230af8d2e",
+  "inference_hash": "20e4b7a8ada1ec31f5c48469ee41c292672ffdac26bd020b32739e32ea57d09e",
+  "latency_ms": 35822.178832953796,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person on screen-left, dark hair with headband, light jacket over white collared shirt.\"], \"environment\": \"Dimly lit indoor space with a greenish-blue tint. Stacked wooden crates in background screen-right.\", \"objects\": [\"Dark wooden table\", \"Stacked wooden crates\", \"Yellow on-screen text\"], \"physical_actions\": [\"Head tilted down, eyes closed.\", \"Arms resting on a table in front, one hand visible.\"], \"uncertainty\": \"Dark image. Textured reflection overlay on screen-left. Yellow text on screen-right.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person on screen-left, dark hair with headband, light jacket over white collared shirt."
+      ],
+      "environment": "Dimly lit indoor space with a greenish-blue tint. Stacked wooden crates in background screen-right.",
+      "objects": [
+        "Dark wooden table",
+        "Stacked wooden crates",
+        "Yellow on-screen text"
+      ],
+      "physical_actions": [
+        "Head tilted down, eyes closed.",
+        "Arms resting on a table in front, one hand visible."
+      ],
+      "uncertainty": "Dark image. Textured reflection overlay on screen-left. Yellow text on screen-right."
+    },
+    "error": null,
+    "latency_ms": 35822.18,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18317,
+      "output_tokens": 1929,
+      "thinking_tokens": 1465,
+      "cache_read_tokens": 48729,
+      "total_tokens": 20246
+    },
+    "source_image_hash": "c5f16f76ea8f31f78e4c7016eeabe8c9e26b15a75068de70b42eec8230af8d2e",
+    "inference_image_hash": "20e4b7a8ada1ec31f5c48469ee41c292672ffdac26bd020b32739e32ea57d09e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

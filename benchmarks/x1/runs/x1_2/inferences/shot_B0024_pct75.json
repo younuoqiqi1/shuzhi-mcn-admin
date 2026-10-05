@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0024_pct75",
+  "shot_id": "shot_B0024",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "d33591762b5d4249d6a269843d9de7a602e43751ec1261a7be85af5f14962712",
+  "inference_hash": "eba8458636d187ed8029b39741154c9cc4012c6aa166ef05752a19110fea869f",
+  "latency_ms": 30103.28845900949,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Screen-left: 黑色卷发人物，背对镜头，仅可见背部与后脑\", \"Screen-right: 黑色短发男子，佩戴细黑框眼镜，身穿白色衬衫与深色外套\"], \"environment\": \"光线较暗的室内空间，墙壁呈浅色偏灰褐。左后方墙壁上安装有带挂钩的衣帽架，右后方墙壁上有垂直向下的线缆或管道。\", \"objects\": [\"眼镜\", \"衣帽架\", \"挂钩\", \"线缆/管道\", \"衬衫\", \"外套\"], \"physical_actions\": [\"右侧男子面朝画面左侧，视线微向下倾斜\", \"左侧人物背向镜头，头部朝向右侧男子方向\"], \"uncertainty\": \"左侧人物完全背对镜头，面部与身体特征被遮挡。整体画面存在一定程度的模糊与低分辨率，光线较暗。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Screen-left: 黑色卷发人物，背对镜头，仅可见背部与后脑",
+        "Screen-right: 黑色短发男子，佩戴细黑框眼镜，身穿白色衬衫与深色外套"
+      ],
+      "environment": "光线较暗的室内空间，墙壁呈浅色偏灰褐。左后方墙壁上安装有带挂钩的衣帽架，右后方墙壁上有垂直向下的线缆或管道。",
+      "objects": [
+        "眼镜",
+        "衣帽架",
+        "挂钩",
+        "线缆/管道",
+        "衬衫",
+        "外套"
+      ],
+      "physical_actions": [
+        "右侧男子面朝画面左侧，视线微向下倾斜",
+        "左侧人物背向镜头，头部朝向右侧男子方向"
+      ],
+      "uncertainty": "左侧人物完全背对镜头，面部与身体特征被遮挡。整体画面存在一定程度的模糊与低分辨率，光线较暗。"
+    },
+    "error": null,
+    "latency_ms": 30103.29,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18609,
+      "output_tokens": 1750,
+      "thinking_tokens": 1409,
+      "cache_read_tokens": 24362,
+      "total_tokens": 20359
+    },
+    "source_image_hash": "d33591762b5d4249d6a269843d9de7a602e43751ec1261a7be85af5f14962712",
+    "inference_image_hash": "eba8458636d187ed8029b39741154c9cc4012c6aa166ef05752a19110fea869f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

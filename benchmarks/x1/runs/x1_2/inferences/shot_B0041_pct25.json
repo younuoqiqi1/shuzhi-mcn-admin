@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0041_pct25",
+  "shot_id": "shot_B0041",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "19f55251b29beef186313af55a38d6f38f0f04d15824ccaae523b14c0db6c566",
+  "inference_hash": "da63dd42200020d1a05c1ed5c80afe6dfefd6ee5c86b944c51248643562fe52e",
+  "latency_ms": 33954.1095829336,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Man with short dark hair, round dark-rimmed glasses, dark jacket, and white collared shirt.\"], \"environment\": \"Indoor setting with a pale yellow wall. A framed artwork with Chinese calligraphy is visible on the wall behind the character. A dark vertical wooden frame is on the screen-right edge.\", \"objects\": [\"Glasses\", \"Framed artwork with calligraphy\", \"Dark wooden frame or doorframe\"], \"physical_actions\": [\"Looking slightly towards screen-right with mouth slightly open.\"], \"uncertainty\": \"No significant occlusions; lighting is slightly dim but features are clear.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Man with short dark hair, round dark-rimmed glasses, dark jacket, and white collared shirt."
+      ],
+      "environment": "Indoor setting with a pale yellow wall. A framed artwork with Chinese calligraphy is visible on the wall behind the character. A dark vertical wooden frame is on the screen-right edge.",
+      "objects": [
+        "Glasses",
+        "Framed artwork with calligraphy",
+        "Dark wooden frame or doorframe"
+      ],
+      "physical_actions": [
+        "Looking slightly towards screen-right with mouth slightly open."
+      ],
+      "uncertainty": "No significant occlusions; lighting is slightly dim but features are clear."
+    },
+    "error": null,
+    "latency_ms": 33954.11,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18046,
+      "output_tokens": 1787,
+      "thinking_tokens": 1368,
+      "cache_read_tokens": 48728,
+      "total_tokens": 19833
+    },
+    "source_image_hash": "19f55251b29beef186313af55a38d6f38f0f04d15824ccaae523b14c0db6c566",
+    "inference_image_hash": "da63dd42200020d1a05c1ed5c80afe6dfefd6ee5c86b944c51248643562fe52e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

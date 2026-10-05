@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0044_pct50",
+  "shot_id": "shot_B0044",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "4c64754f0436b2fe82608ae344568a842ba9cc1ce0401be26c8cf49efcd6e39a",
+  "inference_hash": "ae2f17d435851432e3f98cd2bd42373b10e53c2f0a530303021c4fea300c2f83",
+  "latency_ms": 26987.746875034645,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Woman: Dark wavy hair, wearing a light-colored collared shirt, smiling.\", \"Person on screen-left: Wearing a grey button-up shirt, hand visible on woman's shoulder.\"], \"environment\": \"Indoor room with dim, warm lighting. In the background, there is a lamp and wooden furniture.\", \"objects\": [\"Lamp with a fringed shade\", \"Wooden furniture with spindles\", \"Button-up shirt\", \"Subtitles text\"], \"physical_actions\": [\"The woman in the foreground is smiling.\", \"The person on screen-left is resting their hand on the woman's shoulder.\"], \"uncertainty\": \"The person on screen-left is heavily cropped. Subtitles at the bottom partially occlude clothing.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Woman: Dark wavy hair, wearing a light-colored collared shirt, smiling.",
+        "Person on screen-left: Wearing a grey button-up shirt, hand visible on woman's shoulder."
+      ],
+      "environment": "Indoor room with dim, warm lighting. In the background, there is a lamp and wooden furniture.",
+      "objects": [
+        "Lamp with a fringed shade",
+        "Wooden furniture with spindles",
+        "Button-up shirt",
+        "Subtitles text"
+      ],
+      "physical_actions": [
+        "The woman in the foreground is smiling.",
+        "The person on screen-left is resting their hand on the woman's shoulder."
+      ],
+      "uncertainty": "The person on screen-left is heavily cropped. Subtitles at the bottom partially occlude clothing."
+    },
+    "error": null,
+    "latency_ms": 26987.75,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21451,
+      "output_tokens": 1222,
+      "thinking_tokens": 682,
+      "cache_read_tokens": 44662,
+      "total_tokens": 22673
+    },
+    "source_image_hash": "4c64754f0436b2fe82608ae344568a842ba9cc1ce0401be26c8cf49efcd6e39a",
+    "inference_image_hash": "ae2f17d435851432e3f98cd2bd42373b10e53c2f0a530303021c4fea300c2f83",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

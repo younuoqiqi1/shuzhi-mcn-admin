@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0050_pct75",
+  "shot_id": "shot_B0050",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "7a912e8cc11050b42dff9d6eb74a3b36b2471241043bffddd261d5a25e689fc8",
+  "inference_hash": "7a6276772f782c0371b13b1deb00d505c23ce994368faf5f0bb97eca8405b76f",
+  "latency_ms": 29150.913458084688,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名短发成年男性，位于画面偏左侧，上身赤裸\"], \"environment\": \"光线昏暗的室内空间，画面左右两侧有垂下的布帘或衣物等织物\", \"objects\": [\"画面右侧垂直排列的白色中文演职员表文字\", \"画面左下方的白色中文字幕\", \"屏幕左侧悬挂的多件织物（包含白色、浅黄色带花纹、浅蓝色等）\", \"屏幕右侧深红色的帘布或暗色背景\"], \"physical_actions\": [\"男性从屏幕左侧悬挂的织物后方探出上半身，面朝前方，直视镜头方向\"], \"uncertainty\": \"画面整体亮度较低，存在噪点和压缩模糊；人物身体部分被左侧悬挂的织物遮挡；右侧背景大面积被深色阴影和叠加的文字遮盖\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名短发成年男性，位于画面偏左侧，上身赤裸"
+      ],
+      "environment": "光线昏暗的室内空间，画面左右两侧有垂下的布帘或衣物等织物",
+      "objects": [
+        "画面右侧垂直排列的白色中文演职员表文字",
+        "画面左下方的白色中文字幕",
+        "屏幕左侧悬挂的多件织物（包含白色、浅黄色带花纹、浅蓝色等）",
+        "屏幕右侧深红色的帘布或暗色背景"
+      ],
+      "physical_actions": [
+        "男性从屏幕左侧悬挂的织物后方探出上半身，面朝前方，直视镜头方向"
+      ],
+      "uncertainty": "画面整体亮度较低，存在噪点和压缩模糊；人物身体部分被左侧悬挂的织物遮挡；右侧背景大面积被深色阴影和叠加的文字遮盖"
+    },
+    "error": null,
+    "latency_ms": 29150.91,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17920,
+      "output_tokens": 1603,
+      "thinking_tokens": 1048,
+      "cache_read_tokens": 48866,
+      "total_tokens": 19523
+    },
+    "source_image_hash": "7a912e8cc11050b42dff9d6eb74a3b36b2471241043bffddd261d5a25e689fc8",
+    "inference_image_hash": "7a6276772f782c0371b13b1deb00d505c23ce994368faf5f0bb97eca8405b76f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0013_pct25",
+  "shot_id": "shot_B0013",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "1e049e8c4638831dd48be5630050d49326cad5017f125de7140b7f835d38ff9d",
+  "inference_hash": "f32f75fd9aa5b10af3f697499f1a4e8508ca72d64072555b8b09cd3e7df06397",
+  "latency_ms": 35228.3207080327,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Screen-left: Man seen from behind, short dark hair, wearing a bluish-grey suit jacket.\", \"Screen-right: Man facing screen-left, wearing glasses, dark hair, wearing a black tunic.\"], \"environment\": \"Indoor room with dark wood wainscoting on the walls, a door on the right, and a wall sconce.\", \"objects\": [\"glasses\", \"pen\", \"door\", \"wall sconce\"], \"physical_actions\": [\"Man on screen-left is standing and raising his left arm.\", \"Man on screen-right is standing still.\"], \"uncertainty\": \"Dim lighting; the face of the man on screen-left is obscured as he is turned away from camera.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Screen-left: Man seen from behind, short dark hair, wearing a bluish-grey suit jacket.",
+        "Screen-right: Man facing screen-left, wearing glasses, dark hair, wearing a black tunic."
+      ],
+      "environment": "Indoor room with dark wood wainscoting on the walls, a door on the right, and a wall sconce.",
+      "objects": [
+        "glasses",
+        "pen",
+        "door",
+        "wall sconce"
+      ],
+      "physical_actions": [
+        "Man on screen-left is standing and raising his left arm.",
+        "Man on screen-right is standing still."
+      ],
+      "uncertainty": "Dim lighting; the face of the man on screen-left is obscured as he is turned away from camera."
+    },
+    "error": null,
+    "latency_ms": 35228.32,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21311,
+      "output_tokens": 1118,
+      "thinking_tokens": 606,
+      "cache_read_tokens": 44661,
+      "total_tokens": 22429
+    },
+    "source_image_hash": "1e049e8c4638831dd48be5630050d49326cad5017f125de7140b7f835d38ff9d",
+    "inference_image_hash": "f32f75fd9aa5b10af3f697499f1a4e8508ca72d64072555b8b09cd3e7df06397",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0045_pct75",
+  "shot_id": "shot_B0045",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c2836802cc7141fdc314c8746e221a7f4044fec93d4cd1fbe973c7098198e090",
+  "inference_hash": "f97445ea7c4db66713b08d10a4c4fcc38afa45f422b60c885f72ae935b73a755",
+  "latency_ms": 41945.29241602868,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Adult male, short dark hair, thin glasses, dark jacket, white shirt\"], \"environment\": \"Indoor space featuring dark wooden furniture with decorative carvings on screen-left, and dark grid-patterned curtains in the background. A vertical light-colored band is visible on screen-right.\", \"objects\": [\"glasses\", \"wooden furniture\", \"patterned curtains\", \"subtitles\"], \"physical_actions\": [\"looking towards screen-right\", \"mouth slightly open\"], \"uncertainty\": \"White subtitle text partially occludes the lower center of the frame.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Adult male, short dark hair, thin glasses, dark jacket, white shirt"
+      ],
+      "environment": "Indoor space featuring dark wooden furniture with decorative carvings on screen-left, and dark grid-patterned curtains in the background. A vertical light-colored band is visible on screen-right.",
+      "objects": [
+        "glasses",
+        "wooden furniture",
+        "patterned curtains",
+        "subtitles"
+      ],
+      "physical_actions": [
+        "looking towards screen-right",
+        "mouth slightly open"
+      ],
+      "uncertainty": "White subtitle text partially occludes the lower center of the frame."
+    },
+    "error": null,
+    "latency_ms": 41945.29,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 19224,
+      "output_tokens": 2619,
+      "thinking_tokens": 2208,
+      "cache_read_tokens": 48737,
+      "total_tokens": 21843
+    },
+    "source_image_hash": "c2836802cc7141fdc314c8746e221a7f4044fec93d4cd1fbe973c7098198e090",
+    "inference_image_hash": "f97445ea7c4db66713b08d10a4c4fcc38afa45f422b60c885f72ae935b73a755",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

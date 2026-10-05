@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0002_pct25",
+  "shot_id": "shot_B0002",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "975aa26a1c2345e3efd3893028ae8886a7974a3d3c63534d5d19adc283f42757",
+  "inference_hash": "be94fcc4c0e175b119944c0d399e663e889baec03f8b1ab941a1696a93d48079",
+  "latency_ms": 37887.97487493139,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"画面左下方的一名人物，深色短发，身穿灰褐色外套，背对镜头\", \"画面右侧背景的一名人物，身穿灰色上衣和深色裤子，身体部分被截断\"], \"environment\": \"类似户外街道或小巷的环境，左侧有灰色的墙壁，画面右侧覆盖有半色调点状图形和深色背景的特效\", \"objects\": [\"画面右下方的黄色叠加文字\"], \"physical_actions\": [\"左下方人物背对镜头，身体前倾\", \"右侧背景人物似乎在行走或站立\"], \"uncertainty\": \"画面存在整体模糊；前景人物背对镜头面部不可见；背景人物身体超出画面外且模糊；画面右侧存在特效图形叠加遮挡\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "画面左下方的一名人物，深色短发，身穿灰褐色外套，背对镜头",
+        "画面右侧背景的一名人物，身穿灰色上衣和深色裤子，身体部分被截断"
+      ],
+      "environment": "类似户外街道或小巷的环境，左侧有灰色的墙壁，画面右侧覆盖有半色调点状图形和深色背景的特效",
+      "objects": [
+        "画面右下方的黄色叠加文字"
+      ],
+      "physical_actions": [
+        "左下方人物背对镜头，身体前倾",
+        "右侧背景人物似乎在行走或站立"
+      ],
+      "uncertainty": "画面存在整体模糊；前景人物背对镜头面部不可见；背景人物身体超出画面外且模糊；画面右侧存在特效图形叠加遮挡"
+    },
+    "error": null,
+    "latency_ms": 37887.97,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18145,
+      "output_tokens": 2084,
+      "thinking_tokens": 1577,
+      "cache_read_tokens": 49000,
+      "total_tokens": 20229
+    },
+    "source_image_hash": "975aa26a1c2345e3efd3893028ae8886a7974a3d3c63534d5d19adc283f42757",
+    "inference_image_hash": "be94fcc4c0e175b119944c0d399e663e889baec03f8b1ab941a1696a93d48079",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

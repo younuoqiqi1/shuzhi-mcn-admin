@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0007_pct50",
+  "shot_id": "shot_B0007",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "29239729cf7cbd16ab44c9b3b2680f79b07e613fcbf79aa34cb5fccd531ea906",
+  "inference_hash": "f96a562bc511ec4fa818461ed72b27f922d6aac95f06d7315df2db312acc4a28",
+  "latency_ms": 48051.00741691422,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Older male with short black hair, wearing a gray suit jacket, white collared shirt, and dark bowtie.\"], \"environment\": \"Indoor setting. Patterned upholstered chair with dark wood frame behind. Dark wall with calligraphy.\", \"objects\": [\"Gray suit jacket\", \"White collared shirt\", \"Dark bowtie\", \"Patterned upholstered furniture\", \"Framed wall art\", \"On-screen subtitles\"], \"physical_actions\": [\"Sitting\", \"Mouth slightly open\"], \"uncertainty\": \"Low resolution and compression artifacts. Background is slightly out of focus. No major occlusions.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Older male with short black hair, wearing a gray suit jacket, white collared shirt, and dark bowtie."
+      ],
+      "environment": "Indoor setting. Patterned upholstered chair with dark wood frame behind. Dark wall with calligraphy.",
+      "objects": [
+        "Gray suit jacket",
+        "White collared shirt",
+        "Dark bowtie",
+        "Patterned upholstered furniture",
+        "Framed wall art",
+        "On-screen subtitles"
+      ],
+      "physical_actions": [
+        "Sitting",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Low resolution and compression artifacts. Background is slightly out of focus. No major occlusions."
+    },
+    "error": null,
+    "latency_ms": 48051.01,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17812,
+      "output_tokens": 1613,
+      "thinking_tokens": 1139,
+      "cache_read_tokens": 48726,
+      "total_tokens": 19425
+    },
+    "source_image_hash": "29239729cf7cbd16ab44c9b3b2680f79b07e613fcbf79aa34cb5fccd531ea906",
+    "inference_image_hash": "f96a562bc511ec4fa818461ed72b27f922d6aac95f06d7315df2db312acc4a28",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

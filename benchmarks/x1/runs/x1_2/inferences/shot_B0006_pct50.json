@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0006_pct50",
+  "shot_id": "shot_B0006",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c33beb4b096f51c58ed772e2b0b4cf283ec3cf3645b488453b46deb61c87d4c7",
+  "inference_hash": "4824871ba7dac01af6c19e792c3682e5c3a515b6870dd84b2220a043c98f7069",
+  "latency_ms": 44553.88029105961,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"老年男性，位于画面左侧，短发，穿着灰色带纽扣的外套（类似中山装），内搭白色衬衫\", \"男性，位于画面右侧，以侧脸示人，面朝画面左侧，戴着眼镜，穿着深蓝色西装外套\"], \"environment\": \"室内空间，背景中可见一幅带有汉字的书法作品或挂画，画面左侧男子坐在宽大的座椅上\", \"objects\": [\"灰色带纽扣外套\", \"深蓝色西装\", \"眼镜\", \"带有浅色花纹软垫和深色实木边框的宽大座椅\", \"墙壁上的书法挂轴或画框\", \"底部白色中文字幕\"], \"physical_actions\": [\"画面左侧男子坐在座椅上，头部微侧，目光望向画面右侧的男子\", \"画面右侧男子以侧面姿态出现，头部朝向画面左侧\"], \"uncertainty\": \"画面右侧男子的后脑及部分身体位于画面之外，仅可见部分侧脸；画面底部正中叠加有白色字幕。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "老年男性，位于画面左侧，短发，穿着灰色带纽扣的外套（类似中山装），内搭白色衬衫",
+        "男性，位于画面右侧，以侧脸示人，面朝画面左侧，戴着眼镜，穿着深蓝色西装外套"
+      ],
+      "environment": "室内空间，背景中可见一幅带有汉字的书法作品或挂画，画面左侧男子坐在宽大的座椅上",
+      "objects": [
+        "灰色带纽扣外套",
+        "深蓝色西装",
+        "眼镜",
+        "带有浅色花纹软垫和深色实木边框的宽大座椅",
+        "墙壁上的书法挂轴或画框",
+        "底部白色中文字幕"
+      ],
+      "physical_actions": [
+        "画面左侧男子坐在座椅上，头部微侧，目光望向画面右侧的男子",
+        "画面右侧男子以侧面姿态出现，头部朝向画面左侧"
+      ],
+      "uncertainty": "画面右侧男子的后脑及部分身体位于画面之外，仅可见部分侧脸；画面底部正中叠加有白色字幕。"
+    },
+    "error": null,
+    "latency_ms": 44553.88,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14787,
+      "output_tokens": 1309,
+      "thinking_tokens": 948,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16096
+    },
+    "source_image_hash": "c33beb4b096f51c58ed772e2b0b4cf283ec3cf3645b488453b46deb61c87d4c7",
+    "inference_image_hash": "4824871ba7dac01af6c19e792c3682e5c3a515b6870dd84b2220a043c98f7069",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

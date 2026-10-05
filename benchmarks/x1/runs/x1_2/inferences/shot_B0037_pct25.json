@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0037_pct25",
+  "shot_id": "shot_B0037",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "739b6a7b441f2dcf40bc7e9b9a3a031c9e530bb767d62bf686653a1466e07d0e",
+  "inference_hash": "c54a819cf6ac1d3f67d369e6f1b14ffefad37fb1fc2d22eb6d1ee7732d21a547",
+  "latency_ms": 34247.362833004445,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名短发男子，戴着圆形眼镜，身穿深色外套，内搭白色有领衬衫\"], \"environment\": \"室内环境。画面左侧可见深色木质门框或窗框，背景为纯色浅色墙壁。画面右侧墙壁上悬挂着部分可见的相框和深色卷轴状或长条形物体。\", \"objects\": [\"圆形眼镜\", \"深色外套\", \"白色衬衫\", \"深色木质门框\", \"相框局部\", \"深色长条形物体\"], \"physical_actions\": [\"头部微偏，视线朝向画面左侧\", \"嘴巴微张\"], \"uncertainty\": \"画面右侧的相框和长条形物体被边缘裁切，仅部分可见。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名短发男子，戴着圆形眼镜，身穿深色外套，内搭白色有领衬衫"
+      ],
+      "environment": "室内环境。画面左侧可见深色木质门框或窗框，背景为纯色浅色墙壁。画面右侧墙壁上悬挂着部分可见的相框和深色卷轴状或长条形物体。",
+      "objects": [
+        "圆形眼镜",
+        "深色外套",
+        "白色衬衫",
+        "深色木质门框",
+        "相框局部",
+        "深色长条形物体"
+      ],
+      "physical_actions": [
+        "头部微偏，视线朝向画面左侧",
+        "嘴巴微张"
+      ],
+      "uncertainty": "画面右侧的相框和长条形物体被边缘裁切，仅部分可见。"
+    },
+    "error": null,
+    "latency_ms": 34247.36,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14862,
+      "output_tokens": 2268,
+      "thinking_tokens": 1968,
+      "cache_read_tokens": 28425,
+      "total_tokens": 17130
+    },
+    "source_image_hash": "739b6a7b441f2dcf40bc7e9b9a3a031c9e530bb767d62bf686653a1466e07d0e",
+    "inference_image_hash": "c54a819cf6ac1d3f67d369e6f1b14ffefad37fb1fc2d22eb6d1ee7732d21a547",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

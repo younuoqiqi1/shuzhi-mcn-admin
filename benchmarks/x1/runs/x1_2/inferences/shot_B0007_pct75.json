@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0007_pct75",
+  "shot_id": "shot_B0007",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "eecc088d2e2b3475e45c3fe3241e61b6e320f69c48d4ab8332ff96d4795fdce2",
+  "inference_hash": "206e087c33163ed593e79e494476bf514347920a51d063b739fad2ef98b3946c",
+  "latency_ms": 39464.20275000855,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Older Asian male, dark hair, grey jacket, white shirt.\"], \"environment\": \"Indoor setting. Screen-left background has a panel with Chinese calligraphy. Screen-right is dark.\", \"objects\": [\"Grey jacket\", \"White shirt\", \"Patterned sofa with wooden frame\", \"Calligraphy panel\"], \"physical_actions\": [\"Sitting\", \"Looking slightly towards screen-right\"], \"uncertainty\": \"Slightly soft resolution. No major occlusions.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Older Asian male, dark hair, grey jacket, white shirt."
+      ],
+      "environment": "Indoor setting. Screen-left background has a panel with Chinese calligraphy. Screen-right is dark.",
+      "objects": [
+        "Grey jacket",
+        "White shirt",
+        "Patterned sofa with wooden frame",
+        "Calligraphy panel"
+      ],
+      "physical_actions": [
+        "Sitting",
+        "Looking slightly towards screen-right"
+      ],
+      "uncertainty": "Slightly soft resolution. No major occlusions."
+    },
+    "error": null,
+    "latency_ms": 39464.2,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 20859,
+      "output_tokens": 1593,
+      "thinking_tokens": 1006,
+      "cache_read_tokens": 69297,
+      "total_tokens": 22452
+    },
+    "source_image_hash": "eecc088d2e2b3475e45c3fe3241e61b6e320f69c48d4ab8332ff96d4795fdce2",
+    "inference_image_hash": "206e087c33163ed593e79e494476bf514347920a51d063b739fad2ef98b3946c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "window_idx": 38,
+  "center_start": 2280.0,
+  "center_end": 2340.0,
+  "ctx_start": 2278.0,
+  "ctx_end": 2342.0,
+  "raw_cuts_count": 10,
+  "center_cuts": [
+    2284.08,
+    2295.52,
+    2300.84,
+    2301.28,
+    2310.64,
+    2313.96,
+    2316.92,
+    2319.88,
+    2325.48,
+    2339.96
+  ],
+  "scores": [
+    {
+      "time_sec": 2284.08,
+      "frame_num": 57102,
+      "content_val": 52.5502,
+      "adaptive_ratio": 33.2157
+    },
+    {
+      "time_sec": 2295.52,
+      "frame_num": 57388,
+      "content_val": 57.1977,
+      "adaptive_ratio": 97.0037
+    },
+    {
+      "time_sec": 2300.84,
+      "frame_num": 57521,
+      "content_val": 33.9522,
+      "adaptive_ratio": 1.2249
+    },
+    {
+      "time_sec": 2301.28,
+      "frame_num": 57532,
+      "content_val": 96.4891,
+      "adaptive_ratio": 43.1837
+    },
+    {
+      "time_sec": 2310.64,
+      "frame_num": 57766,
+      "content_val": 59.3119,
+      "adaptive_ratio": 12.4321
+    },
+    {
+      "time_sec": 2313.96,
+      "frame_num": 57849,
+      "content_val": 50.105,
+      "adaptive_ratio": 6.6118
+    },
+    {
+      "time_sec": 2316.92,
+      "frame_num": 57923,
+      "content_val": 38.7635,
+      "adaptive_ratio": 7.4236
+    },
+    {
+      "time_sec": 2319.88,
+      "frame_num": 57997,
+      "content_val": 56.9311,
+      "adaptive_ratio": 5.9655
+    },
+    {
+      "time_sec": 2325.48,
+      "frame_num": 58137,
+      "content_val": 52.4947,
+      "adaptive_ratio": 12.0063
+    },
+    {
+      "time_sec": 2339.96,
+      "frame_num": 58499,
+      "content_val": 48.5684,
+      "adaptive_ratio": 7.7603
+    }
+  ],
+  "params": {
+    "window_idx": 38,
+    "center_start": 2280.0,
+    "center_end": 2340.0,
+    "ctx_start": 2278.0,
+    "ctx_end": 2342.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "994ac06dfef028b8df2fe2be11c2be7012b5361428b832504f01ccdbed0d28e1",
+  "created_at": 1791218854.338179
+}

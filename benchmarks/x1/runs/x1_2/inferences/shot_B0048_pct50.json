@@ -1,0 +1,53 @@
+{
+  "frame_id": "shot_B0048_pct50",
+  "shot_id": "shot_B0048",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "aa945039aa1bcadc9d570212c6934319bc65c32a70521d4cb0062048a9565901",
+  "inference_hash": "0d3c09c438540638b802307fd1acf96d1fad54c8e873b9fd7080825be7fd943b",
+  "latency_ms": 32649.575874907896,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"full_shot\", \"characters\": [\"一名留着短发，戴着眼镜，身穿深色西装、浅色衬衫和领带的男子\"], \"environment\": \"一条铺着石板的室外狭窄街巷。画面左侧（screen-left）有一面砖墙，墙边立着一根石柱，底部有少量绿色植物。背景隐约可见带有网格窗户的深色木制建筑立面。\", \"objects\": [\"深色西装\", \"衬衫\", \"领带\", \"眼镜\", \"石板路面\", \"砖墙\", \"石柱\", \"木制门窗\", \"绿色植物\", \"屏幕右侧叠加的白色中文字幕\"], \"physical_actions\": [\"在街道上向前（朝向镜头方向）行走\"], \"uncertainty\": \"画面右侧（screen-right）大面积被深紫黑色的阴影或遮挡物覆盖，导致该区域背景细节无法辨认；画面右侧叠加了多行白色的演职人员中文字幕。\"}",
+    "parsed_validation": {
+      "camera": "full_shot",
+      "characters": [
+        "一名留着短发，戴着眼镜，身穿深色西装、浅色衬衫和领带的男子"
+      ],
+      "environment": "一条铺着石板的室外狭窄街巷。画面左侧（screen-left）有一面砖墙，墙边立着一根石柱，底部有少量绿色植物。背景隐约可见带有网格窗户的深色木制建筑立面。",
+      "objects": [
+        "深色西装",
+        "衬衫",
+        "领带",
+        "眼镜",
+        "石板路面",
+        "砖墙",
+        "石柱",
+        "木制门窗",
+        "绿色植物",
+        "屏幕右侧叠加的白色中文字幕"
+      ],
+      "physical_actions": [
+        "在街道上向前（朝向镜头方向）行走"
+      ],
+      "uncertainty": "画面右侧（screen-right）大面积被深紫黑色的阴影或遮挡物覆盖，导致该区域背景细节无法辨认；画面右侧叠加了多行白色的演职人员中文字幕。"
+    },
+    "error": null,
+    "latency_ms": 32649.58,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14797,
+      "output_tokens": 2190,
+      "thinking_tokens": 1837,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16987
+    },
+    "source_image_hash": "aa945039aa1bcadc9d570212c6934319bc65c32a70521d4cb0062048a9565901",
+    "inference_image_hash": "0d3c09c438540638b802307fd1acf96d1fad54c8e873b9fd7080825be7fd943b",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

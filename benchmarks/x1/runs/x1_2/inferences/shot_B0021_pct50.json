@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0021_pct50",
+  "shot_id": "shot_B0021",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2802be5f8779dd153d0799a145c77e29e1aaa41f8072346a1858e84bb52f49ca",
+  "inference_hash": "5f96e70b3674a1f228d55d9711920ee72b5ef4344eeda86fdc930f6cf06f56da",
+  "latency_ms": 48033.56450004503,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名面朝屏幕左侧前方的女性，黑色长卷发，身穿白色底色带有紫红色碎花图案的上衣。\"], \"environment\": \"光线昏暗的背景空间，色调深暗，右侧隐约可见模糊的水平线或阶梯状边缘结构。\", \"objects\": [\"画面底部的白色中文字幕\"], \"physical_actions\": [\"头部微偏向屏幕左侧，双眼视线向下看。\"], \"uncertainty\": \"背景光线严重过暗且失焦，无法辨认后方环境细节；画面下方被字幕文字部分遮挡。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名面朝屏幕左侧前方的女性，黑色长卷发，身穿白色底色带有紫红色碎花图案的上衣。"
+      ],
+      "environment": "光线昏暗的背景空间，色调深暗，右侧隐约可见模糊的水平线或阶梯状边缘结构。",
+      "objects": [
+        "画面底部的白色中文字幕"
+      ],
+      "physical_actions": [
+        "头部微偏向屏幕左侧，双眼视线向下看。"
+      ],
+      "uncertainty": "背景光线严重过暗且失焦，无法辨认后方环境细节；画面下方被字幕文字部分遮挡。"
+    },
+    "error": null,
+    "latency_ms": 48033.56,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 19524,
+      "output_tokens": 3268,
+      "thinking_tokens": 2842,
+      "cache_read_tokens": 49382,
+      "total_tokens": 22792
+    },
+    "source_image_hash": "2802be5f8779dd153d0799a145c77e29e1aaa41f8072346a1858e84bb52f49ca",
+    "inference_image_hash": "5f96e70b3674a1f228d55d9711920ee72b5ef4344eeda86fdc930f6cf06f56da",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

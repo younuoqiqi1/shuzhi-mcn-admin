@@ -1,0 +1,56 @@
+{
+  "frame_id": "shot_B0042_pct50",
+  "shot_id": "shot_B0042",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "1a1c35318bc796d89b30f3cb4770e01e4c712474509f94e4352432e8800acaa6",
+  "inference_hash": "ab26a0fde0fea32b46cc402fa23136e09a2bb970e607d2a86bb89c12c804083c",
+  "latency_ms": 30934.655541088432,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"A man on screen-left wearing a dark blue suit jacket and a white shirt\", \"A man on screen-right wearing a light-colored vest over a white shirt and light-colored trousers\"], \"environment\": \"Indoor room with dim, warm lighting, containing dark wood furniture including a dining table, chairs, a cabinet, and a shelf.\", \"objects\": [\"Dining table\", \"Chairs\", \"Brass hot pot\", \"Plates of food\", \"Bowls\", \"Chopsticks\", \"Wooden cabinet\", \"Wooden shelf\", \"Books\", \"White animal statue\", \"Subtitles\"], \"physical_actions\": [\"Man on screen-left is leaning forward toward the table\", \"Man on screen-right is sitting on a chair and looking at the other man\"], \"uncertainty\": \"The face of the man on screen-left is blurry due to motion. White subtitle text occludes the bottom area of the frame.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "A man on screen-left wearing a dark blue suit jacket and a white shirt",
+        "A man on screen-right wearing a light-colored vest over a white shirt and light-colored trousers"
+      ],
+      "environment": "Indoor room with dim, warm lighting, containing dark wood furniture including a dining table, chairs, a cabinet, and a shelf.",
+      "objects": [
+        "Dining table",
+        "Chairs",
+        "Brass hot pot",
+        "Plates of food",
+        "Bowls",
+        "Chopsticks",
+        "Wooden cabinet",
+        "Wooden shelf",
+        "Books",
+        "White animal statue",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Man on screen-left is leaning forward toward the table",
+        "Man on screen-right is sitting on a chair and looking at the other man"
+      ],
+      "uncertainty": "The face of the man on screen-left is blurry due to motion. White subtitle text occludes the bottom area of the frame."
+    },
+    "error": null,
+    "latency_ms": 30934.66,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14731,
+      "output_tokens": 2238,
+      "thinking_tokens": 1910,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16969
+    },
+    "source_image_hash": "1a1c35318bc796d89b30f3cb4770e01e4c712474509f94e4352432e8800acaa6",
+    "inference_image_hash": "ab26a0fde0fea32b46cc402fa23136e09a2bb970e607d2a86bb89c12c804083c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

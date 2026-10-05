@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0004_pct50",
+  "shot_id": "shot_B0004",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "95f0eec34d3eecddcf10a877b896fdcf329e900c89f71b189e57d34d9712b6ce",
+  "inference_hash": "f55b0af109b01a348785051e77697cd00f2891fdb3f13b5b66ba5dcc96d313c9",
+  "latency_ms": 34738.42962505296,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Adult male, short dark hair, wearing a dark collared jacket, positioned screen-left.\"], \"environment\": \"Dim, cool-blue indoor setting. Grid pattern background structure. Glowing digital overlay screen-right.\", \"objects\": [\"Dark jacket\", \"Glowing graphic overlay\"], \"physical_actions\": [\"Looking downwards screen-right\"], \"uncertainty\": \"Lower portion and screen-right area obscured by smoke and glowing visual effects. Dim lighting.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Adult male, short dark hair, wearing a dark collared jacket, positioned screen-left."
+      ],
+      "environment": "Dim, cool-blue indoor setting. Grid pattern background structure. Glowing digital overlay screen-right.",
+      "objects": [
+        "Dark jacket",
+        "Glowing graphic overlay"
+      ],
+      "physical_actions": [
+        "Looking downwards screen-right"
+      ],
+      "uncertainty": "Lower portion and screen-right area obscured by smoke and glowing visual effects. Dim lighting."
+    },
+    "error": null,
+    "latency_ms": 34738.43,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17497,
+      "output_tokens": 1290,
+      "thinking_tokens": 873,
+      "cache_read_tokens": 48723,
+      "total_tokens": 18787
+    },
+    "source_image_hash": "95f0eec34d3eecddcf10a877b896fdcf329e900c89f71b189e57d34d9712b6ce",
+    "inference_image_hash": "f55b0af109b01a348785051e77697cd00f2891fdb3f13b5b66ba5dcc96d313c9",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

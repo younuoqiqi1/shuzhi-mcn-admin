@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0005_pct75",
+  "shot_id": "shot_B0005",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "1d0009ecf33829818399df574d0f7cc076a127bab6c43d658ff33119f8389d03",
+  "inference_hash": "d1a65b5bedc756bb09400d06781bce327eee7c95bc3e01cfb8d2bc70bed3b60f",
+  "latency_ms": 48268.788291024975,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Male figure with short black hair, wearing a white towel draped around his neck and shoulders.\"], \"environment\": \"Dark, dimly lit space with an indistinct background.\", \"objects\": [\"White towel\", \"On-screen yellow text\", \"Digital dot-matrix graphic overlay\"], \"physical_actions\": [\"Looking towards screen-left\", \"Mouth slightly open\"], \"uncertainty\": \"Screen-right side of face obscured by digital pattern and text. Extreme screen-left has a dark blur and film-strip perforations. Overall dark lighting.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Male figure with short black hair, wearing a white towel draped around his neck and shoulders."
+      ],
+      "environment": "Dark, dimly lit space with an indistinct background.",
+      "objects": [
+        "White towel",
+        "On-screen yellow text",
+        "Digital dot-matrix graphic overlay"
+      ],
+      "physical_actions": [
+        "Looking towards screen-left",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Screen-right side of face obscured by digital pattern and text. Extreme screen-left has a dark blur and film-strip perforations. Overall dark lighting."
+    },
+    "error": null,
+    "latency_ms": 48268.79,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18372,
+      "output_tokens": 2057,
+      "thinking_tokens": 1642,
+      "cache_read_tokens": 48731,
+      "total_tokens": 20429
+    },
+    "source_image_hash": "1d0009ecf33829818399df574d0f7cc076a127bab6c43d658ff33119f8389d03",
+    "inference_image_hash": "d1a65b5bedc756bb09400d06781bce327eee7c95bc3e01cfb8d2bc70bed3b60f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

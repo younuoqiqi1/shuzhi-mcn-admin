@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0043_pct75",
+  "shot_id": "shot_B0043",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c66c2f4b3608ae532efa2da33a610338ec8dce01fc3f6cebc3609b6a1d0d95a0",
+  "inference_hash": "0288daa7ed5cd1002c618692e0c6a2a410661e0c417462d1ee3a8d32b902a85e",
+  "latency_ms": 34174.91804098245,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with wavy black hair, in white shirt.\", \"Person screen-left in grey button-up shirt.\"], \"environment\": \"Indoor bedroom with lit lamp and wooden bed frame.\", \"objects\": [\"Lamp\", \"Bed frame\", \"Shirts\", \"Subtitles\"], \"physical_actions\": [\"Hand resting on shoulder.\", \"Mouth open.\"], \"uncertainty\": \"Person screen-left is cropped. Subtitles at bottom.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with wavy black hair, in white shirt.",
+        "Person screen-left in grey button-up shirt."
+      ],
+      "environment": "Indoor bedroom with lit lamp and wooden bed frame.",
+      "objects": [
+        "Lamp",
+        "Bed frame",
+        "Shirts",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Hand resting on shoulder.",
+        "Mouth open."
+      ],
+      "uncertainty": "Person screen-left is cropped. Subtitles at bottom."
+    },
+    "error": null,
+    "latency_ms": 34174.92,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17687,
+      "output_tokens": 1514,
+      "thinking_tokens": 1041,
+      "cache_read_tokens": 48725,
+      "total_tokens": 19201
+    },
+    "source_image_hash": "c66c2f4b3608ae532efa2da33a610338ec8dce01fc3f6cebc3609b6a1d0d95a0",
+    "inference_image_hash": "0288daa7ed5cd1002c618692e0c6a2a410661e0c417462d1ee3a8d32b902a85e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

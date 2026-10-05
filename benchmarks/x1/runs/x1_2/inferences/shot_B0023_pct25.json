@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0023_pct25",
+  "shot_id": "shot_B0023",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "781e01abf823f8af73ee183361d2e7e484f746a6ec554c008f0ef5de5c0c6373",
+  "inference_hash": "b26aad334b9f5a3764c0d025914c9abcafd1d2b1ce78b8fca0c006a9f670d6ba",
+  "latency_ms": 35355.04033300094,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"画面左侧的一名女性，留有黑色长发，身穿带有红色碎花图案的白色立领中式服装。\", \"画面右侧的一名人物，背对镜头，可见其佩戴金属边框眼镜，身穿黑色上衣。\"], \"environment\": \"室内环境，光线偏暗，画面左侧后方可清晰看到一段深色木质楼梯，背景存在阴影。\", \"objects\": [\"眼镜\", \"白色碎花立领服装\", \"黑色上衣\", \"深色木质楼梯\", \"中文字幕\"], \"physical_actions\": [\"左侧女性注视着右侧的人物。\", \"右侧人物面向左侧女性。\"], \"uncertainty\": \"右侧人物背向镜头，存在严重遮挡，无法看到面部特征；画面整体处于较暗的光线下。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "画面左侧的一名女性，留有黑色长发，身穿带有红色碎花图案的白色立领中式服装。",
+        "画面右侧的一名人物，背对镜头，可见其佩戴金属边框眼镜，身穿黑色上衣。"
+      ],
+      "environment": "室内环境，光线偏暗，画面左侧后方可清晰看到一段深色木质楼梯，背景存在阴影。",
+      "objects": [
+        "眼镜",
+        "白色碎花立领服装",
+        "黑色上衣",
+        "深色木质楼梯",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "左侧女性注视着右侧的人物。",
+        "右侧人物面向左侧女性。"
+      ],
+      "uncertainty": "右侧人物背向镜头，存在严重遮挡，无法看到面部特征；画面整体处于较暗的光线下。"
+    },
+    "error": null,
+    "latency_ms": 35355.04,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22029,
+      "output_tokens": 1894,
+      "thinking_tokens": 1321,
+      "cache_read_tokens": 44925,
+      "total_tokens": 23923
+    },
+    "source_image_hash": "781e01abf823f8af73ee183361d2e7e484f746a6ec554c008f0ef5de5c0c6373",
+    "inference_image_hash": "b26aad334b9f5a3764c0d025914c9abcafd1d2b1ce78b8fca0c006a9f670d6ba",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

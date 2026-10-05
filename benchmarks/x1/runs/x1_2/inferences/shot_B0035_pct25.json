@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0035_pct25",
+  "shot_id": "shot_B0035",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "e9fd64cb132eab7530fe499683a0d2086adc0d168f7c815c9b5868b70f57e953",
+  "inference_hash": "8d71e82c3294392ed29e818a5453977bd9b97259ac37cb8ee8095738e0909045",
+  "latency_ms": 25666.793833021075,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"背对镜头的深色短发人（画面左侧，仅可见后脑部分）\", \"深色短发成年男性（画面偏右），戴圆形细框眼镜，穿着深蓝色外套和白色翻领衬衫\"], \"environment\": \"室内环境，背景左侧可见深色木质门框或隔断，右侧为浅色墙面与深色墙裙交界，室内光线较暗，主光源从偏右侧照向人物面部\", \"objects\": [\"圆形细框眼镜\", \"深蓝色外套\", \"白色衬衫\", \"墙面上的深色小物件（疑似开关）\", \"中文字幕\"], \"physical_actions\": [\"画面右侧的男性注视着左侧的人，嘴部微张似在说话或微笑\", \"画面左侧的人背对镜头，面朝右侧男性\"], \"uncertainty\": \"画面左侧人物背对镜头且大部分在画外，无法确认正面特征；画面底部被字幕文字部分遮挡；整体光线偏暗且分辨率较低，存在轻微模糊。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "背对镜头的深色短发人（画面左侧，仅可见后脑部分）",
+        "深色短发成年男性（画面偏右），戴圆形细框眼镜，穿着深蓝色外套和白色翻领衬衫"
+      ],
+      "environment": "室内环境，背景左侧可见深色木质门框或隔断，右侧为浅色墙面与深色墙裙交界，室内光线较暗，主光源从偏右侧照向人物面部",
+      "objects": [
+        "圆形细框眼镜",
+        "深蓝色外套",
+        "白色衬衫",
+        "墙面上的深色小物件（疑似开关）",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "画面右侧的男性注视着左侧的人，嘴部微张似在说话或微笑",
+        "画面左侧的人背对镜头，面朝右侧男性"
+      ],
+      "uncertainty": "画面左侧人物背对镜头且大部分在画外，无法确认正面特征；画面底部被字幕文字部分遮挡；整体光线偏暗且分辨率较低，存在轻微模糊。"
+    },
+    "error": null,
+    "latency_ms": 25666.79,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18716,
+      "output_tokens": 1276,
+      "thinking_tokens": 911,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19992
+    },
+    "source_image_hash": "e9fd64cb132eab7530fe499683a0d2086adc0d168f7c815c9b5868b70f57e953",
+    "inference_image_hash": "8d71e82c3294392ed29e818a5453977bd9b97259ac37cb8ee8095738e0909045",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

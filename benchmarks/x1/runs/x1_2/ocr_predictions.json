@@ -1,0 +1,1360 @@
+{
+  "batch_id": "X1.2",
+  "ocr_status": "completed",
+  "ocr_source_file": "benchmarks/x1/development/x1_1/existing_hard_subtitles.json",
+  "total_shots": 50,
+  "covered_shots_count": 45,
+  "coverage_rate": 0.9,
+  "notes": "实际 OCR 重叠统计；若镜头字幕列表为空表示画面未检出硬字幕，不代表真实无对白真值",
+  "shots_ocr": [
+    {
+      "shot_id": "shot_B0001",
+      "start": 5.12,
+      "end": 5.64,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 5.0,
+          "end_sec": 6.0,
+          "text": "张宏 区念中 陈炜",
+          "text_sha256": "634948748affacf34c1181fb014f54835d2c978c376464fdda85145c19c182ba"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0002",
+      "start": 14.8,
+      "end": 17.8,
+      "subtitles_count": 4,
+      "matched_subtitles": [
+        {
+          "start_sec": 14.0,
+          "end_sec": 15.0,
+          "text": "心區制 余瑞金",
+          "text_sha256": "5b5dd735e58ba73bd78f1b08db187150fa21382db7c5314c77b17ba8b7123b6a"
+        },
+        {
+          "start_sec": 15.0,
+          "end_sec": 16.0,
+          "text": "心监制 余瑞金 陆群",
+          "text_sha256": "610af7cba8d896f03a6831aeb2457d469d44c635488fc86d4da37fdcf0d851a0"
+        },
+        {
+          "start_sec": 16.0,
+          "end_sec": 17.0,
+          "text": "华明",
+          "text_sha256": "c6dfe85776281350992b9ea9cf0867b0cc2fdac0bfa262b82e56f7d679e51dee"
+        },
+        {
+          "start_sec": 17.0,
+          "end_sec": 18.0,
+          "text": "华明 何继昌",
+          "text_sha256": "9ec207f201afc8c276c30ef7c9581fce8d45d69b19b95b7d2d26d63ec878d9db"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0003",
+      "start": 56.32,
+      "end": 57.12,
+      "subtitles_count": 0,
+      "matched_subtitles": []
+    },
+    {
+      "shot_id": "shot_B0004",
+      "start": 67.2,
+      "end": 68.12,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 65.0,
+          "end_sec": 68.0,
+          "text": "姜伟",
+          "text_sha256": "d76f5d547376c4e69e232894c60532bb34e928af0b7d11fffaf7a6ddd3cf1d8a"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0005",
+      "start": 68.96,
+      "end": 70.2,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 69.0,
+          "end_sec": 70.0,
+          "text": "张译水",
+          "text_sha256": "722e93d70bf38a7972f820e139881aed53cf27aa81c40df3057cdcf59067f402"
+        },
+        {
+          "start_sec": 70.0,
+          "end_sec": 71.0,
+          "text": "摄",
+          "text_sha256": "798fdf3e2ab769b2579921bb5292e3926d0489caf60f039fd5e8e4e5b0716bcd"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0006",
+      "start": 239.84,
+      "end": 248.72,
+      "subtitles_count": 5,
+      "matched_subtitles": [
+        {
+          "start_sec": 238.0,
+          "end_sec": 240.0,
+          "text": "到时候扔过一双小鞋来",
+          "text_sha256": "e0ae9f87fe145a079dd741622ac6473524652d6d1c84ec9ed0a4671d60b69e43"
+        },
+        {
+          "start_sec": 241.0,
+          "end_sec": 243.0,
+          "text": "您说您穿是不穿",
+          "text_sha256": "d5641f42b7fe10af8b531cff527ca9ded3aebc23bee1952cc8c88c9c3d7b8e71"
+        },
+        {
+          "start_sec": 244.0,
+          "end_sec": 245.0,
+          "text": "都别扭",
+          "text_sha256": "7919baf5073f4957529da9bb0ada0c923a5d0e0a00a7ed3e4cc6adc14e638c38"
+        },
+        {
+          "start_sec": 245.0,
+          "end_sec": 247.0,
+          "text": "以我现在的脾气",
+          "text_sha256": "344fd6d29785526a7d0ca5ee286dc1336f9b2ccb1cedf1c53dc7b6ac0c27ed73"
+        },
+        {
+          "start_sec": 247.0,
+          "end_sec": 249.0,
+          "text": "我就地正法了他",
+          "text_sha256": "5ea1e28244ab22eaffadd9fddf2c57e576e11cf48770706a011990fc681dfedb"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0007",
+      "start": 292.0,
+      "end": 299.96,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 293.0,
+          "end_sec": 294.0,
+          "text": "正好",
+          "text_sha256": "e7247b6f56250521fec5cafd45b87396fc1faf5fb04105f99d762c73ecdf9d0d"
+        },
+        {
+          "start_sec": 295.0,
+          "end_sec": 297.0,
+          "text": "你陆桥山自绝党国",
+          "text_sha256": "8840a7f4b1602f9e5ffdceb9d7f4b1c58da165d46a1edd1beab4850bd44d1c7b"
+        },
+        {
+          "start_sec": 299.0,
+          "end_sec": 300.0,
+          "text": "你来当这个副站长",
+          "text_sha256": "d66f8d4ea56465509c8bc19ff812b132365b62b2e68d91f474c7850af505c2a5"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0008",
+      "start": 315.0,
+      "end": 320.64,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 319.0,
+          "end_sec": 320.0,
+          "text": "今天我跟站长太太去做旗袍",
+          "text_sha256": "8d43a08011fc55de64f17441b38c27b0d1d1bfec775a3fed29ce90828cc8c117"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0009",
+      "start": 320.64,
+      "end": 324.2,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 321.0,
+          "end_sec": 322.0,
+          "text": "站长太太说",
+          "text_sha256": "35d8c79e76176daed52e3b2e436089b044f707d7e897af8f38f8d01c4e38c358"
+        },
+        {
+          "start_sec": 322.0,
+          "end_sec": 324.0,
+          "text": "站长好像不想干了 想走",
+          "text_sha256": "e759bf5c7002d8262609a483e87f3a66c8b32bfb576683232a7d670cfb176787"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0010",
+      "start": 342.96,
+      "end": 350.6,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 343.0,
+          "end_sec": 347.0,
+          "text": "不会 站长一般是少将军衔",
+          "text_sha256": "2fe4012aa302e6af75b5dc8ce4604d69154db02c469a4ff6af0650ad44813ddd"
+        },
+        {
+          "start_sec": 348.0,
+          "end_sec": 350.0,
+          "text": "上面需要有人",
+          "text_sha256": "fd9dc58872f81504258da19072570f17a5ddc7df1c6cf121bfa0b4f6fb7aa9ca"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0011",
+      "start": 421.24,
+      "end": 427.0,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 421.0,
+          "end_sec": 422.0,
+          "text": "一",
+          "text_sha256": "51a75f4634dfa8598a0a1436da0b7764830edd1f3a97661222387da2fe2b38d1"
+        },
+        {
+          "start_sec": 423.0,
+          "end_sec": 424.0,
+          "text": "一 |I",
+          "text_sha256": "162a9379c38c960b8cc46d373a138e0013943bf643637b8619224e7202ed4718"
+        },
+        {
+          "start_sec": 425.0,
+          "end_sec": 427.0,
+          "text": "你左脚跟上跟上",
+          "text_sha256": "09a2fea429ea2a80afcf740f2a4230f05103d6cf3e171afc6956dd8e5ac898c6"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0012",
+      "start": 586.36,
+      "end": 590.44,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 588.0,
+          "end_sec": 589.0,
+          "text": "再见",
+          "text_sha256": "c90a1cdb561d0269284d52e41013bb2bd68e3b61e186db87e03ebced48b00d60"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0013",
+      "start": 672.32,
+      "end": 696.8,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 679.0,
+          "end_sec": 680.0,
+          "text": "余副站长",
+          "text_sha256": "4a10986db01b550e6fcabfa4adfde81ea2ccb51dae4993ca0e403ca7573c3fcd"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0014",
+      "start": 779.36,
+      "end": 785.24,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 778.0,
+          "end_sec": 780.0,
+          "text": "仗有很多种打法",
+          "text_sha256": "3c12d05047b244a63663bd790b585a1be6ee5b056aa97828df8251ab2f6e3b1c"
+        },
+        {
+          "start_sec": 780.0,
+          "end_sec": 782.0,
+          "text": "有一种胜利 叫撤退",
+          "text_sha256": "a0b1b95e8beae8fd33ecddf76f61d1dd4b39e8f2e84f3968cea50181c8bc6405"
+        },
+        {
+          "start_sec": 783.0,
+          "end_sec": 785.0,
+          "text": "有一种失败 叫占领",
+          "text_sha256": "802d86e8a18c6ae44190436fb21574f0ff6cb33f447bb7c4d70d877025d2fe1d"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0015",
+      "start": 843.48,
+      "end": 850.72,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 842.0,
+          "end_sec": 844.0,
+          "text": "那你怎么还不高兴",
+          "text_sha256": "fbdfe883bf817b25bc5825fdce8a47c35c94988b5df9582d5a03d4f953d474ff"
+        },
+        {
+          "start_sec": 846.0,
+          "end_sec": 847.0,
+          "text": "今天早上",
+          "text_sha256": "a10ae3c72c8af1bc2b7da192987abf38370a948913893367ba0fb9704cfa59ec"
+        },
+        {
+          "start_sec": 848.0,
+          "end_sec": 851.0,
+          "text": "我在他包里发现了一把手枪",
+          "text_sha256": "c76ffa0bbc0dfb3c57e3f6679d3c51bb1cb11d99b01c7f9613d65a2717e56d8c"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0016",
+      "start": 863.48,
+      "end": 870.92,
+      "subtitles_count": 5,
+      "matched_subtitles": [
+        {
+          "start_sec": 863.0,
+          "end_sec": 864.0,
+          "text": "真的",
+          "text_sha256": "d6cadba4ce9c8debd974125c53765bcbad3f25cf9a2886bbd4877dd96151a53d"
+        },
+        {
+          "start_sec": 865.0,
+          "end_sec": 867.0,
+          "text": "他做秘密事的嘛",
+          "text_sha256": "5562f9065b4d618bcd033470c36c93368c6250fdac77a7870471a095d33bedba"
+        },
+        {
+          "start_sec": 867.0,
+          "end_sec": 868.0,
+          "text": "有枪就有枪呗",
+          "text_sha256": "2d282c484bdf10041190196371d81bdb6f5ca9309f82ee449c4841849edf4481"
+        },
+        {
+          "start_sec": 869.0,
+          "end_sec": 870.0,
+          "text": "～你余大哥也别着那玩意回来过呢",
+          "text_sha256": "7aa6f223869d876b0a177956a253869db6f2bb1084964b75d5c3041d0d34c9ab"
+        },
+        {
+          "start_sec": 870.0,
+          "end_sec": 871.0,
+          "text": "你余大哥也别着那玩意回来过呢",
+          "text_sha256": "4e01716f95d19ce178e10f888ec7c4492e69dcdffddf8a1d78f7d80d1e4bb511"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0017",
+      "start": 884.8,
+      "end": 888.12,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 887.0,
+          "end_sec": 888.0,
+          "text": "他在外面有女人",
+          "text_sha256": "64000c229a0294dee4bca6f7099b623718aec45ef9346e638d1f48e22d5e5a76"
+        },
+        {
+          "start_sec": 888.0,
+          "end_sec": 889.0,
+          "text": "差不多吧",
+          "text_sha256": "a18f0d9c86410281b19cab95a624af1945899f097e18e1e06cc7aa03481a6c59"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0018",
+      "start": 899.92,
+      "end": 910.2,
+      "subtitles_count": 4,
+      "matched_subtitles": [
+        {
+          "start_sec": 899.0,
+          "end_sec": 902.0,
+          "text": "结果拐了弯 就上了一辆车",
+          "text_sha256": "5384306bba6ac09f40c8926fd3001b68612e02b77c2f3d23ecc75320beaa579d"
+        },
+        {
+          "start_sec": 904.0,
+          "end_sec": 905.0,
+          "text": "妹子；你就不该跟他",
+          "text_sha256": "265865b33f6ecf2e4338059097a37ea38117657ace1617860407dfedc4974428"
+        },
+        {
+          "start_sec": 906.0,
+          "end_sec": 908.0,
+          "text": "你看到什么还不自己心里难受吗",
+          "text_sha256": "4535eceb397e0089bb6ac607010c66476daf35a019cf607f58e34a88b5f06366"
+        },
+        {
+          "start_sec": 909.0,
+          "end_sec": 910.0,
+          "text": "眼不见心不烦呢",
+          "text_sha256": "0ac3b75ecf4475c4ecceb562873081870f2f168c14ee2503c752c1ea04199e4b"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0019",
+      "start": 915.36,
+      "end": 925.6,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 922.0,
+          "end_sec": 926.0,
+          "text": "忧伤被泪湿坏了翅膀",
+          "text_sha256": "62b000d5171d22f5da797b8e491d77b0e9e02830400af12872e12a0a990cf6ed"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0020",
+      "start": 944.88,
+      "end": 946.76,
+      "subtitles_count": 0,
+      "matched_subtitles": []
+    },
+    {
+      "shot_id": "shot_B0021",
+      "start": 960.28,
+      "end": 964.36,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 962.0,
+          "end_sec": 964.0,
+          "text": "忧伤是什么",
+          "text_sha256": "021e4b876a7780cbbcf0ebb54150fa928646e6459a3ae33b3a4e31823ee7edab"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0022",
+      "start": 969.52,
+      "end": 976.32,
+      "subtitles_count": 0,
+      "matched_subtitles": []
+    },
+    {
+      "shot_id": "shot_B0023",
+      "start": 994.04,
+      "end": 997.96,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 994.0,
+          "end_sec": 997.0,
+          "text": "忙了一天累坏了吧",
+          "text_sha256": "7c2bdacec751cd798b80d395e5b1902b59db845981bc97575cdde9b8528d4fa7"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0024",
+      "start": 997.96,
+      "end": 1003.12,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 1003.0,
+          "end_sec": 1004.0,
+          "text": "茶泡好丁 我给你端去",
+          "text_sha256": "d390a1304be5f4546540cf22a9b6dd5cd11b477a84a5b1eec2e6abd5f2fca3ee"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0025",
+      "start": 1010.88,
+      "end": 1014.44,
+      "subtitles_count": 0,
+      "matched_subtitles": []
+    },
+    {
+      "shot_id": "shot_B0026",
+      "start": 1014.44,
+      "end": 1019.4,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 1015.0,
+          "end_sec": 1017.0,
+          "text": "你又跟她说什么了",
+          "text_sha256": "1fe8b03e31a002e528784ea772911aabc3438e2545957ff18852a1f5ee491f2a"
+        },
+        {
+          "start_sec": 1018.0,
+          "end_sec": 1019.0,
+          "text": "她怎么变成这样了",
+          "text_sha256": "b53c189061f0ce0ddfbe89c428755dd625f9efc73cad28235cf9b9628c2b70cd"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0027",
+      "start": 1059.64,
+      "end": 1064.48,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 1064.0,
+          "end_sec": 1065.0,
+          "text": "你怎么了",
+          "text_sha256": "abf3ec386cb03111652fd99ffb18d37ba93cee91c28820fde58e52b76f4c58f1"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0028",
+      "start": 1359.44,
+      "end": 1366.36,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 1361.0,
+          "end_sec": 1362.0,
+          "text": "一時",
+          "text_sha256": "21f390bbcdd78ff3ac9a0b74112ea77dce33d003bceec0afd2b457a87df34aad"
+        },
+        {
+          "start_sec": 1363.0,
+          "end_sec": 1364.0,
+          "text": "淋 有",
+          "text_sha256": "c295c617131de97bb68a7058510c048a9ad32af17841b229e8567d6728306640"
+        },
+        {
+          "start_sec": 1364.0,
+          "end_sec": 1365.0,
+          "text": "許 牛",
+          "text_sha256": "93aaeace5c685c1eec7a54f3b83968bee738270d28bf3dd6a74e385221ace6f3"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0029",
+      "start": 1373.64,
+      "end": 1438.4,
+      "subtitles_count": 26,
+      "matched_subtitles": [
+        {
+          "start_sec": 1374.0,
+          "end_sec": 1375.0,
+          "text": "都到门口了",
+          "text_sha256": "1f1de064d0b96ceb9d885bf27a452c5752402080d19c2097a9758c335bc98a45"
+        },
+        {
+          "start_sec": 1375.0,
+          "end_sec": 1376.0,
+          "text": "进来就说两句",
+          "text_sha256": "caa20f76b595032a6131653cff97fbf1bebe5f8208146082f854bd018edcb2f5"
+        },
+        {
+          "start_sec": 1376.0,
+          "end_sec": 1378.0,
+          "text": "进来 就说两句",
+          "text_sha256": "60ed18c94b91db4bc2799dd4d203bc648c5f2f55acd737069602527bd7f62dd0"
+        },
+        {
+          "start_sec": 1378.0,
+          "end_sec": 1380.0,
+          "text": "来嘛 来嘛",
+          "text_sha256": "34503b4435aa43803a9fddebbdf280f0f278e87fca66a5ecdbfbef33b5e5856e"
+        },
+        {
+          "start_sec": 1381.0,
+          "end_sec": 1382.0,
+          "text": "进来 到门口了",
+          "text_sha256": "f13a0d1f01e1a8526f6c63d38652b8659b2efac7892f520acf2a679234af018e"
+        },
+        {
+          "start_sec": 1386.0,
+          "end_sec": 1387.0,
+          "text": "就说两甸",
+          "text_sha256": "7b815cb1bd4229121cba9d6a6a2332b13d5107502885e29e0884afd0b303a87c"
+        },
+        {
+          "start_sec": 1387.0,
+          "end_sec": 1388.0,
+          "text": "萆 说个屁 我跟他有什么好说的",
+          "text_sha256": "443dc8d9d6b1a0ef2519d612a4ba0c31dd0ed78545021a9038306964869e3a9e"
+        },
+        {
+          "start_sec": 1388.0,
+          "end_sec": 1389.0,
+          "text": "说个屁 我跟他有什么好说的",
+          "text_sha256": "25550b237d14722197abadaf0f4c3842ddf1b84b849c15fe5c62b3a3efd7e8b5"
+        },
+        {
+          "start_sec": 1390.0,
+          "end_sec": 1391.0,
+          "text": "人我给你带来了",
+          "text_sha256": "ba76f60b88379f30821c523f642a22d3a7eaae1a65e615c3b769f23929c9eaef"
+        },
+        {
+          "start_sec": 1397.0,
+          "end_sec": 1398.0,
+          "text": "已：",
+          "text_sha256": "5c7984db634500631291fbd0ef20326e146179d062aa07ec64a4766787b3bdc4"
+        },
+        {
+          "start_sec": 1398.0,
+          "end_sec": 1399.0,
+          "text": "晚秋说你找我",
+          "text_sha256": "e9cfe15d7d4d9fdcc231cd9873e7e47cbc63636e7ce6500faa9c4d61fb8480be"
+        },
+        {
+          "start_sec": 1400.0,
+          "end_sec": 1402.0,
+          "text": "是这样 这个晚上",
+          "text_sha256": "d4a8f07c24fd841851071b2a0ae8b7d95eede08993977a83d788770503d9d410"
+        },
+        {
+          "start_sec": 1402.0,
+          "end_sec": 1405.0,
+          "text": "你家先生回来就别做饭了",
+          "text_sha256": "2bdc531224a4e3401a95d1c4a05d389224e599d2b2d4d4d013088cc20473e29e"
+        },
+        {
+          "start_sec": 1405.0,
+          "end_sec": 1406.0,
+          "text": "在我家吃吧",
+          "text_sha256": "0dba664a834619798366df5132c9130553ec06166b2473c4d3cc84bacc13390d"
+        },
+        {
+          "start_sec": 1408.0,
+          "end_sec": 1409.0,
+          "text": "这当然好啊",
+          "text_sha256": "72dec3d473118737ea693ef4f32174edf91cc89d760c8fca5cb6f7fddca72eea"
+        },
+        {
+          "start_sec": 1412.0,
+          "end_sec": 1413.0,
+          "text": "怎么吃啊 家里只有半张烙饼",
+          "text_sha256": "148c0f7975c409e605bed1a5ad4a87e73a33c74af6c5b305dc1998673ae39c42"
+        },
+        {
+          "start_sec": 1413.0,
+          "end_sec": 1414.0,
+          "text": "怎么吃啊；家里只有半张烙饼",
+          "text_sha256": "d0e02177fc28bc9e629fc1ec8f2b4399ca60185f9a5347cda0ec8ec45e1a6a05"
+        },
+        {
+          "start_sec": 1414.0,
+          "end_sec": 1415.0,
+          "text": "怎么吃啊，家里只有半张烙饼",
+          "text_sha256": "6283beabc5d6f3b06b657a7e9870da30612c7448bdc1309b79270061ae8ebd52"
+        },
+        {
+          "start_sec": 1415.0,
+          "end_sec": 1417.0,
+          "text": "这你就别操心了",
+          "text_sha256": "4838d0a0e0c0a84916f7d555cde3b2cc8116826f048762718fc0ff6c6736b4f7"
+        },
+        {
+          "start_sec": 1418.0,
+          "end_sec": 1419.0,
+          "text": "我一会儿让人送个锅子来",
+          "text_sha256": "299d3d6a19501f51a17f49621eb2c82abe4ee0480ed75abbc02601ecdf915f55"
+        },
+        {
+          "start_sec": 1420.0,
+          "end_sec": 1421.0,
+          "text": "咱们吃涮羊肉",
+          "text_sha256": "1d4b965330b2af177af7653f400913c963c023daa726992598dcf2ac0e665fb7"
+        },
+        {
+          "start_sec": 1421.0,
+          "end_sec": 1422.0,
+          "text": "蒙古馆子的羊肉",
+          "text_sha256": "abf4af3d53f9ad9853d4b2f2c2beb94c1e001b2ad44f377a31d85c52050eaa6a"
+        },
+        {
+          "start_sec": 1424.0,
+          "end_sec": 1425.0,
+          "text": "叔伯在的时候倒是经常吃",
+          "text_sha256": "3d61c3d37781ae1f06c7de54d288e82f00d7f7c1b89298fa5712b8bdebe810ab"
+        },
+        {
+          "start_sec": 1426.0,
+          "end_sec": 1427.0,
+          "text": "眼下吃顿羊肉啊",
+          "text_sha256": "04bf72b22249c18995d307612606646a5ec10696ee45470bc79ee5968d8d8d93"
+        },
+        {
+          "start_sec": 1428.0,
+          "end_sec": 1430.0,
+          "text": "就像过年一样",
+          "text_sha256": "7195ea79899af33194136d923a6207857f31559b57a64809d021f1321cff8a36"
+        },
+        {
+          "start_sec": 1433.0,
+          "end_sec": 1435.0,
+          "text": "羊肉还是包大包子好吃啊",
+          "text_sha256": "13348ab1466354db3f5966aa97b8ac73db4100ad7c6886f04370ab9aa5fad8bc"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0030",
+      "start": 1479.08,
+      "end": 1481.96,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 1479.0,
+          "end_sec": 1482.0,
+          "text": "你叫翠平 你妹妹叫秋平",
+          "text_sha256": "417e115329934a3085b8b2487cd6bf04964ddfde90b6db188d61a182c09ca7a5"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0031",
+      "start": 1585.84,
+      "end": 1592.76,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 1586.0,
+          "end_sec": 1587.0,
+          "text": "抓",
+          "text_sha256": "67d04ffaf62e23cfc61d544085ddb8e3e2e7c72a178f168164a72158c0b89530"
+        },
+        {
+          "start_sec": 1588.0,
+          "end_sec": 1590.0,
+          "text": "你傻",
+          "text_sha256": "59ffb963dd461d481b68695333e6b298db88c342cf43fa075ef308d1b333a42d"
+        },
+        {
+          "start_sec": 1591.0,
+          "end_sec": 1592.0,
+          "text": "怎么做不傻",
+          "text_sha256": "be90a95f49eef2da614ae2093875fd935916cd7371c772b0a76cfd9fbb20bbe1"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0032",
+      "start": 1604.96,
+      "end": 1611.92,
+      "subtitles_count": 4,
+      "matched_subtitles": [
+        {
+          "start_sec": 1604.0,
+          "end_sec": 1605.0,
+          "text": "这是要杀头的",
+          "text_sha256": "dd353f73b897b27e4d0483da59d087da25399f5b96f3c93b8d3d66ce241e55e9"
+        },
+        {
+          "start_sec": 1605.0,
+          "end_sec": 1606.0,
+          "text": "简单了",
+          "text_sha256": "04cb578af2ac081038f880d9202f5267f5404f07c933acb8d3c72279cc18febd"
+        },
+        {
+          "start_sec": 1607.0,
+          "end_sec": 1610.0,
+          "text": "他要是知道就把他拉进来",
+          "text_sha256": "8e61010f3a8ec7474667efb9ab342c0ee985ca20c5724978377723e4c9ac6eff"
+        },
+        {
+          "start_sec": 1610.0,
+          "end_sec": 1612.0,
+          "text": "有钱大家一起赚嘛",
+          "text_sha256": "fcf0b0e247e42161d5af04c8f9dab3651ca3c6788cadcb266d92fa85d825edfa"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0033",
+      "start": 1641.36,
+      "end": 1643.24,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 1640.0,
+          "end_sec": 1642.0,
+          "text": "别跟我开这种玩笑 你害我呀你",
+          "text_sha256": "c41d92e27896dbb556c3057f80739cba4d54739a168c307514582302f70d839b"
+        },
+        {
+          "start_sec": 1643.0,
+          "end_sec": 1645.0,
+          "text": "我给你拿点东西你看看啊",
+          "text_sha256": "666a0f97a8fe5539088302010684f20b7837f2f80043f7b96e9519090082fcdb"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0034",
+      "start": 1650.24,
+      "end": 1670.96,
+      "subtitles_count": 7,
+      "matched_subtitles": [
+        {
+          "start_sec": 1658.0,
+          "end_sec": 1659.0,
+          "text": "不会是我的入党申请书吧",
+          "text_sha256": "889be590fced5a88dd909b762a48ae91ad057886a81fea529c1dbf9c027ca408"
+        },
+        {
+          "start_sec": 1659.0,
+          "end_sec": 1660.0,
+          "text": "会是我的入党申请书吧",
+          "text_sha256": "425c51759d559356829edbcad3cffecbf70676578172c5e6868e15d194adc1ae"
+        },
+        {
+          "start_sec": 1661.0,
+          "end_sec": 1662.0,
+          "text": "我哪有那么大本事",
+          "text_sha256": "041000580147cd1d113610e9188a23b1f04bc4a4be46eaf14b503d1dd1be453f"
+        },
+        {
+          "start_sec": 1662.0,
+          "end_sec": 1663.0,
+          "text": "我哪有那么天本事",
+          "text_sha256": "aa3d83410860bf553d4ee99e13b78f70329d02d081bbebb48641a3079b9619b6"
+        },
+        {
+          "start_sec": 1666.0,
+          "end_sec": 1667.0,
+          "text": "这可是延安叛徒韩继恩",
+          "text_sha256": "d06cd69cdc503ebe8f8c6a36bfc47a5e294c4b8af9979f146610750ac253eea2"
+        },
+        {
+          "start_sec": 1667.0,
+          "end_sec": 1669.0,
+          "text": "带人从陕北挖出来的",
+          "text_sha256": "436c836717ab73253731962d6091940ac9604bc3553404c3e786c7a3a40929f2"
+        },
+        {
+          "start_sec": 1669.0,
+          "end_sec": 1671.0,
+          "text": "都是秘密档案",
+          "text_sha256": "79c570b67b527008035f2e4cb2e4d3487b944a6ff80170cf4d6b1e1faa59f2a3"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0035",
+      "start": 1801.24,
+      "end": 1805.0,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 1802.0,
+          "end_sec": 1805.0,
+          "text": "也可能是时间来不及了",
+          "text_sha256": "9ddcbbe98cfe7d19f567ccae1457c1a9588fabcde32398e0e08a15c44cb341e3"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0036",
+      "start": 1850.8,
+      "end": 1857.04,
+      "subtitles_count": 6,
+      "matched_subtitles": [
+        {
+          "start_sec": 1849.0,
+          "end_sec": 1851.0,
+          "text": "你还是跟我装傻呀你",
+          "text_sha256": "9fb683781c82ef6e1bec24cd07ac9532871cad9869b2785dd622ae145776007d"
+        },
+        {
+          "start_sec": 1851.0,
+          "end_sec": 1853.0,
+          "text": "我知道呀",
+          "text_sha256": "72b6d271547d41cfc75eff1bcbe92e6eaf3eb25a3c816e84a887e367df5f2539"
+        },
+        {
+          "start_sec": 1853.0,
+          "end_sec": 1854.0,
+          "text": "共党分子内讧",
+          "text_sha256": "a01e6baa1236c2bed3232646202af47a693832b4439e8802b253bd5eeb4e8e47"
+        },
+        {
+          "start_sec": 1854.0,
+          "end_sec": 1855.0,
+          "text": "共党分子内边",
+          "text_sha256": "194bb889d550ae2e38a1760c89839c34800b4abe8ba22e589b90edaea09cb4bf"
+        },
+        {
+          "start_sec": 1855.0,
+          "end_sec": 1857.0,
+          "text": "那女的不就是那个代表吗",
+          "text_sha256": "dd1c538add734dffd773c71b94068bc445274869079b8825fe161929809ff9d5"
+        },
+        {
+          "start_sec": 1857.0,
+          "end_sec": 1859.0,
+          "text": "男的不就是峨眉峰吗",
+          "text_sha256": "5f76ca1bef3a3367a3dfca15f5d3e6f807e9d761b03a8885af67268560c4d4ad"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0037",
+      "start": 1882.6,
+      "end": 1890.16,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 1886.0,
+          "end_sec": 1887.0,
+          "text": "那要真像你说的是",
+          "text_sha256": "749bc1416367414132f9ec2a94db81e12756f8ca3d3065d12ed83a76574c0830"
+        },
+        {
+          "start_sec": 1888.0,
+          "end_sec": 1890.0,
+          "text": "上面有人派下来的",
+          "text_sha256": "b5622d16e05d974fc31855c0b4ceb6b410f8d2695cff451c4bd3e2ca031e4eae"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0038",
+      "start": 1925.76,
+      "end": 1927.6,
+      "subtitles_count": 2,
+      "matched_subtitles": [
+        {
+          "start_sec": 1923.0,
+          "end_sec": 1926.0,
+          "text": "余先生 息怒 息怒",
+          "text_sha256": "0a5e42e25e3dfe3452e56f73239a4627cb6b879dcfea417ccd27ec2f9499ed47"
+        },
+        {
+          "start_sec": 1926.0,
+          "end_sec": 1927.0,
+          "text": "我怎么息怒啊",
+          "text_sha256": "3e5b57e04d687dea86688e620158c43e19cecea51b466285de8395ecf207bcbb"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0039",
+      "start": 1948.28,
+      "end": 1956.56,
+      "subtitles_count": 5,
+      "matched_subtitles": [
+        {
+          "start_sec": 1949.0,
+          "end_sec": 1950.0,
+          "text": "我余则成辛辛苦菁地熬到今天",
+          "text_sha256": "37fe6fdc59b301ba23cc28bf7ba55a755d9f198737f8b29a65c91635877c38f6"
+        },
+        {
+          "start_sec": 1950.0,
+          "end_sec": 1951.0,
+          "text": "我余则成辛辛菁苦地熬到今天",
+          "text_sha256": "d670e609b9ba9aa08c62f3694080561020e7d27a51924f0d86a6e1647e78da4b"
+        },
+        {
+          "start_sec": 1951.0,
+          "end_sec": 1952.0,
+          "text": "容易吗",
+          "text_sha256": "49015ec021eb3cb83cd56761bec8d68b8c8ae2b372c3877abbc1651bc994f9aa"
+        },
+        {
+          "start_sec": 1952.0,
+          "end_sec": 1954.0,
+          "text": "就凭你几张垃圾情报",
+          "text_sha256": "60aa09b27eeba06124ea9b355821337b7e084c588bb5e9a5447c7d88ce69cc52"
+        },
+        {
+          "start_sec": 1955.0,
+          "end_sec": 1956.0,
+          "text": "就把我这一辈子全毁了",
+          "text_sha256": "7e445234649a3f076c5b567459e2b65bbf28f4a180ef52334b1b944806d574ac"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0040",
+      "start": 2005.44,
+      "end": 2015.0,
+      "subtitles_count": 3,
+      "matched_subtitles": [
+        {
+          "start_sec": 2006.0,
+          "end_sec": 2008.0,
+          "text": "这不明摆着呢吗",
+          "text_sha256": "d7a177f862a04188e1565829d056a4be7bf25c5beda76def86b323ee6a7626ba"
+        },
+        {
+          "start_sec": 2009.0,
+          "end_sec": 2012.0,
+          "text": "买走情报那是共党",
+          "text_sha256": "03f062b36b383adb19192989e046beea146846579da3c78c233f44208c9a7b35"
+        },
+        {
+          "start_sec": 2012.0,
+          "end_sec": 2015.0,
+          "text": "就等于封锁消息了",
+          "text_sha256": "c5ec1fbc0fd147cae7589291c98608e1babd549f8021476c54b60774df8ea83f"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0041",
+      "start": 2043.4,
+      "end": 2048.68,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 2045.0,
+          "end_sec": 2049.0,
+          "text": "你就为了钱 说我是共产党",
+          "text_sha256": "3d366033d3ed4852fa8b60b4d34178110a61419f07d5e829ece6603d95247f65"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0042",
+      "start": 2079.96,
+      "end": 2100.88,
+      "subtitles_count": 6,
+      "matched_subtitles": [
+        {
+          "start_sec": 2078.0,
+          "end_sec": 2080.0,
+          "text": "咱们俩还是少接触吧",
+          "text_sha256": "6387156b164d83e8da1adb9855b4ae32626da47f7e1d6b59dc23c62f6fa6dd46"
+        },
+        {
+          "start_sec": 2080.0,
+          "end_sec": 2081.0,
+          "text": "咱们俩不是一类人",
+          "text_sha256": "1e54b675e2ce389c29df133ca00accf05d6eb9f1da4e8d5a9316e2f232f8265e"
+        },
+        {
+          "start_sec": 2083.0,
+          "end_sec": 2084.0,
+          "text": "•你再想一想",
+          "text_sha256": "f478eb95efa1e23067be933fb24cca60fe38658629f4c5d1abb680f3b6e61c82"
+        },
+        {
+          "start_sec": 2084.0,
+          "end_sec": 2087.0,
+          "text": "我也可以把党通局的机密告诉你",
+          "text_sha256": "53f6db6dc997ded5029d6cf20aa69684f21f83677cfe39adbd8c4fb4f32ec9d9"
+        },
+        {
+          "start_sec": 2089.0,
+          "end_sec": 2091.0,
+          "text": "谢谢你的羊肉 我得回去了",
+          "text_sha256": "62b77ca87c1fe0ff4a76e246c2ae240900a931d8b4f5af4ba02899cfab9ced07"
+        },
+        {
+          "start_sec": 2097.0,
+          "end_sec": 2101.0,
+          "text": "硕果仅存的蠢货",
+          "text_sha256": "5a294c70e63c0bc67bc4c085e383a274f76ab785c487737ad9b1a74f2742befa"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0043",
+      "start": 2129.6,
+      "end": 2160.8,
+      "subtitles_count": 8,
+      "matched_subtitles": [
+        {
+          "start_sec": 2133.0,
+          "end_sec": 2134.0,
+          "text": "根她吗",
+          "text_sha256": "2d9d41996d21213bf875d2a9b6dd2f0da0671372c92c201248ccac1300329451"
+        },
+        {
+          "start_sec": 2136.0,
+          "end_sec": 2138.0,
+          "text": "想 能不想吗",
+          "text_sha256": "84393ec102bb4cbded8cfe6d33153aec1d35123e783596a399786270bdd5beba"
+        },
+        {
+          "start_sec": 2141.0,
+          "end_sec": 2143.0,
+          "text": "她可有见识了",
+          "text_sha256": "894b502572d41525b00e27768946764932568d9f73aa5550453c3275d2eef6e7"
+        },
+        {
+          "start_sec": 2143.0,
+          "end_sec": 2145.0,
+          "text": "你以后要能见着她就好了",
+          "text_sha256": "f6afb58e9ff6aeed3d735afd515f3b58a0977e9ed7cb200088587cf743dfc5e2"
+        },
+        {
+          "start_sec": 2147.0,
+          "end_sec": 2149.0,
+          "text": "对她挺像左蓝的",
+          "text_sha256": "3518f470f41aa1d4e261fad997aa241e7fd35939fdc4835d18f1ef10c2f0678f"
+        },
+        {
+          "start_sec": 2152.0,
+          "end_sec": 2153.0,
+          "text": "短头发 说话也快还老带文词",
+          "text_sha256": "ed92a89598826bbe53b02cf269ccd094bd1741135675d3e46ad4d2da5c2f6078"
+        },
+        {
+          "start_sec": 2153.0,
+          "end_sec": 2156.0,
+          "text": "短头发 说话也快 还老带文词",
+          "text_sha256": "e45a5a1d7f7f84668663fbe9fbdd5fe3c8ee0e54f26d3c030ffb38e9eed1897b"
+        },
+        {
+          "start_sec": 2160.0,
+          "end_sec": 2163.0,
+          "text": "你不喜欢我 说不定能喜欢她",
+          "text_sha256": "e131ebf02895b09e809ec1486e654557214cd2f040689b9140be2f3e5ef982d8"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0044",
+      "start": 2170.28,
+      "end": 2182.96,
+      "subtitles_count": 5,
+      "matched_subtitles": [
+        {
+          "start_sec": 2171.0,
+          "end_sec": 2172.0,
+          "text": "我傻呀",
+          "text_sha256": "2e53be3b7af0d88dd2c25177e679cee84509bc13c858f5642a9d91ced00e44be"
+        },
+        {
+          "start_sec": 2175.0,
+          "end_sec": 2176.0,
+          "text": "翠平至今还不知道妹妹牺牲的消息",
+          "text_sha256": "c057ca6d95546e0a0864039a957670a4bb871e2278e4cb04d52d5503b9717b3b"
+        },
+        {
+          "start_sec": 2176.0,
+          "end_sec": 2177.0,
+          "text": "翠业至 今还不知道妹妹牺牲的消息",
+          "text_sha256": "050c77617d24ab43577aeaf2b22b0e503e858a72a773d03af7ea70b19586fdfb"
+        },
+        {
+          "start_sec": 2179.0,
+          "end_sec": 2181.0,
+          "text": "余则成听着翠平骄傲的述说",
+          "text_sha256": "ebcbf5bd7d56440e503519ede1766fc0663c769ac28fb9779dcd738d5afc5f3b"
+        },
+        {
+          "start_sec": 2181.0,
+          "end_sec": 2183.0,
+          "text": "心头忽然感到阵阵凄凉",
+          "text_sha256": "849f597bd799edee3b417fd785c5626f7dbe7d29dce97564c34948eb287d01e3"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0045",
+      "start": 2215.68,
+      "end": 2217.8,
+      "subtitles_count": 1,
+      "matched_subtitles": [
+        {
+          "start_sec": 2216.0,
+          "end_sec": 2217.0,
+          "text": "这是要去哪儿啊",
+          "text_sha256": "67d34851406516826e10d5c7b794d790d19ab029602c99946182462178e490cc"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0046",
+      "start": 2402.68,
+      "end": 2409.52,
+      "subtitles_count": 0,
+      "matched_subtitles": []
+    },
+    {
+      "shot_id": "shot_B0047",
+      "start": 2488.16,
+      "end": 2511.44,
+      "subtitles_count": 8,
+      "matched_subtitles": [
+        {
+          "start_sec": 2488.0,
+          "end_sec": 2490.0,
+          "text": "臊死了没脸见人了",
+          "text_sha256": "f01b0f474a548fc3467c3a18135935d16ed96e829fe818b0f6f5a19195c77eab"
+        },
+        {
+          "start_sec": 2490.0,
+          "end_sec": 2491.0,
+          "text": "臊死了 没脸见人了",
+          "text_sha256": "9b719080bc068836514fa9b7117e65ffb848f1db05cd0029bee583e5d5b3e874"
+        },
+        {
+          "start_sec": 2493.0,
+          "end_sec": 2495.0,
+          "text": "医生怎么会是个老爷们儿呢",
+          "text_sha256": "f1515712ec8636651c9dc1735d0b26edb366ab222c2300be0db1e1c785c1b3dc"
+        },
+        {
+          "start_sec": 2495.0,
+          "end_sec": 2497.0,
+          "text": "医生男女都一样",
+          "text_sha256": "141e8fe01871b272ed50efe931d64c640b800d6e1fdb97aae91a64f5780c6e62"
+        },
+        {
+          "start_sec": 2497.0,
+          "end_sec": 2498.0,
+          "text": "一样个屁",
+          "text_sha256": "6e063c30b670543008b582c7186158279abfbde10d894a9cb03e2f69156e7a96"
+        },
+        {
+          "start_sec": 2500.0,
+          "end_sec": 2501.0,
+          "text": "都脱光了",
+          "text_sha256": "9bb10f80ee99f210483ac256af58d086274b897285f8eaf9be03972993ca7dc0"
+        },
+        {
+          "start_sec": 2507.0,
+          "end_sec": 2509.0,
+          "text": "那妇科病是个什么病啊",
+          "text_sha256": "3a93d75eb8a275099dda54fe4378b3f779dedd7af26571223046f2a77509d485"
+        },
+        {
+          "start_sec": 2510.0,
+          "end_sec": 2511.0,
+          "text": "好了 回家",
+          "text_sha256": "fee225a9b43b580f43431e6e5a0f00bed1c981adf40ed37d4e3f3c227f220f2b"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0048",
+      "start": 2600.24,
+      "end": 2606.4,
+      "subtitles_count": 7,
+      "matched_subtitles": [
+        {
+          "start_sec": 2600.0,
+          "end_sec": 2601.0,
+          "text": "无论谁能听见",
+          "text_sha256": "ffbfa28216516a893ebf3e5b8a531827f7187617be75d97fbfb7a097bc57ee74"
+        },
+        {
+          "start_sec": 2601.0,
+          "end_sec": 2602.0,
+          "text": "无论谁能听见 旁一白：徐涛",
+          "text_sha256": "eefed80b60b77e4dc08f1518a45ffe8643c6794a8f2ad88f1f43abad81a85c96"
+        },
+        {
+          "start_sec": 2602.0,
+          "end_sec": 2603.0,
+          "text": "旁 白：徐涛 原二著：龙一",
+          "text_sha256": "9a7decbf4a464b5c126f0122a256afaa34449e5209159f1176f54f993ab4942f"
+        },
+        {
+          "start_sec": 2603.0,
+          "end_sec": 2604.0,
+          "text": "海 者：龙 剧：姜 油。於 伟 住",
+          "text_sha256": "273fdca2411967f78e045cbca9b3258c6f82cc097800209b04d5a22658f04627"
+        },
+        {
+          "start_sec": 2604.0,
+          "end_sec": 2605.0,
+          "text": "我的泪水是无底深海 导演：姜伟 付玮 摄一影：徐红兵 张译水",
+          "text_sha256": "47fc8db84736001bfcbfdf60b9f801ccdd2a06ca8065577178f06b0b017572c3"
+        },
+        {
+          "start_sec": 2605.0,
+          "end_sec": 2606.0,
+          "text": "我的泪水是无底深海 摄影：徐红兵 美一术：李继麟 张译水 黄嘉超",
+          "text_sha256": "bfded6f5bf0066a9dae0a1801469bfc40cd57ca86051ab4cd5e7b2fa72a833c8"
+        },
+        {
+          "start_sec": 2606.0,
+          "end_sec": 2607.0,
+          "text": "我的泪水是无底深海 尚菲璇 录音：王 然 冯震",
+          "text_sha256": "b83b72aed54d3c8d7f2943d98998f42fa576e406ea640f82c05129a4d196653c"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0049",
+      "start": 2613.24,
+      "end": 2616.76,
+      "subtitles_count": 4,
+      "matched_subtitles": [
+        {
+          "start_sec": 2613.0,
+          "end_sec": 2614.0,
+          "text": "相信无尽的力量 副导潢：李苏 李晓燕 张虹颖 娄亚江",
+          "text_sha256": "c72feced4d0d97bddef0c5b07943e7efa0673e034463921ab554a9e1d6389720"
+        },
+        {
+          "start_sec": 2614.0,
+          "end_sec": 2615.0,
+          "text": "相信无尽的力量 场记：施维聪 服装：董清萍 薛迎娣",
+          "text_sha256": "4fbeedccb7aa138e05c3c03dba8833794f3eedf1ea9226d6bd023bb8043af9b5"
+        },
+        {
+          "start_sec": 2615.0,
+          "end_sec": 2616.0,
+          "text": "相信无尽的力量 服 化 裝：董清萍 妆：马树英",
+          "text_sha256": "dcb7836e1c37c79b1d85a582e40601e04b3e3976f4eada5e6f38a7e88348691f"
+        },
+        {
+          "start_sec": 2616.0,
+          "end_sec": 2617.0,
+          "text": "1双：当們失 灯光：胡庭鑫 浴口的汁，赵书平",
+          "text_sha256": "fd3a3e8700feb52bd820d4bfc6ef028f3ddfd556015d51ed05f702ea04156b12"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_B0050",
+      "start": 2628.68,
+      "end": 2631.32,
+      "subtitles_count": 4,
+      "matched_subtitles": [
+        {
+          "start_sec": 2628.0,
+          "end_sec": 2629.0,
+          "text": "心中覆盖悲伤 词：韩葆 作：阿•亚历山大罗夫",
+          "text_sha256": "3509686bb3563a572c9932559323dc26c29c7e8aab7a5662c53a40f158458900"
+        },
+        {
+          "start_sec": 2629.0,
+          "end_sec": 2630.0,
+          "text": "原 编 作：阿。亚历山大罗夫 曲：王晓锋",
+          "text_sha256": "8bfd93c69c6c385d048f80bd28757bfeee6838125c57f5523319809ed9024537"
+        },
+        {
+          "start_sec": 2630.0,
+          "end_sec": 2631.0,
+          "text": "在悲伤里忍受孤独 1唱：亚洲爱乐合唱团 手风票：杨屹",
+          "text_sha256": "3ecc09aafc901f19c90e2089500fa1a5efb5e78d41854820c2c5d1b47c33b8c4"
+        },
+        {
+          "start_sec": 2631.0,
+          "end_sec": 2632.0,
+          "text": "在悲伤里忍受孤独 手风琴：杨屹 小提琴：赵坤宇",
+          "text_sha256": "b2164d4c51add0c57930826e116c45562cd8c68e81d50b9e1cef379629e834d1"
+        }
+      ]
+    }
+  ]
+}

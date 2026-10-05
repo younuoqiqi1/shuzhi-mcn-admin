@@ -1,0 +1,37 @@
+{
+  "window_idx": 23,
+  "center_start": 1380.0,
+  "center_end": 1440.0,
+  "ctx_start": 1378.0,
+  "ctx_end": 1442.0,
+  "raw_cuts_count": 2,
+  "center_cuts": [
+    1438.4,
+    1438.72
+  ],
+  "scores": [
+    {
+      "time_sec": 1438.4,
+      "frame_num": 35960,
+      "content_val": 28.7931,
+      "adaptive_ratio": 3.7239
+    },
+    {
+      "time_sec": 1438.72,
+      "frame_num": 35968,
+      "content_val": 28.1501,
+      "adaptive_ratio": 5.3739
+    }
+  ],
+  "params": {
+    "window_idx": 23,
+    "center_start": 1380.0,
+    "center_end": 1440.0,
+    "ctx_start": 1378.0,
+    "ctx_end": 1442.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "6d4229c330ee3c13109982d6b87797b7a095a2f21bf0e9cbb0d758b2b5f47a57",
+  "created_at": 1791218793.268972
+}

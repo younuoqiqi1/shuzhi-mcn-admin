@@ -1,0 +1,92 @@
+{
+  "window_idx": 39,
+  "center_start": 2340.0,
+  "center_end": 2400.0,
+  "ctx_start": 2338.0,
+  "ctx_end": 2402.0,
+  "raw_cuts_count": 10,
+  "center_cuts": [
+    2348.92,
+    2350.32,
+    2351.52,
+    2357.48,
+    2359.08,
+    2361.64,
+    2392.96,
+    2397.92,
+    2399.96
+  ],
+  "scores": [
+    {
+      "time_sec": 2339.96,
+      "frame_num": 58499,
+      "content_val": 48.5684,
+      "adaptive_ratio": 7.7603
+    },
+    {
+      "time_sec": 2348.92,
+      "frame_num": 58723,
+      "content_val": 53.1714,
+      "adaptive_ratio": 17.091
+    },
+    {
+      "time_sec": 2350.32,
+      "frame_num": 58758,
+      "content_val": 54.3534,
+      "adaptive_ratio": 21.008
+    },
+    {
+      "time_sec": 2351.52,
+      "frame_num": 58788,
+      "content_val": 52.4562,
+      "adaptive_ratio": 22.9786
+    },
+    {
+      "time_sec": 2357.48,
+      "frame_num": 58937,
+      "content_val": 47.1387,
+      "adaptive_ratio": 12.8947
+    },
+    {
+      "time_sec": 2359.08,
+      "frame_num": 58977,
+      "content_val": 43.2162,
+      "adaptive_ratio": 4.9517
+    },
+    {
+      "time_sec": 2361.64,
+      "frame_num": 59041,
+      "content_val": 45.4794,
+      "adaptive_ratio": 171.7045
+    },
+    {
+      "time_sec": 2392.96,
+      "frame_num": 59824,
+      "content_val": 61.9476,
+      "adaptive_ratio": 8.3504
+    },
+    {
+      "time_sec": 2397.92,
+      "frame_num": 59948,
+      "content_val": 62.281,
+      "adaptive_ratio": 27.3087
+    },
+    {
+      "time_sec": 2399.96,
+      "frame_num": 59999,
+      "content_val": 52.0716,
+      "adaptive_ratio": 46.258
+    }
+  ],
+  "params": {
+    "window_idx": 39,
+    "center_start": 2340.0,
+    "center_end": 2400.0,
+    "ctx_start": 2338.0,
+    "ctx_end": 2402.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "f0735e79eefde66191d7be295c42cd5db19682ebaaab4c2d972084fa9c365276",
+  "created_at": 1791218863.01229
+}

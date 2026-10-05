@@ -1,0 +1,28 @@
+{
+  "window_idx": 45,
+  "center_start": 2700.0,
+  "center_end": 2702.013243,
+  "ctx_start": 2698.0,
+  "ctx_end": 2702.013243,
+  "raw_cuts_count": 1,
+  "center_cuts": [],
+  "scores": [
+    {
+      "time_sec": 2699.92,
+      "frame_num": 67498,
+      "content_val": 46.5706,
+      "adaptive_ratio": 3.9502
+    }
+  ],
+  "params": {
+    "window_idx": 45,
+    "center_start": 2700.0,
+    "center_end": 2702.013243,
+    "ctx_start": 2698.0,
+    "ctx_end": 2702.013243,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "f786e306a1405e77140867cc66b1e28121c9a02554fa23da94ad767715b3c999",
+  "created_at": 1791218884.348424
+}

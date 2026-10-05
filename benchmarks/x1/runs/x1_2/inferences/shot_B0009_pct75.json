@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0009_pct75",
+  "shot_id": "shot_B0009",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "ca66ecc01136bfdb50207a88f1bab1e77194ba387566af042db31e444736e816",
+  "inference_hash": "585f5b99fc902c3ec80ce42d0b71a7a2531cc34f5badeb00d71ab804a8834829",
+  "latency_ms": 29840.959124965593,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Woman with dark wavy hair, wearing a light blue top, positioned center-left.\"], \"environment\": \"Dimly lit room. Background right has a tall stand with a blue and white vase. Dark shelf on left.\", \"objects\": [\"Blue and white porcelain vase\", \"Tall wooden stand\", \"Rounded container on a lower table\", \"Subtitles at bottom\"], \"physical_actions\": [\"Woman looking down towards screen-right, mouth slightly open.\"], \"uncertainty\": \"Dark lighting obscures details in the background and shadows.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Woman with dark wavy hair, wearing a light blue top, positioned center-left."
+      ],
+      "environment": "Dimly lit room. Background right has a tall stand with a blue and white vase. Dark shelf on left.",
+      "objects": [
+        "Blue and white porcelain vase",
+        "Tall wooden stand",
+        "Rounded container on a lower table",
+        "Subtitles at bottom"
+      ],
+      "physical_actions": [
+        "Woman looking down towards screen-right, mouth slightly open."
+      ],
+      "uncertainty": "Dark lighting obscures details in the background and shadows."
+    },
+    "error": null,
+    "latency_ms": 29840.96,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21540,
+      "output_tokens": 1355,
+      "thinking_tokens": 886,
+      "cache_read_tokens": 44663,
+      "total_tokens": 22895
+    },
+    "source_image_hash": "ca66ecc01136bfdb50207a88f1bab1e77194ba387566af042db31e444736e816",
+    "inference_image_hash": "585f5b99fc902c3ec80ce42d0b71a7a2531cc34f5badeb00d71ab804a8834829",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

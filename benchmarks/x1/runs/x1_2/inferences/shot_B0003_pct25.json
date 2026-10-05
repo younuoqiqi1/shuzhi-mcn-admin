@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0003_pct25",
+  "shot_id": "shot_B0003",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "66d312ee32bc89b4e51a02106dc3bec4cc812b01ab5053d715b90182411b6193",
+  "inference_hash": "31ef27575d7d5de86f217ac71eca7d93e88b9fdac7021122d26f2e6f985bfcc1",
+  "latency_ms": 47717.476499965414,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person on screen-left, dark hair with headband, wearing a light-colored long-sleeve jacket.\"], \"environment\": \"A dimly lit indoor space with a greenish-blue color tint. A dark wooden table occupies the foreground. In the background on screen-right, there are stacked wooden crates or shelves.\", \"objects\": [\"Dark wooden table\", \"Stacked wooden crates\", \"On-screen text overlay\"], \"physical_actions\": [\"Leaning on a table with arms resting on the surface, facing screen-right.\"], \"uncertainty\": \"Dimly lit, obscuring background. Translucent reflection or overlay on screen-left with a grid pattern. Yellow on-screen text.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person on screen-left, dark hair with headband, wearing a light-colored long-sleeve jacket."
+      ],
+      "environment": "A dimly lit indoor space with a greenish-blue color tint. A dark wooden table occupies the foreground. In the background on screen-right, there are stacked wooden crates or shelves.",
+      "objects": [
+        "Dark wooden table",
+        "Stacked wooden crates",
+        "On-screen text overlay"
+      ],
+      "physical_actions": [
+        "Leaning on a table with arms resting on the surface, facing screen-right."
+      ],
+      "uncertainty": "Dimly lit, obscuring background. Translucent reflection or overlay on screen-left with a grid pattern. Yellow on-screen text."
+    },
+    "error": null,
+    "latency_ms": 47717.48,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18069,
+      "output_tokens": 1810,
+      "thinking_tokens": 1317,
+      "cache_read_tokens": 48728,
+      "total_tokens": 19879
+    },
+    "source_image_hash": "66d312ee32bc89b4e51a02106dc3bec4cc812b01ab5053d715b90182411b6193",
+    "inference_image_hash": "31ef27575d7d5de86f217ac71eca7d93e88b9fdac7021122d26f2e6f985bfcc1",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0010_pct50",
+  "shot_id": "shot_B0010",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "a87fe7bc5271ee3534cb35293864dc671b51e9c1b97b9cb6dd5da857d1816f3e",
+  "inference_hash": "429cda9cfb3a3a5834e8a0626001905261deb66b939fad25267cc6a472538247",
+  "latency_ms": 29423.824333003722,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名短发个体，佩戴金属细框眼镜，身穿具有光泽感的灰蓝色丝质上衣\"], \"environment\": \"光线极为昏暗的室内空间，背景大部分隐没在深色阴影中，可见人物正躺在床铺上\", \"objects\": [\"细金属框眼镜\", \"带有粉红色花卉图案的浅色枕头\", \"带有反光质感的上衣\", \"屏幕底部的白色中文字幕\"], \"physical_actions\": [\"身体仰卧或侧卧\", \"头部靠在屏幕右侧的枕头上\", \"双眼处于闭合或微闭状态\"], \"uncertainty\": \"画面整体照明非常暗，背景大面积被阴影遮挡，完全无法看清环境细节\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名短发个体，佩戴金属细框眼镜，身穿具有光泽感的灰蓝色丝质上衣"
+      ],
+      "environment": "光线极为昏暗的室内空间，背景大部分隐没在深色阴影中，可见人物正躺在床铺上",
+      "objects": [
+        "细金属框眼镜",
+        "带有粉红色花卉图案的浅色枕头",
+        "带有反光质感的上衣",
+        "屏幕底部的白色中文字幕"
+      ],
+      "physical_actions": [
+        "身体仰卧或侧卧",
+        "头部靠在屏幕右侧的枕头上",
+        "双眼处于闭合或微闭状态"
+      ],
+      "uncertainty": "画面整体照明非常暗，背景大面积被阴影遮挡，完全无法看清环境细节"
+    },
+    "error": null,
+    "latency_ms": 29423.82,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14767,
+      "output_tokens": 1466,
+      "thinking_tokens": 1178,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16233
+    },
+    "source_image_hash": "a87fe7bc5271ee3534cb35293864dc671b51e9c1b97b9cb6dd5da857d1816f3e",
+    "inference_image_hash": "429cda9cfb3a3a5834e8a0626001905261deb66b939fad25267cc6a472538247",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0004_pct75",
+  "shot_id": "shot_B0004",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "8c05bb382b3047a9c841a088aac3258dfd6b91887402127d27a98527cb2e449a",
+  "inference_hash": "c5a9468a0e098131deb392c343ce4f1b95a9b41293e6167855c00b6387b8169e",
+  "latency_ms": 38720.54433298763,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Asian male with short black hair, wearing a dark collared jacket or coat\"], \"environment\": \"Dimly lit indoor space with wooden architectural elements, possibly a door or paneled wall, visible in the background\", \"objects\": [\"Blue digital graphic overlay\", \"Film strip border on left\"], \"physical_actions\": [\"Head angled slightly downwards\", \"Gaze directed towards the lower screen-right area\"], \"uncertainty\": \"Right side and lower face obscured by blue digital overlay. Overall lighting is dark. Film strip graphic on left edge.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Asian male with short black hair, wearing a dark collared jacket or coat"
+      ],
+      "environment": "Dimly lit indoor space with wooden architectural elements, possibly a door or paneled wall, visible in the background",
+      "objects": [
+        "Blue digital graphic overlay",
+        "Film strip border on left"
+      ],
+      "physical_actions": [
+        "Head angled slightly downwards",
+        "Gaze directed towards the lower screen-right area"
+      ],
+      "uncertainty": "Right side and lower face obscured by blue digital overlay. Overall lighting is dark. Film strip graphic on left edge."
+    },
+    "error": null,
+    "latency_ms": 38720.54,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18466,
+      "output_tokens": 2233,
+      "thinking_tokens": 1807,
+      "cache_read_tokens": 48731,
+      "total_tokens": 20699
+    },
+    "source_image_hash": "8c05bb382b3047a9c841a088aac3258dfd6b91887402127d27a98527cb2e449a",
+    "inference_image_hash": "c5a9468a0e098131deb392c343ce4f1b95a9b41293e6167855c00b6387b8169e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

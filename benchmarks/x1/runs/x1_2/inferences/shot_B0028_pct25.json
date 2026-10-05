@@ -1,0 +1,40 @@
+{
+  "frame_id": "shot_B0028_pct25",
+  "shot_id": "shot_B0028",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "bdf5f7c9e4cefece6ae035e2113f113ac0470e1ac77001df6234f5415daa247b",
+  "inference_hash": "a13a5080903f5f3ccc4b0dc0f3eafc17469a26fcbbb0c74babdbbe21e0e9be46",
+  "latency_ms": 36635.084833949804,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [], \"environment\": \"室内或桌面环境，光线偏冷呈紫灰色调。主视觉为平铺的纸张表面。\", \"objects\": [\"写有黑色中文行书/草书毛笔字的纸张（带竖向浅色界格）\"], \"physical_actions\": [], \"uncertainty\": \"画面左上角存在深色遮挡物或阴影，整体略有模糊。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [],
+      "environment": "室内或桌面环境，光线偏冷呈紫灰色调。主视觉为平铺的纸张表面。",
+      "objects": [
+        "写有黑色中文行书/草书毛笔字的纸张（带竖向浅色界格）"
+      ],
+      "physical_actions": [],
+      "uncertainty": "画面左上角存在深色遮挡物或阴影，整体略有模糊。"
+    },
+    "error": null,
+    "latency_ms": 36635.08,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14694,
+      "output_tokens": 780,
+      "thinking_tokens": 570,
+      "cache_read_tokens": 28424,
+      "total_tokens": 15474
+    },
+    "source_image_hash": "bdf5f7c9e4cefece6ae035e2113f113ac0470e1ac77001df6234f5415daa247b",
+    "inference_image_hash": "a13a5080903f5f3ccc4b0dc0f3eafc17469a26fcbbb0c74babdbbe21e0e9be46",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

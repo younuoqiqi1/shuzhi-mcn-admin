@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0010_pct75",
+  "shot_id": "shot_B0010",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "21c56c0ba5a570194fe41586d6fa5bd65aeff4b7fb6253ca45803c52aed70428",
+  "inference_hash": "a53433b2dd4b4714d6ea0adeee2dbb1f050cb76cbea8955d6a858f3d0baa8b91",
+  "latency_ms": 37601.47562506609,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"A man with short black hair, round wire-rimmed glasses, and a light blue satin shirt.\"], \"environment\": \"A dimly lit indoor setting, likely a bedroom, with dark shadows and a bluish light cast.\", \"objects\": [\"Wire-rimmed glasses\", \"Floral patterned pillow\", \"Light blue satin shirt\", \"Subtitle text\"], \"physical_actions\": [\"Lying down sideways on a pillow\", \"Resting head on the pillow\"], \"uncertainty\": \"The background is very dark and heavily shadowed, obscuring details of the room.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "A man with short black hair, round wire-rimmed glasses, and a light blue satin shirt."
+      ],
+      "environment": "A dimly lit indoor setting, likely a bedroom, with dark shadows and a bluish light cast.",
+      "objects": [
+        "Wire-rimmed glasses",
+        "Floral patterned pillow",
+        "Light blue satin shirt",
+        "Subtitle text"
+      ],
+      "physical_actions": [
+        "Lying down sideways on a pillow",
+        "Resting head on the pillow"
+      ],
+      "uncertainty": "The background is very dark and heavily shadowed, obscuring details of the room."
+    },
+    "error": null,
+    "latency_ms": 37601.48,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18359,
+      "output_tokens": 2031,
+      "thinking_tokens": 1408,
+      "cache_read_tokens": 48731,
+      "total_tokens": 20390
+    },
+    "source_image_hash": "21c56c0ba5a570194fe41586d6fa5bd65aeff4b7fb6253ca45803c52aed70428",
+    "inference_image_hash": "a53433b2dd4b4714d6ea0adeee2dbb1f050cb76cbea8955d6a858f3d0baa8b91",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

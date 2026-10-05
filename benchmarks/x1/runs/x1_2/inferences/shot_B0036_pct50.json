@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0036_pct50",
+  "shot_id": "shot_B0036",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "d17ddaf714782a7ae740c6fc5d6dd74b181b74868fd7e086cc735fb173f6a7d2",
+  "inference_hash": "8f8c4facaf8255bc0a916f7b55db6b442cf7c820282e98a6810fb74fca16aba9",
+  "latency_ms": 30560.166000039317,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名成年男性，短黑发，身穿浅色西装外套，内搭白色衬衫。头向画面右侧微侧。\"], \"environment\": \"室内场景，光线较暗，人物面部有照明。背景左侧为深色木质带雕花储物柜，右侧为纯色墙面。\", \"objects\": [\"深色木质带雕花储物柜\", \"储物柜上的细长瓶子\", \"画面右下角疑似木质椅背的顶部\", \"底部有白色中文字幕\"], \"physical_actions\": [\"嘴部微张（疑似正在说话）\", \"视线看向画面右侧\"], \"uncertainty\": \"画面整体略微模糊，无明显遮挡，属于正常视频帧画质。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名成年男性，短黑发，身穿浅色西装外套，内搭白色衬衫。头向画面右侧微侧。"
+      ],
+      "environment": "室内场景，光线较暗，人物面部有照明。背景左侧为深色木质带雕花储物柜，右侧为纯色墙面。",
+      "objects": [
+        "深色木质带雕花储物柜",
+        "储物柜上的细长瓶子",
+        "画面右下角疑似木质椅背的顶部",
+        "底部有白色中文字幕"
+      ],
+      "physical_actions": [
+        "嘴部微张（疑似正在说话）",
+        "视线看向画面右侧"
+      ],
+      "uncertainty": "画面整体略微模糊，无明显遮挡，属于正常视频帧画质。"
+    },
+    "error": null,
+    "latency_ms": 30560.17,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14785,
+      "output_tokens": 889,
+      "thinking_tokens": 593,
+      "cache_read_tokens": 28424,
+      "total_tokens": 15674
+    },
+    "source_image_hash": "d17ddaf714782a7ae740c6fc5d6dd74b181b74868fd7e086cc735fb173f6a7d2",
+    "inference_image_hash": "8f8c4facaf8255bc0a916f7b55db6b442cf7c820282e98a6810fb74fca16aba9",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "window_idx": 32,
+  "center_start": 1920.0,
+  "center_end": 1980.0,
+  "ctx_start": 1918.0,
+  "ctx_end": 1982.0,
+  "raw_cuts_count": 11,
+  "center_cuts": [
+    1925.76,
+    1927.6,
+    1929.24,
+    1941.24,
+    1943.68,
+    1946.2,
+    1948.28,
+    1956.56,
+    1969.76,
+    1977.8
+  ],
+  "scores": [
+    {
+      "time_sec": 1925.76,
+      "frame_num": 48144,
+      "content_val": 53.1303,
+      "adaptive_ratio": 6.9191
+    },
+    {
+      "time_sec": 1927.6,
+      "frame_num": 48190,
+      "content_val": 48.557,
+      "adaptive_ratio": 55.2237
+    },
+    {
+      "time_sec": 1929.24,
+      "frame_num": 48231,
+      "content_val": 49.0002,
+      "adaptive_ratio": 35.025
+    },
+    {
+      "time_sec": 1941.24,
+      "frame_num": 48531,
+      "content_val": 48.8584,
+      "adaptive_ratio": 53.4083
+    },
+    {
+      "time_sec": 1943.68,
+      "frame_num": 48592,
+      "content_val": 47.9707,
+      "adaptive_ratio": 16.6937
+    },
+    {
+      "time_sec": 1946.2,
+      "frame_num": 48655,
+      "content_val": 49.8472,
+      "adaptive_ratio": 56.0744
+    },
+    {
+      "time_sec": 1948.28,
+      "frame_num": 48707,
+      "content_val": 49.1809,
+      "adaptive_ratio": 212.0039
+    },
+    {
+      "time_sec": 1956.56,
+      "frame_num": 48914,
+      "content_val": 50.5444,
+      "adaptive_ratio": 57.5405
+    },
+    {
+      "time_sec": 1969.76,
+      "frame_num": 49244,
+      "content_val": 49.2608,
+      "adaptive_ratio": 23.3156
+    },
+    {
+      "time_sec": 1977.8,
+      "frame_num": 49445,
+      "content_val": 48.6408,
+      "adaptive_ratio": 13.4459
+    },
+    {
+      "time_sec": 1980.32,
+      "frame_num": 49508,
+      "content_val": 45.6765,
+      "adaptive_ratio": 25.7094
+    }
+  ],
+  "params": {
+    "window_idx": 32,
+    "center_start": 1920.0,
+    "center_end": 1980.0,
+    "ctx_start": 1918.0,
+    "ctx_end": 1982.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "86c824c71cb44b74b02bf8ea0af85da08081236981003a9cdcb9cc18508784cb",
+  "created_at": 1791218828.336712
+}

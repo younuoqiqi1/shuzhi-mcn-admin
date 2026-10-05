@@ -1,0 +1,106 @@
+{
+  "window_idx": 33,
+  "center_start": 1980.0,
+  "center_end": 2040.0,
+  "ctx_start": 1978.0,
+  "ctx_end": 2042.0,
+  "raw_cuts_count": 12,
+  "center_cuts": [
+    1980.32,
+    1984.36,
+    1991.76,
+    1997.72,
+    2001.0,
+    2005.44,
+    2015.0,
+    2017.76,
+    2023.2,
+    2032.28,
+    2038.64
+  ],
+  "scores": [
+    {
+      "time_sec": 1980.32,
+      "frame_num": 49508,
+      "content_val": 45.6765,
+      "adaptive_ratio": 25.7094
+    },
+    {
+      "time_sec": 1984.36,
+      "frame_num": 49609,
+      "content_val": 50.0269,
+      "adaptive_ratio": 175.7601
+    },
+    {
+      "time_sec": 1991.76,
+      "frame_num": 49794,
+      "content_val": 48.9317,
+      "adaptive_ratio": 15.1275
+    },
+    {
+      "time_sec": 1997.72,
+      "frame_num": 49943,
+      "content_val": 49.0528,
+      "adaptive_ratio": 66.5482
+    },
+    {
+      "time_sec": 2001.0,
+      "frame_num": 50025,
+      "content_val": 48.7005,
+      "adaptive_ratio": 102.2853
+    },
+    {
+      "time_sec": 2005.44,
+      "frame_num": 50136,
+      "content_val": 50.4932,
+      "adaptive_ratio": 234.4331
+    },
+    {
+      "time_sec": 2015.0,
+      "frame_num": 50375,
+      "content_val": 49.0018,
+      "adaptive_ratio": 72.6185
+    },
+    {
+      "time_sec": 2017.76,
+      "frame_num": 50444,
+      "content_val": 46.7175,
+      "adaptive_ratio": 53.1194
+    },
+    {
+      "time_sec": 2023.2,
+      "frame_num": 50580,
+      "content_val": 47.898,
+      "adaptive_ratio": 69.3097
+    },
+    {
+      "time_sec": 2032.28,
+      "frame_num": 50807,
+      "content_val": 49.4995,
+      "adaptive_ratio": 37.915
+    },
+    {
+      "time_sec": 2038.64,
+      "frame_num": 50966,
+      "content_val": 48.6206,
+      "adaptive_ratio": 98.2315
+    },
+    {
+      "time_sec": 2041.28,
+      "frame_num": 51032,
+      "content_val": 49.987,
+      "adaptive_ratio": 85.3451
+    }
+  ],
+  "params": {
+    "window_idx": 33,
+    "center_start": 1980.0,
+    "center_end": 2040.0,
+    "ctx_start": 1978.0,
+    "ctx_end": 2042.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "08fb8103b6acdfda1b8a09eaf4041201ce5611a1bdd5525af14ebebdcb7096f3",
+  "created_at": 1791218836.138724
+}

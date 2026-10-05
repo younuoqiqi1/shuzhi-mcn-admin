@@ -1,0 +1,43 @@
+{
+  "frame_id": "shot_B0018_pct25",
+  "shot_id": "shot_B0018",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2bf24292476d251776c721f3a9aef1363deeeb00309f49e9952aa9042a99f89a",
+  "inference_hash": "128963d92befd67b5cad763a64739acedadb7c487208b80095eee1b2a0d395b5",
+  "latency_ms": 41704.40729195252,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Woman with dark wavy hair, wearing a light-colored floral top.\"], \"environment\": \"Dimly lit indoor space, dark out-of-focus background with wooden paneling. Light from screen-left.\", \"objects\": [], \"physical_actions\": [\"Looking downward and toward screen-left\", \"Mouth slightly open\"], \"uncertainty\": \"Dark and out-of-focus background obscures environmental details.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Woman with dark wavy hair, wearing a light-colored floral top."
+      ],
+      "environment": "Dimly lit indoor space, dark out-of-focus background with wooden paneling. Light from screen-left.",
+      "objects": [],
+      "physical_actions": [
+        "Looking downward and toward screen-left",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Dark and out-of-focus background obscures environmental details."
+    },
+    "error": null,
+    "latency_ms": 41704.41,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22233,
+      "output_tokens": 2160,
+      "thinking_tokens": 1802,
+      "cache_read_tokens": 44668,
+      "total_tokens": 24393
+    },
+    "source_image_hash": "2bf24292476d251776c721f3a9aef1363deeeb00309f49e9952aa9042a99f89a",
+    "inference_image_hash": "128963d92befd67b5cad763a64739acedadb7c487208b80095eee1b2a0d395b5",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

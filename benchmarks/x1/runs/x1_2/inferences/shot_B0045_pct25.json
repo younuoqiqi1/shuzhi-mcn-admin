@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0045_pct25",
+  "shot_id": "shot_B0045",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "cea80275003c583a92618ecf9039b4d2e2f83b13269e7ac7206cae12f5800011",
+  "inference_hash": "77c468888eb9611a729492b972545ba7cd1e41b5ba18159cf85ca59be0218c11",
+  "latency_ms": 31085.714249988087,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"man with short dark hair, wearing thin-rimmed glasses, a dark jacket, and a white collared shirt\"], \"environment\": \"Indoor setting with carved wooden furniture or architectural details on screen-left and dark plaid curtains on screen-right, illuminated by a light source from screen-right\", \"objects\": [\"glasses\", \"dark jacket\", \"white collared shirt\", \"wooden furniture\", \"plaid curtains\"], \"physical_actions\": [\"looking towards screen-right\", \"mouth slightly open\"], \"uncertainty\": \"The image has a noticeably distorted aspect ratio (horizontally stretched). The wooden object on screen-left is partially obscured by the framing.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "man with short dark hair, wearing thin-rimmed glasses, a dark jacket, and a white collared shirt"
+      ],
+      "environment": "Indoor setting with carved wooden furniture or architectural details on screen-left and dark plaid curtains on screen-right, illuminated by a light source from screen-right",
+      "objects": [
+        "glasses",
+        "dark jacket",
+        "white collared shirt",
+        "wooden furniture",
+        "plaid curtains"
+      ],
+      "physical_actions": [
+        "looking towards screen-right",
+        "mouth slightly open"
+      ],
+      "uncertainty": "The image has a noticeably distorted aspect ratio (horizontally stretched). The wooden object on screen-left is partially obscured by the framing."
+    },
+    "error": null,
+    "latency_ms": 31085.71,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 15139,
+      "output_tokens": 2575,
+      "thinking_tokens": 2306,
+      "cache_read_tokens": 28428,
+      "total_tokens": 17714
+    },
+    "source_image_hash": "cea80275003c583a92618ecf9039b4d2e2f83b13269e7ac7206cae12f5800011",
+    "inference_image_hash": "77c468888eb9611a729492b972545ba7cd1e41b5ba18159cf85ca59be0218c11",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

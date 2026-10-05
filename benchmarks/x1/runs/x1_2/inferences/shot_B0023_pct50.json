@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0023_pct50",
+  "shot_id": "shot_B0023",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "a47b15de640893083bbb8c3540b98e90fd6e5f466195cc4d435b693596d5783b",
+  "inference_hash": "22daded95fbe5a3ff9df3c45c05390c0cffe408208c1f8481f0969e6bb880562",
+  "latency_ms": 39734.25124993082,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Screen-left: Woman with dark wavy hair, in a white high-collared floral garment.\", \"Screen-right: Person from behind, wearing glasses, a dark jacket, and white shirt.\"], \"environment\": \"Dimly lit indoor space, featuring a staircase with horizontal steps in the background on screen-left.\", \"objects\": [\"Glasses\", \"White floral garment\", \"Dark jacket\", \"White collared shirt\", \"Staircase\", \"Subtitles\"], \"physical_actions\": [\"The woman on screen-left is looking up at the person on screen-right.\", \"A hand is raised near the lower neck/collar area of the person on screen-right.\"], \"uncertainty\": \"The face of the person on screen-right is obscured as they are facing away from the camera. It is unclear whose hand is near the collar due to partial occlusion. The overall lighting is dim.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Screen-left: Woman with dark wavy hair, in a white high-collared floral garment.",
+        "Screen-right: Person from behind, wearing glasses, a dark jacket, and white shirt."
+      ],
+      "environment": "Dimly lit indoor space, featuring a staircase with horizontal steps in the background on screen-left.",
+      "objects": [
+        "Glasses",
+        "White floral garment",
+        "Dark jacket",
+        "White collared shirt",
+        "Staircase",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "The woman on screen-left is looking up at the person on screen-right.",
+        "A hand is raised near the lower neck/collar area of the person on screen-right."
+      ],
+      "uncertainty": "The face of the person on screen-right is obscured as they are facing away from the camera. It is unclear whose hand is near the collar due to partial occlusion. The overall lighting is dim."
+    },
+    "error": null,
+    "latency_ms": 39734.25,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18374,
+      "output_tokens": 2122,
+      "thinking_tokens": 1552,
+      "cache_read_tokens": 48729,
+      "total_tokens": 20496
+    },
+    "source_image_hash": "a47b15de640893083bbb8c3540b98e90fd6e5f466195cc4d435b693596d5783b",
+    "inference_image_hash": "22daded95fbe5a3ff9df3c45c05390c0cffe408208c1f8481f0969e6bb880562",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0050_pct50",
+  "shot_id": "shot_B0050",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "38f2c997610257c2144ce624cc453e87b1dcf4148c24d402fc0635be6cddda3b",
+  "inference_hash": "cf411427ab77f524072c446ed08c9e5ddfcad617afbca2aafa889f5ad600529a",
+  "latency_ms": 32770.45333303977,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"One bare-chested person, upper face cropped out, lower face looking down\"], \"environment\": \"Dark background with purplish hue on screen-right, overlaid with Chinese text credits\", \"objects\": [\"Fringed cloth on screen-left shoulder\", \"White fabric covering lower torso\", \"Chinese text overlays\"], \"physical_actions\": [\"Leaning forward slightly\", \"Resting arms near the lower torso\"], \"uncertainty\": \"Upper face is cropped out. Image is somewhat blurry. Text overlays obscure part of the right side.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "One bare-chested person, upper face cropped out, lower face looking down"
+      ],
+      "environment": "Dark background with purplish hue on screen-right, overlaid with Chinese text credits",
+      "objects": [
+        "Fringed cloth on screen-left shoulder",
+        "White fabric covering lower torso",
+        "Chinese text overlays"
+      ],
+      "physical_actions": [
+        "Leaning forward slightly",
+        "Resting arms near the lower torso"
+      ],
+      "uncertainty": "Upper face is cropped out. Image is somewhat blurry. Text overlays obscure part of the right side."
+    },
+    "error": null,
+    "latency_ms": 32770.45,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18481,
+      "output_tokens": 2058,
+      "thinking_tokens": 1618,
+      "cache_read_tokens": 48731,
+      "total_tokens": 20539
+    },
+    "source_image_hash": "38f2c997610257c2144ce624cc453e87b1dcf4148c24d402fc0635be6cddda3b",
+    "inference_image_hash": "cf411427ab77f524072c446ed08c9e5ddfcad617afbca2aafa889f5ad600529a",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

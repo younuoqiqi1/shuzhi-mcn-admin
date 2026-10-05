@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0027_pct75",
+  "shot_id": "shot_B0027",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "adc4bf4cc3d7f58081a4384469c3ec5b7e117a0364366397febc25af1b04ec75",
+  "inference_hash": "5a815af72c81b15579950dbf283806af012d110ee91e5783ec8bd87828fc336e",
+  "latency_ms": 24101.57595796045,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名留着黑色短发的男子，戴着细圆框眼镜，身穿深色外套和浅色带领衬衫。\", \"画面左侧仅露出身体局部的另一人，穿着带有小碎花图案的白色衣物。\"], \"environment\": \"光线较暗的室内环境。背景可见米白色墙面、下方有深色木制镶板以及深色细长条状物。\", \"objects\": [\"眼镜\", \"深色外套\", \"浅色衬衫\", \"碎花衣物\"], \"physical_actions\": [\"男子转头看向画面左侧。\", \"男子抬起右手靠近耳侧，手指微曲。\"], \"uncertainty\": \"画面左侧的人物大部分在镜头之外，被严重遮挡。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名留着黑色短发的男子，戴着细圆框眼镜，身穿深色外套和浅色带领衬衫。",
+        "画面左侧仅露出身体局部的另一人，穿着带有小碎花图案的白色衣物。"
+      ],
+      "environment": "光线较暗的室内环境。背景可见米白色墙面、下方有深色木制镶板以及深色细长条状物。",
+      "objects": [
+        "眼镜",
+        "深色外套",
+        "浅色衬衫",
+        "碎花衣物"
+      ],
+      "physical_actions": [
+        "男子转头看向画面左侧。",
+        "男子抬起右手靠近耳侧，手指微曲。"
+      ],
+      "uncertainty": "画面左侧的人物大部分在镜头之外，被严重遮挡。"
+    },
+    "error": null,
+    "latency_ms": 24101.58,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14840,
+      "output_tokens": 1108,
+      "thinking_tokens": 817,
+      "cache_read_tokens": 28425,
+      "total_tokens": 15948
+    },
+    "source_image_hash": "adc4bf4cc3d7f58081a4384469c3ec5b7e117a0364366397febc25af1b04ec75",
+    "inference_image_hash": "5a815af72c81b15579950dbf283806af012d110ee91e5783ec8bd87828fc336e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

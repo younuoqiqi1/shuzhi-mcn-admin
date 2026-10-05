@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0041_pct75",
+  "shot_id": "shot_B0041",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "fe8a00f4d0d3833061584684f7ecd859353bdf3866bbc746459b008c5440143e",
+  "inference_hash": "c3b9ac4934a2c0dd3c00b6ce146eab5666f5d3fe8c169715c52bfabd482488fb",
+  "latency_ms": 33127.08391691558,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Adult male, short black hair, round glasses, dark jacket, white shirt.\"], \"environment\": \"Interior, pale yellow wall, framed calligraphy in background, dark wooden frame on the right.\", \"objects\": [\"Glasses\", \"Framed calligraphy\", \"Subtitles\"], \"physical_actions\": [\"Facing slightly screen-right, mouth slightly open.\"], \"uncertainty\": \"No significant occlusions; slightly low resolution.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Adult male, short black hair, round glasses, dark jacket, white shirt."
+      ],
+      "environment": "Interior, pale yellow wall, framed calligraphy in background, dark wooden frame on the right.",
+      "objects": [
+        "Glasses",
+        "Framed calligraphy",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Facing slightly screen-right, mouth slightly open."
+      ],
+      "uncertainty": "No significant occlusions; slightly low resolution."
+    },
+    "error": null,
+    "latency_ms": 33127.08,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18037,
+      "output_tokens": 1524,
+      "thinking_tokens": 1144,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19561
+    },
+    "source_image_hash": "fe8a00f4d0d3833061584684f7ecd859353bdf3866bbc746459b008c5440143e",
+    "inference_image_hash": "c3b9ac4934a2c0dd3c00b6ce146eab5666f5d3fe8c169715c52bfabd482488fb",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

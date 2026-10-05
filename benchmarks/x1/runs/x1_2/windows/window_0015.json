@@ -1,0 +1,98 @@
+{
+  "window_idx": 15,
+  "center_start": 900.0,
+  "center_end": 960.0,
+  "ctx_start": 898.0,
+  "ctx_end": 962.0,
+  "raw_cuts_count": 11,
+  "center_cuts": [
+    910.2,
+    913.0,
+    915.36,
+    925.6,
+    933.04,
+    941.32,
+    944.88,
+    946.76,
+    954.96
+  ],
+  "scores": [
+    {
+      "time_sec": 899.92,
+      "frame_num": 22498,
+      "content_val": 42.9126,
+      "adaptive_ratio": 39.6721
+    },
+    {
+      "time_sec": 910.2,
+      "frame_num": 22755,
+      "content_val": 40.7903,
+      "adaptive_ratio": 18.3373
+    },
+    {
+      "time_sec": 913.0,
+      "frame_num": 22825,
+      "content_val": 41.1249,
+      "adaptive_ratio": 7.6241
+    },
+    {
+      "time_sec": 915.36,
+      "frame_num": 22884,
+      "content_val": 41.0615,
+      "adaptive_ratio": 11.6451
+    },
+    {
+      "time_sec": 925.6,
+      "frame_num": 23140,
+      "content_val": 38.3938,
+      "adaptive_ratio": 21.8507
+    },
+    {
+      "time_sec": 933.04,
+      "frame_num": 23326,
+      "content_val": 38.0156,
+      "adaptive_ratio": 44.5124
+    },
+    {
+      "time_sec": 941.32,
+      "frame_num": 23533,
+      "content_val": 42.5906,
+      "adaptive_ratio": 79.7008
+    },
+    {
+      "time_sec": 944.88,
+      "frame_num": 23622,
+      "content_val": 45.895,
+      "adaptive_ratio": 104.686
+    },
+    {
+      "time_sec": 946.76,
+      "frame_num": 23669,
+      "content_val": 44.6119,
+      "adaptive_ratio": 79.2068
+    },
+    {
+      "time_sec": 954.96,
+      "frame_num": 23874,
+      "content_val": 43.2789,
+      "adaptive_ratio": 82.1231
+    },
+    {
+      "time_sec": 960.28,
+      "frame_num": 24007,
+      "content_val": 41.542,
+      "adaptive_ratio": 39.532
+    }
+  ],
+  "params": {
+    "window_idx": 15,
+    "center_start": 900.0,
+    "center_end": 960.0,
+    "ctx_start": 898.0,
+    "ctx_end": 962.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "a9a421b48a410c6908be68868033028476751307d59b0adb073db2faf77bbba9",
+  "created_at": 1791218759.803982
+}

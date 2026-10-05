@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0019_pct75",
+  "shot_id": "shot_B0019",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "03335d1e2be06c9145a1ce28ab3874c2259fe749e2fbed9d53bbda8370a94dcb",
+  "inference_hash": "fadd011b1c63cdf804d1abe0aa100df073e77eeed1f45cc4e729b3c862639ec7",
+  "latency_ms": 34070.524583919905,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with short dark hair, wearing a reddish high-collared garment and dangling earrings.\"], \"environment\": \"Dark, out-of-focus background with a vertical wooden element on the screen-right.\", \"objects\": [\"Dangling earrings\", \"Reddish garment with high collar\", \"On-screen text (subtitles)\"], \"physical_actions\": [\"Head tilted downward and toward screen-left\", \"Gaze directed downward\"], \"uncertainty\": \"Background is dark and blurred, obscuring environmental details. Lower body is out of frame.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with short dark hair, wearing a reddish high-collared garment and dangling earrings."
+      ],
+      "environment": "Dark, out-of-focus background with a vertical wooden element on the screen-right.",
+      "objects": [
+        "Dangling earrings",
+        "Reddish garment with high collar",
+        "On-screen text (subtitles)"
+      ],
+      "physical_actions": [
+        "Head tilted downward and toward screen-left",
+        "Gaze directed downward"
+      ],
+      "uncertainty": "Background is dark and blurred, obscuring environmental details. Lower body is out of frame."
+    },
+    "error": null,
+    "latency_ms": 34070.52,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17884,
+      "output_tokens": 1549,
+      "thinking_tokens": 1139,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19433
+    },
+    "source_image_hash": "03335d1e2be06c9145a1ce28ab3874c2259fe749e2fbed9d53bbda8370a94dcb",
+    "inference_image_hash": "fadd011b1c63cdf804d1abe0aa100df073e77eeed1f45cc4e729b3c862639ec7",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

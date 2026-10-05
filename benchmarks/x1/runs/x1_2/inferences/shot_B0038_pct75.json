@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0038_pct75",
+  "shot_id": "shot_B0038",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "f2e34485ce1fefe1804b3985fcf456248e228b601d85d90a5d2100f76621748f",
+  "inference_hash": "26826b5fe30f158aaa664436abab24f3915f3e5060e9e74d760091f5dc12fe16",
+  "latency_ms": 44601.422667037696,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with short dark hair, round glasses, dark jacket, white shirt, and a dark zippered layer.\"], \"environment\": \"Indoor setting with a pale greenish-yellow wall. Framed calligraphy is visible on the upper wall. A dark vertical element is on the screen-right edge.\", \"objects\": [\"Glasses\", \"Framed calligraphy\"], \"physical_actions\": [\"Facing forward, head slightly turned screen-right\", \"Mouth slightly open\"], \"uncertainty\": \"Image is slightly low resolution with minor overall blur. No significant occlusions.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with short dark hair, round glasses, dark jacket, white shirt, and a dark zippered layer."
+      ],
+      "environment": "Indoor setting with a pale greenish-yellow wall. Framed calligraphy is visible on the upper wall. A dark vertical element is on the screen-right edge.",
+      "objects": [
+        "Glasses",
+        "Framed calligraphy"
+      ],
+      "physical_actions": [
+        "Facing forward, head slightly turned screen-right",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Image is slightly low resolution with minor overall blur. No significant occlusions."
+    },
+    "error": null,
+    "latency_ms": 44601.42,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18065,
+      "output_tokens": 1685,
+      "thinking_tokens": 1262,
+      "cache_read_tokens": 48729,
+      "total_tokens": 19750
+    },
+    "source_image_hash": "f2e34485ce1fefe1804b3985fcf456248e228b601d85d90a5d2100f76621748f",
+    "inference_image_hash": "26826b5fe30f158aaa664436abab24f3915f3e5060e9e74d760091f5dc12fe16",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

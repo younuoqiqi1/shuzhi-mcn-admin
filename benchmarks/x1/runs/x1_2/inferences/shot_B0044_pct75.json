@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0044_pct75",
+  "shot_id": "shot_B0044",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "f705354942027e33df186ec5b284810579894b65325116b65e5057e74b588bcd",
+  "inference_hash": "8ce95fc223e8dd05fe74668338bcffa0a893be5e056e06669432afac655a4694",
+  "latency_ms": 34196.97895902209,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Woman with dark wavy hair wearing a light-colored collared shirt.\", \"Person on screen-left wearing a shiny grey button-down top.\"], \"environment\": \"Indoor space with a glowing lamp and dark wooden furniture in the background.\", \"objects\": [\"light-colored collared shirt\", \"shiny grey button-down top\", \"lamp with patterned shade\", \"wooden furniture structure\", \"on-screen text\"], \"physical_actions\": [\"Woman has her eyes closed and mouth slightly open.\", \"Person on screen-left rests hand on the foreground woman's shoulder.\"], \"uncertainty\": \"Blurred background due to depth of field. Subtitles obscure lower center frame.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Woman with dark wavy hair wearing a light-colored collared shirt.",
+        "Person on screen-left wearing a shiny grey button-down top."
+      ],
+      "environment": "Indoor space with a glowing lamp and dark wooden furniture in the background.",
+      "objects": [
+        "light-colored collared shirt",
+        "shiny grey button-down top",
+        "lamp with patterned shade",
+        "wooden furniture structure",
+        "on-screen text"
+      ],
+      "physical_actions": [
+        "Woman has her eyes closed and mouth slightly open.",
+        "Person on screen-left rests hand on the foreground woman's shoulder."
+      ],
+      "uncertainty": "Blurred background due to depth of field. Subtitles obscure lower center frame."
+    },
+    "error": null,
+    "latency_ms": 34196.98,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 25190,
+      "output_tokens": 1966,
+      "thinking_tokens": 1178,
+      "cache_read_tokens": 65343,
+      "total_tokens": 27156
+    },
+    "source_image_hash": "f705354942027e33df186ec5b284810579894b65325116b65e5057e74b588bcd",
+    "inference_image_hash": "8ce95fc223e8dd05fe74668338bcffa0a893be5e056e06669432afac655a4694",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

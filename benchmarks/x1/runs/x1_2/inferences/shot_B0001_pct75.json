@@ -1,0 +1,31 @@
+{
+  "frame_id": "shot_B0001_pct75",
+  "shot_id": "shot_B0001",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "64e8d61e288ce718e088433f8b3996e822e660eb8fae24dc5a08e4e5bb18998a",
+  "inference_hash": "77ff6fc2df40b87daec93ece842ba0c280c223a41af054396bc29c90943b3dc9",
+  "latency_ms": 46739.441792014986,
+  "status": "failed",
+  "error": "AGY CLI 退出码非零 (1): error: Eligibility check failed: UNAVAILABLE (code 503): The service is currently unavailable.\n",
+  "response": {
+    "raw_text": "",
+    "parsed_validation": null,
+    "error": "AGY CLI 退出码非零 (1): error: Eligibility check failed: UNAVAILABLE (code 503): The service is currently unavailable.\n",
+    "latency_ms": 46739.44,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "thinking_tokens": 0,
+      "cache_read_tokens": 0,
+      "total_tokens": 0
+    },
+    "source_image_hash": "64e8d61e288ce718e088433f8b3996e822e660eb8fae24dc5a08e4e5bb18998a",
+    "inference_image_hash": "77ff6fc2df40b87daec93ece842ba0c280c223a41af054396bc29c90943b3dc9",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "frame_id": "shot_B0025_pct25",
+  "shot_id": "shot_B0025",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2d3cf28ca58e8c1b78789650a021bc710e14ea6466e524b856eeee7dc7b6f8ea",
+  "inference_hash": "f24dddaa927352d8bd4c74e7b22af8d7edcc76f865f50f13b323d5cd8273ca66",
+  "latency_ms": 39145.55958402343,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Woman with pale skin and styled black hair, wearing a pinkish-red high-collar dress and earrings.\", \"Man on screen-left background, wearing a dark suit, white shirt, and glasses.\"], \"environment\": \"Dimly lit interior space with a dark door on screen-left and a wooden staircase on screen-right.\", \"objects\": [\"Pinkish-red dress\", \"Earrings\", \"Dark suit\", \"White shirt\", \"Glasses\", \"Door\", \"Staircase\"], \"physical_actions\": [\"Woman standing, head slightly bowed, eyes looking down.\", \"Man standing in the background.\"], \"uncertainty\": \"Man on screen-left is partially occluded and out of focus. Dim lighting obscures background details.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Woman with pale skin and styled black hair, wearing a pinkish-red high-collar dress and earrings.",
+        "Man on screen-left background, wearing a dark suit, white shirt, and glasses."
+      ],
+      "environment": "Dimly lit interior space with a dark door on screen-left and a wooden staircase on screen-right.",
+      "objects": [
+        "Pinkish-red dress",
+        "Earrings",
+        "Dark suit",
+        "White shirt",
+        "Glasses",
+        "Door",
+        "Staircase"
+      ],
+      "physical_actions": [
+        "Woman standing, head slightly bowed, eyes looking down.",
+        "Man standing in the background."
+      ],
+      "uncertainty": "Man on screen-left is partially occluded and out of focus. Dim lighting obscures background details."
+    },
+    "error": null,
+    "latency_ms": 39145.56,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 19012,
+      "output_tokens": 2568,
+      "thinking_tokens": 1806,
+      "cache_read_tokens": 48734,
+      "total_tokens": 21580
+    },
+    "source_image_hash": "2d3cf28ca58e8c1b78789650a021bc710e14ea6466e524b856eeee7dc7b6f8ea",
+    "inference_image_hash": "f24dddaa927352d8bd4c74e7b22af8d7edcc76f865f50f13b323d5cd8273ca66",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

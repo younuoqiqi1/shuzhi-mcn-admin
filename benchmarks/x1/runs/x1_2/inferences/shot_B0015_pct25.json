@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0015_pct25",
+  "shot_id": "shot_B0015",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "251599be3c1d16df07e6910746c36ec9f8cb306c4082124ce805f0096aaad604",
+  "inference_hash": "3422f4c55dd2e300578ec19acb08e52a8d6a44cb2128382f1922bc5f76baa1cc",
+  "latency_ms": 30562.68883298617,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person with short dark hair, dangling earrings, and a red high-collared garment.\"], \"environment\": \"Dimly lit indoor setting with a wooden staircase and turned balusters in the background screen-right.\", \"objects\": [\"earrings\", \"red patterned garment\", \"wooden staircase\", \"wooden balusters\"], \"physical_actions\": [\"looking downward and to screen-right\"], \"uncertainty\": \"Dim lighting conditions making the background details somewhat dark.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person with short dark hair, dangling earrings, and a red high-collared garment."
+      ],
+      "environment": "Dimly lit indoor setting with a wooden staircase and turned balusters in the background screen-right.",
+      "objects": [
+        "earrings",
+        "red patterned garment",
+        "wooden staircase",
+        "wooden balusters"
+      ],
+      "physical_actions": [
+        "looking downward and to screen-right"
+      ],
+      "uncertainty": "Dim lighting conditions making the background details somewhat dark."
+    },
+    "error": null,
+    "latency_ms": 30562.69,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21179,
+      "output_tokens": 1055,
+      "thinking_tokens": 682,
+      "cache_read_tokens": 44659,
+      "total_tokens": 22234
+    },
+    "source_image_hash": "251599be3c1d16df07e6910746c36ec9f8cb306c4082124ce805f0096aaad604",
+    "inference_image_hash": "3422f4c55dd2e300578ec19acb08e52a8d6a44cb2128382f1922bc5f76baa1cc",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "batch_id": "X1.2",
+  "frozen_seed": 20261006,
+  "target_counts": {
+    "early": 17,
+    "mid": 17,
+    "late": 16,
+    "total": 50
+  },
+  "exclusion_policy": {
+    "min_shot_duration": 0.5,
+    "legacy_selected_15_file": "benchmarks/x1/development/x1_0/selected_15_shots.json",
+    "legacy_selected_15_sha256": "9b8a78d666a1f38b174e4e4066e50bd3451b8ca226abc0761621e19ae98d1938",
+    "excluded_old_intervals_count": 15,
+    "no_gold_or_evidence_read": true,
+    "no_human_cherry_pick": true
+  },
+  "total_shots": 50,
+  "shots": [
+    {
+      "shot_id": "shot_B0001",
+      "pool_shot_id": "pool_00010",
+      "segment": "early",
+      "start": 5.12,
+      "end": 5.64,
+      "duration": 0.52
+    },
+    {
+      "shot_id": "shot_B0002",
+      "pool_shot_id": "pool_00023",
+      "segment": "early",
+      "start": 14.8,
+      "end": 17.8,
+      "duration": 3.0
+    },
+    {
+      "shot_id": "shot_B0003",
+      "pool_shot_id": "pool_00041",
+      "segment": "early",
+      "start": 56.32,
+      "end": 57.12,
+      "duration": 0.8
+    },
+    {
+      "shot_id": "shot_B0004",
+      "pool_shot_id": "pool_00056",
+      "segment": "early",
+      "start": 67.2,
+      "end": 68.12,
+      "duration": 0.92
+    },
+    {
+      "shot_id": "shot_B0005",
+      "pool_shot_id": "pool_00058",
+      "segment": "early",
+      "start": 68.96,
+      "end": 70.2,
+      "duration": 1.24
+    },
+    {
+      "shot_id": "shot_B0006",
+      "pool_shot_id": "pool_00089",
+      "segment": "early",
+      "start": 239.84,
+      "end": 248.72,
+      "duration": 8.88
+    },
+    {
+      "shot_id": "shot_B0007",
+      "pool_shot_id": "pool_00095",
+      "segment": "early",
+      "start": 292.0,
+      "end": 299.96,
+      "duration": 7.96
+    },
+    {
+      "shot_id": "shot_B0008",
+      "pool_shot_id": "pool_00099",
+      "segment": "early",
+      "start": 315.0,
+      "end": 320.64,
+      "duration": 5.64
+    },
+    {
+      "shot_id": "shot_B0009",
+      "pool_shot_id": "pool_00100",
+      "segment": "early",
+      "start": 320.64,
+      "end": 324.2,
+      "duration": 3.56
+    },
+    {
+      "shot_id": "shot_B0010",
+      "pool_shot_id": "pool_00105",
+      "segment": "early",
+      "start": 342.96,
+      "end": 350.6,
+      "duration": 7.64
+    },
+    {
+      "shot_id": "shot_B0011",
+      "pool_shot_id": "pool_00113",
+      "segment": "early",
+      "start": 421.24,
+      "end": 427.0,
+      "duration": 5.76
+    },
+    {
+      "shot_id": "shot_B0012",
+      "pool_shot_id": "pool_00136",
+      "segment": "early",
+      "start": 586.36,
+      "end": 590.44,
+      "duration": 4.08
+    },
+    {
+      "shot_id": "shot_B0013",
+      "pool_shot_id": "pool_00151",
+      "segment": "early",
+      "start": 672.32,
+      "end": 696.8,
+      "duration": 24.48
+    },
+    {
+      "shot_id": "shot_B0014",
+      "pool_shot_id": "pool_00160",
+      "segment": "early",
+      "start": 779.36,
+      "end": 785.24,
+      "duration": 5.88
+    },
+    {
+      "shot_id": "shot_B0015",
+      "pool_shot_id": "pool_00168",
+      "segment": "early",
+      "start": 843.48,
+      "end": 850.72,
+      "duration": 7.24
+    },
+    {
+      "shot_id": "shot_B0016",
+      "pool_shot_id": "pool_00172",
+      "segment": "early",
+      "start": 863.48,
+      "end": 870.92,
+      "duration": 7.44
+    },
+    {
+      "shot_id": "shot_B0017",
+      "pool_shot_id": "pool_00176",
+      "segment": "early",
+      "start": 884.8,
+      "end": 888.12,
+      "duration": 3.32
+    },
+    {
+      "shot_id": "shot_B0018",
+      "pool_shot_id": "pool_00178",
+      "segment": "mid",
+      "start": 899.92,
+      "end": 910.2,
+      "duration": 10.28
+    },
+    {
+      "shot_id": "shot_B0019",
+      "pool_shot_id": "pool_00181",
+      "segment": "mid",
+      "start": 915.36,
+      "end": 925.6,
+      "duration": 10.24
+    },
+    {
+      "shot_id": "shot_B0020",
+      "pool_shot_id": "pool_00185",
+      "segment": "mid",
+      "start": 944.88,
+      "end": 946.76,
+      "duration": 1.88
+    },
+    {
+      "shot_id": "shot_B0021",
+      "pool_shot_id": "pool_00188",
+      "segment": "mid",
+      "start": 960.28,
+      "end": 964.36,
+      "duration": 4.08
+    },
+    {
+      "shot_id": "shot_B0022",
+      "pool_shot_id": "pool_00190",
+      "segment": "mid",
+      "start": 969.52,
+      "end": 976.32,
+      "duration": 6.8
+    },
+    {
+      "shot_id": "shot_B0023",
+      "pool_shot_id": "pool_00194",
+      "segment": "mid",
+      "start": 994.04,
+      "end": 997.96,
+      "duration": 3.92
+    },
+    {
+      "shot_id": "shot_B0024",
+      "pool_shot_id": "pool_00195",
+      "segment": "mid",
+      "start": 997.96,
+      "end": 1003.12,
+      "duration": 5.16
+    },
+    {
+      "shot_id": "shot_B0025",
+      "pool_shot_id": "pool_00198",
+      "segment": "mid",
+      "start": 1010.88,
+      "end": 1014.44,
+      "duration": 3.56
+    },
+    {
+      "shot_id": "shot_B0026",
+      "pool_shot_id": "pool_00199",
+      "segment": "mid",
+      "start": 1014.44,
+      "end": 1019.4,
+      "duration": 4.96
+    },
+    {
+      "shot_id": "shot_B0027",
+      "pool_shot_id": "pool_00205",
+      "segment": "mid",
+      "start": 1059.64,
+      "end": 1064.48,
+      "duration": 4.84
+    },
+    {
+      "shot_id": "shot_B0028",
+      "pool_shot_id": "pool_00251",
+      "segment": "mid",
+      "start": 1359.44,
+      "end": 1366.36,
+      "duration": 6.92
+    },
+    {
+      "shot_id": "shot_B0029",
+      "pool_shot_id": "pool_00255",
+      "segment": "mid",
+      "start": 1373.64,
+      "end": 1438.4,
+      "duration": 64.76
+    },
+    {
+      "shot_id": "shot_B0030",
+      "pool_shot_id": "pool_00264",
+      "segment": "mid",
+      "start": 1479.08,
+      "end": 1481.96,
+      "duration": 2.88
+    },
+    {
+      "shot_id": "shot_B0031",
+      "pool_shot_id": "pool_00283",
+      "segment": "mid",
+      "start": 1585.84,
+      "end": 1592.76,
+      "duration": 6.92
+    },
+    {
+      "shot_id": "shot_B0032",
+      "pool_shot_id": "pool_00286",
+      "segment": "mid",
+      "start": 1604.96,
+      "end": 1611.92,
+      "duration": 6.96
+    },
+    {
+      "shot_id": "shot_B0033",
+      "pool_shot_id": "pool_00292",
+      "segment": "mid",
+      "start": 1641.36,
+      "end": 1643.24,
+      "duration": 1.88
+    },
+    {
+      "shot_id": "shot_B0034",
+      "pool_shot_id": "pool_00294",
+      "segment": "mid",
+      "start": 1650.24,
+      "end": 1670.96,
+      "duration": 20.72
+    },
+    {
+      "shot_id": "shot_B0035",
+      "pool_shot_id": "pool_00319",
+      "segment": "late",
+      "start": 1801.24,
+      "end": 1805.0,
+      "duration": 3.76
+    },
+    {
+      "shot_id": "shot_B0036",
+      "pool_shot_id": "pool_00328",
+      "segment": "late",
+      "start": 1850.8,
+      "end": 1857.04,
+      "duration": 6.24
+    },
+    {
+      "shot_id": "shot_B0037",
+      "pool_shot_id": "pool_00335",
+      "segment": "late",
+      "start": 1882.6,
+      "end": 1890.16,
+      "duration": 7.56
+    },
+    {
+      "shot_id": "shot_B0038",
+      "pool_shot_id": "pool_00344",
+      "segment": "late",
+      "start": 1925.76,
+      "end": 1927.6,
+      "duration": 1.84
+    },
+    {
+      "shot_id": "shot_B0039",
+      "pool_shot_id": "pool_00350",
+      "segment": "late",
+      "start": 1948.28,
+      "end": 1956.56,
+      "duration": 8.28
+    },
+    {
+      "shot_id": "shot_B0040",
+      "pool_shot_id": "pool_00359",
+      "segment": "late",
+      "start": 2005.44,
+      "end": 2015.0,
+      "duration": 9.56
+    },
+    {
+      "shot_id": "shot_B0041",
+      "pool_shot_id": "pool_00366",
+      "segment": "late",
+      "start": 2043.4,
+      "end": 2048.68,
+      "duration": 5.28
+    },
+    {
+      "shot_id": "shot_B0042",
+      "pool_shot_id": "pool_00373",
+      "segment": "late",
+      "start": 2079.96,
+      "end": 2100.88,
+      "duration": 20.92
+    },
+    {
+      "shot_id": "shot_B0043",
+      "pool_shot_id": "pool_00378",
+      "segment": "late",
+      "start": 2129.6,
+      "end": 2160.8,
+      "duration": 31.2
+    },
+    {
+      "shot_id": "shot_B0044",
+      "pool_shot_id": "pool_00382",
+      "segment": "late",
+      "start": 2170.28,
+      "end": 2182.96,
+      "duration": 12.68
+    },
+    {
+      "shot_id": "shot_B0045",
+      "pool_shot_id": "pool_00389",
+      "segment": "late",
+      "start": 2215.68,
+      "end": 2217.8,
+      "duration": 2.12
+    },
+    {
+      "shot_id": "shot_B0046",
+      "pool_shot_id": "pool_00419",
+      "segment": "late",
+      "start": 2402.68,
+      "end": 2409.52,
+      "duration": 6.84
+    },
+    {
+      "shot_id": "shot_B0047",
+      "pool_shot_id": "pool_00431",
+      "segment": "late",
+      "start": 2488.16,
+      "end": 2511.44,
+      "duration": 23.28
+    },
+    {
+      "shot_id": "shot_B0048",
+      "pool_shot_id": "pool_00470",
+      "segment": "late",
+      "start": 2600.24,
+      "end": 2606.4,
+      "duration": 6.16
+    },
+    {
+      "shot_id": "shot_B0049",
+      "pool_shot_id": "pool_00473",
+      "segment": "late",
+      "start": 2613.24,
+      "end": 2616.76,
+      "duration": 3.52
+    },
+    {
+      "shot_id": "shot_B0050",
+      "pool_shot_id": "pool_00477",
+      "segment": "late",
+      "start": 2628.68,
+      "end": 2631.32,
+      "duration": 2.64
+    }
+  ],
+  "manifest_sha256": "2e02fc591f2cedbeb477ba08dddf1f4a562bebfbfd8e43dc179797be752340be"
+}

@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0013_pct75",
+  "shot_id": "shot_B0013",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "07420bfecbc41e13588ee9cfcc6bc5b8da42ef973a1a7c1c83febff01b91330f",
+  "inference_hash": "f651067e487533d418dd001bf6b2c405d5d3c5f52a76813ca1261bb9ffa0ad2c",
+  "latency_ms": 27839.46162497159,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名位于画面左侧的男子，黑色短发，戴着眼镜，身穿深色高领单排扣外套（中山装），胸前口袋内插有一支笔。\", \"一名位于画面右侧的男子，短发，身穿蓝色外套，身体右侧部分被画面边缘裁切。\"], \"environment\": \"室内环境，光线偏暗。背景墙壁下半部分为深色木质镶板，上半部分为浅色墙面。左上方墙面悬挂有一块带有文字的标牌。\", \"objects\": [\"眼镜\", \"钢笔\", \"标牌\"], \"physical_actions\": [\"左侧男子头部微垂，向下看。\", \"右侧男子面朝左侧男子的方向。\"], \"uncertainty\": \"右侧人物身体被画面右边缘裁切；画面整体光线较暗且分辨率较低，左上角标牌文字被裁切且模糊不清。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名位于画面左侧的男子，黑色短发，戴着眼镜，身穿深色高领单排扣外套（中山装），胸前口袋内插有一支笔。",
+        "一名位于画面右侧的男子，短发，身穿蓝色外套，身体右侧部分被画面边缘裁切。"
+      ],
+      "environment": "室内环境，光线偏暗。背景墙壁下半部分为深色木质镶板，上半部分为浅色墙面。左上方墙面悬挂有一块带有文字的标牌。",
+      "objects": [
+        "眼镜",
+        "钢笔",
+        "标牌"
+      ],
+      "physical_actions": [
+        "左侧男子头部微垂，向下看。",
+        "右侧男子面朝左侧男子的方向。"
+      ],
+      "uncertainty": "右侧人物身体被画面右边缘裁切；画面整体光线较暗且分辨率较低，左上角标牌文字被裁切且模糊不清。"
+    },
+    "error": null,
+    "latency_ms": 27839.46,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 15097,
+      "output_tokens": 1626,
+      "thinking_tokens": 1296,
+      "cache_read_tokens": 28427,
+      "total_tokens": 16723
+    },
+    "source_image_hash": "07420bfecbc41e13588ee9cfcc6bc5b8da42ef973a1a7c1c83febff01b91330f",
+    "inference_image_hash": "f651067e487533d418dd001bf6b2c405d5d3c5f52a76813ca1261bb9ffa0ad2c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

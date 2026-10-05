@@ -1,0 +1,55 @@
+{
+  "frame_id": "shot_B0011_pct50",
+  "shot_id": "shot_B0011",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "30c4a0c992a531d5fee269e8d6fe280186c9f92c442766c1178ef7106b684724",
+  "inference_hash": "9ab13e614a56d1d66c9f6d65ccf15d84a25a230f1e071752bdd25a02a01dd860",
+  "latency_ms": 36514.237291994505,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"Person on screen-left with dark shoulder-length hair wearing light long-sleeved pajamas.\", \"Person on screen-right with short dark hair wearing gray silky long-sleeved pajamas.\"], \"environment\": \"Dimly lit indoor bedroom. A wooden bed is on the left. A nightstand and lamp are in the background left. A framed picture is on the background wall.\", \"objects\": [\"wooden bed frame\", \"striped bed sheets\", \"pink pillows\", \"nightstand\", \"lamp\", \"framed picture\", \"curtains\", \"floor mat\", \"pink floor cushion\"], \"physical_actions\": [\"Two people standing closely facing each other.\", \"Holding hands together.\", \"Person on screen-right has their head tilted downwards.\"], \"uncertainty\": \"The lighting is dim, casting shadows that obscure fine facial details. There are white subtitle characters overlaying the bottom center of the frame.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "Person on screen-left with dark shoulder-length hair wearing light long-sleeved pajamas.",
+        "Person on screen-right with short dark hair wearing gray silky long-sleeved pajamas."
+      ],
+      "environment": "Dimly lit indoor bedroom. A wooden bed is on the left. A nightstand and lamp are in the background left. A framed picture is on the background wall.",
+      "objects": [
+        "wooden bed frame",
+        "striped bed sheets",
+        "pink pillows",
+        "nightstand",
+        "lamp",
+        "framed picture",
+        "curtains",
+        "floor mat",
+        "pink floor cushion"
+      ],
+      "physical_actions": [
+        "Two people standing closely facing each other.",
+        "Holding hands together.",
+        "Person on screen-right has their head tilted downwards."
+      ],
+      "uncertainty": "The lighting is dim, casting shadows that obscure fine facial details. There are white subtitle characters overlaying the bottom center of the frame."
+    },
+    "error": null,
+    "latency_ms": 36514.24,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22130,
+      "output_tokens": 1980,
+      "thinking_tokens": 1395,
+      "cache_read_tokens": 44668,
+      "total_tokens": 24110
+    },
+    "source_image_hash": "30c4a0c992a531d5fee269e8d6fe280186c9f92c442766c1178ef7106b684724",
+    "inference_image_hash": "9ab13e614a56d1d66c9f6d65ccf15d84a25a230f1e071752bdd25a02a01dd860",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

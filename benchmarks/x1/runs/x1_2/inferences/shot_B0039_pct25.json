@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0039_pct25",
+  "shot_id": "shot_B0039",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "333402dfcb665ffaba7174b927d2ae271cc0215056cf77b76217a65deb5170bc",
+  "inference_hash": "672d00eec55a5e7e82543686a4a68b8a2c30e6b68df44da802a0df974129e3b5",
+  "latency_ms": 30716.164542012848,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Man with short dark hair, round glasses, dark suit, and white shirt.\"], \"environment\": \"Indoor room. Framed calligraphy on background wall. Dark vertical pillar on the right.\", \"objects\": [\"glasses\", \"suit\", \"shirt\", \"calligraphy frame\", \"subtitles\"], \"physical_actions\": [\"Mouth open\"], \"uncertainty\": \"None\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Man with short dark hair, round glasses, dark suit, and white shirt."
+      ],
+      "environment": "Indoor room. Framed calligraphy on background wall. Dark vertical pillar on the right.",
+      "objects": [
+        "glasses",
+        "suit",
+        "shirt",
+        "calligraphy frame",
+        "subtitles"
+      ],
+      "physical_actions": [
+        "Mouth open"
+      ],
+      "uncertainty": "None"
+    },
+    "error": null,
+    "latency_ms": 30716.16,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17924,
+      "output_tokens": 1520,
+      "thinking_tokens": 1132,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19444
+    },
+    "source_image_hash": "333402dfcb665ffaba7174b927d2ae271cc0215056cf77b76217a65deb5170bc",
+    "inference_image_hash": "672d00eec55a5e7e82543686a4a68b8a2c30e6b68df44da802a0df974129e3b5",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

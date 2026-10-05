@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0020_pct25",
+  "shot_id": "shot_B0020",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "fe8243176f5696dbad9d617c11904df2b5aaa7e8db03f5f41aee3b6d004823cd",
+  "inference_hash": "6a34dd0319c33a7f0330b83ee86fe04b81fd9107ee3857bd027f681b9202bb1d",
+  "latency_ms": 28191.531416028738,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Woman with short dark wavy hair, wearing dangling bead earrings and a top with a pink collar.\"], \"environment\": \"Dark, dimly lit setting with heavily blurred background elements.\", \"objects\": [\"Beaded earrings\", \"Clothing collar\"], \"physical_actions\": [\"Looking slightly towards screen-left.\"], \"uncertainty\": \"Background is dark and blurred, obscuring details.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Woman with short dark wavy hair, wearing dangling bead earrings and a top with a pink collar."
+      ],
+      "environment": "Dark, dimly lit setting with heavily blurred background elements.",
+      "objects": [
+        "Beaded earrings",
+        "Clothing collar"
+      ],
+      "physical_actions": [
+        "Looking slightly towards screen-left."
+      ],
+      "uncertainty": "Background is dark and blurred, obscuring details."
+    },
+    "error": null,
+    "latency_ms": 28191.53,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21156,
+      "output_tokens": 967,
+      "thinking_tokens": 612,
+      "cache_read_tokens": 44659,
+      "total_tokens": 22123
+    },
+    "source_image_hash": "fe8243176f5696dbad9d617c11904df2b5aaa7e8db03f5f41aee3b6d004823cd",
+    "inference_image_hash": "6a34dd0319c33a7f0330b83ee86fe04b81fd9107ee3857bd027f681b9202bb1d",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

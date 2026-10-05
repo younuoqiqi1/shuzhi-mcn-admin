@@ -1,0 +1,55 @@
+{
+  "frame_id": "shot_B0011_pct25",
+  "shot_id": "shot_B0011",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "0d036e4d6900cdf30b7b452ed51dccfa5b9554beda091fbf2346fa661893c198",
+  "inference_hash": "a3fcdf9d6f9133d22d4c50406c2b22038e144af3bb9152f8416e6943c7d72ebc",
+  "latency_ms": 42953.292999998666,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"Person on screen-left with dark shoulder-length hair, wearing light pajamas.\", \"Person on screen-right with short dark hair, wearing grey pajamas.\"], \"environment\": \"Dimly lit indoor room, a bedroom with a bed, floor bedding, and a window.\", \"objects\": [\"Bed\", \"Wooden headboard\", \"Striped bedsheets\", \"Pink pillow\", \"Dark pillow\", \"Floor bedding\", \"Lamp\", \"Framed picture\", \"Curtains\"], \"physical_actions\": [\"Standing close to each other.\", \"Screen-left person rests hand on screen-right person's shoulder.\", \"Holding hands.\"], \"uncertainty\": \"Dark lighting obscures facial features and background details. Subjects' feet are cropped at bottom frame. White markings visible near bottom.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "Person on screen-left with dark shoulder-length hair, wearing light pajamas.",
+        "Person on screen-right with short dark hair, wearing grey pajamas."
+      ],
+      "environment": "Dimly lit indoor room, a bedroom with a bed, floor bedding, and a window.",
+      "objects": [
+        "Bed",
+        "Wooden headboard",
+        "Striped bedsheets",
+        "Pink pillow",
+        "Dark pillow",
+        "Floor bedding",
+        "Lamp",
+        "Framed picture",
+        "Curtains"
+      ],
+      "physical_actions": [
+        "Standing close to each other.",
+        "Screen-left person rests hand on screen-right person's shoulder.",
+        "Holding hands."
+      ],
+      "uncertainty": "Dark lighting obscures facial features and background details. Subjects' feet are cropped at bottom frame. White markings visible near bottom."
+    },
+    "error": null,
+    "latency_ms": 42953.29,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 25469,
+      "output_tokens": 2180,
+      "thinking_tokens": 1351,
+      "cache_read_tokens": 65094,
+      "total_tokens": 27649
+    },
+    "source_image_hash": "0d036e4d6900cdf30b7b452ed51dccfa5b9554beda091fbf2346fa661893c198",
+    "inference_image_hash": "a3fcdf9d6f9133d22d4c50406c2b22038e144af3bb9152f8416e6943c7d72ebc",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

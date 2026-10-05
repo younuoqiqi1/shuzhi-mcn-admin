@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0035_pct75",
+  "shot_id": "shot_B0035",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "29bf3b13802894e98404f3762940e5a92cea2dd69ec2089ae69a56b82a7219a0",
+  "inference_hash": "e9f9ae88c9d24675961684a5383fb358d50651e0dcc1c0cbe3c5caeaf118b83d",
+  "latency_ms": 35996.42533296719,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Man center-right with short dark hair, wearing round glasses, dark blue jacket, and white shirt.\", \"Person screen-left, viewed from behind, with short dark hair.\"], \"environment\": \"Indoors with light-colored walls and dark wooden trim in the background.\", \"objects\": [\"glasses\", \"dark blue jacket\", \"white collared shirt\", \"subtitle text\"], \"physical_actions\": [\"Man center-right looks towards screen-left with mouth slightly open.\", \"Person screen-left faces towards the man center-right.\"], \"uncertainty\": \"Person screen-left seen from behind and out of frame. Subtitles obscure bottom. Right side shadowed.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Man center-right with short dark hair, wearing round glasses, dark blue jacket, and white shirt.",
+        "Person screen-left, viewed from behind, with short dark hair."
+      ],
+      "environment": "Indoors with light-colored walls and dark wooden trim in the background.",
+      "objects": [
+        "glasses",
+        "dark blue jacket",
+        "white collared shirt",
+        "subtitle text"
+      ],
+      "physical_actions": [
+        "Man center-right looks towards screen-left with mouth slightly open.",
+        "Person screen-left faces towards the man center-right."
+      ],
+      "uncertainty": "Person screen-left seen from behind and out of frame. Subtitles obscure bottom. Right side shadowed."
+    },
+    "error": null,
+    "latency_ms": 35996.43,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21862,
+      "output_tokens": 1826,
+      "thinking_tokens": 1316,
+      "cache_read_tokens": 44665,
+      "total_tokens": 23688
+    },
+    "source_image_hash": "29bf3b13802894e98404f3762940e5a92cea2dd69ec2089ae69a56b82a7219a0",
+    "inference_image_hash": "e9f9ae88c9d24675961684a5383fb358d50651e0dcc1c0cbe3c5caeaf118b83d",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0014_pct75",
+  "shot_id": "shot_B0014",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "5c5083e26e9af55180da4bdd5029e1cbf12f05be7c10ff6514307c61cb4a5d34",
+  "inference_hash": "feeca6e26e9b6f9119d2ec00783b08ae83d851509dcc6facac574062582cdd2c",
+  "latency_ms": 33812.28316598572,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名戴着深色圆框眼镜、身穿深蓝色中式立领外衣的成年男子，短发，面朝画面右侧。\"], \"environment\": \"光线昏暗的室内环境，左后方有方形堆叠物的轮廓，右侧背景大面积被阴影覆盖。\", \"objects\": [\"圆框眼镜\", \"深蓝色立领外衣\", \"白色中文字幕\"], \"physical_actions\": [\"头部微侧，视线看向画面右方，嘴唇微张。\"], \"uncertainty\": \"背景极度昏暗，难以辨认具体环境细节。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名戴着深色圆框眼镜、身穿深蓝色中式立领外衣的成年男子，短发，面朝画面右侧。"
+      ],
+      "environment": "光线昏暗的室内环境，左后方有方形堆叠物的轮廓，右侧背景大面积被阴影覆盖。",
+      "objects": [
+        "圆框眼镜",
+        "深蓝色立领外衣",
+        "白色中文字幕"
+      ],
+      "physical_actions": [
+        "头部微侧，视线看向画面右方，嘴唇微张。"
+      ],
+      "uncertainty": "背景极度昏暗，难以辨认具体环境细节。"
+    },
+    "error": null,
+    "latency_ms": 33812.28,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17702,
+      "output_tokens": 1611,
+      "thinking_tokens": 1141,
+      "cache_read_tokens": 48857,
+      "total_tokens": 19313
+    },
+    "source_image_hash": "5c5083e26e9af55180da4bdd5029e1cbf12f05be7c10ff6514307c61cb4a5d34",
+    "inference_image_hash": "feeca6e26e9b6f9119d2ec00783b08ae83d851509dcc6facac574062582cdd2c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

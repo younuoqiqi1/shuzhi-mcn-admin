@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0036_pct25",
+  "shot_id": "shot_B0036",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2f6e13c3886d57b3af157eca318e44a3f356f40fc5f16cdc8ffd5d6a660e9d15",
+  "inference_hash": "44f880417ef89e619ef31eb899dd35159e6e262741277ed3ee4e75fecd51480c",
+  "latency_ms": 28349.22125004232,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名留着黑色短发的成年男子，身穿浅色外套，内搭白色衬衫。\"], \"environment\": \"室内场景，光线略暗，左侧背景有一个深色木质柜子，右侧背景是一面纯色墙壁。\", \"objects\": [\"深色木质柜子\", \"柜子上摆放的一个带有银色/反光顶部的细长物体\", \"右下角部分可见的木质椅背\", \"底部中央带有白色字幕的文本\"], \"physical_actions\": [\"男子头部微抬，嘴唇微张，视线看向画面左侧。\"], \"uncertainty\": \"画面整体光线偏暗，人物右脸（画面左侧）有较深阴影。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名留着黑色短发的成年男子，身穿浅色外套，内搭白色衬衫。"
+      ],
+      "environment": "室内场景，光线略暗，左侧背景有一个深色木质柜子，右侧背景是一面纯色墙壁。",
+      "objects": [
+        "深色木质柜子",
+        "柜子上摆放的一个带有银色/反光顶部的细长物体",
+        "右下角部分可见的木质椅背",
+        "底部中央带有白色字幕的文本"
+      ],
+      "physical_actions": [
+        "男子头部微抬，嘴唇微张，视线看向画面左侧。"
+      ],
+      "uncertainty": "画面整体光线偏暗，人物右脸（画面左侧）有较深阴影。"
+    },
+    "error": null,
+    "latency_ms": 28349.22,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18646,
+      "output_tokens": 826,
+      "thinking_tokens": 543,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19472
+    },
+    "source_image_hash": "2f6e13c3886d57b3af157eca318e44a3f356f40fc5f16cdc8ffd5d6a660e9d15",
+    "inference_image_hash": "44f880417ef89e619ef31eb899dd35159e6e262741277ed3ee4e75fecd51480c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

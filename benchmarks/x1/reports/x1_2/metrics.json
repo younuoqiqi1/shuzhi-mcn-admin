@@ -1,0 +1,249 @@
+{
+  "batch_id": "X1.2",
+  "timestamp": 1791222497.8570828,
+  "overall_status": "engineering_batch_completed_with_errors_pending_gold",
+  "is_complete_pass": false,
+  "denominator": 150,
+  "success_count": 130,
+  "failure_count": 20,
+  "success_rate": 0.8667,
+  "counts": {
+    "denominator": 150,
+    "total_shots": 50,
+    "attempted_count": 150,
+    "missing_count": 0,
+    "attempt_fail_count": 20,
+    "success_count": 130,
+    "total_failures": 20,
+    "success_rate": 0.8667
+  },
+  "all_attempts_latency_stats_ms": {
+    "description": "所有已发生尝试延迟 (包含发生错误/503 但记录了耗时的调用)",
+    "count": 150,
+    "stats": {
+      "mean": 36259.99,
+      "median": 35195.84,
+      "min": 18567.85,
+      "max": 50051.03,
+      "p90": 50026.71
+    }
+  },
+  "success_only_latency_stats_ms": {
+    "description": "仅通过完整校验的成功帧耗时分布",
+    "count": 130,
+    "stats": {
+      "mean": 34266.68,
+      "median": 33953.87,
+      "min": 18567.85,
+      "max": 48268.79,
+      "p90": 44439.57
+    }
+  },
+  "resource_accounting": {
+    "input_tokens_sum": 2518127,
+    "output_tokens_sum": 225248,
+    "thinking_tokens_sum": 163745,
+    "total_tokens_sum": 2743375,
+    "usage_record_count": 130,
+    "records_missing_usage": 20,
+    "unattempted_excluded_from_usage": 0,
+    "currency_cost": "unknown",
+    "provider_model": "gemini-3.1-pro-low",
+    "effort": "low"
+  },
+  "code_and_manifest_hashes": {
+    "source_manifest_sha256": "2e02fc591f2cedbeb477ba08dddf1f4a562bebfbfd8e43dc179797be752340be",
+    "source_video_fingerprint": {
+      "path": "/Users/yoyotaozhou/Documents/video-moment-validation/data/input/qianfu_ep18.mp4",
+      "size_bytes": 209667467,
+      "sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c",
+      "usage": "audit_and_eval_only_never_flowed_to_model"
+    },
+    "code_hashes": {
+      "batch_py_sha256": "2d4698cbceba7f2b4a30f354496026c434c9bc89e0e828a9fa43cc111cc84a8e",
+      "review_report_py_sha256": "927b14f8e819c46c879ae7f1d1e1e6ed55bad8a5a1abe343a84eccab0c94f561",
+      "providers_py_sha256": "2bf43def7d96b84917666b41246784dc085210e4d44ac4c914fa74bd1233940a",
+      "infer_prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9"
+    }
+  },
+  "coverage": {
+    "visual_frames_total": 150,
+    "visual_frames_validated": 130,
+    "ocr_coverage": {
+      "covered_shots": 45,
+      "total_shots": 50,
+      "coverage_rate": 0.9
+    },
+    "audio_asr_status": "pending_no_old_15_reuse"
+  },
+  "prediction_observations_not_gold": {
+    "single_person_frames": 71,
+    "multi_person_frames": 56,
+    "no_person_frames": 3,
+    "sampled_frames_with_characters": 127,
+    "avg_characters_per_valid_frame": 1.46,
+    "environment_distribution": {
+      "interior": 102,
+      "exterior": 28
+    },
+    "characters_metric_description": "characters 列表条目数的模型预测提取，不能保证每条一人，绝非 Gold 真值；严禁凭此宣称人物一致性。",
+    "disclaimer": "以上仅为 characters 列表条目数的模型预测提取，不能保证每条一人，绝对不视为人工真值 (Gold) / 绝非人工真值；严禁凭此宣称人物一致性或伪造 Person F1 指标。"
+  },
+  "gates_status": {
+    "full_person_consistency_gate": "pending",
+    "narrative_affordance_gate": "pending",
+    "human_evaluation_gold_gate": "pending"
+  },
+  "integrity_claims": {
+    "strict_denominator_150": true,
+    "no_fake_status_counting": true,
+    "schema_verified_vlm_output": true,
+    "hashes_recalculated_and_matched": true,
+    "native_stream_trace_verified": true,
+    "no_gold_or_person_f1_forged": true,
+    "first_round_503_no_retry": true,
+    "overall_status_not_fake_pass": true
+  },
+  "failures": [
+    {
+      "frame_id": "shot_B0001_pct25",
+      "shot_id": "shot_B0001",
+      "pct": 25,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0001_pct75",
+      "shot_id": "shot_B0001",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 退出码非零 (1): error: Eligibility check failed: UNAVAILABLE (code 503): The service is currently unavailable.\n",
+      "error_detail": "AGY CLI 退出码非零 (1): error: Eligibility check failed: UNAVAILABLE (code 503): The service is currently unavailable.\n"
+    },
+    {
+      "frame_id": "shot_B0006_pct75",
+      "shot_id": "shot_B0006",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0007_pct25",
+      "shot_id": "shot_B0007",
+      "pct": 25,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0008_pct75",
+      "shot_id": "shot_B0008",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0012_pct75",
+      "shot_id": "shot_B0012",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0014_pct25",
+      "shot_id": "shot_B0014",
+      "pct": 25,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0017_pct50",
+      "shot_id": "shot_B0017",
+      "pct": 50,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0024_pct50",
+      "shot_id": "shot_B0024",
+      "pct": 50,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0029_pct75",
+      "shot_id": "shot_B0029",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0030_pct50",
+      "shot_id": "shot_B0030",
+      "pct": 50,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0030_pct75",
+      "shot_id": "shot_B0030",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0031_pct25",
+      "shot_id": "shot_B0031",
+      "pct": 25,
+      "reason": "provider_error: AGY CLI 退出码非零 (1): error: Eligibility check failed: failed to get profile picture: Get \"<redacted-profile-url>\": EOF\n",
+      "error_detail": "AGY CLI 退出码非零 (1): error: Eligibility check failed: failed to get profile picture: Get \"<redacted-profile-url>\": EOF\n"
+    },
+    {
+      "frame_id": "shot_B0031_pct50",
+      "shot_id": "shot_B0031",
+      "pct": 50,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0031_pct75",
+      "shot_id": "shot_B0031",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0032_pct25",
+      "shot_id": "shot_B0032",
+      "pct": 25,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0036_pct75",
+      "shot_id": "shot_B0036",
+      "pct": 75,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0038_pct50",
+      "shot_id": "shot_B0038",
+      "pct": 50,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0047_pct25",
+      "shot_id": "shot_B0047",
+      "pct": 25,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    },
+    {
+      "frame_id": "shot_B0047_pct50",
+      "shot_id": "shot_B0047",
+      "pct": 50,
+      "reason": "provider_error: AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+      "error_detail": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0046_pct25",
+  "shot_id": "shot_B0046",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "95273bc835fa502b8b3ca5ecc4e6fe7e6f83c252f1718cff631cbf5225e610cc",
+  "inference_hash": "5894ee8758ecb35c53948123b3a93096b596b6d97acd72c42fd1f0027a09599f",
+  "latency_ms": 32913.88912498951,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person in a white button-up shirt, black trousers, and a black belt with a silver buckle\"], \"environment\": \"Dark background on screen-right, lighter wall on screen-left\", \"objects\": [\"White button-up shirt\", \"Black trousers\", \"Black belt with silver buckle\", \"Wristwatch with a black strap\", \"Small light-colored rectangular object\"], \"physical_actions\": [\"Holding a small rectangular object with the screen-right hand\", \"Pointing index finger of screen-left hand downwards towards the object\"], \"uncertainty\": \"Motion blur on the hands and held object. Head, legs, and feet are out of frame\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person in a white button-up shirt, black trousers, and a black belt with a silver buckle"
+      ],
+      "environment": "Dark background on screen-right, lighter wall on screen-left",
+      "objects": [
+        "White button-up shirt",
+        "Black trousers",
+        "Black belt with silver buckle",
+        "Wristwatch with a black strap",
+        "Small light-colored rectangular object"
+      ],
+      "physical_actions": [
+        "Holding a small rectangular object with the screen-right hand",
+        "Pointing index finger of screen-left hand downwards towards the object"
+      ],
+      "uncertainty": "Motion blur on the hands and held object. Head, legs, and feet are out of frame"
+    },
+    "error": null,
+    "latency_ms": 32913.89,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22168,
+      "output_tokens": 2012,
+      "thinking_tokens": 1311,
+      "cache_read_tokens": 44666,
+      "total_tokens": 24180
+    },
+    "source_image_hash": "95273bc835fa502b8b3ca5ecc4e6fe7e6f83c252f1718cff631cbf5225e610cc",
+    "inference_image_hash": "5894ee8758ecb35c53948123b3a93096b596b6d97acd72c42fd1f0027a09599f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

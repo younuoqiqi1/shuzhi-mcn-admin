@@ -1,0 +1,98 @@
+{
+  "window_idx": 34,
+  "center_start": 2040.0,
+  "center_end": 2100.0,
+  "ctx_start": 2038.0,
+  "ctx_end": 2102.0,
+  "raw_cuts_count": 11,
+  "center_cuts": [
+    2041.28,
+    2043.4,
+    2048.68,
+    2051.2,
+    2055.4,
+    2061.16,
+    2063.28,
+    2071.88,
+    2079.96
+  ],
+  "scores": [
+    {
+      "time_sec": 2038.64,
+      "frame_num": 50966,
+      "content_val": 48.6206,
+      "adaptive_ratio": 98.2315
+    },
+    {
+      "time_sec": 2041.28,
+      "frame_num": 51032,
+      "content_val": 49.987,
+      "adaptive_ratio": 85.3451
+    },
+    {
+      "time_sec": 2043.4,
+      "frame_num": 51085,
+      "content_val": 47.7399,
+      "adaptive_ratio": 37.7893
+    },
+    {
+      "time_sec": 2048.68,
+      "frame_num": 51217,
+      "content_val": 46.5913,
+      "adaptive_ratio": 31.4636
+    },
+    {
+      "time_sec": 2051.2,
+      "frame_num": 51280,
+      "content_val": 47.7325,
+      "adaptive_ratio": 255.0
+    },
+    {
+      "time_sec": 2055.4,
+      "frame_num": 51385,
+      "content_val": 48.5307,
+      "adaptive_ratio": 15.557
+    },
+    {
+      "time_sec": 2061.16,
+      "frame_num": 51529,
+      "content_val": 47.1866,
+      "adaptive_ratio": 91.7149
+    },
+    {
+      "time_sec": 2063.28,
+      "frame_num": 51582,
+      "content_val": 46.8845,
+      "adaptive_ratio": 9.9794
+    },
+    {
+      "time_sec": 2071.88,
+      "frame_num": 51797,
+      "content_val": 45.6711,
+      "adaptive_ratio": 41.1076
+    },
+    {
+      "time_sec": 2079.96,
+      "frame_num": 51999,
+      "content_val": 54.8252,
+      "adaptive_ratio": 120.9307
+    },
+    {
+      "time_sec": 2100.88,
+      "frame_num": 52522,
+      "content_val": 60.7375,
+      "adaptive_ratio": 37.7357
+    }
+  ],
+  "params": {
+    "window_idx": 34,
+    "center_start": 2040.0,
+    "center_end": 2100.0,
+    "ctx_start": 2038.0,
+    "ctx_end": 2102.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "a6f857469463c6830e5fb89d577944ec3ef3c6e802df84e2e2493eaae39f23b2",
+  "created_at": 1791218836.336658
+}

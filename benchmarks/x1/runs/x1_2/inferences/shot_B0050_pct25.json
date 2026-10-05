@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0050_pct25",
+  "shot_id": "shot_B0050",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "ccadd1866764dec594485fa4668c943c5ead2d743b30f5ffdc1554980d82b872",
+  "inference_hash": "d1c14f7593b25f5cfeefd32ab55aa3c6411641d81327fe315c094225b917787f",
+  "latency_ms": 33216.25783294439,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person on screen-left wearing a white garment and a beige fringed scarf or shawl\", \"Person screen-center with visible bare skin on shoulder/chest area, wearing dark clothing\"], \"environment\": \"Dark, indistinct indoor space with a diffuse purple or magenta glow on screen-right\", \"objects\": [\"White garment\", \"Beige fringed scarf\", \"White fabric or towel\", \"White text overlay\"], \"physical_actions\": [\"Holding or touching the fringed scarf with hands\"], \"uncertainty\": \"Faces are entirely cropped out of frame, the image is somewhat blurry, and dense text overlay obscures the subjects and background\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person on screen-left wearing a white garment and a beige fringed scarf or shawl",
+        "Person screen-center with visible bare skin on shoulder/chest area, wearing dark clothing"
+      ],
+      "environment": "Dark, indistinct indoor space with a diffuse purple or magenta glow on screen-right",
+      "objects": [
+        "White garment",
+        "Beige fringed scarf",
+        "White fabric or towel",
+        "White text overlay"
+      ],
+      "physical_actions": [
+        "Holding or touching the fringed scarf with hands"
+      ],
+      "uncertainty": "Faces are entirely cropped out of frame, the image is somewhat blurry, and dense text overlay obscures the subjects and background"
+    },
+    "error": null,
+    "latency_ms": 33216.26,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18405,
+      "output_tokens": 2154,
+      "thinking_tokens": 1701,
+      "cache_read_tokens": 49012,
+      "total_tokens": 20559
+    },
+    "source_image_hash": "ccadd1866764dec594485fa4668c943c5ead2d743b30f5ffdc1554980d82b872",
+    "inference_image_hash": "d1c14f7593b25f5cfeefd32ab55aa3c6411641d81327fe315c094225b917787f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0009_pct25",
+  "shot_id": "shot_B0009",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "c39e4bfe44b22ec7967dd3b93eeebba76073f7c5dc8d59d49b62c580df281eb9",
+  "inference_hash": "9eaf26495a7088b5a76f0e6c929246eb220f2231ed617457bb5da683ae717c4e",
+  "latency_ms": 30853.899833047763,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"One person, black hair, wearing a light top\"], \"environment\": \"Dimly lit indoor room with dark background\", \"objects\": [\"Blue and white porcelain vase\", \"Dark wooden stand\", \"White text subtitles\", \"Light-colored rounded object\"], \"physical_actions\": [\"Looking downwards and towards screen-right\", \"Mouth slightly open\"], \"uncertainty\": \"The image is very dark, particularly in the background and on the screen-left side.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "One person, black hair, wearing a light top"
+      ],
+      "environment": "Dimly lit indoor room with dark background",
+      "objects": [
+        "Blue and white porcelain vase",
+        "Dark wooden stand",
+        "White text subtitles",
+        "Light-colored rounded object"
+      ],
+      "physical_actions": [
+        "Looking downwards and towards screen-right",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "The image is very dark, particularly in the background and on the screen-left side."
+    },
+    "error": null,
+    "latency_ms": 30853.9,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17711,
+      "output_tokens": 1560,
+      "thinking_tokens": 1137,
+      "cache_read_tokens": 48726,
+      "total_tokens": 19271
+    },
+    "source_image_hash": "c39e4bfe44b22ec7967dd3b93eeebba76073f7c5dc8d59d49b62c580df281eb9",
+    "inference_image_hash": "9eaf26495a7088b5a76f0e6c929246eb220f2231ed617457bb5da683ae717c4e",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

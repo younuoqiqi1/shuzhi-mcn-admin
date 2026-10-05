@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0014_pct50",
+  "shot_id": "shot_B0014",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2dd659adb990e4a94e1fd69397c369e2d304d6ea5d8ca43ddaa9392f2042ff12",
+  "inference_hash": "42f9ba65948beb129e565342e14bc1c3a13413b8f0e379769af0275ba463c21a",
+  "latency_ms": 36636.50349993259,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person wearing shiny dark blue garment, round glasses, short dark hair, facing screen-right.\"], \"environment\": \"Dark indoor, light shapes screen-left, deep shadow screen-right.\", \"objects\": [\"Round glasses\", \"Dark blue garment\", \"White subtitles\"], \"physical_actions\": [\"Looking toward screen-right\", \"Mouth slightly open\"], \"uncertainty\": \"Screen-right background in deep shadow. Lower body out of frame.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person wearing shiny dark blue garment, round glasses, short dark hair, facing screen-right."
+      ],
+      "environment": "Dark indoor, light shapes screen-left, deep shadow screen-right.",
+      "objects": [
+        "Round glasses",
+        "Dark blue garment",
+        "White subtitles"
+      ],
+      "physical_actions": [
+        "Looking toward screen-right",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Screen-right background in deep shadow. Lower body out of frame."
+    },
+    "error": null,
+    "latency_ms": 36636.5,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17927,
+      "output_tokens": 1583,
+      "thinking_tokens": 976,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19510
+    },
+    "source_image_hash": "2dd659adb990e4a94e1fd69397c369e2d304d6ea5d8ca43ddaa9392f2042ff12",
+    "inference_image_hash": "42f9ba65948beb129e565342e14bc1c3a13413b8f0e379769af0275ba463c21a",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

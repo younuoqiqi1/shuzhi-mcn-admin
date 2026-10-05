@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0029_pct50",
+  "shot_id": "shot_B0029",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "bfbd30e3f7d37e26ee5d603abb0a174e9d6e15d93f42d688908abd3145a14c16",
+  "inference_hash": "f076a2ab499008bc082461434b97f495ef54856d8523ac0e962ceb2fe9c8ed79",
+  "latency_ms": 33100.93549999874,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Screen-left: Back view of person in light shirt and suspender.\", \"Screen-right: Person with dark wavy hair in blue and white checkered high-collar top.\"], \"environment\": \"Indoor with dim lighting. Dark background on screen-left, plain light wall on screen-right.\", \"objects\": [\"Coat rack\", \"Shirt\", \"Checkered top\", \"Suspender\"], \"physical_actions\": [\"Standing\", \"Facing each other\"], \"uncertainty\": \"Person on screen-left is occluded, showing only back of head and shoulder. Left area is dark.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Screen-left: Back view of person in light shirt and suspender.",
+        "Screen-right: Person with dark wavy hair in blue and white checkered high-collar top."
+      ],
+      "environment": "Indoor with dim lighting. Dark background on screen-left, plain light wall on screen-right.",
+      "objects": [
+        "Coat rack",
+        "Shirt",
+        "Checkered top",
+        "Suspender"
+      ],
+      "physical_actions": [
+        "Standing",
+        "Facing each other"
+      ],
+      "uncertainty": "Person on screen-left is occluded, showing only back of head and shoulder. Left area is dark."
+    },
+    "error": null,
+    "latency_ms": 33100.94,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18013,
+      "output_tokens": 1838,
+      "thinking_tokens": 1348,
+      "cache_read_tokens": 48727,
+      "total_tokens": 19851
+    },
+    "source_image_hash": "bfbd30e3f7d37e26ee5d603abb0a174e9d6e15d93f42d688908abd3145a14c16",
+    "inference_image_hash": "f076a2ab499008bc082461434b97f495ef54856d8523ac0e962ceb2fe9c8ed79",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

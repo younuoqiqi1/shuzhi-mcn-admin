@@ -1,0 +1,55 @@
+{
+  "frame_id": "shot_B0042_pct25",
+  "shot_id": "shot_B0042",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "62872f3099690f1009c7bd95641ec27936ffa5e4b1a8b6620d72a455970eeb47",
+  "inference_hash": "d35a325d2c78a5554769c5b863f2d171b27b644ee0fd437acf7f40025fcc7f2b",
+  "latency_ms": 37228.15466707107,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"Man on screen-left, wearing glasses and a dark jacket, viewed in profile.\", \"Man on screen-right, wearing a white shirt and a light brown vest, leaning forward.\"], \"environment\": \"Indoor dining room with a dark wooden table, wainscoting, and a wooden cabinet with a white statue.\", \"objects\": [\"brass hot pot\", \"wooden table\", \"wooden chairs\", \"plates with food\", \"chopsticks\", \"glasses\", \"wooden cabinet\", \"books\", \"white animal statue\", \"subtitles\"], \"physical_actions\": [\"sitting at a table\", \"leaning forward\"], \"uncertainty\": \"Chinese subtitles are visible at the bottom of the frame. The overall lighting is somewhat dim.\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "Man on screen-left, wearing glasses and a dark jacket, viewed in profile.",
+        "Man on screen-right, wearing a white shirt and a light brown vest, leaning forward."
+      ],
+      "environment": "Indoor dining room with a dark wooden table, wainscoting, and a wooden cabinet with a white statue.",
+      "objects": [
+        "brass hot pot",
+        "wooden table",
+        "wooden chairs",
+        "plates with food",
+        "chopsticks",
+        "glasses",
+        "wooden cabinet",
+        "books",
+        "white animal statue",
+        "subtitles"
+      ],
+      "physical_actions": [
+        "sitting at a table",
+        "leaning forward"
+      ],
+      "uncertainty": "Chinese subtitles are visible at the bottom of the frame. The overall lighting is somewhat dim."
+    },
+    "error": null,
+    "latency_ms": 37228.15,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 19138,
+      "output_tokens": 2847,
+      "thinking_tokens": 2334,
+      "cache_read_tokens": 48735,
+      "total_tokens": 21985
+    },
+    "source_image_hash": "62872f3099690f1009c7bd95641ec27936ffa5e4b1a8b6620d72a455970eeb47",
+    "inference_image_hash": "d35a325d2c78a5554769c5b863f2d171b27b644ee0fd437acf7f40025fcc7f2b",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

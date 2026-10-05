@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0005_pct25",
+  "shot_id": "shot_B0005",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "91e646f16081c17dc2723415dba5b864babef58ea45e650039393f4d67fb0c94",
+  "inference_hash": "0df6507fa5fd78e7a0f2488ebef688f75dc4b8cb90834674628a6bac2530dd95",
+  "latency_ms": 38630.44745801017,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"中心偏右：一名男性，黑色短发，颈部围着一条白色毛巾，上半身部分裸露。\", \"画面左侧边缘：一个深色的、背向或侧向的人影轮廓。\"], \"environment\": \"昏暗的室内环境。左侧可见模糊的类似置物架或墙面结构。右侧及右下角有网点状图形和发光黄色中文字幕覆盖层。\", \"objects\": [\"白色毛巾\", \"发光黄色文字字幕\", \"网点状图形覆盖层\"], \"physical_actions\": [\"中心偏右的人物头部微微低垂，视线向画面外下方看。\"], \"uncertainty\": \"画面整体色调昏暗；左侧人影因过暗且仅露边缘无法确认细节；画面右半侧及右下角被网格状特效和发光文字遮挡了人物面部和身体的局部细节。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "中心偏右：一名男性，黑色短发，颈部围着一条白色毛巾，上半身部分裸露。",
+        "画面左侧边缘：一个深色的、背向或侧向的人影轮廓。"
+      ],
+      "environment": "昏暗的室内环境。左侧可见模糊的类似置物架或墙面结构。右侧及右下角有网点状图形和发光黄色中文字幕覆盖层。",
+      "objects": [
+        "白色毛巾",
+        "发光黄色文字字幕",
+        "网点状图形覆盖层"
+      ],
+      "physical_actions": [
+        "中心偏右的人物头部微微低垂，视线向画面外下方看。"
+      ],
+      "uncertainty": "画面整体色调昏暗；左侧人影因过暗且仅露边缘无法确认细节；画面右半侧及右下角被网格状特效和发光文字遮挡了人物面部和身体的局部细节。"
+    },
+    "error": null,
+    "latency_ms": 38630.45,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 43075,
+      "output_tokens": 1392,
+      "thinking_tokens": 1066,
+      "cache_read_tokens": 0,
+      "total_tokens": 44467
+    },
+    "source_image_hash": "91e646f16081c17dc2723415dba5b864babef58ea45e650039393f4d67fb0c94",
+    "inference_image_hash": "0df6507fa5fd78e7a0f2488ebef688f75dc4b8cb90834674628a6bac2530dd95",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

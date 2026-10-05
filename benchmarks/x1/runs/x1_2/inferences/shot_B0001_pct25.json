@@ -1,0 +1,25 @@
+{
+  "frame_id": "shot_B0001_pct25",
+  "shot_id": "shot_B0001",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "4bf935ab8a3249ac904d384e49547eceb76473ffbf9b9c500c58e46ca808921b",
+  "inference_hash": "29c75be37b03b4b2deef3938ea74fa74432e32a7d2c2bcbd3a560a12b943cdef",
+  "latency_ms": 50022.83716597594,
+  "status": "failed",
+  "error": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+  "response": {
+    "raw_text": "",
+    "parsed_validation": null,
+    "error": "AGY CLI 执行超时 (>50s)，已对进程组执行 SIGKILL 并保留 partial stdout",
+    "latency_ms": 50022.84,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {},
+    "source_image_hash": "4bf935ab8a3249ac904d384e49547eceb76473ffbf9b9c500c58e46ca808921b",
+    "inference_image_hash": "29c75be37b03b4b2deef3938ea74fa74432e32a7d2c2bcbd3a560a12b943cdef",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

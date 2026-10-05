@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0038_pct25",
+  "shot_id": "shot_B0038",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "0ec9e13f43a3d0b9fb7ccd361d74e743ecbdd44071c13770e2dbde122eef8e40",
+  "inference_hash": "46e9fbece5eda153d8741be8a9cb40ecbeea0a7c7be86a9a720936d99899d0df",
+  "latency_ms": 35569.594500004314,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名男性，黑短发，戴细边圆眼镜，穿着深色外套和白色翻领衬衫\"], \"environment\": \"室内，背景浅色墙面上挂有带边框的书法作品，画面右侧有深色竖直边框\", \"objects\": [\"细边眼镜\", \"相框字画\", \"底部白色字幕\"], \"physical_actions\": [\"头部微转向画面右侧，嘴唇微张\"], \"uncertainty\": \"画面底部有文字字幕，无其他明显视线遮挡\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名男性，黑短发，戴细边圆眼镜，穿着深色外套和白色翻领衬衫"
+      ],
+      "environment": "室内，背景浅色墙面上挂有带边框的书法作品，画面右侧有深色竖直边框",
+      "objects": [
+        "细边眼镜",
+        "相框字画",
+        "底部白色字幕"
+      ],
+      "physical_actions": [
+        "头部微转向画面右侧，嘴唇微张"
+      ],
+      "uncertainty": "画面底部有文字字幕，无其他明显视线遮挡"
+    },
+    "error": null,
+    "latency_ms": 35569.59,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14765,
+      "output_tokens": 2570,
+      "thinking_tokens": 2169,
+      "cache_read_tokens": 28424,
+      "total_tokens": 17335
+    },
+    "source_image_hash": "0ec9e13f43a3d0b9fb7ccd361d74e743ecbdd44071c13770e2dbde122eef8e40",
+    "inference_image_hash": "46e9fbece5eda153d8741be8a9cb40ecbeea0a7c7be86a9a720936d99899d0df",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

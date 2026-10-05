@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0010_pct25",
+  "shot_id": "shot_B0010",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2c4bfb22ecd6b6a7ffa17fb9963ef79306aabf6f5d85336d386a79ffb561baf3",
+  "inference_hash": "97c51a0aed0ce0b6db84c0ea57c44b31f96f0968b18c7cbd5ec2d1ae38e2d86f",
+  "latency_ms": 26244.68175007496,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名短发成年男性，佩戴圆形金属细框眼镜，穿着带有光泽感的灰色或浅蓝色长袖上衣。\"], \"environment\": \"室内昏暗环境。可见人物头部下方垫着带有粉紫色碎花图案的白色枕头，画面偏screen-right的一侧被深色阴影覆盖，背景细节不可见。\", \"objects\": [\"细框眼镜\", \"碎花图案枕头\", \"有光泽感的长袖上衣\", \"底部中文字幕\"], \"physical_actions\": [\"平躺在枕头上\", \"头部向screen-right侧偏转\", \"双眼微睁\", \"嘴部微张\"], \"uncertainty\": \"画面screen-right侧存在大面积暗部阴影，导致背景环境及人物身体右侧细节无法辨认。画面底部居中位置有白色中文字幕遮挡部分衣物。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名短发成年男性，佩戴圆形金属细框眼镜，穿着带有光泽感的灰色或浅蓝色长袖上衣。"
+      ],
+      "environment": "室内昏暗环境。可见人物头部下方垫着带有粉紫色碎花图案的白色枕头，画面偏screen-right的一侧被深色阴影覆盖，背景细节不可见。",
+      "objects": [
+        "细框眼镜",
+        "碎花图案枕头",
+        "有光泽感的长袖上衣",
+        "底部中文字幕"
+      ],
+      "physical_actions": [
+        "平躺在枕头上",
+        "头部向screen-right侧偏转",
+        "双眼微睁",
+        "嘴部微张"
+      ],
+      "uncertainty": "画面screen-right侧存在大面积暗部阴影，导致背景环境及人物身体右侧细节无法辨认。画面底部居中位置有白色中文字幕遮挡部分衣物。"
+    },
+    "error": null,
+    "latency_ms": 26244.68,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14709,
+      "output_tokens": 1362,
+      "thinking_tokens": 1044,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16071
+    },
+    "source_image_hash": "2c4bfb22ecd6b6a7ffa17fb9963ef79306aabf6f5d85336d386a79ffb561baf3",
+    "inference_image_hash": "97c51a0aed0ce0b6db84c0ea57c44b31f96f0968b18c7cbd5ec2d1ae38e2d86f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

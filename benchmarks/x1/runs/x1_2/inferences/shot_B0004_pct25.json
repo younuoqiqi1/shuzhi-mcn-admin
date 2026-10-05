@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0004_pct25",
+  "shot_id": "shot_B0004",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "1d05982fd6ccf96420de134d176de51b1d63ed8afb0d2c92a0d87e9deec83433",
+  "inference_hash": "104df5fed1eb389ed66ca27ee695e19a327fbb27fcc1cacc6c792f539f4d5ba5",
+  "latency_ms": 33363.94054198172,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"A man with short black hair wearing a dark collared jacket\"], \"environment\": \"Dark, blue-tinted space with a grid-textured wall behind the character and a film strip graphic on the left border.\", \"objects\": [\"Yellow Chinese text overlay\", \"Film strip graphic\", \"Faint smoke or vapor\"], \"physical_actions\": [\"Looking downward and slightly to the right\", \"Head tilted slightly down\"], \"uncertainty\": \"The image is dark with a strong blue tint. Graphic overlays (text and film strip) and a smoky/blurred effect in the lower right partially obscure the scene.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "A man with short black hair wearing a dark collared jacket"
+      ],
+      "environment": "Dark, blue-tinted space with a grid-textured wall behind the character and a film strip graphic on the left border.",
+      "objects": [
+        "Yellow Chinese text overlay",
+        "Film strip graphic",
+        "Faint smoke or vapor"
+      ],
+      "physical_actions": [
+        "Looking downward and slightly to the right",
+        "Head tilted slightly down"
+      ],
+      "uncertainty": "The image is dark with a strong blue tint. Graphic overlays (text and film strip) and a smoky/blurred effect in the lower right partially obscure the scene."
+    },
+    "error": null,
+    "latency_ms": 33363.94,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14796,
+      "output_tokens": 1457,
+      "thinking_tokens": 1203,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16253
+    },
+    "source_image_hash": "1d05982fd6ccf96420de134d176de51b1d63ed8afb0d2c92a0d87e9deec83433",
+    "inference_image_hash": "104df5fed1eb389ed66ca27ee695e19a327fbb27fcc1cacc6c792f539f4d5ba5",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

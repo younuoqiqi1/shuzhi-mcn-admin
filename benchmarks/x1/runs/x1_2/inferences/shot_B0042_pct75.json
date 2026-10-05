@@ -1,0 +1,52 @@
+{
+  "frame_id": "shot_B0042_pct75",
+  "shot_id": "shot_B0042",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "32b3c23e7c77c48bbadd3b3b4ee09ca0a7397c78bb6de376aee91ddcd770b8cb",
+  "inference_hash": "e34157d816e3ae91afdada4da12c38830d4dfffc6afe08c48f25b6ace72d5c26",
+  "latency_ms": 30801.249583018944,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"One adult male, short dark hair, wearing a light shirt and beige vest, center frame.\"], \"environment\": \"Indoor room with pale yellow walls. Four framed pictures on the wall. Dark wooden furniture on screen-left and screen-right.\", \"objects\": [\"framed pictures\", \"wooden cabinet\", \"books\", \"white animal figurine\", \"decorative wooden object\", \"button-up shirt\", \"vest\"], \"physical_actions\": [\"standing facing the camera\", \"eyes closed\", \"lips slightly pressed together\"], \"uncertainty\": \"Dim lighting casting shadows on the character's face. Lower body outside the frame. Slight blur.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "One adult male, short dark hair, wearing a light shirt and beige vest, center frame."
+      ],
+      "environment": "Indoor room with pale yellow walls. Four framed pictures on the wall. Dark wooden furniture on screen-left and screen-right.",
+      "objects": [
+        "framed pictures",
+        "wooden cabinet",
+        "books",
+        "white animal figurine",
+        "decorative wooden object",
+        "button-up shirt",
+        "vest"
+      ],
+      "physical_actions": [
+        "standing facing the camera",
+        "eyes closed",
+        "lips slightly pressed together"
+      ],
+      "uncertainty": "Dim lighting casting shadows on the character's face. Lower body outside the frame. Slight blur."
+    },
+    "error": null,
+    "latency_ms": 30801.25,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18225,
+      "output_tokens": 1883,
+      "thinking_tokens": 1386,
+      "cache_read_tokens": 48729,
+      "total_tokens": 20108
+    },
+    "source_image_hash": "32b3c23e7c77c48bbadd3b3b4ee09ca0a7397c78bb6de376aee91ddcd770b8cb",
+    "inference_image_hash": "e34157d816e3ae91afdada4da12c38830d4dfffc6afe08c48f25b6ace72d5c26",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

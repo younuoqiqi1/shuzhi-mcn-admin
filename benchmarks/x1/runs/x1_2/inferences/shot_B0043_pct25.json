@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0043_pct25",
+  "shot_id": "shot_B0043",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "3d0e0be023bb55072e5da1b9faba0d6505932a3d790f6a26d1a5a541dd83ac68",
+  "inference_hash": "04aaec9b032cfe61a32e23a79bd1370db94035e0b7778eb5998e22c9e972de14",
+  "latency_ms": 29475.315666990355,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Woman in the center, dark wavy hair, light-colored top.\", \"Person on screen-left, torso and arm visible, wearing a shiny grey buttoned shirt.\"], \"environment\": \"Indoor room, likely a bedroom, with a wooden bedside table and a lamp in the background.\", \"objects\": [\"lamp\", \"table\", \"buttoned shirt\"], \"physical_actions\": [\"Hand from person on screen-left resting on the woman's shoulder.\", \"Woman sitting or standing still.\"], \"uncertainty\": \"Person on screen-left is mostly cropped out. Background is out of focus. Subtitles present.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Woman in the center, dark wavy hair, light-colored top.",
+        "Person on screen-left, torso and arm visible, wearing a shiny grey buttoned shirt."
+      ],
+      "environment": "Indoor room, likely a bedroom, with a wooden bedside table and a lamp in the background.",
+      "objects": [
+        "lamp",
+        "table",
+        "buttoned shirt"
+      ],
+      "physical_actions": [
+        "Hand from person on screen-left resting on the woman's shoulder.",
+        "Woman sitting or standing still."
+      ],
+      "uncertainty": "Person on screen-left is mostly cropped out. Background is out of focus. Subtitles present."
+    },
+    "error": null,
+    "latency_ms": 29475.32,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17818,
+      "output_tokens": 1563,
+      "thinking_tokens": 1078,
+      "cache_read_tokens": 48726,
+      "total_tokens": 19381
+    },
+    "source_image_hash": "3d0e0be023bb55072e5da1b9faba0d6505932a3d790f6a26d1a5a541dd83ac68",
+    "inference_image_hash": "04aaec9b032cfe61a32e23a79bd1370db94035e0b7778eb5998e22c9e972de14",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

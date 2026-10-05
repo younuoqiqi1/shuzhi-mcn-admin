@@ -1,0 +1,52 @@
+{
+  "frame_id": "shot_B0032_pct50",
+  "shot_id": "shot_B0032",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "435cdddce3512b538c2694846eb8e45402efc224a01b58b528e75bd5880a9d69",
+  "inference_hash": "a2bbc1de8070444de96ab0abb9078859333fc0f4c0d3e03048cd05e26eb15fb5",
+  "latency_ms": 35311.723249964416,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Screen-left: Male with short black hair, white shirt, tan vest.\", \"Screen-right: Male with dark hair, glasses, dark top, seen from behind.\"], \"environment\": \"Dimly lit indoor room. A dark wooden cabinet is behind the screen-left figure. A dark wooden chair back is behind the screen-right figure. Plain wall in background.\", \"objects\": [\"White shirt\", \"Tan vest\", \"Dark top\", \"Glasses\", \"Dark wooden cabinet\", \"Dark wooden chair\", \"Subtitles\"], \"physical_actions\": [\"Screen-left figure has mouth open.\", \"Screen-right figure faces left.\"], \"uncertainty\": \"Dim lighting obscures background items. Screen-right person's face is hidden from view. White subtitles overlay the bottom center of the frame.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Screen-left: Male with short black hair, white shirt, tan vest.",
+        "Screen-right: Male with dark hair, glasses, dark top, seen from behind."
+      ],
+      "environment": "Dimly lit indoor room. A dark wooden cabinet is behind the screen-left figure. A dark wooden chair back is behind the screen-right figure. Plain wall in background.",
+      "objects": [
+        "White shirt",
+        "Tan vest",
+        "Dark top",
+        "Glasses",
+        "Dark wooden cabinet",
+        "Dark wooden chair",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Screen-left figure has mouth open.",
+        "Screen-right figure faces left."
+      ],
+      "uncertainty": "Dim lighting obscures background items. Screen-right person's face is hidden from view. White subtitles overlay the bottom center of the frame."
+    },
+    "error": null,
+    "latency_ms": 35311.72,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18172,
+      "output_tokens": 1918,
+      "thinking_tokens": 1318,
+      "cache_read_tokens": 48729,
+      "total_tokens": 20090
+    },
+    "source_image_hash": "435cdddce3512b538c2694846eb8e45402efc224a01b58b528e75bd5880a9d69",
+    "inference_image_hash": "a2bbc1de8070444de96ab0abb9078859333fc0f4c0d3e03048cd05e26eb15fb5",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

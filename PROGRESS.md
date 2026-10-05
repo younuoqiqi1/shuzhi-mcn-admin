@@ -1,10 +1,10 @@
 # 数智博主生产工作台 (POC-AGENT) 进度看板
 
-更新时间：2026-10-05（Asia/Shanghai）  
+更新时间：2026-10-06（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**X1.1: L1 自动素材理解重验与结构化基线 (Revalidation Baseline)**
-当前状态：**`X1.1 awaiting_human_review`（人脸 35/40 真实标注已校准阈值 0.4067；视觉仅 partial 20/45 完成，含 2 条真实幻觉，无 50-shot Gold，维持 STOP 等待 Review）**
-核心决议：**2026-10-05 完成人脸 40 匿名对真实人工审核与校准（真实 35/40 有效标注已 calibrated，推荐阈值 0.4067，Holdout 18 混淆 7/0/0/11，但受限于共享 11 face_id 仅 pair-disjoint，不可夸大为全集 Gate）；视觉事实审核确认仅为 partial 20/45 覆盖（已审 178 事实 / 真实 2 条幻觉，分母 180，幻觉率 1.11% 仅代表已审子集；用户口头抽查基本正确但采用画面左右坐标系，定性意见不覆盖真实 2 条幻觉标注）；无 50-shot Gold，语音 WER/CER 保持 pending；完整 X1.1 尚待闭环，不宣称科学 PASS；X1 整体维持未通过，X2/A8/A9/A10 维持冻结；严格 STOP 等待真人审核与 Review。**
+当前阶段：**X1.2: 全片分段随机抽样 50-Shot (150 Frames) 独立扩展基线 (Completed with errors)**
+当前状态：**`batch_completed_with_errors_awaiting_review`（150/150 尝试全量完成，130 成功 / 20 失败，成功率 86.67%，首轮 90% 结构合规门槛未达；18 超时 + 1 服务 503 + 1 profile EOF 不重试，76 测试通过；最长镜头 64.76s 需人工检查边界不可自宣切分通过；硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；入口 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html`，全 Gold/ASR/Person 仍 pending，X2 不进入）**
+核心决议：**2026-10-06 完成 X1.2 全片分段随机抽样 50-shot (150 帧) 自动化推理与校验。全视频 46 窗口 PySceneDetect 产出 509 候选镜头池，排除旧 15 全部重叠，前中后 17/17/16 抽取 50 全新镜头；150 张代表帧原图与 50 个轻量带音频 MP4 切片（640x360）全部就绪，最长镜头达 64.76s 需人工在看板中复核边界，不可自宣切分 Gate 通过；Gemini-3.1-pro-low 两并发执行，首轮 150/150 尝试已全部结束，经 6 字段真实 Schema、重算哈希逐项匹配与原生 stream 严格审计，130 成功、20 失败（18 次 >50s 超时强制回收、1 次服务 503、1 次 profile 网络 EOF），首轮成功率 86.67%，未达 90% 结构门槛，故障如实记录首轮不重试；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；76 项测试全绿；人工质检看板就绪（`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html`）；本批次尚未达正式 Gold Gate，严禁伪造 Person F1、幻觉率或虚构单集成本；Git 仅提交代码、文本、JSON、日志、报告，不含图片视频 HTML；新的 ASR / Person / 人工 Gold 仍 pending，X2 维持冻结不进入。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
@@ -14,7 +14,8 @@
 | 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
 |:---|:---:|:---:|:---|
 | **X0 Technology Spike Gate** | X0 结束点 | ✅ **approved** | **2026-10-05 用户明确批准**。完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)；正式授权开启 X1.0 |
-| **X1 L1 Understanding Benchmark** | X1.1 节点 | 🚪 **awaiting_human_review (人脸 35/40 已校准阈值 0.4067，视觉 partial 20/45 含 2 条真实幻觉，无 50 Gold 待 Review STOP / X1 整体未通过)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，逐帧独立核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；人脸 35/40 真实人工标注已 calibrated 阈值 0.4067（Holdout 18 混淆 7/0/0/11，共享 11 face 非 person-disjoint）；视觉仅 partial 20/45 事实审核（178 事实 / 真实 2 条幻觉，分母 180，1.11% 仅代表已审子集；用户口头抽查采用画面坐标系，定性意见不覆盖 2 条真实幻觉）；无 50-shot Gold，语音 WER/CER 保持 pending；完整 X1.1 未闭环，不宣称科学 PASS，不说全部 X1.1 已通过；X1 整体未通过，不进入 50-shot Gold / X2 / A8/A9/A10，严格 STOP 等待真人审核与 Review |
+| **X1.1 Understanding Benchmark** | X1.1 节点 | 🤝 **accepted_for_expansion (保留历史 35/40 人脸与 partial 20/45 视觉，非全 Gate 通过，经用户授权进入 X1.2)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；人脸 35/40 校准阈值 0.4067；视觉 partial 20/45 审核覆盖（已审 178 事实 / 真实 2 幻觉）；历史数值完整保留，非全 Gate 科学通过，经 2026-10-06 用户明确授权进入下一批 50 镜头扩展，不再停留于 STOP 旧节点 |
+| **X1.2 50-Shot Understanding Benchmark** | X1.2 节点 | ⚠️ **batch_completed_with_errors_awaiting_review (150 尝试 130 成功 20 失败，86.67% 未达 90% 门槛，20 真实故障不重试，49/50 至少一成功帧，35/50 全三帧成功，shot_B0031 全失败，最长镜头 64.76s 待审，硬字幕快照重叠 45/50 另外 5 未匹配不作无对白推断，全 Gold pending)** | 509 候选池前中后 17/17/16 抽取 50 全新镜头（排除旧 15 区间）；Manifest 冻结 SHA256 `2e02fc591f2cedbeb477ba08dddf1f4a562bebfbfd8e43dc179797be752340be`；150 帧原图提取完成、50 audio clips 导出完成（专供人工听音复核，禁入 VLM）；Gemini-3.1-pro-low 两并发推理已全部结束，130/150 严格合规，成功率 86.67% 未达首轮 90% 门槛；20 真实失败（18 超时 + 1 服务 503 + 1 profile EOF）不掩盖不重试；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；最长镜头 64.76s 需人工复核边界不可宣称切分 Gate 通过；硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；76 测试全绿；独立质检看板 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html` 就绪；完整 Gold/ASR/Person 仍 pending，不进入 X2 |
 | **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中 (需等待 X1 真正通过)** | 50 条多类别需求（显式/抽象/改写/对抗负例/荒谬输入）盲测检索与 INSUFFICIENT 拒识率验证；X1 未通过前严格冻结 |
 | **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述/时间表依赖、A5 人名关键词依赖、A6 预写模板及成片伪造字幕/画面不符事故，已全面冻结，不修改其实现，不继续投入 |
 
@@ -215,6 +216,23 @@
     - 视觉事实确认 partial 20/45 审核覆盖（已审 178 事实 / 真实 2 条幻觉，分母 180，幻觉率 1.11% 仅代表已审子集；用户口头抽查基本正确采用画面坐标系，定性意见不覆盖 2 条真实幻觉记录）；场景/动作覆盖率为 22/45（已审准确率为 22/23）；
     - 汇总器修复 `coverage_insufficient` 分支缺 `wer_cer` KeyError 缺陷，严格保证 null 计数不可视为 0；
     - 无 50-shot Gold，语音 WER / CER 保持 pending；X1 整体维持未通过，X2/A8/A9/A10 维持冻结；当前原地严格 STOP 等待真人审核与 Review。
+36. **2026-10-06**：**用户明确授权进入新 50-shot 扩展批次 X1.2，推进为 `X1.2 running`**：
+    - 用户明确批准脱离旧 15 父区间/47 children 历史范围，正式进入全新 50 镜头 X1.2 扩展批次；
+    - X1.1 结论界定为 `accepted_for_expansion`（保留历史数值及实验记录，非全 Gate 科学通过，经用户授权进入下一批，不再停留于 STOP 旧节点）；
+    - 全视频 2702s 通过 PySceneDetect 产出 509 个候选镜头池，基于种子 `20261006` 前中后 `17/17/16` 随机抽取 50 个全新镜头，严格排除旧 15 区间；冻结 manifest SHA256 为 `2e02fc591f2cedbeb477ba08dddf1f4a562bebfbfd8e43dc179797be752340be`；
+    - 150 帧原画质代表帧（25%/50%/75%）已全部提取，50 个用于人工视听核对的轻量 audio clips 已全部导出至 `/private/tmp/x1_2/clips/`（专供人工核对切点边界和音频对白，绝对隔离，不送入任何 VLM 模型）；
+    - Gemini-3.1-pro-low 正在后台运行中，不提前预写最终成功数；局部结果由独立动态报告 `review_report.py` 严格基于 150 绝对分母如实汇总，模型结构门槛 90% 与事实 Gate（人物一致性、叙事可用性、人工真值）严格分开，Gate 保持 pending；首轮 503 等真实服务故障如实记录，绝不伪造重试；
+    - 独立人工质检工作台 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html` 采用 select 下拉框（空值导出为 null，无预设判定），支持 LocalStorage 与 JSON 导出；
+    - 全 Gold / ASR / Person 保持 pending，X2 保持冻结不进入；严禁向 git 上传视频/帧/html 产物。
+37. **2026-10-06**：**完成 X1.2 全自动化工程推理与客观指标审计，状态推进为 `batch_completed_with_errors_awaiting_review`**：
+    - 150/150 尝试全部完成（两并发执行结束），严格经 6 字段 Schema、重算哈希与原生 Stream 审计通过 130 帧，20 帧失败，首轮成功率 86.67%，未达 90% 结构门槛；
+    - 20 项失败如实记入报告（18 次执行超时强制中断回收、1 次 Google 服务 503、1 次 profile 网络 EOF），首轮严格不重试；
+    - 46 窗口 PySceneDetect 产出 509 候选池，前中后 17/17/16 抽样 50 镜头（排除旧 15），最长镜头 64.76s 需人工复核切点边界，不可自宣切分 Gate 通过；
+    - 150 张代表帧原图与 50 个带音频 MP4 切片（640x360）全部就绪，硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；
+    - 全工程 76 项测试全量通过；独立质检看板就绪（`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html`）；
+    - 报告交付于 [`docs/agent-poc/x1.2-50shot-report.md`](docs/agent-poc/x1.2-50shot-report.md)；明确未达正式 Gold Gate，严禁伪造 Person F1、幻觉率或单集成本；
+    - Git 仓库仅提交代码、文本、JSON 元数据、日志与报告，无大体积视频、图片与 HTML；
+    - 完整人工 Gold / new ASR / new Person 保持 pending，X2 保持冻结不进入。
 
 
 

@@ -1,0 +1,57 @@
+{
+  "frame_id": "shot_B0008_pct25",
+  "shot_id": "shot_B0008",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "616328e605d88568aabff9ec8345a1684d7d040da353c83952fbc9d6cb27f97d",
+  "inference_hash": "9f148687cb0f2be734f4c4be5861a52d0d873563981ec6ba893fa4c677059a11",
+  "latency_ms": 40522.497207974084,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"Person with dark hair in light blue top sitting on bed edge\", \"Person with glasses in dark top lying on floor mat\"], \"environment\": \"A dimly lit bedroom viewed from above. Screen-left contains a wooden bed. Screen-right features a nightstand, a wall with a picture, and dark curtains. A mat lies on the wooden floor next to the bed.\", \"objects\": [\"Wooden bed frame\", \"Striped bedsheet\", \"Pink ruffled pillow\", \"Dark folded item on bed\", \"Nightstand\", \"Framed photos\", \"Wall picture\", \"Curtains\", \"Floor mat\", \"Plaid blanket\", \"Lamp\", \"Glasses\"], \"physical_actions\": [\"Sitting on bed, leaning forward, extending arm to floor\", \"Lying on back on mat, partially covered by blanket\"], \"uncertainty\": \"The scene is dimly lit with heavy shadows. The face of the person sitting on the bed is turned away and mostly obscured.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "Person with dark hair in light blue top sitting on bed edge",
+        "Person with glasses in dark top lying on floor mat"
+      ],
+      "environment": "A dimly lit bedroom viewed from above. Screen-left contains a wooden bed. Screen-right features a nightstand, a wall with a picture, and dark curtains. A mat lies on the wooden floor next to the bed.",
+      "objects": [
+        "Wooden bed frame",
+        "Striped bedsheet",
+        "Pink ruffled pillow",
+        "Dark folded item on bed",
+        "Nightstand",
+        "Framed photos",
+        "Wall picture",
+        "Curtains",
+        "Floor mat",
+        "Plaid blanket",
+        "Lamp",
+        "Glasses"
+      ],
+      "physical_actions": [
+        "Sitting on bed, leaning forward, extending arm to floor",
+        "Lying on back on mat, partially covered by blanket"
+      ],
+      "uncertainty": "The scene is dimly lit with heavy shadows. The face of the person sitting on the bed is turned away and mostly obscured."
+    },
+    "error": null,
+    "latency_ms": 40522.5,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18897,
+      "output_tokens": 2525,
+      "thinking_tokens": 1571,
+      "cache_read_tokens": 48734,
+      "total_tokens": 21422
+    },
+    "source_image_hash": "616328e605d88568aabff9ec8345a1684d7d040da353c83952fbc9d6cb27f97d",
+    "inference_image_hash": "9f148687cb0f2be734f4c4be5861a52d0d873563981ec6ba893fa4c677059a11",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

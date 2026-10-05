@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0025_pct50",
+  "shot_id": "shot_B0025",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "82988216239116f58b420f0f2f8543ec646c320ec5f7aa405309761a436500b8",
+  "inference_hash": "77b377aaadb6ff081305e9c5b0b9c0a34c32dee7f75d1900bc751e9e0e1a7bec",
+  "latency_ms": 23614.09662500955,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"A woman with short black hair, wearing a pink patterned high-collared top and dangle earrings\"], \"environment\": \"Dimly lit indoor setting with dark door frames and wooden structures in the background\", \"objects\": [\"Dangle earrings\", \"High-collared pink patterned top\"], \"physical_actions\": [\"Standing still, looking downwards\"], \"uncertainty\": \"The background is dark and out of focus, with a partially visible blurry figure or dark shape on the far left edge\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "A woman with short black hair, wearing a pink patterned high-collared top and dangle earrings"
+      ],
+      "environment": "Dimly lit indoor setting with dark door frames and wooden structures in the background",
+      "objects": [
+        "Dangle earrings",
+        "High-collared pink patterned top"
+      ],
+      "physical_actions": [
+        "Standing still, looking downwards"
+      ],
+      "uncertainty": "The background is dark and out of focus, with a partially visible blurry figure or dark shape on the far left edge"
+    },
+    "error": null,
+    "latency_ms": 23614.1,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18730,
+      "output_tokens": 1171,
+      "thinking_tokens": 794,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19901
+    },
+    "source_image_hash": "82988216239116f58b420f0f2f8543ec646c320ec5f7aa405309761a436500b8",
+    "inference_image_hash": "77b377aaadb6ff081305e9c5b0b9c0a34c32dee7f75d1900bc751e9e0e1a7bec",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

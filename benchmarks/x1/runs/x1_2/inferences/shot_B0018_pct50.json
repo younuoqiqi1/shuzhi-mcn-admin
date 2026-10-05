@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0018_pct50",
+  "shot_id": "shot_B0018",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "3147c9738cab56377439905baa768496ce1ae8601be502c553052e3c6a175fbd",
+  "inference_hash": "2e00d553f3fe40fd1a56519445d1558c05164ec82ede58966bacbf72a1776d75",
+  "latency_ms": 26912.615041946992,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名女性，深色长卷发，穿着带领子的白色碎花上衣。\"], \"environment\": \"昏暗的室内空间，背景模糊且呈现深色调，隐约可见垂直的木质或建筑结构。\", \"objects\": [\"中文字幕\"], \"physical_actions\": [\"头部微侧，目光看向画面右侧，嘴巴微张。\"], \"uncertainty\": \"背景昏暗且虚化，大部分细节被阴影遮挡；画面底部中央有字幕遮挡部分衣物。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名女性，深色长卷发，穿着带领子的白色碎花上衣。"
+      ],
+      "environment": "昏暗的室内空间，背景模糊且呈现深色调，隐约可见垂直的木质或建筑结构。",
+      "objects": [
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "头部微侧，目光看向画面右侧，嘴巴微张。"
+      ],
+      "uncertainty": "背景昏暗且虚化，大部分细节被阴影遮挡；画面底部中央有字幕遮挡部分衣物。"
+    },
+    "error": null,
+    "latency_ms": 26912.62,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14946,
+      "output_tokens": 1516,
+      "thinking_tokens": 1281,
+      "cache_read_tokens": 28426,
+      "total_tokens": 16462
+    },
+    "source_image_hash": "3147c9738cab56377439905baa768496ce1ae8601be502c553052e3c6a175fbd",
+    "inference_image_hash": "2e00d553f3fe40fd1a56519445d1558c05164ec82ede58966bacbf72a1776d75",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

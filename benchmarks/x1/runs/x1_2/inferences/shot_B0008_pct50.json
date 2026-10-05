@@ -1,0 +1,55 @@
+{
+  "frame_id": "shot_B0008_pct50",
+  "shot_id": "shot_B0008",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2f9537e58ca12a1c53e2a422448f0eb962a15e59e6da681e3085a2d890d5eed8",
+  "inference_hash": "c7f72eff8749fea0f8cd7d28807346eda930c46538e82f648c42721989a7733d",
+  "latency_ms": 36277.23983291071,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"A person with dark hair, in a light blue top and pink ruffled skirt, sitting on a bed.\", \"A person lying on a floor mat, wearing a grey top, covered by a dark plaid blanket.\"], \"environment\": \"A dimly lit bedroom interior featuring a wooden bed with striped sheets, a nightstand, a floor mat, a lamp in the background screen-left, and a dark curtained area screen-right.\", \"objects\": [\"wooden bed frame\", \"striped bedsheet\", \"nightstand\", \"framed photos\", \"floor mat\", \"dark plaid blanket\", \"pink patterned pillow\", \"lamp\", \"framed picture on wall\", \"curtains\"], \"physical_actions\": [\"Sitting on the edge of the bed and facing towards the floor.\", \"Lying supine on a mat on the floor.\"], \"uncertainty\": \"The scene is dimly lit, particularly on the screen-right side, which obscures some details. Faces and fine textures are slightly blurry due to low lighting and resolution.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "A person with dark hair, in a light blue top and pink ruffled skirt, sitting on a bed.",
+        "A person lying on a floor mat, wearing a grey top, covered by a dark plaid blanket."
+      ],
+      "environment": "A dimly lit bedroom interior featuring a wooden bed with striped sheets, a nightstand, a floor mat, a lamp in the background screen-left, and a dark curtained area screen-right.",
+      "objects": [
+        "wooden bed frame",
+        "striped bedsheet",
+        "nightstand",
+        "framed photos",
+        "floor mat",
+        "dark plaid blanket",
+        "pink patterned pillow",
+        "lamp",
+        "framed picture on wall",
+        "curtains"
+      ],
+      "physical_actions": [
+        "Sitting on the edge of the bed and facing towards the floor.",
+        "Lying supine on a mat on the floor."
+      ],
+      "uncertainty": "The scene is dimly lit, particularly on the screen-right side, which obscures some details. Faces and fine textures are slightly blurry due to low lighting and resolution."
+    },
+    "error": null,
+    "latency_ms": 36277.24,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18101,
+      "output_tokens": 1758,
+      "thinking_tokens": 1140,
+      "cache_read_tokens": 48728,
+      "total_tokens": 19859
+    },
+    "source_image_hash": "2f9537e58ca12a1c53e2a422448f0eb962a15e59e6da681e3085a2d890d5eed8",
+    "inference_image_hash": "c7f72eff8749fea0f8cd7d28807346eda930c46538e82f648c42721989a7733d",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

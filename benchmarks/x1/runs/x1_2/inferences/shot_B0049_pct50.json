@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0049_pct50",
+  "shot_id": "shot_B0049",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "0281990d065d41b681e02985948f007a571efeed093747dab37d04f7849782a0",
+  "inference_hash": "3ed790572cee3ba1e987c02f965a9d2e001dd7ca4df116231a82b184236bd7cf",
+  "latency_ms": 29585.52475005854,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"Six figures in the background wearing everyday jackets and pants, facing forward.\", \"A figure in the foreground, center, viewed from behind, wearing a long blueish robe.\", \"A figure in the foreground, screen-left, viewed from behind, wearing a dark coat.\", \"The top of a head/hat of a figure visible at the very bottom center.\", \"A partially visible figure standing on the screen-right in dark clothing.\"], \"environment\": \"Outdoor paved courtyard with light tiles and a wall. Bright sunlight casts shadows. A dark purple gradient with text overlays the right side, and a white subtitle is at the bottom left.\", \"objects\": [\"Paving tiles\", \"Bags or bundles near the crouching figures\", \"White text overlays\"], \"physical_actions\": [\"Six background figures are crouching or sitting on the ground.\", \"Foreground figures are standing.\"], \"uncertainty\": \"Right half of image is obscured by a dark purple text overlay. Faces are hidden due to figures facing away or looking down. Bottom center figure is heavily cropped.\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "Six figures in the background wearing everyday jackets and pants, facing forward.",
+        "A figure in the foreground, center, viewed from behind, wearing a long blueish robe.",
+        "A figure in the foreground, screen-left, viewed from behind, wearing a dark coat.",
+        "The top of a head/hat of a figure visible at the very bottom center.",
+        "A partially visible figure standing on the screen-right in dark clothing."
+      ],
+      "environment": "Outdoor paved courtyard with light tiles and a wall. Bright sunlight casts shadows. A dark purple gradient with text overlays the right side, and a white subtitle is at the bottom left.",
+      "objects": [
+        "Paving tiles",
+        "Bags or bundles near the crouching figures",
+        "White text overlays"
+      ],
+      "physical_actions": [
+        "Six background figures are crouching or sitting on the ground.",
+        "Foreground figures are standing."
+      ],
+      "uncertainty": "Right half of image is obscured by a dark purple text overlay. Faces are hidden due to figures facing away or looking down. Bottom center figure is heavily cropped."
+    },
+    "error": null,
+    "latency_ms": 29585.52,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21531,
+      "output_tokens": 1531,
+      "thinking_tokens": 886,
+      "cache_read_tokens": 44662,
+      "total_tokens": 23062
+    },
+    "source_image_hash": "0281990d065d41b681e02985948f007a571efeed093747dab37d04f7849782a0",
+    "inference_image_hash": "3ed790572cee3ba1e987c02f965a9d2e001dd7ca4df116231a82b184236bd7cf",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

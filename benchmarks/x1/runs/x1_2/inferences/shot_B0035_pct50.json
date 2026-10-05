@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0035_pct50",
+  "shot_id": "shot_B0035",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "495b77fbfd9a80e18da7c89c5d49f8362e3a107c1099e05cd7d07e4d4213cacc",
+  "inference_hash": "5cb5a472d12fc1f84b1c17dd41aaf1b239544a65784e6032b2c66e55fe7d7377",
+  "latency_ms": 21750.6737500662,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"位于画面左侧、背对镜头且仅露出部分后脑勺的短黑发人物\", \"位于画面中右侧、戴着黑框眼镜的短黑发人物，穿着白色翻领衬衫和深色外套\"], \"environment\": \"室内空间，背景墙面呈浅色，带有深褐色的垂直和水平方向的木质装饰线条或门框结构。\", \"objects\": [\"黑框眼镜\", \"中文字幕\"], \"physical_actions\": [\"右侧人物面朝左侧人物方向\"], \"uncertainty\": \"画面左侧人物背对镜头，面部特征被完全遮挡；画面底部中央有白色的中文字幕遮挡部分衣物细节。\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "位于画面左侧、背对镜头且仅露出部分后脑勺的短黑发人物",
+        "位于画面中右侧、戴着黑框眼镜的短黑发人物，穿着白色翻领衬衫和深色外套"
+      ],
+      "environment": "室内空间，背景墙面呈浅色，带有深褐色的垂直和水平方向的木质装饰线条或门框结构。",
+      "objects": [
+        "黑框眼镜",
+        "中文字幕"
+      ],
+      "physical_actions": [
+        "右侧人物面朝左侧人物方向"
+      ],
+      "uncertainty": "画面左侧人物背对镜头，面部特征被完全遮挡；画面底部中央有白色的中文字幕遮挡部分衣物细节。"
+    },
+    "error": null,
+    "latency_ms": 21750.67,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18719,
+      "output_tokens": 919,
+      "thinking_tokens": 642,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19638
+    },
+    "source_image_hash": "495b77fbfd9a80e18da7c89c5d49f8362e3a107c1099e05cd7d07e4d4213cacc",
+    "inference_image_hash": "5cb5a472d12fc1f84b1c17dd41aaf1b239544a65784e6032b2c66e55fe7d7377",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

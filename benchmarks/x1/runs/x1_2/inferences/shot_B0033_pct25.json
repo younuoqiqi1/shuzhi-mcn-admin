@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0033_pct25",
+  "shot_id": "shot_B0033",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "9cebb89dc929475f27eac659456a221cb3698fd30de303c4dca9143fccc930a2",
+  "inference_hash": "f771b8482ab2c4029ea3f3260967399a5ce8b5adef9b553c7bdea5f6c8258e12",
+  "latency_ms": 33485.696374904364,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"A man facing the camera, wearing a light vest over a collared shirt, with short dark hair.\", \"A person on screen-right, seen from behind and side profile, wearing glasses and a dark top.\"], \"environment\": \"An indoor setting with a dark wooden cabinet on screen-left, and a plain solid wall.\", \"objects\": [\"Dark wooden cabinet\", \"Pale mug with a dark design\", \"Dark bottle\", \"Wooden chair post\", \"Glasses\", \"Subtitles at the bottom\"], \"physical_actions\": [\"Looking toward the person on screen-right\", \"Smiling with partially open mouth\"], \"uncertainty\": \"The person on screen-right is seen from behind. White subtitle text occludes the lower portion.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "A man facing the camera, wearing a light vest over a collared shirt, with short dark hair.",
+        "A person on screen-right, seen from behind and side profile, wearing glasses and a dark top."
+      ],
+      "environment": "An indoor setting with a dark wooden cabinet on screen-left, and a plain solid wall.",
+      "objects": [
+        "Dark wooden cabinet",
+        "Pale mug with a dark design",
+        "Dark bottle",
+        "Wooden chair post",
+        "Glasses",
+        "Subtitles at the bottom"
+      ],
+      "physical_actions": [
+        "Looking toward the person on screen-right",
+        "Smiling with partially open mouth"
+      ],
+      "uncertainty": "The person on screen-right is seen from behind. White subtitle text occludes the lower portion."
+    },
+    "error": null,
+    "latency_ms": 33485.7,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17696,
+      "output_tokens": 1513,
+      "thinking_tokens": 995,
+      "cache_read_tokens": 48724,
+      "total_tokens": 19209
+    },
+    "source_image_hash": "9cebb89dc929475f27eac659456a221cb3698fd30de303c4dca9143fccc930a2",
+    "inference_image_hash": "f771b8482ab2c4029ea3f3260967399a5ce8b5adef9b553c7bdea5f6c8258e12",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

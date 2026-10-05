@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0022_pct75",
+  "shot_id": "shot_B0022",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "372e8388103ac30368b1b9e570168b8b5c1a0c0b4f803daece22269129c201b0",
+  "inference_hash": "526fdeb6adcb415c48649ce94c40da3fcd26715a8810d03767dd86e3896194ab",
+  "latency_ms": 42121.688707964495,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with dark wavy hair, wearing a light floral collared top. Gaze directed downward.\"], \"environment\": \"Dark, shadowed setting with indistinct vertical and horizontal structural lines in the background.\", \"objects\": [\"Light floral patterned collared shirt\"], \"physical_actions\": [\"Head tilted slightly downward\", \"Gazing downward\"], \"uncertainty\": \"Background is very dark, obscuring details. Person is cropped near the shoulders.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with dark wavy hair, wearing a light floral collared top. Gaze directed downward."
+      ],
+      "environment": "Dark, shadowed setting with indistinct vertical and horizontal structural lines in the background.",
+      "objects": [
+        "Light floral patterned collared shirt"
+      ],
+      "physical_actions": [
+        "Head tilted slightly downward",
+        "Gazing downward"
+      ],
+      "uncertainty": "Background is very dark, obscuring details. Person is cropped near the shoulders."
+    },
+    "error": null,
+    "latency_ms": 42121.69,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 26001,
+      "output_tokens": 1567,
+      "thinking_tokens": 1172,
+      "cache_read_tokens": 40605,
+      "total_tokens": 27568
+    },
+    "source_image_hash": "372e8388103ac30368b1b9e570168b8b5c1a0c0b4f803daece22269129c201b0",
+    "inference_image_hash": "526fdeb6adcb415c48649ce94c40da3fcd26715a8810d03767dd86e3896194ab",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

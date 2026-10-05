@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0040_pct25",
+  "shot_id": "shot_B0040",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "89572260c76f75089e602055de9a32c15992b0642ea2f2b685d4d6b4ae090d31",
+  "inference_hash": "56e7530ae5c6535d12b408eb320e3212f39274a4def1426b594d8ef71ad5ca1c",
+  "latency_ms": 22299.55004202202,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"成年男性，黑色短发，身穿白色衬衫和浅色马甲。\"], \"environment\": \"室内环境，背景为深色木质橱柜或架子，光线从画面左侧照向人物面部。\", \"objects\": [\"深色木质橱柜\", \"橱柜上的玻璃瓶\", \"底部的中文字幕\", \"白色衬衫\", \"浅色马甲\"], \"physical_actions\": [\"低头\", \"双眼微闭\", \"嘴巴微张\"], \"uncertainty\": \"背景略显昏暗且轻微失焦，画面底部有字幕遮挡。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "成年男性，黑色短发，身穿白色衬衫和浅色马甲。"
+      ],
+      "environment": "室内环境，背景为深色木质橱柜或架子，光线从画面左侧照向人物面部。",
+      "objects": [
+        "深色木质橱柜",
+        "橱柜上的玻璃瓶",
+        "底部的中文字幕",
+        "白色衬衫",
+        "浅色马甲"
+      ],
+      "physical_actions": [
+        "低头",
+        "双眼微闭",
+        "嘴巴微张"
+      ],
+      "uncertainty": "背景略显昏暗且轻微失焦，画面底部有字幕遮挡。"
+    },
+    "error": null,
+    "latency_ms": 22299.55,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18715,
+      "output_tokens": 1183,
+      "thinking_tokens": 922,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19898
+    },
+    "source_image_hash": "89572260c76f75089e602055de9a32c15992b0642ea2f2b685d4d6b4ae090d31",
+    "inference_image_hash": "56e7530ae5c6535d12b408eb320e3212f39274a4def1426b594d8ef71ad5ca1c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

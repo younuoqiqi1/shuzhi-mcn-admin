@@ -1,0 +1,49 @@
+{
+  "frame_id": "shot_B0012_pct25",
+  "shot_id": "shot_B0012",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "67541d3891e516dfba07238d76730ce405ab4fe969b0f3af0e46e79fba6a3cf0",
+  "inference_hash": "269f9979da91f86dcebf3bbbfadb1967a2c4e2732058de35dd150e2bbeef4b8a",
+  "latency_ms": 36384.05424996745,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Man on screen-left with short hair, wearing glasses, white shirt, striped tie, and dark suit.\", \"Man on screen-right with short hair, wearing glasses and a black tunic with a pen in the pocket.\"], \"environment\": \"Textured gray brick wall background with a dark vertical column or edge on the far right side.\", \"objects\": [\"glasses\", \"striped tie\", \"pen\", \"suit jacket\", \"tunic jacket\"], \"physical_actions\": [\"standing\"], \"uncertainty\": \"No visible occlusions or blurriness; clear view of the subjects.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Man on screen-left with short hair, wearing glasses, white shirt, striped tie, and dark suit.",
+        "Man on screen-right with short hair, wearing glasses and a black tunic with a pen in the pocket."
+      ],
+      "environment": "Textured gray brick wall background with a dark vertical column or edge on the far right side.",
+      "objects": [
+        "glasses",
+        "striped tie",
+        "pen",
+        "suit jacket",
+        "tunic jacket"
+      ],
+      "physical_actions": [
+        "standing"
+      ],
+      "uncertainty": "No visible occlusions or blurriness; clear view of the subjects."
+    },
+    "error": null,
+    "latency_ms": 36384.05,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18083,
+      "output_tokens": 1860,
+      "thinking_tokens": 1427,
+      "cache_read_tokens": 48728,
+      "total_tokens": 19943
+    },
+    "source_image_hash": "67541d3891e516dfba07238d76730ce405ab4fe969b0f3af0e46e79fba6a3cf0",
+    "inference_image_hash": "269f9979da91f86dcebf3bbbfadb1967a2c4e2732058de35dd150e2bbeef4b8a",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "frame_id": "shot_B0022_pct25",
+  "shot_id": "shot_B0022",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "d68a12ee64317fa369e6e68c8f10b17707c5fcf54fb921ea736b9546b8984381",
+  "inference_hash": "1502ee264924f4e21c37777a2ca94513a1bc77928684c8a37bf4860f384ead75",
+  "latency_ms": 42313.24362498708,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"One person with dark wavy hair, wearing a light-colored top with a small floral pattern.\"], \"environment\": \"Dark indoor space with dark, indistinct structural elements in the background. Directional lighting illuminates the face, leaving the background in deep shadow.\", \"objects\": [], \"physical_actions\": [\"Head tilted slightly down, mouth slightly open, eyes looking to screen-left.\"], \"uncertainty\": \"The background is very dark and out of focus, making it impossible to identify specific details.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "One person with dark wavy hair, wearing a light-colored top with a small floral pattern."
+      ],
+      "environment": "Dark indoor space with dark, indistinct structural elements in the background. Directional lighting illuminates the face, leaving the background in deep shadow.",
+      "objects": [],
+      "physical_actions": [
+        "Head tilted slightly down, mouth slightly open, eyes looking to screen-left."
+      ],
+      "uncertainty": "The background is very dark and out of focus, making it impossible to identify specific details."
+    },
+    "error": null,
+    "latency_ms": 42313.24,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 22021,
+      "output_tokens": 1970,
+      "thinking_tokens": 1299,
+      "cache_read_tokens": 44666,
+      "total_tokens": 23991
+    },
+    "source_image_hash": "d68a12ee64317fa369e6e68c8f10b17707c5fcf54fb921ea736b9546b8984381",
+    "inference_image_hash": "1502ee264924f4e21c37777a2ca94513a1bc77928684c8a37bf4860f384ead75",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "window_idx": 40,
+  "center_start": 2400.0,
+  "center_end": 2460.0,
+  "ctx_start": 2398.0,
+  "ctx_end": 2462.0,
+  "raw_cuts_count": 10,
+  "center_cuts": [
+    2402.68,
+    2409.52,
+    2412.36,
+    2424.92,
+    2439.28,
+    2442.0,
+    2448.0,
+    2451.36,
+    2457.68
+  ],
+  "scores": [
+    {
+      "time_sec": 2399.96,
+      "frame_num": 59999,
+      "content_val": 52.0716,
+      "adaptive_ratio": 46.258
+    },
+    {
+      "time_sec": 2402.68,
+      "frame_num": 60067,
+      "content_val": 49.8293,
+      "adaptive_ratio": 7.3551
+    },
+    {
+      "time_sec": 2409.52,
+      "frame_num": 60238,
+      "content_val": 49.0702,
+      "adaptive_ratio": 7.3422
+    },
+    {
+      "time_sec": 2412.36,
+      "frame_num": 60309,
+      "content_val": 54.5128,
+      "adaptive_ratio": 39.1675
+    },
+    {
+      "time_sec": 2424.92,
+      "frame_num": 60623,
+      "content_val": 64.1922,
+      "adaptive_ratio": 8.0951
+    },
+    {
+      "time_sec": 2439.28,
+      "frame_num": 60982,
+      "content_val": 51.1255,
+      "adaptive_ratio": 7.2109
+    },
+    {
+      "time_sec": 2442.0,
+      "frame_num": 61050,
+      "content_val": 47.6707,
+      "adaptive_ratio": 6.6603
+    },
+    {
+      "time_sec": 2448.0,
+      "frame_num": 61200,
+      "content_val": 42.3417,
+      "adaptive_ratio": 8.6364
+    },
+    {
+      "time_sec": 2451.36,
+      "frame_num": 61284,
+      "content_val": 46.9562,
+      "adaptive_ratio": 6.2483
+    },
+    {
+      "time_sec": 2457.68,
+      "frame_num": 61442,
+      "content_val": 44.8909,
+      "adaptive_ratio": 10.1887
+    }
+  ],
+  "params": {
+    "window_idx": 40,
+    "center_start": 2400.0,
+    "center_end": 2460.0,
+    "ctx_start": 2398.0,
+    "ctx_end": 2462.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "3a6cf55c110e6c8e30079e5ad50332aff38eaec1ad47b0986bec85cd80c15936",
+  "created_at": 1791218863.363153
+}

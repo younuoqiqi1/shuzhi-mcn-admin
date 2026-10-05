@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0041_pct50",
+  "shot_id": "shot_B0041",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "df29a5afcfca5342937bdab275f2dcd898b78f85a2848aaac701a36ffa0eb266",
+  "inference_hash": "e526a2c4397ae419f219ecd77220eed0d793318b7a85e7553f4559ea200c9b85",
+  "latency_ms": 38450.867459061556,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person with short dark hair, wearing round glasses, a white collared shirt, and a dark jacket.\"], \"environment\": \"Indoor space with a light beige wall. A framed art piece hangs on the wall in the background.\", \"objects\": [\"Glasses\", \"Framed art\", \"Jacket\", \"Shirt\", \"Subtitles\"], \"physical_actions\": [\"Looking towards screen-right\"], \"uncertainty\": \"Reflections on glasses. Background is slightly out of focus. Subtitle text overlaid at bottom.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person with short dark hair, wearing round glasses, a white collared shirt, and a dark jacket."
+      ],
+      "environment": "Indoor space with a light beige wall. A framed art piece hangs on the wall in the background.",
+      "objects": [
+        "Glasses",
+        "Framed art",
+        "Jacket",
+        "Shirt",
+        "Subtitles"
+      ],
+      "physical_actions": [
+        "Looking towards screen-right"
+      ],
+      "uncertainty": "Reflections on glasses. Background is slightly out of focus. Subtitle text overlaid at bottom."
+    },
+    "error": null,
+    "latency_ms": 38450.87,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18649,
+      "output_tokens": 2324,
+      "thinking_tokens": 1528,
+      "cache_read_tokens": 48732,
+      "total_tokens": 20973
+    },
+    "source_image_hash": "df29a5afcfca5342937bdab275f2dcd898b78f85a2848aaac701a36ffa0eb266",
+    "inference_image_hash": "e526a2c4397ae419f219ecd77220eed0d793318b7a85e7553f4559ea200c9b85",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

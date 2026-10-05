@@ -1,0 +1,43 @@
+{
+  "frame_id": "shot_B0028_pct75",
+  "shot_id": "shot_B0028",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2bdd4c0a9e73bcf39a43f0fdfa7867944574605e5a39842fc68da17f5e76b02e",
+  "inference_hash": "ac13ac1275984f2ce2511df2eeaeae8cb3047e03d0644a3d02b9b07672584563",
+  "latency_ms": 18669.259499991313,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [], \"environment\": \"A close-up view of a white surface, likely paper, with a purplish tint from the lighting. The surface contains vertical columns of handwritten black text.\", \"objects\": [\"Document\", \"Handwritten text\", \"Red seal\", \"Paper\"], \"physical_actions\": [], \"uncertainty\": \"The edges of the text are cut off by the frame. The image has a slight blur and low lighting.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [],
+      "environment": "A close-up view of a white surface, likely paper, with a purplish tint from the lighting. The surface contains vertical columns of handwritten black text.",
+      "objects": [
+        "Document",
+        "Handwritten text",
+        "Red seal",
+        "Paper"
+      ],
+      "physical_actions": [],
+      "uncertainty": "The edges of the text are cut off by the frame. The image has a slight blur and low lighting."
+    },
+    "error": null,
+    "latency_ms": 18669.26,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18552,
+      "output_tokens": 434,
+      "thinking_tokens": 220,
+      "cache_read_tokens": 24362,
+      "total_tokens": 18986
+    },
+    "source_image_hash": "2bdd4c0a9e73bcf39a43f0fdfa7867944574605e5a39842fc68da17f5e76b02e",
+    "inference_image_hash": "ac13ac1275984f2ce2511df2eeaeae8cb3047e03d0644a3d02b9b07672584563",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

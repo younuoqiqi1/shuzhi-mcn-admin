@@ -1,0 +1,50 @@
+{
+  "frame_id": "shot_B0012_pct50",
+  "shot_id": "shot_B0012",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "40e1a95bcfa61e77d014e68aef1ab0c27497f951a2c33b848873ed19e49a2ca1",
+  "inference_hash": "7af4ce3654a1af8c042dc888eb77f149bcbd3741a3b3c6be772858100c80bb03",
+  "latency_ms": 23675.142999971285,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"位于画面左侧的男子，短黑发，戴眼镜，身穿黑色西装外套、白色衬衫，系着条纹领带。\", \"位于画面右侧的男子，短黑发，戴圆框眼镜，身穿黑色中山装，内搭白领，左胸口袋别着一支金属笔。\"], \"environment\": \"背景为一面灰色的砖墙，画面最右侧边缘有一根深色垂直柱子或墙体。光线呈自然日光感。\", \"objects\": [\"眼镜\", \"领带\", \"金属笔\", \"砖墙\"], \"physical_actions\": [\"两人相对站立\", \"左侧男子面朝右侧男子，嘴巴微张\", \"右侧男子面朝左侧男子，神态平静\"], \"uncertainty\": \"画面底部中央有中文字幕“再见”，无明显遮挡或模糊现象。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "位于画面左侧的男子，短黑发，戴眼镜，身穿黑色西装外套、白色衬衫，系着条纹领带。",
+        "位于画面右侧的男子，短黑发，戴圆框眼镜，身穿黑色中山装，内搭白领，左胸口袋别着一支金属笔。"
+      ],
+      "environment": "背景为一面灰色的砖墙，画面最右侧边缘有一根深色垂直柱子或墙体。光线呈自然日光感。",
+      "objects": [
+        "眼镜",
+        "领带",
+        "金属笔",
+        "砖墙"
+      ],
+      "physical_actions": [
+        "两人相对站立",
+        "左侧男子面朝右侧男子，嘴巴微张",
+        "右侧男子面朝左侧男子，神态平静"
+      ],
+      "uncertainty": "画面底部中央有中文字幕“再见”，无明显遮挡或模糊现象。"
+    },
+    "error": null,
+    "latency_ms": 23675.14,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14733,
+      "output_tokens": 1101,
+      "thinking_tokens": 777,
+      "cache_read_tokens": 28424,
+      "total_tokens": 15834
+    },
+    "source_image_hash": "40e1a95bcfa61e77d014e68aef1ab0c27497f951a2c33b848873ed19e49a2ca1",
+    "inference_image_hash": "7af4ce3654a1af8c042dc888eb77f149bcbd3741a3b3c6be772858100c80bb03",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "window_idx": 37,
+  "center_start": 2220.0,
+  "center_end": 2280.0,
+  "ctx_start": 2218.0,
+  "ctx_end": 2282.0,
+  "raw_cuts_count": 9,
+  "center_cuts": [
+    2220.64,
+    2222.88,
+    2227.52,
+    2232.92,
+    2242.64,
+    2246.12,
+    2259.92,
+    2271.2,
+    2274.44
+  ],
+  "scores": [
+    {
+      "time_sec": 2220.64,
+      "frame_num": 55516,
+      "content_val": 56.5607,
+      "adaptive_ratio": 6.2719
+    },
+    {
+      "time_sec": 2222.88,
+      "frame_num": 55572,
+      "content_val": 48.1297,
+      "adaptive_ratio": 5.3578
+    },
+    {
+      "time_sec": 2227.52,
+      "frame_num": 55688,
+      "content_val": 47.4807,
+      "adaptive_ratio": 22.9557
+    },
+    {
+      "time_sec": 2232.92,
+      "frame_num": 55823,
+      "content_val": 47.0931,
+      "adaptive_ratio": 11.1546
+    },
+    {
+      "time_sec": 2242.64,
+      "frame_num": 56066,
+      "content_val": 50.5953,
+      "adaptive_ratio": 10.7072
+    },
+    {
+      "time_sec": 2246.12,
+      "frame_num": 56153,
+      "content_val": 47.0256,
+      "adaptive_ratio": 2.825
+    },
+    {
+      "time_sec": 2259.92,
+      "frame_num": 56498,
+      "content_val": 48.6358,
+      "adaptive_ratio": 123.3555
+    },
+    {
+      "time_sec": 2271.2,
+      "frame_num": 56780,
+      "content_val": 64.1678,
+      "adaptive_ratio": 22.8612
+    },
+    {
+      "time_sec": 2274.44,
+      "frame_num": 56861,
+      "content_val": 60.4811,
+      "adaptive_ratio": 14.929
+    }
+  ],
+  "params": {
+    "window_idx": 37,
+    "center_start": 2220.0,
+    "center_end": 2280.0,
+    "ctx_start": 2218.0,
+    "ctx_end": 2282.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "0657b13899d08ff94327b2cee1b65e4b4a565b00cd65839db091831d8c22a1c0",
+  "created_at": 1791218853.9560928
+}

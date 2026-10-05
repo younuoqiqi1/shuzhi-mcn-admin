@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0020_pct75",
+  "shot_id": "shot_B0020",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "33ca99a557eb9814438e110e69d7fe48602af96e7fcdbdaf39e2be74fb9f7e12",
+  "inference_hash": "e0c083d2004d634f6b127dfbf0aa49e1e86593270cbbf0457b981e5b9060dd01",
+  "latency_ms": 39723.68054103572,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"女性，黑色短卷发，面部可见，双耳佩戴带有白色和绿色珠子的吊坠耳环，颈部可见带有紫红色边缘的衣领\"], \"environment\": \"环境光线昏暗，背景严重虚化，屏幕右侧隐约可见深色的垂直柱状结构\", \"objects\": [\"耳环\"], \"physical_actions\": [\"头部轻微侧向屏幕左下角，视线向下低垂\"], \"uncertainty\": \"背景存在大面积过暗与严重的景深模糊，掩盖了具体的环境细节\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "女性，黑色短卷发，面部可见，双耳佩戴带有白色和绿色珠子的吊坠耳环，颈部可见带有紫红色边缘的衣领"
+      ],
+      "environment": "环境光线昏暗，背景严重虚化，屏幕右侧隐约可见深色的垂直柱状结构",
+      "objects": [
+        "耳环"
+      ],
+      "physical_actions": [
+        "头部轻微侧向屏幕左下角，视线向下低垂"
+      ],
+      "uncertainty": "背景存在大面积过暗与严重的景深模糊，掩盖了具体的环境细节"
+    },
+    "error": null,
+    "latency_ms": 39723.68,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18317,
+      "output_tokens": 2089,
+      "thinking_tokens": 1683,
+      "cache_read_tokens": 48970,
+      "total_tokens": 20406
+    },
+    "source_image_hash": "33ca99a557eb9814438e110e69d7fe48602af96e7fcdbdaf39e2be74fb9f7e12",
+    "inference_image_hash": "e0c083d2004d634f6b127dfbf0aa49e1e86593270cbbf0457b981e5b9060dd01",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

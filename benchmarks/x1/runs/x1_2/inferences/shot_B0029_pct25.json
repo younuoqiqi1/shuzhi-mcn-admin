@@ -1,0 +1,51 @@
+{
+  "frame_id": "shot_B0029_pct25",
+  "shot_id": "shot_B0029",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "93902eddc09c82fee344ffda586133346f2bd5900989661c207a7a6670faa15e",
+  "inference_hash": "b4e3e3a8f13a82ee52e7d6c17b040f31cbcb8e29a1fd44bd803a074efa523b3c",
+  "latency_ms": 27227.624666993506,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_shot\", \"characters\": [\"画面左侧人物：深色短卷发，穿着浅色格子图案的立领中式服装，面部转向画面左侧。\", \"画面右侧人物：深色盘发，穿着带有叶子/花卉图案的浅色立领中式服装，面部转向画面左侧。\"], \"environment\": \"室内空间，光线较为昏暗。背景墙面上左侧挂有竖排书法字画，右侧挂有一幅带有古装人物图案的画轴。两人身后有一道深色门框或结构。\", \"objects\": [\"浅色格子图案中式服装\", \"带有叶子图案的中式服装\", \"带有汉字的书法字画\", \"带有人物图案的挂画\", \"底部白色的中文字幕\"], \"physical_actions\": [\"两人站立\", \"画面右侧人物的右手搭在画面左侧人物的左臂上\", \"两人的视线均望向画面左侧\"], \"uncertainty\": \"环境光线较暗，导致人物脸部有阴影；画面整体分辨率偏低，存在轻微模糊。\"}",
+    "parsed_validation": {
+      "camera": "medium_shot",
+      "characters": [
+        "画面左侧人物：深色短卷发，穿着浅色格子图案的立领中式服装，面部转向画面左侧。",
+        "画面右侧人物：深色盘发，穿着带有叶子/花卉图案的浅色立领中式服装，面部转向画面左侧。"
+      ],
+      "environment": "室内空间，光线较为昏暗。背景墙面上左侧挂有竖排书法字画，右侧挂有一幅带有古装人物图案的画轴。两人身后有一道深色门框或结构。",
+      "objects": [
+        "浅色格子图案中式服装",
+        "带有叶子图案的中式服装",
+        "带有汉字的书法字画",
+        "带有人物图案的挂画",
+        "底部白色的中文字幕"
+      ],
+      "physical_actions": [
+        "两人站立",
+        "画面右侧人物的右手搭在画面左侧人物的左臂上",
+        "两人的视线均望向画面左侧"
+      ],
+      "uncertainty": "环境光线较暗，导致人物脸部有阴影；画面整体分辨率偏低，存在轻微模糊。"
+    },
+    "error": null,
+    "latency_ms": 27227.62,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14760,
+      "output_tokens": 1319,
+      "thinking_tokens": 951,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16079
+    },
+    "source_image_hash": "93902eddc09c82fee344ffda586133346f2bd5900989661c207a7a6670faa15e",
+    "inference_image_hash": "b4e3e3a8f13a82ee52e7d6c17b040f31cbcb8e29a1fd44bd803a074efa523b3c",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

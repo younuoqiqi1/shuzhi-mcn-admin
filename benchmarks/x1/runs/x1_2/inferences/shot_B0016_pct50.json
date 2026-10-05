@@ -1,0 +1,45 @@
+{
+  "frame_id": "shot_B0016_pct50",
+  "shot_id": "shot_B0016",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "58e375ad40661084f5cabafd44db18667c8d5ab14bc7510bba390f76481a86a9",
+  "inference_hash": "f5893020e980903f21b18cb273bcb01d78d4df0266a5c69ca2c708b8916d1ae7",
+  "latency_ms": 18567.85212503746,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"一名女性，深色长卷发，穿着带有细碎紫色花卉图案的浅色高领上衣。\"], \"environment\": \"室内环境，光线偏暗。背景是深色的木质护墙板或木门。\", \"objects\": [\"衣物上的盘扣\", \"屏幕底部的中文字幕\"], \"physical_actions\": [\"头部微垂，目光略微向下看，嘴唇微张。\"], \"uncertainty\": \"背景环境较暗，细节不易辨认；画面底部有字幕叠加，略微遮挡了衣物下半部分。\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "一名女性，深色长卷发，穿着带有细碎紫色花卉图案的浅色高领上衣。"
+      ],
+      "environment": "室内环境，光线偏暗。背景是深色的木质护墙板或木门。",
+      "objects": [
+        "衣物上的盘扣",
+        "屏幕底部的中文字幕"
+      ],
+      "physical_actions": [
+        "头部微垂，目光略微向下看，嘴唇微张。"
+      ],
+      "uncertainty": "背景环境较暗，细节不易辨认；画面底部有字幕叠加，略微遮挡了衣物下半部分。"
+    },
+    "error": null,
+    "latency_ms": 18567.85,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18677,
+      "output_tokens": 667,
+      "thinking_tokens": 414,
+      "cache_read_tokens": 24363,
+      "total_tokens": 19344
+    },
+    "source_image_hash": "58e375ad40661084f5cabafd44db18667c8d5ab14bc7510bba390f76481a86a9",
+    "inference_image_hash": "f5893020e980903f21b18cb273bcb01d78d4df0266a5c69ca2c708b8916d1ae7",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

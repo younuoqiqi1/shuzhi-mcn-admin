@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0016_pct25",
+  "shot_id": "shot_B0016",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "04014ed9b63477ed7405f34d9d2b296a8a7cd05387be71deaeccbc5b6eb9b843",
+  "inference_hash": "8ab563e49b4dfb00bb3ae6a94386e0bd17e3efdd59e9f07fe9ab1cf2c845b4e2",
+  "latency_ms": 31800.99333403632,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Woman with dark wavy hair, wearing a white high-collared shirt with a pink floral pattern.\"], \"environment\": \"Dark indoor setting with brown wooden panels or doors visible in the background.\", \"objects\": [\"White subtitle text overlay.\"], \"physical_actions\": [\"Looking slightly toward screen-right, mouth open.\"], \"uncertainty\": \"Subtitles slightly occlude the lower clothing.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Woman with dark wavy hair, wearing a white high-collared shirt with a pink floral pattern."
+      ],
+      "environment": "Dark indoor setting with brown wooden panels or doors visible in the background.",
+      "objects": [
+        "White subtitle text overlay."
+      ],
+      "physical_actions": [
+        "Looking slightly toward screen-right, mouth open."
+      ],
+      "uncertainty": "Subtitles slightly occlude the lower clothing."
+    },
+    "error": null,
+    "latency_ms": 31800.99,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17743,
+      "output_tokens": 1444,
+      "thinking_tokens": 1069,
+      "cache_read_tokens": 48726,
+      "total_tokens": 19187
+    },
+    "source_image_hash": "04014ed9b63477ed7405f34d9d2b296a8a7cd05387be71deaeccbc5b6eb9b843",
+    "inference_image_hash": "8ab563e49b4dfb00bb3ae6a94386e0bd17e3efdd59e9f07fe9ab1cf2c845b4e2",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

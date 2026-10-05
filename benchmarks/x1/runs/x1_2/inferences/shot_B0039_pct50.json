@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0039_pct50",
+  "shot_id": "shot_B0039",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "281e77f9dd43304c7b7981a9fddc46dbe04f3e6b7ebf4b7352b01ab239baa863",
+  "inference_hash": "aa8ddd3ab00ea548f7cdb152854d4a4fd97706e357539b1ea739d7c45e0af4a4",
+  "latency_ms": 25053.3699169755,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"一名留着黑色短发的成年男性，戴着深色圆框眼镜，身穿深色西服外套和白色开领衬衫\"], \"environment\": \"室内环境，背景为浅绿色或淡黄色的墙面。墙面偏左上方挂有一幅带边框的书法字画，画面右侧边缘可见一截深色的带雕花木质立柱或画框边缘。照明光线相对均匀。\", \"objects\": [\"深色圆框眼镜\", \"墙上的带框字画\", \"深色木制立柱/门框边缘\", \"底部白色字幕\"], \"physical_actions\": [\"面向前方略偏向屏幕右侧站立或端坐\", \"嘴巴微张，正处于说话的状态\"], \"uncertainty\": \"图像整体分辨率不高，存在一定程度的模糊和画质压缩痕迹；画面长宽比似乎被横向压缩，导致人物和物体显得细长。无明显遮挡。\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "一名留着黑色短发的成年男性，戴着深色圆框眼镜，身穿深色西服外套和白色开领衬衫"
+      ],
+      "environment": "室内环境，背景为浅绿色或淡黄色的墙面。墙面偏左上方挂有一幅带边框的书法字画，画面右侧边缘可见一截深色的带雕花木质立柱或画框边缘。照明光线相对均匀。",
+      "objects": [
+        "深色圆框眼镜",
+        "墙上的带框字画",
+        "深色木制立柱/门框边缘",
+        "底部白色字幕"
+      ],
+      "physical_actions": [
+        "面向前方略偏向屏幕右侧站立或端坐",
+        "嘴巴微张，正处于说话的状态"
+      ],
+      "uncertainty": "图像整体分辨率不高，存在一定程度的模糊和画质压缩痕迹；画面长宽比似乎被横向压缩，导致人物和物体显得细长。无明显遮挡。"
+    },
+    "error": null,
+    "latency_ms": 25053.37,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18716,
+      "output_tokens": 1089,
+      "thinking_tokens": 757,
+      "cache_read_tokens": 24362,
+      "total_tokens": 19805
+    },
+    "source_image_hash": "281e77f9dd43304c7b7981a9fddc46dbe04f3e6b7ebf4b7352b01ab239baa863",
+    "inference_image_hash": "aa8ddd3ab00ea548f7cdb152854d4a4fd97706e357539b1ea739d7c45e0af4a4",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

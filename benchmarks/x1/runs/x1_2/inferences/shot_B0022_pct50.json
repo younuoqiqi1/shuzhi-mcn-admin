@@ -1,0 +1,42 @@
+{
+  "frame_id": "shot_B0022_pct50",
+  "shot_id": "shot_B0022",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "08cfa3e5312d38d0690b6f4608cb8f8174bd914e9669504fb87df1b72c3a6688",
+  "inference_hash": "e26b40df32f9e5160f0ac077caabcb75683c17ec45b4b5fddc9003c5b184fc06",
+  "latency_ms": 32214.489166042767,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Female with pale skin, dark wavy hair, and a light-colored collared shirt with a subtle pattern.\"], \"environment\": \"Dimly lit interior with dark, blurred wooden structures or panels in the background.\", \"objects\": [], \"physical_actions\": [\"Looking downward and toward screen-left.\"], \"uncertainty\": \"Dark, out-of-focus background obscures setting. Lower body is not visible.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Female with pale skin, dark wavy hair, and a light-colored collared shirt with a subtle pattern."
+      ],
+      "environment": "Dimly lit interior with dark, blurred wooden structures or panels in the background.",
+      "objects": [],
+      "physical_actions": [
+        "Looking downward and toward screen-left."
+      ],
+      "uncertainty": "Dark, out-of-focus background obscures setting. Lower body is not visible."
+    },
+    "error": null,
+    "latency_ms": 32214.49,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21382,
+      "output_tokens": 1248,
+      "thinking_tokens": 875,
+      "cache_read_tokens": 44661,
+      "total_tokens": 22630
+    },
+    "source_image_hash": "08cfa3e5312d38d0690b6f4608cb8f8174bd914e9669504fb87df1b72c3a6688",
+    "inference_image_hash": "e26b40df32f9e5160f0ac077caabcb75683c17ec45b4b5fddc9003c5b184fc06",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

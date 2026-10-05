@@ -1,0 +1,23 @@
+{
+  "purpose": "Remove account-specific Google profile URL from network-error text only; failure status, counts, latency, model and image hashes unchanged. Original records retained locally outside Git.",
+  "files": [
+    {
+      "file": "benchmarks/x1/runs/x1_2/inferences/shot_B0031_pct25.json",
+      "replacements": 2,
+      "original_sha256": "a377a3574d5b6184fc2229364fd52d4ea17c3f724238d14602ad9fd9b1a190d8",
+      "published_sha256": "164decf14aa7f5ad8fc0edcdbff8c54941bb4a5f6b4feaa8e3cb0d66c3cf41ea"
+    },
+    {
+      "file": "benchmarks/x1/runs/x1_2/streams/agy_stream_shot_B0031_pct25.jsonl",
+      "replacements": 1,
+      "original_sha256": "3c25b433de654ac2277417b56b6d13806292a16ab98fc8fc69aa7469b733d31e",
+      "published_sha256": "3abc2187170398718493fe7abb846cb0f84d90d0deca008b6a12d4a600fe4476"
+    },
+    {
+      "file": "benchmarks/x1/reports/x1_2/metrics.json",
+      "replacements": 2,
+      "original_sha256": "5a8bdfbb2aafce00c473f8e18160c852867d9f39cb62fadd114d98661bc1eee8",
+      "published_sha256": "ce5b8f6f9489d644c6d232ad4919a1e6160c0c56286b98ae953066f145d4636e"
+    }
+  ]
+}

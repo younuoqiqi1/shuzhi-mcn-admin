@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0040_pct50",
+  "shot_id": "shot_B0040",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "e9d5feb90c1fa39ff3029538f36888c7dbaeccf1a0fba5a30ecb1d528b9e5e91",
+  "inference_hash": "0a771f8b6ab16f79dfa5f823c760742d6ca2cd812bd504bfe15c7b3408d30394",
+  "latency_ms": 28127.041583065875,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"An adult male with short black hair, wearing a white collared shirt and a beige patterned vest.\"], \"environment\": \"An indoor space with a dark wooden cabinet or shelving unit behind the character. The lighting is slightly dim.\", \"objects\": [\"Dark wooden cabinet\", \"Glass bottles\", \"Chinese subtitle text\"], \"physical_actions\": [\"Facing forward\", \"Slightly furrowing brows\"], \"uncertainty\": \"The background is out of focus and dimly lit. Subtitle text overlays the bottom of the frame.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "An adult male with short black hair, wearing a white collared shirt and a beige patterned vest."
+      ],
+      "environment": "An indoor space with a dark wooden cabinet or shelving unit behind the character. The lighting is slightly dim.",
+      "objects": [
+        "Dark wooden cabinet",
+        "Glass bottles",
+        "Chinese subtitle text"
+      ],
+      "physical_actions": [
+        "Facing forward",
+        "Slightly furrowing brows"
+      ],
+      "uncertainty": "The background is out of focus and dimly lit. Subtitle text overlays the bottom of the frame."
+    },
+    "error": null,
+    "latency_ms": 28127.04,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14803,
+      "output_tokens": 1123,
+      "thinking_tokens": 888,
+      "cache_read_tokens": 28425,
+      "total_tokens": 15926
+    },
+    "source_image_hash": "e9d5feb90c1fa39ff3029538f36888c7dbaeccf1a0fba5a30ecb1d528b9e5e91",
+    "inference_image_hash": "0a771f8b6ab16f79dfa5f823c760742d6ca2cd812bd504bfe15c7b3408d30394",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "frame_id": "shot_B0017_pct25",
+  "shot_id": "shot_B0017",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "ba8757fc9f3814b79c9b07b34f1ea8dce5e5fdffc7f4381411be38ba662036bd",
+  "inference_hash": "09b7e3636eb80a26cf79ec2da8ff6a6f488113a105fa980f46ac62759e1f2a18",
+  "latency_ms": 28345.199916977435,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"A person with dark wavy hair, wearing a light collared shirt with a floral pattern.\"], \"environment\": \"A dimly lit indoor space with a dark, blurred background featuring undefined vertical structures.\", \"objects\": [], \"physical_actions\": [\"Facing slightly towards screen-left, looking off-camera.\"], \"uncertainty\": \"Dark and blurred background. Lower body is not visible due to framing.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "A person with dark wavy hair, wearing a light collared shirt with a floral pattern."
+      ],
+      "environment": "A dimly lit indoor space with a dark, blurred background featuring undefined vertical structures.",
+      "objects": [],
+      "physical_actions": [
+        "Facing slightly towards screen-left, looking off-camera."
+      ],
+      "uncertainty": "Dark and blurred background. Lower body is not visible due to framing."
+    },
+    "error": null,
+    "latency_ms": 28345.2,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17648,
+      "output_tokens": 1217,
+      "thinking_tokens": 851,
+      "cache_read_tokens": 48725,
+      "total_tokens": 18865
+    },
+    "source_image_hash": "ba8757fc9f3814b79c9b07b34f1ea8dce5e5fdffc7f4381411be38ba662036bd",
+    "inference_image_hash": "09b7e3636eb80a26cf79ec2da8ff6a6f488113a105fa980f46ac62759e1f2a18",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

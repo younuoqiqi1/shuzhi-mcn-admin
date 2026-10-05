@@ -1,0 +1,43 @@
+{
+  "frame_id": "shot_B0021_pct25",
+  "shot_id": "shot_B0021",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "7900627188f2baf708791bc11c28f30f886f0306e38d32554b5854ff3d0e07bd",
+  "inference_hash": "f55bc49bc4d4c39511945717e346991fe4ddead181a96d7a760e84f9fa62382b",
+  "latency_ms": 33953.63733405247,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with black wavy hair, wearing a white top with small pink and purple floral patterns\"], \"environment\": \"Dark, dimly lit indoor environment with a blurry, out-of-focus background showing indistinguishable dark brown structures\", \"objects\": [], \"physical_actions\": [\"Looking towards screen-left and slightly downwards\", \"Mouth slightly open\"], \"uncertainty\": \"Background is heavily blurred due to shallow depth of field, and the environment is dark, obscuring details behind the person.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with black wavy hair, wearing a white top with small pink and purple floral patterns"
+      ],
+      "environment": "Dark, dimly lit indoor environment with a blurry, out-of-focus background showing indistinguishable dark brown structures",
+      "objects": [],
+      "physical_actions": [
+        "Looking towards screen-left and slightly downwards",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Background is heavily blurred due to shallow depth of field, and the environment is dark, obscuring details behind the person."
+    },
+    "error": null,
+    "latency_ms": 33953.64,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14825,
+      "output_tokens": 1259,
+      "thinking_tokens": 1037,
+      "cache_read_tokens": 28425,
+      "total_tokens": 16084
+    },
+    "source_image_hash": "7900627188f2baf708791bc11c28f30f886f0306e38d32554b5854ff3d0e07bd",
+    "inference_image_hash": "f55bc49bc4d4c39511945717e346991fe4ddead181a96d7a760e84f9fa62382b",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

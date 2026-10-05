@@ -1,0 +1,65 @@
+{
+  "window_idx": 21,
+  "center_start": 1260.0,
+  "center_end": 1320.0,
+  "ctx_start": 1258.0,
+  "ctx_end": 1322.0,
+  "raw_cuts_count": 6,
+  "center_cuts": [
+    1265.04,
+    1293.96,
+    1299.56,
+    1303.68,
+    1309.92,
+    1314.44
+  ],
+  "scores": [
+    {
+      "time_sec": 1265.04,
+      "frame_num": 31626,
+      "content_val": 62.0756,
+      "adaptive_ratio": 3.6873
+    },
+    {
+      "time_sec": 1293.96,
+      "frame_num": 32349,
+      "content_val": 42.1533,
+      "adaptive_ratio": 2.3315
+    },
+    {
+      "time_sec": 1299.56,
+      "frame_num": 32489,
+      "content_val": 61.9241,
+      "adaptive_ratio": 13.5612
+    },
+    {
+      "time_sec": 1303.68,
+      "frame_num": 32592,
+      "content_val": 64.124,
+      "adaptive_ratio": 21.0585
+    },
+    {
+      "time_sec": 1309.92,
+      "frame_num": 32748,
+      "content_val": 28.239,
+      "adaptive_ratio": 1.1828
+    },
+    {
+      "time_sec": 1314.44,
+      "frame_num": 32861,
+      "content_val": 56.7089,
+      "adaptive_ratio": 12.0835
+    }
+  ],
+  "params": {
+    "window_idx": 21,
+    "center_start": 1260.0,
+    "center_end": 1320.0,
+    "ctx_start": 1258.0,
+    "ctx_end": 1322.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "1c8dadba3e6c22abba670754242b8cb4e7d7444a3965d521f8c9f33d69990246",
+  "created_at": 1791218785.035946
+}

@@ -1,0 +1,47 @@
+{
+  "frame_id": "shot_B0015_pct50",
+  "shot_id": "shot_B0015",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "5e87b3943be7ea6ea9c31fa1247869b85764f0c4d5ef5649323f08919a7bc00d",
+  "inference_hash": "21899030efa1cc9041748464203c9d2e4efce9ac525b3167665ef6b09c907fe9",
+  "latency_ms": 34264.08166589681,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Woman with dark updo hair, wearing a reddish high-collared traditional top and small earrings.\"], \"environment\": \"Dimly lit indoor setting with a dark wooden staircase and balusters in the background.\", \"objects\": [\"earrings\", \"wooden balusters\", \"staircase\"], \"physical_actions\": [\"Looking downwards towards screen-right\", \"Mouth slightly open\"], \"uncertainty\": \"Background is dark and blurry, limiting visibility.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Woman with dark updo hair, wearing a reddish high-collared traditional top and small earrings."
+      ],
+      "environment": "Dimly lit indoor setting with a dark wooden staircase and balusters in the background.",
+      "objects": [
+        "earrings",
+        "wooden balusters",
+        "staircase"
+      ],
+      "physical_actions": [
+        "Looking downwards towards screen-right",
+        "Mouth slightly open"
+      ],
+      "uncertainty": "Background is dark and blurry, limiting visibility."
+    },
+    "error": null,
+    "latency_ms": 34264.08,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21471,
+      "output_tokens": 1272,
+      "thinking_tokens": 908,
+      "cache_read_tokens": 44661,
+      "total_tokens": 22743
+    },
+    "source_image_hash": "5e87b3943be7ea6ea9c31fa1247869b85764f0c4d5ef5649323f08919a7bc00d",
+    "inference_image_hash": "21899030efa1cc9041748464203c9d2e4efce9ac525b3167665ef6b09c907fe9",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

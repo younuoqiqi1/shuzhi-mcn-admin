@@ -1,0 +1,52 @@
+{
+  "frame_id": "shot_B0033_pct50",
+  "shot_id": "shot_B0033",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "dd6ea767b796b6cdc9bab773e22cbac242f4c77fab9c880aaf5d8fa5b7584d83",
+  "inference_hash": "89efeacfc182c14e95ba4ad47981047a9262742739dc1833ca78857744c486f4",
+  "latency_ms": 26487.91450005956,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"Man on screen-left with short black hair, wearing a white collared shirt, dark tie, and tan vest.\", \"Person on screen-right, seen from behind, with short dark hair, wearing glasses and a dark garment.\"], \"environment\": \"Indoor room with dim lighting. Features a dark wooden cabinet on screen-left and a dual-toned wall (dark lower half, lighter upper half) in the background.\", \"objects\": [\"White collared shirt\", \"Tan vest\", \"Dark tie\", \"Glasses\", \"Dark wooden cabinet\", \"White ceramic container with dark design\", \"Dark bottle\", \"Wooden chair with decorative post\"], \"physical_actions\": [\"Man on screen-left is facing screen-right with an open-mouthed smile.\"], \"uncertainty\": \"Face and body of person on screen-right are mostly obscured. Background on screen-left is very dark, obscuring details of objects on the shelves.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "Man on screen-left with short black hair, wearing a white collared shirt, dark tie, and tan vest.",
+        "Person on screen-right, seen from behind, with short dark hair, wearing glasses and a dark garment."
+      ],
+      "environment": "Indoor room with dim lighting. Features a dark wooden cabinet on screen-left and a dual-toned wall (dark lower half, lighter upper half) in the background.",
+      "objects": [
+        "White collared shirt",
+        "Tan vest",
+        "Dark tie",
+        "Glasses",
+        "Dark wooden cabinet",
+        "White ceramic container with dark design",
+        "Dark bottle",
+        "Wooden chair with decorative post"
+      ],
+      "physical_actions": [
+        "Man on screen-left is facing screen-right with an open-mouthed smile."
+      ],
+      "uncertainty": "Face and body of person on screen-right are mostly obscured. Background on screen-left is very dark, obscuring details of objects on the shelves."
+    },
+    "error": null,
+    "latency_ms": 26487.91,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14714,
+      "output_tokens": 1552,
+      "thinking_tokens": 1224,
+      "cache_read_tokens": 28424,
+      "total_tokens": 16266
+    },
+    "source_image_hash": "dd6ea767b796b6cdc9bab773e22cbac242f4c77fab9c880aaf5d8fa5b7584d83",
+    "inference_image_hash": "89efeacfc182c14e95ba4ad47981047a9262742739dc1833ca78857744c486f4",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

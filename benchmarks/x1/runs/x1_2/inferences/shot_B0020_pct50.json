@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0020_pct50",
+  "shot_id": "shot_B0020",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "f3f35c7c998438cac43d3f49f2e9f0d0e01fb12f38da6ccc8f55c916e95e6e88",
+  "inference_hash": "1458499cbc4456fdf988a432ee514b4add737ccbd33941069aede9dc9856b5fd",
+  "latency_ms": 36160.49354104325,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"One person, short dark wavy hair, wearing dangle earrings and a garment with a magenta collar.\"], \"environment\": \"Dark, blurred background with out-of-focus vertical wooden-like structures.\", \"objects\": [\"Earrings\"], \"physical_actions\": [\"Head angled to screen-left, eyes looking down and to screen-left.\"], \"uncertainty\": \"Background is highly blurred and dark. Only head and part of neck/shoulders are visible.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "One person, short dark wavy hair, wearing dangle earrings and a garment with a magenta collar."
+      ],
+      "environment": "Dark, blurred background with out-of-focus vertical wooden-like structures.",
+      "objects": [
+        "Earrings"
+      ],
+      "physical_actions": [
+        "Head angled to screen-left, eyes looking down and to screen-left."
+      ],
+      "uncertainty": "Background is highly blurred and dark. Only head and part of neck/shoulders are visible."
+    },
+    "error": null,
+    "latency_ms": 36160.49,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 25282,
+      "output_tokens": 1745,
+      "thinking_tokens": 1234,
+      "cache_read_tokens": 65449,
+      "total_tokens": 27027
+    },
+    "source_image_hash": "f3f35c7c998438cac43d3f49f2e9f0d0e01fb12f38da6ccc8f55c916e95e6e88",
+    "inference_image_hash": "1458499cbc4456fdf988a432ee514b4add737ccbd33941069aede9dc9856b5fd",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

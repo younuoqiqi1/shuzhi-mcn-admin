@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0027_pct25",
+  "shot_id": "shot_B0027",
+  "pct": 25,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "2e7023f3a86a8ceb87796b5c1e816831b4f9c4462bef343b0529ed9320d8cc97",
+  "inference_hash": "06499ac69aa13c1cfc76fb9b6c662b55a4d6e7125cfd9a26f82af282f371c9bb",
+  "latency_ms": 33176.11204099376,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"A man wearing round glasses, a dark jacket, and a white shirt, looking towards the screen-left.\", \"A partially visible figure on the screen-left wearing a white floral garment.\"], \"environment\": \"Dimly lit indoor setting. The background has a light-colored wall with a dark vertical object and out-of-focus dark furniture.\", \"objects\": [\"Wire-rimmed glasses\", \"Dark jacket\", \"White collared shirt\", \"Floral patterned garment\"], \"physical_actions\": [\"The man is looking up towards the screen-left with a slightly open mouth.\"], \"uncertainty\": \"The figure on the screen-left is heavily occluded by the frame edge. The background is out of focus.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "A man wearing round glasses, a dark jacket, and a white shirt, looking towards the screen-left.",
+        "A partially visible figure on the screen-left wearing a white floral garment."
+      ],
+      "environment": "Dimly lit indoor setting. The background has a light-colored wall with a dark vertical object and out-of-focus dark furniture.",
+      "objects": [
+        "Wire-rimmed glasses",
+        "Dark jacket",
+        "White collared shirt",
+        "Floral patterned garment"
+      ],
+      "physical_actions": [
+        "The man is looking up towards the screen-left with a slightly open mouth."
+      ],
+      "uncertainty": "The figure on the screen-left is heavily occluded by the frame edge. The background is out of focus."
+    },
+    "error": null,
+    "latency_ms": 33176.11,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17737,
+      "output_tokens": 1444,
+      "thinking_tokens": 913,
+      "cache_read_tokens": 48725,
+      "total_tokens": 19181
+    },
+    "source_image_hash": "2e7023f3a86a8ceb87796b5c1e816831b4f9c4462bef343b0529ed9320d8cc97",
+    "inference_image_hash": "06499ac69aa13c1cfc76fb9b6c662b55a4d6e7125cfd9a26f82af282f371c9bb",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

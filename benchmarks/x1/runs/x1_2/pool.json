@@ -1,0 +1,3064 @@
+{
+  "batch_id": "X1.2",
+  "total_windows_merged": 46,
+  "total_real_cuts": 508,
+  "total_shots_in_pool": 509,
+  "total_duration": 2702.013243,
+  "shots": [
+    {
+      "pool_shot_id": "pool_00000",
+      "start": 0.0,
+      "end": 1.04,
+      "duration": 1.04
+    },
+    {
+      "pool_shot_id": "pool_00001",
+      "start": 1.04,
+      "end": 1.48,
+      "duration": 0.44
+    },
+    {
+      "pool_shot_id": "pool_00002",
+      "start": 1.48,
+      "end": 1.72,
+      "duration": 0.24
+    },
+    {
+      "pool_shot_id": "pool_00003",
+      "start": 1.72,
+      "end": 1.84,
+      "duration": 0.12
+    },
+    {
+      "pool_shot_id": "pool_00004",
+      "start": 1.84,
+      "end": 2.16,
+      "duration": 0.32
+    },
+    {
+      "pool_shot_id": "pool_00005",
+      "start": 2.16,
+      "end": 2.44,
+      "duration": 0.28
+    },
+    {
+      "pool_shot_id": "pool_00006",
+      "start": 2.44,
+      "end": 2.8,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00007",
+      "start": 2.8,
+      "end": 3.04,
+      "duration": 0.24
+    },
+    {
+      "pool_shot_id": "pool_00008",
+      "start": 3.04,
+      "end": 3.2,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00009",
+      "start": 3.2,
+      "end": 5.12,
+      "duration": 1.92
+    },
+    {
+      "pool_shot_id": "pool_00010",
+      "start": 5.12,
+      "end": 5.64,
+      "duration": 0.52
+    },
+    {
+      "pool_shot_id": "pool_00011",
+      "start": 5.64,
+      "end": 6.44,
+      "duration": 0.8
+    },
+    {
+      "pool_shot_id": "pool_00012",
+      "start": 6.44,
+      "end": 6.6,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00013",
+      "start": 6.6,
+      "end": 6.72,
+      "duration": 0.12
+    },
+    {
+      "pool_shot_id": "pool_00014",
+      "start": 6.72,
+      "end": 6.84,
+      "duration": 0.12
+    },
+    {
+      "pool_shot_id": "pool_00015",
+      "start": 6.84,
+      "end": 7.2,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00016",
+      "start": 7.2,
+      "end": 7.56,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00017",
+      "start": 7.56,
+      "end": 9.56,
+      "duration": 2.0
+    },
+    {
+      "pool_shot_id": "pool_00018",
+      "start": 9.56,
+      "end": 10.2,
+      "duration": 0.64
+    },
+    {
+      "pool_shot_id": "pool_00019",
+      "start": 10.2,
+      "end": 10.36,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00020",
+      "start": 10.36,
+      "end": 10.84,
+      "duration": 0.48
+    },
+    {
+      "pool_shot_id": "pool_00021",
+      "start": 10.84,
+      "end": 13.32,
+      "duration": 2.48
+    },
+    {
+      "pool_shot_id": "pool_00022",
+      "start": 13.32,
+      "end": 14.8,
+      "duration": 1.48
+    },
+    {
+      "pool_shot_id": "pool_00023",
+      "start": 14.8,
+      "end": 17.8,
+      "duration": 3.0
+    },
+    {
+      "pool_shot_id": "pool_00024",
+      "start": 17.8,
+      "end": 22.24,
+      "duration": 4.44
+    },
+    {
+      "pool_shot_id": "pool_00025",
+      "start": 22.24,
+      "end": 22.36,
+      "duration": 0.12
+    },
+    {
+      "pool_shot_id": "pool_00026",
+      "start": 22.36,
+      "end": 23.16,
+      "duration": 0.8
+    },
+    {
+      "pool_shot_id": "pool_00027",
+      "start": 23.16,
+      "end": 23.52,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00028",
+      "start": 23.52,
+      "end": 26.0,
+      "duration": 2.48
+    },
+    {
+      "pool_shot_id": "pool_00029",
+      "start": 26.0,
+      "end": 27.44,
+      "duration": 1.44
+    },
+    {
+      "pool_shot_id": "pool_00030",
+      "start": 27.44,
+      "end": 35.96,
+      "duration": 8.52
+    },
+    {
+      "pool_shot_id": "pool_00031",
+      "start": 35.96,
+      "end": 41.44,
+      "duration": 5.48
+    },
+    {
+      "pool_shot_id": "pool_00032",
+      "start": 41.44,
+      "end": 43.0,
+      "duration": 1.56
+    },
+    {
+      "pool_shot_id": "pool_00033",
+      "start": 43.0,
+      "end": 44.0,
+      "duration": 1.0
+    },
+    {
+      "pool_shot_id": "pool_00034",
+      "start": 44.0,
+      "end": 47.64,
+      "duration": 3.64
+    },
+    {
+      "pool_shot_id": "pool_00035",
+      "start": 47.64,
+      "end": 49.4,
+      "duration": 1.76
+    },
+    {
+      "pool_shot_id": "pool_00036",
+      "start": 49.4,
+      "end": 50.8,
+      "duration": 1.4
+    },
+    {
+      "pool_shot_id": "pool_00037",
+      "start": 50.8,
+      "end": 51.68,
+      "duration": 0.88
+    },
+    {
+      "pool_shot_id": "pool_00038",
+      "start": 51.68,
+      "end": 54.92,
+      "duration": 3.24
+    },
+    {
+      "pool_shot_id": "pool_00039",
+      "start": 54.92,
+      "end": 55.64,
+      "duration": 0.72
+    },
+    {
+      "pool_shot_id": "pool_00040",
+      "start": 55.64,
+      "end": 56.32,
+      "duration": 0.68
+    },
+    {
+      "pool_shot_id": "pool_00041",
+      "start": 56.32,
+      "end": 57.12,
+      "duration": 0.8
+    },
+    {
+      "pool_shot_id": "pool_00042",
+      "start": 57.12,
+      "end": 57.96,
+      "duration": 0.84
+    },
+    {
+      "pool_shot_id": "pool_00043",
+      "start": 57.96,
+      "end": 58.16,
+      "duration": 0.2
+    },
+    {
+      "pool_shot_id": "pool_00044",
+      "start": 58.16,
+      "end": 58.36,
+      "duration": 0.2
+    },
+    {
+      "pool_shot_id": "pool_00045",
+      "start": 58.36,
+      "end": 60.44,
+      "duration": 2.08
+    },
+    {
+      "pool_shot_id": "pool_00046",
+      "start": 60.44,
+      "end": 60.88,
+      "duration": 0.44
+    },
+    {
+      "pool_shot_id": "pool_00047",
+      "start": 60.88,
+      "end": 62.36,
+      "duration": 1.48
+    },
+    {
+      "pool_shot_id": "pool_00048",
+      "start": 62.36,
+      "end": 62.72,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00049",
+      "start": 62.72,
+      "end": 63.08,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00050",
+      "start": 63.08,
+      "end": 63.56,
+      "duration": 0.48
+    },
+    {
+      "pool_shot_id": "pool_00051",
+      "start": 63.56,
+      "end": 64.16,
+      "duration": 0.6
+    },
+    {
+      "pool_shot_id": "pool_00052",
+      "start": 64.16,
+      "end": 65.84,
+      "duration": 1.68
+    },
+    {
+      "pool_shot_id": "pool_00053",
+      "start": 65.84,
+      "end": 66.36,
+      "duration": 0.52
+    },
+    {
+      "pool_shot_id": "pool_00054",
+      "start": 66.36,
+      "end": 66.84,
+      "duration": 0.48
+    },
+    {
+      "pool_shot_id": "pool_00055",
+      "start": 66.84,
+      "end": 67.2,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00056",
+      "start": 67.2,
+      "end": 68.12,
+      "duration": 0.92
+    },
+    {
+      "pool_shot_id": "pool_00057",
+      "start": 68.12,
+      "end": 68.96,
+      "duration": 0.84
+    },
+    {
+      "pool_shot_id": "pool_00058",
+      "start": 68.96,
+      "end": 70.2,
+      "duration": 1.24
+    },
+    {
+      "pool_shot_id": "pool_00059",
+      "start": 70.2,
+      "end": 72.2,
+      "duration": 2.0
+    },
+    {
+      "pool_shot_id": "pool_00060",
+      "start": 72.2,
+      "end": 73.32,
+      "duration": 1.12
+    },
+    {
+      "pool_shot_id": "pool_00061",
+      "start": 73.32,
+      "end": 73.64,
+      "duration": 0.32
+    },
+    {
+      "pool_shot_id": "pool_00062",
+      "start": 73.64,
+      "end": 73.84,
+      "duration": 0.2
+    },
+    {
+      "pool_shot_id": "pool_00063",
+      "start": 73.84,
+      "end": 75.28,
+      "duration": 1.44
+    },
+    {
+      "pool_shot_id": "pool_00064",
+      "start": 75.28,
+      "end": 76.08,
+      "duration": 0.8
+    },
+    {
+      "pool_shot_id": "pool_00065",
+      "start": 76.08,
+      "end": 76.24,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00066",
+      "start": 76.24,
+      "end": 76.36,
+      "duration": 0.12
+    },
+    {
+      "pool_shot_id": "pool_00067",
+      "start": 76.36,
+      "end": 76.52,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00068",
+      "start": 76.52,
+      "end": 78.0,
+      "duration": 1.48
+    },
+    {
+      "pool_shot_id": "pool_00069",
+      "start": 78.0,
+      "end": 78.36,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00070",
+      "start": 78.36,
+      "end": 79.12,
+      "duration": 0.76
+    },
+    {
+      "pool_shot_id": "pool_00071",
+      "start": 79.12,
+      "end": 79.4,
+      "duration": 0.28
+    },
+    {
+      "pool_shot_id": "pool_00072",
+      "start": 79.4,
+      "end": 82.8,
+      "duration": 3.4
+    },
+    {
+      "pool_shot_id": "pool_00073",
+      "start": 82.8,
+      "end": 91.88,
+      "duration": 9.08
+    },
+    {
+      "pool_shot_id": "pool_00074",
+      "start": 91.88,
+      "end": 93.8,
+      "duration": 1.92
+    },
+    {
+      "pool_shot_id": "pool_00075",
+      "start": 93.8,
+      "end": 100.0,
+      "duration": 6.2
+    },
+    {
+      "pool_shot_id": "pool_00076",
+      "start": 100.0,
+      "end": 137.84,
+      "duration": 37.84
+    },
+    {
+      "pool_shot_id": "pool_00077",
+      "start": 137.84,
+      "end": 143.52,
+      "duration": 5.68
+    },
+    {
+      "pool_shot_id": "pool_00078",
+      "start": 143.52,
+      "end": 147.28,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00079",
+      "start": 147.28,
+      "end": 149.84,
+      "duration": 2.56
+    },
+    {
+      "pool_shot_id": "pool_00080",
+      "start": 149.84,
+      "end": 162.4,
+      "duration": 12.56
+    },
+    {
+      "pool_shot_id": "pool_00081",
+      "start": 162.4,
+      "end": 173.08,
+      "duration": 10.68
+    },
+    {
+      "pool_shot_id": "pool_00082",
+      "start": 173.08,
+      "end": 192.6,
+      "duration": 19.52
+    },
+    {
+      "pool_shot_id": "pool_00083",
+      "start": 192.6,
+      "end": 198.16,
+      "duration": 5.56
+    },
+    {
+      "pool_shot_id": "pool_00084",
+      "start": 198.16,
+      "end": 212.48,
+      "duration": 14.32
+    },
+    {
+      "pool_shot_id": "pool_00085",
+      "start": 212.48,
+      "end": 218.76,
+      "duration": 6.28
+    },
+    {
+      "pool_shot_id": "pool_00086",
+      "start": 218.76,
+      "end": 225.64,
+      "duration": 6.88
+    },
+    {
+      "pool_shot_id": "pool_00087",
+      "start": 225.64,
+      "end": 231.44,
+      "duration": 5.8
+    },
+    {
+      "pool_shot_id": "pool_00088",
+      "start": 231.44,
+      "end": 239.84,
+      "duration": 8.4
+    },
+    {
+      "pool_shot_id": "pool_00089",
+      "start": 239.84,
+      "end": 248.72,
+      "duration": 8.88
+    },
+    {
+      "pool_shot_id": "pool_00090",
+      "start": 248.72,
+      "end": 262.24,
+      "duration": 13.52
+    },
+    {
+      "pool_shot_id": "pool_00091",
+      "start": 262.24,
+      "end": 266.4,
+      "duration": 4.16
+    },
+    {
+      "pool_shot_id": "pool_00092",
+      "start": 266.4,
+      "end": 278.96,
+      "duration": 12.56
+    },
+    {
+      "pool_shot_id": "pool_00093",
+      "start": 278.96,
+      "end": 289.72,
+      "duration": 10.76
+    },
+    {
+      "pool_shot_id": "pool_00094",
+      "start": 289.72,
+      "end": 292.0,
+      "duration": 2.28
+    },
+    {
+      "pool_shot_id": "pool_00095",
+      "start": 292.0,
+      "end": 299.96,
+      "duration": 7.96
+    },
+    {
+      "pool_shot_id": "pool_00096",
+      "start": 299.96,
+      "end": 305.96,
+      "duration": 6.0
+    },
+    {
+      "pool_shot_id": "pool_00097",
+      "start": 305.96,
+      "end": 310.96,
+      "duration": 5.0
+    },
+    {
+      "pool_shot_id": "pool_00098",
+      "start": 310.96,
+      "end": 315.0,
+      "duration": 4.04
+    },
+    {
+      "pool_shot_id": "pool_00099",
+      "start": 315.0,
+      "end": 320.64,
+      "duration": 5.64
+    },
+    {
+      "pool_shot_id": "pool_00100",
+      "start": 320.64,
+      "end": 324.2,
+      "duration": 3.56
+    },
+    {
+      "pool_shot_id": "pool_00101",
+      "start": 324.2,
+      "end": 327.0,
+      "duration": 2.8
+    },
+    {
+      "pool_shot_id": "pool_00102",
+      "start": 327.0,
+      "end": 333.36,
+      "duration": 6.36
+    },
+    {
+      "pool_shot_id": "pool_00103",
+      "start": 333.36,
+      "end": 338.4,
+      "duration": 5.04
+    },
+    {
+      "pool_shot_id": "pool_00104",
+      "start": 338.4,
+      "end": 342.96,
+      "duration": 4.56
+    },
+    {
+      "pool_shot_id": "pool_00105",
+      "start": 342.96,
+      "end": 350.6,
+      "duration": 7.64
+    },
+    {
+      "pool_shot_id": "pool_00106",
+      "start": 350.6,
+      "end": 357.96,
+      "duration": 7.36
+    },
+    {
+      "pool_shot_id": "pool_00107",
+      "start": 357.96,
+      "end": 360.6,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00108",
+      "start": 360.6,
+      "end": 363.64,
+      "duration": 3.04
+    },
+    {
+      "pool_shot_id": "pool_00109",
+      "start": 363.64,
+      "end": 366.28,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00110",
+      "start": 366.28,
+      "end": 370.0,
+      "duration": 3.72
+    },
+    {
+      "pool_shot_id": "pool_00111",
+      "start": 370.0,
+      "end": 391.76,
+      "duration": 21.76
+    },
+    {
+      "pool_shot_id": "pool_00112",
+      "start": 391.76,
+      "end": 421.24,
+      "duration": 29.48
+    },
+    {
+      "pool_shot_id": "pool_00113",
+      "start": 421.24,
+      "end": 427.0,
+      "duration": 5.76
+    },
+    {
+      "pool_shot_id": "pool_00114",
+      "start": 427.0,
+      "end": 432.48,
+      "duration": 5.48
+    },
+    {
+      "pool_shot_id": "pool_00115",
+      "start": 432.48,
+      "end": 435.12,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00116",
+      "start": 435.12,
+      "end": 438.56,
+      "duration": 3.44
+    },
+    {
+      "pool_shot_id": "pool_00117",
+      "start": 438.56,
+      "end": 445.52,
+      "duration": 6.96
+    },
+    {
+      "pool_shot_id": "pool_00118",
+      "start": 445.52,
+      "end": 447.8,
+      "duration": 2.28
+    },
+    {
+      "pool_shot_id": "pool_00119",
+      "start": 447.8,
+      "end": 449.24,
+      "duration": 1.44
+    },
+    {
+      "pool_shot_id": "pool_00120",
+      "start": 449.24,
+      "end": 457.68,
+      "duration": 8.44
+    },
+    {
+      "pool_shot_id": "pool_00121",
+      "start": 457.68,
+      "end": 457.84,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00122",
+      "start": 457.84,
+      "end": 462.48,
+      "duration": 4.64
+    },
+    {
+      "pool_shot_id": "pool_00123",
+      "start": 462.48,
+      "end": 468.16,
+      "duration": 5.68
+    },
+    {
+      "pool_shot_id": "pool_00124",
+      "start": 468.16,
+      "end": 471.56,
+      "duration": 3.4
+    },
+    {
+      "pool_shot_id": "pool_00125",
+      "start": 471.56,
+      "end": 475.44,
+      "duration": 3.88
+    },
+    {
+      "pool_shot_id": "pool_00126",
+      "start": 475.44,
+      "end": 490.48,
+      "duration": 15.04
+    },
+    {
+      "pool_shot_id": "pool_00127",
+      "start": 490.48,
+      "end": 516.16,
+      "duration": 25.68
+    },
+    {
+      "pool_shot_id": "pool_00128",
+      "start": 516.16,
+      "end": 539.4,
+      "duration": 23.24
+    },
+    {
+      "pool_shot_id": "pool_00129",
+      "start": 539.4,
+      "end": 545.28,
+      "duration": 5.88
+    },
+    {
+      "pool_shot_id": "pool_00130",
+      "start": 545.28,
+      "end": 549.84,
+      "duration": 4.56
+    },
+    {
+      "pool_shot_id": "pool_00131",
+      "start": 549.84,
+      "end": 554.48,
+      "duration": 4.64
+    },
+    {
+      "pool_shot_id": "pool_00132",
+      "start": 554.48,
+      "end": 556.52,
+      "duration": 2.04
+    },
+    {
+      "pool_shot_id": "pool_00133",
+      "start": 556.52,
+      "end": 573.24,
+      "duration": 16.72
+    },
+    {
+      "pool_shot_id": "pool_00134",
+      "start": 573.24,
+      "end": 583.84,
+      "duration": 10.6
+    },
+    {
+      "pool_shot_id": "pool_00135",
+      "start": 583.84,
+      "end": 586.36,
+      "duration": 2.52
+    },
+    {
+      "pool_shot_id": "pool_00136",
+      "start": 586.36,
+      "end": 590.44,
+      "duration": 4.08
+    },
+    {
+      "pool_shot_id": "pool_00137",
+      "start": 590.44,
+      "end": 598.68,
+      "duration": 8.24
+    },
+    {
+      "pool_shot_id": "pool_00138",
+      "start": 598.68,
+      "end": 610.84,
+      "duration": 12.16
+    },
+    {
+      "pool_shot_id": "pool_00139",
+      "start": 610.84,
+      "end": 623.52,
+      "duration": 12.68
+    },
+    {
+      "pool_shot_id": "pool_00140",
+      "start": 623.52,
+      "end": 634.28,
+      "duration": 10.76
+    },
+    {
+      "pool_shot_id": "pool_00141",
+      "start": 634.28,
+      "end": 639.84,
+      "duration": 5.56
+    },
+    {
+      "pool_shot_id": "pool_00142",
+      "start": 639.84,
+      "end": 645.56,
+      "duration": 5.72
+    },
+    {
+      "pool_shot_id": "pool_00143",
+      "start": 645.56,
+      "end": 651.32,
+      "duration": 5.76
+    },
+    {
+      "pool_shot_id": "pool_00144",
+      "start": 651.32,
+      "end": 653.08,
+      "duration": 1.76
+    },
+    {
+      "pool_shot_id": "pool_00145",
+      "start": 653.08,
+      "end": 654.72,
+      "duration": 1.64
+    },
+    {
+      "pool_shot_id": "pool_00146",
+      "start": 654.72,
+      "end": 656.32,
+      "duration": 1.6
+    },
+    {
+      "pool_shot_id": "pool_00147",
+      "start": 656.32,
+      "end": 657.48,
+      "duration": 1.16
+    },
+    {
+      "pool_shot_id": "pool_00148",
+      "start": 657.48,
+      "end": 660.88,
+      "duration": 3.4
+    },
+    {
+      "pool_shot_id": "pool_00149",
+      "start": 660.88,
+      "end": 664.4,
+      "duration": 3.52
+    },
+    {
+      "pool_shot_id": "pool_00150",
+      "start": 664.4,
+      "end": 672.32,
+      "duration": 7.92
+    },
+    {
+      "pool_shot_id": "pool_00151",
+      "start": 672.32,
+      "end": 696.8,
+      "duration": 24.48
+    },
+    {
+      "pool_shot_id": "pool_00152",
+      "start": 696.8,
+      "end": 714.64,
+      "duration": 17.84
+    },
+    {
+      "pool_shot_id": "pool_00153",
+      "start": 714.64,
+      "end": 727.08,
+      "duration": 12.44
+    },
+    {
+      "pool_shot_id": "pool_00154",
+      "start": 727.08,
+      "end": 756.68,
+      "duration": 29.6
+    },
+    {
+      "pool_shot_id": "pool_00155",
+      "start": 756.68,
+      "end": 759.52,
+      "duration": 2.84
+    },
+    {
+      "pool_shot_id": "pool_00156",
+      "start": 759.52,
+      "end": 761.2,
+      "duration": 1.68
+    },
+    {
+      "pool_shot_id": "pool_00157",
+      "start": 761.2,
+      "end": 767.0,
+      "duration": 5.8
+    },
+    {
+      "pool_shot_id": "pool_00158",
+      "start": 767.0,
+      "end": 775.68,
+      "duration": 8.68
+    },
+    {
+      "pool_shot_id": "pool_00159",
+      "start": 775.68,
+      "end": 779.36,
+      "duration": 3.68
+    },
+    {
+      "pool_shot_id": "pool_00160",
+      "start": 779.36,
+      "end": 785.24,
+      "duration": 5.88
+    },
+    {
+      "pool_shot_id": "pool_00161",
+      "start": 785.24,
+      "end": 801.72,
+      "duration": 16.48
+    },
+    {
+      "pool_shot_id": "pool_00162",
+      "start": 801.72,
+      "end": 803.84,
+      "duration": 2.12
+    },
+    {
+      "pool_shot_id": "pool_00163",
+      "start": 803.84,
+      "end": 814.72,
+      "duration": 10.88
+    },
+    {
+      "pool_shot_id": "pool_00164",
+      "start": 814.72,
+      "end": 834.68,
+      "duration": 19.96
+    },
+    {
+      "pool_shot_id": "pool_00165",
+      "start": 834.68,
+      "end": 838.64,
+      "duration": 3.96
+    },
+    {
+      "pool_shot_id": "pool_00166",
+      "start": 838.64,
+      "end": 840.88,
+      "duration": 2.24
+    },
+    {
+      "pool_shot_id": "pool_00167",
+      "start": 840.88,
+      "end": 843.48,
+      "duration": 2.6
+    },
+    {
+      "pool_shot_id": "pool_00168",
+      "start": 843.48,
+      "end": 850.72,
+      "duration": 7.24
+    },
+    {
+      "pool_shot_id": "pool_00169",
+      "start": 850.72,
+      "end": 855.6,
+      "duration": 4.88
+    },
+    {
+      "pool_shot_id": "pool_00170",
+      "start": 855.6,
+      "end": 860.92,
+      "duration": 5.32
+    },
+    {
+      "pool_shot_id": "pool_00171",
+      "start": 860.92,
+      "end": 863.48,
+      "duration": 2.56
+    },
+    {
+      "pool_shot_id": "pool_00172",
+      "start": 863.48,
+      "end": 870.92,
+      "duration": 7.44
+    },
+    {
+      "pool_shot_id": "pool_00173",
+      "start": 870.92,
+      "end": 876.32,
+      "duration": 5.4
+    },
+    {
+      "pool_shot_id": "pool_00174",
+      "start": 876.32,
+      "end": 879.08,
+      "duration": 2.76
+    },
+    {
+      "pool_shot_id": "pool_00175",
+      "start": 879.08,
+      "end": 884.8,
+      "duration": 5.72
+    },
+    {
+      "pool_shot_id": "pool_00176",
+      "start": 884.8,
+      "end": 888.12,
+      "duration": 3.32
+    },
+    {
+      "pool_shot_id": "pool_00177",
+      "start": 888.12,
+      "end": 899.92,
+      "duration": 11.8
+    },
+    {
+      "pool_shot_id": "pool_00178",
+      "start": 899.92,
+      "end": 910.2,
+      "duration": 10.28
+    },
+    {
+      "pool_shot_id": "pool_00179",
+      "start": 910.2,
+      "end": 913.0,
+      "duration": 2.8
+    },
+    {
+      "pool_shot_id": "pool_00180",
+      "start": 913.0,
+      "end": 915.36,
+      "duration": 2.36
+    },
+    {
+      "pool_shot_id": "pool_00181",
+      "start": 915.36,
+      "end": 925.6,
+      "duration": 10.24
+    },
+    {
+      "pool_shot_id": "pool_00182",
+      "start": 925.6,
+      "end": 933.04,
+      "duration": 7.44
+    },
+    {
+      "pool_shot_id": "pool_00183",
+      "start": 933.04,
+      "end": 941.32,
+      "duration": 8.28
+    },
+    {
+      "pool_shot_id": "pool_00184",
+      "start": 941.32,
+      "end": 944.88,
+      "duration": 3.56
+    },
+    {
+      "pool_shot_id": "pool_00185",
+      "start": 944.88,
+      "end": 946.76,
+      "duration": 1.88
+    },
+    {
+      "pool_shot_id": "pool_00186",
+      "start": 946.76,
+      "end": 954.96,
+      "duration": 8.2
+    },
+    {
+      "pool_shot_id": "pool_00187",
+      "start": 954.96,
+      "end": 960.28,
+      "duration": 5.32
+    },
+    {
+      "pool_shot_id": "pool_00188",
+      "start": 960.28,
+      "end": 964.36,
+      "duration": 4.08
+    },
+    {
+      "pool_shot_id": "pool_00189",
+      "start": 964.36,
+      "end": 969.52,
+      "duration": 5.16
+    },
+    {
+      "pool_shot_id": "pool_00190",
+      "start": 969.52,
+      "end": 976.32,
+      "duration": 6.8
+    },
+    {
+      "pool_shot_id": "pool_00191",
+      "start": 976.32,
+      "end": 987.6,
+      "duration": 11.28
+    },
+    {
+      "pool_shot_id": "pool_00192",
+      "start": 987.6,
+      "end": 989.04,
+      "duration": 1.44
+    },
+    {
+      "pool_shot_id": "pool_00193",
+      "start": 989.04,
+      "end": 994.04,
+      "duration": 5.0
+    },
+    {
+      "pool_shot_id": "pool_00194",
+      "start": 994.04,
+      "end": 997.96,
+      "duration": 3.92
+    },
+    {
+      "pool_shot_id": "pool_00195",
+      "start": 997.96,
+      "end": 1003.12,
+      "duration": 5.16
+    },
+    {
+      "pool_shot_id": "pool_00196",
+      "start": 1003.12,
+      "end": 1007.44,
+      "duration": 4.32
+    },
+    {
+      "pool_shot_id": "pool_00197",
+      "start": 1007.44,
+      "end": 1010.88,
+      "duration": 3.44
+    },
+    {
+      "pool_shot_id": "pool_00198",
+      "start": 1010.88,
+      "end": 1014.44,
+      "duration": 3.56
+    },
+    {
+      "pool_shot_id": "pool_00199",
+      "start": 1014.44,
+      "end": 1019.4,
+      "duration": 4.96
+    },
+    {
+      "pool_shot_id": "pool_00200",
+      "start": 1019.4,
+      "end": 1025.32,
+      "duration": 5.92
+    },
+    {
+      "pool_shot_id": "pool_00201",
+      "start": 1025.32,
+      "end": 1027.96,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00202",
+      "start": 1027.96,
+      "end": 1037.68,
+      "duration": 9.72
+    },
+    {
+      "pool_shot_id": "pool_00203",
+      "start": 1037.68,
+      "end": 1044.44,
+      "duration": 6.76
+    },
+    {
+      "pool_shot_id": "pool_00204",
+      "start": 1044.44,
+      "end": 1059.64,
+      "duration": 15.2
+    },
+    {
+      "pool_shot_id": "pool_00205",
+      "start": 1059.64,
+      "end": 1064.48,
+      "duration": 4.84
+    },
+    {
+      "pool_shot_id": "pool_00206",
+      "start": 1064.48,
+      "end": 1066.56,
+      "duration": 2.08
+    },
+    {
+      "pool_shot_id": "pool_00207",
+      "start": 1066.56,
+      "end": 1071.28,
+      "duration": 4.72
+    },
+    {
+      "pool_shot_id": "pool_00208",
+      "start": 1071.28,
+      "end": 1073.2,
+      "duration": 1.92
+    },
+    {
+      "pool_shot_id": "pool_00209",
+      "start": 1073.2,
+      "end": 1075.48,
+      "duration": 2.28
+    },
+    {
+      "pool_shot_id": "pool_00210",
+      "start": 1075.48,
+      "end": 1077.8,
+      "duration": 2.32
+    },
+    {
+      "pool_shot_id": "pool_00211",
+      "start": 1077.8,
+      "end": 1079.48,
+      "duration": 1.68
+    },
+    {
+      "pool_shot_id": "pool_00212",
+      "start": 1079.48,
+      "end": 1082.68,
+      "duration": 3.2
+    },
+    {
+      "pool_shot_id": "pool_00213",
+      "start": 1082.68,
+      "end": 1085.12,
+      "duration": 2.44
+    },
+    {
+      "pool_shot_id": "pool_00214",
+      "start": 1085.12,
+      "end": 1091.64,
+      "duration": 6.52
+    },
+    {
+      "pool_shot_id": "pool_00215",
+      "start": 1091.64,
+      "end": 1097.52,
+      "duration": 5.88
+    },
+    {
+      "pool_shot_id": "pool_00216",
+      "start": 1097.52,
+      "end": 1102.44,
+      "duration": 4.92
+    },
+    {
+      "pool_shot_id": "pool_00217",
+      "start": 1102.44,
+      "end": 1106.0,
+      "duration": 3.56
+    },
+    {
+      "pool_shot_id": "pool_00218",
+      "start": 1106.0,
+      "end": 1108.2,
+      "duration": 2.2
+    },
+    {
+      "pool_shot_id": "pool_00219",
+      "start": 1108.2,
+      "end": 1121.92,
+      "duration": 13.72
+    },
+    {
+      "pool_shot_id": "pool_00220",
+      "start": 1121.92,
+      "end": 1126.28,
+      "duration": 4.36
+    },
+    {
+      "pool_shot_id": "pool_00221",
+      "start": 1126.28,
+      "end": 1128.28,
+      "duration": 2.0
+    },
+    {
+      "pool_shot_id": "pool_00222",
+      "start": 1128.28,
+      "end": 1139.8,
+      "duration": 11.52
+    },
+    {
+      "pool_shot_id": "pool_00223",
+      "start": 1139.8,
+      "end": 1141.16,
+      "duration": 1.36
+    },
+    {
+      "pool_shot_id": "pool_00224",
+      "start": 1141.16,
+      "end": 1144.24,
+      "duration": 3.08
+    },
+    {
+      "pool_shot_id": "pool_00225",
+      "start": 1144.24,
+      "end": 1147.16,
+      "duration": 2.92
+    },
+    {
+      "pool_shot_id": "pool_00226",
+      "start": 1147.16,
+      "end": 1155.96,
+      "duration": 8.8
+    },
+    {
+      "pool_shot_id": "pool_00227",
+      "start": 1155.96,
+      "end": 1160.12,
+      "duration": 4.16
+    },
+    {
+      "pool_shot_id": "pool_00228",
+      "start": 1160.12,
+      "end": 1186.64,
+      "duration": 26.52
+    },
+    {
+      "pool_shot_id": "pool_00229",
+      "start": 1186.64,
+      "end": 1212.6,
+      "duration": 25.96
+    },
+    {
+      "pool_shot_id": "pool_00230",
+      "start": 1212.6,
+      "end": 1222.32,
+      "duration": 9.72
+    },
+    {
+      "pool_shot_id": "pool_00231",
+      "start": 1222.32,
+      "end": 1223.36,
+      "duration": 1.04
+    },
+    {
+      "pool_shot_id": "pool_00232",
+      "start": 1223.36,
+      "end": 1227.12,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00233",
+      "start": 1227.12,
+      "end": 1234.0,
+      "duration": 6.88
+    },
+    {
+      "pool_shot_id": "pool_00234",
+      "start": 1234.0,
+      "end": 1239.28,
+      "duration": 5.28
+    },
+    {
+      "pool_shot_id": "pool_00235",
+      "start": 1239.28,
+      "end": 1244.4,
+      "duration": 5.12
+    },
+    {
+      "pool_shot_id": "pool_00236",
+      "start": 1244.4,
+      "end": 1247.24,
+      "duration": 2.84
+    },
+    {
+      "pool_shot_id": "pool_00237",
+      "start": 1247.24,
+      "end": 1265.04,
+      "duration": 17.8
+    },
+    {
+      "pool_shot_id": "pool_00238",
+      "start": 1265.04,
+      "end": 1293.96,
+      "duration": 28.92
+    },
+    {
+      "pool_shot_id": "pool_00239",
+      "start": 1293.96,
+      "end": 1299.56,
+      "duration": 5.6
+    },
+    {
+      "pool_shot_id": "pool_00240",
+      "start": 1299.56,
+      "end": 1303.68,
+      "duration": 4.12
+    },
+    {
+      "pool_shot_id": "pool_00241",
+      "start": 1303.68,
+      "end": 1309.92,
+      "duration": 6.24
+    },
+    {
+      "pool_shot_id": "pool_00242",
+      "start": 1309.92,
+      "end": 1314.44,
+      "duration": 4.52
+    },
+    {
+      "pool_shot_id": "pool_00243",
+      "start": 1314.44,
+      "end": 1323.6,
+      "duration": 9.16
+    },
+    {
+      "pool_shot_id": "pool_00244",
+      "start": 1323.6,
+      "end": 1327.48,
+      "duration": 3.88
+    },
+    {
+      "pool_shot_id": "pool_00245",
+      "start": 1327.48,
+      "end": 1333.8,
+      "duration": 6.32
+    },
+    {
+      "pool_shot_id": "pool_00246",
+      "start": 1333.8,
+      "end": 1337.44,
+      "duration": 3.64
+    },
+    {
+      "pool_shot_id": "pool_00247",
+      "start": 1337.44,
+      "end": 1339.8,
+      "duration": 2.36
+    },
+    {
+      "pool_shot_id": "pool_00248",
+      "start": 1339.8,
+      "end": 1347.28,
+      "duration": 7.48
+    },
+    {
+      "pool_shot_id": "pool_00249",
+      "start": 1347.28,
+      "end": 1350.04,
+      "duration": 2.76
+    },
+    {
+      "pool_shot_id": "pool_00250",
+      "start": 1350.04,
+      "end": 1359.44,
+      "duration": 9.4
+    },
+    {
+      "pool_shot_id": "pool_00251",
+      "start": 1359.44,
+      "end": 1366.36,
+      "duration": 6.92
+    },
+    {
+      "pool_shot_id": "pool_00252",
+      "start": 1366.36,
+      "end": 1371.72,
+      "duration": 5.36
+    },
+    {
+      "pool_shot_id": "pool_00253",
+      "start": 1371.72,
+      "end": 1373.52,
+      "duration": 1.8
+    },
+    {
+      "pool_shot_id": "pool_00254",
+      "start": 1373.52,
+      "end": 1373.64,
+      "duration": 0.12
+    },
+    {
+      "pool_shot_id": "pool_00255",
+      "start": 1373.64,
+      "end": 1438.4,
+      "duration": 64.76
+    },
+    {
+      "pool_shot_id": "pool_00256",
+      "start": 1438.4,
+      "end": 1438.72,
+      "duration": 0.32
+    },
+    {
+      "pool_shot_id": "pool_00257",
+      "start": 1438.72,
+      "end": 1458.72,
+      "duration": 20.0
+    },
+    {
+      "pool_shot_id": "pool_00258",
+      "start": 1458.72,
+      "end": 1463.56,
+      "duration": 4.84
+    },
+    {
+      "pool_shot_id": "pool_00259",
+      "start": 1463.56,
+      "end": 1466.84,
+      "duration": 3.28
+    },
+    {
+      "pool_shot_id": "pool_00260",
+      "start": 1466.84,
+      "end": 1468.68,
+      "duration": 1.84
+    },
+    {
+      "pool_shot_id": "pool_00261",
+      "start": 1468.68,
+      "end": 1473.12,
+      "duration": 4.44
+    },
+    {
+      "pool_shot_id": "pool_00262",
+      "start": 1473.12,
+      "end": 1475.2,
+      "duration": 2.08
+    },
+    {
+      "pool_shot_id": "pool_00263",
+      "start": 1475.2,
+      "end": 1479.08,
+      "duration": 3.88
+    },
+    {
+      "pool_shot_id": "pool_00264",
+      "start": 1479.08,
+      "end": 1481.96,
+      "duration": 2.88
+    },
+    {
+      "pool_shot_id": "pool_00265",
+      "start": 1481.96,
+      "end": 1483.76,
+      "duration": 1.8
+    },
+    {
+      "pool_shot_id": "pool_00266",
+      "start": 1483.76,
+      "end": 1487.08,
+      "duration": 3.32
+    },
+    {
+      "pool_shot_id": "pool_00267",
+      "start": 1487.08,
+      "end": 1489.72,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00268",
+      "start": 1489.72,
+      "end": 1494.6,
+      "duration": 4.88
+    },
+    {
+      "pool_shot_id": "pool_00269",
+      "start": 1494.6,
+      "end": 1495.76,
+      "duration": 1.16
+    },
+    {
+      "pool_shot_id": "pool_00270",
+      "start": 1495.76,
+      "end": 1496.72,
+      "duration": 0.96
+    },
+    {
+      "pool_shot_id": "pool_00271",
+      "start": 1496.72,
+      "end": 1498.8,
+      "duration": 2.08
+    },
+    {
+      "pool_shot_id": "pool_00272",
+      "start": 1498.8,
+      "end": 1500.56,
+      "duration": 1.76
+    },
+    {
+      "pool_shot_id": "pool_00273",
+      "start": 1500.56,
+      "end": 1517.56,
+      "duration": 17.0
+    },
+    {
+      "pool_shot_id": "pool_00274",
+      "start": 1517.56,
+      "end": 1533.88,
+      "duration": 16.32
+    },
+    {
+      "pool_shot_id": "pool_00275",
+      "start": 1533.88,
+      "end": 1540.8,
+      "duration": 6.92
+    },
+    {
+      "pool_shot_id": "pool_00276",
+      "start": 1540.8,
+      "end": 1548.36,
+      "duration": 7.56
+    },
+    {
+      "pool_shot_id": "pool_00277",
+      "start": 1548.36,
+      "end": 1552.88,
+      "duration": 4.52
+    },
+    {
+      "pool_shot_id": "pool_00278",
+      "start": 1552.88,
+      "end": 1558.16,
+      "duration": 5.28
+    },
+    {
+      "pool_shot_id": "pool_00279",
+      "start": 1558.16,
+      "end": 1564.64,
+      "duration": 6.48
+    },
+    {
+      "pool_shot_id": "pool_00280",
+      "start": 1564.64,
+      "end": 1568.72,
+      "duration": 4.08
+    },
+    {
+      "pool_shot_id": "pool_00281",
+      "start": 1568.72,
+      "end": 1581.28,
+      "duration": 12.56
+    },
+    {
+      "pool_shot_id": "pool_00282",
+      "start": 1581.28,
+      "end": 1585.84,
+      "duration": 4.56
+    },
+    {
+      "pool_shot_id": "pool_00283",
+      "start": 1585.84,
+      "end": 1592.76,
+      "duration": 6.92
+    },
+    {
+      "pool_shot_id": "pool_00284",
+      "start": 1592.76,
+      "end": 1597.92,
+      "duration": 5.16
+    },
+    {
+      "pool_shot_id": "pool_00285",
+      "start": 1597.92,
+      "end": 1604.96,
+      "duration": 7.04
+    },
+    {
+      "pool_shot_id": "pool_00286",
+      "start": 1604.96,
+      "end": 1611.92,
+      "duration": 6.96
+    },
+    {
+      "pool_shot_id": "pool_00287",
+      "start": 1611.92,
+      "end": 1618.8,
+      "duration": 6.88
+    },
+    {
+      "pool_shot_id": "pool_00288",
+      "start": 1618.8,
+      "end": 1622.72,
+      "duration": 3.92
+    },
+    {
+      "pool_shot_id": "pool_00289",
+      "start": 1622.72,
+      "end": 1625.56,
+      "duration": 2.84
+    },
+    {
+      "pool_shot_id": "pool_00290",
+      "start": 1625.56,
+      "end": 1630.56,
+      "duration": 5.0
+    },
+    {
+      "pool_shot_id": "pool_00291",
+      "start": 1630.56,
+      "end": 1641.36,
+      "duration": 10.8
+    },
+    {
+      "pool_shot_id": "pool_00292",
+      "start": 1641.36,
+      "end": 1643.24,
+      "duration": 1.88
+    },
+    {
+      "pool_shot_id": "pool_00293",
+      "start": 1643.24,
+      "end": 1650.24,
+      "duration": 7.0
+    },
+    {
+      "pool_shot_id": "pool_00294",
+      "start": 1650.24,
+      "end": 1670.96,
+      "duration": 20.72
+    },
+    {
+      "pool_shot_id": "pool_00295",
+      "start": 1670.96,
+      "end": 1676.16,
+      "duration": 5.2
+    },
+    {
+      "pool_shot_id": "pool_00296",
+      "start": 1676.16,
+      "end": 1684.08,
+      "duration": 7.92
+    },
+    {
+      "pool_shot_id": "pool_00297",
+      "start": 1684.08,
+      "end": 1695.04,
+      "duration": 10.96
+    },
+    {
+      "pool_shot_id": "pool_00298",
+      "start": 1695.04,
+      "end": 1699.44,
+      "duration": 4.4
+    },
+    {
+      "pool_shot_id": "pool_00299",
+      "start": 1699.44,
+      "end": 1702.48,
+      "duration": 3.04
+    },
+    {
+      "pool_shot_id": "pool_00300",
+      "start": 1702.48,
+      "end": 1706.8,
+      "duration": 4.32
+    },
+    {
+      "pool_shot_id": "pool_00301",
+      "start": 1706.8,
+      "end": 1712.64,
+      "duration": 5.84
+    },
+    {
+      "pool_shot_id": "pool_00302",
+      "start": 1712.64,
+      "end": 1719.56,
+      "duration": 6.92
+    },
+    {
+      "pool_shot_id": "pool_00303",
+      "start": 1719.56,
+      "end": 1729.0,
+      "duration": 9.44
+    },
+    {
+      "pool_shot_id": "pool_00304",
+      "start": 1729.0,
+      "end": 1733.96,
+      "duration": 4.96
+    },
+    {
+      "pool_shot_id": "pool_00305",
+      "start": 1733.96,
+      "end": 1735.56,
+      "duration": 1.6
+    },
+    {
+      "pool_shot_id": "pool_00306",
+      "start": 1735.56,
+      "end": 1742.44,
+      "duration": 6.88
+    },
+    {
+      "pool_shot_id": "pool_00307",
+      "start": 1742.44,
+      "end": 1745.96,
+      "duration": 3.52
+    },
+    {
+      "pool_shot_id": "pool_00308",
+      "start": 1745.96,
+      "end": 1752.44,
+      "duration": 6.48
+    },
+    {
+      "pool_shot_id": "pool_00309",
+      "start": 1752.44,
+      "end": 1757.76,
+      "duration": 5.32
+    },
+    {
+      "pool_shot_id": "pool_00310",
+      "start": 1757.76,
+      "end": 1765.16,
+      "duration": 7.4
+    },
+    {
+      "pool_shot_id": "pool_00311",
+      "start": 1765.16,
+      "end": 1767.84,
+      "duration": 2.68
+    },
+    {
+      "pool_shot_id": "pool_00312",
+      "start": 1767.84,
+      "end": 1769.04,
+      "duration": 1.2
+    },
+    {
+      "pool_shot_id": "pool_00313",
+      "start": 1769.04,
+      "end": 1773.6,
+      "duration": 4.56
+    },
+    {
+      "pool_shot_id": "pool_00314",
+      "start": 1773.6,
+      "end": 1778.84,
+      "duration": 5.24
+    },
+    {
+      "pool_shot_id": "pool_00315",
+      "start": 1778.84,
+      "end": 1789.8,
+      "duration": 10.96
+    },
+    {
+      "pool_shot_id": "pool_00316",
+      "start": 1789.8,
+      "end": 1794.44,
+      "duration": 4.64
+    },
+    {
+      "pool_shot_id": "pool_00317",
+      "start": 1794.44,
+      "end": 1797.92,
+      "duration": 3.48
+    },
+    {
+      "pool_shot_id": "pool_00318",
+      "start": 1797.92,
+      "end": 1801.24,
+      "duration": 3.32
+    },
+    {
+      "pool_shot_id": "pool_00319",
+      "start": 1801.24,
+      "end": 1805.0,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00320",
+      "start": 1805.0,
+      "end": 1808.16,
+      "duration": 3.16
+    },
+    {
+      "pool_shot_id": "pool_00321",
+      "start": 1808.16,
+      "end": 1812.16,
+      "duration": 4.0
+    },
+    {
+      "pool_shot_id": "pool_00322",
+      "start": 1812.16,
+      "end": 1814.92,
+      "duration": 2.76
+    },
+    {
+      "pool_shot_id": "pool_00323",
+      "start": 1814.92,
+      "end": 1818.12,
+      "duration": 3.2
+    },
+    {
+      "pool_shot_id": "pool_00324",
+      "start": 1818.12,
+      "end": 1821.64,
+      "duration": 3.52
+    },
+    {
+      "pool_shot_id": "pool_00325",
+      "start": 1821.64,
+      "end": 1832.24,
+      "duration": 10.6
+    },
+    {
+      "pool_shot_id": "pool_00326",
+      "start": 1832.24,
+      "end": 1833.4,
+      "duration": 1.16
+    },
+    {
+      "pool_shot_id": "pool_00327",
+      "start": 1833.4,
+      "end": 1850.8,
+      "duration": 17.4
+    },
+    {
+      "pool_shot_id": "pool_00328",
+      "start": 1850.8,
+      "end": 1857.04,
+      "duration": 6.24
+    },
+    {
+      "pool_shot_id": "pool_00329",
+      "start": 1857.04,
+      "end": 1858.96,
+      "duration": 1.92
+    },
+    {
+      "pool_shot_id": "pool_00330",
+      "start": 1858.96,
+      "end": 1860.52,
+      "duration": 1.56
+    },
+    {
+      "pool_shot_id": "pool_00331",
+      "start": 1860.52,
+      "end": 1864.76,
+      "duration": 4.24
+    },
+    {
+      "pool_shot_id": "pool_00332",
+      "start": 1864.76,
+      "end": 1868.28,
+      "duration": 3.52
+    },
+    {
+      "pool_shot_id": "pool_00333",
+      "start": 1868.28,
+      "end": 1873.16,
+      "duration": 4.88
+    },
+    {
+      "pool_shot_id": "pool_00334",
+      "start": 1873.16,
+      "end": 1882.6,
+      "duration": 9.44
+    },
+    {
+      "pool_shot_id": "pool_00335",
+      "start": 1882.6,
+      "end": 1890.16,
+      "duration": 7.56
+    },
+    {
+      "pool_shot_id": "pool_00336",
+      "start": 1890.16,
+      "end": 1893.52,
+      "duration": 3.36
+    },
+    {
+      "pool_shot_id": "pool_00337",
+      "start": 1893.52,
+      "end": 1896.72,
+      "duration": 3.2
+    },
+    {
+      "pool_shot_id": "pool_00338",
+      "start": 1896.72,
+      "end": 1899.4,
+      "duration": 2.68
+    },
+    {
+      "pool_shot_id": "pool_00339",
+      "start": 1899.4,
+      "end": 1902.16,
+      "duration": 2.76
+    },
+    {
+      "pool_shot_id": "pool_00340",
+      "start": 1902.16,
+      "end": 1903.8,
+      "duration": 1.64
+    },
+    {
+      "pool_shot_id": "pool_00341",
+      "start": 1903.8,
+      "end": 1907.6,
+      "duration": 3.8
+    },
+    {
+      "pool_shot_id": "pool_00342",
+      "start": 1907.6,
+      "end": 1912.64,
+      "duration": 5.04
+    },
+    {
+      "pool_shot_id": "pool_00343",
+      "start": 1912.64,
+      "end": 1925.76,
+      "duration": 13.12
+    },
+    {
+      "pool_shot_id": "pool_00344",
+      "start": 1925.76,
+      "end": 1927.6,
+      "duration": 1.84
+    },
+    {
+      "pool_shot_id": "pool_00345",
+      "start": 1927.6,
+      "end": 1929.24,
+      "duration": 1.64
+    },
+    {
+      "pool_shot_id": "pool_00346",
+      "start": 1929.24,
+      "end": 1941.24,
+      "duration": 12.0
+    },
+    {
+      "pool_shot_id": "pool_00347",
+      "start": 1941.24,
+      "end": 1943.68,
+      "duration": 2.44
+    },
+    {
+      "pool_shot_id": "pool_00348",
+      "start": 1943.68,
+      "end": 1946.2,
+      "duration": 2.52
+    },
+    {
+      "pool_shot_id": "pool_00349",
+      "start": 1946.2,
+      "end": 1948.28,
+      "duration": 2.08
+    },
+    {
+      "pool_shot_id": "pool_00350",
+      "start": 1948.28,
+      "end": 1956.56,
+      "duration": 8.28
+    },
+    {
+      "pool_shot_id": "pool_00351",
+      "start": 1956.56,
+      "end": 1969.76,
+      "duration": 13.2
+    },
+    {
+      "pool_shot_id": "pool_00352",
+      "start": 1969.76,
+      "end": 1977.8,
+      "duration": 8.04
+    },
+    {
+      "pool_shot_id": "pool_00353",
+      "start": 1977.8,
+      "end": 1980.32,
+      "duration": 2.52
+    },
+    {
+      "pool_shot_id": "pool_00354",
+      "start": 1980.32,
+      "end": 1984.36,
+      "duration": 4.04
+    },
+    {
+      "pool_shot_id": "pool_00355",
+      "start": 1984.36,
+      "end": 1991.76,
+      "duration": 7.4
+    },
+    {
+      "pool_shot_id": "pool_00356",
+      "start": 1991.76,
+      "end": 1997.72,
+      "duration": 5.96
+    },
+    {
+      "pool_shot_id": "pool_00357",
+      "start": 1997.72,
+      "end": 2001.0,
+      "duration": 3.28
+    },
+    {
+      "pool_shot_id": "pool_00358",
+      "start": 2001.0,
+      "end": 2005.44,
+      "duration": 4.44
+    },
+    {
+      "pool_shot_id": "pool_00359",
+      "start": 2005.44,
+      "end": 2015.0,
+      "duration": 9.56
+    },
+    {
+      "pool_shot_id": "pool_00360",
+      "start": 2015.0,
+      "end": 2017.76,
+      "duration": 2.76
+    },
+    {
+      "pool_shot_id": "pool_00361",
+      "start": 2017.76,
+      "end": 2023.2,
+      "duration": 5.44
+    },
+    {
+      "pool_shot_id": "pool_00362",
+      "start": 2023.2,
+      "end": 2032.28,
+      "duration": 9.08
+    },
+    {
+      "pool_shot_id": "pool_00363",
+      "start": 2032.28,
+      "end": 2038.64,
+      "duration": 6.36
+    },
+    {
+      "pool_shot_id": "pool_00364",
+      "start": 2038.64,
+      "end": 2041.28,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00365",
+      "start": 2041.28,
+      "end": 2043.4,
+      "duration": 2.12
+    },
+    {
+      "pool_shot_id": "pool_00366",
+      "start": 2043.4,
+      "end": 2048.68,
+      "duration": 5.28
+    },
+    {
+      "pool_shot_id": "pool_00367",
+      "start": 2048.68,
+      "end": 2051.2,
+      "duration": 2.52
+    },
+    {
+      "pool_shot_id": "pool_00368",
+      "start": 2051.2,
+      "end": 2055.4,
+      "duration": 4.2
+    },
+    {
+      "pool_shot_id": "pool_00369",
+      "start": 2055.4,
+      "end": 2061.16,
+      "duration": 5.76
+    },
+    {
+      "pool_shot_id": "pool_00370",
+      "start": 2061.16,
+      "end": 2063.28,
+      "duration": 2.12
+    },
+    {
+      "pool_shot_id": "pool_00371",
+      "start": 2063.28,
+      "end": 2071.88,
+      "duration": 8.6
+    },
+    {
+      "pool_shot_id": "pool_00372",
+      "start": 2071.88,
+      "end": 2079.96,
+      "duration": 8.08
+    },
+    {
+      "pool_shot_id": "pool_00373",
+      "start": 2079.96,
+      "end": 2100.88,
+      "duration": 20.92
+    },
+    {
+      "pool_shot_id": "pool_00374",
+      "start": 2100.88,
+      "end": 2115.6,
+      "duration": 14.72
+    },
+    {
+      "pool_shot_id": "pool_00375",
+      "start": 2115.6,
+      "end": 2121.56,
+      "duration": 5.96
+    },
+    {
+      "pool_shot_id": "pool_00376",
+      "start": 2121.56,
+      "end": 2125.4,
+      "duration": 3.84
+    },
+    {
+      "pool_shot_id": "pool_00377",
+      "start": 2125.4,
+      "end": 2129.6,
+      "duration": 4.2
+    },
+    {
+      "pool_shot_id": "pool_00378",
+      "start": 2129.6,
+      "end": 2160.8,
+      "duration": 31.2
+    },
+    {
+      "pool_shot_id": "pool_00379",
+      "start": 2160.8,
+      "end": 2164.56,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00380",
+      "start": 2164.56,
+      "end": 2167.36,
+      "duration": 2.8
+    },
+    {
+      "pool_shot_id": "pool_00381",
+      "start": 2167.36,
+      "end": 2170.28,
+      "duration": 2.92
+    },
+    {
+      "pool_shot_id": "pool_00382",
+      "start": 2170.28,
+      "end": 2182.96,
+      "duration": 12.68
+    },
+    {
+      "pool_shot_id": "pool_00383",
+      "start": 2182.96,
+      "end": 2188.88,
+      "duration": 5.92
+    },
+    {
+      "pool_shot_id": "pool_00384",
+      "start": 2188.88,
+      "end": 2194.36,
+      "duration": 5.48
+    },
+    {
+      "pool_shot_id": "pool_00385",
+      "start": 2194.36,
+      "end": 2205.96,
+      "duration": 11.6
+    },
+    {
+      "pool_shot_id": "pool_00386",
+      "start": 2205.96,
+      "end": 2208.52,
+      "duration": 2.56
+    },
+    {
+      "pool_shot_id": "pool_00387",
+      "start": 2208.52,
+      "end": 2212.04,
+      "duration": 3.52
+    },
+    {
+      "pool_shot_id": "pool_00388",
+      "start": 2212.04,
+      "end": 2215.68,
+      "duration": 3.64
+    },
+    {
+      "pool_shot_id": "pool_00389",
+      "start": 2215.68,
+      "end": 2217.8,
+      "duration": 2.12
+    },
+    {
+      "pool_shot_id": "pool_00390",
+      "start": 2217.8,
+      "end": 2220.64,
+      "duration": 2.84
+    },
+    {
+      "pool_shot_id": "pool_00391",
+      "start": 2220.64,
+      "end": 2222.88,
+      "duration": 2.24
+    },
+    {
+      "pool_shot_id": "pool_00392",
+      "start": 2222.88,
+      "end": 2227.52,
+      "duration": 4.64
+    },
+    {
+      "pool_shot_id": "pool_00393",
+      "start": 2227.52,
+      "end": 2232.92,
+      "duration": 5.4
+    },
+    {
+      "pool_shot_id": "pool_00394",
+      "start": 2232.92,
+      "end": 2242.64,
+      "duration": 9.72
+    },
+    {
+      "pool_shot_id": "pool_00395",
+      "start": 2242.64,
+      "end": 2246.12,
+      "duration": 3.48
+    },
+    {
+      "pool_shot_id": "pool_00396",
+      "start": 2246.12,
+      "end": 2259.92,
+      "duration": 13.8
+    },
+    {
+      "pool_shot_id": "pool_00397",
+      "start": 2259.92,
+      "end": 2271.2,
+      "duration": 11.28
+    },
+    {
+      "pool_shot_id": "pool_00398",
+      "start": 2271.2,
+      "end": 2274.44,
+      "duration": 3.24
+    },
+    {
+      "pool_shot_id": "pool_00399",
+      "start": 2274.44,
+      "end": 2284.08,
+      "duration": 9.64
+    },
+    {
+      "pool_shot_id": "pool_00400",
+      "start": 2284.08,
+      "end": 2295.52,
+      "duration": 11.44
+    },
+    {
+      "pool_shot_id": "pool_00401",
+      "start": 2295.52,
+      "end": 2300.84,
+      "duration": 5.32
+    },
+    {
+      "pool_shot_id": "pool_00402",
+      "start": 2300.84,
+      "end": 2301.28,
+      "duration": 0.44
+    },
+    {
+      "pool_shot_id": "pool_00403",
+      "start": 2301.28,
+      "end": 2310.64,
+      "duration": 9.36
+    },
+    {
+      "pool_shot_id": "pool_00404",
+      "start": 2310.64,
+      "end": 2313.96,
+      "duration": 3.32
+    },
+    {
+      "pool_shot_id": "pool_00405",
+      "start": 2313.96,
+      "end": 2316.92,
+      "duration": 2.96
+    },
+    {
+      "pool_shot_id": "pool_00406",
+      "start": 2316.92,
+      "end": 2319.88,
+      "duration": 2.96
+    },
+    {
+      "pool_shot_id": "pool_00407",
+      "start": 2319.88,
+      "end": 2325.48,
+      "duration": 5.6
+    },
+    {
+      "pool_shot_id": "pool_00408",
+      "start": 2325.48,
+      "end": 2339.96,
+      "duration": 14.48
+    },
+    {
+      "pool_shot_id": "pool_00409",
+      "start": 2339.96,
+      "end": 2348.92,
+      "duration": 8.96
+    },
+    {
+      "pool_shot_id": "pool_00410",
+      "start": 2348.92,
+      "end": 2350.32,
+      "duration": 1.4
+    },
+    {
+      "pool_shot_id": "pool_00411",
+      "start": 2350.32,
+      "end": 2351.52,
+      "duration": 1.2
+    },
+    {
+      "pool_shot_id": "pool_00412",
+      "start": 2351.52,
+      "end": 2357.48,
+      "duration": 5.96
+    },
+    {
+      "pool_shot_id": "pool_00413",
+      "start": 2357.48,
+      "end": 2359.08,
+      "duration": 1.6
+    },
+    {
+      "pool_shot_id": "pool_00414",
+      "start": 2359.08,
+      "end": 2361.64,
+      "duration": 2.56
+    },
+    {
+      "pool_shot_id": "pool_00415",
+      "start": 2361.64,
+      "end": 2392.96,
+      "duration": 31.32
+    },
+    {
+      "pool_shot_id": "pool_00416",
+      "start": 2392.96,
+      "end": 2397.92,
+      "duration": 4.96
+    },
+    {
+      "pool_shot_id": "pool_00417",
+      "start": 2397.92,
+      "end": 2399.96,
+      "duration": 2.04
+    },
+    {
+      "pool_shot_id": "pool_00418",
+      "start": 2399.96,
+      "end": 2402.68,
+      "duration": 2.72
+    },
+    {
+      "pool_shot_id": "pool_00419",
+      "start": 2402.68,
+      "end": 2409.52,
+      "duration": 6.84
+    },
+    {
+      "pool_shot_id": "pool_00420",
+      "start": 2409.52,
+      "end": 2412.36,
+      "duration": 2.84
+    },
+    {
+      "pool_shot_id": "pool_00421",
+      "start": 2412.36,
+      "end": 2424.92,
+      "duration": 12.56
+    },
+    {
+      "pool_shot_id": "pool_00422",
+      "start": 2424.92,
+      "end": 2439.28,
+      "duration": 14.36
+    },
+    {
+      "pool_shot_id": "pool_00423",
+      "start": 2439.28,
+      "end": 2442.0,
+      "duration": 2.72
+    },
+    {
+      "pool_shot_id": "pool_00424",
+      "start": 2442.0,
+      "end": 2448.0,
+      "duration": 6.0
+    },
+    {
+      "pool_shot_id": "pool_00425",
+      "start": 2448.0,
+      "end": 2451.36,
+      "duration": 3.36
+    },
+    {
+      "pool_shot_id": "pool_00426",
+      "start": 2451.36,
+      "end": 2457.68,
+      "duration": 6.32
+    },
+    {
+      "pool_shot_id": "pool_00427",
+      "start": 2457.68,
+      "end": 2470.32,
+      "duration": 12.64
+    },
+    {
+      "pool_shot_id": "pool_00428",
+      "start": 2470.32,
+      "end": 2477.88,
+      "duration": 7.56
+    },
+    {
+      "pool_shot_id": "pool_00429",
+      "start": 2477.88,
+      "end": 2480.32,
+      "duration": 2.44
+    },
+    {
+      "pool_shot_id": "pool_00430",
+      "start": 2480.32,
+      "end": 2488.16,
+      "duration": 7.84
+    },
+    {
+      "pool_shot_id": "pool_00431",
+      "start": 2488.16,
+      "end": 2511.44,
+      "duration": 23.28
+    },
+    {
+      "pool_shot_id": "pool_00432",
+      "start": 2511.44,
+      "end": 2524.84,
+      "duration": 13.4
+    },
+    {
+      "pool_shot_id": "pool_00433",
+      "start": 2524.84,
+      "end": 2527.24,
+      "duration": 2.4
+    },
+    {
+      "pool_shot_id": "pool_00434",
+      "start": 2527.24,
+      "end": 2536.24,
+      "duration": 9.0
+    },
+    {
+      "pool_shot_id": "pool_00435",
+      "start": 2536.24,
+      "end": 2537.24,
+      "duration": 1.0
+    },
+    {
+      "pool_shot_id": "pool_00436",
+      "start": 2537.24,
+      "end": 2537.4,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00437",
+      "start": 2537.4,
+      "end": 2541.16,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00438",
+      "start": 2541.16,
+      "end": 2542.52,
+      "duration": 1.36
+    },
+    {
+      "pool_shot_id": "pool_00439",
+      "start": 2542.52,
+      "end": 2542.68,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00440",
+      "start": 2542.68,
+      "end": 2543.08,
+      "duration": 0.4
+    },
+    {
+      "pool_shot_id": "pool_00441",
+      "start": 2543.08,
+      "end": 2543.24,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00442",
+      "start": 2543.24,
+      "end": 2543.4,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00443",
+      "start": 2543.4,
+      "end": 2544.0,
+      "duration": 0.6
+    },
+    {
+      "pool_shot_id": "pool_00444",
+      "start": 2544.0,
+      "end": 2544.16,
+      "duration": 0.16
+    },
+    {
+      "pool_shot_id": "pool_00445",
+      "start": 2544.16,
+      "end": 2546.68,
+      "duration": 2.52
+    },
+    {
+      "pool_shot_id": "pool_00446",
+      "start": 2546.68,
+      "end": 2547.72,
+      "duration": 1.04
+    },
+    {
+      "pool_shot_id": "pool_00447",
+      "start": 2547.72,
+      "end": 2549.08,
+      "duration": 1.36
+    },
+    {
+      "pool_shot_id": "pool_00448",
+      "start": 2549.08,
+      "end": 2549.48,
+      "duration": 0.4
+    },
+    {
+      "pool_shot_id": "pool_00449",
+      "start": 2549.48,
+      "end": 2549.8,
+      "duration": 0.32
+    },
+    {
+      "pool_shot_id": "pool_00450",
+      "start": 2549.8,
+      "end": 2550.04,
+      "duration": 0.24
+    },
+    {
+      "pool_shot_id": "pool_00451",
+      "start": 2550.04,
+      "end": 2550.92,
+      "duration": 0.88
+    },
+    {
+      "pool_shot_id": "pool_00452",
+      "start": 2550.92,
+      "end": 2551.28,
+      "duration": 0.36
+    },
+    {
+      "pool_shot_id": "pool_00453",
+      "start": 2551.28,
+      "end": 2551.76,
+      "duration": 0.48
+    },
+    {
+      "pool_shot_id": "pool_00454",
+      "start": 2551.76,
+      "end": 2552.68,
+      "duration": 0.92
+    },
+    {
+      "pool_shot_id": "pool_00455",
+      "start": 2552.68,
+      "end": 2553.08,
+      "duration": 0.4
+    },
+    {
+      "pool_shot_id": "pool_00456",
+      "start": 2553.08,
+      "end": 2561.64,
+      "duration": 8.56
+    },
+    {
+      "pool_shot_id": "pool_00457",
+      "start": 2561.64,
+      "end": 2564.0,
+      "duration": 2.36
+    },
+    {
+      "pool_shot_id": "pool_00458",
+      "start": 2564.0,
+      "end": 2565.48,
+      "duration": 1.48
+    },
+    {
+      "pool_shot_id": "pool_00459",
+      "start": 2565.48,
+      "end": 2567.24,
+      "duration": 1.76
+    },
+    {
+      "pool_shot_id": "pool_00460",
+      "start": 2567.24,
+      "end": 2571.2,
+      "duration": 3.96
+    },
+    {
+      "pool_shot_id": "pool_00461",
+      "start": 2571.2,
+      "end": 2575.32,
+      "duration": 4.12
+    },
+    {
+      "pool_shot_id": "pool_00462",
+      "start": 2575.32,
+      "end": 2582.36,
+      "duration": 7.04
+    },
+    {
+      "pool_shot_id": "pool_00463",
+      "start": 2582.36,
+      "end": 2588.68,
+      "duration": 6.32
+    },
+    {
+      "pool_shot_id": "pool_00464",
+      "start": 2588.68,
+      "end": 2589.92,
+      "duration": 1.24
+    },
+    {
+      "pool_shot_id": "pool_00465",
+      "start": 2589.92,
+      "end": 2591.4,
+      "duration": 1.48
+    },
+    {
+      "pool_shot_id": "pool_00466",
+      "start": 2591.4,
+      "end": 2592.96,
+      "duration": 1.56
+    },
+    {
+      "pool_shot_id": "pool_00467",
+      "start": 2592.96,
+      "end": 2593.92,
+      "duration": 0.96
+    },
+    {
+      "pool_shot_id": "pool_00468",
+      "start": 2593.92,
+      "end": 2597.84,
+      "duration": 3.92
+    },
+    {
+      "pool_shot_id": "pool_00469",
+      "start": 2597.84,
+      "end": 2600.24,
+      "duration": 2.4
+    },
+    {
+      "pool_shot_id": "pool_00470",
+      "start": 2600.24,
+      "end": 2606.4,
+      "duration": 6.16
+    },
+    {
+      "pool_shot_id": "pool_00471",
+      "start": 2606.4,
+      "end": 2609.08,
+      "duration": 2.68
+    },
+    {
+      "pool_shot_id": "pool_00472",
+      "start": 2609.08,
+      "end": 2613.24,
+      "duration": 4.16
+    },
+    {
+      "pool_shot_id": "pool_00473",
+      "start": 2613.24,
+      "end": 2616.76,
+      "duration": 3.52
+    },
+    {
+      "pool_shot_id": "pool_00474",
+      "start": 2616.76,
+      "end": 2622.0,
+      "duration": 5.24
+    },
+    {
+      "pool_shot_id": "pool_00475",
+      "start": 2622.0,
+      "end": 2625.84,
+      "duration": 3.84
+    },
+    {
+      "pool_shot_id": "pool_00476",
+      "start": 2625.84,
+      "end": 2628.68,
+      "duration": 2.84
+    },
+    {
+      "pool_shot_id": "pool_00477",
+      "start": 2628.68,
+      "end": 2631.32,
+      "duration": 2.64
+    },
+    {
+      "pool_shot_id": "pool_00478",
+      "start": 2631.32,
+      "end": 2633.48,
+      "duration": 2.16
+    },
+    {
+      "pool_shot_id": "pool_00479",
+      "start": 2633.48,
+      "end": 2636.04,
+      "duration": 2.56
+    },
+    {
+      "pool_shot_id": "pool_00480",
+      "start": 2636.04,
+      "end": 2637.16,
+      "duration": 1.12
+    },
+    {
+      "pool_shot_id": "pool_00481",
+      "start": 2637.16,
+      "end": 2638.32,
+      "duration": 1.16
+    },
+    {
+      "pool_shot_id": "pool_00482",
+      "start": 2638.32,
+      "end": 2640.2,
+      "duration": 1.88
+    },
+    {
+      "pool_shot_id": "pool_00483",
+      "start": 2640.2,
+      "end": 2646.6,
+      "duration": 6.4
+    },
+    {
+      "pool_shot_id": "pool_00484",
+      "start": 2646.6,
+      "end": 2650.36,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00485",
+      "start": 2650.36,
+      "end": 2650.56,
+      "duration": 0.2
+    },
+    {
+      "pool_shot_id": "pool_00486",
+      "start": 2650.56,
+      "end": 2651.32,
+      "duration": 0.76
+    },
+    {
+      "pool_shot_id": "pool_00487",
+      "start": 2651.32,
+      "end": 2652.08,
+      "duration": 0.76
+    },
+    {
+      "pool_shot_id": "pool_00488",
+      "start": 2652.08,
+      "end": 2652.48,
+      "duration": 0.4
+    },
+    {
+      "pool_shot_id": "pool_00489",
+      "start": 2652.48,
+      "end": 2652.88,
+      "duration": 0.4
+    },
+    {
+      "pool_shot_id": "pool_00490",
+      "start": 2652.88,
+      "end": 2653.84,
+      "duration": 0.96
+    },
+    {
+      "pool_shot_id": "pool_00491",
+      "start": 2653.84,
+      "end": 2655.32,
+      "duration": 1.48
+    },
+    {
+      "pool_shot_id": "pool_00492",
+      "start": 2655.32,
+      "end": 2658.04,
+      "duration": 2.72
+    },
+    {
+      "pool_shot_id": "pool_00493",
+      "start": 2658.04,
+      "end": 2661.04,
+      "duration": 3.0
+    },
+    {
+      "pool_shot_id": "pool_00494",
+      "start": 2661.04,
+      "end": 2662.24,
+      "duration": 1.2
+    },
+    {
+      "pool_shot_id": "pool_00495",
+      "start": 2662.24,
+      "end": 2664.28,
+      "duration": 2.04
+    },
+    {
+      "pool_shot_id": "pool_00496",
+      "start": 2664.28,
+      "end": 2665.16,
+      "duration": 0.88
+    },
+    {
+      "pool_shot_id": "pool_00497",
+      "start": 2665.16,
+      "end": 2666.32,
+      "duration": 1.16
+    },
+    {
+      "pool_shot_id": "pool_00498",
+      "start": 2666.32,
+      "end": 2670.52,
+      "duration": 4.2
+    },
+    {
+      "pool_shot_id": "pool_00499",
+      "start": 2670.52,
+      "end": 2673.68,
+      "duration": 3.16
+    },
+    {
+      "pool_shot_id": "pool_00500",
+      "start": 2673.68,
+      "end": 2675.8,
+      "duration": 2.12
+    },
+    {
+      "pool_shot_id": "pool_00501",
+      "start": 2675.8,
+      "end": 2677.4,
+      "duration": 1.6
+    },
+    {
+      "pool_shot_id": "pool_00502",
+      "start": 2677.4,
+      "end": 2678.8,
+      "duration": 1.4
+    },
+    {
+      "pool_shot_id": "pool_00503",
+      "start": 2678.8,
+      "end": 2682.64,
+      "duration": 3.84
+    },
+    {
+      "pool_shot_id": "pool_00504",
+      "start": 2682.64,
+      "end": 2684.56,
+      "duration": 1.92
+    },
+    {
+      "pool_shot_id": "pool_00505",
+      "start": 2684.56,
+      "end": 2687.96,
+      "duration": 3.4
+    },
+    {
+      "pool_shot_id": "pool_00506",
+      "start": 2687.96,
+      "end": 2691.72,
+      "duration": 3.76
+    },
+    {
+      "pool_shot_id": "pool_00507",
+      "start": 2691.72,
+      "end": 2699.92,
+      "duration": 8.2
+    },
+    {
+      "pool_shot_id": "pool_00508",
+      "start": 2699.92,
+      "end": 2702.0132,
+      "duration": 2.0932
+    }
+  ],
+  "pool_hash": "0b4b6ff8b9dee2ad34401b5da4b7ecf3a514d0988c05879c1e50a3a752e51982"
+}

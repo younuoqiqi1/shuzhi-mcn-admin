@@ -1,0 +1,44 @@
+{
+  "frame_id": "shot_B0018_pct75",
+  "shot_id": "shot_B0018",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "febf8acdc1954556a7e6083eda87fc73a3f62371611fb01daf77f8b828c4fc2a",
+  "inference_hash": "a0af1741ea8ebf521821c9fa543536e26f3acb986ab55cbcc87cee3adaafc0f6",
+  "latency_ms": 30270.54254093673,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person in center with dark wavy hair, wearing a light-colored collared top with a floral pattern.\"], \"environment\": \"Dimly lit indoor space. Background is dark and out of focus, with vague vertical and horizontal shapes resembling wooden architectural elements on screen-left and screen-right.\", \"objects\": [\"White subtitle text at the bottom.\"], \"physical_actions\": [\"Looking slightly downward toward screen-left with mouth slightly open.\"], \"uncertainty\": \"Background is dark and out of focus, obscuring details.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person in center with dark wavy hair, wearing a light-colored collared top with a floral pattern."
+      ],
+      "environment": "Dimly lit indoor space. Background is dark and out of focus, with vague vertical and horizontal shapes resembling wooden architectural elements on screen-left and screen-right.",
+      "objects": [
+        "White subtitle text at the bottom."
+      ],
+      "physical_actions": [
+        "Looking slightly downward toward screen-left with mouth slightly open."
+      ],
+      "uncertainty": "Background is dark and out of focus, obscuring details."
+    },
+    "error": null,
+    "latency_ms": 30270.54,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17670,
+      "output_tokens": 1349,
+      "thinking_tokens": 916,
+      "cache_read_tokens": 48725,
+      "total_tokens": 19019
+    },
+    "source_image_hash": "febf8acdc1954556a7e6083eda87fc73a3f62371611fb01daf77f8b828c4fc2a",
+    "inference_image_hash": "a0af1741ea8ebf521821c9fa543536e26f3acb986ab55cbcc87cee3adaafc0f6",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

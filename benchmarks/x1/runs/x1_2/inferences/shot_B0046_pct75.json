@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0046_pct75",
+  "shot_id": "shot_B0046",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "834a4aafacb584845ea868a75f06f7d5227121643e2fffa7b4f36b9f83750c77",
+  "inference_hash": "8a1f6b752d194d4f6b4ef54c1cf5cc49fb3aef451dda61e705f5a55ef297f68a",
+  "latency_ms": 30648.147625033744,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"medium_close_up\", \"characters\": [\"Person with short dark hair, wearing glasses and a white shirt, in profile facing screen-left.\"], \"environment\": \"Indoor setting with a plain grey wall. A dark garment hangs in the background on the screen-right.\", \"objects\": [\"Glasses\", \"White shirt\", \"Dark garment\"], \"physical_actions\": [\"Positioned in profile, facing screen-left, with head tilted slightly downward.\"], \"uncertainty\": \"The person is viewed in profile. The lower body is not visible.\"}",
+    "parsed_validation": {
+      "camera": "medium_close_up",
+      "characters": [
+        "Person with short dark hair, wearing glasses and a white shirt, in profile facing screen-left."
+      ],
+      "environment": "Indoor setting with a plain grey wall. A dark garment hangs in the background on the screen-right.",
+      "objects": [
+        "Glasses",
+        "White shirt",
+        "Dark garment"
+      ],
+      "physical_actions": [
+        "Positioned in profile, facing screen-left, with head tilted slightly downward."
+      ],
+      "uncertainty": "The person is viewed in profile. The lower body is not visible."
+    },
+    "error": null,
+    "latency_ms": 30648.15,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 21139,
+      "output_tokens": 1031,
+      "thinking_tokens": 619,
+      "cache_read_tokens": 44660,
+      "total_tokens": 22170
+    },
+    "source_image_hash": "834a4aafacb584845ea868a75f06f7d5227121643e2fffa7b4f36b9f83750c77",
+    "inference_image_hash": "8a1f6b752d194d4f6b4ef54c1cf5cc49fb3aef451dda61e705f5a55ef297f68a",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "window_idx": 11,
+  "center_start": 660.0,
+  "center_end": 720.0,
+  "ctx_start": 658.0,
+  "ctx_end": 722.0,
+  "raw_cuts_count": 5,
+  "center_cuts": [
+    660.88,
+    664.4,
+    672.32,
+    696.8,
+    714.64
+  ],
+  "scores": [
+    {
+      "time_sec": 660.88,
+      "frame_num": 16522,
+      "content_val": 48.2407,
+      "adaptive_ratio": 40.653
+    },
+    {
+      "time_sec": 664.4,
+      "frame_num": 16610,
+      "content_val": 54.4233,
+      "adaptive_ratio": 14.8456
+    },
+    {
+      "time_sec": 672.32,
+      "frame_num": 16808,
+      "content_val": 43.7651,
+      "adaptive_ratio": 44.8963
+    },
+    {
+      "time_sec": 696.8,
+      "frame_num": 17420,
+      "content_val": 37.0988,
+      "adaptive_ratio": 10.6039
+    },
+    {
+      "time_sec": 714.64,
+      "frame_num": 17866,
+      "content_val": 34.6128,
+      "adaptive_ratio": 49.5616
+    }
+  ],
+  "params": {
+    "window_idx": 11,
+    "center_start": 660.0,
+    "center_end": 720.0,
+    "ctx_start": 658.0,
+    "ctx_end": 722.0,
+    "detector": "real_detect_cuts_pyscenedetect(Adaptive3_mincontent27_Content27)",
+    "total_duration": 2702.013243
+  },
+  "params_hash": "e06e2e1c38c4efa4457a30fe2b50eff3dc65642e0e74e35eda3b8eba8d2c72b0",
+  "created_at": 1791218741.669908
+}

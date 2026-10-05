@@ -1,0 +1,46 @@
+{
+  "frame_id": "shot_B0019_pct50",
+  "shot_id": "shot_B0019",
+  "pct": 50,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "beb34e0e94c2f37b93399477b3f39dc63e188e220038064a5bd9735f0e88631c",
+  "inference_hash": "cb6b64f6fa55d2c79f6c6417f0bdcb1b4b3377ece96387817b14ced6e5283df6",
+  "latency_ms": 28423.74620900955,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"close_up\", \"characters\": [\"Person with short dark curly hair, wearing a red high-collared garment and dangling earrings.\"], \"environment\": \"Dark indoor setting with blurred wooden structures resembling stairs in the background.\", \"objects\": [\"dangling earrings\", \"red garment\"], \"physical_actions\": [\"head tilted downwards\", \"looking down\"], \"uncertainty\": \"Background is dark and out of focus.\"}",
+    "parsed_validation": {
+      "camera": "close_up",
+      "characters": [
+        "Person with short dark curly hair, wearing a red high-collared garment and dangling earrings."
+      ],
+      "environment": "Dark indoor setting with blurred wooden structures resembling stairs in the background.",
+      "objects": [
+        "dangling earrings",
+        "red garment"
+      ],
+      "physical_actions": [
+        "head tilted downwards",
+        "looking down"
+      ],
+      "uncertainty": "Background is dark and out of focus."
+    },
+    "error": null,
+    "latency_ms": 28423.75,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 17706,
+      "output_tokens": 1339,
+      "thinking_tokens": 991,
+      "cache_read_tokens": 48725,
+      "total_tokens": 19045
+    },
+    "source_image_hash": "beb34e0e94c2f37b93399477b3f39dc63e188e220038064a5bd9735f0e88631c",
+    "inference_image_hash": "cb6b64f6fa55d2c79f6c6417f0bdcb1b4b3377ece96387817b14ced6e5283df6",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

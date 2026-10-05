@@ -1,0 +1,48 @@
+{
+  "frame_id": "shot_B0025_pct75",
+  "shot_id": "shot_B0025",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "40e924784bd899555539c7509e132c95288c0329bba44ff85641bc82c0d51cc8",
+  "inference_hash": "2fc5c726dc2d3593d8e389c1f3303f052db3848bfa3e058c2df194fe6f5a68eb",
+  "latency_ms": 41593.27920794021,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"over_the_shoulder\", \"characters\": [\"A woman on screen-left wearing a pink floral dress and earrings\", \"A partially visible person on screen-right wearing glasses\"], \"environment\": \"Dimly lit interior space with a dark wooden door on screen-left and a wooden staircase on screen-right\", \"objects\": [\"glasses\", \"earrings\", \"dress\"], \"physical_actions\": [\"Standing\", \"Looking downwards\"], \"uncertainty\": \"The person on screen-right is heavily cropped by the edge of the frame. The background is dimly lit.\"}",
+    "parsed_validation": {
+      "camera": "over_the_shoulder",
+      "characters": [
+        "A woman on screen-left wearing a pink floral dress and earrings",
+        "A partially visible person on screen-right wearing glasses"
+      ],
+      "environment": "Dimly lit interior space with a dark wooden door on screen-left and a wooden staircase on screen-right",
+      "objects": [
+        "glasses",
+        "earrings",
+        "dress"
+      ],
+      "physical_actions": [
+        "Standing",
+        "Looking downwards"
+      ],
+      "uncertainty": "The person on screen-right is heavily cropped by the edge of the frame. The background is dimly lit."
+    },
+    "error": null,
+    "latency_ms": 41593.28,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 18617,
+      "output_tokens": 2241,
+      "thinking_tokens": 1822,
+      "cache_read_tokens": 48733,
+      "total_tokens": 20858
+    },
+    "source_image_hash": "40e924784bd899555539c7509e132c95288c0329bba44ff85641bc82c0d51cc8",
+    "inference_image_hash": "2fc5c726dc2d3593d8e389c1f3303f052db3848bfa3e058c2df194fe6f5a68eb",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}

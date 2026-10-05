@@ -1,0 +1,56 @@
+{
+  "frame_id": "shot_B0011_pct75",
+  "shot_id": "shot_B0011",
+  "pct": 75,
+  "model": "gemini-3.1-pro-low",
+  "effort": "low",
+  "prompt_sha256": "e9e99014e769774e93e92caf727e94d40eea52d3cbc5a82480fc3e129a541ca9",
+  "source_hash": "042f12bdfbfc8392aca6422c36044ebc4ccda509697ed50ac6cabd2726986b8d",
+  "inference_hash": "86476a7a70cb8d251386fd7fe3993866a01fb99b0b4bca40c7731efe0dee009f",
+  "latency_ms": 38228.345667012036,
+  "status": "success",
+  "error": null,
+  "response": {
+    "raw_text": "{\"camera\": \"high_angle\", \"characters\": [\"画面左侧的人物背对镜头，深色长发，穿着浅蓝色长袖长裤睡衣套装\", \"画面右侧的人物面向左侧，深色短发，戴着眼镜，穿着深蓝灰色长袖长裤睡衣套装\"], \"environment\": \"光线较暗的室内卧室。画面左侧有一张木制床架，铺有条纹床品，床上放着粉色和深色枕头。右上方墙上挂着一幅带中文字符的相框。右侧边缘可见深色窗帘。右下方地面上铺有浅色垫子和粉色带花纹的被子/毯子。\", \"objects\": [\"木制床架\", \"条纹床单\", \"粉色枕头\", \"深色枕头\", \"墙上的画框\", \"窗帘\", \"眼镜\", \"地面的垫子\", \"粉色花纹毯子/被子\", \"底部字幕\"], \"physical_actions\": [\"两人相对站立\", \"两人双手交握\", \"画面左侧的人物将一只手搭在右侧人物的肩上\"], \"uncertainty\": \"室内光线昏暗，导致暗部细节不清晰；画面左侧人物背对镜头，面部特征完全不可见；画面底部有文字字幕叠加遮挡。\"}",
+    "parsed_validation": {
+      "camera": "high_angle",
+      "characters": [
+        "画面左侧的人物背对镜头，深色长发，穿着浅蓝色长袖长裤睡衣套装",
+        "画面右侧的人物面向左侧，深色短发，戴着眼镜，穿着深蓝灰色长袖长裤睡衣套装"
+      ],
+      "environment": "光线较暗的室内卧室。画面左侧有一张木制床架，铺有条纹床品，床上放着粉色和深色枕头。右上方墙上挂着一幅带中文字符的相框。右侧边缘可见深色窗帘。右下方地面上铺有浅色垫子和粉色带花纹的被子/毯子。",
+      "objects": [
+        "木制床架",
+        "条纹床单",
+        "粉色枕头",
+        "深色枕头",
+        "墙上的画框",
+        "窗帘",
+        "眼镜",
+        "地面的垫子",
+        "粉色花纹毯子/被子",
+        "底部字幕"
+      ],
+      "physical_actions": [
+        "两人相对站立",
+        "两人双手交握",
+        "画面左侧的人物将一只手搭在右侧人物的肩上"
+      ],
+      "uncertainty": "室内光线昏暗，导致暗部细节不清晰；画面左侧人物背对镜头，面部特征完全不可见；画面底部有文字字幕叠加遮挡。"
+    },
+    "error": null,
+    "latency_ms": 38228.35,
+    "model_version": "agy-cli:gemini-3.1-pro-low:effort=low",
+    "usage": {
+      "input_tokens": 14688,
+      "output_tokens": 1872,
+      "thinking_tokens": 1455,
+      "cache_read_tokens": 28423,
+      "total_tokens": 16560
+    },
+    "source_image_hash": "042f12bdfbfc8392aca6422c36044ebc4ccda509697ed50ac6cabd2726986b8d",
+    "inference_image_hash": "86476a7a70cb8d251386fd7fe3993866a01fb99b0b4bca40c7731efe0dee009f",
+    "prompt_schema_hash": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
+    "cost": "unknown"
+  }
+}
