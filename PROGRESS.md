@@ -3,7 +3,7 @@
 更新时间：2026-10-05（Asia/Shanghai）  
 当前分支：`agent-poc/a1-contracts`  
 当前阶段：**POC-AGENT A8: MCN 后台 → 真实生产链 → MP4**  
-当前状态：`A8 awaiting_human_video_review` (A8 端到端生产全量达成：真实《潜伏》第18集源片裁切、真实 TTS 语音合成、真实原声保留与闪避混合、真实字幕烧录、真实 FFmpeg 渲染组装；选题 B 与选题 A 零改代码复跑均 100% 成功生成可播放 MP4；106/106 测试全绿；原地彻底停机，等待用户亲自审阅成片 MP4，严禁进入 A9)  
+当前状态：`A8 changes_requested_root_cause_audit` (用户亲自观看 topic_b_final.mp4 和 topic_a_final.mp4 后判定成片不通过；核心问题为 Content Grounding 失败：原声台词脱节、旁白与画面严重无关、出现重复镜头；严格停止 A9，不修改成片，不重新生产 MP4，全面完成全链路根因审计并交付《A8 成片失败根本原因深度审计报告》)  
 执行责任：🏛️ 全栈架构师 & 💻 前端与交互专家 & 🧪 测试与质量专家 & ⚡ 算法与性能专家 & 🎬 影视编导专家  
 
 ---
@@ -13,9 +13,9 @@
 | 门禁名称 | 阶段点 | 当前状态 | 准入/通过标准 |
 |:---|:---:|:---:|:---|
 | **A0 Review Gate** | A0 结束点 | ✅ **已通过** (2026-10-05) | Topic-First 架构方案与三层素材模型审查通过 |
-| **Retrieval Top3 实测 Gate** | A6 结束点 | ✅ **已通过** (2026-10-05) | 真实影视素材（《潜伏》第18集全片约45:02，共 2702.013 秒）检索与视角重读：有效覆盖率 7/8 = 87.5% >= 80%；`req_wu_03` 查实为全集无机要室且李涯零出镜，判定为 `INSUFFICIENT_EVIDENCE` 属真实正确结果，门禁正式批准通过。 |
-| **Director Final Review Gate** | A7 结束点 | ✅ **已通过** (2026-10-05) | Final Director Plan 必须 100% 消费 A6 Top3 真实候选；INSUFFICIENT_EVIDENCE 需求默认严禁产生虚假生产分段 (merge/drop)；旁白时长预算系统证明全量说得完 (100% duration_fit = true)；原声完整性防截断；VMV Consumer Contract 验证通过。 |
-| **A8 Human Video Review Gate** | A8 结束点 | ⏳ **等待成片审阅 (awaiting_human_video_review)** (2026-10-05) | 用户亲自播放检视两条真实生成的成片 MP4 (`topic_b_final.mp4` 与 `topic_a_final.mp4`)，验证视频/音频/旁白/字幕/节奏真实表现。 |
+| **Retrieval Top3 实测 Gate** | A6 结束点 | ⚠️ **需重新审定 (Defective Baseline)** | 历史 87.5% Gate 被证明因仅阅读被污染的文本元数据而虚假通过，已重新定义五维 Production-Grade Grounding Gate。 |
+| **Director Final Review Gate** | A7 结束点 | ⚠️ **需重新审定 (Defective Baseline)** | A7 决策建立在被污染的 L1 Evidence 上，且缺乏镜头去重与台词覆盖率校验。 |
+| **A8 Human Video Review Gate** | A8 结束点 | ❌ **FAIL / changes_requested** (2026-10-05) | 用户亲自播放检视两条真实生成的成片 MP4，判定 Content Grounding 失败，执行 Root Cause Audit。 |
 
 ---
 
@@ -160,4 +160,6 @@
     - 全工程自动化测试扩展至 **106/106 passed**（0 failed）；
     - 交付验收报告 [`docs/agent-poc/a8-e2e-production-report.md`](docs/agent-poc/a8-e2e-production-report.md)；
     - 当前状态正式设为 **`A8 awaiting_human_video_review`**，原地彻底停机，等待用户亲自播放检视两条 MP4，严禁进入 A9。
+28. **2026-10-05 14:35**：A8 人工视听审查反馈：**`FAIL / changes_requested`**。用户指出 Topic B 没看到金条台词不成立、Topic A 出现重复镜头且没有“副站长就是你”台词；核心为 Content Grounding 失败；执行全面 Root Cause Audit，完成逐 Segment 真实源片反查，交付 [`docs/agent-poc/a8-failure-root-cause-audit.md`](docs/agent-poc/a8-failure-root-cause-audit.md)，确立五维生产级门禁与可视化 Storyboard Proof 机制；状态设为 **`A8 changes_requested_root_cause_audit`**；严格停止，不修改成片，不进入 A9。
+
 
