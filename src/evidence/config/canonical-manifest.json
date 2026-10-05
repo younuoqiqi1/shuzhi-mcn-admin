@@ -1,0 +1,70 @@
+{
+  "manifest_version": "1.1.0",
+  "project": "shuzhi-mcn-admin",
+  "task": "POC-AGENT A4.5.1 Canonical L1 Evidence Generation",
+  "created_at": "2026-10-05T10:25:00Z",
+  "media_source": {
+    "filename": "qianfu_ep18.mp4",
+    "relative_path": "video-moment-validation/data/input/qianfu_ep18.mp4",
+    "total_duration_sec": 2702.013,
+    "total_frames": 67550,
+    "fps": 25.0,
+    "resolution": "1280x720",
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "subtitle_source": {
+    "path": "src/evidence/data/qianfu_ep18_subtitles.json",
+    "extraction_engine": "Apple Vision Framework OCR (VNRecognizeTextRequest)",
+    "accuracy_level": "accurate",
+    "language": "zh-Hans",
+    "total_subtitle_items": 857,
+    "time_range": {
+      "start_sec": 4.0,
+      "end_sec": 2700.0
+    }
+  },
+  "segmentation_strategy": {
+    "engine": "ffmpeg showinfo + PySceneDetect specification",
+    "cut_threshold": 0.35,
+    "min_scene_duration_sec": 0.5,
+    "boundary_rules": {
+      "first_scene_start_sec": 0.0,
+      "last_scene_end_sec": 2702.013,
+      "max_gap_tolerance_sec": 0.05
+    }
+  },
+  "provenance_and_audit_policy": {
+    "analysis_granularity_rules": {
+      "independent_keyframe": {
+        "description": "Scene analyzed directly from sampled midpoint frame",
+        "sample_point_strategy": "midpoint_frame",
+        "confidence_range": [0.90, 0.95],
+        "requires_source_segment_id": false
+      },
+      "segment_inherited": {
+        "description": "Shot inherits environment and baseline characters from parent narrative block; dialogue matched locally",
+        "confidence_range": [0.75, 0.82],
+        "requires_source_segment_id": true
+      }
+    },
+    "forbidden_l1_fields": [
+      "persona",
+      "persona_id",
+      "core_viewpoint",
+      "narrative_affordance",
+      "affordances",
+      "perspective_reading",
+      "subtext",
+      "interpretation",
+      "director_notes",
+      "desired_action",
+      "desired_emotion",
+      "target_affordances"
+    ]
+  },
+  "target_output_files": [
+    "src/evidence/data/canonical_evidence_qianfu_ep18.json",
+    "src/evidence/data/enriched_evidence_qianfu_ep18.json"
+  ]
+}

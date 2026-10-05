@@ -159,6 +159,9 @@ export function importEnrichedEvidenceItem({
     provenance: {
       source: mediaInfo.filename || "qianfu_ep18.mp4",
       pipeline: "vmv_caption_packet_v1 + vision_subtitle_ocr + visual_sampling",
+      analysis_granularity: visualAnnotation.analysis_granularity || "independent_keyframe",
+      source_segment_id: visualAnnotation.source_segment_id || null,
+      sample_frame_refs: visualAnnotation.sample_frame_refs || [Math.round(((startSec + endSec) / 2) * fps)],
       has_verified_ocr_dialogue: hasSpeech,
       dialogue_matches: dialogueMatch.matchCount,
       timestamp: new Date().toISOString(),
