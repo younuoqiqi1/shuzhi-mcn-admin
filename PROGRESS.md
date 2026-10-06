@@ -1,10 +1,10 @@
 # 数智博主生产工作台 (POC-AGENT) 进度看板
 
-更新时间：2026-10-06（Asia/Shanghai）  
+更新时间：2026-10-07（Asia/Shanghai）
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**X1.2: 全片分段随机抽样 50-Shot (150 Frames) 独立扩展基线 (Completed with errors)**
-当前状态：**`batch_completed_with_errors_awaiting_review`（150/150 尝试全量完成，130 成功 / 20 失败，成功率 86.67%，首轮 90% 结构合规门槛未达；18 超时 + 1 服务 503 + 1 profile EOF 不重试，76 测试通过；最长镜头 64.76s 需人工检查边界不可自宣切分通过；硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；入口 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html`，全 Gold/ASR/Person 仍 pending，X2 不进入）**
-核心决议：**2026-10-06 完成 X1.2 全片分段随机抽样 50-shot (150 帧) 自动化推理与校验。全视频 46 窗口 PySceneDetect 产出 509 候选镜头池，排除旧 15 全部重叠，前中后 17/17/16 抽取 50 全新镜头；150 张代表帧原图与 50 个轻量带音频 MP4 切片（640x360）全部就绪，最长镜头达 64.76s 需人工在看板中复核边界，不可自宣切分 Gate 通过；Gemini-3.1-pro-low 两并发执行，首轮 150/150 尝试已全部结束，经 6 字段真实 Schema、重算哈希逐项匹配与原生 stream 严格审计，130 成功、20 失败（18 次 >50s 超时强制回收、1 次服务 503、1 次 profile 网络 EOF），首轮成功率 86.67%，未达 90% 结构门槛，故障如实记录首轮不重试；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；76 项测试全绿；人工质检看板就绪（`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html`）；本批次尚未达正式 Gold Gate，严禁伪造 Person F1、幻觉率或虚构单集成本；Git 仅提交代码、文本、JSON、日志、报告，不含图片视频 HTML；新的 ASR / Person / 人工 Gold 仍 pending，X2 维持冻结不进入。**
+当前阶段：**路线修订 (Route Revision)**
+当前状态：**`validation_route_revision_committed; experiments_paused`（X1.2 状态为 **Engineering PASS / Scientific Pending**；130/150、86.67% 是历史首轮结构结果，非新版 Gold Gate；Codex AI 逐镜头复核已完成，Human Anchor 人工标签、Anchor 与独立 AI Judge 校准、正式 Gold Gate 仍未完成；新增模型实验、新增样本与X1.3暂停；首版L1后的小规模X2 probe为未来有限校准选项、本次未执行，X2 主评和 X2.5 未获准，X3/X4 锁定）**
+核心决议：**2026-10-07 完成验证路线体系全面修订与基线口径重置。明确 X1.2 130/150 (86.67%) 仅代表历史首轮工程化结构调用产物，绝非新版科学 Gold Gate；Codex AI 逐镜头复核已全量完成（复核50个Shot的有效描述及原帧；20次模型调用失败单独沿用原始记录），而 Human Anchor 人工标签、Anchor 与独立 AI Judge 校准、正式 Gold Gate 仍未完成；新增模型实验、新增样本和X1.3当前全部暂停（experiments_paused）；第一版L1 Evidence形成后未来可按单独预注册规则运行小规模X2 downstream probe，但本次不执行；不进入正式X2，X2.5 Persona/Plan当前未获准，X3/X4 视听渲染与双博主验证全面锁定；历史 X1/X2 门禁阈值及旧 X2 50 query count 仅作为历史口径归档，新阈值与指标待后续正式预注册冻结；数据提交规范严格执行：禁止 commit 原视频、代表帧原图与 HTML 交付物，识别 JSON 与评估报告按项目隐私政策和用户授权范围合规处理，本次 X1.2 识别及 Codex 复核文本已获用户明确授权推送。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
@@ -15,8 +15,15 @@
 |:---|:---:|:---:|:---|
 | **X0 Technology Spike Gate** | X0 结束点 | ✅ **approved** | **2026-10-05 用户明确批准**。完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)；正式授权开启 X1.0 |
 | **X1.1 Understanding Benchmark** | X1.1 节点 | 🤝 **accepted_for_expansion (保留历史 35/40 人脸与 partial 20/45 视觉，非全 Gate 通过，经用户授权进入 X1.2)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；人脸 35/40 校准阈值 0.4067；视觉 partial 20/45 审核覆盖（已审 178 事实 / 真实 2 幻觉）；历史数值完整保留，非全 Gate 科学通过，经 2026-10-06 用户明确授权进入下一批 50 镜头扩展，不再停留于 STOP 旧节点 |
-| **X1.2 50-Shot Understanding Benchmark** | X1.2 节点 | ⚠️ **batch_completed_with_errors_awaiting_review (150 尝试 130 成功 20 失败，86.67% 未达 90% 门槛，20 真实故障不重试，49/50 至少一成功帧，35/50 全三帧成功，shot_B0031 全失败，最长镜头 64.76s 待审，硬字幕快照重叠 45/50 另外 5 未匹配不作无对白推断，全 Gold pending)** | 509 候选池前中后 17/17/16 抽取 50 全新镜头（排除旧 15 区间）；Manifest 冻结 SHA256 `2e02fc591f2cedbeb477ba08dddf1f4a562bebfbfd8e43dc179797be752340be`；150 帧原图提取完成、50 audio clips 导出完成（专供人工听音复核，禁入 VLM）；Gemini-3.1-pro-low 两并发推理已全部结束，130/150 严格合规，成功率 86.67% 未达首轮 90% 门槛；20 真实失败（18 超时 + 1 服务 503 + 1 profile EOF）不掩盖不重试；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；最长镜头 64.76s 需人工复核边界不可宣称切分 Gate 通过；硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；76 测试全绿；独立质检看板 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html` 就绪；完整 Gold/ASR/Person 仍 pending，不进入 X2 |
-| **X2 Semantic Retrieval Benchmark** | X2 节点 | ⏳ **冻结中 (需等待 X1 真正通过)** | 50 条多类别需求（显式/抽象/改写/对抗负例/荒谬输入）盲测检索与 INSUFFICIENT 拒识率验证；X1 未通过前严格冻结 |
+| **X1.2 50-Shot Understanding Benchmark** | X1.2 节点 | ✅ **Engineering PASS / Scientific Pending** | 工程批次完成；首轮 130/150 成功、20 失败、86.67% 是历史结构调用结果，不是科学能力门槛；Codex 已完成 50 个 Shot 的 AI 复核，对照 130 条有效输出标注需修正/不确定项；Human Anchor 人工盲标、Judge 校准与新版 Scientific Gold Gate 仍 pending；20 次模型调用失败沿用原始实验记录；49/50 镜头至少 1 帧成功，35/50 全 3 帧成功，shot_B0031 三帧失败；最长 64.76s 须复核切点；硬字幕快照 45/50 重叠，另 5 未匹配不等于无对白；禁止据工程完成宣称 Scientific PASS |
+| **Human Anchor (人工金标准锚点/标签)** | X1 关键校准点 | ⏳ **pending (未完成)** | Human Anchor 是一次性 POC 校准成本，不进入每集 Ingest；标注员直接看原视频/帧、盲于 AI 预测并独立标注。Anchor 存在 Agent 无权读取且不在 Agent 可读仓库的隔离位置；执行 Human Anchor 与独立 AI Judge 校准比对。当前标注与校准未完成，正式 Gold Gate 维持阻塞 |
+| **X1 指标冻结与门禁预注册 (X1 Metrics Freeze)** | X1 门禁前置 | ⏳ **pending (待预注册)** | **旧 X1 阈值（如历史首轮 90% 结构合规率等）仅称历史口径**；新版正式科学门槛（含结构解析率、人物一致性 F1、视觉幻觉率上限、CER/WER 容差及边界切分准确率）待预注册冻结，明确禁止事后调参 |
+| **X1 Evidence v1 (客观证据底座 v1)** | X1 产物节点 | ⏳ **pending (前置未达成)** | 聚合多模态客观证据（镜头时序、代表帧语义、对齐台词、校准后人物聚类），形成防污染、免推断的 L1 结构化证据底座；前置依赖 Human Anchor 校准与 X1 指标冻结正式通过，当前未达成 |
+| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **paused (新规则后续允许，本次未执行)** | 修订后新验证规则允许在极小受控规模下（如 3-5 条典型 Query）执行盲测检索探针，用以提前探测检索匹配机制与拒识表现；但**本次未执行任何 probe 实验**，无新增样本数据，当前处于暂停状态 |
+| **X2 Gold (检索金标准数据集)** | X2 评测基础 | ⏳ **pending (待构建与预注册)** | **明确 X2 Gold 为原视频时间区间 (Ground Truth Time Ranges in Source Video)**，作为跨镜头语义召回的真实时间对齐真值；**旧 50 query count 仅称历史口径**，新评测集分类（显式/抽象/改写/对抗负例/荒谬输入）、具体样本量及时间区间真值待后续正式预注册 |
+| **X2 Semantic Retrieval Benchmark (主评)** | X2 主评节点 | 🛑 **未获准 / 冻结中 (需等待 X1 正式通过与 X2 Gold 就绪)** | 多类别需求盲测检索、跨镜头时序召回准确率及 INSUFFICIENT 拒识率验证；**旧 X2 阈值及旧 50 query 仅称历史口径，新阈值待预注册**；主评测当前严格未获准，维持冻结 |
+| **X2.5 Persona / Plan (角色与编导盲测)** | X2.5 节点 | 🛑 **未获准 / 冻结中** | 后续最低设计 2 Persona × 5 Topic；Agent 接收匿名 Persona 卡生成条件化 Plan，Persona 标签映射对 Agent 与独立评审隐藏；评审盲判 Persona 归属并核验证据支持和事实错误；当前未获准且不执行 |
+| **X3 / X4 (成片生产与双博主验证)** | X3/X4 最终节点 | 🔒 **锁定 (Locked)** | X3 全流程成片视听渲染质检与 X4 双博主同素材差异化 A/B 视听验收；在底层理解与检索能力未建立扎实金标准门禁前全面锁定，禁止启动 |
 | **A8/A9/A10 (旧生产管线)** | 旧节点 | 🛑 **全面冻结** | 因 L1 虚假描述/时间表依赖、A5 人名关键词依赖、A6 预写模板及成片伪造字幕/画面不符事故，已全面冻结，不修改其实现，不继续投入 |
 
 ---
@@ -231,9 +238,13 @@
     - 150 张代表帧原图与 50 个带音频 MP4 切片（640x360）全部就绪，硬字幕快照与 45/50 镜头有重叠，另外 5 镜头未匹配，不能据此判断无字幕或无对白；49/50 镜头至少 1 成功帧，35/50 全部 3 帧成功，shot_B0031 三帧均服务失败；
     - 全工程 76 项测试全量通过；独立质检看板就绪（`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html`）；
     - 报告交付于 [`docs/agent-poc/x1.2-50shot-report.md`](docs/agent-poc/x1.2-50shot-report.md)；明确未达正式 Gold Gate，严禁伪造 Person F1、幻觉率或单集成本；
-    - Git 仓库仅提交代码、文本、JSON 元数据、日志与报告，无大体积视频、图片与 HTML；
+    - 明确数据与资产提交策略：禁止 commit 原视频、代表帧原图与 HTML；识别 JSON 与评估报告按项目隐私政策和用户授权范围处理，其中本次 X1.2 识别及 Codex 复核文本已获用户授权推送；
     - 完整人工 Gold / new ASR / new Person 保持 pending，X2 保持冻结不进入。
-
-
-
-
+38. **2026-10-07**：**完成验证路线体系修订与基线口径对齐，状态推进为 `validation_route_revision_committed; experiments_paused`，严格 STOP 无实验**：
+    - 本日仅修改验证路线与项目状态文档（`poc-revalidation-handoff.md`、`PROGRESS.md`）；未启动模型实验、未新增样本、未进行人审；随后提交本次文档变更；
+    - 明确 X1.2 首轮 130/150 (86.67%) 为历史首轮结构化结果，绝非新版 Gold Gate；Codex AI 逐镜头复核已完成（全量审核 50 镜头，复核50个Shot的有效描述及原帧；20次模型调用失败沿用原始实验记录），Human Anchor 人工标签、Anchor 与独立 AI Judge 校准以及正式 Gold Gate 仍未完成；
+    - 阶段门禁表完成路线升级：明确新增 Human Anchor、X1 Evidence v1、有限 X2 probe、X1 指标冻结、X2 Gold（写清为原视频时间区间）、X2.5 Persona/Plan、X3/X4 锁定等条目；
+    - 旧 X1/X2 阈值及旧 X2 50 query count 仅作为历史口径记录，新阈值待预注册；
+    - 明确 第一版L1形成后的小规模X2 probe仅为未来的校准手段且不是正式X2 PASS；本次不执行。暂停新增模型实验、新增样本和X1.3，不进入正式X2，X2.5未获准，X3/X4 维持锁定；
+    - 资产提交合规口径对齐：禁止 commit 原视频、代表帧原图与 HTML；识别 JSON 与评估报告按项目隐私政策和用户授权范围处理，本次 X1.2 识别及 Codex 复核文本已获用户授权推送；
+    - 全面维持 experiments_paused，原地严格 STOP 无实验。

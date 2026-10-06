@@ -1,8 +1,8 @@
 # 数智博主 AI 视频 POC｜重新验证开发交接文档
 
-**日期：** 2026-10-05  
+**日期：** 2026-10-07
 **用途：** 本地 Codex Work 接管项目并协调 AGY 后续开发  
-**当前策略：** 冻结原 A8/A9/A10，先完成 X0/X1/X2 核心技术验证  
+**当前策略：** 冻结原 A8/A9/A10；全面落实 **Human Anchor + 独立 AI Judge 校准** 与 **X2.5 盲测** 机制；本规范明确 **supersede** 旧 X1/X2 指标/样本定义以及“只有 X1 Gate 通过后才能任何 X2 探针”的旧条款；当前实验暂停，优先固化新验证路线与预注册规范。
 **最终目标：** 影视多集素材一次入库后，可针对任意新选题跨集检索、多集混剪，并从 MCN 后台生成真实视频。
 
 ## 1. 项目与当前基线
@@ -69,35 +69,47 @@ EP18 只是第一份 collection，禁止任何 EP18/Topic A/Topic B 专用架构
 - L1 Objective Evidence 与 L3 Persona/Topic Interpretation 分离原则。
 - Evidence / Candidate / INSUFFICIENT / Director Plan / Production Order 等数据契约思想。
 
-### 冻结
-X1/X2 通过前：
-- A8 冻结。
-- A9/A10 禁止开始。
-- 不继续修旧 A5 关键词表。
-- 不继续给 A6 增加剧情规则。
-- 不继续给 Grounding Gate 增加事故黑名单。
-- 不针对 Topic A/B 手写素材答案。
-- 不生成新的正式验收 MP4。
+### 冻结与受控探针规则 (Superseding Rule)
+旧条款“只有 X1 Gate 全部通过后才能开始任何 X2 探针”**已被正式废止替换 (Superseded)**。
+现行规则如下：
+1. **主干冻结**：
+   - A8 冻结，A9/A10 禁止开始；
+   - 不修改旧 A5 关键词表、不给 A6 增加剧情规则、不给 Grounding Gate 增加事故黑名单；
+   - 不针对 Topic A/B 手写素材答案，不生成新的正式验收 MP4。
+2. **受控 X2 Downstream Probe 例外**：
+   - 在 X1 首版 Evidence 产物生成且满足 Schema 及 Provenance 门禁后，**允许且仅允许对冻结小子集执行小规模 X2 downstream probe**；
+   - 该 probe 的唯一目标是获得下游检索支持率、拒答率等反馈，反向校准并修正 X1 的数据质量与指标定义；
+   - **绝对不可**凭 probe 宣称 X1 或 X2 Gate 通过，严禁私自扩样；probe 须单独预注册，本次不执行。
 
 旧 A5/A6/A7 仅作为 legacy baseline。
 
-## 5. 新验证路线
+## 5. 新验证路线 (Updated Benchmark Roadmap)
+
+新验证路线由原线性流水线升级为 **Human Anchor 校准驱动的闭环评估体系**：
 
 ```
-X0 技术选型与复用 Spike
-        ↓ 人审
-X1 L1 自动素材理解 Benchmark
-        ↓ Blind Gate PASS
-X2 单集 Semantic Retrieval Benchmark
-        ↓ Blind Gate PASS
-X3 多集统一 Evidence Store / 跨集人物统一
-        ↓
-X4 跨集 Retrieval + Director + 多集混剪
-        ↓
-恢复 Persona / Production / MCN E2E
+[阶段 0] Human Anchor 准备与独立 AI Judge 校准 (一次性 POC 成本，非生产流程)
+         ↓ Judge 与 Anchor 一致性达标
+[阶段 1] X1 Objective Evidence v1 生成 (严格执行冻结分母与 Pre-registration)
+         ↓ 记录 Schema & Provenance 结果
+[阶段 2] 有限 X2 Downstream Probe (仅限冻结小子集，获取支持率/拒答反馈以修正 X1 定义)
+         ↓ 反馈校准
+[阶段 3] 冻结并核验 X1 终版指标 (执行 X1 Blind Gate)
+         ↓ X1 Gate PASS
+[阶段 4] X2 Gold 主评 (以原始视频时间区间为唯一主标注的 Semantic Retrieval Benchmark)
+         ↓ X2 Gate PASS
+[阶段 5] X2.5 Persona/Plan Blind Test (作者/标注者/运行者三权分立，盲测 Persona 条件化 Plan)
+         ↓ Review 综合裁决
+[阶段 6] X3 多集统一 Evidence Store (当前严格锁定)
+         ↓
+[阶段 7] X4 跨集混剪与端到端交付 (当前严格锁定)
 ```
 
-成功标准不是“测试全绿”，而是面对未知素材和未知内容需求仍能泛化。
+**核心科学原则**：
+- **工程测试通过 ≠ 实验基准通过 ≠ 内容验收通过**。
+- X1、X2、X2.5及Probe统一采用本文件预注册的分母、失败/缺失计法、置信区间与PASS/FAIL规则；下游章节补充各自指标公式。置信区间跨门槛为inconclusive，不得事后更换统计口径。
+- 核心指标分母不足直接标为 `N/A`，绝不允许将缺失数据视为 0 或视为通过。
+- 系统面对未知素材与全新选题仍能泛化并具备 INSUFFICIENT 拒识能力，是唯一的成功标准。
 
 ---
 
@@ -146,29 +158,34 @@ commit 后 STOP，不自行进入 X1。
 
 ---
 
-# X1｜L1 自动素材理解 Benchmark
+# X1｜L1 自动素材理解 Benchmark (Human Anchor + AI Judge 架构)
 
 ## 核心问题
 
 > 在不知道剧情答案的情况下，一集影视素材能否自动生成可靠、可追溯、可复用的 Objective Evidence？
 
-X1 不生成成片。
+X1 绝不生成成片，只产出标准化客观证据资产。
 
-## 严格隔离
+## 架构升级：Human Anchor + 独立 AI Judge 校准机制
 
-自动 Ingest 禁止读取：
+本规范确立 **Human Anchor 一次性校准** 模式：
+1. **成本定性**：Human Anchor 仅为 **一次性 POC 评估校准成本**，**绝对不进入每集素材 Ingest 或生产入库主链**；日后每集上线只运行已冻结的自动 Agent Ingest 流水线。
+2. **人工盲标**：标注员必须直接观看原始视频/帧（需要声音标签时直接听原声），先独立完成人工标注并锁定；标注前不得查看 AI/Agent 预测、检索结果或其他标注员答案。
+3. **物理隔离与职责**：Anchor 由独立标注员对抽样子集精细标注，存放在执行 Agent 无权读取且不在 Agent 可读仓库内的隔离位置，绝不提交到该仓库。Human Anchor 是一次性 POC 校准/审计成本，不进入每集 Ingest 或生产入库主链。Agent 与 Judge 推理进程均不得读取 Anchor/Gold 明文。AI Judge 必须独立于被测 Agent 的会话与预测者；Judge 只看待评媒体与结果，不看 Anchor 标签。Judge 输出锁定后，隔离的离线评估程序才可对齐人工标签并计算一致性。
+4. **校准门槛与抽查**：在预注册的 Anchor 样本上先校准 AI Judge；一致性及置信区间达到预注册可信标准后，方可用于扩大自动评测。扩大后随机保留至少 10% 项目作持续人工抽查监测漂移。若 Judge 未达校准门槛，停止优化 Judge，该指标仅保留小规模人工评测，不扩大自动评估。
+
+自动 Ingest 严格禁止读取：
 - `EP18_REAL_SCENE_MAP`
 - Topic A/B
 - 旧 Requirements
 - A5/A6/A7 Results
-- Director Plan
-- Storyboard
+- Director Plan / Storyboard
 - A8/A8.1 报告
-- 人工剧情简介/百科
+- 人工剧情简介/百科/分集梗概
 - 旧 dialogue_aligned_unit
-- Benchmark Gold
+- Benchmark Gold / Human Anchor 明文
 
-第一轮 VLM 最好不告诉模型剧名《潜伏》，避免模型先验剧情知识污染。
+第一轮 VLM 绝不告知剧名《潜伏》，避免模型产生先验剧情知识污染。
 
 ## Pipeline
 
@@ -181,36 +198,34 @@ Source Video
 → Objective Evidence
 
 ### Shot
-每个 Shot 至少：
-- shot_id
-- start_sec
-- end_sec
-- duration_sec
+每个 Shot 必须包含：
+- `shot_id`
+- `start_sec`
+- `end_sec`
+- `duration_sec`
 
-边界必须来自媒体分析，不允许人工剧情时间区间。
+边界必须来自媒体分析算法（如 PySceneDetect / Adaptive），严禁手工填报剧情时间区间。
 
 ### Representative Frames
-默认每 Shot 25% / 50% / 75% 抽真实 JPG；长镜头可增加。所有视觉 Evidence 必须带 `frame_refs[]`。
+默认每 Shot 取 25% / 50% / 75% 真实代表帧，长镜头可自适应增加。所有视觉 Evidence 必须带 `frame_refs[]`。
 
-### Dialogue
+### Dialogue 与 Speaker 归属
 分别保留：
-- OCR text
-- ASR text
-- resolved/fused text
-- provenance
+- `ocr_text`
+- `asr_text`
+- `resolved_text`
+- `speaker_person_id`（说话人匿名 ID，无法确定时填 `unknown` 或 `null`，严禁无证据强行认定）
+- `confidence`（置信度评分，0.0~1.0）
+- `provenance`（识别来源标记）
 
-VLM 不得凭空生成台词。
+VLM 不得凭空捏造对白。
 
 ### 人物
-第一阶段只做匿名 ID：
-`person_001`, `person_002`。
+第一阶段只做匿名 ID：`person_001`, `person_002`。
+先验证跨 Shot 人物一致性，再单独做姓名映射：`person_001 → 余则成`。
+禁止将人物特征聚类与姓名语义推断混为一个指标。
 
-先验证跨 Shot 人物一致性，再单独做姓名映射：
-`person_001 → 余则成`。
-
-不要把人物聚类与姓名识别混成一个指标。
-
-## 建议 Evidence Contract
+## 标准 Evidence Contract
 
 ```json
 {
@@ -218,7 +233,7 @@ VLM 不得凭空生成台词。
   "episode_id": "18",
   "media_id": "qianfu_ep18",
   "shot_id": "shot_0127",
-  "timecode": {"start_sec": 0, "end_sec": 0},
+  "timecode": {"start_sec": 0.0, "end_sec": 0.0},
   "visible_person_ids": [],
   "scene": {"location_type": "", "environment": ""},
   "observable_actions": [],
@@ -228,7 +243,9 @@ VLM 不得凭空生成台词。
     "ocr_text": "",
     "asr_text": "",
     "resolved_text": "",
-    "source": []
+    "speaker_person_id": null,
+    "speaker_confidence": null,
+    "provenance": []
   },
   "frame_refs": [],
   "uncertainty": [],
@@ -236,45 +253,39 @@ VLM 不得凭空生成台词。
 }
 ```
 
-Objective Evidence 禁止写：
-“开始怀疑 / 试探 / 看穿 / 掩护 / 忠诚 / 背叛 / 情报交易 / 化解危机 / 利益交换 / 心理状态”等解释性结论，除非只是原台词引用。
+`speaker_person_id` 仅接受匿名人物 ID；`unknown` 表示已检测到说话人但无法归属，`null` 表示当前片段没有可判定说话人/未输出归属。`speaker_confidence` 是说话人归属的置信度（0–1）；归属为 `unknown` 或 `null` 时必须为 `null`。它不代表对白转写或整条 Evidence 的置信度。每项保留 `provenance` 与 `uncertainty`。
 
-## Gold Set
+> **禁令**：Objective Evidence 禁止出现“开始怀疑 / 试探 / 看穿 / 掩护 / 忠诚 / 背叛 / 情报交易 / 化解危机 / 利益交换 / 心理状态”等解释性或叙事性词汇，除非为原字幕字面引用。无法判定的说话人明确标注 `unknown` 或 `null`，绝不可强行认定。
 
-EP18 随机分层抽至少 50 个 Shot：
-- 前/中/后
-- 有/无对白
-- 单人/多人
-- 室内/室外
+## 指标分母公式与边界规则 (Execution Definitions)
 
-人工直接看真实视频/帧/音频制作 Gold。
+所有评测在执行前必须预注册绝对样本数、分层、分母公式、边界匹配规则、排除规则、失败/缺失样本计法、置信区间和阈值。以下指标阈值均为**待预注册**。若分母为 0、分层不足或 Anchor 覆盖不足，标注 `N/A` 并停止 Gate 判断，不得将缺失视为 0 或通过。二项比例用 95% Wilson 区间；按镜头/Query聚类的指标使用预注册随机种子和重采样次数计算 95% cluster bootstrap。仅当区间整体落在预注册通过侧时 PASS，整体在失败侧时 FAIL，区间跨门槛则为 inconclusive，不得宣称通过。调用失败保留在计划尝试分母并作为该次结构失败：
 
-目录：
-```
-benchmarks/x1/
-  development/
-  holdout/
-  gold/
-  predictions/
-  runs/
-  reports/
-```
+1. **Schema 结构合规率 (Schema Success Rate)**：
+   $$\text{Rate}_{\text{schema}} = \frac{\text{严格符合 6 字段 Schema 且原生 Stream 验证通过的记录数}}{\text{预注册严格计划抽取的绝对分母总帧数}}$$
+   （例如：X1.2 预注册 50 镜头 × 3 帧 = 150 帧，发生 503 或超时直接计入分母且算为失败，严禁剔除分母或擅自重试）。
+2. **Shot boundary matching**：参考切点与预测切点在预注册容差内作一对一最小距离匹配；每个预测切点至多匹配一个 Gold 切点。TP 为匹配数，未匹配预测为 FP，未匹配 Gold 为 FN；Precision=TP/(TP+FP)、Recall=TP/(TP+FN)、F1=2PR/(P+R)。容差、起止边界处理和按 Shot 的可用率（合格 Shot/所有被抽 Shot）均须预注册。
+3. **客观事实准确率与幻觉率**：每条claim标为 supported、contradicted、unsupported 或 unverifiable。分母为已由Anchor裁定的可核验claims（supported+contradicted+unsupported）；Accuracy=supported/该分母；Hallucination rate=(contradicted+unsupported)/该分母。unverifiable、Judge/Anchor尚未裁定项另报，不进分母。同步报告总claims、Anchor覆盖数和未裁定数；未审核内容不能记作无幻觉。
+4. **人物一致性**：在独立标注的 same/different 人脸 pair 上，以预测 same 为正类计算 Precision、Recall、F1；unknown 预测另报。主分数按预注册规则处理 unknown（默认不从分母剔除），并报告覆盖率及 pair-disjoint/person-disjoint。分母为已标注 pair 数。
+5. **OCR/ASR/Fusion**：与人工转录 Gold 对齐后，WER=词级编辑距离/Gold 词数，CER=字级编辑距离/Gold 字符数；OCR、ASR、Fusion 分别计算。对齐、标点/空白规范化、重叠语音和零长度 Gold 处理须预注册；参考字/词分母为 0 或无 Gold 时 N/A。
+6. **Speaker attribution**：正确归属的已判定说话轮次/Anchor 中可归属说话轮次；unknown/null 覆盖率单独报告。置信度不能代替真值标签。
+7. **单集成本与耗时**：成本=批次实际模型/计算/存储费用总和÷成功完成 Ingest 的集数；耗时=预注册起止点间墙钟时间总和÷成功完成 Ingest 的集数，并另报失败运行耗费。Episode 分母为 0 时 N/A；币种、缓存、重试和并发口径预注册。
+8. **AI Judge 校准**：Judge 输出锁定后，由离线评估程序对齐 Anchor 标签；报告混淆矩阵、Cohen’s κ 与逐类召回率，分母为双方均有标签的 Anchor 项数。Judge 本身不读取 Anchor 明文。
 
-生产代码禁止 import/read `benchmarks/x1/gold`。
+## X1 历史门禁参考与新规范声明
 
-## X1 Gate
+> [!WARNING]
+> **旧阈值口径说明**：下表中的历史数值（如 $\ge 90\%$, $\ge 0.85$ 等）仅作为**历史设计口径留存**。根据最新架构，**新门禁阈值必须与 Human Anchor 和 AI Judge 一致性校准后重新预注册，绝不可作为现行有效通过门槛**。
 
-| Metric | Gate |
-|---|---:|
-| Shot Boundary Usable Rate | ≥90% |
-| Person Consistency F1 | ≥0.85 |
-| Scene/Environment Accuracy | ≥0.80 |
-| Observable Action Acceptable Rate | ≥0.75 |
-| Hallucinated Objective Fact Rate | ≤5% |
+| 指标名称 | 历史设计口径 (旧门禁) | 现行状态与规则说明 |
+|:---|---:|:---|
+| Shot Boundary Usable Rate | ≥90% | 待与 Anchor 切分精度预注册新阈值 |
+| Person Consistency F1 | ≥0.85 | 待脱离旧 0.4067 单一特征对，预注册新多镜头一致性阈值 |
+| Scene/Environment Accuracy | ≥0.80 | 待与 Anchor 环境标签对齐 |
+| Observable Action Acceptable Rate | ≥0.75 | 待经由 AI Judge 校准后评定 |
+| Hallucinated Objective Fact Rate | ≤5% | 待基于全量审定陈述项核验 |
 
-Dialogue 单独报告 OCR / ASR / Fusion 的 WER/CER。
-
-## Blind Holdout
+## Blind Holdout (历史设计，执行前重新预注册)
 
 EP18 是 Development Episode。最终必须再选《潜伏》另一集 Blind Holdout。
 
@@ -284,13 +295,11 @@ EP18 是 Development Episode。最终必须再选《潜伏》另一集 Blind Hol
 - 不加人物规则
 - 不加剧情词典
 
-直接跑 Holdout。核心指标相对 EP18 衰减建议 ≤15%，否则 X1 FAIL。
+Holdout 拆分、集数和域间比较指标须执行前预注册；旧“衰减≤15%”仅为历史建议，不是当前 Gate。
 
 ---
 
-# X2｜单集 Semantic Retrieval Benchmark
-
-只有 X1 PASS 后开始。
+# X2｜单集 Semantic Retrieval Benchmark (原始时间区间主标注)
 
 ## 核心问题
 
@@ -298,116 +307,144 @@ EP18 是 Development Episode。最终必须再选《潜伏》另一集 Blind Hol
 
 严禁使用旧 canonical evidence、EP18_REAL_SCENE_MAP、dialogue aligned units、旧 Topic A/B hard-code、旧 A5/A6 Results、旧人工 Requirements/Director Plan。
 
-## Query Set
+## 受控 X2 Downstream Probe 规则
 
-至少 50 条，五类各 10：
+依据最新验证规范，在 X1 首版 Evidence 产物生成后：
+- **允许范围**：仅允许针对冻结的极小样本子集执行受控探针（Probe）；
+- **目的限制**：仅用于获取下游检索支持率、拒答率等实测反馈，以反向修正 X1 的数据质量定义与字段规范；
+- **红线约束**：Probe 必须单独预注册，**绝不可作为宣称 X1 或 X2 Gate 通过的依据，严禁私自扩样**。本次接管不执行任何 Probe。
 
-1. Explicit  
-   例：找余则成和谢若林正面交锋的片段。
-2. Semantic  
-   例：找上司表面给下属好处、同时观察对方反应的场面。
-3. Paraphrase / Abstract  
-   例：找权力人物通过利益绑定下属的镜头。
-4. Hard Negative  
-   例：找余则成在火车站击毙李涯。不存在则必须 INSUFFICIENT。
-5. OOD / Absurd  
-   例：找橘猫在屋顶追鸽子。必须 INSUFFICIENT。
+## Query Set 与 Hard Negative 严格定义
 
-部分真实 Query 生成：
-Original → Paraphrase → No-person-name → Abstract intent。
+旧“至少 50 条、五类各 10 条”仅为历史设计，不是现行有效门槛。样本量与分层须执行前预注册；本轮不增加样本。Query 作者不得看 Evidence、时间码或模型结果，使用匿名人物和可观察事件描述，不写作品专用规则。
 
-## Blind Rule
+1. **Explicit**：指定片中人物和可观察动作。
+2. **Semantic**：描述可由画面/声音证据支持的互动，不预设剧情结论。
+3. **Paraphrase / Abstract**：对同一证据目标作抽象改述。
+4. **Hard Negative（严格困难负例）**：负例集合中至少一半必须是**“真实在场人物 + 实际不存在的事件/关系/行为”**。Query中人物确实在原片出现，但所指定事件经全片核验后不存在（如片中人物甲、乙都出现，却从未握手交接文件）。标注者必须全片核验；不能主要依赖全集不存在的人名或物体实现拒识。无法核验的Query不进入可判定分母并触发停止条件。
+5. **OOD / Absurd**：域外查询单独报告，仅作补充评估，不能替代上述Hard Negative。
 
-Query Author 不得读取：
-- L1
-- 时间码
-- Retrieval Result
-- Gold Interval
-- 旧 Requirements
+## Gold 标注规范：以原视频原始时间区间为唯一主标注
 
-避免“先知道台词再让系统找台词”。
+- **主标注原则**：X2 Gold 必须以**原视频的绝对时间区间 (`start_sec` - `end_sec`) 作为唯一主标注依据**；
+- **关联定位**：算法生成的 Evidence 条目或 `shot_id` 仅作为检索命中的关联索引，不作为真值载体；
+- **跨镜头事件**：允许真实语义事件跨越多个物理镜头；区间匹配判定边界及容差范围（如 $\pm 1.0\text{s}$）必须在实验前预注册承诺。
 
-## Gold
+## 指标分母公式与边界规则
 
-独立 Reviewer 标：
-- strongly_relevant
-- relevant
-- weak
-- irrelevant
-- not_present
-- gold_intervals
+执行前须冻结查询数、正负例分层、区间匹配容差、95%置信区间方法、缺失计法和PASS/FAIL规则。每个Gold事件以原视频时间区间标注，允许跨Shot；预测/Evidence区间按Temporal IoU达到预注册门槛作一对一匹配，重叠区间和多Gold事件处理规则一并预注册。任一分母为0、分层不足或有效标签不足时为 `N/A`，不得算作0或通过。
 
-Gold 与 Retrieval 完全隔离。
+1. **区间 Recall@K**：TopK按一对一匹配命中的Gold区间数 / 正例Query对应Gold区间总数；另报Query-level Recall@K（TopK至少命中一个Gold区间的正例Query数 / 正例Query数）。
+2. **Precision@3**：Top3中匹配Gold的预测区间数 / (3 × 正例Query数)，空位按未命中计。
+3. **MRR**：正例Query的首个匹配区间排名倒数之和 / 正例Query数；无匹配Query的倒数排名记0。
+4. **INSUFFICIENT**：正例误拒率=错误返回INSUFFICIENT的正例Query数/正例Query数；负例误收率=未返回INSUFFICIENT的负例Query数/负例Query数；负例正确拒答率=正确返回INSUFFICIENT的负例Query数/负例Query数。Hard Negative与OOD分层报告。
+5. **Hard Negative正确拒答率**：正确拒答数 / 已全片核验“人物在场但事件不存在”的可判定Query数。全部未拒答的这类负例亦计作错误。
+6. **去人物名影响**：同一正例Query具名/匿名配对版本分别算区间Recall@K；变化率=(具名Recall−匿名Recall)/具名Recall，具名Recall为0时N/A。
+7. **Evidence Support Rate**：已裁定为完全支持的返回区间数 / 已完成审核的返回区间数；未审核项单独报告，不算支持。
 
-## Baseline A｜Whole-L1 LLM
+所有Gate阈值待预注册。
 
-单集阶段把 Query + 完整 EP18 L1 一次交给强模型，输出：
-- Top5 unit_id
-- evidence quote
-- reason
-- confidence
-- 或 INSUFFICIENT
+## X2 历史门禁参考声明
 
-这是单集上限 baseline，不是最终多集架构。
+> [!WARNING]
+> **旧阈值口径说明**：历史旧指标（Recall@20 $\ge 0.80$, Precision@3 $\ge 0.60$, MRR $\ge 0.65$, Hard Negative Precision $\ge 0.85$, 去人名衰减 $\le 20\%$ 等）仅为**历史探索口径存根**。新阶段有效阈值必须在下游探针反馈后与 AI Judge 联合预注册，不可作为现行有效通过门槛。
 
-## Baseline B｜Embedding / Multimodal Retrieval
-
-Query embedding  
-→ Evidence embedding  
-→ Top20  
-→ rerank  
-→ Top3
-
-最终多集会需要这一类架构，但先用 Benchmark 决定是否值得复杂化。
-
-## X2 Gate
-
-| Metric | Gate |
-|---|---:|
-| Recall@20 | ≥0.80 |
-| Precision@3 | ≥0.60 |
-| MRR | ≥0.65 |
-| Hard Negative Precision | ≥0.85 |
-| Hard Negative Recall | ≥0.80 |
-| 去人物名 Recall 相对下降 | ≤20% |
-| Top3 Evidence Support Rate | ≥70% |
-
-每次必须保存 Failure Taxonomy：
-- 人物名依赖
-- 关键词依赖
-- 抽象语义失败
-- 动作理解失败
-- 场景理解失败
-- 跨镜头事件失败
-- 因果关系过推断
-- INSUFFICIENT 失败
-
-不能只汇报一个总通过率。
+每次评测必须输出详细的失败根因分类 (Failure Taxonomy)：人名依赖、关键词依赖、抽象语义失败、动作理解失败、场景理解失败、跨镜头事件失败、因果过度推断、INSUFFICIENT 判定失败。
 
 ---
 
-# 防作弊 / 防过拟合规则
+# X2.5｜Persona/Plan Blind Test (三权分立盲测)
 
-严格禁止：
-- 测试失败后加人物关键词。
-- 加剧情词典。
-- 加特定 scene_id。
-- 手工补正确时间码。
-- 手工写 dialogue unit。
-- 针对失败案例加 Grounding 黑名单。
-- AGY/Codex 根据 Holdout Gold 自动修代码。
+## 核心问题
 
-Development failures 可以用于改通用算法；Holdout 在锁定版本前只应暴露 aggregate metrics。
+> 给定具体 Persona 设定与新选题，系统能否在不依赖人工模板的前提下，由大模型自主生成结构合法、逻辑自洽且证据真实受控的 Downstream Plan？
 
-Engineering Tests ≠ Scientific Benchmark ≠ Human Acceptance。
+## 规则机制：三权分立原则
 
-AGY 不得自行宣布实验通过；PASS/FAIL 只由预先定义的指标 + 独立 Gold + Blind Benchmark 决定。
+为彻底杜绝旧 A6/A7“人工手写 Plan 原样写回”与“答案泄漏”弊端，X2.5 实行严格的三权分立盲测：
+1. **作者 (Author)**：独立负责编写 Persona 设定、Topic 选题意图与内容边界约束；不得接触底层 Evidence 索引或 Gold 时间码。
+2. **运行者 (Operator / System)**：负责执行自动 Ingest、检索以及 Director 生成 Pipeline；不得人工干预或后处理修改生成的 Plan。
+3. **标注者 / 评审者 (Evaluator / Judge)**：负责针对生成的 Plan 进行盲审，核验 Beats 引用是否真实存在于 L1、台词与镜头是否严格对应；不得参与 Prompt 或 Plan 的编写。
+
+**严禁任何形式的人工预写 Plan 注入系统伪充 AI 生成。**
+
+## X2.5 评测指标与分母公式
+
+1. **Plan Schema有效率**：Schema有效Plan数 / 全部预注册Plan尝试数，调用失败保留在分母。
+2. **Plan约束有效率**：满足时间预算和确定性规则的Plan数 / 全部尝试数；逻辑连贯性另报Judge已裁定有效Plan数 / 有Anchor裁定的Plan数。
+3. **Beat证据支持率**：Anchor裁定“Evidence存在且支持该Beat claim”的数量 / 已裁定Beat claim总数；缺证据、矛盾、无法裁定分别报告。
+4. **Persona条件满足率**：满足预注册Persona约束的已裁定Plan数 / 有Anchor裁定的Plan数；约束项级分子、分母也须报告。
+5. 样本数、分层、排除规则与阈值须在执行前预注册；分母为0或Anchor标签覆盖不足时N/A。
+
+
+## X2.5 样本与 Persona 盲法
+
+- 最低设计为 **2 个 Persona × 5 个 Topic**。Plan生成时系统收到不带目标标签的匿名Persona卡以实现条件化，卡片与真实Persona的映射由隔离协调者保管；独立评审不看系统使用的Persona卡或目标标签，盲看生成结果并从随机化候选Persona卡中判断归属，同时评Evidence是否支持观点、有无事实错误。
+- Persona/Topic作者、执行Agent、Anchor标注者与评审者职责分离；评审者不参与Persona/Topic/Prompt/Plan编写。Anchor标注者直接看原始媒体，不看模型预测。
+- Persona归属准确率=正确盲判Plan数/已裁定Plan数；另报各Persona召回率和95%置信区间。事实错误率=Anchor判为contradicted或unsupported的claims数/所有已裁定claims数；Evidence支持率=supported claims数/已裁定claims数。未裁定项单独报告，不视为正确。
+- X2.5验证Persona差异和Plan/Director质量，并为Topic-first vs Source-first设计提供证据；后续比较需另行预注册与授权。
+
+
+---
+
+# 科学评测纪律：时间盒与 Kill Criteria (阻断停止条件)
+
+## 严格时间盒管理 (Timeboxes)
+
+为防止项目陷入无休止的模型调参或调试死循环，所有阶段设置严格的工作日时间盒：
+- **Human Anchor 准备与 AI Judge 校准**：$\le 5$ 工作日；
+- **切分 / Schema / 重试修复**：$\le 3$ 工作日；
+- **受控 X2 Downstream Probe**：$\le 3$ 工作日；
+- **X2 主评测**：$\le 5$ 工作日；
+- **X2.5 Persona/Plan 盲测**：$\le 5$ 工作日。
+
+> **超时复审机制**：若某阶段在时间盒内未完成，**仅允许进行一次书面范围与时间复审**；严禁擅自自动扩充样本量或随意更换模型继续拖延。
+
+## 硬性停止条件 (Kill Criteria - 触发即停机)
+
+发生以下任一情况，当前实验必须**立即中止停机并报告阻塞**：
+1. **Judge 一致性失衡**：独立 AI Judge 与 Human Anchor 的一致性评分（Kappa 或 Balanced Acc）低于预注册阈值，无法形成可靠裁决；
+2. **数据泄漏与哈希漂移**：发现 Gold / Anchor 明文暴露给模型，或预注册的代码、Prompt、数据 SHA256 发生非授权漂移；
+3. **负例不可核验**：Hard Negative 的“全片不存在性”无法获得标注员真实核验；
+4. **复现失败**：推理记录的 Schema 或 Stream Provenance 溯源不可复现；
+5. **分母不足或失衡**：评估样本分母未达预注册绝对值，或抽样分层严重失衡；
+6. **核心能力失效**：核心指标未达预注册 Gate，或 X2 probe 证实生成的 Objective Evidence 对下游完全无效。
+
+### 未达目标后的停止与降级路径
+
+触发 Kill Criteria 后停止该阶段及其扩展，不进入 X1.3，不通过反复换模型或调参追逐分数。后续 Review 可选择 **OCR+ASR 为主、视觉为辅**、**人工辅助入库**（须重新定义人工边界和单集成本）或**停止该技术路线**。人工辅助只作为另行授权的降级产品方案；Human Anchor 不成为每集常规入库步骤。
+
+---
+
+# 防作弊与预注册承诺 (Pre-registration & Hash Commitment)
+
+## 每批冻结前预注册与 SHA256 承诺
+
+在任何批次运行前，必须书面预注册并固化以下各项的 SHA256 哈希值：
+1. **源代码**：推理、评估与指标统计脚本的绝对文件哈希；
+2. **Prompts**：System Prompt 与 User Prompt 文本模板的绝对哈希；
+3. **模型配置**：官方确切模型名称、版本、运行参数与供应商配置（如 `gemini-3.1-pro-low:effort=low`）；
+4. **评测程序**：核验脚本与 Judge 逻辑的绝对哈希；
+5. **样本清单**：抽样 Manifest 的绝对哈希；
+6. **Gold / Anchor 承诺**：真值文件的 SHA256 承诺哈希（明文加密隔离存储）。
+
+> **漂移处置**：Run 完成后核验哈希，若发现任何一项与预注册承诺不符，**本次运行一律作废，直接判定为全新未批准实验**。Agent 与 Judge 在任何情况下不得读取 Gold / Anchor 明文。
+
+揭晓 Holdout / Gold 后，不得针对结果修改代码、Prompt、模型或阈值并宣称同轮 PASS。任何修改均是新实验，须重新预注册、生成新哈希并使用未揭晓的新盲测集；已揭晓集只可用于开发诊断。
+
+## 严格禁止行为
+
+- 测试失败后添加特定人名、专有词或剧情关键词；
+- 添加特定剧情词典或 `scene_id`；
+- 手工补写正确时间码或手写 `dialogue unit`；
+- 针对失败案例追加 Grounding 黑名单；
+- 根据 Holdout / Gold 结果反向微调或拟合代码。
 
 ---
 
 # X3/X4｜最终多集方向
 
-X1 + X2 PASS 后：
+只有 X1、X2、X2.5 均按预注册 Gold Gate 通过且经后续 Review 明确授权后，才可解锁 X3/X4：
 
 ## X3 多集统一 Evidence Store
 
@@ -456,53 +493,19 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 
 ---
 
-# 本地 Codex 接管后的第一任务
+# 本地 Codex 接管后的第一任务 (2026-10-07 最新状态)
 
-1. 先读本文件与 `docs/agent-poc/poc-independent-audit.md`。
-2. 检查当前 Git 状态和源码，确认审计问题仍成立。
-3. 不恢复 A8/A9，不修改旧 A5/A6/A7。
-4. 给 AGY 下发 X0 技术 Spike。
-5. X0 完成后 STOP，等待人工 Review。
-
-## X0 执行摘要
-
-目标：围绕最终“多集素材一次入库 → 跨集检索 → 多集混剪”，为 X1 单集自动理解选择技术路线。
-
-必须实际检查并尽可能运行：
-- zenstory-ai/video-recap-skills / video-understanding
-- PySceneDetect
-- Marlin video understanding/caption/find
-- 当前 VMV Stage1
-- 必要时其他高质量 GitHub video-understanding Skill
-
-使用 EP18 短片段做真实 Spike；检查源码和 License，不得只读 README。
-
-禁止：
-- 使用 EP18_REAL_SCENE_MAP
-- 使用 Topic A/B
-- 使用旧 Requirement/A5/A6/A7/Storyboard
-- 写任何《潜伏》人物/剧情 hard-code
-- 修改主生产链
-- 进入 X1
-- 生成新正式 MP4
-- 进入 A9
-
-唯一正式交付：
-`docs/agent-poc/x0-technology-spike.md`
-
-完成：
-- 更新 PROGRESS.md
-- 状态 = `X0 awaiting_review`
-- commit
-- 报告 commit SHA
-- STOP
+1. **确立规范基准**：确认本文件最新规范已全面生效，supersede 旧指标定义与旧单向冻结条款；X1.2 维持 Engineering PASS / Scientific Pending；
+2. **遵守实验暂停**：当前状态为 `validation_route_revision_committed; experiments_paused`，**暂停新增模型实验、新增样本和 X1.3；不进入正式 X2，不执行 X2 probe 或 X2.5**；
+3. 后续若获单独授权，先完成 Human Anchor 与独立 AI Judge 校准及预注册准备；该校准是一次性 POC 成本，不进入生产 Ingest。
+4. 本次只修订路线并提交文档，随后严格 STOP；不执行实验、不新增样本。
 
 ---
 
-## 当前正式状态
+## 当前正式状态 (2026-10-07)
 
-> **旧 POC 已证明渲染和部分工程链路可运行，但核心 AI 能力尚未得到有效验证；项目进入 X0/X1/X2 独立技术验证阶段。**
+> **X1.2 为 Engineering PASS / Scientific Pending：自动推理与 Codex AI 逐镜头复核已完成；Human Anchor 盲标、Judge 校准及正式 Gold Gate 尚未完成；新增模型实验、新增样本和 X1.3 暂停，不进入正式 X2，X2 probe 与 X2.5 本次不执行；当前状态为 `validation_route_revision_committed; experiments_paused`。**
 
 最高成功标准：
 
-> **系统面对自己从未见过的新影视素材和新内容需求，仍能可靠理解素材、找到正确证据、找不到时拒绝，并最终在多集素材库中自动取材和混剪成真实视频。**
+> **系统面对自己从未见过的新影视素材和新内容需求，仍能可靠理解素材、找到正确证据、找不到时坚决拒绝，并最终在多集素材库中自动取材和混剪成真实视频。**
