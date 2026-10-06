@@ -1,5 +1,5 @@
 {
-  "preregistration_id": "HA-DEV-2026-10-07-v1",
+  "preregistration_id": "HA-DEV-2026-10-07-v3",
   "status": "FROZEN_BEFORE_HUMAN_LABELING_AND_JUDGE",
   "purpose": "calibrate evaluation of existing X1.2 system using one-time development Human Anchor; not per-episode ingest",
   "sample_manifest_sha256": "7f82d16034e2ef80f3b36d8d15215e58394a0313610540fc848a1a8a17a6fff4",
@@ -17,12 +17,15 @@
   "model_config_sha256": "3bf25896aeb79899e32d149921845cccb10016f52a5555706682993ac579ce04",
   "model_config_canonical_text": "model=gemini-3.1-pro-low\neffort=low\nimage_input_resolution=384\nframe_positions_percent=25,50,75\nprovider=AGYCLIGeminiProvider\n",
   "human_anchor_answers_sha256": null,
-  "answers_hash_status": "PENDING_AFTER_ANNOTATION_BEFORE_ANY_JUDGE_OR_EVALUATOR_READS_ANSWERS",
+  "answers_hash_status": "PENDING_AFTER_ANNOTATION_BEFORE_ANY_JUDGE_OR_EVALUATOR_READS",
   "no_model_calls_or_judge_run_in_this_preparation": true,
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
-    "schema.json": "25500a83c7511d82e32b9cea7e7262a88ef2d9c719a52c39c2315608aa7779cf",
-    "annotation-guidelines.md": "51f6aca4948312f3402213b45fab08463bc820c1bd169ce28f6bc2a78f555af7",
-    "preregistration.md": "1a580491b50401d21b2430249c408421daab8408d11e53e3ed310e61f8161ba5"
-  }
+    "schema.json": "cb8baa7208369bfa9d5649c34ab3eead6e3b5bf1c0e3cb06e5fe777f7d9ea715",
+    "annotation-guidelines.md": "c1983f12112cbd90e5fc60ea8f8f195dea03e135b1a0d2c5d9291e0bbbb2ae1d",
+    "preregistration.md": "c12109868a63159696fad4f93112f9d2546bf069b9c12351904cd127973b77dd"
+  },
+  "preparation_base_commit": "5a66dfbf266fa6e781ab1a6b7e6bdfc80f606520",
+  "annotation_page_sha256": "7069458a0ec9c87ac0960aad96be3a1258097eeb26b2e395d6a52c88f72bf7d3",
+  "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe"
 }

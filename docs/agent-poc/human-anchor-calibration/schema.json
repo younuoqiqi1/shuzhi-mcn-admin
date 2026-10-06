@@ -1,90 +1,38 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Human Anchor Schema",
-  "schema_version": "human-anchor/1.0",
-  "description": "Content-independent schema for direct observation of audiovisual material.",
-  "fields": [
-    {
-      "name": "shot_boundary_usability",
-      "type": "enum",
-      "values": [
-        "usable",
-        "unusable",
-        "uncertain"
-      ]
+  "schema_version": "human-anchor/1.1",
+  "title": "Generic audiovisual observation anchor",
+  "content_independent": true,
+  "fields": {
+    "shot_boundary_usability": ["usable", "unusable", "uncertain"],
+    "visible_person_count": ["0", "1", "2", "3", "4+", "uncertain"],
+    "person_consistency_pair": {
+      "decision": ["same_person", "different_person", "uncertain"],
+      "selection": "Click a visible person location in each raw frame; store normalized image coordinates; do not assign person IDs."
     },
-    {
-      "name": "visible_person_count",
-      "type": "integer_or_unknown"
+    "scene_environment": {
+      "values": ["indoor", "outdoor", "vehicle_interior", "transition_unclear", "other", "uncertain"],
+      "optional_detail_max_chars": 24
     },
-    {
-      "name": "anonymous_persons",
-      "type": "array",
-      "items": {
-        "person_id": "anonymous stable ID only (e.g. P01)",
-        "visible_description": "directly visible features only",
-        "cross_shot_identity": "reuse ID only when sure; otherwise unknown"
-      },
-      "forbidden": [
-        "real names",
-        "plot identity",
-        "relationship",
-        "motivation",
-        "emotion"
-      ]
+    "observable_actions": {
+      "values": ["sitting_or_standing", "moving", "speaking_or_interacting", "handling_object", "other", "no_clear_action", "uncertain"],
+      "multi_select": true,
+      "optional_detail_max_chars": 24
     },
-    {
-      "name": "scene_environment",
-      "type": "direct_observation_text_or_unknown"
+    "key_visible_objects": {
+      "values": ["furniture", "container", "paper_or_document", "device_or_tool", "vehicle", "food_or_drink", "other", "no_key_object", "uncertain"],
+      "multi_select": true,
+      "optional_detail_max_chars": 24
     },
-    {
-      "name": "observable_actions",
-      "type": "direct_observation_text_or_unknown"
-    },
-    {
-      "name": "key_visible_objects",
-      "type": "direct_observation_text_or_unknown"
-    },
-    {
-      "name": "speech",
-      "type": "object",
-      "properties": {
-        "status": {
-          "enum": [
-            "audible",
-            "no intelligible speech",
-            "cannot determine"
-          ]
-        },
-        "transcript": "verbatim words when intelligible; otherwise empty",
-        "speaker_person_id": "anonymous ID or unknown",
-        "speaker_confidence": {
-          "enum": [
-            "high",
-            "medium",
-            "low",
-            "unknown"
-          ]
-        }
-      }
-    },
-    {
-      "name": "unknown_notes",
-      "type": "directly observed uncertainty or unknown field list"
-    }
+    "speech_status": ["intelligible_speech_audible", "no_intelligible_speech", "uncertain"],
+    "speaker_source": ["on_screen_person", "off_screen_voice", "uncertain"],
+    "speaker_location": "Normalized coordinates on a raw representative frame when speaker_source is on_screen_person.",
+    "annotation_timing": ["per_shot_elapsed_ms", "per_pair_elapsed_ms", "whole_task_active_ms"],
+    "unknown": "Explicit uncertain choice for each applicable field."
+  },
+  "not_collected": [
+    "verbatim_transcript", "CER", "WER", "stable_person_id",
+    "speaker_person_id", "speaker_confidence", "plot", "real_identity",
+    "relationship", "motivation", "emotion", "narrative_significance"
   ],
-  "provenance_required": [
-    "manifest shot_id",
-    "source time interval",
-    "raw source frames",
-    "raw source clip"
-  ],
-  "prohibited_inference": [
-    "plot",
-    "identity by name",
-    "interpersonal relationship",
-    "motivation",
-    "emotion",
-    "narrative significance"
-  ]
+  "provenance": ["existing_manifest_shot_id", "source_time_interval", "original_frame_or_video"]
 }
