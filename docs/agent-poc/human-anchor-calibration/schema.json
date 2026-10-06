@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Human Anchor Schema",
+  "schema_version": "human-anchor/1.0",
+  "description": "Content-independent schema for direct observation of audiovisual material.",
+  "fields": [
+    {
+      "name": "shot_boundary_usability",
+      "type": "enum",
+      "values": [
+        "usable",
+        "unusable",
+        "uncertain"
+      ]
+    },
+    {
+      "name": "visible_person_count",
+      "type": "integer_or_unknown"
+    },
+    {
+      "name": "anonymous_persons",
+      "type": "array",
+      "items": {
+        "person_id": "anonymous stable ID only (e.g. P01)",
+        "visible_description": "directly visible features only",
+        "cross_shot_identity": "reuse ID only when sure; otherwise unknown"
+      },
+      "forbidden": [
+        "real names",
+        "plot identity",
+        "relationship",
+        "motivation",
+        "emotion"
+      ]
+    },
+    {
+      "name": "scene_environment",
+      "type": "direct_observation_text_or_unknown"
+    },
+    {
+      "name": "observable_actions",
+      "type": "direct_observation_text_or_unknown"
+    },
+    {
+      "name": "key_visible_objects",
+      "type": "direct_observation_text_or_unknown"
+    },
+    {
+      "name": "speech",
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "audible",
+            "no intelligible speech",
+            "cannot determine"
+          ]
+        },
+        "transcript": "verbatim words when intelligible; otherwise empty",
+        "speaker_person_id": "anonymous ID or unknown",
+        "speaker_confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "unknown"
+          ]
+        }
+      }
+    },
+    {
+      "name": "unknown_notes",
+      "type": "directly observed uncertainty or unknown field list"
+    }
+  ],
+  "provenance_required": [
+    "manifest shot_id",
+    "source time interval",
+    "raw source frames",
+    "raw source clip"
+  ],
+  "prohibited_inference": [
+    "plot",
+    "identity by name",
+    "interpersonal relationship",
+    "motivation",
+    "emotion",
+    "narrative significance"
+  ]
+}

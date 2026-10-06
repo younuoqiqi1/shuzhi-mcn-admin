@@ -1,6 +1,6 @@
 # 数智博主 AI 视频 POC｜重新验证开发交接文档
 
-**日期：** 2026-10-07
+**日期：** 2026-10-07（Human Anchor Calibration 准备已冻结）
 **用途：** 本地 Codex Work 接管项目并协调 AGY 后续开发  
 **当前策略：** 冻结原 A8/A9/A10；全面落实 **Human Anchor + 独立 AI Judge 校准** 与 **X2.5 盲测** 机制；本规范明确 **supersede** 旧 X1/X2 指标/样本定义以及“只有 X1 Gate 通过后才能任何 X2 探针”的旧条款；当前实验暂停，优先固化新验证路线与预注册规范。
 **最终目标：** 影视多集素材一次入库后，可针对任意新选题跨集检索、多集混剪，并从 MCN 后台生成真实视频。
@@ -496,15 +496,31 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 # 本地 Codex 接管后的第一任务 (2026-10-07 最新状态)
 
 1. **确立规范基准**：确认本文件最新规范已全面生效，supersede 旧指标定义与旧单向冻结条款；X1.2 维持 Engineering PASS / Scientific Pending；
-2. **遵守实验暂停**：当前状态为 `validation_route_revision_committed; experiments_paused`，**暂停新增模型实验、新增样本和 X1.3；不进入正式 X2，不执行 X2 probe 或 X2.5**；
-3. 后续若获单独授权，先完成 Human Anchor 与独立 AI Judge 校准及预注册准备；该校准是一次性 POC 成本，不进入生产 Ingest。
-4. 本次只修订路线并提交文档，随后严格 STOP；不执行实验、不新增样本。
+2. **遵守实验暂停**：当前状态为 `human_anchor_calibration_preparation; experiments_paused`，已冻结 30-shot Manifest、通用 Schema、标注规范及 Calibration preregistration；**不运行新模型/AI Judge、不新增样本、不做人审、不生成 Evidence、不执行 X2 probe、不进入 X1.3/X2/X2.5**；
+3. 当前只完成准备，待 Review 后由未看过 AI 输出的标注员独立标注；标注后先登记答案 SHA256 commitment，再由独立 Judge 按冻结规则校准。该校准是一次性 POC 成本，不进入生产 Ingest。
+4. 本轮仅提交验证方案、30-shot Manifest、通用 Schema、标注规范、预注册和仓库外盲标页，随后严格 STOP；不运行模型、Judge、人工标注、新 Evidence、新样本或下游实验。
 
 ---
 
+
+
+## Human Anchor Development Calibration 准备（2026-10-07）
+
+Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest。Schema 与项目/剧集/人物/剧情无关，只标镜头边界、匿名人物、场景/环境、直接可观察动作、物体、对白/speaker、confidence 和 unknown。未来第二集、第三集及以后必须自动 Ingest；Anchor 是一次性 POC 系统校准成本。
+
+- **样本**：只从现有 X1.2 50-shot Manifest 按 early/mid/late 分层、固定种子 20261007 各取 10 个，共 30 个；冻结清单见 `docs/agent-poc/human-anchor-calibration/manifest.json`，不增加样本。
+- **盲标页**：仓库外 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/human-anchor-calibration/annotation.html` 仅展示原始片段/帧/原声及通用字段，不展示任何 AI/Judge/Codex 预测。标注员直接观察并独立完成；页面不保存答案，导出仅为人工自设口令加密密文，存放于仓库外，答案明文不得被 Agent/Judge 读取或提交。
+- **盲法前提**：标注员须声明未看过这些 Shot 的 Evidence/AI/Codex Review。已看过预测者不能通过页面隐藏恢复盲法；若无法找到未暴露的标注员，校准须记为 INCONCLUSIVE。
+- **冻结**：同目录 `schema.json`、`annotation-guidelines.md`、`preregistration.md`、`hash-commitment.json` 冻结 Schema、分层 Manifest、哈希、公式/分母、unknown/missing/failed、阈值、CI 和 PASS/FAIL/INCONCLUSIVE。答案 SHA256 必须在标注完成后、任何 Judge/评估器读取前计算登记；目前为空值是待办，不代表答案已存在。
+- **当前状态**：只完成准备/预注册；未做人审标注、未运行 Judge、未生成 Evidence、未进行 X2 Probe、未进入 X1.3/X2/X2.5。X1.2 仍为 Engineering PASS / Scientific Pending。
+
+### 校准后的泛化验证顺序
+
+Development Calibration 完成并冻结代码、Prompt、模型配置及评测规则后，先运行 Same-title Blind Holdout（例如 EP19）全自动 Ingest；不得重做 Anchor，不得针对该集修改 Prompt/代码或添加人物/剧情规则。自动 Ingest 完成后才可少量事后人工抽检，抽检不得参与入库。若 Holdout 必须人工修正才能正常 Evidence 入库，X1 FAIL。之后以同一冻结系统运行另一部真人剧 Cross-title Holdout，仅事后小规模抽检。动画、综艺、纪录片等 Domain Shift 另做 Domain Qualification；不要求每部新素材重复 Anchor。
+
 ## 当前正式状态 (2026-10-07)
 
-> **X1.2 为 Engineering PASS / Scientific Pending：自动推理与 Codex AI 逐镜头复核已完成；Human Anchor 盲标、Judge 校准及正式 Gold Gate 尚未完成；新增模型实验、新增样本和 X1.3 暂停，不进入正式 X2，X2 probe 与 X2.5 本次不执行；当前状态为 `validation_route_revision_committed; experiments_paused`。**
+> **X1.2 为 Engineering PASS / Scientific Pending：自动推理与 Codex AI 逐镜头复核已完成；Human Anchor 盲标、Judge 校准及正式 Gold Gate 尚未完成；新增模型实验、新增样本和 X1.3 暂停，不进入正式 X2，X2 probe 与 X2.5 本次不执行；当前状态为 `human_anchor_calibration_preparation; experiments_paused`。**
 
 最高成功标准：
 
