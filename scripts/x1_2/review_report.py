@@ -38,6 +38,7 @@ import json
 import logging
 import math
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -676,6 +677,157 @@ def generate_report(
 
 
 # ---------------------------------------------------------------------------
+# UI Localization & Translation Lookup
+# ---------------------------------------------------------------------------
+CAMERA_STATIC_MAP = {
+    "extreme long shot": "大远景",
+    "extreme wide shot": "大远景",
+    "very long shot": "大远景",
+    "long shot": "远景",
+    "wide shot": "远景",
+    "medium long shot": "中远景",
+    "medium wide shot": "中远景",
+    "full shot": "全景",
+    "medium shot": "中景",
+    "medium close up": "中特写",
+    "medium close-up": "中特写",
+    "close up": "特写",
+    "close-up": "特写",
+    "extreme close up": "大特写",
+    "extreme close-up": "大特写",
+    "overhead shot": "俯拍/顶视",
+    "bird's eye view": "鸟瞰",
+    "birds eye view": "鸟瞰",
+    "high angle": "俯拍",
+    "low angle": "仰拍",
+    "dutch angle": "倾斜镜头",
+    "point of view": "主观视点",
+    "pov": "主观视点",
+    "two shot": "双人镜头",
+    "over the shoulder": "过肩镜头",
+    "ots": "过肩镜头",
+    "aerial shot": "航拍",
+    "cowboy shot": "半身/牛仔镜头",
+    "unknown": "未知",
+}
+
+SEGMENT_STATIC_MAP = {
+    "early": "前",
+    "mid": "中",
+    "late": "后",
+    "unknown": "未知",
+}
+
+
+def normalize_screen_directions(text: str) -> str:
+    """将 screen-left / screen-right 及其变体统一替换为 画面左侧 / 画面右侧"""
+    if not text:
+        return ""
+    text = re.sub(r'\bscreen[- ]left\b', '画面左侧', text, flags=re.IGNORECASE)
+    text = re.sub(r'\bscreen[- ]right\b', '画面右侧', text, flags=re.IGNORECASE)
+    return text
+
+
+def load_translations_dict(translations_file: Optional[Path]) -> Dict[str, str]:
+    """安全读取翻译字典，如果文件不存在或为空则返回空字典。
+    字典格式: SHA256(UTF8原字段单个字符串) -> 忠实中文。
+    """
+    if not translations_file:
+        return {}
+    p = Path(translations_file)
+    if not p.exists() or not p.is_file():
+        return {}
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict):
+            return data
+    except Exception as e:
+        logger.warning("无法加载翻译字典 %s: %s", p, e)
+    return {}
+
+
+def localize_text(text: Any, translations: Optional[Dict[str, str]] = None, is_camera: bool = False) -> str:
+    """按 SHA256(UTF8文本) 查中文，common camera 静态中文 map，纯中文保留，空值未提供，未翻译提示中文翻译待补齐。"""
+    if text is None:
+        return "未提供"
+    stripped = str(text).strip()
+    if not stripped:
+        return "未提供"
+
+    trans_dict = translations or {}
+
+    # 1. 查字典优先: SHA256(UTF8原字段单个字符串)
+    val_sha = hashlib.sha256(stripped.encode("utf-8")).hexdigest()
+    if val_sha in trans_dict and trans_dict[val_sha]:
+        trans = str(trans_dict[val_sha]).strip()
+        return normalize_screen_directions(trans)
+
+    # 2. 景别常见枚举静态中文 map
+    lower_val = stripped.lower()
+    if is_camera or lower_val in CAMERA_STATIC_MAP:
+        if lower_val in CAMERA_STATIC_MAP:
+            return CAMERA_STATIC_MAP[lower_val]
+
+    # 3. 方位词归一化
+    norm_val = normalize_screen_directions(stripped)
+
+    # 4. 原本含中文且无英文描述原样保留
+    has_chinese = bool(re.search(r'[\u4e00-\u9fff]', norm_val))
+    has_english = bool(re.search(r'[a-zA-Z]', norm_val))
+    if has_chinese and not has_english:
+        return norm_val
+
+    # 5. 译文缺失明确提示中文翻译待补齐，不静默英文 fallback
+    return "【中文翻译待补齐】"
+
+
+def localize_value(raw_val: Any, translations: Optional[Dict[str, str]] = None, is_camera: bool = False) -> str:
+    """处理可能为列表或单值的字段，多项用顿号连接；
+    None 和空字符串必须为'未提供'，只有模型实际输出空列表（[]）才可为'无'，避免将失败伪造成无人物/无动作。
+    """
+    if raw_val is None:
+        return "未提供"
+    if isinstance(raw_val, list):
+        if len(raw_val) == 0:
+            return "无"
+        return "、".join([localize_text(item, translations, is_camera=is_camera) for item in raw_val])
+    stripped = str(raw_val).strip()
+    if not stripped:
+        return "未提供"
+    return localize_text(stripped, translations, is_camera=is_camera)
+
+
+AI_VERDICT_MAP = {
+    "no_obvious_error": "未见明显错误",
+    "needs_correction": "需要修正",
+    "uncertain": "无法确定",
+    "unavailable": "无模型结果",
+}
+
+
+def load_ai_review(ai_review_file: Optional[Path]) -> Optional[Dict[str, Any]]:
+    """安全读取 AI 复核结果 (Codex)。
+    JSON 合同:
+    review_type="ai_review", human_gold=false, reviewer="Codex",
+    shots: { "<shot_id>": { "verdict": ..., "note": ... } }
+    """
+    if not ai_review_file:
+        return None
+    p = Path(ai_review_file)
+    if not p.exists() or not p.is_file():
+        return None
+    try:
+        with open(p, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict):
+            return data
+    except Exception as e:
+        logger.warning("无法加载 AI 复核文件 %s: %s", p, e)
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Review HTML Viewer Generator
 # ---------------------------------------------------------------------------
 def generate_review_html(
@@ -684,6 +836,8 @@ def generate_review_html(
     runs_dir: Path,
     output_html_file: Path,
     clips_dir: Optional[Path] = None,
+    translations_file: Optional[Path] = None,
+    ai_review_file: Optional[Path] = None,
 ) -> Path:
     """Generate standalone review.html with:
     - Inline 384 standardized image generated via req.get_standardized_inference_bytes;
@@ -691,7 +845,7 @@ def generate_review_html(
     - Inline collapsible original image;
     - Dynamically displays all 6 parsed fields (characters, environment, physical_actions, objects, camera, uncertainty);
     - Grouped by 50 shots with timing;
-    - Screen-left/right mirror notice;
+    - AI review banner (Codex) display per shot;
     - Completely empty default audit fields (factual/hallucinated counts, scene/action);
     - Shot boundary usability select (empty/yes/no/uncertain) with null export for untouched;
     - Robust LocalStorage persistence and JSON export with provenance == 'human_review';
@@ -702,6 +856,10 @@ def generate_review_html(
 
     with open(manifest_file, "r", encoding="utf-8") as f:
         manifest = json.load(f)
+
+    translations_dict = load_translations_dict(translations_file)
+    ai_review_data = load_ai_review(ai_review_file)
+    ai_shots_map = ai_review_data.get("shots", {}) if (ai_review_data and isinstance(ai_review_data, dict)) else {}
 
     shots = manifest.get("shots", [])
     inferences_dir = runs_dir / "inferences"
@@ -759,8 +917,12 @@ def generate_review_html(
         "      <button class='btn' onclick='exportJSON()'>导出标注真值 (JSON)</button>",
         "    </div>",
         "  </div>",
+        "  <div style='background: #1e1b4b; border: 1px solid #4338ca; border-radius: 8px; padding: 12px 16px; margin-bottom: 20px; color: #c7d2fe; font-size: 13px; line-height: 1.6;'>",
+        "    <strong>💡 质检机制说明:</strong> <strong>AI 复核与人工真值分开，人工修订选填不需要逐项填写。</strong>",
+        "    AI 复核结论仅供质检参考，绝不自动填充至人工标注。审核员如发现偏差可针对性填报人工修订。",
+        "  </div>",
         "  <p style='color: #94a3b8; font-size: 13px; line-height: 1.5; margin-bottom: 24px;'>",
-        "    <strong>质检规范:</strong> 方位统一遵循 <code>screen-left</code> (屏幕左) 与 <code>screen-right</code> (屏幕右)；"
+        "    <strong>质检规范:</strong> 方位统一遵循 <code>画面左侧</code> 与 <code>画面右侧</code>；",
         "    标签输入字段默认全部留空，避免确认偏差；导出的人工标注结果仅供独立评估模块加载，模型推理代码绝对隔离。",
         "  </p>",
     ]
@@ -771,14 +933,34 @@ def generate_review_html(
         end_sec = s["end"]
         dur = s["duration"]
         seg = s.get("segment", "unknown")
+        seg_zh = SEGMENT_STATIC_MAP.get(str(seg).lower(), str(seg))
+
+        shot_ai = ai_shots_map.get(shot_id) if isinstance(ai_shots_map, dict) else None
+        if shot_ai and isinstance(shot_ai, dict) and "verdict" in shot_ai:
+            raw_v = shot_ai.get("verdict", "")
+            zh_v = AI_VERDICT_MAP.get(raw_v, str(raw_v))
+            zh_n = html.escape(str(shot_ai.get("note", "")))
+            ai_banner_html = (
+                f"  <div class='ai-review-banner' style='background:#172554; border:1px solid #1e40af; border-radius:6px; padding:10px 14px; margin-bottom:14px; font-size:12px; color:#bfdbfe;'>"
+                f"    <strong>🤖 AI复核结论 (Codex):</strong> <span style='font-weight:600; color:#60a5fa;'>{html.escape(zh_v)}</span>"
+                + (f" <span style='color:#93c5fd; margin-left:8px;'>| 备注: {zh_n}</span>" if zh_n else "")
+                + f"  </div>"
+            )
+        else:
+            ai_banner_html = (
+                f"  <div class='ai-review-banner' style='background:#1e293b; border:1px solid #334155; border-radius:6px; padding:8px 14px; margin-bottom:14px; font-size:12px; color:#94a3b8;'>"
+                f"    <strong>🤖 AI复核结论:</strong> <span>AI 复核尚未完成</span>"
+                f"  </div>"
+            )
 
         html_parts.append("<div class='shot-card'>")
         html_parts.append(
             f"  <div class='shot-header'>"
-            f"    <span class='shot-title'>{html.escape(shot_id)} <span class='badge'>段落: {seg}</span></span>"
+            f"    <span class='shot-title'>{html.escape(shot_id)} <span class='badge'>镜头段落: {seg_zh}</span></span>"
             f"    <span class='shot-meta'>区间: <code>{start_sec:.2f}s - {end_sec:.2f}s</code> (时长: {dur:.2f}s)</span>"
             f"  </div>"
         )
+        html_parts.append(ai_banner_html)
         html_parts.append("  <div class='frame-grid'>")
 
         for p in [25, 50, 75]:
@@ -809,15 +991,15 @@ def generate_review_html(
                     logger.debug("Failed computing 384 for %s: %s", frame_id, e)
 
             infer_file = inferences_dir / f"{frame_id}.json"
-            pv_dict = {}
+            pv_dict = None
             if infer_file.exists():
                 try:
                     with open(infer_file, "r", encoding="utf-8") as fp:
                         idata = json.load(fp)
                         resp_obj = idata.get("response") or {}
-                        pv_dict = resp_obj.get("parsed_validation") or {}
+                        pv_dict = resp_obj.get("parsed_validation")
                 except Exception:
-                    pass
+                    pv_dict = None
 
             html_parts.append(f"    <div class='frame-box' data-fid='{frame_id}'>")
             html_parts.append(
@@ -835,61 +1017,109 @@ def generate_review_html(
             html_parts.append("      </div>")
 
             # Collapsible original image with hash
+            inf_hash_text = "未知" if calc_inf_hash == "unknown" else f"{calc_inf_hash[:16]}..."
             html_parts.append(
                 f"      <details style='font-size:11px; color:#94a3b8; margin-bottom:8px;'>"
                 f"        <summary style='cursor:pointer; color:#38bdf8;'>查看原图折叠 & 384哈希核对</summary>"
-                f"        <div style='margin-top:4px;'>Inference Hash: <code>{html.escape(calc_inf_hash[:16])}...</code></div>"
+                f"        <div style='margin-top:4px;'>推理图像哈希: <code>{html.escape(inf_hash_text)}</code></div>"
                 f"        <img src='{raw_img_b64}' style='width:100%; margin-top:4px; border-radius:4px; border:1px solid #334155;' />"
                 f"      </details>"
             )
 
             html_parts.append(
                 "      <div class='mirror-hint'>"
-                "        <strong>方位校准:</strong> 画面左侧为 <code>screen-left</code>，画面右侧为 <code>screen-right</code> (面向镜头人物已按屏幕画面左右统一对齐)"
+                "        <strong>方位校准:</strong> 统一使用 <code>画面左侧</code> 与 <code>画面右侧</code> (面向镜头人物已按屏幕画面左右统一对齐)"
                 "      </div>"
             )
 
-            # Dynamically display all 6 objective schema fields
-            chars_str = ", ".join(pv_dict.get("characters", [])) if pv_dict.get("characters") else "无"
-            env_str = pv_dict.get("environment", "无")
-            acts_str = ", ".join(pv_dict.get("physical_actions", [])) if pv_dict.get("physical_actions") else "无"
-            objs_str = ", ".join(pv_dict.get("objects", [])) if pv_dict.get("objects") else "无"
-            cam_str = pv_dict.get("camera", "unknown")
-            unc_str = pv_dict.get("uncertainty", "无")
+            if pv_dict and isinstance(pv_dict, dict):
+                # 原始六字段分离保留（绝不覆盖原结果）
+                raw_chars_list = pv_dict.get("characters")
+                raw_env = pv_dict.get("environment")
+                raw_acts_list = pv_dict.get("physical_actions")
+                raw_objs_list = pv_dict.get("objects")
+                raw_cam = pv_dict.get("camera")
+                raw_unc = pv_dict.get("uncertainty")
 
-            html_parts.append(
-                f"      <div class='schema-display'>"
-                f"        <div class='schema-field'><span class='schema-key'>[人物]</span> {html.escape(str(chars_str))}</div>"
-                f"        <div class='schema-field'><span class='schema-key'>[空间环境]</span> {html.escape(str(env_str))}</div>"
-                f"        <div class='schema-field'><span class='schema-key'>[物理动作]</span> {html.escape(str(acts_str))}</div>"
-                f"        <div class='schema-field'><span class='schema-key'>[实体静物]</span> {html.escape(str(objs_str))}</div>"
-                f"        <div class='schema-field'><span class='schema-key'>[构图景别]</span> <code>{html.escape(str(cam_str))}</code></div>"
-                f"        <div class='schema-field'><span class='schema-key'>[不确定性]</span> {html.escape(str(unc_str))}</div>"
-                f"      </div>"
-            )
+                raw_chars_str = ", ".join(raw_chars_list) if (isinstance(raw_chars_list, list) and len(raw_chars_list) > 0) else ("无" if isinstance(raw_chars_list, list) else "未提供")
+                raw_env_str = str(raw_env) if raw_env is not None and str(raw_env).strip() else "未提供"
+                raw_acts_str = ", ".join(raw_acts_list) if (isinstance(raw_acts_list, list) and len(raw_acts_list) > 0) else ("无" if isinstance(raw_acts_list, list) else "未提供")
+                raw_objs_str = ", ".join(raw_objs_list) if (isinstance(raw_objs_list, list) and len(raw_objs_list) > 0) else ("无" if isinstance(raw_objs_list, list) else "未提供")
+                raw_cam_str = str(raw_cam) if raw_cam is not None and str(raw_cam).strip() else "未提供"
+                raw_unc_str = str(raw_unc) if raw_unc is not None and str(raw_unc).strip() else "未提供"
 
-            # Blank audit form
+                # 6 字段主展示全部中文，查字典优先；缺失明确提示【中文翻译待补齐】，绝不伪造无值为无人物
+                zh_chars_str = localize_value(raw_chars_list, translations_dict)
+                zh_env_str = localize_value(raw_env, translations_dict)
+                zh_acts_str = localize_value(raw_acts_list, translations_dict)
+                zh_objs_str = localize_value(raw_objs_list, translations_dict)
+                zh_cam_str = localize_value(raw_cam, translations_dict, is_camera=True)
+                zh_unc_str = localize_value(raw_unc, translations_dict)
+
+                html_parts.append(
+                    f"      <div class='schema-display'>"
+                    f"        <div class='schema-field'><span class='schema-key'>[人物]</span> {html.escape(str(zh_chars_str))}</div>"
+                    f"        <div class='schema-field'><span class='schema-key'>[空间环境]</span> {html.escape(str(zh_env_str))}</div>"
+                    f"        <div class='schema-field'><span class='schema-key'>[物理动作]</span> {html.escape(str(zh_acts_str))}</div>"
+                    f"        <div class='schema-field'><span class='schema-key'>[实体静物]</span> {html.escape(str(zh_objs_str))}</div>"
+                    f"        <div class='schema-field'><span class='schema-key'>[构图景别]</span> <code>{html.escape(str(zh_cam_str))}</code></div>"
+                    f"        <div class='schema-field'><span class='schema-key'>[不确定性]</span> {html.escape(str(zh_unc_str))}</div>"
+                    f"      </div>"
+                )
+
+                # 所有原始六字段在中文标题查看模型原始结果的details折叠保留
+                html_parts.append(
+                    f"      <details style='font-size:11px; color:#94a3b8; margin-bottom:12px; background:#090d16; padding:8px; border-radius:6px; border:1px solid #1e293b;'>"
+                    f"        <summary style='cursor:pointer; color:#38bdf8; font-weight:600;'>查看模型原始结果</summary>"
+                    f"        <div style='margin-top:6px; line-height:1.5;'>"
+                    f"          <div><strong style='color:#64748b;'>[characters]:</strong> {html.escape(str(raw_chars_str))}</div>"
+                    f"          <div><strong style='color:#64748b;'>[environment]:</strong> {html.escape(str(raw_env_str))}</div>"
+                    f"          <div><strong style='color:#64748b;'>[physical_actions]:</strong> {html.escape(str(raw_acts_str))}</div>"
+                    f"          <div><strong style='color:#64748b;'>[objects]:</strong> {html.escape(str(raw_objs_str))}</div>"
+                    f"          <div><strong style='color:#64748b;'>[camera]:</strong> <code>{html.escape(str(raw_cam_str))}</code></div>"
+                    f"          <div><strong style='color:#64748b;'>[uncertainty]:</strong> {html.escape(str(raw_unc_str))}</div>"
+                    f"        </div>"
+                    f"      </details>"
+                )
+            else:
+                html_parts.append(
+                    f"      <div class='schema-display' style='color:#f87171; border-color:#7f1d1d; background:#1e141d;'>"
+                    f"        <div class='schema-field'><span class='schema-key' style='color:#f87171;'>[识别状态]</span> 识别调用失败，未返回描述</div>"
+                    f"      </div>"
+                )
+                html_parts.append(
+                    f"      <details style='font-size:11px; color:#94a3b8; margin-bottom:12px; background:#090d16; padding:8px; border-radius:6px; border:1px solid #1e293b;'>"
+                    f"        <summary style='cursor:pointer; color:#38bdf8; font-weight:600;'>查看模型原始结果</summary>"
+                    f"        <div style='margin-top:6px; line-height:1.5; color:#ef4444;'>无模型推理记录 (识别调用失败，未返回描述)</div>"
+                    f"      </details>"
+                )
+
+            # Blank audit form wrapped in collapsed details (DOM id, LocalStorage键, 单选值保持不变，可见文字纯中文，绝不把AI结果预填成人工标注)
             html_parts.append(
-                f"      <div class='audit-section'>"
-                f"        <div class='audit-title'>1. 事实计数 (人工独立填报，无预设):</div>"
-                f"        <div class='input-row'>"
-                f"          <label>客观属实数: <input type='number' min='0' id='factual_{frame_id}' oninput='autoSave()'></label>"
-                f"          <label>存在幻觉数: <input type='number' min='0' id='hallucinated_{frame_id}' oninput='autoSave()'></label>"
+                f"      <details style='margin-top:10px; background:#162032; border:1px solid #334155; border-radius:6px; padding:10px;'>"
+                f"        <summary style='cursor:pointer; color:#38bdf8; font-weight:600; font-size:12px;'>可选：补充人工修订</summary>"
+                f"        <div class='audit-section' style='background:transparent; border:none; padding:0; margin-top:8px;'>"
+                f"          <div class='audit-title' style='color:#38bdf8; font-weight:bold; font-size:13px; border-bottom:1px solid #334155; padding-bottom:4px; margin-bottom:8px;'>人工修订 (选填)</div>"
+                f"          <div class='audit-title'>1. 事实计数 (选填，无预设):</div>"
+                f"          <div class='input-row'>"
+                f"            <label>客观属实数: <input type='number' min='0' id='factual_{frame_id}' oninput='autoSave()'></label>"
+                f"            <label>存在幻觉数: <input type='number' min='0' id='hallucinated_{frame_id}' oninput='autoSave()'></label>"
+                f"          </div>"
+                f"          <div class='audit-title'>2. 场景客观性审核:</div>"
+                f"          <div class='radio-row'>"
+                f"            <label><input type='radio' name='scene_{frame_id}' value='accepted' onchange='autoSave()'> 符合</label>"
+                f"            <label><input type='radio' name='scene_{frame_id}' value='rejected' onchange='autoSave()'> 驳回</label>"
+                f"            <label><input type='radio' name='scene_{frame_id}' value='uncertain' onchange='autoSave()'> 不确定</label>"
+                f"          </div>"
+                f"          <div class='audit-title'>3. 动作客观性审核:</div>"
+                f"          <div class='radio-row'>"
+                f"            <label><input type='radio' name='action_{frame_id}' value='accepted' onchange='autoSave()'> 符合</label>"
+                f"            <label><input type='radio' name='action_{frame_id}' value='rejected' onchange='autoSave()'> 驳回</label>"
+                f"            <label><input type='radio' name='action_{frame_id}' value='uncertain' onchange='autoSave()'> 不确定</label>"
+                f"          </div>"
+                f"          <input type='text' class='note-input' id='note_{frame_id}' placeholder='填写核对备注/歧义记录' oninput='autoSave()'>"
                 f"        </div>"
-                f"        <div class='audit-title'>2. 场景客观性审核:</div>"
-                f"        <div class='radio-row'>"
-                f"          <label><input type='radio' name='scene_{frame_id}' value='accepted' onchange='autoSave()'> 符合 (accepted)</label>"
-                f"          <label><input type='radio' name='scene_{frame_id}' value='rejected' onchange='autoSave()'> 错误 (rejected)</label>"
-                f"          <label><input type='radio' name='scene_{frame_id}' value='uncertain' onchange='autoSave()'> 不确定</label>"
-                f"        </div>"
-                f"        <div class='audit-title'>3. 动作客观性审核:</div>"
-                f"        <div class='radio-row'>"
-                f"          <label><input type='radio' name='action_{frame_id}' value='accepted' onchange='autoSave()'> 符合 (accepted)</label>"
-                f"          <label><input type='radio' name='action_{frame_id}' value='rejected' onchange='autoSave()'> 错误 (rejected)</label>"
-                f"          <label><input type='radio' name='action_{frame_id}' value='uncertain' onchange='autoSave()'> 不确定</label>"
-                f"        </div>"
-                f"        <input type='text' class='note-input' id='note_{frame_id}' placeholder='填写核对备注/歧义记录' oninput='autoSave()'>"
-                f"      </div>"
+                f"      </details>"
             )
 
             html_parts.append("    </div>")
@@ -930,9 +1160,9 @@ def generate_review_html(
             f"    <label for='boundary_{shot_id}'><strong>[镜头边界可用性]:</strong></label>"
             f"    <select id='boundary_{shot_id}' class='boundary-select' onchange='autoSave()'>"
             f"      <option value=''>-- 待审核 (未判定, 导出为 null) --</option>"
-            f"      <option value='yes'>切点边界干净可用 (yes)</option>"
-            f"      <option value='no'>存在场景混杂/切点偏差 (no)</option>"
-            f"      <option value='uncertain'>不确定 (uncertain)</option>"
+            f"      <option value='yes'>切点边界干净可用</option>"
+            f"      <option value='no'>存在场景混杂/切点偏差</option>"
+            f"      <option value='uncertain'>不确定</option>"
             f"    </select>"
             f"    <span style='color:#94a3b8; margin-left:12px;'>起止区间: {start_sec:.2f}s - {end_sec:.2f}s (时长: {dur:.2f}s)</span>"
             f"  </div>"
@@ -1101,6 +1331,18 @@ def main():
         type=Path,
         default=Path("/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/review.html"),
     )
+    parser.add_argument(
+        "--translations-file",
+        type=Path,
+        default=Path("/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/translations.zh.json"),
+        help="Optional translations dictionary JSON mapping SHA256(UTF8 string) -> Chinese",
+    )
+    parser.add_argument(
+        "--ai-review-file",
+        type=Path,
+        default=Path("/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/x1_2-review/ai_review.json"),
+        help="Optional AI review JSON file from Codex",
+    )
     parser.add_argument("--clips-dir", type=Path, default=Path("/private/tmp/x1_2/clips"))
     parser.add_argument("--source-video", type=Path, default=None, help="Optional source video for reporting fingerprint only")
 
@@ -1129,6 +1371,8 @@ def main():
             runs_dir=args.runs_dir,
             output_html_file=args.out_html,
             clips_dir=args.clips_dir,
+            translations_file=args.translations_file,
+            ai_review_file=args.ai_review_file,
         )
 
 

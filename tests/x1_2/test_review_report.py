@@ -381,6 +381,23 @@ class TestX12ReviewReportStrict(unittest.TestCase):
 
     def test_generate_review_html(self):
         """Verify review.html renders 50 shot cards, displays 6 fields, and provides empty audit controls."""
+        # 预先创建合成推理记录，保证正常渲染六字段
+        mock_infer = {
+            "frame_id": "shot_B0001_pct25",
+            "response": {
+                "parsed_validation": {
+                    "characters": ["一个人"],
+                    "environment": "室内",
+                    "physical_actions": ["站立"],
+                    "objects": ["桌子"],
+                    "camera": "中景",
+                    "uncertainty": "无",
+                }
+            },
+        }
+        with open(self.inferences_dir / "shot_B0001_pct25.json", "w", encoding="utf-8") as f:
+            json.dump(mock_infer, f)
+
         out_html = self.test_dir / "review.html"
         generate_review_html(
             manifest_file=self.manifest_file,
@@ -395,8 +412,8 @@ class TestX12ReviewReportStrict(unittest.TestCase):
 
         self.assertIn("shot_B0001", content)
         self.assertIn("shot_B0050", content)
-        self.assertIn("screen-left", content)
-        self.assertIn("screen-right", content)
+        self.assertIn("画面左侧", content)
+        self.assertIn("画面右侧", content)
         self.assertIn("[人物]", content)
         self.assertIn("[空间环境]", content)
         self.assertIn("[物理动作]", content)
@@ -415,14 +432,14 @@ class TestX12ReviewReportStrict(unittest.TestCase):
         detected_bad = re.findall(r'<input[^>]*\bchecked\b[^>]*>', dummy_bad_input_html, re.IGNORECASE)
         self.assertEqual(len(detected_bad), 1, "正则未能有效识别出 <input ... checked>")
 
-        # 验证 boundary select 默认空且没有 option 被预设 selected
+        # 验证 boundary select 默认空且没有 option 被预设 selected，同步实际生产中文文案
         self.assertIn("<select id='boundary_shot_B0001'", content)
         selected_option_tags = re.findall(r'<option[^>]*\bselected\b[^>]*>', content, re.IGNORECASE)
         self.assertEqual(len(selected_option_tags), 0, f"发现预设 selected 的 option 标签: {selected_option_tags}")
         self.assertIn("<option value=''>-- 待审核 (未判定, 导出为 null) --</option>", content)
-        self.assertIn("<option value='yes'>", content)
-        self.assertIn("<option value='no'>", content)
-        self.assertIn("<option value='uncertain'>", content)
+        self.assertIn("<option value='yes'>切点边界干净可用</option>", content)
+        self.assertIn("<option value='no'>存在场景混杂/切点偏差</option>", content)
+        self.assertIn("<option value='uncertain'>不确定</option>", content)
 
     def test_review_html_boundary_select_and_null_export_semantics(self):
         """Verify boundary selection uses select with empty default and exports null when unselected."""
