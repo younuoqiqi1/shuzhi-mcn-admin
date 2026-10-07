@@ -1,0 +1,25 @@
+{
+  "run_id": "Visual Disagreement Adjudication 2026-10-07",
+  "historical_commit": "d6ac6ca84830af6bdfb582b3468351f15b16c8ed",
+  "config_sha256": "5f5425569e5627e63525e7964dfaf1ff00b5dc19bede3f22b1b9c2048709473f",
+  "diagnostic_files": [
+    {
+      "path": "/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/shuzhi-mcn-admin/scripts/human_anchor/visual-adjudication.mjs",
+      "sha256": "810847185522a6e1f37d1b977ad42f9a9b3f489732257a10d4ace3e37639fdf8"
+    },
+    {
+      "path": "/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/shuzhi-mcn-admin/docs/agent-poc/human-anchor-calibration/visual-adjudication-protocol.md",
+      "sha256": "d1a3f352a721e5b950fcf987c74dfe8b073a802ac6c9354fdc4c2fc57ccc204d"
+    }
+  ],
+  "historical_calibration_sha256": "001d2687fce160589265672cfb1ad38b139569f32e54809230d5a7a8051baa10",
+  "raw_tasks_sha256": "2e7c6420109fe099e05fe1e934a97a4afeb65199c6e09b243dbd598d19055ff9",
+  "fields": {
+    "personCount": 10,
+    "actions": 21,
+    "objects": 23
+  },
+  "review_route": "fresh-context current inherited Codex visual model; backend version not exposed",
+  "side_assignment": "independent crypto random per case, hidden encrypted mapping",
+  "original_scores_changed": false
+}

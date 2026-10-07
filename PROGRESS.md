@@ -2,8 +2,8 @@
 
 更新时间：2026-10-07（Asia/Shanghai）
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**Human Anchor Lock、Independent Judge 与本地 Calibration Evaluation 已完成；STOP 等待 Review**
-当前状态：**`calibration_complete_fail; awaiting_review; downstream_paused`。人工最终提交已由隔离 evaluator 核验，完成率 Shot 30/30、Pair 20/20；答案摘要与此前 commitment 一致，Agent/Judge 未取得人工明文。v4 耗时未采集、不评分。Judge 校准总结果 FAIL（6 项 FAIL、2 项 INCONCLUSIVE），不得扩大自动评测。X1.2 仍为 Engineering PASS / Scientific Pending；新增模型实验、样本、X1.3、X2 Probe、正式 X2/X2.5、X3/X4 和旧 A8/A9/A10 持续暂停。**
+当前阶段：**Visual Disagreement Adjudication 与来源汇总已完成；STOP 等待 Review**
+当前状态：**`visual_adjudication_complete; awaiting_review; downstream_paused`。用户Review接受d6ac6ca的Independent Judge Calibration FAIL；该历史结果和分数永久保留，不能解释为Gemini Evidence Scientific FAIL。现有count/action/object的10/21/23项已由三个匿名A/B新上下文视觉评审完成并先封存，再通过原Judge分类精确匹配唯一恢复54项来源，不读/解密人工备份。汇总Human correct 12、Judge correct 11、分类歧义24、证据不足7、技术失败0；仅为诊断，不升级科学结论。人工最终提交与100%完整度不变；v4不记录/评分耗时。X1.2仍为Engineering PASS / Scientific Pending，X1.3/X2 Probe/X2/X2.5及旧生产阶段均暂停。**
 核心决议：**130/150 (86.67%) 保留为历史首轮结构调用结果，不是 Scientific Gate。一次性 Human Anchor 校准不进入每集自动 Ingest。独立 Judge 首次输出先封存，再由本地 evaluator 按冻结 v4 及已留档勘误比对；未改样本、答案、Judge、公式、阈值或 Prompt。当前 Judge 校准 FAIL 不等同于 Gemini Evidence 的正式 Scientific Gold Gate FAIL；正式 Gold 与后续泛化验证尚未通过。本轮只提交公开指标、适用评分差异目录、摘要与状态，原视频、图片、HTML、人工答案及口令不进入 Git；停止继续优化该 Judge 路由，等待 Review，不自动进入下一阶段。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
@@ -30,6 +30,10 @@
 
 - 本地揭盲完成（2026-10-07，承接上文历史记录）：第二次本地解锁成功，仅 evaluator 在内存读取人工答案；密文认证、Manifest、答案重算摘要及冻结 Judge/代码/协议均核验一致。最终提交 true、完成率100%；公开报告 SHA256 `001d2687fce160589265672cfb1ad38b139569f32e54809230d5a7a8051baa10`。Boundary 46.67%、人物数66.67%、Scene 83.33%、Action micro-F1 0.7478 / exact-set 30%、Object micro-F1 0.4938 / exact-set 23.33%；人物一致性 BA 0.95 / macro-F1 0.9737，但有效 Pair 13/20、CI N/A 导致 INCONCLUSIVE；音频因 failed 计错。总裁决 FAIL，126个适用评分差异逐项保留候选分类，非缺失类根因未独立裁决。人工耗时未采集，v4不评判预算。详见 `docs/agent-poc/human-anchor-calibration/calibration-report.md`；STOP 等待 Review。
 
+- Visual Disagreement封存时记录（2026-10-07，来源汇总前的历史状态）：用户接受Independent Judge Calibration FAIL并要求仅诊断现有三个视觉字段。固定54项来自原30 Shot，没有新样本、改标或重跑原Judge。每项A/B随机隐藏来源，mapping加密；人数10、动作21、物体23个首次裁决已封存，commitment SHA256 `29aaf93c4afb6b0d169f0f580ef13c556fab0a351d137efaeb05d805ef33a0ae`。当时来源汇总因桌面弹窗超时未完成，不填写猜测值。
+
+- Visual Disagreement完成（2026-10-07）：用户远程操控看不到Mac系统弹窗；首次裁决封存后，改由本地evaluator将匿名提案与冻结原Judge分类精确匹配，54/54来源唯一确定，不读取人工密文或口令。后处理方式补充单独留档，不回改原预注册。人数10项为Human/Judge/歧义/不足/技术失败=0/6/4/0/0；动作21项=12/4/4/1/0；物体23项=0/1/16/6/0。公开结果SHA256 `2b39988d4f4c3564e2e2d0c7a0beb17c0b73faa472c5336e0203597729f48260`，54条逐项裁决保留。Object关键性/背景纳入/类别重叠定义不足，Action状态/事件、移动及持物边界有歧义；建议仅供Review，不实施Schema或新实验。17项合成测试通过；原Judge、Calibration公开结果、Human commitment、协议/代码/Manifest哈希不变。Person有效Pair13、BA=0.95、macro-F1=0.9737保持INCONCLUSIVE；Speech/Speaker未做视觉裁决，未来须真实音频Judge。详见 `docs/agent-poc/human-anchor-calibration/visual-adjudication-report.md`；STOP等待Review。
+
 ## 阶段门禁状态 (Revalidation Path & Gate System)
 
 | 门禁/阶段名称 | 阶段点 | 当前状态 | 准入/通过标准与说明 |
@@ -37,7 +41,8 @@
 | **X0 Technology Spike Gate** | X0 结束点 | ✅ **approved** | **2026-10-05 用户明确批准**。完成开源项目源码/License/依赖与认证机制核查；完成 EP18 中立短段（900-930s）四种镜头检测横向对比（VMV原函数/PySceneDetect Content与Adaptive/video-recap-skills）、15张代表帧提取、macOS 原生 Vision OCR 实测；完成成本外推公式与参数化估算；报告交付于 [`docs/agent-poc/x0-technology-spike.md`](docs/agent-poc/x0-technology-spike.md)；正式授权开启 X1.0 |
 | **X1.1 Understanding Benchmark** | X1.1 节点 | 🤝 **accepted_for_expansion (保留历史 35/40 人脸与 partial 20/45 视觉，非全 Gate 通过，经用户授权进入 X1.2)** | 完成 45 正式 Gemini 低档全部尝试（44 成功 / 1 服务 503 无重试，核验 44/45=97.8%）；15 母区间完成 47 children（max 26.52s）；OCR/ASR fusion 15 完成；人脸 35/40 校准阈值 0.4067；视觉 partial 20/45 审核覆盖（已审 178 事实 / 真实 2 幻觉）；历史数值完整保留，非全 Gate 科学通过，经 2026-10-06 用户明确授权进入下一批 50 镜头扩展，不再停留于 STOP 旧节点 |
 | **X1.2 50-Shot Understanding Benchmark** | X1.2 节点 | ✅ **Engineering PASS / Scientific Pending** | 工程批次完成；首轮 130/150 成功、20 失败、86.67% 是历史结构调用结果，不是科学能力门槛；Codex 已完成 50 个 Shot 的 AI 复核，对照 130 条有效输出标注需修正/不确定项；Human Anchor 已完成、独立 Judge 校准 FAIL，新版 Scientific Gold Gate 尚未通过；20 次模型调用失败沿用原始实验记录；49/50 镜头至少 1 帧成功，35/50 全 3 帧成功，shot_B0031 三帧失败；最长 64.76s 须复核切点；硬字幕快照 45/50 重叠，另 5 未匹配不等于无对白；禁止据工程完成宣称 Scientific PASS |
-| **Human Anchor Calibration** | X1 关键校准点 | 🔴 **FAIL / 已完成评估 / STOP 等待 Review** | 原冻结 30 Shot + 20 Pair 不变；最终提交已认证，完整度 100%；先封存 Judge，再由隔离本地 evaluator 按 v4 计分，人工答案不进入模型或 Git。6 项 FAIL、Scene 与 Person consistency INCONCLUSIVE。30 Speech、30 Speaker、15 Boundary 技术失败已留档，其中65个适用失败纳入评分差异；另有视觉分类差异与材料歧义。Person 有效 Pair 13/20 未达到15，不能因高点估计宣称 PASS。v4 无耗时数据、无预算裁决。完整 CI 与126条适用评分差异见 calibration-report.md 及公开 JSON。一次性 Anchor 不进入日常 Ingest；停止该 Judge 路由继续调参，下游暂停 |
+| **Human Anchor Calibration** | X1 关键校准点 | 🔴 **历史 Independent Judge Calibration FAIL / Review accepted** | d6ac6ca原结论和分数永久保留，不能解释为Gemini Evidence Scientific FAIL；原冻结30 Shot + 20 Pair不变，人工完整度100%。6项FAIL、Scene与Person consistency INCONCLUSIVE。30 Speech、30 Speaker、15 Boundary技术失败已留档，其中65个适用失败纳入评分差异。Person有效Pair13/20未达到15；v4无耗时预算裁决。完整CI与126条适用差异见原calibration-report.md及公开JSON，不按后续裁决回改。一次性Anchor不进入日常Ingest；该Judge路由不继续调参，下游暂停 |
+| **Visual Disagreement Adjudication** | X1 诊断，非新Gate | ✅ **已完成 / STOP 等待 Review** | 原30 Shot的count/action/object共54项首次匿名A/B裁决已封存；来源仅在封存后精确匹配恢复，不解密人工备份。Human/Judge正确数12/11、分类歧义24、证据不足7、技术失败0。逐字段与逐项结果见visual-adjudication-report.md及公开JSON。物体关键性/背景/类别重叠，动作状态/事件与范围存在定义问题；裁决不等于绝对人工Gold、不重算历史分数，也不构成Gemini Scientific PASS/FAIL。新建议未实施，无新样本、原Judge重跑或X1.3/X2 |
 | **Human Anchor 校准指标预注册** | X1 校准前置 | ✅ **Calibration 指标已冻结** | Human Anchor 各项公式、分母、unknown/missing/failed、CI 及 PASS/FAIL/INCONCLUSIVE 见 `docs/agent-poc/human-anchor-calibration/preregistration.md`。这不是 X1 全量 Scientific Gate；X1 正式门槛仍待预注册 |
 | **X1 Evidence v1 (客观证据底座 v1)** | X1 产物节点 | ⏳ **pending (前置未达成)** | 聚合多模态客观证据（镜头时序、代表帧语义、对齐台词、校准后人物聚类），形成防污染、免推断的 L1 结构化证据底座；前置依赖 Human Anchor 校准与 X1 指标冻结正式通过，当前未达成 |
 | **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **paused (新规则后续允许，本次未执行)** | 修订后新验证规则允许在极小受控规模下（如 3-5 条典型 Query）执行盲测检索探针，用以提前探测检索匹配机制与拒识表现；但**本次未执行任何 probe 实验**，无新增样本数据，当前处于暂停状态 |

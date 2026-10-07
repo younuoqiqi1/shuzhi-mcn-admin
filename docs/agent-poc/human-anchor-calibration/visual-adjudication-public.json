@@ -1,0 +1,604 @@
+{
+  "run": "Visual Disagreement Adjudication 2026-10-07",
+  "historical_calibration_conclusion": "Independent Judge Calibration FAIL",
+  "historical_scores_changed": false,
+  "counts": {
+    "personCount": {
+      "disagreements": 10,
+      "HUMAN_CORRECT": 0,
+      "JUDGE_CORRECT": 6,
+      "BOTH_REASONABLE_TAXONOMY_AMBIGUITY": 4,
+      "INSUFFICIENT_VISUAL_EVIDENCE": 0,
+      "TECHNICAL_FAILURE": 0
+    },
+    "actions": {
+      "disagreements": 21,
+      "HUMAN_CORRECT": 12,
+      "JUDGE_CORRECT": 4,
+      "BOTH_REASONABLE_TAXONOMY_AMBIGUITY": 4,
+      "INSUFFICIENT_VISUAL_EVIDENCE": 1,
+      "TECHNICAL_FAILURE": 0
+    },
+    "objects": {
+      "disagreements": 23,
+      "HUMAN_CORRECT": 0,
+      "JUDGE_CORRECT": 1,
+      "BOTH_REASONABLE_TAXONOMY_AMBIGUITY": 16,
+      "INSUFFICIENT_VISUAL_EVIDENCE": 6,
+      "TECHNICAL_FAILURE": 0
+    }
+  },
+  "cases": [
+    {
+      "id": "case_6c033daab78fa5bc",
+      "shot_id": "shot_B0012",
+      "field": "personCount",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_234987dc350a04a7",
+      "shot_id": "shot_B0025",
+      "field": "personCount",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "PERSON_COUNT_OCCLUSION",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_361025b5cb58d2e1",
+      "shot_id": "shot_B0028",
+      "field": "personCount",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "PERSON_COUNT_OCCLUSION",
+        "PERSON_COUNT_TEMPORAL_SCOPE",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_4ee531b6c11b958c",
+      "shot_id": "shot_B0047",
+      "field": "personCount",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "PERSON_COUNT_TEMPORAL_SCOPE",
+        "PERSON_COUNT_OCCLUSION",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_2870334abc9aa2be",
+      "shot_id": "shot_B0005",
+      "field": "personCount",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "PERSON_COUNT_OCCLUSION",
+        "IMAGE_QUALITY",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_b4b739b0466e297d",
+      "shot_id": "shot_B0031",
+      "field": "personCount",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_a673f3bc7cb78ff0",
+      "shot_id": "shot_B0002",
+      "field": "personCount",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "PERSON_COUNT_TEMPORAL_SCOPE",
+        "PERSON_COUNT_OCCLUSION",
+        "IMAGE_QUALITY",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_9022e05e27270543",
+      "shot_id": "shot_B0048",
+      "field": "personCount",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "PERSON_COUNT_TEMPORAL_SCOPE",
+        "IMAGE_QUALITY",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_91174a748b70ebfb",
+      "shot_id": "shot_B0035",
+      "field": "personCount",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_b21313c4accab0a7",
+      "shot_id": "shot_B0013",
+      "field": "personCount",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_12404e542c4ed4ea",
+      "shot_id": "shot_B0018",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_5f33047783653201",
+      "shot_id": "shot_B0046",
+      "field": "actions",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "ACTION_MOVEMENT_SCOPE"
+      ]
+    },
+    {
+      "id": "case_9a4bfea62344083e",
+      "shot_id": "shot_B0005",
+      "field": "actions",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "ACTION_SPEECH_VS_VISIBLE",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_5990a4838f111032",
+      "shot_id": "shot_B0036",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_32610739532acb33",
+      "shot_id": "shot_B0028",
+      "field": "actions",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "ACTION_MOTION_VS_CAMERA_CUT"
+      ]
+    },
+    {
+      "id": "case_8e66999be73c08ca",
+      "shot_id": "shot_B0010",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_OTHER_LYING",
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_9a6851eaf69f613d",
+      "shot_id": "shot_B0016",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_0c9d0d32a8469865",
+      "shot_id": "shot_B0019",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_0ddee538aae67fdc",
+      "shot_id": "shot_B0021",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_72140a58df8d1e4a",
+      "shot_id": "shot_B0015",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_a921c2aeae115089",
+      "shot_id": "shot_B0002",
+      "field": "actions",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "ACTION_STATE_VS_EVENT",
+        "ACTION_MOTION_VS_CAMERA_CUT",
+        "IMAGE_QUALITY"
+      ]
+    },
+    {
+      "id": "case_5f9f26347a75d086",
+      "shot_id": "shot_B0034",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_MOVEMENT_SCOPE",
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_b9b00add6ef622af",
+      "shot_id": "shot_B0038",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_6257a80be980aa93",
+      "shot_id": "shot_B0025",
+      "field": "actions",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE",
+        "ACTION_INTERACTION_SCOPE"
+      ]
+    },
+    {
+      "id": "case_2060db538820c0c6",
+      "shot_id": "shot_B0031",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_800feb9e09964ec4",
+      "shot_id": "shot_B0047",
+      "field": "actions",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "ACTION_OBJECT_HOLDING_VS_MANIPULATION",
+        "ACTION_STATE_VS_EVENT"
+      ]
+    },
+    {
+      "id": "case_e8c7462f037db859",
+      "shot_id": "shot_B0014",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_280b0bb594279f5d",
+      "shot_id": "shot_B0012",
+      "field": "actions",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "ACTION_MOVEMENT_SCOPE"
+      ]
+    },
+    {
+      "id": "case_e4a35d7722ae921e",
+      "shot_id": "shot_B0040",
+      "field": "actions",
+      "verdict": "HUMAN_CORRECT",
+      "schema_flags": [
+        "ACTION_SPEECH_VS_VISIBLE"
+      ]
+    },
+    {
+      "id": "case_04ae475a603270ef",
+      "shot_id": "shot_B0008",
+      "field": "actions",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "ACTION_OTHER_LYING",
+        "ACTION_MOVEMENT_SCOPE"
+      ]
+    },
+    {
+      "id": "case_25cf23c0996d39db",
+      "shot_id": "shot_B0050",
+      "field": "actions",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "ACTION_STATE_VS_EVENT",
+        "ACTION_OBJECT_HOLDING_VS_MANIPULATION",
+        "IMAGE_QUALITY"
+      ]
+    },
+    {
+      "id": "case_3dc3a6ef4f28ca66",
+      "shot_id": "shot_B0014",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_2cec8cf4ce8352e9",
+      "shot_id": "shot_B0035",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_874cde89f9c55acc",
+      "shot_id": "shot_B0010",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_OTHER_UNSPECIFIED"
+      ]
+    },
+    {
+      "id": "case_900654a80f9c2b22",
+      "shot_id": "shot_B0038",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION",
+        "OBJECT_CATEGORY_OVERLAP"
+      ]
+    },
+    {
+      "id": "case_0391f2dc9ab1f024",
+      "shot_id": "shot_B0036",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_4ae500d4bb82384b",
+      "shot_id": "shot_B0042",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_6fd6dc7c175d19e8",
+      "shot_id": "shot_B0025",
+      "field": "objects",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "OBJECT_BACKGROUND_INCLUSION",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_d02e2340ed09ad8f",
+      "shot_id": "shot_B0034",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP"
+      ]
+    },
+    {
+      "id": "case_c0a1df56d787b18f",
+      "shot_id": "shot_B0015",
+      "field": "objects",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "OBJECT_BACKGROUND_INCLUSION",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_4e4911f1a47377fc",
+      "shot_id": "shot_B0046",
+      "field": "objects",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_OTHER_UNSPECIFIED",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_32257c6b0f665271",
+      "shot_id": "shot_B0005",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_OTHER_UNSPECIFIED"
+      ]
+    },
+    {
+      "id": "case_3404b1dc49877497",
+      "shot_id": "shot_B0047",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP"
+      ]
+    },
+    {
+      "id": "case_5dc4c13f02dda5c7",
+      "shot_id": "shot_B0008",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_OTHER_UNSPECIFIED"
+      ]
+    },
+    {
+      "id": "case_d3081785b6fd6299",
+      "shot_id": "shot_B0019",
+      "field": "objects",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "OBJECT_BACKGROUND_INCLUSION",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_afaa6370fba3608b",
+      "shot_id": "shot_B0013",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP",
+        "OBJECT_OTHER_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_067b023cefa9037d",
+      "shot_id": "shot_B0040",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_6800d7b09547140d",
+      "shot_id": "shot_B0003",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_98c5f8b53d38b8ce",
+      "shot_id": "shot_B0044",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_CATEGORY_OVERLAP",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_b94dfc2e9ebbdcc4",
+      "shot_id": "shot_B0020",
+      "field": "objects",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "OBJECT_BACKGROUND_INCLUSION",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_281d60c902c5deb6",
+      "shot_id": "shot_B0032",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_14c923467b9d8325",
+      "shot_id": "shot_B0033",
+      "field": "objects",
+      "verdict": "BOTH_REASONABLE_TAXONOMY_AMBIGUITY",
+      "schema_flags": [
+        "OBJECT_KEYNESS_UNSPECIFIED",
+        "OBJECT_BACKGROUND_INCLUSION"
+      ]
+    },
+    {
+      "id": "case_38a12ff33a295cca",
+      "shot_id": "shot_B0050",
+      "field": "objects",
+      "verdict": "INSUFFICIENT_VISUAL_EVIDENCE",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "OBJECT_OTHER_UNSPECIFIED",
+        "TEMPORAL_COVERAGE"
+      ]
+    },
+    {
+      "id": "case_cc2874f857d9e7b2",
+      "shot_id": "shot_B0002",
+      "field": "objects",
+      "verdict": "JUDGE_CORRECT",
+      "schema_flags": [
+        "IMAGE_QUALITY",
+        "TEMPORAL_COVERAGE"
+      ]
+    }
+  ],
+  "commitments": {
+    "bundle_lock_sha256": "3728b8d6c1864786bb7e63f3369b080debb319a7423bb05e4071fc3b7dd3fb01",
+    "review_commitment_sha256": "29aaf93c4afb6b0d169f0f580ef13c556fab0a351d137efaeb05d805ef33a0ae",
+    "review_hashes": {
+      "personCount": "320c53a1b031959b8109db76ab53222b6af792e2a3dcf6a4a00ea0aa113ddded",
+      "actions": "bcad02e09ea4c0f7fe1cb216e3d66021be64d3efad135f8c3e4fd3030977caba",
+      "objects": "baa47939f5fb8c99e814e02598ebff907070f008af5fceee7fa970464b9185c8"
+    },
+    "original_calibration_sha256": "001d2687fce160589265672cfb1ad38b139569f32e54809230d5a7a8051baa10",
+    "original_judge_sha256": "c9e7f51af00f584e313cc22877188a4a26f20b5ea1cad9eb605cf4be3e7d68be",
+    "original_answers_sha256": "2e244c5a4208929a87bbefbb68646b5ba7867197ce3203de054e5d8651c5b10e"
+  },
+  "origin_resolution": {
+    "method": "EXACT_MATCH_WITH_COMMITTED_JUDGE_AFTER_FIRST_VERDICTS_SEALED",
+    "unique_matches": 54,
+    "resolver_sha256": "b434401e55fdcbe703f48d957c763585f5c0a93c318307c618fff179460667a9",
+    "human_backup_read": false,
+    "encrypted_origin_mapping_read": false,
+    "heuristic_source_guessing": false,
+    "criteria_or_verdicts_changed": false
+  },
+  "human_plaintext_exported": false,
+  "answer_values_exported_in_public_result": false,
+  "credential_used": false,
+  "stop_for_review": true
+}
