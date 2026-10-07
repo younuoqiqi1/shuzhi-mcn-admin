@@ -22,8 +22,8 @@
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
     "schema.json": "059c87abfa71c7f4c64b670078a063c774121d9e1e6195b3492d445cfca563a6",
-    "annotation-guidelines.md": "af829a034eb2cf8e02c8d0b9be2f8f7bf67697568b580da9b943c0f953a1c4df",
-    "preregistration.md": "db1ceb8e4139629bfe6ffb04c615b5840f2134a5a6b446ac51274825637864de"
+    "annotation-guidelines.md": "8959aa2c757fbb1b9d54dc4a8677ecd3f9ac7bbeb5e76b26e8a4402f19c9e3b7",
+    "preregistration.md": "34b81f268e3b0b3012126e70221cc7242692b85990ffff1faa729fa1e757f42b"
   },
   "preparation_base_commit": "6ba201a244f48e5651d960c3c8e9c26c94cba67f",
   "annotation_page_sha256": "700aab8db1e67f5c0ab1a7f62e636a3aa9891dd677e41d811b18c1d952e34ba5",
@@ -126,6 +126,23 @@
       },
       "previous_annotation_page_sha256": "2f40e342a0c1ac54b6b9867d4ba351f9dafbf97877a4eee9178dc63834bb0047",
       "base_commit": "19e47a512874c19bb9cb952f2da04bed1ee5b393"
+    }
+  ],
+  "protocol_amendments": [
+    {
+      "id": "HA-DEV-2026-10-07-v4-QA1",
+      "date": "2026-10-07",
+      "stage": "AFTER_USER_LABELING_STARTED_BEFORE_JUDGE",
+      "reason": "Record user-reported no-comparable-person material in pair_06 and same source reused by pair_09. Future pairing requires pre-freeze source quality/target visibility checks. No identity labels recorded.",
+      "unchanged": "Current Shot/Pair Manifest, frame files/page, human answers, scoring denominators/thresholds/CI and model configuration; no samples removed/replaced, no new screening, Judge or inference run",
+      "previous_protocol_hashes": {
+        "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
+        "schema.json": "059c87abfa71c7f4c64b670078a063c774121d9e1e6195b3492d445cfca563a6",
+        "annotation-guidelines.md": "af829a034eb2cf8e02c8d0b9be2f8f7bf67697568b580da9b943c0f953a1c4df",
+        "preregistration.md": "db1ceb8e4139629bfe6ffb04c615b5840f2134a5a6b446ac51274825637864de"
+      },
+      "annotation_page_sha256": "700aab8db1e67f5c0ab1a7f62e636a3aa9891dd677e41d811b18c1d952e34ba5",
+      "base_commit": "664e148132b713dfca3e7ab7ed5c930321c8a297"
     }
   ]
 }

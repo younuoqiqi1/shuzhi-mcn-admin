@@ -521,6 +521,7 @@ Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest
 - **盲法前提**：标注员须声明未看过这些 Shot 的 Evidence/AI/Codex Review。已看过预测者不能通过页面隐藏恢复盲法；若无法找到未暴露的标注员，校准须记为 INCONCLUSIVE。
 - **冻结**：同目录 `schema.json`、`annotation-guidelines.md`、`preregistration.md`、`hash-commitment.json` 冻结 Schema、分层 Manifest、固定人物 Pair、页面/协议哈希、公式/分母、unknown/missing/failed、非计时的页面操作复杂度设计目标、阈值、CI 和 PASS/FAIL/INCONCLUSIVE。答案 SHA256 必须在标注完成后、任何 Judge/评估器读取前计算登记；目前为空值是待办，不代表答案已存在。
 - **当前状态**：用户人工标注进行中、尚未完成；Agent 未读取答案、未运行 Judge、未生成 Evidence、未进行 X2 Probe、未进入 X1.3/X2/X2.5。X1.2 仍为 Engineering PASS / Scientific Pending。
+- **人物 Pair 材料质量**：当前用户报告 pair_06 左帧无可辨人物，pair_09 复用同源；预注册 §13 留档。当前冻结材料不得静默替换或删除，缺失可比人物不能当不同人；覆盖率分母及有效样本门槛不变。未来新轮配对必须在冻结前确认两边均有可辨、可定位、目标明确的人物，并记录筛选过程，不预判身份、不按 same/different 结果挑样；本轮不启动新筛选或模型调用。
 
 ### 校准后的泛化验证顺序
 
