@@ -1,0 +1,22 @@
+{
+  "probe_id": "limited_x2_retrieval_probe_v1",
+  "raw_video_sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c",
+  "prior_gold_sha256": "b135166511b4fece7cc216067a47a422358d486fa0084848ea293e4b720653e1",
+  "new_gold_sha256": "26da138c9e517722d79bd26a05cf8b26b52d9809b0dc6688419989155683dc94",
+  "prior_gold_audio_uncovered": true,
+  "audio_tool_receipt": {
+    "tool_name": "view_file",
+    "call_step_index": 107,
+    "call_timestamp": "2026-10-07T12:25:05Z",
+    "result_step_index": 108,
+    "result_timestamp": "2026-10-07T12:25:29Z",
+    "execution_status": "DONE",
+    "media_mime_type": "audio/wav",
+    "receipt_qualification": "Actual tool invocation receipt records binary audio media intake into model multimodal context. It does not constitute a proof of 100% subjective auditory infallibility."
+  },
+  "q3_supplementary_verification_registered": true,
+  "event_scoring_definition_honored": true,
+  "q5_status": "unverifiable",
+  "isolation_restored": true,
+  "blocking_issues": null
+}

@@ -1,0 +1,16 @@
+{
+  "top_k": 3,
+  "match": "fully_supported_query_claim AND temporal_iou >= 0.5",
+  "temporal_iou_threshold": 0.5,
+  "extra_boundary_tolerance_seconds": 0,
+  "one_to_one": true,
+  "matching_order": "candidate rank; highest IoU unmatched Gold; tie by original Gold start/end",
+  "returned_range_source": "original Manifest shot start/end only; no inferred event boundaries",
+  "gold_source": "independently authored original-video intervals; never Shot-based",
+  "positive_query_denominator": 4,
+  "negative_query_denominator": 1,
+  "technical_failures_remain_in_denominator": true,
+  "unknown_gold": "preparation INCONCLUSIVE; no silent query replacement or deletion",
+  "protocol_reference": "docs/agent-poc/limited-x2-retrieval-probe-v1.md at acb42fcf218c3d4690fb9f418d7c61b87c2f4684; matching/CI formulas unchanged",
+  "version_scope": "Legacy diagnostic only; never v2 validation"
+}

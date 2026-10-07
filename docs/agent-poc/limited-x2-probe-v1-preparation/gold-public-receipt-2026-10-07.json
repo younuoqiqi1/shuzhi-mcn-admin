@@ -1,0 +1,30 @@
+{
+  "received_date": "2026-10-07",
+  "experiment_label": "Legacy Evidence Retrieval Diagnostic",
+  "receipt_source": "user_forwarded_AGY_public_summary",
+  "source_sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c",
+  "source_sha256_independently_verified": true,
+  "gold_sha256": "b135166511b4fece7cc216067a47a422358d486fa0084848ea293e4b720653e1",
+  "gold_sha256_verification": "reported_only; isolated Gold file was not read or independently hashed",
+  "all_five_tasks_processed_reported": true,
+  "all_five_gold_answers_validated": false,
+  "query_replacement_reported": false,
+  "audio_actually_perceived_reported": false,
+  "full_episode_gap_free_verification_reported": false,
+  "reported_media_duration_seconds": 2702.01,
+  "reported_frame_count": 67550,
+  "reported_coverage_gaps": [
+    "Original audio inaccessible throughout the episode; spoken dialogue and acoustic delivery cannot be verified.",
+    "Visual review used timeline sampling and dense candidate review; unobserved gaps may contain short shots."
+  ],
+  "reported_isolation": [
+    "Gold stored outside the repository and project artifacts.",
+    "Gold directory and file set to chmod 000; ordinary reads reported EACCES."
+  ],
+  "isolation_independently_verified": false,
+  "isolation_assessment": "Reported path separation and chmod 000 do not establish an execution permission boundary against an owner or privileged process capable of restoring permissions; actual Retriever identity and access guard remain unverified. No Gold access or permission changes were attempted.",
+  "gold_plaintext_read": false,
+  "gold_timecodes_or_answers_received": false,
+  "readiness_assessment": "INCONCLUSIVE_AT_PREPARATION",
+  "retrieval_authorized": false
+}

@@ -1,6 +1,8 @@
 # Limited X2 Retrieval Probe v1 设计
 
-日期：2026-10-07。状态：`design_only; not_executed; awaiting_review`。目标是检验Objective Evidence字段是否对真实检索有帮助，反推下一轮X1质量指标；不是正式X2、Scientific PASS或Persona/Plan测试。
+日期：2026-10-07。当前状态：`preparation_inconclusive; overall_freeze_incomplete; retrieval_not_executed`，总冻结未完成，尚未执行检索。当前准备使用原X1.2旧快照，仅作`Legacy Evidence Retrieval Diagnostic`；5条真实Query及组件已留档，Q3补核验已封存、Q5仍unverifiable。详见[当前准备记录](limited-x2-probe-v1-preparation/README.md)。
+
+以下第1–8节保留历史设计基线，公式、分母、Gold要求和匹配规则不变；其中“本轮只设计/未绑定”等为设计交付时的历史状态，最新状态以上述准备记录为准。原设计目标是检验Objective Evidence字段是否对真实检索有帮助，反推下一轮X1质量指标；当前旧输入诊断不验证v2能力，不是正式X2、Scientific PASS或Persona/Plan测试。v1.1范围调整仅为未批准建议，尚未实施。
 
 ## 1. 范围、输入与当前阻塞
 

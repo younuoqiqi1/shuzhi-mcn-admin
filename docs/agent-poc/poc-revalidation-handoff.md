@@ -1,6 +1,6 @@
 # 数智博主 AI 视频 POC｜重新验证开发交接文档
 
-**日期：** 2026-10-07（Objective Evidence Schema v2 与 Limited X2 Retrieval Probe v1 设计完成，STOP 等待 Review）
+**日期：** 2026-10-07（Schema v2设计Review已通过；Limited Probe v1准备INCONCLUSIVE、总冻结未完成，现状提交后STOP）
 **用途：** 本地 Codex Work 接管项目并协调 AGY 后续开发  
 **当前策略：** 冻结原 A8/A9/A10；全面落实 **Human Anchor + 独立 AI Judge 校准** 与 **X2.5 盲测** 机制；本规范明确 **supersede** 旧 X1/X2 指标/样本定义以及“只有 X1 Gate 通过后才能任何 X2 探针”的旧条款；当前实验暂停，优先固化新验证路线与预注册规范。
 **最终目标：** 影视多集素材一次入库后，可针对任意新选题跨集检索、多集混剪，并从 MCN 后台生成真实视频。
@@ -323,7 +323,11 @@ Holdout 拆分、集数和域间比较指标须执行前预注册；旧“衰减
 
 严禁使用旧 canonical evidence、EP18_REAL_SCENE_MAP、dialogue aligned units、旧 Topic A/B hard-code、旧 A5/A6 Results、旧人工 Requirements/Director Plan。
 
-## Limited X2 Retrieval Probe v1（当前只设计）
+## Limited X2 Retrieval Probe v1（设计基线与当前准备状态）
+
+**最新准备状态：** 用户已批准Objective Evidence Schema v2设计，但本Probe选择现有X1.2旧版快照，仅作`Legacy Evidence Retrieval Diagnostic`，不作v1→v2伪映射或v2能力验证。5条真实Query文本与原快照/检索组件已封存，Top K=3及原评分规则不变。Q3音频工具实际返回DONE/audio/wav，原隔离评审已登记补核验并封存新版Gold；旧承诺保留。Q5仍unverifiable，正例搜索范围适用性、实际物理权限guard与runner/最终配置尚未闭合，总冻结未完成，准备结论INCONCLUSIVE。未执行检索、未生成新样本/Evidence。公开承诺与现状附件见[准备记录](limited-x2-probe-v1-preparation/README.md)，不含Gold答案/素材Gold时间区间。v1.1范围调整仅为未批准建议，不改变本轮规则。未来盲Retriever不得继承已接触Gold的本会话，且须无法访问Gold、评审日志和准备报告。
+
+以下为历史设计基线，指标与Gold规则保持原样：
 
 [limited-x2-retrieval-probe-v1.md](limited-x2-retrieval-probe-v1.md)设计5条Query：明确事实、动作、台词/语义、关键物体各1正例，在场匿名人物+不存在可观察事件1困难负例；只复用既有50-shot范围，不新增样本。原素材事件尚未绑定/核验，本轮无Gold构建或Probe执行。Gold以原视频事件区间标注并隔离；负例须全冻结范围且整集核验不存在。未来运行前须冻结实际Query、Evidence/索引、原视频范围、独立Gold commitment、代码/Prompt/模型配置、K=3、匹配/分母/CI及timebox。本Probe只给诊断信号，不产生X1/X2 Scientific PASS；5条Query不能证明泛化。
 
@@ -516,7 +520,7 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 # 本地 Codex 接管后的当前任务（2026-10-07）
 
 1. Review接受历史Independent Judge Calibration FAIL；视觉差异诊断已完成并提交于84c4169，不回改分数或宣称Gemini Evidence Scientific FAIL。
-2. 当前用户授权仅完成Objective Evidence Schema v2、Limited X2 Retrieval Probe v1设计及文档同步；契约/评测设计已完成，STOP等待Review。
+2. Schema v2设计Review已通过；用户授权Limited Probe v1准备及原隔离评审Q3补核验登记。当前只提交现状：Legacy Evidence Retrieval Diagnostic准备INCONCLUSIVE、总冻结未完成、Q5 unverifiable、检索未执行。公开材料见limited-x2-probe-v1-preparation/README.md。
 3. 不新增模型实验/样本，不读人工答案、不运行Judge/检索、不生成Evidence、不进入X1.3/正式X2/X2.5或恢复A8/A9/A10。未Review前不得把设计稿作为新实验预注册或启用运行接口。
 4. Human Anchor的一次性校准成本与自动逐集Ingest目标不变；同剧/跨剧Holdout须后续冻结与授权，不因Schema重构绕过验证。
 
@@ -539,7 +543,7 @@ Development Calibration 完成并冻结代码、Prompt、模型配置及评测�
 
 ## 当前正式状态 (2026-10-07)
 
-> **Objective Evidence Schema v2 / Limited X2 Retrieval Probe v1设计完成，待Review；状态`objective_schema_v2_design_complete; awaiting_review; experiments_paused`。历史Independent Judge Calibration FAIL与所有分数永久保留，不能解释为Gemini Evidence Scientific FAIL；X1.2仍为Engineering PASS / Scientific Pending。未修改Anchor/原Judge/30-shot Manifest/20 Pair/旧preregistration，未进行模型实验、Query绑定、Gold构建、Evidence生成、Probe执行或下游阶段。提交推送后STOP。**
+> **Schema v2设计Review已通过、未接入；Limited Probe v1定位Legacy Evidence Retrieval Diagnostic，状态`preparation_inconclusive; overall_freeze_incomplete; retrieval_not_executed`。5条Query与旧快照/检索组件已留档，Q3补核验及新Gold承诺已登记、旧Gold保留，Q5仍unverifiable。正例搜索范围适用性、物理隔离guard与实际runner/配置尚未闭合；v1.1仅未批准建议。历史Independent Judge Calibration FAIL永久保留，X1.2仍Engineering PASS / Scientific Pending。未修改Anchor/原Judge/30-shot Manifest/20 Pair/旧preregistration，未生成新Evidence/样本、未执行Probe或下游阶段。本次只提交现状，随后STOP。**
 
 最高成功标准：
 

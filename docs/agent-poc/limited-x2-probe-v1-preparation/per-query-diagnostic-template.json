@@ -1,0 +1,70 @@
+{
+  "experiment_label": "Legacy Evidence Retrieval Diagnostic",
+  "retrieval_executed": false,
+  "queries": [
+    {
+      "query_id": "Q1",
+      "retrieval_result": null,
+      "actual_legacy_fields_used": null,
+      "requirements_not_representable": null,
+      "input_failure_attribution": null,
+      "retriever_failure_attribution": null,
+      "attribution_certainty": "not_evaluated",
+      "evaluator_citations": null
+    },
+    {
+      "query_id": "Q2",
+      "retrieval_result": null,
+      "actual_legacy_fields_used": null,
+      "requirements_not_representable": null,
+      "input_failure_attribution": null,
+      "retriever_failure_attribution": null,
+      "attribution_certainty": "not_evaluated",
+      "evaluator_citations": null
+    },
+    {
+      "query_id": "Q3",
+      "retrieval_result": null,
+      "actual_legacy_fields_used": null,
+      "requirements_not_representable": null,
+      "input_failure_attribution": null,
+      "retriever_failure_attribution": null,
+      "attribution_certainty": "not_evaluated",
+      "evaluator_citations": null
+    },
+    {
+      "query_id": "Q4",
+      "retrieval_result": null,
+      "actual_legacy_fields_used": null,
+      "requirements_not_representable": null,
+      "input_failure_attribution": null,
+      "retriever_failure_attribution": null,
+      "attribution_certainty": "not_evaluated",
+      "evaluator_citations": null
+    },
+    {
+      "query_id": "Q5",
+      "retrieval_result": null,
+      "actual_legacy_fields_used": null,
+      "requirements_not_representable": null,
+      "input_failure_attribution": null,
+      "retriever_failure_attribution": null,
+      "attribution_certainty": "not_evaluated",
+      "evaluator_citations": null
+    }
+  ],
+  "completion_rule": "Populate after first retrieval outputs committed; null means not run, never empty-as-result",
+  "cause_categories": [
+    "evidence_observation_missing_or_failed",
+    "evidence_claim_incorrect_or_unsupported",
+    "legacy_schema_structure_missing",
+    "legacy_schema_free_text_weak_expression",
+    "retriever_missed_available_supported_evidence",
+    "retriever_returned_unsupported_candidate",
+    "search_scope_lacks_complete_event",
+    "gold_ambiguity",
+    "undetermined"
+  ],
+  "evaluator_role": "Gold-author cannot alter Gold; independent evaluator only after result commitment",
+  "attribution_rule": "confirmed only with frozen input/output/isolated Gold support; otherwise suspected or undetermined; a retrieval miss alone proves no cause"
+}

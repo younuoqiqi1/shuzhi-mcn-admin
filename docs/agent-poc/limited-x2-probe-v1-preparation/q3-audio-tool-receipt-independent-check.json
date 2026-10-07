@@ -1,0 +1,17 @@
+{
+  "conversation_id": "594bdf21-efef-4878-9825-804e5ed0cb61",
+  "call_step": 107,
+  "response_step": 108,
+  "tool": "view_file",
+  "input_file": "/tmp/q3_audio.wav",
+  "status": "DONE",
+  "mime_type": "audio/wav",
+  "created_at_utc": "2026-10-07T12:25:29Z",
+  "media_blob_present_when_checked": true,
+  "media_blob_sha256": "96538192ac15d40773d2510609e6fb6c60ed72a6f69e03d493fc851c77e0ec36",
+  "verification": "actual system tool/media record; not model prose",
+  "semantic_audio_accuracy_independently_verified": false,
+  "blind_audio_gate_established_by_receipt": false,
+  "gold_answer_or_timecodes_included": false,
+  "new_audio_or_model_calls": 0
+}

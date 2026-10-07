@@ -1,0 +1,75 @@
+{
+  "archive_type": "public preparation checkpoint; not overall run freeze",
+  "baseline_commit": "acb42fcf218c3d4690fb9f418d7c61b87c2f4684",
+  "original_artifact_directory": "/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/limited-x2-probe-v1/preparation/legacy-diagnostic",
+  "files": [
+    {
+      "file": "queries.json",
+      "sha256": "e684d6d384ae04a7c707317f8486fbb67ccd5f78086153156f7a261cb7c8f711"
+    },
+    {
+      "file": "search-scope.json",
+      "sha256": "712e3c83db83637fed06d120a50f00efb64a2e0e02050918b010f0e06ccc2a0e"
+    },
+    {
+      "file": "snapshot-index.json",
+      "sha256": "52625787770bb13d7eae39a1cdcf3e3cc9f705afb1cb7416689bd72e0bfc0fa0"
+    },
+    {
+      "file": "retriever-prompt.txt",
+      "sha256": "d923529fd05994be8edfae013ba15c2d5a64674ecad4c5f66527a5c61219b206"
+    },
+    {
+      "file": "retrieval-response-schema.json",
+      "sha256": "58e2da4a15692c6cc15e8675b6493c4557a491a5197b61130b43a43840c5cae8"
+    },
+    {
+      "file": "retriever-config.json",
+      "sha256": "5bc5f84c04ccba4ef97b59bf753f78b606d9670304dab41079e517251e8cdf47"
+    },
+    {
+      "file": "matching-rules.json",
+      "sha256": "bba34e8ea6f4610cd49d916d04006b89e24af945d4b6fe96b406670b32b1bcaa"
+    },
+    {
+      "file": "per-query-diagnostic-template.json",
+      "sha256": "af467bab3e9f56569b60bb57c687f43487f27d02c4fdecbe84ffe9b82555e4bb"
+    },
+    {
+      "file": "overall-freeze-status.json",
+      "sha256": "acacc13a84fc24a69dcf3bac1c7e17e60f6ae48fd45c921a161d4744d3103afe"
+    },
+    {
+      "file": "gold-public-receipt-2026-10-07.json",
+      "sha256": "8901c42ad1b64492c7408b5c0c0e8034dbec010981f02bb85e9af8fe745dee91"
+    },
+    {
+      "file": "q3-audio-gold-public-receipt.json",
+      "sha256": "184b51f385e410c8ca9a0a1a1e38744e6015f694aac04726c6fb4293a6960e7f"
+    },
+    {
+      "file": "q3-audio-tool-receipt-independent-check.json",
+      "sha256": "6b74ca5f2ac8b785c742837df5e1564e5a08010714a522b0b80e3af4dc10a07d"
+    },
+    {
+      "file": "PREPARATION.md",
+      "sha256": "a4f1d2461785701f13e3289c424ba72354ef6c8fb20ff77a5ed12c24edbb7a90"
+    },
+    {
+      "file": "GOLD-READINESS-2026-10-07.md",
+      "sha256": "515aaba32473449d68fd68bd491f3251d8ea8836688a1a2af5ed99d027ef35c3"
+    },
+    {
+      "file": "Q3-SUPPLEMENT-READINESS-2026-10-07.md",
+      "sha256": "5e5bd8a33d72b8f477f63426c433e8e7fce5f746a6c81ec8442d398112415337"
+    }
+  ],
+  "omitted_from_git": [
+    "Gold plaintext or encrypted answers",
+    "original video and audio/media cache",
+    "raw private evaluator logs",
+    "duplicate Evidence snapshot and corpus transport; original source files are already tracked and snapshot-index.json contains their byte hashes"
+  ],
+  "historical_reports": "PREPARATION.md and GOLD-READINESS-2026-10-07.md preserve earlier preparation checkpoints; README.md and overall-freeze-status.json define latest status",
+  "retriever_access": "Preparation reports/Gold commitments/evaluator logs must not be supplied to future blind Retriever; physical execution guard is not yet verified"
+}

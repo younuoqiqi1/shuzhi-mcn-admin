@@ -2,14 +2,22 @@
 
 更新时间：2026-10-07（Asia/Shanghai）
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**Objective Evidence Schema v2 与 Limited X2 Retrieval Probe v1 设计完成；STOP 等待 Review**
-当前状态：**`objective_schema_v2_design_complete; awaiting_review; experiments_paused`。本轮只修改架构/契约/评测设计与状态文档，无新模型实验、推理、Judge、Human标注、Query绑定、Gold构建或检索输出，无新样本/Evidence。历史Independent Judge Calibration FAIL和视觉差异诊断永久保留，不解释为Gemini Evidence Scientific FAIL；X1.2维持Engineering PASS / Scientific Pending。运行代码与冻结Anchor协议未改。**
-核心决议：**v2按原视频时间保存内容类型、匿名人物、轻量场景、明确state/event动作、关键可见物体及OCR/ASR/Speaker来源；boundary_correctness与evidence_usability分离，人物数仅optional辅助，删除旧Object taxonomy。字段检索价值是待验证假设。5Query Probe只设计，尚未绑定真实目标/Gold，不产生PASS或执行授权。Human Anchor仍是一次系统校准成本，不进入每集自动Ingest。X1.3/正式X2/X2.5/A8/A9/A10保持暂停；完成commit + push后STOP等待Review。**
+当前阶段：**Objective Evidence Schema v2 设计 Review 已通过（未接入）；Limited X2 Retrieval Probe v1 准备 INCONCLUSIVE，STOP 等待 Review**
+当前状态：**`legacy_evidence_retrieval_diagnostic; preparation_inconclusive; overall_freeze_incomplete; retrieval_not_executed`。5条真实Query文本、旧快照哈希及检索组件已封存；原隔离AGY评审完成Q3原声补核验登记并保留新旧Gold承诺，Q5仍unverifiable。总冻结未完成，没有检索结果、新样本或新Evidence。本轮只归档当前准备材料与公开回执。历史Independent Judge Calibration FAIL永久保留，X1.2仍为Engineering PASS / Scientific Pending。运行代码、Schema与冻结Anchor协议未改。**
+核心决议：**本Probe使用现有X1.2原始六字段Evidence与OCR快照，只作Legacy Evidence Retrieval Diagnostic，不映射或验证v2。Top K=3与原匹配/分母/CI规则不变；Q5整集不存在性、正例搜索范围适用性、物理权限guard及实际runner/最终配置仍待闭合。v1.1搜索范围调整只是未批准建议，本轮不实施。Human Anchor仍是一次系统校准成本，不进入每集自动Ingest。X1.3/正式X2/X2.5/A8/A9/A10不启动；现状提交后STOP。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
 
-## Objective Evidence v2 / Limited Probe v1 设计交付（2026-10-07）
+## Limited Probe v1 当前准备归档（2026-10-07）
+
+- 当前说明与公开附件：[准备状态 README](docs/agent-poc/limited-x2-probe-v1-preparation/README.md)。5条Query保持独立作者原文；原50-shot范围不增不换；输入快照154个原文件的字节hash留档，150次视觉记录含130 success/20 failed，失败未剔除。旧Evidence原样，不做v1→v2伪映射。
+- 公开音频工具回执已核对：view_file调用后返回DONE、audio/wav媒体；只证明实际音频媒体接入，不证明听觉判定百分之百准确或Gate盲于Query。原评审已登记Q3补核验，Codex未读取Gold明文、未重复原声/口型评审。
+- 旧Gold SHA256 `b135166511b4fece7cc216067a47a422358d486fa0084848ea293e4b720653e1`保留；新Gold SHA256 `26da138c9e517722d79bd26a05cf8b26b52d9809b0dc6688419989155683dc94`已由原隔离评审封存，并核到实际任务完成哈希回执。仓库只存公开承诺、配置/清单与报告，不存Gold答案、Gold时间区间、音频、视频或私有评审日志。
+- Q5仍unverifiable；正例在固定范围含完整事件尚待隔离evaluator确认；chmod 000恢复仅为原评审声明，实际Retriever权限边界、runner/最终配置与费用边界尚未闭合。准备INCONCLUSIVE，总冻结未完成、检索未授权，所有诊断结果仍null，不产生能力PASS/FAIL分数。
+- 本次用户授权提交当前情况。v1.1限定负例到搜索范围仅为建议，未批准、未实施，不改本轮规则。完成现状commit后STOP，不开始后续实验。
+
+## Objective Evidence v2 / Limited Probe v1 历史设计交付（2026-10-07）
 
 - 设计：[objective-evidence-schema-v2.md](docs/agent-poc/objective-evidence-schema-v2.md)、[JSON Schema](docs/agent-poc/objective-evidence-schema-v2.json)、[limited-x2-retrieval-probe-v1.md](docs/agent-poc/limited-x2-retrieval-probe-v1.md)。架构与交接同步新规范及当前状态，旧v1示例标历史，不迁移旧Evidence。
 - content_region_type增加正片/片头/片尾/预告/其他非正片/unknown；状态与事件分别定义时间支持；key_objects[]允许空并以通用可见准则选择，不推断关系/用途/动机；Speech保留OCR/ASR与冲突，Speaker不确定时unknown。
@@ -53,9 +61,9 @@
 | **Human Anchor Calibration** | X1 关键校准点 | 🔴 **历史 Independent Judge Calibration FAIL / Review accepted** | d6ac6ca原结论和分数永久保留，不能解释为Gemini Evidence Scientific FAIL；原冻结30 Shot + 20 Pair不变，人工完整度100%。6项FAIL、Scene与Person consistency INCONCLUSIVE。30 Speech、30 Speaker、15 Boundary技术失败已留档，其中65个适用失败纳入评分差异。Person有效Pair13/20未达到15；v4无耗时预算裁决。完整CI与126条适用差异见原calibration-report.md及公开JSON，不按后续裁决回改。一次性Anchor不进入日常Ingest；该Judge路由不继续调参，下游暂停 |
 | **Visual Disagreement Adjudication** | X1 诊断，非新Gate | ✅ **已完成 / STOP 等待 Review** | 原30 Shot的count/action/object共54项首次匿名A/B裁决已封存；来源仅在封存后精确匹配恢复，不解密人工备份。Human/Judge正确数12/11、分类歧义24、证据不足7、技术失败0。逐字段与逐项结果见visual-adjudication-report.md及公开JSON。物体关键性/背景/类别重叠，动作状态/事件与范围存在定义问题；裁决不等于绝对人工Gold、不重算历史分数，也不构成Gemini Scientific PASS/FAIL。新建议未实施，无新样本、原Judge重跑或X1.3/X2 |
 | **Human Anchor 校准指标预注册** | X1 校准前置 | ✅ **Calibration 指标已冻结** | Human Anchor 各项公式、分母、unknown/missing/failed、CI 及 PASS/FAIL/INCONCLUSIVE 见 `docs/agent-poc/human-anchor-calibration/preregistration.md`。这不是 X1 全量 Scientific Gate；X1 正式门槛仍待预注册 |
-| **Objective Evidence Schema v2** | L1 契约设计 | ✅ **design complete / awaiting_review（未接入）** | 新通用设计与机器JSON已完成；内容类型、boundary/usability分离、状态/事件、key_objects、匿名人物与OCR/ASR/Speaker。人物数optional。未修改运行Schema或冻结Anchor，未迁移/生成Evidence，检索价值等待有限Probe验证 |
+| **Objective Evidence Schema v2** | L1 契约设计 | ✅ **design approved（未接入）** | 用户Review已通过设计；内容类型、boundary/usability分离、状态/事件、key_objects、匿名人物与OCR/ASR/Speaker。人物数optional。运行Schema与冻结Anchor未改，未迁移/生成v2 Evidence；本Probe使用旧快照，不验证v2能力 |
 | **X1 Evidence v1 (客观证据底座 v1)** | X1 产物节点 | ⏳ **pending (前置未达成)** | 聚合多模态客观证据（镜头时序、代表帧语义、对齐台词、校准后人物聚类），形成防污染、免推断的 L1 结构化证据底座；前置依赖 Human Anchor 校准与 X1 指标冻结正式通过，当前未达成 |
-| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **design complete / awaiting_review（未执行）** | 修订后新验证规则允许在极小受控规模下（如 3-5 条典型 Query）执行盲测检索探针，用以提前探测检索匹配机制与拒识表现；但**本次未执行任何 probe 实验**，无新增样本数据，当前处于暂停状态 |
+| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **preparation INCONCLUSIVE / 总冻结未完成（未执行）** | Legacy Evidence Retrieval Diagnostic：5条Query与旧输入/检索组件已留档，Q3补核验已封存新Gold，Q5仍unverifiable；搜索范围适用性、物理guard与runner配置待闭合。没有检索结果，不修改本轮规则，不实施尚未批准的v1.1建议 |
 | **X2 Gold (检索金标准数据集)** | X2 评测基础 | ⏳ **pending (待构建与预注册)** | **明确 X2 Gold 为原视频时间区间 (Ground Truth Time Ranges in Source Video)**，作为跨镜头语义召回的真实时间对齐真值；**旧 50 query count 仅称历史口径**，新评测集分类（显式/抽象/改写/对抗负例/荒谬输入）、具体样本量及时间区间真值待后续正式预注册 |
 | **X2 Semantic Retrieval Benchmark (主评)** | X2 主评节点 | 🛑 **未获准 / 冻结中 (需等待 X1 正式通过与 X2 Gold 就绪)** | 多类别需求盲测检索、跨镜头时序召回准确率及 INSUFFICIENT 拒识率验证；**旧 X2 阈值及旧 50 query 仅称历史口径，新阈值待预注册**；主评测当前严格未获准，维持冻结 |
 | **X2.5 Persona / Plan (角色与编导盲测)** | X2.5 节点 | 🛑 **未获准 / 冻结中** | 后续最低设计 2 Persona × 5 Topic；Agent 接收匿名 Persona 卡生成条件化 Plan，Persona 标签映射对 Agent 与独立评审隐藏；评审盲判 Persona 归属并核验证据支持和事实错误；当前未获准且不执行 |

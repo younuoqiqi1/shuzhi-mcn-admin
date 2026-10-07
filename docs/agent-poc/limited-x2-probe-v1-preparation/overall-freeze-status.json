@@ -1,0 +1,52 @@
+{
+  "experiment_label": "Legacy Evidence Retrieval Diagnostic",
+  "status": "preparation_inconclusive_gold_requirements_unmet",
+  "overall_freeze_complete": false,
+  "ready_for_review": false,
+  "retrieval_authorized": false,
+  "gold_state": "Q3_SUPPLEMENT_REGISTERED_Q5_UNVERIFIABLE",
+  "gold_commitment": "26da138c9e517722d79bd26a05cf8b26b52d9809b0dc6688419989155683dc94",
+  "gold_commitment_verification": "AGY isolated evaluator hash operation completion receipt verified; Gold bytes not read by Codex",
+  "gold_public_receipt": "q3-audio-gold-public-receipt.json",
+  "latest_readiness_report": "Q3-SUPPLEMENT-READINESS-2026-10-07.md",
+  "preparation_conclusion": "INCONCLUSIVE",
+  "audio_verification_ready": true,
+  "full_episode_absence_verification_ready": false,
+  "physical_isolation_verified": false,
+  "gold_plaintext_read": false,
+  "query_text_locked": true,
+  "query_gold_eligibility_confirmed": false,
+  "evidence_snapshot_locked": true,
+  "schema_v1_unchanged": true,
+  "schema_v2_unchanged": true,
+  "schema_mapping": false,
+  "components_sha256": {
+    "snapshot_index": "52625787770bb13d7eae39a1cdcf3e3cc9f705afb1cb7416689bd72e0bfc0fa0",
+    "transport_corpus": "38e9ef477f9e2a29efe4bb01a59347b91926bab6902fa6cb7665e20af54b97a9",
+    "queries": "e684d6d384ae04a7c707317f8486fbb67ccd5f78086153156f7a261cb7c8f711",
+    "search_scope": "712e3c83db83637fed06d120a50f00efb64a2e0e02050918b010f0e06ccc2a0e",
+    "prompt": "d923529fd05994be8edfae013ba15c2d5a64674ecad4c5f66527a5c61219b206",
+    "response_schema": "58e2da4a15692c6cc15e8675b6493c4557a491a5197b61130b43a43840c5cae8",
+    "retriever_config": "5bc5f84c04ccba4ef97b59bf753f78b606d9670304dab41079e517251e8cdf47",
+    "matching_rules": "bba34e8ea6f4610cd49d916d04006b89e24af945d4b6fe96b406670b32b1bcaa",
+    "diagnostic_template": "af467bab3e9f56569b60bb57c687f43487f27d02c4fdecbe84ffe9b82555e4bb",
+    "preparation_report": "a4f1d2461785701f13e3289c424ba72354ef6c8fb20ff77a5ed12c24edbb7a90"
+  },
+  "remaining": [
+    "Full episode absence verification for Q5; Q5 remains unverifiable",
+    "Gold eligibility in fixed original 50-shot scope",
+    "physical Gold/answer isolation and actual execution guard",
+    "final runner/config hash closure"
+  ],
+  "retrieval_runs": 0,
+  "new_evidence_records": 0,
+  "new_samples": 0,
+  "prior_gold_commitments": [
+    "b135166511b4fece7cc216067a47a422358d486fa0084848ea293e4b720653e1"
+  ],
+  "q3_audio_media_receipt_verified": true,
+  "q3_semantic_review": "supplementary report registered by isolated evaluator; not independently repeated by Codex",
+  "q3_audio_receipt": "q3-audio-tool-receipt-independent-check.json",
+  "q3_audio_gate_blinding_verified": false,
+  "isolation_restored_reported_by_evaluator": true
+}
