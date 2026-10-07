@@ -35,7 +35,7 @@ Human Anchor 用于一次性 POC 系统校准，不帮助单集或日常素材 I
 
 ## 2. 冻结字段与排除项
 
-冻结字段见 schema.json：镜头边界、人物数量 0/1/2/3/4+/不确定、匿名视觉 Pair 一致性、场景分类、动作分类、物体分类、语音状态、画面人物/画外音/不确定的 Speaker 来源及原帧位置坐标、其他项文字最多 24 字，不参与主要评分。
+冻结字段见 schema.json：镜头边界、人物数量 0/1/2/3/4+/不确定、匿名视觉 Pair 一致性、场景分类、动作分类、物体分类、语音状态、画面人物/画外音/不确定的 Speaker 来源及可选原帧位置坐标。位置不可辨时留空；坐标不参与完成率或主要评分。其他项文字最多 24 字，不参与主要评分。
 
 本批不采集对白逐字转写、CER/WER、speaker_person_id 或 speaker_confidence Anchor 真值。Evidence Contract 中 speaker_person_id/confidence 与 ASR/CER 在本 Anchor 内未校准，保持 Pending，不得宣称已经过 Anchor 验证。若未来需要 ASR 真值，另行批准最小子集和时间预算。
 
@@ -73,3 +73,9 @@ unknown 是明确答案，单列类别及 coverage；missing 是漏标，failed 
 ## 6. 后续盲测与产品解释
 
 Calibration 完成后冻结代码、Prompt、模型配置和评测规则。Same-title Blind Holdout（如另一集）必须全自动 Ingest，不重做人类 Anchor、不为该集修改规则；只在 Ingest 完成后允许少量事后抽检。必须人工修正才能正常 Evidence 入库则 X1 FAIL。随后以同一冻结系统做另一部真人剧 Cross-title Holdout，只做事后小规模抽检。动画、综艺、纪录片等 Domain Shift 另做 Domain Qualification，不要求逐集 Anchor。
+
+## 7. 标注开始后的非评分表单勘误（2026-10-07）
+
+用户已开始人工标注，本次属于界面与非评分 provenance 勘误，不得描述为人工开始前的新冻结。原 v4 冻结哈希保留在 hash-commitment.json 的 ui_amendments 中。原有 30-shot Manifest、20 Pair、分类字段、所有评分公式/分母/阈值/95% CI、盲法与模型配置均不改变。
+
+Speaker 原帧位置仅为可选溯源；画面模糊时可以留空，不要求猜测位置，不阻塞下一条。可见说话人来源仍按原始视频/帧独立选择，不能为了绕过位置验证而将已确定的来源改为不确定。未知坐标保留为缺省，不由 Agent 自动补齐。人物 Pair 的同一/不同决策仍要求两端目标位置；选择不确定时无需点图。既有答案不读取、不自动修改；本轮不运行 Judge 或实验。

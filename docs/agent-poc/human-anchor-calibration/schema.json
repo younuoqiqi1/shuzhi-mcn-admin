@@ -1,5 +1,5 @@
 {
-  "schema_version": "human-anchor/1.2",
+  "schema_version": "human-anchor/1.2.1",
   "title": "Generic audiovisual observation anchor",
   "content_independent": true,
   "fields": {
@@ -25,7 +25,7 @@
     },
     "speech_status": ["intelligible_speech_audible", "no_intelligible_speech", "uncertain"],
     "speaker_source": ["on_screen_person", "off_screen_voice", "uncertain"],
-    "speaker_location": "Normalized coordinates on a raw representative frame when speaker_source is on_screen_person.",
+    "speaker_location": "Optional normalized coordinates on a raw representative frame when speaker_source is on_screen_person and location is clear. Omit when unclear; never required for task completion or scoring.",
     "unknown": "Explicit uncertain choice for each applicable field."
   },
   "not_collected": [
