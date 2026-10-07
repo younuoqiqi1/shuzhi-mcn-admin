@@ -1,6 +1,6 @@
 # 数智博主 AI 视频 POC｜重新验证开发交接文档
 
-**日期：** 2026-10-07（Human Anchor Calibration 30 分钟预算版准备已冻结）
+**日期：** 2026-10-07（Human Anchor Calibration 低操作负担版准备已冻结）
 **用途：** 本地 Codex Work 接管项目并协调 AGY 后续开发  
 **当前策略：** 冻结原 A8/A9/A10；全面落实 **Human Anchor + 独立 AI Judge 校准** 与 **X2.5 盲测** 机制；本规范明确 **supersede** 旧 X1/X2 指标/样本定义以及“只有 X1 Gate 通过后才能任何 X2 探针”的旧条款；当前实验暂停，优先固化新验证路线与预注册规范。
 **最终目标：** 影视多集素材一次入库后，可针对任意新选题跨集检索、多集混剪，并从 MCN 后台生成真实视频。
@@ -506,12 +506,12 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 
 ## Human Anchor Development Calibration 准备（2026-10-07）
 
-Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest。Schema 与项目/剧集/人物/剧情无关。30 个原 Shot Manifest 不变；只标边界、人物数量分类、20 组同一/不同/不确定人物帧对、场景/动作/物体分类、语音状态与 Speaker 来源/点击位置，不维护 P01/P02、不逐字转写。CER/ASR、speaker_person_id/confidence Anchor 真值从本轮校准指标中移除，保持 Pending。全任务硬上限 30 分钟，单 Shot 平均负担不超过 60 秒；页面解锁提供分步状态/超时提示；原口令不可用时，可新建独立空白记录并保留旧密文，不覆盖或导入旧答案；成功进入页面后记录前台且聚焦时的活跃耗时，并以口令加密自动保存；切后台或关闭时暂停，恢复后继续。未来第二集、第三集及以后必须自动 Ingest；Anchor 是一次性 POC 系统校准成本。
+Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest。Schema 与项目/剧集/人物/剧情无关。30 个原 Shot Manifest 不变；只标边界、人物数量分类、20 组同一/不同/不确定人物帧对、场景/动作/物体分类、语音状态与 Speaker 来源/点击位置，不维护 P01/P02、不逐字转写。CER/ASR、speaker_person_id/confidence Anchor 真值从本轮校准指标中移除，保持 Pending。30 分钟仅是维护者控制页面操作复杂度的设计目标；页面不显示倒计时、不记录逐项或全程耗时，也不设置时间锁定。标注者按自己的节奏完成，并在全部必需项完成后点击“提交标注”；页面以口令加密自动保存。页面解锁提供分步状态/超时提示；原口令不可用时，可新建独立空白记录并保留旧密文，不覆盖或导入旧答案。未来第二集、第三集及以后必须自动 Ingest；Anchor 是一次性 POC 系统校准成本。
 
 - **样本**：只从现有 X1.2 50-shot Manifest 按 early/mid/late 分层、固定种子 20261007 各取 10 个，共 30 个；冻结清单见 `docs/agent-poc/human-anchor-calibration/manifest.json`，不增加样本。
 - **盲标页**：仓库外 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/human-anchor-calibration/annotation.html` 仅展示原始片段/帧/原声及通用字段，不展示任何 AI/Judge/Codex 预测。标注员直接观察并独立完成；页面答案仅以人工自设口令加密密文保存在浏览器 IndexedDB，支持导出加密备份，存放于仓库外，答案明文不得被 Agent/Judge 读取或提交。
 - **盲法前提**：标注员须声明未看过这些 Shot 的 Evidence/AI/Codex Review。已看过预测者不能通过页面隐藏恢复盲法；若无法找到未暴露的标注员，校准须记为 INCONCLUSIVE。
-- **冻结**：同目录 `schema.json`、`annotation-guidelines.md`、`preregistration.md`、`hash-commitment.json` 冻结 Schema、分层 Manifest、固定人物 Pair、页面/协议哈希、公式/分母、unknown/missing/failed、30 分钟活跃时间硬预算、阈值、CI 和 PASS/FAIL/INCONCLUSIVE。答案 SHA256 必须在标注完成后、任何 Judge/评估器读取前计算登记；目前为空值是待办，不代表答案已存在。
+- **冻结**：同目录 `schema.json`、`annotation-guidelines.md`、`preregistration.md`、`hash-commitment.json` 冻结 Schema、分层 Manifest、固定人物 Pair、页面/协议哈希、公式/分母、unknown/missing/failed、非计时的页面操作复杂度设计目标、阈值、CI 和 PASS/FAIL/INCONCLUSIVE。答案 SHA256 必须在标注完成后、任何 Judge/评估器读取前计算登记；目前为空值是待办，不代表答案已存在。
 - **当前状态**：只完成准备/预注册；未做人审标注、未运行 Judge、未生成 Evidence、未进行 X2 Probe、未进入 X1.3/X2/X2.5。X1.2 仍为 Engineering PASS / Scientific Pending。
 
 ### 校准后的泛化验证顺序

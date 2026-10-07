@@ -1,5 +1,5 @@
 {
-  "preregistration_id": "HA-DEV-2026-10-07-v3",
+  "preregistration_id": "HA-DEV-2026-10-07-v4",
   "status": "FROZEN_BEFORE_HUMAN_LABELING_AND_JUDGE",
   "purpose": "calibrate evaluation of existing X1.2 system using one-time development Human Anchor; not per-episode ingest",
   "sample_manifest_sha256": "7f82d16034e2ef80f3b36d8d15215e58394a0313610540fc848a1a8a17a6fff4",
@@ -21,12 +21,12 @@
   "no_model_calls_or_judge_run_in_this_preparation": true,
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
-    "schema.json": "cb8baa7208369bfa9d5649c34ab3eead6e3b5bf1c0e3cb06e5fe777f7d9ea715",
-    "annotation-guidelines.md": "7b217444244ba5fadaa50f3322e880fdef87529ce3762ffe99bbc45622c88694",
-    "preregistration.md": "c58da707d8e67c8ed69964a34080224a796e6b9170db7b7b1ce6c9fd12b6acdd"
+    "schema.json": "fe35e3b334849401a43fee1900bdc1d49932d8aa6f0450e1e9811e0403d8c1ff",
+    "annotation-guidelines.md": "fe043c0e9f47e69ff96c57d864aeafff9c8694df4fc7fb4bd1190b455c985612",
+    "preregistration.md": "882064cb0e7896030fa6c2e85998e0bb6e38a1fded88b071e7076510c0956a13"
   },
-  "preparation_base_commit": "5a66dfbf266fa6e781ab1a6b7e6bdfc80f606520",
-  "annotation_page_sha256": "435133a9559a36ac98f0902c5625a4fa5b22ea5fcd4de4afc60060fbb7ffe3f5",
+  "preparation_base_commit": "6ba201a244f48e5651d960c3c8e9c26c94cba67f",
+  "annotation_page_sha256": "a6206da98f5f6c294b882f99661c42f8b95ec0e93fd3bbeca734cb4f24f35701",
   "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe",
   "fresh_session_storage": {
     "database": "human-anchor-calibration-v4",
