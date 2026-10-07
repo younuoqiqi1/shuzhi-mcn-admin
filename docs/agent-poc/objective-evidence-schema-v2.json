@@ -1,0 +1,1276 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schema.shuzhi.ai/design/objective-evidence-v2.json",
+  "title": "Objective Evidence Schema v2 — design only",
+  "description": "待Review的新契约；不替换冻结Anchor或现有运行契约。JSON Schema结构检查不能证明视觉/听觉事实正确；跨记录与语义规则见objective-evidence-schema-v2.md。",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.0.0-design"
+    },
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "media_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "span": {
+      "$ref": "#/definitions/span"
+    },
+    "shot_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "content_regions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/region"
+      },
+      "minItems": 1
+    },
+    "boundary_correctness": {
+      "$ref": "#/definitions/boundary"
+    },
+    "evidence_usability": {
+      "$ref": "#/definitions/usability"
+    },
+    "person_observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "unknown",
+            "failed"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/person"
+          }
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "items",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "unknown",
+                  "failed"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "items": {
+                "maxItems": 0
+              },
+              "uncertainty": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "scene": {
+      "$ref": "#/definitions/scene"
+    },
+    "observable_actions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "unknown",
+            "failed"
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/action"
+          }
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "items",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "unknown",
+                  "failed"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "items": {
+                "maxItems": 0
+              },
+              "uncertainty": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "key_objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/key_object"
+      }
+    },
+    "key_objects_status": {
+      "type": "string",
+      "enum": [
+        "observed",
+        "unknown",
+        "failed"
+      ]
+    },
+    "speech_status": {
+      "type": "string",
+      "enum": [
+        "speech_present",
+        "no_speech_detected",
+        "unknown",
+        "failed"
+      ]
+    },
+    "speech_segments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/speech"
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/provenance"
+      },
+      "minItems": 1
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "person_count_observations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/person_count"
+      }
+    },
+    "person_consistency": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/consistency"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "media_id",
+    "span",
+    "shot_refs",
+    "content_regions",
+    "boundary_correctness",
+    "evidence_usability",
+    "person_observations",
+    "scene",
+    "observable_actions",
+    "key_objects",
+    "key_objects_status",
+    "speech_status",
+    "speech_segments",
+    "provenance",
+    "uncertainty"
+  ],
+  "definitions": {
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start_sec": {
+          "type": "number",
+          "minimum": 0
+        },
+        "end_sec": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "start_sec",
+        "end_sec"
+      ]
+    },
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ref_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "frame",
+            "video",
+            "audio",
+            "ocr",
+            "asr"
+          ]
+        },
+        "asset_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "asset_sha256": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "producer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "run_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frame_sec": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "ref_id",
+        "kind",
+        "asset_ref",
+        "asset_sha256",
+        "span",
+        "producer",
+        "run_ref",
+        "frame_sec"
+      ]
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "correct",
+            "incorrect",
+            "unknown",
+            "not_evaluated"
+          ]
+        },
+        "assessment_source": {
+          "type": "string",
+          "enum": [
+            "independent_evaluator",
+            "not_evaluated"
+          ]
+        },
+        "criterion_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "assessment_source",
+        "criterion_ref",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_evaluated"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "assessment_source": {
+                "const": "not_evaluated"
+              },
+              "criterion_ref": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "assessment_source": {
+                "const": "independent_evaluator"
+              },
+              "criterion_ref": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "usability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "usable",
+            "partially_usable",
+            "unusable",
+            "unknown",
+            "not_evaluated"
+          ]
+        },
+        "assessment_source": {
+          "type": "string",
+          "enum": [
+            "automatic_check",
+            "independent_evaluator",
+            "not_evaluated"
+          ]
+        },
+        "criterion_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "usable_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/span"
+          }
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "assessment_source",
+        "criterion_ref",
+        "usable_spans",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "usable",
+                  "partially_usable"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "usable_spans": {
+                "minItems": 1
+              },
+              "criterion_ref": {
+                "type": "string",
+                "minLength": 1
+              },
+              "assessment_source": {
+                "enum": [
+                  "automatic_check",
+                  "independent_evaluator"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "usable_spans": {
+                "maxItems": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "not_evaluated"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "assessment_source": {
+                "const": "not_evaluated"
+              },
+              "criterion_ref": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "content_region_type": {
+          "type": "string",
+          "enum": [
+            "main_content",
+            "opening",
+            "ending",
+            "preview",
+            "other_non_main",
+            "unknown"
+          ]
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "content_region_type",
+        "span",
+        "confidence",
+        "provenance_refs",
+        "uncertainty"
+      ]
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observation_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "person_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^person_[A-Za-z0-9_-]+$"
+            },
+            {
+              "const": "unknown"
+            }
+          ]
+        },
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bbox_normalized": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "x": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "y": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "width": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1
+                },
+                "height": {
+                  "type": "number",
+                  "exclusiveMinimum": 0,
+                  "maximum": 1
+                }
+              },
+              "required": [
+                "x",
+                "y",
+                "width",
+                "height"
+              ]
+            }
+          ]
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "observation_id",
+        "person_id",
+        "frame_ref",
+        "bbox_normalized",
+        "span",
+        "confidence",
+        "provenance_refs",
+        "uncertainty"
+      ]
+    },
+    "person_count": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "unknown",
+            "failed"
+          ]
+        },
+        "counting_rule_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "frame_ref",
+        "count",
+        "status",
+        "counting_rule_ref",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "observed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "count": {
+                "type": "integer"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "count": {
+                "type": "null"
+              },
+              "uncertainty": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "consistency": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observation_a_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observation_b_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "same",
+            "different",
+            "unknown"
+          ]
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "calibration_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "observation_a_id",
+        "observation_b_id",
+        "decision",
+        "confidence",
+        "calibration_ref",
+        "uncertainty"
+      ]
+    },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "setting": {
+          "type": "string",
+          "enum": [
+            "indoor",
+            "outdoor",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "environment_text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 120
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "setting",
+        "environment_text",
+        "span",
+        "confidence",
+        "provenance_refs",
+        "uncertainty"
+      ]
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "action_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "state",
+            "event"
+          ]
+        },
+        "predicate": {
+          "type": "string",
+          "enum": [
+            "sitting",
+            "standing",
+            "lying",
+            "holding",
+            "walking",
+            "running",
+            "picking_up",
+            "putting_down",
+            "handing_over",
+            "opening",
+            "closing",
+            "turning_body",
+            "gesturing",
+            "mouth_moving",
+            "other_observable"
+          ]
+        },
+        "subject_person_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^person_[A-Za-z0-9_-]+$"
+            },
+            {
+              "const": "unknown"
+            }
+          ]
+        },
+        "target_object_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observable_text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "temporal_basis": {
+          "type": "string",
+          "enum": [
+            "frame_instant",
+            "observed_interval"
+          ]
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "action_id",
+        "kind",
+        "predicate",
+        "subject_person_id",
+        "target_object_id",
+        "observable_text",
+        "temporal_basis",
+        "span",
+        "confidence",
+        "provenance_refs",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "state"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "predicate": {
+                "type": "string",
+                "enum": [
+                  "sitting",
+                  "standing",
+                  "lying",
+                  "holding",
+                  "other_observable"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "predicate": {
+                "type": "string",
+                "enum": [
+                  "walking",
+                  "running",
+                  "picking_up",
+                  "putting_down",
+                  "handing_over",
+                  "opening",
+                  "closing",
+                  "turning_body",
+                  "gesturing",
+                  "mouth_moving",
+                  "other_observable"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "event"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "temporal_basis": {
+                "const": "observed_interval"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "key_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "object_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "observable_attributes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 60
+          }
+        },
+        "selection_basis": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "visible_action_participant",
+              "foreground_focus",
+              "distinctive_visible_detail"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "action_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "object_id",
+        "label",
+        "observable_attributes",
+        "selection_basis",
+        "span",
+        "confidence",
+        "provenance_refs",
+        "uncertainty",
+        "action_refs"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "selection_basis": {
+                "contains": {
+                  "const": "visible_action_participant"
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "action_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "speech": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "segment_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ocr_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ocr_status": {
+          "type": "string",
+          "enum": [
+            "available",
+            "no_text_detected",
+            "not_run",
+            "failed"
+          ]
+        },
+        "ocr_text_type": {
+          "type": "string",
+          "enum": [
+            "dialogue_subtitle",
+            "other_screen_text",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "asr_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "asr_status": {
+          "type": "string",
+          "enum": [
+            "available",
+            "no_speech_detected",
+            "not_run",
+            "failed"
+          ]
+        },
+        "resolved_text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fusion_status": {
+          "type": "string",
+          "enum": [
+            "agreement",
+            "single_source",
+            "conflict",
+            "unavailable"
+          ]
+        },
+        "speaker_source": {
+          "type": "string",
+          "enum": [
+            "on_screen",
+            "off_screen",
+            "mixed",
+            "unknown",
+            "not_applicable"
+          ]
+        },
+        "speaker_person_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^person_[A-Za-z0-9_-]+$"
+            },
+            {
+              "const": "unknown"
+            }
+          ]
+        },
+        "speaker_confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "speaker_provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "span": {
+          "$ref": "#/definitions/span"
+        },
+        "confidence": {
+          "$ref": "#/definitions/confidence"
+        },
+        "provenance_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "segment_id",
+        "ocr_text",
+        "ocr_status",
+        "ocr_text_type",
+        "asr_text",
+        "asr_status",
+        "resolved_text",
+        "fusion_status",
+        "speaker_source",
+        "speaker_person_id",
+        "speaker_confidence",
+        "speaker_provenance_refs",
+        "span",
+        "confidence",
+        "provenance_refs",
+        "uncertainty"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "speaker_person_id": {
+                "const": "unknown"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "speaker_confidence": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "speaker_confidence": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              "speaker_provenance_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "key_objects_status": {
+            "enum": [
+              "unknown",
+              "failed"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "key_objects": {
+            "maxItems": 0
+          },
+          "uncertainty": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}

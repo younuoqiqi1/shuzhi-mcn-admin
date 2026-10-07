@@ -1,13 +1,19 @@
 # POC-AGENT: 数智博主端到端生产工作台接线架构方案 (Topic-First Architecture)
 
-**文档版本**: v2.1.0  
-**当前状态**: `awaiting_review` (经历 `changes_requested` 后重构提交)  
+**文档版本**: v2.2.0（Objective Evidence v2 设计）
+**当前状态**: `objective_schema_v2_design_complete; awaiting_review; experiments_paused`
 **责任角色**: 🏛️ 全栈架构师 & 🚀 DevOps/SRE  
 **涉及工程与仓库**:
 - **运营中枢**: `shuzhi-mcn-admin`（本地路径: `intelligent-pasteur/shuzhi-mcn-admin`）
 - **视听引擎**: `video-moment-validation`（VMV, 本地路径: `video-moment-validation`）
 
 ---
+
+## 当前验证基线与v2契约范围（2026-10-07）
+
+历史Independent Judge Calibration FAIL永久保留，不等于Gemini Evidence Scientific FAIL；X1.2维持Engineering PASS / Scientific Pending。当前只设计[Objective Evidence Schema v2](objective-evidence-schema-v2.md)及[Limited X2 Retrieval Probe v1](limited-x2-retrieval-probe-v1.md)，未改运行代码、生成Evidence、运行模型/检索或新增样本。JSON定义位于[objective-evidence-schema-v2.json](objective-evidence-schema-v2.json)，是待Review设计，不替代冻结Anchor Schema。
+
+本次L1设计supersede本文件旧L1姓名/物体/动作定义；后续契约2等示例与A0–A10路线属于Legacy接线说明，不是当前接口或解锁依据。正式路线、预注册与实验暂停以[poc-revalidation-handoff.md](poc-revalidation-handoff.md)为准；A8/A9/A10及X1.3/正式X2/X2.5继续暂停。Limited Probe本轮只设计，必须后续单独授权和冻结才能执行。本轮commit + push后STOP，等待Review。
 
 ## 一、 架构总原则与定位准则
 
@@ -148,16 +154,16 @@ flowchart TD
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1. ① 稳定客观 Evidence (物理事实层)
-- **定位**：影视素材不可动摇的物理基准数据，由 VMV Stage 1 的 ffprobe、ffmpeg 场景检测（Scene Detection）及客观 ASR 软字幕提取生成。
-- **核心字段**：
-  - `media_id` / `scene_id`：全局唯一片段标识；
-  - `in_timecode` / `out_timecode` / `duration_sec` / 帧区间：精确物理时间码；
-  - `dialogue`：原片字幕台词原文（带字级时间戳）；
-  - `characters`：画面识别人物（如：余则成、吴敬中、李涯）；
-  - `physical_actions`：客观物理动作（端茶、倒水、翻看卷宗、关门、开枪）；
-  - `camera_setup`：客观景别与机位（全景/特写、推镜头/静止、人物朝向）。
-- **隔离铁律**：**绝对只读（Strictly Read-Only）**。严禁任何上层主观语义、博主视角文案写入第一层，确保所有博主看到的物理世界基准恒定一致。
+### 1. ① 稳定客观 Evidence (物理事实层，v2设计)
+
+- **定位**：自动Ingest产出的可追溯观察，不把模型预测当作不可动摇的真值；按原视频绝对时间保存，Human Anchor仅用于一次系统能力校准，不逐集人审入库。
+- **契约**：media_id / evidence_id / span / shot_refs定位；content_regions[].content_region_type分正片、片头、片尾、预告、其他非正片、unknown。默认正片检索不混入非正片，未知保留隔离，跨类型保留分段原时间轴。
+- **人物**：person_observations以anonymous person_id关联，保留Person Consistency；人数降为optional辅助，不存剧集专名或通过对白推身份。
+- **视觉事实**：scene轻量；observable_actions分别定义state/event与实际观察范围；key_objects[]删除旧Object taxonomy，只记可见且符合通用关键性准则的物体，允许空，不推用途/动机/关系。
+- **声音事实**：speech_segments独立保留OCR/ASR及Fusion冲突、真实原时间范围；Speaker确认才关联person_id，否则unknown。无音频的Judge不能判断语音/Speaker。
+- **QA分离**：boundary_correctness与evidence_usability分开，正确切镜不等于事实可用；质量评估来源/规则明确，未评估不填正确。独立QA不写回生产事实、不进入每集Ingest。
+- **下游价值**：按v2字段表与5Query Probe提出可验证用途；人物数、无用途的全局分数/Camera等降级或移出核心，检索价值未获实验证明。
+- **隔离铁律**：L1保留provenance / uncertainty /分项confidence；不含情绪含义、关系、动机、剧情意义或Persona解读。字面OCR/ASR引语不升级为发生事实。后续解释层不可回写；Schema结构合规不等于事实正确。
 
 ### 2. ② 共享、可持续增量的 Generic Narrative Affordances (通用叙事潜能层)
 - **定位**：镜头在戏剧叙事学上所具备的“通用表现力功能（Affordance）”。不归属于任何单一博主，是跨博主、跨选题可持续沉淀增量的通用视听知识库。

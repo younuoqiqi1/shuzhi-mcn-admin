@@ -1,6 +1,6 @@
 # 数智博主 AI 视频 POC｜重新验证开发交接文档
 
-**日期：** 2026-10-07（Human Anchor 加密备份与答案 commitment 已登记，等待 Review；界面及协议勘误留档）
+**日期：** 2026-10-07（Objective Evidence Schema v2 与 Limited X2 Retrieval Probe v1 设计完成，STOP 等待 Review）
 **用途：** 本地 Codex Work 接管项目并协调 AGY 后续开发  
 **当前策略：** 冻结原 A8/A9/A10；全面落实 **Human Anchor + 独立 AI Judge 校准** 与 **X2.5 盲测** 机制；本规范明确 **supersede** 旧 X1/X2 指标/样本定义以及“只有 X1 Gate 通过后才能任何 X2 探针”的旧条款；当前实验暂停，优先固化新验证路线与预注册规范。
 **最终目标：** 影视多集素材一次入库后，可针对任意新选题跨集检索、多集混剪，并从 MCN 后台生成真实视频。
@@ -168,9 +168,9 @@ X1 绝不生成成片，只产出标准化客观证据资产。
 
 ## 正文素材范围：片头 / 片尾排除规范（2026-10-07）
 
-后续正常自动 Ingest 的正文证据池、检索与切片默认排除片头曲、片尾曲及其演职员片头/片尾包装段；保留原媒体和原始时间轴溯源，不删除原片、不重置正文时间码。采用通用内容类型 `main_content / opening / ending / uncertain`，不得使用剧集人物、剧情规则或为某一集硬编码起止秒数。
+后续正常自动 Ingest 的正文证据池、检索与切片默认排除片头曲、片尾曲及其演职员片头/片尾包装段；保留原媒体和原始时间轴溯源，不删除原片、不重置正文时间码。未来v2采用通用内容类型 `main_content / opening / ending / preview / other_non_main / unknown`（旧Anchor的uncertain标签与冻结评分不改），不得使用剧集人物、剧情规则或为某一集硬编码起止秒数。
 
-片头/片尾以节目包装、主题曲和演职员字幕等共同语境判断；正文有配乐、开场剧情、正文蒙太奇或片尾附近仍在继续的剧情不能仅因音乐、字幕或所在位置被排除。跨正文与包装的区间应在实际边界分开；无法判定或分开的记 uncertain，不静默认定为正文或片头片尾。排除区间须记录原始起止时间、自动判断来源与 uncertainty，未来规则、阈值和处理方式在执行前冻结并验证误删正文风险。
+片头/片尾以节目包装、主题曲和演职员字幕等共同语境判断；正文有配乐、开场剧情、正文蒙太奇或片尾附近仍在继续的剧情不能仅因音乐、字幕或所在位置被排除。跨正文与包装的区间应在实际边界分开；v2无法判定的记 unknown，保留分段和不确定性，不静默认定为正文或片头片尾。排除区间须记录原始起止时间、自动判断来源与 uncertainty，未来规则、阈值和处理方式在执行前冻结并验证误删正文风险。
 
 日常生产的类型识别及筛选必须自动完成，不读取 Human Anchor、不要求逐集人工分类。当前仅制定规范与补充盲标页，不修改或运行冻结的推理/切分代码。现有 30-shot Manifest、20 Pair 及本轮指标分母不变：可选人工内容类型只作校准元数据，不因选片头/片尾而跳过原有必填项、删除样本或提高本轮 PASS 指标。
 
@@ -230,10 +230,18 @@ VLM 不得凭空捏造对白。
 
 ### 人物
 第一阶段只做匿名 ID：`person_001`, `person_002`。
-先验证跨 Shot 人物一致性，再单独做姓名映射：`person_001 → 余则成`。
+先验证跨 Shot 匿名人物一致性；姓名映射为独立后续能力，本轮L1不存剧集姓名。
 禁止将人物特征聚类与姓名语义推断混为一个指标。
 
-## 标准 Evidence Contract
+## Objective Evidence Contract v2（本轮仅设计，待Review）
+
+最新规范见[objective-evidence-schema-v2.md](objective-evidence-schema-v2.md)，机器定义见[objective-evidence-schema-v2.json](objective-evidence-schema-v2.json)。本轮不切换运行契约、转换旧Evidence、替换Anchor或重算历史Calibration。
+
+v2要求content_regions[].content_region_type区分main_content/opening/ending/preview/other_non_main/unknown；boundary_correctness与evidence_usability完全独立；人物数降optional，anonymous person_id和Person Consistency保留；动作按state/event与可证时间范围记录；旧Object taxonomy删除，改key_objects[]，允许空且不代表整集不存在；场景保持轻量。Speech以独立OCR/ASR来源及Fusion为基础，speaker_person_id可确认才关联，否则unknown且speaker_confidence=null。L1不含情绪含义、关系、动机、用途/剧情解释。字段的Retrieval价值假设、状态/失败/unknown、来源及确定性语义约束在v2设计文档逐项定义。
+
+**Superseding边界**：以下v1 JSON、六字段结构合规指标及旧Object/Action评分仅作历史实验口径保留；新v2不能继续以它们作当前Schema或Scientific门禁。本轮不改变旧报告及任何冻结标签/阈值。v2正式评测绝对分母/新Gold/阈值必须未来另行Review及预注册，不能沿用揭盲标签当新校准。
+
+## 历史 Evidence Contract v1（保留，不作为v2）
 
 ```json
 {
@@ -314,6 +322,10 @@ Holdout 拆分、集数和域间比较指标须执行前预注册；旧“衰减
 > 面对系统事先不知道的新内容需求，能否从 X1 自动 Evidence 中找到真正支持需求的素材；不存在时能否可靠返回 INSUFFICIENT？
 
 严禁使用旧 canonical evidence、EP18_REAL_SCENE_MAP、dialogue aligned units、旧 Topic A/B hard-code、旧 A5/A6 Results、旧人工 Requirements/Director Plan。
+
+## Limited X2 Retrieval Probe v1（当前只设计）
+
+[limited-x2-retrieval-probe-v1.md](limited-x2-retrieval-probe-v1.md)设计5条Query：明确事实、动作、台词/语义、关键物体各1正例，在场匿名人物+不存在可观察事件1困难负例；只复用既有50-shot范围，不新增样本。原素材事件尚未绑定/核验，本轮无Gold构建或Probe执行。Gold以原视频事件区间标注并隔离；负例须全冻结范围且整集核验不存在。未来运行前须冻结实际Query、Evidence/索引、原视频范围、独立Gold commitment、代码/Prompt/模型配置、K=3、匹配/分母/CI及timebox。本Probe只给诊断信号，不产生X1/X2 Scientific PASS；5条Query不能证明泛化。
 
 ## 受控 X2 Downstream Probe 规则
 
@@ -501,26 +513,24 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 
 ---
 
-# 本地 Codex 接管后的第一任务 (2026-10-07 最新状态)
+# 本地 Codex 接管后的当前任务（2026-10-07）
 
-1. **确立规范基准**：确认本文件最新规范已全面生效，supersede 旧指标定义与旧单向冻结条款；X1.2 维持 Engineering PASS / Scientific Pending；
-2. **遵守实验暂停**：当前状态为 `human_anchor_commitment_registered; awaiting_review; experiments_paused`，已冻结 30-shot Manifest、通用 Schema、标注规范及 Calibration preregistration；**不运行新模型/AI Judge、不新增样本、Agent 不代标或读取人工答案、不生成 Evidence、不执行 X2 probe、不进入 X1.3/X2/X2.5**；
-3. 用户已开始标注；Agent 仅修正页面，不读取人工答案。仍由未看过 AI 输出的标注员独立标注；标注后先登记答案 SHA256 commitment，再由独立 Judge 按冻结规则校准。该校准是一次性 POC 成本，不进入生产 Ingest。
-4. 当前仅按用户反馈修正盲标页与相应说明；非评分 UI 勘误须保留原冻结哈希，不能冒充标注前的新冻结。随后 STOP；Agent 不运行模型、Judge、代标、读取人工答案、新 Evidence、新样本或下游实验。
+1. Review接受历史Independent Judge Calibration FAIL；视觉差异诊断已完成并提交于84c4169，不回改分数或宣称Gemini Evidence Scientific FAIL。
+2. 当前用户授权仅完成Objective Evidence Schema v2、Limited X2 Retrieval Probe v1设计及文档同步；契约/评测设计已完成，STOP等待Review。
+3. 不新增模型实验/样本，不读人工答案、不运行Judge/检索、不生成Evidence、不进入X1.3/正式X2/X2.5或恢复A8/A9/A10。未Review前不得把设计稿作为新实验预注册或启用运行接口。
+4. Human Anchor的一次性校准成本与自动逐集Ingest目标不变；同剧/跨剧Holdout须后续冻结与授权，不因Schema重构绕过验证。
 
 ---
 
-
-
-## Human Anchor Development Calibration 准备（2026-10-07）
+## Human Anchor Development Calibration 历史准备记录（2026-10-07）
 
 Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest。Schema 与项目/剧集/人物/剧情无关。30 个原 Shot Manifest 不变；只标边界、人物数量分类、20 组同一/不同/不确定人物帧对、场景/动作/物体分类、语音状态与 Speaker 来源/可选点击位置（来源支持画面人物/画外音/两者都有/不确定；混合来源类别扩展及完全一致评分按预注册 §11 留档），不维护 P01/P02、不逐字转写。另有可选正文/片头/片尾/不确定元数据（预注册 §12），不参与评分或筛除当前样本，无需补标。CER/ASR、speaker_person_id/confidence Anchor 真值从本轮校准指标中移除，保持 Pending。30 分钟仅是维护者控制页面操作复杂度的设计目标；页面不显示倒计时、不记录逐项或全程耗时，也不设置时间锁定。标注者按自己的节奏完成，并在全部必需项完成后点击“提交标注”；页面以口令加密自动保存。Speaker 来源只在“可辨语音”时必选；无可辨说话则不适用，语音不确定则未评估，两者均跳过 Speaker、不填充或删除旧答案。完成率必填条件的适用性勘误已在预注册留档，固定分母和 Speaker 评分资格不变。Speaker 位置仅为可选溯源，模糊可留空；已点选时可主动清除当前位置且保留其他答案，撤销 UI 勘误留档；未填完整仍可返回上一条，必填校验只限制下一条和提交，导航 UI 勘误留档；画外音/不确定不显示点图区；位置 UI 勘误和 Speaker 条件适用性勘误均发生在用户开始标注后，原冻结哈希留档；不得升级 Scientific 状态。页面解锁提供分步状态/超时提示；原口令不可用时，可新建独立空白记录并保留旧密文，不覆盖或导入旧答案。未来第二集、第三集及以后必须自动 Ingest；Anchor 是一次性 POC 系统校准成本。
 
 - **样本**：只从现有 X1.2 50-shot Manifest 按 early/mid/late 分层、固定种子 20261007 各取 10 个，共 30 个；冻结清单见 `docs/agent-poc/human-anchor-calibration/manifest.json`，不增加样本。
 - **盲标页**：仓库外 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/human-anchor-calibration/annotation.html` 仅展示原始片段/帧/原声及通用字段，不展示任何 AI/Judge/Codex 预测。标注员直接观察并独立完成；页面答案仅以人工自设口令加密密文保存在浏览器 IndexedDB，支持导出加密备份，存放于仓库外，答案明文不得被 Agent/Judge 读取或提交。
 - **盲法前提**：标注员须声明未看过这些 Shot 的 Evidence/AI/Codex Review。已看过预测者不能通过页面隐藏恢复盲法；若无法找到未暴露的标注员，校准须记为 INCONCLUSIVE。
-- **冻结**：同目录 `schema.json`、`annotation-guidelines.md`、`preregistration.md`、`hash-commitment.json` 冻结 Schema、分层 Manifest、固定人物 Pair、页面/协议哈希、公式/分母、unknown/missing/failed、非计时的页面操作复杂度设计目标、阈值、CI 和 PASS/FAIL/INCONCLUSIVE。答案 SHA256 必须在标注完成后、任何 Judge/评估器读取前计算登记；现已从仓库外加密备份的 answer_sha256 外层字段登记，文件摘要同存 hash-commitment.json；未解密或独立重算答案哈希，不能据此确认提交状态或答案完整性，原备份和答案均不入 Git。
-- **当前状态**：用户已报告人工标注完成，加密备份格式与 Manifest 已核验，文件摘要与答案 commitment 已登记；未解密核验最终提交或完整性，Agent 未读取答案、未运行 Judge、未生成 Evidence、未进行 X2 Probe、未进入 X1.3/X2/X2.5。X1.2 仍为 Engineering PASS / Scientific Pending。
+- **冻结**：同目录 `schema.json`、`annotation-guidelines.md`、`preregistration.md`、`hash-commitment.json` 冻结 Schema、分层 Manifest、固定人物 Pair、页面/协议哈希、公式/分母、unknown/missing/failed、非计时的页面操作复杂度设计目标、阈值、CI 和 PASS/FAIL/INCONCLUSIVE。答案 SHA256 必须在标注完成后、任何 Judge/评估器读取前计算登记；准备时从仓库外加密备份的 answer_sha256 外层字段登记，文件摘要同存 hash-commitment.json；当时未解密或独立重算答案哈希，其后仅由隔离evaluator完成核验（见下一条历史状态）；原备份和答案均不入 Git。
+- **历史准备状态**：上述为Judge运行前的记录。其后本地隔离evaluator核验最终提交与100%完成率，独立Judge校准已完成且FAIL；视觉差异诊断已完成，不回改历史结果。当前只完成v2与Probe设计，未生成新Evidence或执行下游实验；X1.2仍为Engineering PASS / Scientific Pending。
 - **人物 Pair 材料质量**：当前用户报告 pair_06 左帧无可辨人物，pair_09 复用同源；预注册 §13 留档。当前冻结材料不得静默替换或删除，缺失可比人物不能当不同人；覆盖率分母及有效样本门槛不变。未来新轮配对必须在冻结前确认两边均有可辨、可定位、目标明确的人物，并记录筛选过程，不预判身份、不按 same/different 结果挑样；本轮不启动新筛选或模型调用。
 
 ### 校准后的泛化验证顺序
@@ -529,7 +539,7 @@ Development Calibration 完成并冻结代码、Prompt、模型配置及评测�
 
 ## 当前正式状态 (2026-10-07)
 
-> **X1.2 为 Engineering PASS / Scientific Pending：自动推理与 Codex AI 逐镜头复核已完成；Human Anchor 标注已由用户报告完成，加密备份与答案 commitment 已登记（未解密核验提交和完整性），Judge 校准及正式 Gold Gate 尚未完成；新增模型实验、新增样本和 X1.3 暂停，不进入正式 X2，X2 probe 与 X2.5 本次不执行；当前状态为 `human_anchor_commitment_registered; awaiting_review; experiments_paused`。**
+> **Objective Evidence Schema v2 / Limited X2 Retrieval Probe v1设计完成，待Review；状态`objective_schema_v2_design_complete; awaiting_review; experiments_paused`。历史Independent Judge Calibration FAIL与所有分数永久保留，不能解释为Gemini Evidence Scientific FAIL；X1.2仍为Engineering PASS / Scientific Pending。未修改Anchor/原Judge/30-shot Manifest/20 Pair/旧preregistration，未进行模型实验、Query绑定、Gold构建、Evidence生成、Probe执行或下游阶段。提交推送后STOP。**
 
 最高成功标准：
 

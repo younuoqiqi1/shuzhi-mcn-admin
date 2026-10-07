@@ -2,12 +2,21 @@
 
 更新时间：2026-10-07（Asia/Shanghai）
 当前分支：`agent-poc/a1-contracts`  
-当前阶段：**Visual Disagreement Adjudication 与来源汇总已完成；STOP 等待 Review**
-当前状态：**`visual_adjudication_complete; awaiting_review; downstream_paused`。用户Review接受d6ac6ca的Independent Judge Calibration FAIL；该历史结果和分数永久保留，不能解释为Gemini Evidence Scientific FAIL。现有count/action/object的10/21/23项已由三个匿名A/B新上下文视觉评审完成并先封存，再通过原Judge分类精确匹配唯一恢复54项来源，不读/解密人工备份。汇总Human correct 12、Judge correct 11、分类歧义24、证据不足7、技术失败0；仅为诊断，不升级科学结论。人工最终提交与100%完整度不变；v4不记录/评分耗时。X1.2仍为Engineering PASS / Scientific Pending，X1.3/X2 Probe/X2/X2.5及旧生产阶段均暂停。**
-核心决议：**130/150 (86.67%) 保留为历史首轮结构调用结果，不是 Scientific Gate。一次性 Human Anchor 校准不进入每集自动 Ingest。独立 Judge 首次输出先封存，再由本地 evaluator 按冻结 v4 及已留档勘误比对；未改样本、答案、Judge、公式、阈值或 Prompt。当前 Judge 校准 FAIL 不等同于 Gemini Evidence 的正式 Scientific Gold Gate FAIL；正式 Gold 与后续泛化验证尚未通过。本轮只提交公开指标、适用评分差异目录、摘要与状态，原视频、图片、HTML、人工答案及口令不进入 Git；停止继续优化该 Judge 路由，等待 Review，不自动进入下一阶段。**
+当前阶段：**Objective Evidence Schema v2 与 Limited X2 Retrieval Probe v1 设计完成；STOP 等待 Review**
+当前状态：**`objective_schema_v2_design_complete; awaiting_review; experiments_paused`。本轮只修改架构/契约/评测设计与状态文档，无新模型实验、推理、Judge、Human标注、Query绑定、Gold构建或检索输出，无新样本/Evidence。历史Independent Judge Calibration FAIL和视觉差异诊断永久保留，不解释为Gemini Evidence Scientific FAIL；X1.2维持Engineering PASS / Scientific Pending。运行代码与冻结Anchor协议未改。**
+核心决议：**v2按原视频时间保存内容类型、匿名人物、轻量场景、明确state/event动作、关键可见物体及OCR/ASR/Speaker来源；boundary_correctness与evidence_usability分离，人物数仅optional辅助，删除旧Object taxonomy。字段检索价值是待验证假设。5Query Probe只设计，尚未绑定真实目标/Gold，不产生PASS或执行授权。Human Anchor仍是一次系统校准成本，不进入每集自动Ingest。X1.3/正式X2/X2.5/A8/A9/A10保持暂停；完成commit + push后STOP等待Review。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
+
+## Objective Evidence v2 / Limited Probe v1 设计交付（2026-10-07）
+
+- 设计：[objective-evidence-schema-v2.md](docs/agent-poc/objective-evidence-schema-v2.md)、[JSON Schema](docs/agent-poc/objective-evidence-schema-v2.json)、[limited-x2-retrieval-probe-v1.md](docs/agent-poc/limited-x2-retrieval-probe-v1.md)。架构与交接同步新规范及当前状态，旧v1示例标历史，不迁移旧Evidence。
+- content_region_type增加正片/片头/片尾/预告/其他非正片/unknown；状态与事件分别定义时间支持；key_objects[]允许空并以通用可见准则选择，不推断关系/用途/动机；Speech保留OCR/ASR与冲突，Speaker不确定时unknown。
+- Person Count降optional辅助，Person Consistency保留；boundary与usability独立。所有字段列明下游价值假设，无明确用途的Camera/全局分数等暂移出核心。可选5Query有限消融只作为待单独授权设计，没有运行。
+- Probe设计固定4正例+1在场人物型困难负例，K=3，原视频区间Gold、匹配/缺失/95%CI与诊断/timebox规则均书面定义；实际Query/Gold/输入配置未冻结，不可执行，不宣称v2或X2 Scientific PASS。
+- 静态自查：JSON解析、引用/required/闭合定义及约束子集合成检查、本地文档链接、git diff格式通过；未运行完整Draft-07验证器或真实素材实验。748个非本轮修改的已跟踪文件hash不变；AGY文档写入启动受限未执行，Codex完成设计落地。
+- 历史13有效Pair、BA0.95/macro-F1 0.9737/CI N/A与INCONCLUSIVE不变；无音频Judge的Speech/Speaker失败不修补；旧Human/Judge/Manifest/Schema/preregistration/报告均保持封存。本轮提交推送后STOP。
 
 ## Human Anchor Calibration 准备记录（2026-10-07）
 
@@ -44,8 +53,9 @@
 | **Human Anchor Calibration** | X1 关键校准点 | 🔴 **历史 Independent Judge Calibration FAIL / Review accepted** | d6ac6ca原结论和分数永久保留，不能解释为Gemini Evidence Scientific FAIL；原冻结30 Shot + 20 Pair不变，人工完整度100%。6项FAIL、Scene与Person consistency INCONCLUSIVE。30 Speech、30 Speaker、15 Boundary技术失败已留档，其中65个适用失败纳入评分差异。Person有效Pair13/20未达到15；v4无耗时预算裁决。完整CI与126条适用差异见原calibration-report.md及公开JSON，不按后续裁决回改。一次性Anchor不进入日常Ingest；该Judge路由不继续调参，下游暂停 |
 | **Visual Disagreement Adjudication** | X1 诊断，非新Gate | ✅ **已完成 / STOP 等待 Review** | 原30 Shot的count/action/object共54项首次匿名A/B裁决已封存；来源仅在封存后精确匹配恢复，不解密人工备份。Human/Judge正确数12/11、分类歧义24、证据不足7、技术失败0。逐字段与逐项结果见visual-adjudication-report.md及公开JSON。物体关键性/背景/类别重叠，动作状态/事件与范围存在定义问题；裁决不等于绝对人工Gold、不重算历史分数，也不构成Gemini Scientific PASS/FAIL。新建议未实施，无新样本、原Judge重跑或X1.3/X2 |
 | **Human Anchor 校准指标预注册** | X1 校准前置 | ✅ **Calibration 指标已冻结** | Human Anchor 各项公式、分母、unknown/missing/failed、CI 及 PASS/FAIL/INCONCLUSIVE 见 `docs/agent-poc/human-anchor-calibration/preregistration.md`。这不是 X1 全量 Scientific Gate；X1 正式门槛仍待预注册 |
+| **Objective Evidence Schema v2** | L1 契约设计 | ✅ **design complete / awaiting_review（未接入）** | 新通用设计与机器JSON已完成；内容类型、boundary/usability分离、状态/事件、key_objects、匿名人物与OCR/ASR/Speaker。人物数optional。未修改运行Schema或冻结Anchor，未迁移/生成Evidence，检索价值等待有限Probe验证 |
 | **X1 Evidence v1 (客观证据底座 v1)** | X1 产物节点 | ⏳ **pending (前置未达成)** | 聚合多模态客观证据（镜头时序、代表帧语义、对齐台词、校准后人物聚类），形成防污染、免推断的 L1 结构化证据底座；前置依赖 Human Anchor 校准与 X1 指标冻结正式通过，当前未达成 |
-| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **paused (新规则后续允许，本次未执行)** | 修订后新验证规则允许在极小受控规模下（如 3-5 条典型 Query）执行盲测检索探针，用以提前探测检索匹配机制与拒识表现；但**本次未执行任何 probe 实验**，无新增样本数据，当前处于暂停状态 |
+| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **design complete / awaiting_review（未执行）** | 修订后新验证规则允许在极小受控规模下（如 3-5 条典型 Query）执行盲测检索探针，用以提前探测检索匹配机制与拒识表现；但**本次未执行任何 probe 实验**，无新增样本数据，当前处于暂停状态 |
 | **X2 Gold (检索金标准数据集)** | X2 评测基础 | ⏳ **pending (待构建与预注册)** | **明确 X2 Gold 为原视频时间区间 (Ground Truth Time Ranges in Source Video)**，作为跨镜头语义召回的真实时间对齐真值；**旧 50 query count 仅称历史口径**，新评测集分类（显式/抽象/改写/对抗负例/荒谬输入）、具体样本量及时间区间真值待后续正式预注册 |
 | **X2 Semantic Retrieval Benchmark (主评)** | X2 主评节点 | 🛑 **未获准 / 冻结中 (需等待 X1 正式通过与 X2 Gold 就绪)** | 多类别需求盲测检索、跨镜头时序召回准确率及 INSUFFICIENT 拒识率验证；**旧 X2 阈值及旧 50 query 仅称历史口径，新阈值待预注册**；主评测当前严格未获准，维持冻结 |
 | **X2.5 Persona / Plan (角色与编导盲测)** | X2.5 节点 | 🛑 **未获准 / 冻结中** | 后续最低设计 2 Persona × 5 Topic；Agent 接收匿名 Persona 卡生成条件化 Plan，Persona 标签映射对 Agent 与独立评审隐藏；评审盲判 Persona 归属并核验证据支持和事实错误；当前未获准且不执行 |
