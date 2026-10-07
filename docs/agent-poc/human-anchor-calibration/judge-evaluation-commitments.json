@@ -44,5 +44,21 @@
   "blindness_confirmed_by_user": true,
   "timing_result": "NOT_COLLECTED_NOT_SCORED_V4",
   "human_plaintext_read_at_lock": false,
-  "next_step": "Local evaluator after Judge commitment; no model or Agent receives plaintext"
+  "next_step": "STOP awaiting Review; no downstream experiment or Judge optimization",
+  "evaluation_completed": {
+    "stage": "LOCAL_EVALUATOR_COMPLETED_AFTER_JUDGE_COMMITMENT",
+    "public_report_sha256": "001d2687fce160589265672cfb1ad38b139569f32e54809230d5a7a8051baa10",
+    "public_report_file": "calibration-public-report.json",
+    "conclusion": "FAIL",
+    "human_submission_verified": true,
+    "human_completion": { "shots": 30, "shot_denominator": 30, "pairs": 20, "pair_denominator": 20 },
+    "answer_commitment_recomputed_and_matched": true,
+    "cipher_authenticated": true,
+    "manifest_matched": true,
+    "judge_and_evaluator_hashes_matched": true,
+    "human_plaintext_exported": false,
+    "credential_exported": false,
+    "rules_or_answers_changed_after_reveal": false,
+    "timing": "NOT_COLLECTED_NOT_SCORED_V4"
+  }
 }

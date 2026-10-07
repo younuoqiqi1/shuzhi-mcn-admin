@@ -1,0 +1,950 @@
+{
+  "protocol": "HA-DEV-2026-10-07-v4 with recorded amendments",
+  "timing": {
+    "active_seconds": null,
+    "budget_result": "NOT_APPLICABLE_V4",
+    "reason": "Timing removed before annotation by user instruction"
+  },
+  "completion": {
+    "shots": 30,
+    "shotDenominator": 30,
+    "shotRate": 1,
+    "pairs": 20,
+    "pairDenominator": 20,
+    "pairRate": 1,
+    "allRate": 1,
+    "status": "PASS"
+  },
+  "metrics": {
+    "boundary": {
+      "accuracy": 0.4666666666666667,
+      "kappa": 0.07692307692307694,
+      "correct": 14,
+      "n": 30,
+      "accuracyCI": [
+        0.30232388907699753,
+        0.638577003801267
+      ],
+      "kappaCI": [
+        0,
+        0.1497975708502024
+      ],
+      "kappaBootstrapInvalid": 0,
+      "status": "FAIL"
+    },
+    "personCount": {
+      "accuracy": 0.6666666666666666,
+      "kappa": 0.40828402366863903,
+      "correct": 20,
+      "n": 30,
+      "accuracyCI": [
+        0.4878005164454384,
+        0.8076950191632386
+      ],
+      "kappaCI": [
+        0.16820702402957483,
+        0.6487119437939111
+      ],
+      "kappaBootstrapInvalid": 0,
+      "status": "FAIL"
+    },
+    "scene": {
+      "accuracy": 0.8333333333333334,
+      "kappa": 0.48275862068965525,
+      "correct": 25,
+      "n": 30,
+      "accuracyCI": [
+        0.6643564949358398,
+        0.9266345762815145
+      ],
+      "kappaCI": null,
+      "kappaBootstrapInvalid": 3,
+      "status": "INCONCLUSIVE"
+    },
+    "speechStatus": {
+      "accuracy": 0,
+      "kappa": 0,
+      "correct": 0,
+      "n": 30,
+      "accuracyCI": [
+        0,
+        0.11351339317396876
+      ],
+      "status": "FAIL"
+    },
+    "actions": {
+      "microF1": 0.7478260869565218,
+      "precision": 0.7962962962962963,
+      "recall": 0.7049180327868853,
+      "exactSet": 0.3,
+      "tp": 43,
+      "fp": 11,
+      "fn": 18,
+      "n": 30,
+      "microF1CI": [
+        0.6597938144329897,
+        0.8264462809917356
+      ],
+      "microF1BootstrapInvalid": 0,
+      "exactSetCI": [
+        0.13333333333333333,
+        0.4666666666666667
+      ],
+      "exactSetBootstrapInvalid": 0,
+      "status": "FAIL"
+    },
+    "objects": {
+      "microF1": 0.49382716049382713,
+      "precision": 0.45454545454545453,
+      "recall": 0.5405405405405406,
+      "exactSet": 0.23333333333333334,
+      "tp": 20,
+      "fp": 24,
+      "fn": 17,
+      "n": 30,
+      "microF1CI": [
+        0.34285714285714286,
+        0.6190476190476191
+      ],
+      "microF1BootstrapInvalid": 0,
+      "exactSetCI": [
+        0.1,
+        0.4
+      ],
+      "exactSetBootstrapInvalid": 0,
+      "status": "FAIL"
+    },
+    "speakerSource": {
+      "accuracy": 0,
+      "kappa": 0,
+      "correct": 0,
+      "n": 20,
+      "accuracyCI": [
+        0,
+        0.16112515805281938
+      ],
+      "coverage": 0.6666666666666666,
+      "eligibility": "human intelligible speech",
+      "status": "FAIL"
+    },
+    "personConsistency": {
+      "balancedAccuracy": 0.95,
+      "macroF1": 0.9736842105263157,
+      "supports": [
+        3,
+        10
+      ],
+      "n": 13,
+      "eligiblePairs": 13,
+      "coverage": 0.65,
+      "balancedAccuracyCI": null,
+      "balancedAccuracyBootstrapInvalid": 2016,
+      "macroF1CI": null,
+      "macroF1BootstrapInvalid": 2016,
+      "status": "INCONCLUSIVE"
+    }
+  },
+  "conclusion": "FAIL",
+  "blindnessConfirmed": true,
+  "failureCounts": {
+    "boundary": 15,
+    "speechStatus": 30,
+    "speakerSource": 30
+  },
+  "disagreements": [
+    {
+      "id": "shot_B0002",
+      "field": "boundary",
+      "category": "Human Anchor 本身可能存在歧义",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0002",
+      "field": "personCount",
+      "category": "Human Anchor 本身可能存在歧义",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0002",
+      "field": "scene",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0002",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0002",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0002",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0003",
+      "field": "scene",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0003",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0003",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0005",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0005",
+      "field": "scene",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0005",
+      "field": "actions",
+      "category": "Human Anchor 本身可能存在歧义",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0005",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0005",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0008",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0008",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0008",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0008",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0010",
+      "field": "actions",
+      "category": "分类定义歧义",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0010",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0010",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0010",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0012",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0012",
+      "field": "scene",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0012",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0012",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0012",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0013",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0013",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0013",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0013",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0014",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0014",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0014",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0014",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0015",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0015",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0015",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0015",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0016",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0016",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0016",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0018",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0018",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0018",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0019",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0019",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0019",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0019",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0020",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0020",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0021",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0021",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0021",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0025",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0025",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0025",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0025",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0028",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0028",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0028",
+      "field": "scene",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0028",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0028",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0031",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0031",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0031",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0031",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0031",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0032",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0032",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0032",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0032",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0033",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0033",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0033",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0034",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0034",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0034",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0034",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0034",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0035",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0035",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0035",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0035",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0035",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0036",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0036",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0036",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0036",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0036",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0038",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0038",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0038",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0038",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0038",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0040",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0040",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0040",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0040",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0040",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0042",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0042",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0042",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0042",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0044",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0044",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0044",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0044",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0046",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0046",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0046",
+      "field": "objects",
+      "category": "分类定义歧义",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0046",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0047",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0047",
+      "field": "personCount",
+      "category": "Human Anchor 本身可能存在歧义",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0047",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0047",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0047",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0047",
+      "field": "speakerSource",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0048",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0048",
+      "field": "personCount",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0048",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0050",
+      "field": "boundary",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "shot_B0050",
+      "field": "actions",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0050",
+      "field": "objects",
+      "category": "模型视觉理解错误",
+      "certainty": "hypothesis_not_adjudicated"
+    },
+    {
+      "id": "shot_B0050",
+      "field": "speechStatus",
+      "category": "Judge missing / failed",
+      "certainty": "confirmed_output_missing"
+    },
+    {
+      "id": "pair_05",
+      "field": "personConsistency",
+      "category": "人物一致性错误",
+      "certainty": "hypothesis_not_adjudicated",
+      "limitation": "Human/Judge independently selected targets; target ambiguity must be reviewed, not used to change scores"
+    }
+  ],
+  "failureAnalysisCounts": {
+    "Human Anchor 本身可能存在歧义": 4,
+    "模型视觉理解错误": 54,
+    "Judge missing / failed": 65,
+    "分类定义歧义": 2,
+    "人物一致性错误": 1
+  },
+  "failureAnalysisLimitation": "Disagreement-based candidate categories; missing/failed is definite, perceptual root causes not independently adjudicated.",
+  "bootstrap": {
+    "iterations": 10000,
+    "seed": 20261007,
+    "unit": "stratified Shot cluster",
+    "pairMethod": "product of sampled multiplicities of both endpoint Shot clusters",
+    "undefinedDraws": "CI N/A if any undefined draw; no conditional deletion"
+  },
+  "humanSubmissionFlag": true,
+  "recommendation": "STOP awaiting Review; no automatic next stage",
+  "lockVerification": {
+    "judgeHash": "c9e7f51af00f584e313cc22877188a4a26f20b5ea1cad9eb605cf4be3e7d68be",
+    "answerHash": "2e244c5a4208929a87bbefbb68646b5ba7867197ce3203de054e5d8651c5b10e",
+    "cipherAuthenticated": true,
+    "manifestMatched": true,
+    "plaintextExported": false,
+    "evaluatorOnlyHumanRead": true,
+    "credentialExported": false,
+    "backupHash": "6265c6c383231720ac12854eae957a27fc9016184719c71a1fa0969069ee2bbb",
+    "evaluatorCodeHashes": [
+      {
+        "sha256": "10b4c477921b9d6b10f1d6f05eab3349a890dfe2b9126c5a9f23b5412804bbb5",
+        "name": "evaluate.mjs"
+      },
+      {
+        "sha256": "8d0e4670345738286bad931b64c638552fa34266244a623b2c2ab75de3d59a0c",
+        "name": "sealed-run.mjs"
+      }
+    ]
+  }
+}
