@@ -1,8 +1,14 @@
 {
-  "schema_version": "human-anchor/1.2.3",
+  "schema_version": "human-anchor/1.2.4",
   "title": "Generic audiovisual observation anchor",
   "content_independent": true,
   "fields": {
+    "program_segment_type": {
+      "values": ["main_content", "opening", "ending", "uncertain"],
+      "required": false,
+      "scored_in_this_calibration": false,
+      "missing": "Keep absent; never auto-fill as main_content. Metadata only; do not filter frozen samples or alter scoring denominators."
+    },
     "shot_boundary_usability": ["usable", "unusable", "uncertain"],
     "visible_person_count": ["0", "1", "2", "3", "4+", "uncertain"],
     "person_consistency_pair": {
