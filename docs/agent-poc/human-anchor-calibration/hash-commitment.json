@@ -26,7 +26,7 @@
     "preregistration.md": "882064cb0e7896030fa6c2e85998e0bb6e38a1fded88b071e7076510c0956a13"
   },
   "preparation_base_commit": "6ba201a244f48e5651d960c3c8e9c26c94cba67f",
-  "annotation_page_sha256": "a6206da98f5f6c294b882f99661c42f8b95ec0e93fd3bbeca734cb4f24f35701",
+  "annotation_page_sha256": "603bb488338f4ed439c84f1a524988a7ddac5ea6458a6fa09b43636f5e151ba0",
   "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe",
   "fresh_session_storage": {
     "database": "human-anchor-calibration-v4",
