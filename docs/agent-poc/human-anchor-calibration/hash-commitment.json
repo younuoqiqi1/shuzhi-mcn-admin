@@ -22,11 +22,11 @@
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
     "schema.json": "77a75efa856451c8f1004e9bd7526d7e54ad403d16bc69a1c322f768231f1d7c",
-    "annotation-guidelines.md": "c15085b4758b475d9a523dba72a18759f8516c31e1bfa6162eabbfc7950cb266",
-    "preregistration.md": "2393227f1044264dbb5af119d624301c2b434155c5401e752f68827d9a9ea463"
+    "annotation-guidelines.md": "464148ef785da2566f3134067c749c5d8b91ab0aa3a430418279a1381da2404f",
+    "preregistration.md": "d538c1798bc5af15580290e007e8ab988bbb9aedaf994a4b2dce5e8e5de88bc7"
   },
   "preparation_base_commit": "6ba201a244f48e5651d960c3c8e9c26c94cba67f",
-  "annotation_page_sha256": "4c86b345c9e3dfeb9b09f2e9e75e7411f69350f945399730ac3fec33479d5143",
+  "annotation_page_sha256": "645e51aaf01b96b796be0e2977698055be9de51f7d5836eba8e0be50a7d6da7e",
   "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe",
   "fresh_session_storage": {
     "database": "human-anchor-calibration-v4",
@@ -65,6 +65,21 @@
       },
       "previous_annotation_page_sha256": "b44c306031ff122ba48fe1b6198ff9d3519c917e9dd76df5bda743c07f644481",
       "base_commit": "67b1fae88a84cfce6071e02ad0d96c13ca3b4681"
+    },
+    {
+      "id": "HA-DEV-2026-10-07-v4-UI3",
+      "date": "2026-10-07",
+      "stage": "AFTER_USER_LABELING_STARTED_BEFORE_JUDGE",
+      "reason": "Allow user to clear only current optional speakerPoint; preserve Speaker source and all other answers, encryption and autosave. No automatic answer rewrites or human answer reads.",
+      "unchanged": "Samples, field applicability, completion rules, scoring formulas/denominators/thresholds/CI, prompts/model configuration, encryption/storage",
+      "previous_protocol_hashes": {
+        "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
+        "schema.json": "77a75efa856451c8f1004e9bd7526d7e54ad403d16bc69a1c322f768231f1d7c",
+        "annotation-guidelines.md": "c15085b4758b475d9a523dba72a18759f8516c31e1bfa6162eabbfc7950cb266",
+        "preregistration.md": "2393227f1044264dbb5af119d624301c2b434155c5401e752f68827d9a9ea463"
+      },
+      "previous_annotation_page_sha256": "4c86b345c9e3dfeb9b09f2e9e75e7411f69350f945399730ac3fec33479d5143",
+      "base_commit": "9590104170dd2953552f5390f758899ce8f28d8d"
     }
   ]
 }
