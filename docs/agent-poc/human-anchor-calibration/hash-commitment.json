@@ -22,10 +22,16 @@
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
     "schema.json": "cb8baa7208369bfa9d5649c34ab3eead6e3b5bf1c0e3cb06e5fe777f7d9ea715",
-    "annotation-guidelines.md": "c1983f12112cbd90e5fc60ea8f8f195dea03e135b1a0d2c5d9291e0bbbb2ae1d",
-    "preregistration.md": "c12109868a63159696fad4f93112f9d2546bf069b9c12351904cd127973b77dd"
+    "annotation-guidelines.md": "7b217444244ba5fadaa50f3322e880fdef87529ce3762ffe99bbc45622c88694",
+    "preregistration.md": "c58da707d8e67c8ed69964a34080224a796e6b9170db7b7b1ce6c9fd12b6acdd"
   },
   "preparation_base_commit": "5a66dfbf266fa6e781ab1a6b7e6bdfc80f606520",
-  "annotation_page_sha256": "eaf64b81ae9bba6df62092cd54ef28879941044e55bc164d58a02bf965c8b2ac",
-  "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe"
+  "annotation_page_sha256": "435133a9559a36ac98f0902c5625a4fa5b22ea5fcd4de4afc60060fbb7ffe3f5",
+  "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe",
+  "fresh_session_storage": {
+    "database": "human-anchor-calibration-v4",
+    "preserves_legacy_database": "human-anchor-calibration-v3",
+    "new_session_pbkdf2_iterations": 100000,
+    "cipher": "AES-256-GCM"
+  }
 }

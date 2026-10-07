@@ -506,7 +506,7 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 
 ## Human Anchor Development Calibration 准备（2026-10-07）
 
-Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest。Schema 与项目/剧集/人物/剧情无关。30 个原 Shot Manifest 不变；只标边界、人物数量分类、20 组同一/不同/不确定人物帧对、场景/动作/物体分类、语音状态与 Speaker 来源/点击位置，不维护 P01/P02、不逐字转写。CER/ASR、speaker_person_id/confidence Anchor 真值从本轮校准指标中移除，保持 Pending。全任务硬上限 30 分钟，单 Shot 平均负担不超过 60 秒；页面解锁提供分步状态/超时提示；成功解锁后记录前台且聚焦时的活跃耗时，并以口令加密自动保存；切后台或关闭时暂停，恢复后继续。未来第二集、第三集及以后必须自动 Ingest；Anchor 是一次性 POC 系统校准成本。
+Human Anchor 校准自动素材理解系统，不协助任何单集素材 Ingest。Schema 与项目/剧集/人物/剧情无关。30 个原 Shot Manifest 不变；只标边界、人物数量分类、20 组同一/不同/不确定人物帧对、场景/动作/物体分类、语音状态与 Speaker 来源/点击位置，不维护 P01/P02、不逐字转写。CER/ASR、speaker_person_id/confidence Anchor 真值从本轮校准指标中移除，保持 Pending。全任务硬上限 30 分钟，单 Shot 平均负担不超过 60 秒；页面解锁提供分步状态/超时提示；原口令不可用时，可新建独立空白记录并保留旧密文，不覆盖或导入旧答案；成功进入页面后记录前台且聚焦时的活跃耗时，并以口令加密自动保存；切后台或关闭时暂停，恢复后继续。未来第二集、第三集及以后必须自动 Ingest；Anchor 是一次性 POC 系统校准成本。
 
 - **样本**：只从现有 X1.2 50-shot Manifest 按 early/mid/late 分层、固定种子 20261007 各取 10 个，共 30 个；冻结清单见 `docs/agent-poc/human-anchor-calibration/manifest.json`，不增加样本。
 - **盲标页**：仓库外 `/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/human-anchor-calibration/annotation.html` 仅展示原始片段/帧/原声及通用字段，不展示任何 AI/Judge/Codex 预测。标注员直接观察并独立完成；页面答案仅以人工自设口令加密密文保存在浏览器 IndexedDB，支持导出加密备份，存放于仓库外，答案明文不得被 Agent/Judge 读取或提交。
