@@ -21,12 +21,12 @@
   "no_model_calls_or_judge_run_in_this_preparation": true,
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
-    "schema.json": "77a75efa856451c8f1004e9bd7526d7e54ad403d16bc69a1c322f768231f1d7c",
-    "annotation-guidelines.md": "e322b20953cfcd71c96f045cbe75ed97a7d886b61c311e5fd84c024d41f58eac",
-    "preregistration.md": "6f5d0c3352dcf5a7a666595debc048f7775c9503bc18508cb272bcf27c1202da"
+    "schema.json": "5a3804bd4c87b166032e7bab998a04491ec52b0a2739f3dc92ff8bd5fac1978f",
+    "annotation-guidelines.md": "53b1b548f443f09209288bd617d54aea1e34536fa51bba200e190a10c07d73cc",
+    "preregistration.md": "95ce6f33c1b9ca9acbb58879fc6452669b6870b79bd8d8e7b7893cb542fe0250"
   },
   "preparation_base_commit": "6ba201a244f48e5651d960c3c8e9c26c94cba67f",
-  "annotation_page_sha256": "61b9e993f15c4a3e5ed450429d92652fdb905014c76489d92a6b6c4615405e73",
+  "annotation_page_sha256": "2f40e342a0c1ac54b6b9867d4ba351f9dafbf97877a4eee9178dc63834bb0047",
   "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe",
   "fresh_session_storage": {
     "database": "human-anchor-calibration-v4",
@@ -95,6 +95,22 @@
       },
       "previous_annotation_page_sha256": "645e51aaf01b96b796be0e2977698055be9de51f7d5836eba8e0be50a7d6da7e",
       "base_commit": "4eb08a865575eaf88509a532dfcd0100d2b34cd0"
+    },
+    {
+      "id": "HA-DEV-2026-10-07-v4-UI5",
+      "date": "2026-10-07",
+      "stage": "AFTER_USER_LABELING_STARTED_BEFORE_JUDGE",
+      "reason": "Add explicit mixed on/off-screen Speaker source; retain optional onscreen point. Preserve old labels without automatic relabeling.",
+      "classification_change": "Speaker source expands from three to four classes, schema 1.2.3. Accuracy requires exact four-class agreement; mixed true label requires explicit mixed prediction. Freeze Judge output rules before execution; no retrospective PASS.",
+      "unchanged": "Manifest/pairs, applicability, accuracy denominator, thresholds/CI, other metrics, models/prompts, encryption/autosave; no human answers read; no Judge or experiments",
+      "previous_protocol_hashes": {
+        "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
+        "schema.json": "77a75efa856451c8f1004e9bd7526d7e54ad403d16bc69a1c322f768231f1d7c",
+        "annotation-guidelines.md": "e322b20953cfcd71c96f045cbe75ed97a7d886b61c311e5fd84c024d41f58eac",
+        "preregistration.md": "6f5d0c3352dcf5a7a666595debc048f7775c9503bc18508cb272bcf27c1202da"
+      },
+      "previous_annotation_page_sha256": "61b9e993f15c4a3e5ed450429d92652fdb905014c76489d92a6b6c4615405e73",
+      "base_commit": "2ac4e630acacd32daeffcf79614bd9919b0e7d52"
     }
   ]
 }

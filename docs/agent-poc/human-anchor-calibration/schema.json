@@ -1,5 +1,5 @@
 {
-  "schema_version": "human-anchor/1.2.2",
+  "schema_version": "human-anchor/1.2.3",
   "title": "Generic audiovisual observation anchor",
   "content_independent": true,
   "fields": {
@@ -24,12 +24,13 @@
       "optional_detail_max_chars": 24
     },
     "speech_status": ["intelligible_speech_audible", "no_intelligible_speech", "uncertain"],
-    "speaker_source": ["on_screen_person", "off_screen_voice", "uncertain"],
-    "speaker_location": "Optional normalized coordinates on a raw representative frame only when speech_status is intelligible_speech_audible, speaker_source is on_screen_person, and location is clear. Omit when unclear; never required for task completion or scoring.",
+    "speaker_source": ["on_screen_person", "off_screen_voice", "both_on_and_off_screen", "uncertain"],
+    "speaker_location": "Optional normalized coordinates on a raw representative frame only when speech_status is intelligible_speech_audible, speaker_source is on_screen_person or both_on_and_off_screen, and location is clear. Omit when unclear; never required for task completion or scoring.",
     "unknown": "Explicit uncertain choice for each applicable field."
   },
   "field_applicability": {
     "speaker_source": {
+      "mixed_source": "both_on_and_off_screen: visible speaker and off-screen intelligible speech within the same Shot, simultaneous or sequential; not inferred from visible person count; preserve legacy raw labels",
       "required_only_when": "speech_status == intelligible_speech_audible",
       "no_intelligible_speech": "not_applicable; no source selection required",
       "uncertain": "unassessed; no source selection required",
