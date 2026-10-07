@@ -22,11 +22,11 @@
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
     "schema.json": "77a75efa856451c8f1004e9bd7526d7e54ad403d16bc69a1c322f768231f1d7c",
-    "annotation-guidelines.md": "464148ef785da2566f3134067c749c5d8b91ab0aa3a430418279a1381da2404f",
-    "preregistration.md": "d538c1798bc5af15580290e007e8ab988bbb9aedaf994a4b2dce5e8e5de88bc7"
+    "annotation-guidelines.md": "e322b20953cfcd71c96f045cbe75ed97a7d886b61c311e5fd84c024d41f58eac",
+    "preregistration.md": "6f5d0c3352dcf5a7a666595debc048f7775c9503bc18508cb272bcf27c1202da"
   },
   "preparation_base_commit": "6ba201a244f48e5651d960c3c8e9c26c94cba67f",
-  "annotation_page_sha256": "645e51aaf01b96b796be0e2977698055be9de51f7d5836eba8e0be50a7d6da7e",
+  "annotation_page_sha256": "61b9e993f15c4a3e5ed450429d92652fdb905014c76489d92a6b6c4615405e73",
   "person_pair_plan_sha256": "ba9b4dba3fde7d89682389dbadb21f21ec81160fefaace601194bf31eb31a3fe",
   "fresh_session_storage": {
     "database": "human-anchor-calibration-v4",
@@ -80,6 +80,21 @@
       },
       "previous_annotation_page_sha256": "4c86b345c9e3dfeb9b09f2e9e75e7411f69350f945399730ac3fec33479d5143",
       "base_commit": "9590104170dd2953552f5390f758899ce8f28d8d"
+    },
+    {
+      "id": "HA-DEV-2026-10-07-v4-UI4",
+      "date": "2026-10-07",
+      "stage": "AFTER_USER_LABELING_STARTED_BEFORE_JUDGE",
+      "reason": "Allow previous navigation with incomplete fields, preserving partial answers. Next and submit still require completeness.",
+      "unchanged": "Manifest/pairs, completion conditions, field applicability, metric formulas/denominators/thresholds/CI, encryption/autosave, models/prompts; human answers unread",
+      "previous_protocol_hashes": {
+        "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
+        "schema.json": "77a75efa856451c8f1004e9bd7526d7e54ad403d16bc69a1c322f768231f1d7c",
+        "annotation-guidelines.md": "464148ef785da2566f3134067c749c5d8b91ab0aa3a430418279a1381da2404f",
+        "preregistration.md": "d538c1798bc5af15580290e007e8ab988bbb9aedaf994a4b2dce5e8e5de88bc7"
+      },
+      "previous_annotation_page_sha256": "645e51aaf01b96b796be0e2977698055be9de51f7d5836eba8e0be50a7d6da7e",
+      "base_commit": "4eb08a865575eaf88509a532dfcd0100d2b34cd0"
     }
   ]
 }

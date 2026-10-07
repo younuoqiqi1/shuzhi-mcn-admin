@@ -16,6 +16,7 @@
 - 仓库外盲标页：`/Users/yoyotaozhou/Documents/antigravity/intelligent-pasteur/artifacts/human-anchor-calibration/annotation.html`。仅准备完成；未人工标注、未运行 Judge、未生成 Evidence、未进行 X2 Probe、未进入 X1.3/X2/X2.5。
 - 人工答案密文须存仓库外；答案 SHA256 在标注后、Judge 读答案前登记。Holdout 顺序为同剧自动 Ingest，再跨剧自动 Ingest；不得逐集重复 Anchor。人工修正辅助入库即 X1 FAIL。
 - 标注进行中的 UI3 勘误：增加可选 Speaker 位置的清除按钮，仅由用户主动撤销当前位置；保留其他答案，加密保存与评分规则不变。未读取人工答案，未运行 Judge/实验；X1.2 仍为 Engineering PASS / Scientific Pending。
+- 标注进行中的 UI4 勘误：未填完整可返回上一条，必填校验仅限制下一条和提交；保留部分答案并自动加密保存。样本与评测规则不变，未读取人工答案，未运行 Judge/实验。
 
 ## 阶段门禁状态 (Revalidation Path & Gate System)
 
