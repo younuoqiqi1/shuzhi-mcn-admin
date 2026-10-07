@@ -1,0 +1,29 @@
+{
+  "protocol_revision": "neutral-existence-correction-2026-10-07",
+  "query_count": 5,
+  "query_polarity": "neutral before Gold; never preset any query status",
+  "gold_status_enum": [
+    "confirmed_present",
+    "confirmed_absent",
+    "unverifiable"
+  ],
+  "classification_owner": "isolated evaluator after retrieval output commitment",
+  "top_k": 3,
+  "temporal_iou_threshold": 0.5,
+  "extra_boundary_tolerance_seconds": 0,
+  "claim_support_required": true,
+  "one_to_one": true,
+  "matching_order": "candidate rank; highest IoU unmatched Gold; tie by original start/end",
+  "positive_query_denominator": "nP from sealed Gold after output commitment",
+  "negative_query_denominator": "nA from sealed Gold after output commitment",
+  "unverifiable_task_pass_fail": "not evaluated; excluded only from factual P/A denominators, retained in completion/time/cost denominator 5",
+  "retrieval_authorized": false,
+  "scope": "unchanged original 50-shot Evidence input; whole-episode original-video Gold",
+  "historical_fixed_4_1_rules": "superseded; prior checkpoint retained unchanged",
+  "wilson_z": 1.959963984540054,
+  "bootstrap_seed": 20261007,
+  "bootstrap_replicates": 10000,
+  "bootstrap_unit": "Query cluster; nP for present metrics, all5 for descriptive trace",
+  "bootstrap_insufficient_clusters": "CI N/A if cluster count <2",
+  "zero_denominator": "N/A; never claim perfect result"
+}

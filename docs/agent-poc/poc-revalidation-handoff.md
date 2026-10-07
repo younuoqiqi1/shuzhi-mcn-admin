@@ -325,11 +325,13 @@ Holdout 拆分、集数和域间比较指标须执行前预注册；旧“衰减
 
 ## Limited X2 Retrieval Probe v1（设计基线与当前准备状态）
 
-**最新准备状态：** 用户已批准Objective Evidence Schema v2设计，但本Probe选择现有X1.2旧版快照，仅作`Legacy Evidence Retrieval Diagnostic`，不作v1→v2伪映射或v2能力验证。5条真实Query文本与原快照/检索组件已封存，Top K=3及原评分规则不变。Q3音频工具实际返回DONE/audio/wav，原隔离评审已登记补核验并封存新版Gold；旧承诺保留。Q5仍unverifiable，正例搜索范围适用性、实际物理权限guard与runner/最终配置尚未闭合，总冻结未完成，准备结论INCONCLUSIVE。未执行检索、未生成新样本/Evidence。公开承诺与现状附件见[准备记录](limited-x2-probe-v1-preparation/README.md)，不含Gold答案/素材Gold时间区间。v1.1范围调整仅为未批准建议，不改变本轮规则。未来盲Retriever不得继承已接触Gold的本会话，且须无法访问Gold、评审日志和准备报告。
+**最新授权与状态：** 本 Probe 仍使用 X1.2 原始快照，定位 `Legacy Evidence Retrieval Diagnostic`，不做 v1→v2 映射或 v2 能力验证。用户已授权纠正未执行协议：Q1–Q5 全部为中性 Existence Query，Query 原文字节不变，禁止预设 Q5 或其他任务为 Positive/Hard Negative。Top K=3、完整事实支持 AND IoU≥0.5 保持；旧固定4/1分母改为揭盲后由隔离 Evaluator 依实际三态分组。规则与预注册见 [当前 Probe 协议](limited-x2-retrieval-probe-v1.md)、[中性 Gold 冻结附件](limited-x2-existence-gold/README.md)。新独立评审已封存五项处理记录，Gold SHA256 `c26e03c5df0bdfd127af9b61f62c6fd31621d1e977747e25f304bbe250313634`；工具连续视觉/真实听觉能力不足，整集视听核验及全量区间枚举未能确认。详见 [公开封存报告](limited-x2-existence-gold/GOLD-CLOSURE-REPORT.md)，不公开逐条状态或数量。Gold封存后 STOP，不检索。
 
-以下为历史设计基线，指标与Gold规则保持原样：
+**Gold 闭环：** 独立评审只看原片和冻结 Query/任务；不看 Evidence、旧 Gold 或检索结果。Q3 必须实际听原声，音频不可达则 unverifiable；Q1/Q2/Q4/Q5 继续完整视觉核验。三态与全部 present 原视频绝对区间只存仓库外隔离 Gold；采样未见/关键帧覆盖不能证明 absent。无法确认完整观察或全部区间时保留 unverifiable。公开只登记 SHA256、五项处理是否完成与实际能力/覆盖缺口，不公开逐条状态、数量、台词或时间码。Gold 封存不代表完整视觉核验成功或总运行配置已冻结。
 
-[limited-x2-retrieval-probe-v1.md](limited-x2-retrieval-probe-v1.md)设计5条Query：明确事实、动作、台词/语义、关键物体各1正例，在场匿名人物+不存在可观察事件1困难负例；只复用既有50-shot范围，不新增样本。原素材事件尚未绑定/核验，本轮无Gold构建或Probe执行。Gold以原视频事件区间标注并隔离；负例须全冻结范围且整集核验不存在。未来运行前须冻结实际Query、Evidence/索引、原视频范围、独立Gold commitment、代码/Prompt/模型配置、K=3、匹配/分母/CI及timebox。本Probe只给诊断信号，不产生X1/X2 Scientific PASS；5条Query不能证明泛化。
+**后续检索/揭盲：** Retriever 只看五条中性 Query、通用规则与旧输入，不知 Gold 极性/状态，且无权读 Gold、评审日志/缓存、准备报告或本聊天；先封存全部首次检索结果，隔离 Evaluator 才读 Gold。present 评 Top3 时间区间命中；absent 正确输出为 INSUFFICIENT；unverifiable 不计 PASS/FAIL，但保留计划请求分母5。整集 Gold 不缩到50-shot索引范围；范围外事件计未命中并单报输入覆盖。实际 runner/模型、费用上限、权限 guard 仍须独立冻结并 Review 后才可运行。本 Probe 不产生 X1/X2 Scientific PASS。
+
+**历史保留：** commit `96682a0` 与 [旧准备记录](limited-x2-probe-v1-preparation/README.md) 的固定4/1设定、旧逐条判断和新旧 commitment 保持不变，只作历史，不导入本轮中性评审。旧建议 v1.1“仅核验50个区间”未实施。Evidence Schema、旧样本、历史实验分数与冻结 Anchor 协议不修改。
 
 ## 受控 X2 Downstream Probe 规则
 
@@ -520,8 +522,8 @@ Plan 可先让强模型读取 Persona + Topic + 单集 L1，结构化输出 Beat
 # 本地 Codex 接管后的当前任务（2026-10-07）
 
 1. Review接受历史Independent Judge Calibration FAIL；视觉差异诊断已完成并提交于84c4169，不回改分数或宣称Gemini Evidence Scientific FAIL。
-2. Schema v2设计Review已通过；用户授权Limited Probe v1准备及原隔离评审Q3补核验登记。当前只提交现状：Legacy Evidence Retrieval Diagnostic准备INCONCLUSIVE、总冻结未完成、Q5 unverifiable、检索未执行。公开材料见limited-x2-probe-v1-preparation/README.md。
-3. 不新增模型实验/样本，不读人工答案、不运行Judge/检索、不生成Evidence、不进入X1.3/正式X2/X2.5或恢复A8/A9/A10。未Review前不得把设计稿作为新实验预注册或启用运行接口。
+2. Schema v2设计Review已通过；用户授权 Limited Probe v1 中性 Existence Gold 闭环。五条 Query 字节不变；新协议/三态和动态指标已冻结，独立评审五项处理记录已封存，整集视听/全部区间核验未能完成。当前不公开或预设逐条 Gold 状态；公开摘要见 limited-x2-existence-gold/GOLD-CLOSURE-REPORT.md。旧检查点历史保留，STOP。
+3. 本轮允许原片评审所需的实际视觉/音频输入，不做新增模型比较/样本，不读人工答案、不运行Judge/检索、不生成Evidence、不进入X1.3/正式X2/X2.5或恢复A8/A9/A10。Gold 封存后 STOP；运行配置和权限 guard 完成冻结且 Review 明确授权前，不启用检索接口。
 4. Human Anchor的一次性校准成本与自动逐集Ingest目标不变；同剧/跨剧Holdout须后续冻结与授权，不因Schema重构绕过验证。
 
 ---
@@ -543,7 +545,7 @@ Development Calibration 完成并冻结代码、Prompt、模型配置及评测�
 
 ## 当前正式状态 (2026-10-07)
 
-> **Schema v2设计Review已通过、未接入；Limited Probe v1定位Legacy Evidence Retrieval Diagnostic，状态`preparation_inconclusive; overall_freeze_incomplete; retrieval_not_executed`。5条Query与旧快照/检索组件已留档，Q3补核验及新Gold承诺已登记、旧Gold保留，Q5仍unverifiable。正例搜索范围适用性、物理隔离guard与实际runner/配置尚未闭合；v1.1仅未批准建议。历史Independent Judge Calibration FAIL永久保留，X1.2仍Engineering PASS / Scientific Pending。未修改Anchor/原Judge/30-shot Manifest/20 Pair/旧preregistration，未生成新Evidence/样本、未执行Probe或下游阶段。本次只提交现状，随后STOP。**
+> **Schema v2设计Review已通过、未接入；Limited Probe v1定位 Legacy Evidence Retrieval Diagnostic。状态 `neutral_gold_sealed; full_audiovisual_verification_not_completed; overall_execution_freeze_incomplete; retrieval_not_executed`。五项处理记录封存不等于整集核验完成：连续视觉/真实听觉及全部事件区间仍有能力缺口。Q1–Q5 不预设极性、原文不变；三态/区间只在隔离 Gold，只公开 commitment 和实际覆盖摘要。用户授权替代旧4/1分母与Q5负例预设，不回改历史实验。chmod 400所有者可读，实际角色权限 guard、runner及费用仍待冻结与 Review。历史 Independent Judge Calibration FAIL 永久保留，X1.2 仍 Engineering PASS / Scientific Pending。未修改 Anchor/原 Judge/30-shot Manifest/20 Pair/旧 preregistration 或 Evidence Schema，未生成新 Evidence/样本、未执行 Probe 或下游阶段。Gold已封存，STOP。**
 
 最高成功标准：
 

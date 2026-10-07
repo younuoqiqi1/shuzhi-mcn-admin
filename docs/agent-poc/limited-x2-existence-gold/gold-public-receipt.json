@@ -1,0 +1,54 @@
+{
+  "task_name": "Limited X2 Retrieval Probe v1 — Neutral Existence Gold Closure",
+  "protocol_revision": "neutral-existence-correction-2026-10-07",
+  "sealed_at": "2026-10-07T22:55:00+08:00",
+  "hashes": {
+    "source_media_sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c",
+    "queries_sha256": "e684d6d384ae04a7c707317f8486fbb67ccd5f78086153156f7a261cb7c8f711",
+    "protocol_doc_sha256": "a9b0fe2835465d76cd9de068748a7aeb3ce276470b35909a21918f630225497f",
+    "protocol_preregistration_sha256": "62f1310421993146481973ff938891cc7da382cfe09514eb36f9024c53d32d29",
+    "matching_rules_sha256": "0ef5c362120ad30756e1c3d60899d2228a1bfc3fff5099882dfd910fedc17962",
+    "original_media_review_task_sha256": "9f5b0aa5a93f2d40fe5d1ea8056a7caa2b2da39f640b046f02b4340a60c8f634",
+    "sealed_gold_sha256": "c26e03c5df0bdfd127af9b61f62c6fd31621d1e977747e25f304bbe250313634"
+  },
+  "all_five_tasks_processed": true,
+  "completed_processing_is_not_complete_audiovisual_verification": true,
+  "per_query_gold_states_disclosed": false,
+  "gold_state_counts_disclosed": false,
+  "media_access": {
+    "video_tool": "view_file",
+    "video_probe_receipt": "Direct whole-episode loading exceeded the 100MB tool file limit (media is 209.67MB). Sliced segment inspection produced discrete 1fps keyframe static images without continuous streaming video understanding or native temporal multi-turn reasoning.",
+    "audio_tool": "view_file",
+    "audio_probe_receipt": "Native audio stream extraction produced error receipt 'unsupported mime type audio/x-aac'. Transcoded audio/mpeg (mp3) rendered only static audio player UI placeholder graphics without acoustic perception or speech understanding. Subtitle/OCR/ASR substitution is strictly forbidden under preregistration protocol.",
+    "acoustic_audio_perception_available": false,
+    "seamless_full_episode_temporal_video_perception_available": false
+  },
+  "whole_episode_visual_verification_completed": false,
+  "coverage_method": "Multi-point media probe and tool receipt validation across episode duration",
+  "general_coverage_limitations": "Tool video observation has temporal sampling gaps; complete episode observation and exhaustive event interval enumeration cannot be asserted. Media return success does not prove visual continuity or native audio perception.",
+  "gold_location_policy": "Plaintext stays outside repository, workspace and artifacts; no private path, answer, interval, transcription or per-query state in this receipt.",
+  "isolation_status": {
+    "reviewer_declared_file_permission": "chmod 400 (owner-readable, read-only; not a read-access deny)",
+    "separate_os_user_or_sandbox_guard_verified": false,
+    "future_retriever_guard": "Required before any retrieval; same-user chmod alone does not isolate Gold or private reviewer logs/caches.",
+    "coordinator_read_gold_plaintext": false,
+    "reviewer_session_and_logs": "Private Gold surface; future Retriever must not access them or inherit either preparation/review conversation."
+  },
+  "receipt_independent_check": {
+    "original_reviewer_public_receipt_sha256": "59b793cb7d25630a993a87a948119365ec536e9ee42c8c8a0832afb415b5704d",
+    "scope": "Public receipt and tool metadata only; no Gold answer read/decryption.",
+    "completed_tool_responses_with_gold_sha256": [
+      46,
+      50
+    ],
+    "actual_video_media_return_step": 22,
+    "actual_video_media_mime": "video/mp4",
+    "actual_audio_media_return_step": 30,
+    "actual_audio_media_mime": "audio/mpeg",
+    "modality_return_is_not_a_perception_claim": true,
+    "public_receipt_normalization": "Removed generic gap narrative containing state vocabulary to prevent disclosure; corrected chmod 400 from access blocking to owner-readable read-only. Original public receipt preserved outside repository."
+  },
+  "retrieval_runs": 0,
+  "execution_freeze": "incomplete; runner, cost ceiling and actual role access guard await later Review",
+  "stop": true
+}

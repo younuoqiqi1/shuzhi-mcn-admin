@@ -1,0 +1,31 @@
+{
+  "protocol_revision": "neutral-existence-correction-2026-10-07",
+  "base_commit": "96682a0f33e7da4362726acf80f807436cb6857a",
+  "source_sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c",
+  "queries_sha256": "e684d6d384ae04a7c707317f8486fbb67ccd5f78086153156f7a261cb7c8f711",
+  "files": [
+    {
+      "file": "docs/agent-poc/limited-x2-retrieval-probe-v1.md",
+      "sha256": "a9b0fe2835465d76cd9de068748a7aeb3ce276470b35909a21918f630225497f"
+    },
+    {
+      "file": "docs/agent-poc/limited-x2-existence-gold/queries.json",
+      "sha256": "e684d6d384ae04a7c707317f8486fbb67ccd5f78086153156f7a261cb7c8f711"
+    },
+    {
+      "file": "docs/agent-poc/limited-x2-existence-gold/matching-rules.json",
+      "sha256": "0ef5c362120ad30756e1c3d60899d2228a1bfc3fff5099882dfd910fedc17962"
+    },
+    {
+      "file": "docs/agent-poc/limited-x2-existence-gold/original-media-review-task.json",
+      "sha256": "9f5b0aa5a93f2d40fe5d1ea8056a7caa2b2da39f640b046f02b4340a60c8f634"
+    },
+    {
+      "file": "docs/agent-poc/limited-x2-existence-gold/README.md",
+      "sha256": "2c982043a8718f56b01584d64ffe03bb24b25dcf99867f15ab355f400635d2e1"
+    }
+  ],
+  "new_gold_commitment": null,
+  "Gold_answers_received": false,
+  "retrieval_runs": 0
+}

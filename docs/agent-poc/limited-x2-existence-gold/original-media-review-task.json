@@ -1,0 +1,47 @@
+{
+  "protocol_revision": "neutral-existence-correction-2026-10-07",
+  "queries_sha256": "e684d6d384ae04a7c707317f8486fbb67ccd5f78086153156f7a261cb7c8f711",
+  "source_media": "/Users/yoyotaozhou/Documents/video-moment-validation/data/input/qianfu_ep18.mp4",
+  "source_sha256": "7987a13f4df2403d0eb3927a9c1f6b170821077e171afc72df4c95d935f17c9c",
+  "queries": [
+    {
+      "query_id": "Q1",
+      "query": "找一段两名穿旗袍的女人在医院门口聊天的素材，画面里能看见红十字标志和白衣护士经过。"
+    },
+    {
+      "query_id": "Q2",
+      "query": "找一段穿浅色睡衣的卷发女人和戴眼镜的男人，在卧室里牵着手练舞的镜头。"
+    },
+    {
+      "query_id": "Q3",
+      "query": "找一段戴圆框眼镜、穿蓝紫色衣服的男人说“有一种胜利叫撤退，有一种失败叫占领”的原声。"
+    },
+    {
+      "query_id": "Q4",
+      "query": "找一段写满竖排毛笔字、带红色印记的信纸特写，最好能清楚看见纸面。"
+    },
+    {
+      "query_id": "Q5",
+      "query": "找一段短发、戴耳坠、穿红色花纹旗袍的女人，在室内掏出手枪朝戴眼镜、穿深色中山装的男人开枪的镜头。"
+    }
+  ],
+  "query_expected_polarity": null,
+  "whole_episode_review_required": true,
+  "Q3_original_audio_required": true,
+  "visual_tasks_continue_if_audio_unavailable": true,
+  "allowed_final_gold_states": [
+    "confirmed_present",
+    "confirmed_absent",
+    "unverifiable"
+  ],
+  "original_intervals": "all matching events; original-video absolute half-open intervals; never Shot-based",
+  "private_gold_only": true,
+  "Gold_or_Evidence_prior_answers_must_not_be_read": true,
+  "public_receipt_must_not_include": [
+    "per-query Gold states",
+    "present/absent/unverifiable counts",
+    "event intervals",
+    "transcriptions or Gold answers"
+  ],
+  "retrieval_authorized": false
+}
