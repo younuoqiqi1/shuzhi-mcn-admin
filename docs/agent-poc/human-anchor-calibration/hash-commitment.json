@@ -16,8 +16,8 @@
   "model_schema_sha256": "b2e3bd724dc8685f38cf939f85dd13f15b56eab2c8c4df1cf0882109ceb936b6",
   "model_config_sha256": "3bf25896aeb79899e32d149921845cccb10016f52a5555706682993ac579ce04",
   "model_config_canonical_text": "model=gemini-3.1-pro-low\neffort=low\nimage_input_resolution=384\nframe_positions_percent=25,50,75\nprovider=AGYCLIGeminiProvider\n",
-  "human_anchor_answers_sha256": null,
-  "answers_hash_status": "PENDING_AFTER_ANNOTATION_BEFORE_ANY_JUDGE_OR_EVALUATOR_READS",
+  "human_anchor_answers_sha256": "2e244c5a4208929a87bbefbb68646b5ba7867197ce3203de054e5d8651c5b10e",
+  "answers_hash_status": "REGISTERED_FROM_ENCRYPTED_BACKUP_ENVELOPE_BEFORE_JUDGE_PLAINTEXT_NOT_RECOMPUTED",
   "no_model_calls_or_judge_run_in_this_preparation": true,
   "protocol_hashes": {
     "manifest.json": "5ccd2a1515d2a26e75d4244498243a1f0c9300fd3335587a72ad657d7359c33a",
@@ -144,5 +144,23 @@
       "annotation_page_sha256": "700aab8db1e67f5c0ab1a7f62e636a3aa9891dd677e41d811b18c1d952e34ba5",
       "base_commit": "664e148132b713dfca3e7ab7ed5c930321c8a297"
     }
-  ]
+  ],
+  "sealed_backup_commitment": {
+    "registered_on": "2026-10-07",
+    "filename": "human-anchor-encrypted-backup.hanchor",
+    "file_sha256": "6265c6c383231720ac12854eae957a27fc9016184719c71a1fa0969069ee2bbb",
+    "file_bytes": 12800,
+    "manifest_sha256": "7f82d16034e2ef80f3b36d8d15215e58394a0313610540fc848a1a8a17a6fff4",
+    "envelope_version": 3,
+    "kdf_iterations": 310000,
+    "checks": "JSON envelope fields, expected Manifest, 64-hex answer commitment, base64 structure, 16-byte salt/12-byte IV/nonempty AES-GCM ciphertext",
+    "answer_hash_source": "Browser-generated answer_sha256 field in encrypted backup envelope; recorded without decryption or independent recomputation",
+    "plaintext_read": false,
+    "ciphertext_authentication_verified": false,
+    "submission_and_answer_completeness": "User reported complete; encrypted state not inspected",
+    "schema_and_page_binding": "Envelope carries Manifest commitment only; current disk protocol/page hashes verified, not cryptographically asserted as the annotation runtime version",
+    "raw_backup_in_git": false,
+    "judge_run": false,
+    "next_step": "STOP awaiting Review; independent Judge output rules/holdout preregistration remain to be frozen before any authorized evaluation"
+  }
 }
