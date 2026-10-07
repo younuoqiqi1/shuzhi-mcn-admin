@@ -1,0 +1,48 @@
+{
+  "judge_commitment": {
+    "stage": "JUDGE_OUTPUTS_COMMITTED_BEFORE_HUMAN_REVEAL",
+    "run_id": "HA-DEV-v4-independent-judge-20261007",
+    "judge_results_sha256": "c9e7f51af00f584e313cc22877188a4a26f20b5ea1cad9eb605cf4be3e7d68be",
+    "judge_preregistration_sha256": "20dee778dcab5d964a8200c5c1c291cec3d7f99e1514137c70232f6e0618aa77",
+    "records": 50,
+    "shards": [
+      {
+        "name": "shots_a",
+        "sha256": "e99e5895041ca0772e66a64b1ad9fc37032b6aa80d76640791c6d8c653b5f0b8",
+        "count": 15,
+        "model_identity": "current inherited Codex model"
+      },
+      {
+        "name": "shots_b",
+        "sha256": "b8a2b7544437229808c73a47b206b9e5968f779acfcd32cdf0f55e9d7808b0fa",
+        "count": 15,
+        "model_identity": "current inherited Codex model"
+      },
+      {
+        "name": "pairs",
+        "sha256": "d6d27cc8f67b0b7e82a7bcc57e9d3005cc9c47ce0a3dd7815eeb41ffeaef1ef1",
+        "count": 20,
+        "model_identity": "current inherited Codex model"
+      }
+    ],
+    "field_failure_counts": {
+      "speechStatus": 30,
+      "speakerSource": 30,
+      "boundary": 15
+    },
+    "human_plaintext_read": false,
+    "first_answers_only": true
+  },
+  "judge_preregistration_sha256": "20dee778dcab5d964a8200c5c1c291cec3d7f99e1514137c70232f6e0618aa77",
+  "evaluator_lock_sha256": "0043a0f0cede802af38a81b10a8f547fa284d8d932bb8740c350a58f1f8826c6",
+  "evaluator_code_hashes": {
+    "evaluate.mjs": "10b4c477921b9d6b10f1d6f05eab3349a890dfe2b9126c5a9f23b5412804bbb5",
+    "sealed-run.mjs": "8d0e4670345738286bad931b64c638552fa34266244a623b2c2ab75de3d59a0c"
+  },
+  "evaluator_tasks_sha256": "52202b5eaa8da08adb18d221083e94cec05289217fb9af94548a153e71eea3ef",
+  "v4_confirmed_by_user": true,
+  "blindness_confirmed_by_user": true,
+  "timing_result": "NOT_COLLECTED_NOT_SCORED_V4",
+  "human_plaintext_read_at_lock": false,
+  "next_step": "Local evaluator after Judge commitment; no model or Agent receives plaintext"
+}
