@@ -1,5 +1,5 @@
 {
-  "schema_version": "human-anchor/1.2.1",
+  "schema_version": "human-anchor/1.2.2",
   "title": "Generic audiovisual observation anchor",
   "content_independent": true,
   "fields": {
@@ -25,8 +25,16 @@
     },
     "speech_status": ["intelligible_speech_audible", "no_intelligible_speech", "uncertain"],
     "speaker_source": ["on_screen_person", "off_screen_voice", "uncertain"],
-    "speaker_location": "Optional normalized coordinates on a raw representative frame when speaker_source is on_screen_person and location is clear. Omit when unclear; never required for task completion or scoring.",
+    "speaker_location": "Optional normalized coordinates on a raw representative frame only when speech_status is intelligible_speech_audible, speaker_source is on_screen_person, and location is clear. Omit when unclear; never required for task completion or scoring.",
     "unknown": "Explicit uncertain choice for each applicable field."
+  },
+  "field_applicability": {
+    "speaker_source": {
+      "required_only_when": "speech_status == intelligible_speech_audible",
+      "no_intelligible_speech": "not_applicable; no source selection required",
+      "uncertain": "unassessed; no source selection required",
+      "legacy_values": "Preserve prior raw values; ignore source/location when speech is not intelligible_speech_audible. Do not replace missing with uncertain."
+    }
   },
   "not_collected": [
     "verbatim_transcript", "CER", "WER", "stable_person_id",
