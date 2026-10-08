@@ -325,7 +325,7 @@ Holdout 拆分、集数和域间比较指标须执行前预注册；旧“衰减
 
 ## Limited X2 Retrieval Probe v1（设计基线与当前准备状态）
 
-**最新授权与状态：** 本 Probe 仍使用 X1.2 原始快照，定位 `Legacy Evidence Retrieval Diagnostic`，不做 v1→v2 映射或 v2 能力验证。用户已授权纠正未执行协议：Q1–Q5 全部为中性 Existence Query，Query 原文字节不变，禁止预设 Q5 或其他任务为 Positive/Hard Negative。Top K=3、完整事实支持 AND IoU≥0.5 保持；旧固定4/1分母改为揭盲后由隔离 Evaluator 依实际三态分组。规则与预注册见 [当前 Probe 协议](limited-x2-retrieval-probe-v1.md)、[中性 Gold 冻结附件](limited-x2-existence-gold/README.md)。新独立评审已封存五项处理记录，Gold SHA256 `c26e03c5df0bdfd127af9b61f62c6fd31621d1e977747e25f304bbe250313634`；工具连续视觉/真实听觉能力不足，整集视听核验及全量区间枚举未能确认。详见 [公开封存报告](limited-x2-existence-gold/GOLD-CLOSURE-REPORT.md)，不公开逐条状态或数量。Gold封存后 STOP，不检索。
+**最新授权与状态：** 本 Probe 仍使用 X1.2 原始快照，定位 `Legacy Evidence Retrieval Diagnostic`，不做 v1→v2 映射或 v2 能力验证。用户已授权纠正未执行协议：Q1–Q5 全部为中性 Existence Query，Query 原文字节不变，禁止预设 Q5 或其他任务为 Positive/Hard Negative。Top K=3、完整事实支持 AND IoU≥0.5 保持；旧固定4/1分母改为揭盲后由隔离 Evaluator 依实际三态分组。规则与预注册见 [当前 Probe 协议](limited-x2-retrieval-probe-v1.md)、[中性 Gold 冻结附件](limited-x2-existence-gold/README.md)。新独立评审已封存五项处理记录，Gold SHA256 `c26e03c5df0bdfd127af9b61f62c6fd31621d1e977747e25f304bbe250313634`；工具连续视觉/真实听觉能力不足，整集视听核验及全量区间枚举未能确认。2026-10-08另有一次非盲对话模型辅助的探索检索，Q5 相似参考的结果呈现通过用户验收；它不是正式 Gold 裁决或 Probe 通过，详见 [测试记录](exploratory-retrieval-human-acceptance-2026-10-08.md)。详见 [公开封存报告](limited-x2-existence-gold/GOLD-CLOSURE-REPORT.md)，不公开 Gold 逐条状态或数量。正式 Gold封存后 STOP，正式检索仍未运行。
 
 **Gold 闭环：** 独立评审只看原片和冻结 Query/任务；不看 Evidence、旧 Gold 或检索结果。Q3 必须实际听原声，音频不可达则 unverifiable；Q1/Q2/Q4/Q5 继续完整视觉核验。三态与全部 present 原视频绝对区间只存仓库外隔离 Gold；采样未见/关键帧覆盖不能证明 absent。无法确认完整观察或全部区间时保留 unverifiable。公开只登记 SHA256、五项处理是否完成与实际能力/覆盖缺口，不公开逐条状态、数量、台词或时间码。Gold 封存不代表完整视觉核验成功或总运行配置已冻结。
 

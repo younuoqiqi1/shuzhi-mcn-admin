@@ -1,10 +1,10 @@
 # 数智博主生产工作台 (POC-AGENT) 进度看板
 
-更新时间：2026-10-07（Asia/Shanghai）
+更新时间：2026-10-08（Asia/Shanghai）
 当前分支：`agent-poc/a1-contracts`  
 当前阶段：**Objective Evidence Schema v2 设计 Review 已通过（未接入）；Limited Probe v1 中性 Existence Query Gold 闭环**
-当前状态：**`legacy_evidence_retrieval_diagnostic; neutral_gold_sealed; full_audiovisual_verification_not_completed; overall_execution_freeze_incomplete; retrieval_not_executed`。用户授权纠正尚未执行的 Probe：Q1–Q5 不预设 Positive/Hard Negative，五条 Query 字节与旧 Evidence 不变。新独立原片评审已封存五项处理记录，但工具连续视觉/真实听觉感知不足，不能宣称整集视听核验完成。不接收或公开逐条答案/状态；Gold封存后 STOP。历史 Independent Judge Calibration FAIL 永久保留，X1.2 仍为 Engineering PASS / Scientific Pending。**
-核心决议：**本 Probe 仍只作 Legacy Evidence Retrieval Diagnostic；Top K=3、事实完全支持 AND IoU≥0.5 保持。旧固定4/1分母由当前授权的中性协议替代：首次检索结果封存后，隔离 Evaluator 才以实际 present/absent/unverifiable 分组；present 评 Top3 区间，absent 应返回 INSUFFICIENT，unverifiable 不计 PASS/FAIL。整集 Gold 不缩到50-shot范围。实际 runner、费用及权限 guard 仍须后续冻结与 Review。本轮不检索、不新增 Evidence/样本、不进入 X1.3/正式 X2/X2.5/A8/A9/A10。**
+当前状态：**`legacy_evidence_retrieval_diagnostic; neutral_gold_sealed; full_audiovisual_verification_not_completed; overall_execution_freeze_incomplete; formal_retrieval_not_executed`。Q1–Q5 中性 Query 与隔离 Gold commitment 保持不变。2026-10-08 已新增一次非盲探索性检索及用户人工验收记录：Q5 的相似参考呈现通过验收，但整集存在性未判定；这不是正式 Probe 命中或拒答结果。完整视听核验未完成，正式检索未运行。历史 Independent Judge Calibration FAIL 永久保留，X1.2 仍为 Engineering PASS / Scientific Pending。**
+核心决议：**本 Probe 仍只作 Legacy Evidence Retrieval Diagnostic；Top K=3、事实完全支持 AND IoU≥0.5 保持。旧固定4/1分母由当前授权的中性协议替代：正式首次检索输出封存后，隔离 Evaluator 才以实际 Gold 状态分组。2026-10-08 Q5 探索性检索的相似参考呈现获用户验收通过；该非盲人工验收不代表 Gold 判断或正式 Probe 通过，详见[测试记录](docs/agent-poc/exploratory-retrieval-human-acceptance-2026-10-08.md)。整集 Gold 不缩到50-shot范围。实际 runner、费用及权限 guard 仍须后续冻结与 Review。本轮未运行正式 Probe，不新增 Evidence/样本、不进入 X1.3/正式 X2/X2.5/A8/A9/A10。**
 执行责任：🏛️ 全栈架构师 & ⚡ 算法与性能专家 & 📝 技术文档架构师
 
 ---
@@ -16,6 +16,7 @@
 - 新独立评审不读旧 Gold、Evidence、旧评审日志或检索结果。Gold 明文及私有日志保持仓库外；公开只登记承诺、实际能力/覆盖与五项处理完成摘要，不显示逐条 Gold 状态或数量。Retriever 不得继承本会话/评审会话，实际权限隔离须在后续运行前落实。
 - 五项处理已封存，新 Gold SHA256 `c26e03c5df0bdfd127af9b61f62c6fd31621d1e977747e25f304bbe250313634`；实际 hash 操作回执已核对，未读 Gold 明文。详见[封存与能力限制报告](docs/agent-poc/limited-x2-existence-gold/GOLD-CLOSURE-REPORT.md)。媒体成功返回不证明连续视觉或真实听觉感知，整集核验/全部区间枚举未能确认。
 - Gold仓库外保存；chmod 400仅为所有者可读的只读权限，不是角色访问隔离。实际Retriever guard未落实，未来必须禁止读取Gold及私有日志/缓存。原片评审已结束，观察用临时媒体已清理；本轮不检索，旧准备/承诺/历史实验/Schema/旧输入不回改，STOP等待Review。
+- 2026-10-08 探索性 Q5 查询已由用户验收：找不到完整匹配时给出明确标注的相似参考，用户接受该结果呈现。该查询以旧50-shot描述由对话模型辅助完成，非盲、未查完整原片；它不证明目标事件不存在，不改变正式 Gold 或 `retrieval_runs=0`。正式 Probe 仍未执行。
 
 ## Limited Probe v1 历史准备归档（commit 96682a0，当前规则已替代）
 
@@ -71,7 +72,7 @@
 | **Human Anchor 校准指标预注册** | X1 校准前置 | ✅ **Calibration 指标已冻结** | Human Anchor 各项公式、分母、unknown/missing/failed、CI 及 PASS/FAIL/INCONCLUSIVE 见 `docs/agent-poc/human-anchor-calibration/preregistration.md`。这不是 X1 全量 Scientific Gate；X1 正式门槛仍待预注册 |
 | **Objective Evidence Schema v2** | L1 契约设计 | ✅ **design approved（未接入）** | 用户Review已通过设计；内容类型、boundary/usability分离、状态/事件、key_objects、匿名人物与OCR/ASR/Speaker。人物数optional。运行Schema与冻结Anchor未改，未迁移/生成v2 Evidence；本Probe使用旧快照，不验证v2能力 |
 | **X1 Evidence v1 (客观证据底座 v1)** | X1 产物节点 | ⏳ **pending (前置未达成)** | 聚合多模态客观证据（镜头时序、代表帧语义、对齐台词、校准后人物聚类），形成防污染、免推断的 L1 结构化证据底座；前置依赖 Human Anchor 校准与 X1 指标冻结正式通过，当前未达成 |
-| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **中性 Gold 已封存 / 整集视听未完成 / STOP** | Legacy Evidence Retrieval Diagnostic：Q1–Q5 原文不变、不预设极性；五项处理记录封存，工具能力不足，逐条状态不公开。揭盲后动态分组，unverifiable 不计 PASS/FAIL。原50-shot输入不扩，runner/费用/实际权限 guard 仍待闭合；检索0次，不宣称 Scientific PASS |
+| **有限 X2 probe (Limited X2 Probe)** | X2 探索前置 | ⏸️ **中性 Gold 已封存 / 整集视听未完成 / 正式 Probe 未运行** | Legacy Evidence Retrieval Diagnostic：Q1–Q5 原文不变、不预设极性；五项处理记录封存，工具能力不足，逐条状态不公开。Q5 另有非盲探索性人工验收通过，仅接受相似参考的呈现，不判断 Gold 极性或正式命中。正式揭盲后动态分组；`unverifiable` 不计 PASS/FAIL。原50-shot输入不扩，runner/费用/实际权限 guard 仍待闭合，不宣称 Scientific PASS |
 | **X2 Gold (检索金标准数据集)** | X2 评测基础 | ⏳ **pending (待构建与预注册)** | **明确 X2 Gold 为原视频时间区间 (Ground Truth Time Ranges in Source Video)**，作为跨镜头语义召回的真实时间对齐真值；**旧 50 query count 仅称历史口径**，新评测集分类（显式/抽象/改写/对抗负例/荒谬输入）、具体样本量及时间区间真值待后续正式预注册 |
 | **X2 Semantic Retrieval Benchmark (主评)** | X2 主评节点 | 🛑 **未获准 / 冻结中 (需等待 X1 正式通过与 X2 Gold 就绪)** | 多类别需求盲测检索、跨镜头时序召回准确率及 INSUFFICIENT 拒识率验证；**旧 X2 阈值及旧 50 query 仅称历史口径，新阈值待预注册**；主评测当前严格未获准，维持冻结 |
 | **X2.5 Persona / Plan (角色与编导盲测)** | X2.5 节点 | 🛑 **未获准 / 冻结中** | 后续最低设计 2 Persona × 5 Topic；Agent 接收匿名 Persona 卡生成条件化 Plan，Persona 标签映射对 Agent 与独立评审隐藏；评审盲判 Persona 归属并核验证据支持和事实错误；当前未获准且不执行 |

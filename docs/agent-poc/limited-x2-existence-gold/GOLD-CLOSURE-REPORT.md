@@ -1,6 +1,6 @@
 # 中性 Existence Gold：封存与实际观察限制
 
-日期：2026-10-07。定位为 Legacy Evidence Retrieval Diagnostic 的准备阶段；本轮未检索，无能力评分或 Scientific PASS。
+更新于 2026-10-08。定位为 Legacy Evidence Retrieval Diagnostic 的准备阶段；**冻结协议下的正式盲检索尚未执行**，没有正式 Probe 分数或 Scientific PASS。2026-10-08 另有一次非盲探索性检索与人工验收，现按其原始范围补记于下文及[独立测试记录](../exploratory-retrieval-human-acceptance-2026-10-08.md)。
 
 ## 封存结果与历史边界
 
@@ -30,8 +30,16 @@ Gold 明文位于仓库、项目工作区和 artifacts 之外。评审声明文�
 
 本轮原片评审已结束，观察用临时MP4/AAC/MP3已清理；工具缓存/日志作为私有评审面保留，未来须由权限 guard 隔离。没有新增检索样本、Evidence、索引、检索结果或视频生产。
 
+## 2026-10-08 Q5 探索性检索与人工验收补记
+
+新提交的测试文档记录：用旧版50-shot描述进行了一次对话模型辅助的探索性查询，未找到完整支持 Q5 的记录；系统把一个外观/场景相似片段明确标成“相似参考”，并说明它不支持掏枪射击。用户接受这种结果呈现和参考价值，因此**Q5 探索性检索的人工验收通过**。
+
+这次通过仅适用于交互呈现和相似参考的人工验收。它没有裁定原片是否存在目标事件，没有确认整集不存在或列出所有目标区间，也不代表冻结协议下的 Retriever、正确拒答率或正式 Q5 Gold 已通过。查询由当前对话模型在看过上下文并获得用户反馈后完成，不属于盲测；备选片段也没有逐一获得确认。不得将本次结果写成“Q5 Gold 已通过”或 Probe 的正式准确率。
+
+此前报告中“本轮未检索”现在明确指**正式盲 Probe 未执行**；探索性检索单独留档，不回填预注册 `retrieval_runs=0`，不改 Gold 或历史评分。若要判正式 Q5 是否检索命中，仍需按隔离顺序先封存正式输出，再由隔离 Evaluator 揭盲；Gold 的整集覆盖限制与权限 guard 也仍待解决。
+
 ## 后续规则与 STOP
 
 未来 Retriever 只接收冻结五条中性 Query、通用规则与旧输入，不知道 Gold 状态。首次五条结果先封存，隔离 Evaluator 才揭盲；present评Top3时间区间，absent须INSUFFICIENT，unverifiable不计PASS/FAIL。分母、CI、缺失/失败计法见冻结当前协议；不得沿用旧固定4/1配置。
 
-Gold记录封存与完整核验能力是两件事。当前状态：`neutral_gold_sealed; full_audiovisual_verification_not_completed; overall_execution_freeze_incomplete; retrieval_not_executed`。实际 runner、费用上限与权限 guard 仍待冻结及 Review。本轮 **STOP**，不执行检索、X1.3、正式X2/X2.5、A8/A9/A10或新素材实验。
+Gold记录封存与完整核验能力是两件事。当前正式 Probe 状态：`neutral_gold_sealed; full_audiovisual_verification_not_completed; overall_execution_freeze_incomplete; formal_retrieval_not_executed`。实际 runner、费用上限与权限 guard 仍待冻结及 Review。本轮 **STOP**，不执行正式检索、X1.3、正式X2/X2.5、A8/A9/A10或新素材实验。
